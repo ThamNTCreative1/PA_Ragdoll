@@ -1,8 +1,8 @@
 {
     "version": "7.2.0",
     "projectId": "01d8b819bddb11e4ea7a644267642880",
-    "applicationID": 40364,
-    "creativeName": "SSP_V07_YenTTH_TamNTM",
+    "applicationID": 42071,
+    "creativeName": "RSNM_V05_YenTTH_TamNTM",
     "pgServer": "EU",
     "window": {
         "‐⁘": true
@@ -31542,6 +31542,16 @@
                         "script": "",
                         "ext": "",
                         "name": "Resources/unity_builtin_extra/Default-Particle"
+                    },
+                    {
+                        "maxWidth": 1024,
+                        "maxHeight": 1024,
+                        "format": "png32",
+                        "compression": "quantQuality",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/01 RESOURCES/Game/bodypart.png"
                     }
                 ]
             },
@@ -31575,6 +31585,26 @@
                         "script": "",
                         "ext": "",
                         "name": "Assets/01 RESOURCES/Sound/smert_1.mp3"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:32.088",
+                        "lengthInSeconds": 32.0880012512207,
+                        "bitrate": 128,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/01 RESOURCES/Sound/pila.mp3"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:00.000",
+                        "lengthInSeconds": 0.0,
+                        "bitrate": 128,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/01 RESOURCES/Sound/smert_2.mp3"
                     }
                 ]
             },

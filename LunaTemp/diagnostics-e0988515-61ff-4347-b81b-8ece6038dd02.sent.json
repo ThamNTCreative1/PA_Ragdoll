@@ -1,0 +1,87 @@
+{
+    "BuildID": "e0988515-61ff-4347-b81b-8ece6038dd02",
+    "Command": "project:upload",
+    "ProjectID": "01d8b819bddb11e4ea7a644267642880",
+    "ProjectStateHash": "480a526aece52167112f05289d83e170c0adbdd30aedbdcdf891deafbd61b4dc",
+    "StageCompletedAt": 3,
+    "EarliestFatalError": 0,
+    "StartTime": 1789979350478,
+    "EndTime": 1789979377521,
+    "PlaygroundUserID": 36785,
+    "OperatingSystem": "win32",
+    "UnityPackageID": null,
+    "TargetPlatform": "playground",
+    "UnityVersion": "6000.0.78f1",
+    "LunaVersion": "7.2.0",
+    "LogCount": 3,
+    "Logs": [
+        {
+            "LogID": "dfcd7a6b-00f0-4e05-b5bd-3d0a4f621e8d",
+            "Order": 3,
+            "Timestamp": 1789979377685,
+            "Stage": 3,
+            "ErrorType": 3,
+            "ErrorCode": "LP3007",
+            "Description": "You are not using any custom events",
+            "Details": [
+                "You are not using any custom events. It is recommended to use custom events to have a better understanding of the playable."
+            ],
+            "DescriptionValues": [
+                ""
+            ],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "1986089c-f200-4cb1-b4b9-4674d0a16fd5",
+            "Order": 0,
+            "Timestamp": 1789979359692,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1014",
+            "Description": "We recommend running Runtime Analysis to find and remove all unused code",
+            "Details": [
+                "Navigate to the Runtime Analysis → Code tab to enable code stripping. Before uploading the playable, please make sure to have played all scenario’s of the playable in a development build to make Runtime Analysis work properly."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "da6891c1-6018-493e-89b2-f247b940a8ac",
+            "Order": 1,
+            "Timestamp": 1789979359701,
+            "Stage": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP1032",
+            "Description": "Package(s) is not supported in Luna",
+            "Details": [
+                "Currently package(s) com.unity.timeline are not supported in Luna. We recommend you to remove it and workaround it's functionality."
+            ],
+            "DescriptionValues": [
+                "com.unity.timeline (1.8.12)"
+            ],
+            "DetailsValues": [
+                "com.unity.timeline"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "F:/UnityProjects/SSP_V07/Packages\\manifest.json",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        }
+    ]
+}
