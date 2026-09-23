@@ -1,20 +1,30 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TargetController : MonoBehaviour
 {
-    [SerializeField] private List<TargetJoint2D> listTarget;
     [SerializeField] private TargetJoint2D currentTarget;
-    [SerializeField] private int index;
     [SerializeField] private GameObject tut;
-    [SerializeField] private GameObject tut2;
-    [SerializeField] private GameObject tut3;
-    void Start()
+    public static TargetController Ins { get; private set; }
+    private void CreateIns()
     {
-        currentTarget = listTarget[0];
+        if (Ins && Ins != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Ins = this;
+        DontDestroyOnLoad(gameObject);
+    }
+    private void Awake()
+    {
+        CreateIns();
+    }
+    public void SetTarget(TargetJoint2D target)
+    {
+        currentTarget = target;
     }
 
-    void Update()
+    private void Update()
     {
         CheckInput();
     }
@@ -23,8 +33,6 @@ public class TargetController : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             if (tut) Destroy(tut);
-            if (tut2 && tut2.activeSelf) Destroy(tut2);
-            if (tut3 && tut3.activeSelf) Destroy(tut3);
 
             Vector2 point = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             SetTargetPoint(point);
@@ -45,18 +53,7 @@ public class TargetController : MonoBehaviour
         if (!currentTarget) return;
         currentTarget.enabled = false;
     }
-    public void RemoveTarget()
-    {
-        if (currentTarget) RemoveTargetPoint();
-        currentTarget = null;
-    }
-    public void NextTarget()
-    {
-        if (index >= listTarget.Count) return;
-        currentTarget.gameObject.SetActive(false);
-        index++;
-        currentTarget = index < listTarget.Count ? listTarget[index] : null;
-    }
+
     public bool IsEmpty()
     {
         return !currentTarget || !currentTarget.enabled;

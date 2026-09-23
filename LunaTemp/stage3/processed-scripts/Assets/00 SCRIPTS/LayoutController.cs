@@ -3,13 +3,11 @@ using UnityEngine;
 public class LayoutController : MonoBehaviour
 {
     [SerializeField] private Camera mainCamera;
-    [SerializeField] private Transform optionButton;
     private float oldRatio;
     private void Start()
     {
         Fit();
     }
-
 
     private void Update()
     {
@@ -25,8 +23,6 @@ public class LayoutController : MonoBehaviour
             Vector3 camPos = mainCamera.transform.position;
             camPos.y = 2;
             mainCamera.transform.position = camPos;
-
-            optionButton.localScale = Vector3.one * 0.8f;
         }
         else
         {
@@ -34,8 +30,6 @@ public class LayoutController : MonoBehaviour
             Vector3 camPos = mainCamera.transform.position;
             camPos.y = 0;
             mainCamera.transform.position = camPos;
-
-            optionButton.localScale = Vector3.one;
         }
     }
 }

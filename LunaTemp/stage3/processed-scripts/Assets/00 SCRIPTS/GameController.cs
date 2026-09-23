@@ -1,17 +1,9 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    [SerializeField] private List<MonsterController> monsters;
-    [SerializeField] private List<GameObject> levels;
-    [SerializeField] private TargetController target;
-    [SerializeField] private int index;
-    [SerializeField] private bool end;
     [SerializeField] GameObject endUI;
-    public static GameController Ins;
+    public static GameController Ins { get; private set; }
     private void CreateIns()
     {
         if (Ins && Ins != this)
@@ -27,26 +19,8 @@ public class GameController : MonoBehaviour
         CreateIns();
     }
 
-    public void KillMonster()
+    public void End()
     {
-        if (end) return;
-        monsters[index].Dead();
-        StartCoroutine(ChangeLevel());
+        endUI.SetActive(true);
     }
-    private IEnumerator ChangeLevel()
-    {
-        yield return new WaitUntil(() => target.IsEmpty());
-        yield return new WaitForSeconds(1);
-        index++;
-        target.NextTarget();
-        levels[index - 1].SetActive(false);
-        levels[index].SetActive(true);
-        OnNextLevel?.Invoke();
-        if (index >= levels.Count - 1)
-        {
-            end = true;
-            endUI.SetActive(true);
-        }
-    }
-    public Action OnNextLevel;
 }

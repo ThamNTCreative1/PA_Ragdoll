@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Monster
   - Trap
+  - Character
   layers:
   - Default
   - TransparentFX
@@ -13,7 +14,7 @@ TagManager:
   - Monster
   - Water
   - UI
-  - Player
+  - Ragdoll
   - 
   - 
   - 
@@ -33,15 +34,48 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
+  - Skeleton
+  - Meat
+  - Skin
   - 
   - 
   - 
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Map
+    uniqueID: 4198276891
+    locked: 0
+  - name: Back_Arm
+    uniqueID: 101034787
+    locked: 0
+  - name: Back_Foot
+    uniqueID: 688014469
+    locked: 0
+  - name: Body
+    uniqueID: 1797020679
+    locked: 0
+  - name: Head
+    uniqueID: 2233648975
+    locked: 0
+  - name: Front_Foot
+    uniqueID: 1941977765
+    locked: 0
+  - name: BodyFront
+    uniqueID: 3687007419
+    locked: 0
+  - name: Front_Arm
+    uniqueID: 3967915991
+    locked: 0
+  - name: Blood
+    uniqueID: 661865003
+    locked: 0
+  - name: ItemMenu
+    uniqueID: 2010829561
+    locked: 0
+  - name: UI
+    uniqueID: 68129961
     locked: 0
   m_RenderingLayers:
   - Default

@@ -9,26 +9,28 @@
   ],
   "groups": [
     [
-      "F:/UnityProjects/SSP_V07/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/ActiveOnActive.cs"
-    ],
-    [
-      "F:/UnityProjects/SSP_V07/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/ActiveOnClick.cs",
-      "F:/UnityProjects/SSP_V07/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/AudioController.cs",
-      "F:/UnityProjects/SSP_V07/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/BonkController.cs",
-      "F:/UnityProjects/SSP_V07/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/GameController.cs",
-      "F:/UnityProjects/SSP_V07/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/LunaController.cs",
-      "F:/UnityProjects/SSP_V07/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/MonsterController.cs",
+      "F:/UnityProjects/SSP_V07/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/AcidDisolve.cs",
+      "F:/UnityProjects/SSP_V07/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/RagdollController.cs",
+      "F:/UnityProjects/SSP_V07/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/BalanceController.cs",
       "F:/UnityProjects/SSP_V07/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/TargetController.cs",
-      "F:/UnityProjects/SSP_V07/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/VFXController.cs"
+      "F:/UnityProjects/SSP_V07/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/DropArea.cs",
+      "F:/UnityProjects/SSP_V07/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/GameController.cs",
+      "F:/UnityProjects/SSP_V07/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/AcidSound.cs"
     ],
     [
-      "F:/UnityProjects/SSP_V07/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/BalanceController.cs"
+      "F:/UnityProjects/SSP_V07/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/AudioController.cs"
     ],
     [
-      "F:/UnityProjects/SSP_V07/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/DropPiece.cs"
+      "F:/UnityProjects/SSP_V07/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/CheckSaving.cs"
     ],
     [
       "F:/UnityProjects/SSP_V07/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/LayoutController.cs"
+    ],
+    [
+      "F:/UnityProjects/SSP_V07/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/LunaController.cs"
+    ],
+    [
+      "F:/UnityProjects/SSP_V07/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/VFXController.cs"
     ],
     [
       "F:/UnityProjects/SSP_V07/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs"
