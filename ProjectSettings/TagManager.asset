@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - Monster
+  - Trap
+  - Character
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Monster
+  - Water
+  - UI
+  - Ragdoll
+  - Player
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - Skeleton
+  - Meat
+  - Skin
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Map
+    uniqueID: 1854855617
+    locked: 0
+  - name: Back_Arm
+    uniqueID: 3382460477
+    locked: 0
+  - name: Back_Foot
+    uniqueID: 1519641587
+    locked: 0
+  - name: Body
+    uniqueID: 1374947227
+    locked: 0
+  - name: Head
+    uniqueID: 1044009191
+    locked: 0
+  - name: Front_Foot
+    uniqueID: 56647003
+    locked: 0
+  - name: BodyFront
+    uniqueID: 1841154051
+    locked: 0
+  - name: Front_Arm
+    uniqueID: 2638889953
+    locked: 0
+  - name: Blood
+    uniqueID: 1022998135
+    locked: 0
+  - name: ItemMenu
+    uniqueID: 1042733787
+    locked: 0
+  - name: UI
+    uniqueID: 777474391
+    locked: 0
+  m_RenderingLayers:
+  - Default
