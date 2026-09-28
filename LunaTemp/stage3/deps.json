@@ -1,0 +1,91 @@
+{
+  "ignores": [
+    "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs",
+    "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
+    "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs",
+    "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs",
+    "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenProShortcuts.cs"
+  ],
+  "groups": [
+    [
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Control/AudioController.cs",
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Damageable/BlockController.cs",
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Damageable/IDamageable.cs",
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Damageable/Monster/MonsterController.cs",
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Damageable/Player/Fight/ShootController.cs",
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Weapon/BulletController.cs",
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Damageable/Player/Fight/FightController.cs",
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Damageable/Player/Fight/DropController.cs",
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Damageable/Player/PlayerController.cs",
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Control/GameController.cs",
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Control/TriggerMonster.cs",
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Weapon/KunaiController.cs",
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Damageable/Monster/BalanceController.cs",
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Damageable/Monster/MonsterMove.cs",
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Damageable/Monster/MonsterTarget.cs",
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Damageable/Monster/MonsterAnimation.cs",
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Weapon/BombController.cs",
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Weapon/LandmineController.cs",
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Control/VFXController.cs",
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Weapon/SmokeController.cs"
+    ],
+    [
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Control/LayoutController.cs"
+    ],
+    [
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Control/LunaController.cs"
+    ],
+    [
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Control/TutController.cs"
+    ],
+    [
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs"
+    ],
+    [
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleEPOOutline.cs"
+    ],
+    [
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs"
+    ],
+    [
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs"
+    ],
+    [
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs"
+    ],
+    [
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs"
+    ],
+    [
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
+    ],
+    [
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs"
+    ],
+    [
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenDeAudio.cs"
+    ],
+    [
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenDeUnityExtended.cs"
+    ],
+    [
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenProShortcuts.cs"
+    ],
+    [
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenTextMeshPro.cs"
+    ],
+    [
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenTk2d.cs"
+    ],
+    [
+      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
+    ],
+    [
+      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
+    ],
+    [
+      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+    ]
+  ]
+}
