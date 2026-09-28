@@ -1,0 +1,63 @@
+{
+    "BuildID": "7890a70c-10d5-4a8a-b435-e3047e3e4742",
+    "Command": "project:deploy",
+    "ProjectID": "ff24b2211bd970c4d920bad068d2912a",
+    "ProjectStateHash": "cd3b06817cbf8dc1f56f1029482383ff555d6ebd01fe91491fdba9b4e89c14fc",
+    "StageCompletedAt": 3,
+    "EarliestFatalError": 0,
+    "StartTime": 1790583459788,
+    "EndTime": 1790583482768,
+    "PlaygroundUserID": 36785,
+    "OperatingSystem": "win32",
+    "UnityPackageID": null,
+    "TargetPlatform": "playground",
+    "UnityVersion": "6000.0.78f1",
+    "LunaVersion": "7.2.0",
+    "LogCount": 2,
+    "Logs": [
+        {
+            "LogID": "17bec6e0-f9f6-48b0-bb22-4f3cc0d2000a",
+            "Order": 2,
+            "Timestamp": 1790583482964,
+            "Stage": 3,
+            "ErrorType": 3,
+            "ErrorCode": "LP3007",
+            "Description": "You are not using any custom events",
+            "Details": [
+                "You are not using any custom events. It is recommended to use custom events to have a better understanding of the playable."
+            ],
+            "DescriptionValues": [
+                ""
+            ],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "370ac05b-66c8-4c7b-be73-9447d7c0750e",
+            "Order": 0,
+            "Timestamp": 1790583464577,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1014",
+            "Description": "We recommend running Runtime Analysis to find and remove all unused code",
+            "Details": [
+                "Navigate to the Runtime Analysis → Code tab to enable code stripping. Before uploading the playable, please make sure to have played all scenario’s of the playable in a development build to make Runtime Analysis work properly."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        }
+    ]
+}
