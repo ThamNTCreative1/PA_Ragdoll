@@ -1,0 +1,72 @@
+{
+  "ignores": [
+    "F:/UnityProjects/SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
+    "F:/UnityProjects/SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs",
+    "F:/UnityProjects/SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs",
+    "F:/UnityProjects/SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenProShortcuts.cs"
+  ],
+  "groups": [
+    [
+      "F:/UnityProjects/SRG_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/AudioController.cs",
+      "F:/UnityProjects/SRG_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/GameController.cs",
+      "F:/UnityProjects/SRG_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/CameraController.cs",
+      "F:/UnityProjects/SRG_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/LavaController.cs",
+      "F:/UnityProjects/SRG_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/LavaPartDisappear.cs",
+      "F:/UnityProjects/SRG_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/LunaController.cs",
+      "F:/UnityProjects/SRG_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/TakeDamage.cs",
+      "F:/UnityProjects/SRG_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/BodyPiece.cs",
+      "F:/UnityProjects/SRG_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/BodyController.cs",
+      "F:/UnityProjects/SRG_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Dragable.cs",
+      "F:/UnityProjects/SRG_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/DragController.cs"
+    ],
+    [
+      "F:/UnityProjects/SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs"
+    ],
+    [
+      "F:/UnityProjects/SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleEPOOutline.cs"
+    ],
+    [
+      "F:/UnityProjects/SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs"
+    ],
+    [
+      "F:/UnityProjects/SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs"
+    ],
+    [
+      "F:/UnityProjects/SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs"
+    ],
+    [
+      "F:/UnityProjects/SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
+      "F:/UnityProjects/SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs"
+    ],
+    [
+      "F:/UnityProjects/SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
+    ],
+    [
+      "F:/UnityProjects/SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs"
+    ],
+    [
+      "F:/UnityProjects/SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenDeAudio.cs"
+    ],
+    [
+      "F:/UnityProjects/SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenDeUnityExtended.cs"
+    ],
+    [
+      "F:/UnityProjects/SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenProShortcuts.cs"
+    ],
+    [
+      "F:/UnityProjects/SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenTextMeshPro.cs"
+    ],
+    [
+      "F:/UnityProjects/SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenTk2d.cs"
+    ],
+    [
+      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
+    ],
+    [
+      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
+    ],
+    [
+      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+    ]
+  ]
+}

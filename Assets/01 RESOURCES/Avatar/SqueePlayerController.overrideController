@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SqueePlayerController
+  m_Controller: {fileID: 9100000, guid: 4b0486f4ffb35c94ca797fa50f9a8940, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 4d69c38d40c25034cb58a7de329f1317, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: cde8deff22976b14d8a45bfe619da93e, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 39539bcfef3a67f4fb273c4ad5721c15, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: cde8deff22976b14d8a45bfe619da93e, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 94bea1d485f55fd4b858f531ab5365aa, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1b555b00c227f1b40a1abf81a363fc78, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: d26af6cf4722e2948b4ae8ad491a6516, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 2190dca7d571fc34b9dbb06deb6f6d26, type: 2}
