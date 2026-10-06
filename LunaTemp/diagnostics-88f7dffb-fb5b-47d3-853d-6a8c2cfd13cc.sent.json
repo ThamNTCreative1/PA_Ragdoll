@@ -1,0 +1,86 @@
+{
+    "BuildID": "88f7dffb-fb5b-47d3-853d-6a8c2cfd13cc",
+    "Command": "project:upload",
+    "ProjectID": "ff24b2211bd970c4d920bad068d2912a",
+    "ProjectStateHash": "1801ea71a8ff51ba8aae0f909d3fc9a01fae8afedc4d966019f9d922f2b61d25",
+    "StageCompletedAt": 3,
+    "EarliestFatalError": 0,
+    "StartTime": 1791279509755,
+    "EndTime": 1791279532422,
+    "PlaygroundUserID": 36785,
+    "OperatingSystem": "win32",
+    "UnityPackageID": null,
+    "TargetPlatform": "playground",
+    "UnityVersion": "6000.0.78f1",
+    "LunaVersion": "7.2.0",
+    "LogCount": 3,
+    "Logs": [
+        {
+            "LogID": "69639892-3499-4601-95ad-b74b3bd86c25",
+            "Order": 3,
+            "Timestamp": 1791279532614,
+            "Stage": 3,
+            "ErrorType": 3,
+            "ErrorCode": "LP3007",
+            "Description": "You are not using any custom events",
+            "Details": [
+                "You are not using any custom events. It is recommended to use custom events to have a better understanding of the playable."
+            ],
+            "DescriptionValues": [
+                ""
+            ],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "552a960e-a3ac-447c-b84e-875776952cfb",
+            "Order": 0,
+            "Timestamp": 1791279514162,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1014",
+            "Description": "We recommend running Runtime Analysis to find and remove all unused code",
+            "Details": [
+                "Navigate to the Runtime Analysis → Code tab to enable code stripping. Before uploading the playable, please make sure to have played all scenario’s of the playable in a development build to make Runtime Analysis work properly."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "ae412083-6d9a-46e8-8442-bacd03fa2c71",
+            "Order": 1,
+            "Timestamp": 1791279514174,
+            "Stage": 1,
+            "ErrorType": 3,
+            "ErrorCode": "LP1002",
+            "Description": "Repeat wrap mode used on a texture with non power-of-two dimensions, this might not be rendered correctly.",
+            "Details": [
+                "Repeat wrap mode used on 'ground' texture at 'Assets/01 RESOURCES/PMP/ground.png' with non power-of-two dimensions, this might not be rendered correctly."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [
+                "ground",
+                "Assets/01 RESOURCES/PMP/ground.png"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "Assets/01 RESOURCES/PMP/ground.png",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        }
+    ]
+}
