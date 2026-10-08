@@ -48,6 +48,13 @@ public class VFXController : MonoBehaviour
         GameObject vfx = GetFreeVFX();
         vfx.transform.position = position;
         vfx.SetActive(true);
+        // Chu dong phat lai hieu ung (khong phu thuoc playOnAwake - Luna/WebGL khong on dinh)
+        ParticleSystem[] systems = vfx.GetComponentsInChildren<ParticleSystem>();
+        for (int i = 0; i < systems.Length; i++)
+        {
+            systems[i].Clear();
+            systems[i].Play();
+        }
         StartCoroutine(ReturnToPool(vfx));
     }
     private IEnumerator ReturnToPool(GameObject blood)

@@ -40,7 +40,9 @@ public class AudioController : MonoBehaviour
     public void PlaySFX(AudioClip clip)
     {
         if (!clip) return;
-        GetFreeSource().PlayOneShot(clip);
+        AudioSource s = GetFreeSource();
+        s.PlayOneShot(clip);
+        SFXPool.Enqueue(s); // xoay vong, khong tao them object moi
     }
     private AudioSource GetFreeSource()
     {
