@@ -1,67 +1,36 @@
 {
-  "ignores": [
-    "D:/UnityProjects/SRP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs",
-    "D:/UnityProjects/SRP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs",
-    "D:/UnityProjects/SRP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
-    "D:/UnityProjects/SRP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs",
-    "D:/UnityProjects/SRP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs",
-    "D:/UnityProjects/SRP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenProShortcuts.cs"
-  ],
+  "ignores": [],
   "groups": [
     [
-      "D:/UnityProjects/SRP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/AudioController.cs",
-      "D:/UnityProjects/SRP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/BonkController.cs",
-      "D:/UnityProjects/SRP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/TargetController.cs",
-      "D:/UnityProjects/SRP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/GameController.cs",
-      "D:/UnityProjects/SRP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/MonsterController.cs",
-      "D:/UnityProjects/SRP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/VFXController.cs"
+      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Core/AudioManager.cs",
+      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Core/GameManager.cs",
+      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Hazards/Rifle.cs",
+      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Gameplay/LevelRefs.cs",
+      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Ragdoll/Ragdoll.cs",
+      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Gameplay/Grabbable.cs",
+      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Ragdoll/CharacterSelector.cs",
+      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/LunaController.cs",
+      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Luna/LunaBridge.cs",
+      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Core/GameConfig.cs",
+      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Hazards/FlameThrower.cs",
+      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Hazards/FlameParticle.cs",
+      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Hazards/Acid.cs",
+      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Hazards/Bullet.cs",
+      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/FX/FxManager.cs",
+      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Hazards/Spike.cs",
+      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Ragdoll/RagdollPart.cs",
+      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Gameplay/ExitZone.cs",
+      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Gameplay/Pin.cs",
+      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/UI/UIController.cs"
     ],
     [
-      "D:/UnityProjects/SRP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/BalanceController.cs"
+      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Core/CameraFit.cs"
     ],
     [
-      "D:/UnityProjects/SRP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/CharacterController.cs",
-      "D:/UnityProjects/SRP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/LunaController.cs"
+      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Core/ScreenBackground.cs"
     ],
     [
-      "D:/UnityProjects/SRP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs"
-    ],
-    [
-      "D:/UnityProjects/SRP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleEPOOutline.cs"
-    ],
-    [
-      "D:/UnityProjects/SRP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs"
-    ],
-    [
-      "D:/UnityProjects/SRP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs"
-    ],
-    [
-      "D:/UnityProjects/SRP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs"
-    ],
-    [
-      "D:/UnityProjects/SRP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
-      "D:/UnityProjects/SRP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs"
-    ],
-    [
-      "D:/UnityProjects/SRP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
-    ],
-    [
-      "D:/UnityProjects/SRP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs"
-    ],
-    [
-      "D:/UnityProjects/SRP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenDeAudio.cs"
-    ],
-    [
-      "D:/UnityProjects/SRP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenDeUnityExtended.cs"
-    ],
-    [
-      "D:/UnityProjects/SRP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenProShortcuts.cs"
-    ],
-    [
-      "D:/UnityProjects/SRP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenTextMeshPro.cs"
-    ],
-    [
-      "D:/UnityProjects/SRP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenTk2d.cs"
+      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/UI/UICover.cs"
     ],
     [
       "D:/LunaVer/7.2.0/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
