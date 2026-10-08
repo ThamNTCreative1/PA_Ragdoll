@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -27,7 +28,8 @@ public class PlayerController : MonoBehaviour, IDamageable
     private void Zombie()
     {
         isZombie = true;
-        AudioController.Ins.PlaySFX(deadSFX);
+
+        if (!isDead) AudioController.Ins.PlaySFX(deadSFX);
 
         for (int i = 0; i < renderers.Count; i++)
         {
@@ -54,7 +56,7 @@ public class PlayerController : MonoBehaviour, IDamageable
     {
         if (isDead) return;
         isDead = true;
-        AudioController.Ins.PlaySFX(deadSFX);
+        if (!isZombie) AudioController.Ins.PlaySFX(deadSFX);
         foreach (Piece p in pieces)
         {
             Vector2 force = new Vector2(Random.Range(minForce.x, maxForce.x), Random.Range(minForce.y, maxForce.y));
@@ -62,6 +64,12 @@ public class PlayerController : MonoBehaviour, IDamageable
             p.Rb.AddForce(force);
         }
         head.enabled = false;
+        StartCoroutine(Destroy());
+    }
+    private IEnumerator Destroy()
+    {
+        yield return new WaitForSeconds(5);
+        gameObject.SetActive(false);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

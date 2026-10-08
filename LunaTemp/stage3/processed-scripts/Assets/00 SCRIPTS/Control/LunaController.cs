@@ -13,12 +13,9 @@ public class LunaController : MonoBehaviour
     [LunaPlaygroundField("Color Header Text 1")] public Color ColorHeaderText1;
     [LunaPlaygroundField("Header Text 2")] public string HeaderText2;
     [LunaPlaygroundField("Color Header Text 2")] public Color ColorHeaderText2;
-    [LunaPlaygroundField("Game Over Text")] public string GameOverText;
-    [LunaPlaygroundField("Color Game Over Text")] public Color ColorGameOverText;
 
     [SerializeField] private Text header1;
     [SerializeField] private Text header2;
-    [SerializeField] private Text lossText;
 
 
     [SerializeField] private RawImage BGImage;
@@ -39,9 +36,6 @@ public class LunaController : MonoBehaviour
 
         header2.text = HeaderText2;
         header2.color = ColorHeaderText2;
-
-        lossText.text = GameOverText;
-        lossText.color = ColorGameOverText;
     }
     private void Start()
     {

@@ -150,8 +150,8 @@ TextureImporter:
       name: z1hand
       rect:
         serializedVersion: 2
-        x: 2
-        y: 62
+        x: 0
+        y: 0
         width: 16
         height: 64
       alignment: 0
@@ -172,8 +172,8 @@ TextureImporter:
       name: z3hand
       rect:
         serializedVersion: 2
-        x: 22
-        y: 62
+        x: 20
+        y: 0
         width: 16
         height: 64
       alignment: 0
@@ -191,11 +191,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zhand_right-sheet0_2
+      name: z6handr
       rect:
         serializedVersion: 2
-        x: 42
-        y: 62
+        x: 40
+        y: 0
         width: 16
         height: 64
       alignment: 0
@@ -216,8 +216,8 @@ TextureImporter:
       name: z4hand
       rect:
         serializedVersion: 2
-        x: 62
-        y: 62
+        x: 60
+        y: 0
         width: 16
         height: 64
       alignment: 0
@@ -238,8 +238,8 @@ TextureImporter:
       name: z2hand
       rect:
         serializedVersion: 2
-        x: 82
-        y: 62
+        x: 80
+        y: 0
         width: 16
         height: 64
       alignment: 0
@@ -257,11 +257,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zhand_right-sheet0_5
+      name: z8handr
       rect:
         serializedVersion: 2
-        x: 102
-        y: 62
+        x: 100
+        y: 0
         width: 16
         height: 64
       alignment: 0
@@ -274,50 +274,6 @@ TextureImporter:
       bones: []
       spriteID: 9fa473a6ec542f690800000000000000
       internalID: -7569911270808794375
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zhand_right-sheet0_6
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 42
-        width: 64
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8d1d382a4309ccf10800000000000000
-      internalID: 2291364866163986904
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zhand_right-sheet0_7
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 14
-        width: 64
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 20d3557c40dd94a20800000000000000
-      internalID: 3047209635486711042
       vertices: []
       indices: 
       edges: []
@@ -340,8 +296,8 @@ TextureImporter:
       z2hand: -130056973783485910
       z3hand: 7924593658997647829
       z4hand: -4519872175225242485
-      zhand_right-sheet0_2: 625045786439067658
-      zhand_right-sheet0_5: -7569911270808794375
+      z6handr: 625045786439067658
+      z8handr: -7569911270808794375
       zhand_right-sheet0_6: 2291364866163986904
       zhand_right-sheet0_7: 3047209635486711042
   mipmapLimitGroupName: 

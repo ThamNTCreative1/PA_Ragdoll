@@ -1,0 +1,112 @@
+{
+    "BuildID": "458bfc5d-ac1b-4dca-99ae-7d00f7018057",
+    "Command": "project:deploy",
+    "ProjectID": "ff24b2211bd970c4d920bad068d2912a",
+    "ProjectStateHash": "b1cc6697897afd05099cb29536990d81a9e3f599f57a2e478c750b34590e7949",
+    "StageCompletedAt": 3,
+    "EarliestFatalError": 0,
+    "StartTime": 1791369607490,
+    "EndTime": 1791369630954,
+    "PlaygroundUserID": 36785,
+    "OperatingSystem": "win32",
+    "UnityPackageID": null,
+    "TargetPlatform": "playground",
+    "UnityVersion": "6000.0.78f1",
+    "LunaVersion": "7.2.0",
+    "LogCount": 4,
+    "Logs": [
+        {
+            "LogID": "6df182a0-9bc4-4c18-a52c-c8ae1b3482a5",
+            "Order": 4,
+            "Timestamp": 1791369631166,
+            "Stage": 3,
+            "ErrorType": 3,
+            "ErrorCode": "LP3007",
+            "Description": "You are not using any custom events",
+            "Details": [
+                "You are not using any custom events. It is recommended to use custom events to have a better understanding of the playable."
+            ],
+            "DescriptionValues": [
+                ""
+            ],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "281793c5-7278-4341-a03c-9e9818288b1a",
+            "Order": 0,
+            "Timestamp": 1791369611352,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1014",
+            "Description": "We recommend running Runtime Analysis to find and remove all unused code",
+            "Details": [
+                "Navigate to the Runtime Analysis → Code tab to enable code stripping. Before uploading the playable, please make sure to have played all scenario’s of the playable in a development build to make Runtime Analysis work properly."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "3c92190f-d852-4c39-b398-e067cc691c56",
+            "Order": 1,
+            "Timestamp": 1791369611352,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1016",
+            "Description": "Extensive usage of ParticleSystem Component",
+            "Details": [
+                "There is extensive usage of the ParticleSystem component.\nExcessive usage of any component can be detrimental to performance on lower and in some cases higher end devices, consider reducing the amount the component is used.\nRecommended count: 10, current count 49."
+            ],
+            "DescriptionValues": [
+                "ParticleSystem"
+            ],
+            "DetailsValues": [
+                "ParticleSystem",
+                "10",
+                "49"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "805c240f-3360-4a73-ab41-073cfef79171",
+            "Order": 2,
+            "Timestamp": 1791369611353,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1024",
+            "Description": "Huge RAM usage",
+            "Details": [
+                "Playable have huge RAM usage (271.31 MB). Recommended RAM value is lower than 256.00 MB to support low-end devices"
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [
+                "256.00",
+                "271.31"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        }
+    ]
+}

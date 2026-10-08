@@ -13,11 +13,15 @@ public class GameController : MonoBehaviour
 
     [Header("Option")]
     [SerializeField] private GameObject options;
-    [SerializeField] private Button smokeButton;
-    [SerializeField] private GameObject smoke;
-    [SerializeField] private Button landmindButton;
-    [SerializeField] private GameObject landmind;
-    [SerializeField] private Button gunButton;
+    [SerializeField] private Button bomb1Button;
+    [SerializeField] private GameObject bomb1;
+    [SerializeField] private Button bomb2Button;
+    [SerializeField] private GameObject bomb2;
+    [SerializeField] private Button bomb3Button;
+    [SerializeField] private GameObject bomb3;
+    [SerializeField] private Button bomb4Button;
+    [SerializeField] private GameObject bomb4;
+
 
     [Header("Tut")]
     [SerializeField] protected GameObject tut;
@@ -47,11 +51,27 @@ public class GameController : MonoBehaviour
     private void Awake()
     {
         CreateIns();
-        smokeButton.onClick.AddListener(ClickOption);
-        smokeButton.onClick.AddListener(SpawnSmoke);
-        landmindButton.onClick.AddListener(ClickOption);
-        landmindButton.onClick.AddListener(SpawnLandmine);
-        gunButton.onClick.AddListener(ClickOption);
+        bomb1Button.onClick.AddListener(() =>
+        {
+            ClickOption();
+            bomb1.SetActive(true);
+        });
+        bomb2Button.onClick.AddListener(() =>
+        {
+            ClickOption();
+            bomb2.SetActive(true);
+        });
+        bomb3Button.onClick.AddListener(() =>
+        {
+            ClickOption();
+            bomb3.SetActive(true);
+        });
+        bomb4Button.onClick.AddListener(() =>
+        {
+            ClickOption();
+            bomb4.SetActive(true);
+        });
+
     }
     public void PauseGame()
     {
@@ -87,14 +107,6 @@ public class GameController : MonoBehaviour
     public Action OnGameOver;
     public Action OnGameComplete;
 
-    public void SpawnLandmine()
-    {
-        landmind.SetActive(true);
-    }
-    public void SpawnSmoke()
-    {
-        smoke.SetActive(true);
-    }
     public void ClickOption()
     {
         startScene.SetActive(false);
@@ -104,7 +116,7 @@ public class GameController : MonoBehaviour
     {
         numMonster = Mathf.Max(0, numMonster - 1);
         if (numMonster > 0) return;
-        Complete();
+        Invoke(nameof(Complete), 1f);
     }
 }
 

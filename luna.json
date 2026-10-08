@@ -2,7 +2,7 @@
     "version": "7.2.0",
     "projectId": "ff24b2211bd970c4d920bad068d2912a",
     "applicationID": 42944,
-    "creativeName": "SPS_V03_TrangHTT_TamNTM",
+    "creativeName": "C1_2610_TamNTM_SPS_V04_TrangHTT",
     "pgServer": "EU",
     "window": {
         "‐⁘": true
@@ -3235,10 +3235,6 @@
                 "excluded": true
             },
             {
-                "name": "LunaUnity.Utils.Delay",
-                "excluded": true
-            },
-            {
                 "name": "LunaUnity.Utils.Interval",
                 "excluded": true
             },
@@ -3340,10 +3336,6 @@
             },
             {
                 "name": "UnityEngine.U2D.SpriteAtlas",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.WaitForSecondsRealtime",
                 "excluded": true
             },
             {
@@ -8732,7 +8724,7 @@
                     },
                     {
                         "name": "isWhiteSpace",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "isDigit",
@@ -16558,7 +16550,7 @@
                 "instanceMethods": [
                     {
                         "name": "Invoke",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "AddListener",
@@ -26824,7 +26816,7 @@
                     },
                     {
                         "name": "MarkForKilling",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "EvaluateTweenLink",
@@ -26832,7 +26824,7 @@
                     },
                     {
                         "name": "DespawnActiveTweens",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ClearTweenArray",
@@ -28545,14 +28537,6 @@
                         "excluded": false
                     },
                     {
-                        "name": "SpawnLandmine",
-                        "excluded": false
-                    },
-                    {
-                        "name": "SpawnSmoke",
-                        "excluded": false
-                    },
-                    {
                         "name": "ClickOption",
                         "excluded": false
                     },
@@ -28626,6 +28610,10 @@
                     },
                     {
                         "name": "Zombie",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Destroy$1",
                         "excluded": false
                     }
                 ]
@@ -29582,7 +29570,7 @@
                     },
                     {
                         "name": "insideUnitCircle#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "rotation#get",
@@ -31639,36 +31627,6 @@
                 ]
             },
             {
-                "className": "BombController",
-                "staticMethods": [],
-                "instanceMethods": [
-                    {
-                        "name": "init",
-                        "excluded": false
-                    },
-                    {
-                        "name": "OnEnable",
-                        "excluded": false
-                    },
-                    {
-                        "name": "CountDown",
-                        "excluded": false
-                    },
-                    {
-                        "name": "Boom",
-                        "excluded": false
-                    },
-                    {
-                        "name": "Damage",
-                        "excluded": false
-                    },
-                    {
-                        "name": "DestroyBomb",
-                        "excluded": true
-                    }
-                ]
-            },
-            {
                 "className": "UnityEngine.Physics2D",
                 "staticMethods": [],
                 "instanceMethods": [
@@ -32437,32 +32395,6 @@
                 ]
             },
             {
-                "className": "LandmineController",
-                "staticMethods": [],
-                "instanceMethods": [
-                    {
-                        "name": "init",
-                        "excluded": false
-                    },
-                    {
-                        "name": "OnCollisionEnter2D",
-                        "excluded": false
-                    },
-                    {
-                        "name": "Boom",
-                        "excluded": false
-                    },
-                    {
-                        "name": "DestroyBomb",
-                        "excluded": false
-                    },
-                    {
-                        "name": "Damage",
-                        "excluded": false
-                    }
-                ]
-            },
-            {
                 "className": "MonsterAnimation",
                 "staticMethods": [],
                 "instanceMethods": [
@@ -32592,6 +32524,134 @@
                     },
                     {
                         "name": "ctor",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "BombBase",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnEnable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "BombStart",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Boom",
+                        "excluded": false
+                    },
+                    {
+                        "name": "DestroyBomb",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Damage",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "ShakeCamera",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ShakeExplosion",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ShakeExplosion$1",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ShakeRoutine",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDisable",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "CollisionBomb",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "OnCollisionEnter2D",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "CountDownBomb",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "BombStart",
+                        "excluded": false
+                    },
+                    {
+                        "name": "CountDown",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "LunaUnity.Utils.Delay",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Stop",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Tick",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Tick\",this)}this.c$-=t;if(this.c$<=0){pc.Application.getApplication().events.off(\"update",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.WaitForSecondsRealtime",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "keepWaiting#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Update",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Reset",
                         "excluded": false
                     }
                 ]

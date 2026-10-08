@@ -1,6 +1,6 @@
-if ( TRACE ) { TRACE( JSON.parse( '["AudioController#CreateIns","AudioController#Awake","AudioController#BootstrapPool","AudioController#Start","AudioController#PlaySFX","AudioController#GetFreeSource","AudioController#CreateNewSource","AudioController#ReturnToPool","BalanceController#Start","BalanceController#Update","BombController#init","BombController#OnEnable","BombController#CountDown","BombController#Boom","BombController#DestroyBomb","BombController#Damage","BulletController#Start","BulletController#OnEnable","BulletController#Update","BulletController#Move","BulletController#OnCollisionEnter2D","BulletController#LifeTime","BulletController#ReturnToPool","DG.Tweening.DOTweenAnimation#Dispatch_OnReset","DG.Tweening.DOTweenAnimation#TypeToDOTargetType","DG.Tweening.DOTweenAnimation#init","DG.Tweening.DOTweenAnimation#Awake","DG.Tweening.DOTweenAnimation#Start","DG.Tweening.DOTweenAnimation#Reset","DG.Tweening.DOTweenAnimation#OnDestroy","DG.Tweening.DOTweenAnimation#RewindThenRecreateTween","DG.Tweening.DOTweenAnimation#RewindThenRecreateTweenAndPlay","DG.Tweening.DOTweenAnimation#RecreateTween","DG.Tweening.DOTweenAnimation#RecreateTweenAndPlay","DG.Tweening.DOTweenAnimation#CreateTween","DG.Tweening.DOTweenAnimation#GetTweens","DG.Tweening.DOTweenAnimation#SetAnimationTarget","DG.Tweening.DOTweenAnimation#DOPlay","DG.Tweening.DOTweenAnimation#DOPlayBackwards","DG.Tweening.DOTweenAnimation#DOPlayForward","DG.Tweening.DOTweenAnimation#DOPause","DG.Tweening.DOTweenAnimation#DOTogglePause","DG.Tweening.DOTweenAnimation#DORewind","DG.Tweening.DOTweenAnimation#DORestart","DG.Tweening.DOTweenAnimation#DORestart$1","DG.Tweening.DOTweenAnimation#DOComplete","DG.Tweening.DOTweenAnimation#DOKill","DG.Tweening.DOTweenAnimation#DOPlayById","DG.Tweening.DOTweenAnimation#DOPlayAllById","DG.Tweening.DOTweenAnimation#DOPauseAllById","DG.Tweening.DOTweenAnimation#DOPlayBackwardsById","DG.Tweening.DOTweenAnimation#DOPlayBackwardsAllById","DG.Tweening.DOTweenAnimation#DOPlayForwardById","DG.Tweening.DOTweenAnimation#DOPlayForwardAllById","DG.Tweening.DOTweenAnimation#DOPlayNext","DG.Tweening.DOTweenAnimation#DORewindAndPlayNext","DG.Tweening.DOTweenAnimation#DORewindAllById","DG.Tweening.DOTweenAnimation#DORestartById","DG.Tweening.DOTweenAnimation#DORestartAllById","DG.Tweening.DOTweenAnimation#DOKillById","DG.Tweening.DOTweenAnimation#DOKillAllById","DG.Tweening.DOTweenAnimation#CreateEditorPreview","DG.Tweening.DOTweenAnimation#GetTweenGO","DG.Tweening.DOTweenAnimation#GetTweenTarget","DG.Tweening.DOTweenAnimation#ReEvaluateRelativeTween","DG.Tweening.DOTweenAnimationExtensions#IsSameOrSubclassOf","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#ctor","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#ctor","DG.Tweening.DOTweenCYInstruction.WaitForKill#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForKill#ctor","DG.Tweening.DOTweenCYInstruction.WaitForPosition#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForPosition#ctor","DG.Tweening.DOTweenCYInstruction.WaitForRewind#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForRewind#ctor","DG.Tweening.DOTweenCYInstruction.WaitForStart#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForStart#ctor","DG.Tweening.DOTweenModuleSprite#DOColor","DG.Tweening.DOTweenModuleSprite#DOFade","DG.Tweening.DOTweenModuleSprite#DOGradientColor","DG.Tweening.DOTweenModuleSprite#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOFade","DG.Tweening.DOTweenModuleUI#DOFade$1","DG.Tweening.DOTweenModuleUI#DOFade$2","DG.Tweening.DOTweenModuleUI#DOFade$3","DG.Tweening.DOTweenModuleUI#DOFade$4","DG.Tweening.DOTweenModuleUI#DOColor","DG.Tweening.DOTweenModuleUI#DOColor$1","DG.Tweening.DOTweenModuleUI#DOColor$2","DG.Tweening.DOTweenModuleUI#DOColor$3","DG.Tweening.DOTweenModuleUI#DOFillAmount","DG.Tweening.DOTweenModuleUI#DOGradientColor","DG.Tweening.DOTweenModuleUI#DOFlexibleSize","DG.Tweening.DOTweenModuleUI#DOMinSize","DG.Tweening.DOTweenModuleUI#DOPreferredSize","DG.Tweening.DOTweenModuleUI#DOScale","DG.Tweening.DOTweenModuleUI#DOAnchorPos","DG.Tweening.DOTweenModuleUI#DOAnchorPosX","DG.Tweening.DOTweenModuleUI#DOAnchorPosY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3D","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DX","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DZ","DG.Tweening.DOTweenModuleUI#DOAnchorMax","DG.Tweening.DOTweenModuleUI#DOAnchorMin","DG.Tweening.DOTweenModuleUI#DOPivot","DG.Tweening.DOTweenModuleUI#DOPivotX","DG.Tweening.DOTweenModuleUI#DOPivotY","DG.Tweening.DOTweenModuleUI#DOSizeDelta","DG.Tweening.DOTweenModuleUI#DOPunchAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos$1","DG.Tweening.DOTweenModuleUI#DOJumpAnchorPos","DG.Tweening.DOTweenModuleUI#DONormalizedPos","DG.Tweening.DOTweenModuleUI#DOHorizontalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOVerticalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOValue","DG.Tweening.DOTweenModuleUI#DOCounter","DG.Tweening.DOTweenModuleUI#DOText","DG.Tweening.DOTweenModuleUI#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOBlendableColor$1","DG.Tweening.DOTweenModuleUI#DOBlendableColor$2","DG.Tweening.DOTweenModuleUI#DOShapeCircle","DG.Tweening.DOTweenModuleUI.Utils#SwitchToRectTransform","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor$1","DG.Tweening.DOTweenModuleUnityVersion#WaitForCompletion","DG.Tweening.DOTweenModuleUnityVersion#WaitForRewind","DG.Tweening.DOTweenModuleUnityVersion#WaitForKill","DG.Tweening.DOTweenModuleUnityVersion#WaitForElapsedLoops","DG.Tweening.DOTweenModuleUnityVersion#WaitForPosition","DG.Tweening.DOTweenModuleUnityVersion#WaitForStart","DG.Tweening.DOTweenModuleUnityVersion#DOOffset","DG.Tweening.DOTweenModuleUnityVersion#DOTiling","DG.Tweening.DOTweenModuleUtils#Init","DG.Tweening.DOTweenModuleUtils#Preserver","DG.Tweening.DOTweenModuleUtils.Physics#SetOrientationOnPath","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody2D","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody","DG.Tweening.DOTweenModuleUtils.Physics#CreateDOTweenPathTween","DG.Tweening.DOTweenProShortcuts#ctor","DG.Tweening.DOTweenProShortcuts#DOSpiral","FightController#Pool#get","FightController#Awake","FightController#Action","FightController#Spawn","FightController#GetFreeSpawn","FightController#CreateNewSpawn","FightOption#getDefaultValue","FightOption#ctor","FightOption#getHashCode","FightOption#equals","FightOption#$clone","GameController#P#get","GameController#CreateIns","GameController#Awake","GameController#PauseGame","GameController#GameOver","GameController#Complete","GameController#WaitForGameOver","GameController#SpawnLandmine","GameController#SpawnSmoke","GameController#ClickOption","GameController#RemoveMonster","KunaiController#Update","KunaiController#Rotate","KunaiController#Move","KunaiController#Start","KunaiController#OnEnable","KunaiController#OnCollisionEnter2D","KunaiController#LifeTime","KunaiController#ReturnToPool","LandmineController#init","LandmineController#OnCollisionEnter2D","LandmineController#Boom","LandmineController#DestroyBomb","LandmineController#Damage","LayoutController#Start","LayoutController#Update","LayoutController#Fit","LunaController#init","LunaController#Awake","LunaController#InitText","LunaController#Start","LunaController#ClickCTA","LunaController#EndGame","MonsterAnimation#StartAnimation","MonsterAnimation#StopAnimation","MonsterAnimation#StartLegAnimation","MonsterAnimation#StopLegAnimation","MonsterAnimation#HandAnimation","MonsterAnimation#LegAnimation","MonsterMove#Move","MonsterTarget#Left#get","MonsterTarget#Awake","MonsterTarget#Update","MonsterTarget#CheckTarget","MonsterTarget#UpdateTarget","MonsterTarget#OnTriggerEnter2D","MonsterTarget#OnTriggerExit2D","Piece#getDefaultValue","Piece#ctor","Piece#getHashCode","Piece#equals","Piece#$clone","SmokeController#OnEnable","SmokeController#CountDown","TriggerMonster#OnTriggerEnter2D","TutController#Start","TutController#OnDestroy","VFXController#CreateIns","VFXController#Awake","VFXController#CreateNewVFX","VFXController#GetFreeVFX","VFXController#SpawnVFX","VFXController#ReturnToPool","BlockController#Start","BlockController#TakeDamage","BlockController#TakeDMGPerSec","BlockController#Break","BlockController#OnCollisionEnter2D","BlockController#OnCollisionExit2D","DropController#Update","DropController#CheckInput","MonsterController#IsDead#get","MonsterController#init","MonsterController#Start","MonsterController#Move","MonsterController#FixedUpdate","MonsterController#TakeDamage","MonsterController#Dead","MonsterController#Destroy$1","MonsterController#Animation","PlayerController#Fight#get","PlayerController#init","PlayerController#Awake","PlayerController#Zombie","PlayerController#ChangeFightOption","PlayerController#TakeDamage","PlayerController#Dead","PlayerController#OnTriggerEnter2D","ShootController#OnEnable","ShootController#OnDisable","ShootController#WaitForCD","ShootController#Action","ShootController#Spawn","ShootController#Animation","ShootController#Update","ShootController#CheckInput","ShootController#AutoShoot"]' ) ); }
+if ( TRACE ) { TRACE( JSON.parse( '["AudioController#CreateIns","AudioController#Awake","AudioController#BootstrapPool","AudioController#Start","AudioController#PlaySFX","AudioController#GetFreeSource","AudioController#CreateNewSource","AudioController#ReturnToPool","BalanceController#Start","BalanceController#Update","BombBase#init","BombBase#OnEnable","BombBase#BombStart","BombBase#Boom","BombBase#DestroyBomb","BombBase#Damage","BulletController#Start","BulletController#OnEnable","BulletController#Update","BulletController#Move","BulletController#OnCollisionEnter2D","BulletController#LifeTime","BulletController#ReturnToPool","DG.Tweening.DOTweenAnimation#Dispatch_OnReset","DG.Tweening.DOTweenAnimation#TypeToDOTargetType","DG.Tweening.DOTweenAnimation#init","DG.Tweening.DOTweenAnimation#Awake","DG.Tweening.DOTweenAnimation#Start","DG.Tweening.DOTweenAnimation#Reset","DG.Tweening.DOTweenAnimation#OnDestroy","DG.Tweening.DOTweenAnimation#RewindThenRecreateTween","DG.Tweening.DOTweenAnimation#RewindThenRecreateTweenAndPlay","DG.Tweening.DOTweenAnimation#RecreateTween","DG.Tweening.DOTweenAnimation#RecreateTweenAndPlay","DG.Tweening.DOTweenAnimation#CreateTween","DG.Tweening.DOTweenAnimation#GetTweens","DG.Tweening.DOTweenAnimation#SetAnimationTarget","DG.Tweening.DOTweenAnimation#DOPlay","DG.Tweening.DOTweenAnimation#DOPlayBackwards","DG.Tweening.DOTweenAnimation#DOPlayForward","DG.Tweening.DOTweenAnimation#DOPause","DG.Tweening.DOTweenAnimation#DOTogglePause","DG.Tweening.DOTweenAnimation#DORewind","DG.Tweening.DOTweenAnimation#DORestart","DG.Tweening.DOTweenAnimation#DORestart$1","DG.Tweening.DOTweenAnimation#DOComplete","DG.Tweening.DOTweenAnimation#DOKill","DG.Tweening.DOTweenAnimation#DOPlayById","DG.Tweening.DOTweenAnimation#DOPlayAllById","DG.Tweening.DOTweenAnimation#DOPauseAllById","DG.Tweening.DOTweenAnimation#DOPlayBackwardsById","DG.Tweening.DOTweenAnimation#DOPlayBackwardsAllById","DG.Tweening.DOTweenAnimation#DOPlayForwardById","DG.Tweening.DOTweenAnimation#DOPlayForwardAllById","DG.Tweening.DOTweenAnimation#DOPlayNext","DG.Tweening.DOTweenAnimation#DORewindAndPlayNext","DG.Tweening.DOTweenAnimation#DORewindAllById","DG.Tweening.DOTweenAnimation#DORestartById","DG.Tweening.DOTweenAnimation#DORestartAllById","DG.Tweening.DOTweenAnimation#DOKillById","DG.Tweening.DOTweenAnimation#DOKillAllById","DG.Tweening.DOTweenAnimation#CreateEditorPreview","DG.Tweening.DOTweenAnimation#GetTweenGO","DG.Tweening.DOTweenAnimation#GetTweenTarget","DG.Tweening.DOTweenAnimation#ReEvaluateRelativeTween","DG.Tweening.DOTweenAnimationExtensions#IsSameOrSubclassOf","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#ctor","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#ctor","DG.Tweening.DOTweenCYInstruction.WaitForKill#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForKill#ctor","DG.Tweening.DOTweenCYInstruction.WaitForPosition#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForPosition#ctor","DG.Tweening.DOTweenCYInstruction.WaitForRewind#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForRewind#ctor","DG.Tweening.DOTweenCYInstruction.WaitForStart#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForStart#ctor","DG.Tweening.DOTweenModuleSprite#DOColor","DG.Tweening.DOTweenModuleSprite#DOFade","DG.Tweening.DOTweenModuleSprite#DOGradientColor","DG.Tweening.DOTweenModuleSprite#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOFade","DG.Tweening.DOTweenModuleUI#DOFade$1","DG.Tweening.DOTweenModuleUI#DOFade$2","DG.Tweening.DOTweenModuleUI#DOFade$3","DG.Tweening.DOTweenModuleUI#DOFade$4","DG.Tweening.DOTweenModuleUI#DOColor","DG.Tweening.DOTweenModuleUI#DOColor$1","DG.Tweening.DOTweenModuleUI#DOColor$2","DG.Tweening.DOTweenModuleUI#DOColor$3","DG.Tweening.DOTweenModuleUI#DOFillAmount","DG.Tweening.DOTweenModuleUI#DOGradientColor","DG.Tweening.DOTweenModuleUI#DOFlexibleSize","DG.Tweening.DOTweenModuleUI#DOMinSize","DG.Tweening.DOTweenModuleUI#DOPreferredSize","DG.Tweening.DOTweenModuleUI#DOScale","DG.Tweening.DOTweenModuleUI#DOAnchorPos","DG.Tweening.DOTweenModuleUI#DOAnchorPosX","DG.Tweening.DOTweenModuleUI#DOAnchorPosY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3D","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DX","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DZ","DG.Tweening.DOTweenModuleUI#DOAnchorMax","DG.Tweening.DOTweenModuleUI#DOAnchorMin","DG.Tweening.DOTweenModuleUI#DOPivot","DG.Tweening.DOTweenModuleUI#DOPivotX","DG.Tweening.DOTweenModuleUI#DOPivotY","DG.Tweening.DOTweenModuleUI#DOSizeDelta","DG.Tweening.DOTweenModuleUI#DOPunchAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos$1","DG.Tweening.DOTweenModuleUI#DOJumpAnchorPos","DG.Tweening.DOTweenModuleUI#DONormalizedPos","DG.Tweening.DOTweenModuleUI#DOHorizontalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOVerticalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOValue","DG.Tweening.DOTweenModuleUI#DOCounter","DG.Tweening.DOTweenModuleUI#DOText","DG.Tweening.DOTweenModuleUI#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOBlendableColor$1","DG.Tweening.DOTweenModuleUI#DOBlendableColor$2","DG.Tweening.DOTweenModuleUI#DOShapeCircle","DG.Tweening.DOTweenModuleUI.Utils#SwitchToRectTransform","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor$1","DG.Tweening.DOTweenModuleUnityVersion#WaitForCompletion","DG.Tweening.DOTweenModuleUnityVersion#WaitForRewind","DG.Tweening.DOTweenModuleUnityVersion#WaitForKill","DG.Tweening.DOTweenModuleUnityVersion#WaitForElapsedLoops","DG.Tweening.DOTweenModuleUnityVersion#WaitForPosition","DG.Tweening.DOTweenModuleUnityVersion#WaitForStart","DG.Tweening.DOTweenModuleUnityVersion#DOOffset","DG.Tweening.DOTweenModuleUnityVersion#DOTiling","DG.Tweening.DOTweenModuleUtils#Init","DG.Tweening.DOTweenModuleUtils#Preserver","DG.Tweening.DOTweenModuleUtils.Physics#SetOrientationOnPath","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody2D","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody","DG.Tweening.DOTweenModuleUtils.Physics#CreateDOTweenPathTween","DG.Tweening.DOTweenProShortcuts#ctor","DG.Tweening.DOTweenProShortcuts#DOSpiral","FightController#Pool#get","FightController#Awake","FightController#Action","FightController#Spawn","FightController#GetFreeSpawn","FightController#CreateNewSpawn","FightOption#getDefaultValue","FightOption#ctor","FightOption#getHashCode","FightOption#equals","FightOption#$clone","GameController#P#get","GameController#CreateIns","GameController#Awake","GameController#PauseGame","GameController#GameOver","GameController#Complete","GameController#WaitForGameOver","GameController#ClickOption","GameController#RemoveMonster","KunaiController#Update","KunaiController#Rotate","KunaiController#Move","KunaiController#Start","KunaiController#OnEnable","KunaiController#OnCollisionEnter2D","KunaiController#LifeTime","KunaiController#ReturnToPool","LayoutController#Start","LayoutController#Update","LayoutController#Fit","LunaController#init","LunaController#Awake","LunaController#InitText","LunaController#Start","LunaController#ClickCTA","LunaController#EndGame","MonsterAnimation#StartAnimation","MonsterAnimation#StopAnimation","MonsterAnimation#StartLegAnimation","MonsterAnimation#StopLegAnimation","MonsterAnimation#HandAnimation","MonsterAnimation#LegAnimation","MonsterMove#Move","MonsterTarget#Left#get","MonsterTarget#Awake","MonsterTarget#Update","MonsterTarget#CheckTarget","MonsterTarget#UpdateTarget","MonsterTarget#OnTriggerEnter2D","MonsterTarget#OnTriggerExit2D","Piece#getDefaultValue","Piece#ctor","Piece#getHashCode","Piece#equals","Piece#$clone","ShakeCamera#init","ShakeCamera#ShakeExplosion","ShakeCamera#ShakeExplosion$1","ShakeCamera#ShakeRoutine","ShakeCamera#OnDisable","SmokeController#OnEnable","SmokeController#CountDown","TriggerMonster#OnTriggerEnter2D","TutController#Start","TutController#OnDestroy","VFXController#CreateIns","VFXController#Awake","VFXController#CreateNewVFX","VFXController#GetFreeVFX","VFXController#SpawnVFX","VFXController#ReturnToPool","BlockController#Start","BlockController#TakeDamage","BlockController#TakeDMGPerSec","BlockController#Break","BlockController#OnCollisionEnter2D","BlockController#OnCollisionExit2D","CollisionBomb#OnCollisionEnter2D","CountDownBomb#BombStart","CountDownBomb#CountDown","DropController#Update","DropController#CheckInput","MonsterController#IsDead#get","MonsterController#init","MonsterController#Start","MonsterController#Move","MonsterController#FixedUpdate","MonsterController#TakeDamage","MonsterController#Dead","MonsterController#Destroy$1","MonsterController#Animation","PlayerController#Fight#get","PlayerController#init","PlayerController#Awake","PlayerController#Zombie","PlayerController#ChangeFightOption","PlayerController#TakeDamage","PlayerController#Dead","PlayerController#Destroy$1","PlayerController#OnTriggerEnter2D","ShootController#OnEnable","ShootController#OnDisable","ShootController#WaitForCD","ShootController#Action","ShootController#Spawn","ShootController#Animation","ShootController#Update","ShootController#CheckInput","ShootController#AutoShoot"]' ) ); }
 /**
- * @version 1.0.9767.27280
+ * @version 1.0.9776.31735
  * @copyright anton
  * @compiler Bridge.NET 17.9.42-luna
  */
@@ -179,83 +179,73 @@ if ( TRACE ) { TRACE( "BalanceController#Update", this ); }
     });
     /*IDamageable end.*/
 
-    /*BombController start.*/
-    Bridge.define("BombController", {
+    /*BombBase start.*/
+    Bridge.define("BombBase", {
         inherits: [UnityEngine.MonoBehaviour],
         fields: {
-            damage: 0,
             layer: null,
+            avatar: null,
             startSound: null,
             actionSound: null,
-            delay: 0,
-            radius: 0
+            boomVFX: null,
+            shakeDuration: 0,
+            shakeStrength: 0,
+            timeDestroy: 0,
+            damage: 0,
+            radius: 0,
+            actionEvents: null,
+            isBoom: false
         },
         ctors: {
             init: function () {
-if ( TRACE ) { TRACE( "BombController#init", this ); }
+if ( TRACE ) { TRACE( "BombBase#init", this ); }
 
                 this.layer = new UnityEngine.LayerMask();
             }
         },
         methods: {
-            /*BombController.OnEnable start.*/
+            /*BombBase.OnEnable start.*/
             OnEnable: function () {
-if ( TRACE ) { TRACE( "BombController#OnEnable", this ); }
+if ( TRACE ) { TRACE( "BombBase#OnEnable", this ); }
 
+                this.BombStart();
+            },
+            /*BombBase.OnEnable end.*/
+
+            /*BombBase.BombStart start.*/
+            BombStart: function () {
+if ( TRACE ) { TRACE( "BombBase#BombStart", this ); }
+
+                this.avatar.SetActive(true);
                 AudioController.Ins.PlaySFX(this.startSound);
-                this.StartCoroutine$1(this.CountDown());
             },
-            /*BombController.OnEnable end.*/
+            /*BombBase.BombStart end.*/
 
-            /*BombController.CountDown start.*/
-            CountDown: function () {
-if ( TRACE ) { TRACE( "BombController#CountDown", this ); }
-
-                var $step = 0,
-                    $jumpFromFinally,
-                    $returnValue,
-                    $async_e;
-
-                var $enumerator = new Bridge.GeneratorEnumerator(Bridge.fn.bind(this, function () {
-                    try {
-                        for (;;) {
-                            switch ($step) {
-                                case 0: {
-                                    $enumerator.current = new UnityEngine.WaitForSeconds(this.delay);
-                                        $step = 1;
-                                        return true;
-                                }
-                                case 1: {
-                                    this.Boom();
-
-                                }
-                                default: {
-                                    return false;
-                                }
-                            }
-                        }
-                    } catch($async_e1) {
-                        $async_e = System.Exception.create($async_e1);
-                        throw $async_e;
-                    }
-                }));
-                return $enumerator;
-            },
-            /*BombController.CountDown end.*/
-
-            /*BombController.Boom start.*/
+            /*BombBase.Boom start.*/
             Boom: function () {
-if ( TRACE ) { TRACE( "BombController#Boom", this ); }
+if ( TRACE ) { TRACE( "BombBase#Boom", this ); }
 
+                if (this.isBoom) {
+                    return;
+                }
+                this.isBoom = true;
+
+                this.avatar.SetActive(false);
+                this.boomVFX.SetActive(true);
                 AudioController.Ins.PlaySFX(this.actionSound);
+
                 this.Damage();
+                this.actionEvents.ForEach(Bridge.fn.bind(this, function (e) {
+                    e != null ? e.Invoke(this.shakeDuration, this.shakeStrength) : null;
+                }));
+
                 this.StartCoroutine$1(this.DestroyBomb());
             },
-            /*BombController.Boom end.*/
+            /*BombBase.Boom end.*/
 
-            /*BombController.DestroyBomb start.*/
+            /*BombBase.DestroyBomb start.*/
             DestroyBomb: function () {
-if ( TRACE ) { TRACE( "BombController#DestroyBomb", this ); }
+if ( TRACE ) { TRACE( "BombBase#DestroyBomb", this ); }
 
                 var $step = 0,
                     $jumpFromFinally,
@@ -267,7 +257,7 @@ if ( TRACE ) { TRACE( "BombController#DestroyBomb", this ); }
                         for (;;) {
                             switch ($step) {
                                 case 0: {
-                                    $enumerator.current = new UnityEngine.WaitForSeconds(1.0);
+                                    $enumerator.current = new UnityEngine.WaitForSeconds(this.timeDestroy);
                                         $step = 1;
                                         return true;
                                 }
@@ -287,11 +277,11 @@ if ( TRACE ) { TRACE( "BombController#DestroyBomb", this ); }
                 }));
                 return $enumerator;
             },
-            /*BombController.DestroyBomb end.*/
+            /*BombBase.DestroyBomb end.*/
 
-            /*BombController.Damage start.*/
+            /*BombBase.Damage start.*/
             Damage: function () {
-if ( TRACE ) { TRACE( "BombController#Damage", this ); }
+if ( TRACE ) { TRACE( "BombBase#Damage", this ); }
 
                 var $t;
                 var cols = UnityEngine.Physics2D.OverlapCircleAll(UnityEngine.Vector2.FromVector3(this.transform.position), this.radius * this.transform.localScale.x, UnityEngine.LayerMask.op_Implicit(this.layer.$clone()));
@@ -312,12 +302,12 @@ if ( TRACE ) { TRACE( "BombController#Damage", this ); }
                     }
                 }
             },
-            /*BombController.Damage end.*/
+            /*BombBase.Damage end.*/
 
 
         }
     });
-    /*BombController end.*/
+    /*BombBase end.*/
 
     /*BulletController start.*/
     Bridge.define("BulletController", {
@@ -3905,7 +3895,7 @@ if ( TRACE ) { TRACE( "FightController#Awake", this ); }
             Action: function (position, rotation) {
 if ( TRACE ) { TRACE( "FightController#Action", this ); }
 
-                this.Spawn(position.$clone(), rotation.$clone());
+                this.Spawn(position, rotation);
             },
             /*FightController.Action end.*/
 
@@ -4007,11 +3997,14 @@ if ( TRACE ) { TRACE( "FightOption#$clone", this ); }
             header: null,
             clickSound: null,
             options: null,
-            smokeButton: null,
-            smoke: null,
-            landmindButton: null,
-            landmind: null,
-            gunButton: null,
+            bomb1Button: null,
+            bomb1: null,
+            bomb2Button: null,
+            bomb2: null,
+            bomb3Button: null,
+            bomb3: null,
+            bomb4Button: null,
+            bomb4: null,
             tut: null,
             endScene: null,
             completeScene: null,
@@ -4053,11 +4046,23 @@ if ( TRACE ) { TRACE( "GameController#CreateIns", this ); }
 if ( TRACE ) { TRACE( "GameController#Awake", this ); }
 
                 this.CreateIns();
-                this.smokeButton.onClick.AddListener(Bridge.fn.cacheBind(this, this.ClickOption));
-                this.smokeButton.onClick.AddListener(Bridge.fn.cacheBind(this, this.SpawnSmoke));
-                this.landmindButton.onClick.AddListener(Bridge.fn.cacheBind(this, this.ClickOption));
-                this.landmindButton.onClick.AddListener(Bridge.fn.cacheBind(this, this.SpawnLandmine));
-                this.gunButton.onClick.AddListener(Bridge.fn.cacheBind(this, this.ClickOption));
+                this.bomb1Button.onClick.AddListener(Bridge.fn.bind(this, function () {
+                    this.ClickOption();
+                    this.bomb1.SetActive(true);
+                }));
+                this.bomb2Button.onClick.AddListener(Bridge.fn.bind(this, function () {
+                    this.ClickOption();
+                    this.bomb2.SetActive(true);
+                }));
+                this.bomb3Button.onClick.AddListener(Bridge.fn.bind(this, function () {
+                    this.ClickOption();
+                    this.bomb3.SetActive(true);
+                }));
+                this.bomb4Button.onClick.AddListener(Bridge.fn.bind(this, function () {
+                    this.ClickOption();
+                    this.bomb4.SetActive(true);
+                }));
+
             },
             /*GameController.Awake end.*/
 
@@ -4140,22 +4145,6 @@ if ( TRACE ) { TRACE( "GameController#WaitForGameOver", this ); }
             },
             /*GameController.WaitForGameOver end.*/
 
-            /*GameController.SpawnLandmine start.*/
-            SpawnLandmine: function () {
-if ( TRACE ) { TRACE( "GameController#SpawnLandmine", this ); }
-
-                this.landmind.SetActive(true);
-            },
-            /*GameController.SpawnLandmine end.*/
-
-            /*GameController.SpawnSmoke start.*/
-            SpawnSmoke: function () {
-if ( TRACE ) { TRACE( "GameController#SpawnSmoke", this ); }
-
-                this.smoke.SetActive(true);
-            },
-            /*GameController.SpawnSmoke end.*/
-
             /*GameController.ClickOption start.*/
             ClickOption: function () {
 if ( TRACE ) { TRACE( "GameController#ClickOption", this ); }
@@ -4173,7 +4162,7 @@ if ( TRACE ) { TRACE( "GameController#RemoveMonster", this ); }
                 if (this.numMonster > 0) {
                     return;
                 }
-                this.Complete();
+                this.Invoke("Complete", 1.0);
             },
             /*GameController.RemoveMonster end.*/
 
@@ -4320,112 +4309,6 @@ if ( TRACE ) { TRACE( "KunaiController#ReturnToPool", this ); }
     });
     /*KunaiController end.*/
 
-    /*LandmineController start.*/
-    Bridge.define("LandmineController", {
-        inherits: [UnityEngine.MonoBehaviour],
-        fields: {
-            damage: 0,
-            layer: null,
-            actionSound: null,
-            boomVFX: null,
-            radius: 0
-        },
-        ctors: {
-            init: function () {
-if ( TRACE ) { TRACE( "LandmineController#init", this ); }
-
-                this.layer = new UnityEngine.LayerMask();
-            }
-        },
-        methods: {
-            /*LandmineController.OnCollisionEnter2D start.*/
-            OnCollisionEnter2D: function (collision) {
-if ( TRACE ) { TRACE( "LandmineController#OnCollisionEnter2D", this ); }
-
-                var g = collision.gameObject;
-                if (g.CompareTag("Player") || g.CompareTag("Monster")) {
-                    this.Boom();
-                }
-            },
-            /*LandmineController.OnCollisionEnter2D end.*/
-
-            /*LandmineController.Boom start.*/
-            Boom: function () {
-if ( TRACE ) { TRACE( "LandmineController#Boom", this ); }
-
-                this.boomVFX.SetActive(true);
-                AudioController.Ins.PlaySFX(this.actionSound);
-                this.Damage();
-                this.StartCoroutine$1(this.DestroyBomb());
-            },
-            /*LandmineController.Boom end.*/
-
-            /*LandmineController.DestroyBomb start.*/
-            DestroyBomb: function () {
-if ( TRACE ) { TRACE( "LandmineController#DestroyBomb", this ); }
-
-                var $step = 0,
-                    $jumpFromFinally,
-                    $returnValue,
-                    $async_e;
-
-                var $enumerator = new Bridge.GeneratorEnumerator(Bridge.fn.bind(this, function () {
-                    try {
-                        for (;;) {
-                            switch ($step) {
-                                case 0: {
-                                    $enumerator.current = new UnityEngine.WaitForSeconds(0.5);
-                                        $step = 1;
-                                        return true;
-                                }
-                                case 1: {
-                                    UnityEngine.MonoBehaviour.Destroy(this.gameObject);
-
-                                }
-                                default: {
-                                    return false;
-                                }
-                            }
-                        }
-                    } catch($async_e1) {
-                        $async_e = System.Exception.create($async_e1);
-                        throw $async_e;
-                    }
-                }));
-                return $enumerator;
-            },
-            /*LandmineController.DestroyBomb end.*/
-
-            /*LandmineController.Damage start.*/
-            Damage: function () {
-if ( TRACE ) { TRACE( "LandmineController#Damage", this ); }
-
-                var $t;
-                var cols = UnityEngine.Physics2D.OverlapCircleAll(UnityEngine.Vector2.FromVector3(this.transform.position), this.radius * this.transform.localScale.x, UnityEngine.LayerMask.op_Implicit(this.layer.$clone()));
-                $t = Bridge.getEnumerator(cols);
-                try {
-                    while ($t.moveNext()) {
-                        var col = $t.Current;
-                        var target = { };
-                        col.gameObject.TryGetComponent$1(IDamageable, target);
-                        if (target.v == null) {
-                            col.gameObject.transform.parent.TryGetComponent$1(IDamageable, target);
-                        }
-                        target.v != null ? target.v.IDamageable$TakeDamage(this.damage) : null;
-                    }
-                } finally {
-                    if (Bridge.is($t, System.IDisposable)) {
-                        $t.System$IDisposable$Dispose();
-                    }
-                }
-            },
-            /*LandmineController.Damage end.*/
-
-
-        }
-    });
-    /*LandmineController end.*/
-
     /*LayoutController start.*/
     Bridge.define("LayoutController", {
         inherits: [UnityEngine.MonoBehaviour],
@@ -4484,11 +4367,8 @@ if ( TRACE ) { TRACE( "LayoutController#Fit", this ); }
             ColorHeaderText1: null,
             HeaderText2: null,
             ColorHeaderText2: null,
-            GameOverText: null,
-            ColorGameOverText: null,
             header1: null,
             header2: null,
-            lossText: null,
             BGImage: null,
             CTA: null,
             oneClickCTA: null
@@ -4499,7 +4379,6 @@ if ( TRACE ) { TRACE( "LunaController#init", this ); }
 
                 this.ColorHeaderText1 = new UnityEngine.Color();
                 this.ColorHeaderText2 = new UnityEngine.Color();
-                this.ColorGameOverText = new UnityEngine.Color();
             }
         },
         methods: {
@@ -4529,9 +4408,6 @@ if ( TRACE ) { TRACE( "LunaController#InitText", this ); }
 
                 this.header2.text = this.HeaderText2;
                 this.header2.color = this.ColorHeaderText2.$clone();
-
-                this.lossText.text = this.GameOverText;
-                this.lossText.color = this.ColorGameOverText.$clone();
             },
             /*LunaController.InitText end.*/
 
@@ -4770,7 +4646,7 @@ if ( TRACE ) { TRACE( "MonsterAnimation#LegAnimation", this ); }
             Move: function (left) {
 if ( TRACE ) { TRACE( "MonsterMove#Move", this ); }
 
-                this.body.linearVelocity = new pc.Vec2( left ? -this.speed : this.speed, this.body.linearVelocity.y );
+                this.body.linearVelocity = new pc.Vec2( left ? -this.speed : this.speed, this.speed * 1.2 );
             },
             /*MonsterMove.Move end.*/
 
@@ -4907,6 +4783,186 @@ if ( TRACE ) { TRACE( "Piece#$clone", this ); }
         }
     });
     /*Piece end.*/
+
+    /*ShakeCamera start.*/
+    Bridge.define("ShakeCamera", {
+        inherits: [UnityEngine.MonoBehaviour],
+        fields: {
+            defaultDuration: 0,
+            defaultStrength: 0,
+            frequency: 0,
+            shakeCoroutine: null,
+            shakeOffset: null
+        },
+        ctors: {
+            init: function () {
+if ( TRACE ) { TRACE( "ShakeCamera#init", this ); }
+
+                this.shakeOffset = new UnityEngine.Vector3();
+                this.defaultDuration = 0.35;
+                this.defaultStrength = 0.25;
+                this.frequency = 30.0;
+            }
+        },
+        methods: {
+            /*ShakeCamera.ShakeExplosion start.*/
+            /**
+             * Rung camera theo thông số mặc định trong Inspector.
+             *
+             * @instance
+             * @public
+             * @this ShakeCamera
+             * @memberof ShakeCamera
+             * @return  {void}
+             */
+            ShakeExplosion: function () {
+if ( TRACE ) { TRACE( "ShakeCamera#ShakeExplosion", this ); }
+
+                this.ShakeExplosion$1(this.defaultDuration, this.defaultStrength);
+            },
+            /*ShakeCamera.ShakeExplosion end.*/
+
+            /*ShakeCamera.ShakeExplosion$1 start.*/
+            /**
+             * Rung camera kiểu vụ nổ, mạnh lúc đầu và nhẹ dần về cuối.
+             *
+             * @instance
+             * @public
+             * @this ShakeCamera
+             * @memberof ShakeCamera
+             * @param   {number}    duration    
+             * @param   {number}    strength
+             * @return  {void}
+             */
+            ShakeExplosion$1: function (duration, strength) {
+if ( TRACE ) { TRACE( "ShakeCamera#ShakeExplosion$1", this ); }
+
+                if (this.shakeCoroutine != null) {
+                    this.StopCoroutine$2(this.shakeCoroutine);
+                    this.transform.localPosition = this.transform.localPosition.$clone().sub( this.shakeOffset.$clone() );
+                    this.shakeOffset = pc.Vec3.ZERO.clone();
+                }
+
+                if (duration <= 0.0 || strength <= 0.0) {
+                    return;
+                }
+
+                this.shakeCoroutine = this.StartCoroutine$1(this.ShakeRoutine(duration, strength));
+            },
+            /*ShakeCamera.ShakeExplosion$1 end.*/
+
+            /*ShakeCamera.ShakeRoutine start.*/
+            ShakeRoutine: function (duration, strength) {
+if ( TRACE ) { TRACE( "ShakeCamera#ShakeRoutine", this ); }
+
+                var $step = 0,
+                    $jumpFromFinally,
+                    $returnValue,
+                    elapsed,
+                    fade,
+                    direction,
+                    interval,
+                    $async_e;
+
+                var $enumerator = new Bridge.GeneratorEnumerator(Bridge.fn.bind(this, function () {
+                    try {
+                        for (;;) {
+                            switch ($step) {
+                                case 0: {
+                                    elapsed = 0.0;
+                                    $step = 1;
+                                    continue;
+                                }
+                                case 1: {
+                                    if ( elapsed < duration ) {
+                                            $step = 2;
+                                            continue;
+                                        } 
+                                        $step = 8;
+                                        continue;
+                                }
+                                case 2: {
+                                    this.transform.localPosition = this.transform.localPosition.$clone().sub( this.shakeOffset.$clone() );
+
+                                        fade = 1.0 - elapsed / duration;
+                                        direction = UnityEngine.Random.insideUnitCircle.$clone().scale( strength ).scale( fade );
+                                        this.shakeOffset = new pc.Vec3( direction.x, direction.y, 0.0 );
+                                        this.transform.localPosition = this.transform.localPosition.$clone().add( this.shakeOffset.$clone() );
+
+                                        interval = this.frequency > 0.0 ? 1.0 / this.frequency : 0.0;
+                                        if (interval > 0.0) {
+                                            $step = 3;
+                                            continue;
+                                        } else  {
+                                            $step = 5;
+                                            continue;
+                                        }
+                                }
+                                case 3: {
+                                    $enumerator.current = new UnityEngine.WaitForSecondsRealtime(interval);
+                                        $step = 4;
+                                        return true;
+                                }
+                                case 4: {
+                                    $step = 7;
+                                    continue;
+                                }
+                                case 5: {
+                                    $enumerator.current = null;
+                                        $step = 6;
+                                        return true;
+                                }
+                                case 6: {
+                                    $step = 7;
+                                    continue;
+                                }
+                                case 7: {
+                                    elapsed += interval > 0.0 ? interval : UnityEngine.Time.unscaledDeltaTime;
+
+                                        $step = 1;
+                                        continue;
+                                }
+                                case 8: {
+                                    this.transform.localPosition = this.transform.localPosition.$clone().sub( this.shakeOffset.$clone() );
+                                        this.shakeOffset = pc.Vec3.ZERO.clone();
+                                        this.shakeCoroutine = null;
+
+                                }
+                                default: {
+                                    return false;
+                                }
+                            }
+                        }
+                    } catch($async_e1) {
+                        $async_e = System.Exception.create($async_e1);
+                        throw $async_e;
+                    }
+                }));
+                return $enumerator;
+            },
+            /*ShakeCamera.ShakeRoutine end.*/
+
+            /*ShakeCamera.OnDisable start.*/
+            OnDisable: function () {
+if ( TRACE ) { TRACE( "ShakeCamera#OnDisable", this ); }
+
+                if (this.shakeCoroutine != null) {
+                    this.StopCoroutine$2(this.shakeCoroutine);
+                }
+
+                this.transform.localPosition = this.transform.localPosition.$clone().sub( this.shakeOffset.$clone() );
+                this.shakeOffset = pc.Vec3.ZERO.clone();
+                this.shakeCoroutine = null;
+            },
+            /*ShakeCamera.OnDisable end.*/
+
+
+        },
+        overloads: {
+            "ShakeExplosion(float, float)": "ShakeExplosion$1"
+        }
+    });
+    /*ShakeCamera end.*/
 
     /*SmokeController start.*/
     Bridge.define("SmokeController", {
@@ -5235,7 +5291,7 @@ if ( TRACE ) { TRACE( "BlockController#Break", this ); }
 
                 this.isBreak = true;
                 if (UnityEngine.Object.op_Implicit(this.breakVFX)) {
-                    VFXController.Ins.SpawnVFX(UnityEngine.Vector2.FromVector3(this.transform.position.$clone()), this.breakVFX);
+                    VFXController.Ins.SpawnVFX(UnityEngine.Vector2.FromVector3(this.transform.position), this.breakVFX);
                 }
                 if (UnityEngine.Object.op_Implicit(this.breakSFX)) {
                     AudioController.Ins.PlaySFX(this.breakSFX);
@@ -5271,6 +5327,80 @@ if ( TRACE ) { TRACE( "BlockController#OnCollisionExit2D", this ); }
     });
     /*BlockController end.*/
 
+    /*CollisionBomb start.*/
+    Bridge.define("CollisionBomb", {
+        inherits: [BombBase],
+        methods: {
+            /*CollisionBomb.OnCollisionEnter2D start.*/
+            OnCollisionEnter2D: function (collision) {
+if ( TRACE ) { TRACE( "CollisionBomb#OnCollisionEnter2D", this ); }
+
+                this.Boom();
+            },
+            /*CollisionBomb.OnCollisionEnter2D end.*/
+
+
+        }
+    });
+    /*CollisionBomb end.*/
+
+    /*CountDownBomb start.*/
+    Bridge.define("CountDownBomb", {
+        inherits: [BombBase],
+        fields: {
+            delay: 0
+        },
+        methods: {
+            /*CountDownBomb.BombStart start.*/
+            BombStart: function () {
+if ( TRACE ) { TRACE( "CountDownBomb#BombStart", this ); }
+
+                BombBase.prototype.BombStart.call(this);
+                this.StartCoroutine$1(this.CountDown());
+            },
+            /*CountDownBomb.BombStart end.*/
+
+            /*CountDownBomb.CountDown start.*/
+            CountDown: function () {
+if ( TRACE ) { TRACE( "CountDownBomb#CountDown", this ); }
+
+                var $step = 0,
+                    $jumpFromFinally,
+                    $returnValue,
+                    $async_e;
+
+                var $enumerator = new Bridge.GeneratorEnumerator(Bridge.fn.bind(this, function () {
+                    try {
+                        for (;;) {
+                            switch ($step) {
+                                case 0: {
+                                    $enumerator.current = new UnityEngine.WaitForSeconds(this.delay);
+                                        $step = 1;
+                                        return true;
+                                }
+                                case 1: {
+                                    this.Boom();
+
+                                }
+                                default: {
+                                    return false;
+                                }
+                            }
+                        }
+                    } catch($async_e1) {
+                        $async_e = System.Exception.create($async_e1);
+                        throw $async_e;
+                    }
+                }));
+                return $enumerator;
+            },
+            /*CountDownBomb.CountDown end.*/
+
+
+        }
+    });
+    /*CountDownBomb end.*/
+
     /*DropController start.*/
     Bridge.define("DropController", {
         inherits: [FightController],
@@ -5292,7 +5422,7 @@ if ( TRACE ) { TRACE( "DropController#CheckInput", this ); }
                         return;
                     }
                     var worldPos = UnityEngine.Camera.main.ScreenToWorldPoint(UnityEngine.Vector3.FromVector2(UnityEngine.Input.GetTouch(0).position));
-                    this.Action(UnityEngine.Vector2.FromVector3(worldPos.$clone()), pc.Quat.IDENTITY.clone());
+                    this.Action(UnityEngine.Vector2.FromVector3(worldPos), pc.Quat.IDENTITY.clone());
                     return;
                 }
                 if (UnityEngine.Input.GetMouseButtonDown(0)) {
@@ -5300,7 +5430,7 @@ if ( TRACE ) { TRACE( "DropController#CheckInput", this ); }
                         return;
                     }
                     var worldPos1 = UnityEngine.Camera.main.ScreenToWorldPoint(UnityEngine.Input.mousePosition);
-                    this.Action(UnityEngine.Vector2.FromVector3(worldPos1.$clone()), pc.Quat.IDENTITY.clone());
+                    this.Action(UnityEngine.Vector2.FromVector3(worldPos1), pc.Quat.IDENTITY.clone());
                 }
             },
             /*DropController.CheckInput end.*/
@@ -5571,7 +5701,7 @@ if ( TRACE ) { TRACE( "PlayerController#Awake", this ); }
 
                 this.fightOptions.ForEach(Bridge.fn.bind(this, function (op) {
                     op.Button.onClick.AddListener(Bridge.fn.bind(this, function () {
-                        this.ChangeFightOption(op.$clone());
+                        this.ChangeFightOption(op);
                     }));
                 }));
             },
@@ -5582,7 +5712,10 @@ if ( TRACE ) { TRACE( "PlayerController#Awake", this ); }
 if ( TRACE ) { TRACE( "PlayerController#Zombie", this ); }
 
                 this.isZombie = true;
-                AudioController.Ins.PlaySFX(this.deadSFX);
+
+                if (!this.isDead) {
+                    AudioController.Ins.PlaySFX(this.deadSFX);
+                }
 
                 for (var i = 0; i < this.renderers.Count; i = (i + 1) | 0) {
                     this.renderers.getItem(i).sprite = this.sprites.getItem(i);
@@ -5624,7 +5757,9 @@ if ( TRACE ) { TRACE( "PlayerController#Dead", this ); }
                     return;
                 }
                 this.isDead = true;
-                AudioController.Ins.PlaySFX(this.deadSFX);
+                if (!this.isZombie) {
+                    AudioController.Ins.PlaySFX(this.deadSFX);
+                }
                 $t = Bridge.getEnumerator(this.pieces);
                 try {
                     while ($t.moveNext()) {
@@ -5641,8 +5776,45 @@ if ( TRACE ) { TRACE( "PlayerController#Dead", this ); }
                     }
                 }
                 this.head.enabled = false;
+                this.StartCoroutine$1(this.Destroy$1());
             },
             /*PlayerController.Dead end.*/
+
+            /*PlayerController.Destroy$1 start.*/
+            Destroy$1: function () {
+if ( TRACE ) { TRACE( "PlayerController#Destroy$1", this ); }
+
+                var $step = 0,
+                    $jumpFromFinally,
+                    $returnValue,
+                    $async_e;
+
+                var $enumerator = new Bridge.GeneratorEnumerator(Bridge.fn.bind(this, function () {
+                    try {
+                        for (;;) {
+                            switch ($step) {
+                                case 0: {
+                                    $enumerator.current = new UnityEngine.WaitForSeconds(5);
+                                        $step = 1;
+                                        return true;
+                                }
+                                case 1: {
+                                    this.gameObject.SetActive(false);
+
+                                }
+                                default: {
+                                    return false;
+                                }
+                            }
+                        }
+                    } catch($async_e1) {
+                        $async_e = System.Exception.create($async_e1);
+                        throw $async_e;
+                    }
+                }));
+                return $enumerator;
+            },
+            /*PlayerController.Destroy$1 end.*/
 
             /*PlayerController.OnTriggerEnter2D start.*/
             OnTriggerEnter2D: function (collision) {
@@ -5662,6 +5834,9 @@ if ( TRACE ) { TRACE( "PlayerController#OnTriggerEnter2D", this ); }
             /*PlayerController.OnTriggerEnter2D end.*/
 
 
+        },
+        overloads: {
+            "Destroy()": "Destroy$1"
         }
     });
     /*PlayerController end.*/
@@ -5743,7 +5918,7 @@ if ( TRACE ) { TRACE( "ShootController#Action", this ); }
                 if (this.onCD) {
                     return;
                 }
-                FightController.prototype.Action.call(this, position.$clone(), rotation.$clone());
+                FightController.prototype.Action.call(this, position, rotation);
                 this.StartCoroutine$1(this.Animation());
             },
             /*ShootController.Action end.*/
@@ -5752,7 +5927,7 @@ if ( TRACE ) { TRACE( "ShootController#Action", this ); }
             Spawn: function (position, rotation) {
 if ( TRACE ) { TRACE( "ShootController#Spawn", this ); }
 
-                FightController.prototype.Spawn.call(this, position.$clone(), rotation.$clone());
+                FightController.prototype.Spawn.call(this, position, rotation);
                 this.StartCoroutine$1(this.WaitForCD());
             },
             /*ShootController.Spawn end.*/
@@ -5812,14 +5987,14 @@ if ( TRACE ) { TRACE( "ShootController#CheckInput", this ); }
                     if (UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject$1(UnityEngine.Input.GetTouch(0).fingerId)) {
                         return;
                     }
-                    this.Action(UnityEngine.Vector2.FromVector3(this.startPos.position.$clone()), this.startPos.rotation.$clone());
+                    this.Action(UnityEngine.Vector2.FromVector3(this.startPos.position), this.startPos.rotation);
                     return;
                 }
                 if (UnityEngine.Input.GetMouseButtonDown(0)) {
                     if (UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject()) {
                         return;
                     }
-                    this.Action(UnityEngine.Vector2.FromVector3(this.startPos.position.$clone()), this.startPos.rotation.$clone());
+                    this.Action(UnityEngine.Vector2.FromVector3(this.startPos.position), this.startPos.rotation);
                 }
             },
             /*ShootController.CheckInput end.*/
@@ -5828,7 +6003,7 @@ if ( TRACE ) { TRACE( "ShootController#CheckInput", this ); }
             AutoShoot: function () {
 if ( TRACE ) { TRACE( "ShootController#AutoShoot", this ); }
 
-                this.Action(UnityEngine.Vector2.FromVector3(this.startPos.position.$clone()), this.startPos.rotation.$clone());
+                this.Action(UnityEngine.Vector2.FromVector3(this.startPos.position), this.startPos.rotation);
             },
             /*ShootController.AutoShoot end.*/
 
@@ -5846,7 +6021,7 @@ if ( TRACE ) { TRACE( "ShootController#AutoShoot", this ); }
     /*AudioController end.*/
 
     /*GameController start.*/
-    $m("GameController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":2,"n":"ClickOption","t":8,"sn":"ClickOption","rt":$n[0].Void},{"a":2,"n":"Complete","t":8,"sn":"Complete","rt":$n[0].Void},{"a":1,"n":"CreateIns","t":8,"sn":"CreateIns","rt":$n[0].Void},{"a":2,"n":"GameOver","t":8,"sn":"GameOver","rt":$n[0].Void},{"a":2,"n":"PauseGame","t":8,"sn":"PauseGame","rt":$n[0].Void},{"a":2,"n":"RemoveMonster","t":8,"sn":"RemoveMonster","rt":$n[0].Void},{"a":2,"n":"SpawnLandmine","t":8,"sn":"SpawnLandmine","rt":$n[0].Void},{"a":2,"n":"SpawnSmoke","t":8,"sn":"SpawnSmoke","rt":$n[0].Void},{"a":1,"n":"WaitForGameOver","t":8,"sn":"WaitForGameOver","rt":$n[2].IEnumerator},{"a":2,"n":"P","t":16,"rt":PlayerController,"g":{"a":2,"n":"get_P","t":8,"rt":PlayerController,"fg":"P"},"fn":"P"},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Delay Show Game Over", -1, null, false, null)],"a":2,"n":"Delay","t":4,"rt":$n[0].Single,"sn":"Delay","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"Ins","is":true,"t":4,"rt":GameController,"sn":"Ins"},{"a":2,"n":"OnGameComplete","t":4,"rt":Function,"sn":"OnGameComplete"},{"a":2,"n":"OnGameOver","t":4,"rt":Function,"sn":"OnGameOver"},{"a":2,"n":"OnPause","t":4,"rt":Function,"sn":"OnPause"},{"a":2,"n":"OnResume","t":4,"rt":Function,"sn":"OnResume"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"clickSound","t":4,"rt":$n[1].AudioClip,"sn":"clickSound"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"completeScene","t":4,"rt":$n[1].GameObject,"sn":"completeScene"},{"at":[new UnityEngine.HeaderAttribute("End Scene"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"endScene","t":4,"rt":$n[1].GameObject,"sn":"endScene"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"gameOverScene","t":4,"rt":$n[1].GameObject,"sn":"gameOverScene"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"gunButton","t":4,"rt":$n[4].Button,"sn":"gunButton"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"header","t":4,"rt":$n[1].GameObject,"sn":"header"},{"a":1,"n":"isEnd","t":4,"rt":$n[0].Boolean,"sn":"isEnd","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"landmind","t":4,"rt":$n[1].GameObject,"sn":"landmind"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"landmindButton","t":4,"rt":$n[4].Button,"sn":"landmindButton"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"numMonster","t":4,"rt":$n[0].Int32,"sn":"numMonster","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.HeaderAttribute("Option"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"options","t":4,"rt":$n[1].GameObject,"sn":"options"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"player","t":4,"rt":PlayerController,"sn":"player"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"smoke","t":4,"rt":$n[1].GameObject,"sn":"smoke"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"smokeButton","t":4,"rt":$n[4].Button,"sn":"smokeButton"},{"at":[new UnityEngine.HeaderAttribute("Start Scene"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"startScene","t":4,"rt":$n[1].GameObject,"sn":"startScene"},{"at":[new UnityEngine.HeaderAttribute("Tut"),new UnityEngine.SerializeFieldAttribute()],"a":3,"n":"tut","t":4,"rt":$n[1].GameObject,"sn":"tut"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"world","t":4,"rt":$n[1].Transform,"sn":"world"}]}; }, $n);
+    $m("GameController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":2,"n":"ClickOption","t":8,"sn":"ClickOption","rt":$n[0].Void},{"a":2,"n":"Complete","t":8,"sn":"Complete","rt":$n[0].Void},{"a":1,"n":"CreateIns","t":8,"sn":"CreateIns","rt":$n[0].Void},{"a":2,"n":"GameOver","t":8,"sn":"GameOver","rt":$n[0].Void},{"a":2,"n":"PauseGame","t":8,"sn":"PauseGame","rt":$n[0].Void},{"a":2,"n":"RemoveMonster","t":8,"sn":"RemoveMonster","rt":$n[0].Void},{"a":1,"n":"WaitForGameOver","t":8,"sn":"WaitForGameOver","rt":$n[2].IEnumerator},{"a":2,"n":"P","t":16,"rt":PlayerController,"g":{"a":2,"n":"get_P","t":8,"rt":PlayerController,"fg":"P"},"fn":"P"},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Delay Show Game Over", -1, null, false, null)],"a":2,"n":"Delay","t":4,"rt":$n[0].Single,"sn":"Delay","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"Ins","is":true,"t":4,"rt":GameController,"sn":"Ins"},{"a":2,"n":"OnGameComplete","t":4,"rt":Function,"sn":"OnGameComplete"},{"a":2,"n":"OnGameOver","t":4,"rt":Function,"sn":"OnGameOver"},{"a":2,"n":"OnPause","t":4,"rt":Function,"sn":"OnPause"},{"a":2,"n":"OnResume","t":4,"rt":Function,"sn":"OnResume"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"bomb1","t":4,"rt":$n[1].GameObject,"sn":"bomb1"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"bomb1Button","t":4,"rt":$n[4].Button,"sn":"bomb1Button"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"bomb2","t":4,"rt":$n[1].GameObject,"sn":"bomb2"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"bomb2Button","t":4,"rt":$n[4].Button,"sn":"bomb2Button"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"bomb3","t":4,"rt":$n[1].GameObject,"sn":"bomb3"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"bomb3Button","t":4,"rt":$n[4].Button,"sn":"bomb3Button"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"bomb4","t":4,"rt":$n[1].GameObject,"sn":"bomb4"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"bomb4Button","t":4,"rt":$n[4].Button,"sn":"bomb4Button"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"clickSound","t":4,"rt":$n[1].AudioClip,"sn":"clickSound"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"completeScene","t":4,"rt":$n[1].GameObject,"sn":"completeScene"},{"at":[new UnityEngine.HeaderAttribute("End Scene"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"endScene","t":4,"rt":$n[1].GameObject,"sn":"endScene"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"gameOverScene","t":4,"rt":$n[1].GameObject,"sn":"gameOverScene"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"header","t":4,"rt":$n[1].GameObject,"sn":"header"},{"a":1,"n":"isEnd","t":4,"rt":$n[0].Boolean,"sn":"isEnd","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"numMonster","t":4,"rt":$n[0].Int32,"sn":"numMonster","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.HeaderAttribute("Option"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"options","t":4,"rt":$n[1].GameObject,"sn":"options"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"player","t":4,"rt":PlayerController,"sn":"player"},{"at":[new UnityEngine.HeaderAttribute("Start Scene"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"startScene","t":4,"rt":$n[1].GameObject,"sn":"startScene"},{"at":[new UnityEngine.HeaderAttribute("Tut"),new UnityEngine.SerializeFieldAttribute()],"a":3,"n":"tut","t":4,"rt":$n[1].GameObject,"sn":"tut"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"world","t":4,"rt":$n[1].Transform,"sn":"world"}]}; }, $n);
     /*GameController end.*/
 
     /*LayoutController start.*/
@@ -5854,8 +6029,12 @@ if ( TRACE ) { TRACE( "ShootController#AutoShoot", this ); }
     /*LayoutController end.*/
 
     /*LunaController start.*/
-    $m("LunaController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"ClickCTA","t":8,"sn":"ClickCTA","rt":$n[0].Void},{"a":1,"n":"EndGame","t":8,"sn":"EndGame","rt":$n[2].IEnumerator},{"a":1,"n":"InitText","t":8,"sn":"InitText","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"BGImage","t":4,"rt":$n[4].RawImage,"sn":"BGImage"},{"at":[new UnityEngine.LunaPlaygroundAssetAttribute("BG Image", 0, null)],"a":2,"n":"BGTexture","t":4,"rt":$n[1].Texture2D,"sn":"BGTexture"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"CTA","t":4,"rt":$n[3].List$1(UnityEngine.UI.Button),"sn":"CTA"},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Color Game Over Text", -1, null, false, null)],"a":2,"n":"ColorGameOverText","t":4,"rt":$n[1].Color,"sn":"ColorGameOverText"},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Color Header Text 1", -1, null, false, null)],"a":2,"n":"ColorHeaderText1","t":4,"rt":$n[1].Color,"sn":"ColorHeaderText1"},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Color Header Text 2", -1, null, false, null)],"a":2,"n":"ColorHeaderText2","t":4,"rt":$n[1].Color,"sn":"ColorHeaderText2"},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Game Over Text", -1, null, false, null)],"a":2,"n":"GameOverText","t":4,"rt":$n[0].String,"sn":"GameOverText"},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Header Text 1", -1, null, false, null)],"a":2,"n":"HeaderText1","t":4,"rt":$n[0].String,"sn":"HeaderText1"},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Header Text 2", -1, null, false, null)],"a":2,"n":"HeaderText2","t":4,"rt":$n[0].String,"sn":"HeaderText2"},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Time Play", -1, null, false, null)],"a":2,"n":"TimePlay","t":4,"rt":$n[0].Single,"sn":"TimePlay","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Limit Time Play?", -1, null, false, null)],"a":2,"n":"UseTime","t":4,"rt":$n[0].Boolean,"sn":"UseTime","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"header1","t":4,"rt":$n[4].Text,"sn":"header1"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"header2","t":4,"rt":$n[4].Text,"sn":"header2"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"lossText","t":4,"rt":$n[4].Text,"sn":"lossText"},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("1 Click?", -1, null, false, null)],"a":2,"n":"oneClick","t":4,"rt":$n[0].Boolean,"sn":"oneClick","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"oneClickCTA","t":4,"rt":$n[3].List$1(UnityEngine.UI.Button),"sn":"oneClickCTA"}]}; }, $n);
+    $m("LunaController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"ClickCTA","t":8,"sn":"ClickCTA","rt":$n[0].Void},{"a":1,"n":"EndGame","t":8,"sn":"EndGame","rt":$n[2].IEnumerator},{"a":1,"n":"InitText","t":8,"sn":"InitText","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"BGImage","t":4,"rt":$n[4].RawImage,"sn":"BGImage"},{"at":[new UnityEngine.LunaPlaygroundAssetAttribute("BG Image", 0, null)],"a":2,"n":"BGTexture","t":4,"rt":$n[1].Texture2D,"sn":"BGTexture"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"CTA","t":4,"rt":$n[3].List$1(UnityEngine.UI.Button),"sn":"CTA"},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Color Header Text 1", -1, null, false, null)],"a":2,"n":"ColorHeaderText1","t":4,"rt":$n[1].Color,"sn":"ColorHeaderText1"},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Color Header Text 2", -1, null, false, null)],"a":2,"n":"ColorHeaderText2","t":4,"rt":$n[1].Color,"sn":"ColorHeaderText2"},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Header Text 1", -1, null, false, null)],"a":2,"n":"HeaderText1","t":4,"rt":$n[0].String,"sn":"HeaderText1"},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Header Text 2", -1, null, false, null)],"a":2,"n":"HeaderText2","t":4,"rt":$n[0].String,"sn":"HeaderText2"},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Time Play", -1, null, false, null)],"a":2,"n":"TimePlay","t":4,"rt":$n[0].Single,"sn":"TimePlay","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Limit Time Play?", -1, null, false, null)],"a":2,"n":"UseTime","t":4,"rt":$n[0].Boolean,"sn":"UseTime","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"header1","t":4,"rt":$n[4].Text,"sn":"header1"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"header2","t":4,"rt":$n[4].Text,"sn":"header2"},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("1 Click?", -1, null, false, null)],"a":2,"n":"oneClick","t":4,"rt":$n[0].Boolean,"sn":"oneClick","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"oneClickCTA","t":4,"rt":$n[3].List$1(UnityEngine.UI.Button),"sn":"oneClickCTA"}]}; }, $n);
     /*LunaController end.*/
+
+    /*ShakeCamera start.*/
+    $m("ShakeCamera", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"OnDisable","t":8,"sn":"OnDisable","rt":$n[0].Void},{"a":2,"n":"ShakeExplosion","t":8,"sn":"ShakeExplosion","rt":$n[0].Void},{"a":2,"n":"ShakeExplosion","t":8,"pi":[{"n":"duration","pt":$n[0].Single,"ps":0},{"n":"strength","pt":$n[0].Single,"ps":1}],"sn":"ShakeExplosion$1","rt":$n[0].Void,"p":[$n[0].Single,$n[0].Single]},{"a":1,"n":"ShakeRoutine","t":8,"pi":[{"n":"duration","pt":$n[0].Single,"ps":0},{"n":"strength","pt":$n[0].Single,"ps":1}],"sn":"ShakeRoutine","rt":$n[2].IEnumerator,"p":[$n[0].Single,$n[0].Single]},{"at":[new UnityEngine.HeaderAttribute("Explosion Shake"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"defaultDuration","t":4,"rt":$n[0].Single,"sn":"defaultDuration","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"defaultStrength","t":4,"rt":$n[0].Single,"sn":"defaultStrength","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"frequency","t":4,"rt":$n[0].Single,"sn":"frequency","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"shakeCoroutine","t":4,"rt":$n[1].Coroutine,"sn":"shakeCoroutine"},{"a":1,"n":"shakeOffset","t":4,"rt":$n[1].Vector3,"sn":"shakeOffset"}]}; }, $n);
+    /*ShakeCamera end.*/
 
     /*TriggerMonster start.*/
     $m("TriggerMonster", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"OnTriggerEnter2D","t":8,"pi":[{"n":"collision","pt":$n[1].Collider2D,"ps":0}],"sn":"OnTriggerEnter2D","rt":$n[0].Void,"p":[$n[1].Collider2D]}]}; }, $n);
@@ -5914,28 +6093,32 @@ if ( TRACE ) { TRACE( "ShootController#AutoShoot", this ); }
     /*ShootController end.*/
 
     /*PlayerController start.*/
-    $m("PlayerController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"ChangeFightOption","t":8,"pi":[{"n":"option","pt":FightOption,"ps":0}],"sn":"ChangeFightOption","rt":$n[0].Void,"p":[FightOption]},{"a":1,"n":"Dead","t":8,"sn":"Dead","rt":$n[0].Void},{"a":1,"n":"OnTriggerEnter2D","t":8,"pi":[{"n":"collision","pt":$n[1].Collider2D,"ps":0}],"sn":"OnTriggerEnter2D","rt":$n[0].Void,"p":[$n[1].Collider2D]},{"a":2,"n":"TakeDamage","t":8,"pi":[{"n":"amount","pt":$n[0].Int32,"ps":0}],"sn":"TakeDamage","rt":$n[0].Void,"p":[$n[0].Int32]},{"a":1,"n":"Zombie","t":8,"sn":"Zombie","rt":$n[0].Void},{"a":2,"n":"Fight","t":16,"rt":FightOption,"g":{"a":2,"n":"get_Fight","t":8,"rt":FightOption,"fg":"Fight"},"fn":"Fight"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"clickSound","t":4,"rt":$n[1].AudioClip,"sn":"clickSound"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"deadSFX","t":4,"rt":$n[1].AudioClip,"sn":"deadSFX"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"deadVFX","t":4,"rt":$n[1].GameObject,"sn":"deadVFX"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"fight","t":4,"rt":FightOption,"sn":"fight"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"fightOptions","t":4,"rt":$n[3].List$1(FightOption),"sn":"fightOptions"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"head","t":4,"rt":$n[1].TargetJoint2D,"sn":"head"},{"a":1,"n":"isDead","t":4,"rt":$n[0].Boolean,"sn":"isDead","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"isZombie","t":4,"rt":$n[0].Boolean,"sn":"isZombie","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"maxForce","t":4,"rt":$n[1].Vector2,"sn":"maxForce"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"minForce","t":4,"rt":$n[1].Vector2,"sn":"minForce"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"pieces","t":4,"rt":$n[3].List$1(Piece),"sn":"pieces"},{"at":[new UnityEngine.HeaderAttribute("Zombie"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"renderers","t":4,"rt":$n[3].List$1(UnityEngine.SpriteRenderer),"sn":"renderers"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"sprites","t":4,"rt":$n[3].List$1(UnityEngine.Sprite),"sn":"sprites"}]}; }, $n);
+    $m("PlayerController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"ChangeFightOption","t":8,"pi":[{"n":"option","pt":FightOption,"ps":0}],"sn":"ChangeFightOption","rt":$n[0].Void,"p":[FightOption]},{"a":1,"n":"Dead","t":8,"sn":"Dead","rt":$n[0].Void},{"a":1,"n":"Destroy","t":8,"sn":"Destroy$1","rt":$n[2].IEnumerator},{"a":1,"n":"OnTriggerEnter2D","t":8,"pi":[{"n":"collision","pt":$n[1].Collider2D,"ps":0}],"sn":"OnTriggerEnter2D","rt":$n[0].Void,"p":[$n[1].Collider2D]},{"a":2,"n":"TakeDamage","t":8,"pi":[{"n":"amount","pt":$n[0].Int32,"ps":0}],"sn":"TakeDamage","rt":$n[0].Void,"p":[$n[0].Int32]},{"a":1,"n":"Zombie","t":8,"sn":"Zombie","rt":$n[0].Void},{"a":2,"n":"Fight","t":16,"rt":FightOption,"g":{"a":2,"n":"get_Fight","t":8,"rt":FightOption,"fg":"Fight"},"fn":"Fight"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"clickSound","t":4,"rt":$n[1].AudioClip,"sn":"clickSound"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"deadSFX","t":4,"rt":$n[1].AudioClip,"sn":"deadSFX"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"deadVFX","t":4,"rt":$n[1].GameObject,"sn":"deadVFX"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"fight","t":4,"rt":FightOption,"sn":"fight"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"fightOptions","t":4,"rt":$n[3].List$1(FightOption),"sn":"fightOptions"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"head","t":4,"rt":$n[1].TargetJoint2D,"sn":"head"},{"a":1,"n":"isDead","t":4,"rt":$n[0].Boolean,"sn":"isDead","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"isZombie","t":4,"rt":$n[0].Boolean,"sn":"isZombie","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"maxForce","t":4,"rt":$n[1].Vector2,"sn":"maxForce"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"minForce","t":4,"rt":$n[1].Vector2,"sn":"minForce"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"pieces","t":4,"rt":$n[3].List$1(Piece),"sn":"pieces"},{"at":[new UnityEngine.HeaderAttribute("Zombie"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"renderers","t":4,"rt":$n[3].List$1(UnityEngine.SpriteRenderer),"sn":"renderers"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"sprites","t":4,"rt":$n[3].List$1(UnityEngine.Sprite),"sn":"sprites"}]}; }, $n);
     /*PlayerController end.*/
 
     /*FightOption start.*/
     $m("FightOption", function () { return {"att":1057033,"a":2,"at":[new System.SerializableAttribute()],"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"Button","t":4,"rt":$n[4].Button,"sn":"Button"},{"a":2,"n":"Controller","t":4,"rt":FightController,"sn":"Controller"}]}; }, $n);
     /*FightOption end.*/
 
-    /*BombController start.*/
-    $m("BombController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Boom","t":8,"sn":"Boom","rt":$n[0].Void},{"a":1,"n":"CountDown","t":8,"sn":"CountDown","rt":$n[2].IEnumerator},{"a":1,"n":"Damage","t":8,"sn":"Damage","rt":$n[0].Void},{"a":1,"n":"DestroyBomb","t":8,"sn":"DestroyBomb","rt":$n[2].IEnumerator},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[0].Void},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"actionSound","t":4,"rt":$n[1].AudioClip,"sn":"actionSound"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"damage","t":4,"rt":$n[0].Int32,"sn":"damage","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"delay","t":4,"rt":$n[0].Single,"sn":"delay","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"layer","t":4,"rt":$n[1].LayerMask,"sn":"layer"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"radius","t":4,"rt":$n[0].Single,"sn":"radius","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"startSound","t":4,"rt":$n[1].AudioClip,"sn":"startSound"}]}; }, $n);
-    /*BombController end.*/
+    /*BombBase start.*/
+    $m("BombBase", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"v":true,"a":3,"n":"BombStart","t":8,"sn":"BombStart","rt":$n[0].Void},{"a":3,"n":"Boom","t":8,"sn":"Boom","rt":$n[0].Void},{"a":3,"n":"Damage","t":8,"sn":"Damage","rt":$n[0].Void},{"a":3,"n":"DestroyBomb","t":8,"sn":"DestroyBomb","rt":$n[2].IEnumerator},{"a":3,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[0].Void},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"actionEvents","t":4,"rt":$n[3].List$1(UnityEngine.Events.UnityEvent$2(System.Single,System.Single)),"sn":"actionEvents"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":3,"n":"actionSound","t":4,"rt":$n[1].AudioClip,"sn":"actionSound"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":3,"n":"avatar","t":4,"rt":$n[1].GameObject,"sn":"avatar"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":3,"n":"boomVFX","t":4,"rt":$n[1].GameObject,"sn":"boomVFX"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":3,"n":"damage","t":4,"rt":$n[0].Int32,"sn":"damage","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":3,"n":"isBoom","t":4,"rt":$n[0].Boolean,"sn":"isBoom","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.HeaderAttribute("Base"),new UnityEngine.SerializeFieldAttribute()],"a":3,"n":"layer","t":4,"rt":$n[1].LayerMask,"sn":"layer"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":3,"n":"radius","t":4,"rt":$n[0].Single,"sn":"radius","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":3,"n":"shakeDuration","t":4,"rt":$n[0].Single,"sn":"shakeDuration","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":3,"n":"shakeStrength","t":4,"rt":$n[0].Single,"sn":"shakeStrength","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.HeaderAttribute("Effect"),new UnityEngine.SerializeFieldAttribute()],"a":3,"n":"startSound","t":4,"rt":$n[1].AudioClip,"sn":"startSound"},{"at":[new UnityEngine.HeaderAttribute("Damage"),new UnityEngine.SerializeFieldAttribute()],"a":3,"n":"timeDestroy","t":4,"rt":$n[0].Single,"sn":"timeDestroy","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}}]}; }, $n);
+    /*BombBase end.*/
 
     /*BulletController start.*/
     $m("BulletController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"LifeTime","t":8,"sn":"LifeTime","rt":$n[2].IEnumerator},{"a":1,"n":"Move","t":8,"sn":"Move","rt":$n[0].Void},{"a":1,"n":"OnCollisionEnter2D","t":8,"pi":[{"n":"collision","pt":$n[1].Collision2D,"ps":0}],"sn":"OnCollisionEnter2D","rt":$n[0].Void,"p":[$n[1].Collision2D]},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[0].Void},{"a":1,"n":"ReturnToPool","t":8,"sn":"ReturnToPool","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":1,"n":"controller","t":4,"rt":ShootController,"sn":"controller"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"damage","t":4,"rt":$n[0].Int32,"sn":"damage","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"hit","t":4,"rt":$n[0].Boolean,"sn":"hit","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"hitMonsterSound","t":4,"rt":$n[1].AudioClip,"sn":"hitMonsterSound"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"hitSound","t":4,"rt":$n[1].AudioClip,"sn":"hitSound"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"lifeTime","t":4,"rt":$n[0].Single,"sn":"lifeTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"pool","t":4,"rt":$n[3].Queue$1(UnityEngine.GameObject),"sn":"pool"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"speed","t":4,"rt":$n[0].Single,"sn":"speed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}}]}; }, $n);
     /*BulletController end.*/
 
+    /*CollisionBomb start.*/
+    $m("CollisionBomb", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"OnCollisionEnter2D","t":8,"pi":[{"n":"collision","pt":$n[1].Collision2D,"ps":0}],"sn":"OnCollisionEnter2D","rt":$n[0].Void,"p":[$n[1].Collision2D]}]}; }, $n);
+    /*CollisionBomb end.*/
+
+    /*CountDownBomb start.*/
+    $m("CountDownBomb", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"ov":true,"a":3,"n":"BombStart","t":8,"sn":"BombStart","rt":$n[0].Void},{"a":1,"n":"CountDown","t":8,"sn":"CountDown","rt":$n[2].IEnumerator},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"delay","t":4,"rt":$n[0].Single,"sn":"delay","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}}]}; }, $n);
+    /*CountDownBomb end.*/
+
     /*KunaiController start.*/
     $m("KunaiController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"LifeTime","t":8,"sn":"LifeTime","rt":$n[2].IEnumerator},{"a":1,"n":"Move","t":8,"sn":"Move","rt":$n[0].Void},{"a":1,"n":"OnCollisionEnter2D","t":8,"pi":[{"n":"collision","pt":$n[1].Collision2D,"ps":0}],"sn":"OnCollisionEnter2D","rt":$n[0].Void,"p":[$n[1].Collision2D]},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[0].Void},{"a":1,"n":"ReturnToPool","t":8,"sn":"ReturnToPool","rt":$n[0].Void},{"a":1,"n":"Rotate","t":8,"sn":"Rotate","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":1,"n":"controller","t":4,"rt":ShootController,"sn":"controller"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"damage","t":4,"rt":$n[0].Int32,"sn":"damage","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"hit","t":4,"rt":$n[0].Boolean,"sn":"hit","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"hitMonsterSound","t":4,"rt":$n[1].AudioClip,"sn":"hitMonsterSound"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"hitSound","t":4,"rt":$n[1].AudioClip,"sn":"hitSound"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"lifeTime","t":4,"rt":$n[0].Single,"sn":"lifeTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"moveSpeed","t":4,"rt":$n[0].Single,"sn":"moveSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"pool","t":4,"rt":$n[3].Queue$1(UnityEngine.GameObject),"sn":"pool"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"rotateSpeed","t":4,"rt":$n[0].Single,"sn":"rotateSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}}]}; }, $n);
     /*KunaiController end.*/
-
-    /*LandmineController start.*/
-    $m("LandmineController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Boom","t":8,"sn":"Boom","rt":$n[0].Void},{"a":1,"n":"Damage","t":8,"sn":"Damage","rt":$n[0].Void},{"a":1,"n":"DestroyBomb","t":8,"sn":"DestroyBomb","rt":$n[2].IEnumerator},{"a":1,"n":"OnCollisionEnter2D","t":8,"pi":[{"n":"collision","pt":$n[1].Collision2D,"ps":0}],"sn":"OnCollisionEnter2D","rt":$n[0].Void,"p":[$n[1].Collision2D]},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"actionSound","t":4,"rt":$n[1].AudioClip,"sn":"actionSound"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"boomVFX","t":4,"rt":$n[1].GameObject,"sn":"boomVFX"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"damage","t":4,"rt":$n[0].Int32,"sn":"damage","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"layer","t":4,"rt":$n[1].LayerMask,"sn":"layer"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"radius","t":4,"rt":$n[0].Single,"sn":"radius","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}}]}; }, $n);
-    /*LandmineController end.*/
 
     /*SmokeController start.*/
     $m("SmokeController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"CountDown","t":8,"sn":"CountDown","rt":$n[2].IEnumerator},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[0].Void},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"actionSound","t":4,"rt":$n[1].AudioClip,"sn":"actionSound"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"boomSound","t":4,"rt":$n[1].AudioClip,"sn":"boomSound"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"delay","t":4,"rt":$n[0].Single,"sn":"delay","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"startSound","t":4,"rt":$n[1].AudioClip,"sn":"startSound"}]}; }, $n);

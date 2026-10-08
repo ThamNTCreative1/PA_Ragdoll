@@ -199,7 +199,7 @@ TextureImporter:
         width: 32
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -221,7 +221,7 @@ TextureImporter:
         width: 32
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -230,6 +230,94 @@ TextureImporter:
       bones: []
       spriteID: 3012cd6cf96067a49a1e4a5a8e6e7fd4
       internalID: -72480299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: z5body
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 136
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f3ecc201a827c47a632329e4b1fba0
+      internalID: -1152797705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: z6body
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 8
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cecf7bd0df59a0743aaaf110b3b225c3
+      internalID: -509486739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: z7body
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 136
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff2dcc800681c6c4587ef46076325f6e
+      internalID: -1138022611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: z8body
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 136
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b5f52aa24162740a0cbbf4f4deb7e6
+      internalID: -1983573556
       vertices: []
       indices: 
       edges: []
@@ -252,6 +340,10 @@ TextureImporter:
       z2body: -8921538666657117077
       z3body: -8342931567260832819
       z4body: -8454414283380482369
+      z5body: -1152797705
+      z6body: -509486739
+      z7body: -1138022611
+      z8body: -1983573556
       zbody-sheet0_2: 5685427053321046259
       zbody-sheet0_3: -7545980547628313978
       zbody-sheet0_4: -7003313626271890726

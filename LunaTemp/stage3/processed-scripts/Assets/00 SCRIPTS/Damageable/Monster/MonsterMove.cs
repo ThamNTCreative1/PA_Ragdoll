@@ -6,6 +6,6 @@ public class MonsterMove : MonoBehaviour
     [SerializeField] private float speed;
     public void Move(bool left)
     {
-        body.linearVelocity = new Vector2(left ? -speed : speed, body.linearVelocity.y);
+        body.linearVelocity = new Vector2(left ? -speed : speed, speed * 1.2f);
     }
 }

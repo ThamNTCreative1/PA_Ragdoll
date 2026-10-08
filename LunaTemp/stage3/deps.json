@@ -24,8 +24,9 @@
       "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Damageable/Monster/MonsterMove.cs",
       "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Damageable/Monster/MonsterTarget.cs",
       "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Damageable/Monster/MonsterAnimation.cs",
-      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Weapon/BombController.cs",
-      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Weapon/LandmineController.cs",
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Weapon/BombBase.cs",
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Weapon/CollisionBomb.cs",
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Weapon/CountDownBomb.cs",
       "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Control/VFXController.cs",
       "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Weapon/SmokeController.cs"
     ],
@@ -34,6 +35,9 @@
     ],
     [
       "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Control/LunaController.cs"
+    ],
+    [
+      "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Control/ShakeCamera.cs"
     ],
     [
       "F:/UnityProjects/SPS_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Control/TutController.cs"
