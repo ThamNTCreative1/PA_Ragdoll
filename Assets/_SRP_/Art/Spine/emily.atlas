@@ -1,0 +1,174 @@
+
+emily.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+belt
+  rotate: false
+  xy: 2, 27
+  size: 116, 78
+  orig: 116, 78
+  offset: 0, 0
+  index: -1
+blouse
+  rotate: false
+  xy: 2, 107
+  size: 165, 165
+  orig: 165, 165
+  offset: 0, 0
+  index: -1
+brows
+  rotate: false
+  xy: 73, 5
+  size: 74, 20
+  orig: 74, 20
+  offset: 0, 0
+  index: -1
+eyelids
+  rotate: false
+  xy: 2, 2
+  size: 69, 23
+  orig: 69, 23
+  offset: 0, 0
+  index: -1
+eyelids_sad
+  rotate: false
+  xy: 149, 2
+  size: 74, 29
+  orig: 76, 30
+  offset: 0, 1
+  index: -1
+eyes
+  rotate: false
+  xy: 271, 322
+  size: 60, 32
+  orig: 60, 32
+  offset: 0, 0
+  index: -1
+foot
+  rotate: false
+  xy: 271, 277
+  size: 40, 43
+  orig: 41, 43
+  offset: 0, 0
+  index: -1
+foot-back
+  rotate: false
+  xy: 120, 33
+  size: 120, 72
+  orig: 120, 72
+  offset: 0, 0
+  index: -1
+forearm
+  rotate: false
+  xy: 284, 408
+  size: 42, 102
+  orig: 42, 102
+  offset: 0, 0
+  index: -1
+hair
+  rotate: false
+  xy: 258, 18
+  size: 155, 115
+  orig: 155, 116
+  offset: 0, 1
+  index: -1
+hand
+  rotate: true
+  xy: 340, 374
+  size: 136, 61
+  orig: 136, 61
+  offset: 0, 0
+  index: -1
+hand-back
+  rotate: true
+  xy: 237, 374
+  size: 136, 45
+  orig: 136, 45
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 340, 152
+  size: 122, 118
+  orig: 122, 118
+  offset: 0, 0
+  index: -1
+legs
+  rotate: false
+  xy: 2, 274
+  size: 233, 236
+  orig: 233, 236
+  offset: 0, 0
+  index: -1
+lips-scared
+  rotate: false
+  xy: 225, 9
+  size: 31, 22
+  orig: 35, 24
+  offset: 0, 1
+  index: -1
+neck
+  rotate: false
+  xy: 415, 390
+  size: 70, 120
+  orig: 70, 120
+  offset: 0, 0
+  index: -1
+necklace
+  rotate: false
+  xy: 313, 276
+  size: 38, 42
+  orig: 38, 42
+  offset: 0, 0
+  index: -1
+sleeve
+  rotate: false
+  xy: 337, 320
+  size: 49, 52
+  orig: 49, 52
+  offset: 0, 0
+  index: -1
+sleeve-back
+  rotate: false
+  xy: 284, 356
+  size: 51, 50
+  orig: 51, 50
+  offset: 0, 0
+  index: -1
+sweat_1
+  rotate: true
+  xy: 184, 113
+  size: 10, 19
+  orig: 10, 20
+  offset: 0, 0
+  index: -1
+sweat_2
+  rotate: false
+  xy: 184, 125
+  size: 28, 8
+  orig: 36, 8
+  offset: 0, 0
+  index: -1
+sweat_3
+  rotate: false
+  xy: 169, 110
+  size: 13, 23
+  orig: 14, 24
+  offset: 0, 0
+  index: -1
+tail
+  rotate: true
+  xy: 169, 135
+  size: 137, 169
+  orig: 137, 169
+  offset: 0, 0
+  index: -1
+whites
+  rotate: true
+  xy: 237, 304
+  size: 68, 32
+  orig: 68, 32
+  offset: 0, 0
+  index: -1

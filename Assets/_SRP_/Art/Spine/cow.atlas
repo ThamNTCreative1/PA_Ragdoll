@@ -1,0 +1,181 @@
+
+cow.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+apples
+  rotate: false
+  xy: 2, 168
+  size: 65, 37
+  orig: 65, 37
+  offset: 0, 0
+  index: -1
+belt
+  rotate: false
+  xy: 253, 207
+  size: 128, 159
+  orig: 128, 160
+  offset: 0, 1
+  index: -1
+body
+  rotate: false
+  xy: 2, 309
+  size: 249, 200
+  orig: 249, 200
+  offset: 0, 0
+  index: -1
+calf
+  rotate: false
+  xy: 484, 308
+  size: 22, 43
+  orig: 22, 44
+  offset: 0, 0
+  index: -1
+calf-a
+  rotate: false
+  xy: 484, 400
+  size: 24, 53
+  orig: 24, 54
+  offset: 0, 0
+  index: -1
+calf-back
+  rotate: false
+  xy: 484, 353
+  size: 22, 45
+  orig: 22, 46
+  offset: 0, 0
+  index: -1
+calf-back-a
+  rotate: false
+  xy: 484, 455
+  size: 25, 54
+  orig: 25, 54
+  offset: 0, 0
+  index: -1
+ear
+  rotate: true
+  xy: 467, 166
+  size: 67, 41
+  orig: 67, 41
+  offset: 0, 0
+  index: -1
+ear-back
+  rotate: true
+  xy: 227, 147
+  size: 58, 64
+  orig: 58, 64
+  offset: 0, 0
+  index: -1
+eyelids
+  rotate: false
+  xy: 91, 179
+  size: 73, 44
+  orig: 74, 45
+  offset: 1, 1
+  index: -1
+eyes-closed
+  rotate: true
+  xy: 467, 235
+  size: 71, 41
+  orig: 71, 41
+  offset: 0, 0
+  index: -1
+foot
+  rotate: false
+  xy: 409, 124
+  size: 47, 41
+  orig: 47, 41
+  offset: 0, 0
+  index: -1
+foot-a
+  rotate: false
+  xy: 352, 122
+  size: 55, 43
+  orig: 56, 44
+  offset: 0, 0
+  index: -1
+foot-back
+  rotate: false
+  xy: 458, 124
+  size: 47, 40
+  orig: 47, 40
+  offset: 0, 0
+  index: -1
+foot-back-a
+  rotate: false
+  xy: 293, 161
+  size: 57, 44
+  orig: 57, 44
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 253, 368
+  size: 141, 145
+  orig: 142, 146
+  offset: 1, 1
+  index: -1
+jaw
+  rotate: false
+  xy: 293, 119
+  size: 56, 40
+  orig: 56, 40
+  offset: 0, 0
+  index: -1
+neck
+  rotate: true
+  xy: 2, 35
+  size: 130, 127
+  orig: 130, 128
+  offset: 0, 1
+  index: -1
+pupil
+  rotate: false
+  xy: 383, 346
+  size: 11, 20
+  orig: 11, 20
+  offset: 0, 0
+  index: -1
+pupil-back
+  rotate: false
+  xy: 69, 180
+  size: 20, 25
+  orig: 20, 25
+  offset: 0, 0
+  index: -1
+tail
+  rotate: false
+  xy: 166, 30
+  size: 59, 193
+  orig: 59, 193
+  offset: 0, 0
+  index: -1
+thigh
+  rotate: false
+  xy: 400, 339
+  size: 82, 170
+  orig: 82, 170
+  offset: 0, 0
+  index: -1
+thigh-back
+  rotate: false
+  xy: 383, 167
+  size: 82, 170
+  orig: 82, 170
+  offset: 0, 0
+  index: -1
+thigh-back-a
+  rotate: true
+  xy: 91, 225
+  size: 82, 153
+  orig: 83, 155
+  offset: 1, 1
+  index: -1
+udder
+  rotate: true
+  xy: 2, 230
+  size: 77, 80
+  orig: 77, 80
+  offset: 0, 0
+  index: -1

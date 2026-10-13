@@ -2,44 +2,65 @@
   "ignores": [],
   "groups": [
     [
-      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Core/AudioManager.cs",
-      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Core/GameManager.cs",
-      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Hazards/Rifle.cs",
-      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Gameplay/LevelRefs.cs",
-      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Ragdoll/Ragdoll.cs",
-      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Gameplay/Grabbable.cs",
-      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Ragdoll/CharacterSelector.cs",
-      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/LunaController.cs",
-      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Luna/LunaBridge.cs",
-      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Core/GameConfig.cs",
-      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Hazards/FlameThrower.cs",
-      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Hazards/FlameParticle.cs",
-      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Hazards/Acid.cs",
-      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Hazards/Bullet.cs",
-      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/FX/FxManager.cs",
-      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Hazards/Spike.cs",
-      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Ragdoll/RagdollPart.cs",
-      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Gameplay/ExitZone.cs",
-      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Gameplay/Pin.cs",
-      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/UI/UIController.cs"
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Core/AudioManager.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Core/GameManager.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Hazards/Rifle.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Gameplay/LevelRefs.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Ragdoll/Ragdoll.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Gameplay/Grabbable.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Ragdoll/CharacterSelector.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/LunaController.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Luna/LunaBridge.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Core/GameConfig.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Hazards/FlameThrower.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Hazards/FlameParticle.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Hazards/Acid.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Hazards/Bullet.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/FX/FxManager.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Hazards/Spike.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Ragdoll/RagdollPart.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Gameplay/ExitZone.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Gameplay/Pin.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/UI/UIController.cs"
     ],
     [
-      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Core/CameraFit.cs"
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Core/CameraFit.cs"
     ],
     [
-      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Core/ScreenBackground.cs"
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Core/ScreenBackground.cs"
     ],
     [
-      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/UI/UICover.cs"
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/UI/UICover.cs"
     ],
     [
-      "D:/LunaVer/7.2.0/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_SRP_/Scripts/GameManager.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_SRP_/Scripts/MelonGame.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_SRP_/Scripts/MelonHud.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_SRP_/Scripts/MelonTool.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_SRP_/Scripts/MelonAssets.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_SRP_/Scripts/MelonLimb.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_SRP_/Scripts/MelonProjectile.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_SRP_/Scripts/MelonRagdoll.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_SRP_/Scripts/MelonStage.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_SRP_/Scripts/MelonParticle.cs"
     ],
     [
-      "D:/LunaVer/7.2.0/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_SRP_/Scripts/MelonSmokeTests.cs"
     ],
     [
-      "D:/LunaVer/7.2.0/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_SRP_/Scripts/MissingScriptCleanerWindow.cs"
+    ],
+    [
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/_SRP_/Scripts/ResetSprite.cs"
+    ],
+    [
+      "F:/7.2.0/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
+    ],
+    [
+      "F:/7.2.0/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
+    ],
+    [
+      "F:/7.2.0/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.AssemblyAttributes.cs"
     ]
   ]
 }

@@ -1,0 +1,1010 @@
+{
+  "source": "Provided Melon Sandbox HTML playable",
+  "textures": [
+    {
+      "name": "msg_mirror_down_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_mirror_down_arm.png",
+      "sha256": "49e819f57541eafd27bc668cae62c85ba440d077d60e7e6bb8510b2e33d65b84"
+    },
+    {
+      "name": "msg_mdoc_down_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_mdoc_down_leg.png",
+      "sha256": "0f34e7a3bba6e8207c627226a20422461612defc2ff3f21365487188d6d953c3"
+    },
+    {
+      "name": "msg_doc_body",
+      "path": "Assets/Playable/Art/Sprites/msg_doc_body.png",
+      "sha256": "3d0ad9a32a95a49875d95cda67fb0bfdcde5199e1531c6d1d37dd638d2931f48"
+    },
+    {
+      "name": "msg_mkak_body_down",
+      "path": "Assets/Playable/Art/Sprites/msg_mkak_body_down.png",
+      "sha256": "15a24fe020da25df61719baf9b65551b2d90d62bc15f0a186e99b10add06bada"
+    },
+    {
+      "name": "msg_lsk_head",
+      "path": "Assets/Playable/Art/Sprites/msg_lsk_head.png",
+      "sha256": "2df13b44fdf68f3c5c09af8ebbfa5dcba8e46cef51f757f6a5f046e569a0733b"
+    },
+    {
+      "name": "msg_lsk_down_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_lsk_down_arm.png",
+      "sha256": "32eb34193ea122c18d08be4dbb207cdb8b90fa1c480bae6efcbf1cd9e8a4b404"
+    },
+    {
+      "name": "msg_chair",
+      "path": "Assets/Playable/Art/Sprites/msg_chair.png",
+      "sha256": "2d41456557b2b4b1c35d38490c11b96ac40aaff230b732ce9afeb94aa44f43c8"
+    },
+    {
+      "name": "msg_main_up_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_main_up_arm.png",
+      "sha256": "a1c99dc194ee92c4797ec79f01d6a1a0526639b9586f980ad13308a1cbe3897a"
+    },
+    {
+      "name": "msg_lsk_body_mid",
+      "path": "Assets/Playable/Art/Sprites/msg_lsk_body_mid.png",
+      "sha256": "c50920a4878df502f8bab57999b932566fa4b535ad167aed43ff034f48ef8bf5"
+    },
+    {
+      "name": "msg_msk_body_mid",
+      "path": "Assets/Playable/Art/Sprites/msg_msk_body_mid.png",
+      "sha256": "b53917a387878bf028ef2834259ebafe4a3fe1d349cc4c8aec14cacf500c4b77"
+    },
+    {
+      "name": "msg_hor",
+      "path": "Assets/Playable/Art/Sprites/msg_hor.png",
+      "sha256": "224ce72135019b1b978878a166447462d126f14fdbc23707cb54bc941def4e11"
+    },
+    {
+      "name": "msg_lsk_up_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_lsk_up_leg.png",
+      "sha256": "e3c9751f9bc6c442d0bbc1f99e7a8a3bd5497c4b09ac3583061ffcd4a54fff61"
+    },
+    {
+      "name": "msg_cnd",
+      "path": "Assets/Playable/Art/Sprites/msg_cnd.png",
+      "sha256": "e74e5ef0a1ab68fccd4bfad3af93cc6b29738c14747acd142b60f642f75f07fc"
+    },
+    {
+      "name": "msg_msk_body",
+      "path": "Assets/Playable/Art/Sprites/msg_msk_body.png",
+      "sha256": "01571ccbf9d9e6eab22a1956e63c369056ad557ac8bfee8a6c03f1bd8406dbce"
+    },
+    {
+      "name": "msg_red_down_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_red_down_arm.png",
+      "sha256": "cf18d4d4b33b960734d63cf8fef2a2fefb11674689acb15cad38259528dd3283"
+    },
+    {
+      "name": "msg_sk_up_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_sk_up_arm.png",
+      "sha256": "e0225043689810ef00aaa0ef5e8d8266aa89ae2de12a5509d728e8bed1484f72"
+    },
+    {
+      "name": "msg_tom_body",
+      "path": "Assets/Playable/Art/Sprites/msg_tom_body.png",
+      "sha256": "fc98fd23fe83dd709d3f4d788da3ad475a4c2b4af0f44f7f24a3137e17c994bd"
+    },
+    {
+      "name": "msg_mdoc_up_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_mdoc_up_leg.png",
+      "sha256": "acc7b35310ccad16e2a77ced8a8a5792f29bb0b072573eed55a436b59c8bad7b"
+    },
+    {
+      "name": "msg_fire",
+      "path": "Assets/Playable/Art/Sprites/msg_fire.png",
+      "sha256": "fe5cdf9baf165a0f13654ee9ea35fb98efbd7c463a8e47ea5c8ab2f6cfd75531"
+    },
+    {
+      "name": "msg_main_down_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_main_down_leg.png",
+      "sha256": "f2c3cfa54ce60c1ef6184bfe6f086d5a760c27e38068c8ebeb967735766309a7"
+    },
+    {
+      "name": "msg_msk_down_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_msk_down_arm.png",
+      "sha256": "51c6782d9228408bbe5bf5bd906b14398173a5dc23b6ee693d7e3374fafb05bd"
+    },
+    {
+      "name": "msg_mcorn_up_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_mcorn_up_leg.png",
+      "sha256": "1160b4f5895617dba2fb32e2bbaba6d7d6181b5154649125a1de8665fcb1e4ed"
+    },
+    {
+      "name": "msg_vert",
+      "path": "Assets/Playable/Art/Sprites/msg_vert.png",
+      "sha256": "dc6da75a68c6926d6cbb1673afd04049f9a9dd72602ea0c9891288f2a5fc5baa"
+    },
+    {
+      "name": "msg_sk_up_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_sk_up_leg.png",
+      "sha256": "833e83a65d811c9bce2bfc85681c0cd1f56cbc9f8ca378b27714e08f48c5035f"
+    },
+    {
+      "name": "msg_blue_foot",
+      "path": "Assets/Playable/Art/Sprites/msg_blue_foot.png",
+      "sha256": "30f92a62f78da7ac99d7fc91ae34a491802363e3a550a5bfee122640fa9c6764"
+    },
+    {
+      "name": "msg_red_down_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_red_down_leg.png",
+      "sha256": "e0dd496a9f9ed6f3bc9fcf3195c3b7dc82719e649b4a24c0f87fe856287e7471"
+    },
+    {
+      "name": "msg_red_body_mid",
+      "path": "Assets/Playable/Art/Sprites/msg_red_body_mid.png",
+      "sha256": "73f6329f9fecc14eeb997ab18482b553e1b8ebb18dbe5dc54d5429788d201067"
+    },
+    {
+      "name": "msg_mirror_down_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_mirror_down_leg.png",
+      "sha256": "f2c3cfa54ce60c1ef6184bfe6f086d5a760c27e38068c8ebeb967735766309a7"
+    },
+    {
+      "name": "main_back",
+      "path": "Assets/Playable/Art/Sprites/main_back.png",
+      "sha256": "bb45179f422364032f7fee1e2607ae6e7b703e51ad7329f861fc9d064341d5ab"
+    },
+    {
+      "name": "msg_flr",
+      "path": "Assets/Playable/Art/Sprites/msg_flr.png",
+      "sha256": "8aa7fe6cfb043d3281170db66dd2f4897d4ee61af6cb19384421304def7fee6e"
+    },
+    {
+      "name": "msg_kak_foot",
+      "path": "Assets/Playable/Art/Sprites/msg_kak_foot.png",
+      "sha256": "ddd69453c5e3312c1b1de59a2f79c4db15c0f5ea98cfb40a900f150730162748"
+    },
+    {
+      "name": "msg_big",
+      "path": "Assets/Playable/Art/Sprites/msg_big.png",
+      "sha256": "f974e07c72de6190a0c0ddb10438b9cdc69fb8e1ddef3cee6cecc716cb101aa3"
+    },
+    {
+      "name": "msg_doc_up_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_doc_up_arm.png",
+      "sha256": "54fa495ea90dda93d509cb5dbf576470029ef0b3ce5d02ca4019cf6999c39773"
+    },
+    {
+      "name": "msg_main_body_down",
+      "path": "Assets/Playable/Art/Sprites/msg_main_body_down.png",
+      "sha256": "b4ee54282e56607b6c8324592b938cb75874d7410df0885397bd68410193d341"
+    },
+    {
+      "name": "msg_mdoc_down_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_mdoc_down_arm.png",
+      "sha256": "5c728aaed51de14414f22d1efc6702e83d0b0c4af28636494f253749ab436eeb"
+    },
+    {
+      "name": "msg_msk_down_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_msk_down_leg.png",
+      "sha256": "7631bd7c6dc78738fb9b6992612cd5c9752ae40da0e2b5a7ac0b3de4001ca714"
+    },
+    {
+      "name": "msg_flame",
+      "path": "Assets/Playable/Art/Sprites/msg_flame.png",
+      "sha256": "94df8b403a6d0ccb746136b58c97cbb5904c3aab62497b5c109cd48820efbb63"
+    },
+    {
+      "name": "msg_rifle",
+      "path": "Assets/Playable/Art/Sprites/msg_rifle.png",
+      "sha256": "804bf0abe6d5611ac4d14d3b98b5c31b6e0a752cfc19eca3ef247d083e5484a6"
+    },
+    {
+      "name": "msg_lsk_up_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_lsk_up_arm.png",
+      "sha256": "e3c9751f9bc6c442d0bbc1f99e7a8a3bd5497c4b09ac3583061ffcd4a54fff61"
+    },
+    {
+      "name": "msg_kak_down_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_kak_down_arm.png",
+      "sha256": "0586a8a0ed103086262c2899d435deb39b3e222ff173d1bbc125f6f0668b7e3d"
+    },
+    {
+      "name": "msg_mkak_body",
+      "path": "Assets/Playable/Art/Sprites/msg_mkak_body.png",
+      "sha256": "859bd127d9fe77529efbb3827b2eb17d82a7f38da67dba40ff5984becbe20949"
+    },
+    {
+      "name": "msg_mtom_body_down",
+      "path": "Assets/Playable/Art/Sprites/msg_mtom_body_down.png",
+      "sha256": "c51549d749eb052ff51836b3db9b2dd3c1d5836d2a66e9367d06fb014dbe7ae6"
+    },
+    {
+      "name": "msg_mtom_body_mid",
+      "path": "Assets/Playable/Art/Sprites/msg_mtom_body_mid.png",
+      "sha256": "b54c6033d9f97d83682037e5ecd74dc6b99a33db77b5affd7dc138e46dc786c2"
+    },
+    {
+      "name": "msg_red_up_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_red_up_leg.png",
+      "sha256": "e2ceb7277f4f8d60bb6430a22bd15d882107274516bc1254df1cec16d2e19a3f"
+    },
+    {
+      "name": "msg_mcorn_up_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_mcorn_up_arm.png",
+      "sha256": "1160b4f5895617dba2fb32e2bbaba6d7d6181b5154649125a1de8665fcb1e4ed"
+    },
+    {
+      "name": "msg_tom_up_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_tom_up_arm.png",
+      "sha256": "643d759b96b92993dc3a7b9fb3fc6a5c32f2bae0cc8a42833b25d2aa425a7c3d"
+    },
+    {
+      "name": "msg_kak_up_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_kak_up_leg.png",
+      "sha256": "16feba2ca886f0bb5d95bc82f52b4509b66bf35e5bf03c84bbcf53774ab89c01"
+    },
+    {
+      "name": "msg_doc_down_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_doc_down_leg.png",
+      "sha256": "7645beacbddc7d9c2d7076adf9510c6674b5861d73d6f20c7923704ffc52fef1"
+    },
+    {
+      "name": "msg_blue_down_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_blue_down_arm.png",
+      "sha256": "d031b62d0cc4313ac2bd1cd410fa17c03260265ab3925f79193510348839de1d"
+    },
+    {
+      "name": "msg_main_body",
+      "path": "Assets/Playable/Art/Sprites/msg_main_body.png",
+      "sha256": "5d488409406f34cc76dd1ab51cb280a16244f84fdb0b9a05d3fb25f28540cd31"
+    },
+    {
+      "name": "msg_tom_head",
+      "path": "Assets/Playable/Art/Sprites/msg_tom_head.png",
+      "sha256": "d708ac05e6e11e21ce5ed0a4679196fcf3f7166a4f8d1ebdbbe014cd64c952e4"
+    },
+    {
+      "name": "msg_lsk_body",
+      "path": "Assets/Playable/Art/Sprites/msg_lsk_body.png",
+      "sha256": "708bda196f0ce925be3d5d8af4d57d5ef76cb8ccdd2a31a626836390ba630150"
+    },
+    {
+      "name": "main_spr_0",
+      "path": "Assets/Playable/Art/Sprites/main_spr_0.png",
+      "sha256": "8da6a360964ea18b453566237779fe19c05dfe7b46a62802d8fca671d2d675eb"
+    },
+    {
+      "name": "main_spr_1",
+      "path": "Assets/Playable/Art/Sprites/main_spr_1.png",
+      "sha256": "f689144d95f334683818dbbf02d0bc714392b978f0c33372d8525895575e6112"
+    },
+    {
+      "name": "main_spr_2",
+      "path": "Assets/Playable/Art/Sprites/main_spr_2.png",
+      "sha256": "523dc0b78f4b5e79bab7de601659f1c31ec700c75c3789c41c593d144c102ffb"
+    },
+    {
+      "name": "msg_tom_body_down",
+      "path": "Assets/Playable/Art/Sprites/msg_tom_body_down.png",
+      "sha256": "e15f311abd92e64d252a77ea053e384c1b7966262f6fa579348d94d8a60cb793"
+    },
+    {
+      "name": "msg_mdoc_up_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_mdoc_up_arm.png",
+      "sha256": "acc7b35310ccad16e2a77ced8a8a5792f29bb0b072573eed55a436b59c8bad7b"
+    },
+    {
+      "name": "msg_mcorn_foot",
+      "path": "Assets/Playable/Art/Sprites/msg_mcorn_foot.png",
+      "sha256": "b795369f7c8b36b2012e212dae4de78d182157d05aa235c0459130d0c443bdb8"
+    },
+    {
+      "name": "msg_blue_up_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_blue_up_leg.png",
+      "sha256": "b8f0dc420fdcda4812484f9a911d8568959f71a1695141a56206e61c8a4c8857"
+    },
+    {
+      "name": "msg_msk_up_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_msk_up_arm.png",
+      "sha256": "fd498d419cf40a022018f0dc97b232ec0e73402629a3ba4bff8e439804c42f44"
+    },
+    {
+      "name": "msg_mkak_body_mid",
+      "path": "Assets/Playable/Art/Sprites/msg_mkak_body_mid.png",
+      "sha256": "9521e5b34e50fff4335bab48094102cc601082ca6d6d0979b726773be9e0d5d0"
+    },
+    {
+      "name": "msg_mcorn_head",
+      "path": "Assets/Playable/Art/Sprites/msg_mcorn_head.png",
+      "sha256": "c6af889f272af25f1b0bde7de80ece4cf02c8dd7be06c95c53efe01d85f97863"
+    },
+    {
+      "name": "msg_kak_up_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_kak_up_arm.png",
+      "sha256": "16feba2ca886f0bb5d95bc82f52b4509b66bf35e5bf03c84bbcf53774ab89c01"
+    },
+    {
+      "name": "msg_doc_up_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_doc_up_leg.png",
+      "sha256": "54fa495ea90dda93d509cb5dbf576470029ef0b3ce5d02ca4019cf6999c39773"
+    },
+    {
+      "name": "msg_msk_body_down",
+      "path": "Assets/Playable/Art/Sprites/msg_msk_body_down.png",
+      "sha256": "dd1922bddf0fc1ab6badd23df7719e46ca26ba9757f6bf29874c6aa840953bff"
+    },
+    {
+      "name": "msg_mcorn_down_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_mcorn_down_leg.png",
+      "sha256": "2bbaada1256e600a566eb8f31d7eade432c936f67391f73fd3cce8fb62d0b2e6"
+    },
+    {
+      "name": "msg_mirror_foot",
+      "path": "Assets/Playable/Art/Sprites/msg_mirror_foot.png",
+      "sha256": "664009535d219122f219dd37ddc15a88a2b779fb2d7c343f4102981ecb792249"
+    },
+    {
+      "name": "msg_kak_down_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_kak_down_leg.png",
+      "sha256": "fd4cdf7fb5b8dc68d2de445df55503bf79e5cb6ba0729f86fbeaa4b75fbba056"
+    },
+    {
+      "name": "msg_bsk_down_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_bsk_down_leg.png",
+      "sha256": "213abe7f2aec44427aacbbd49e03f6fef650183f79cbaa072692137a4c13f4ea"
+    },
+    {
+      "name": "msg_mtom_head",
+      "path": "Assets/Playable/Art/Sprites/msg_mtom_head.png",
+      "sha256": "3313c175b094a38c6979df60fca1b2e8e9c96bb081f4d045a424f15328b2baa0"
+    },
+    {
+      "name": "msg_doc_head",
+      "path": "Assets/Playable/Art/Sprites/msg_doc_head.png",
+      "sha256": "b108286f0f176d82d915f5db951652b9f4331954e1ce91d8196132d761458883"
+    },
+    {
+      "name": "msg_blue_body_mid",
+      "path": "Assets/Playable/Art/Sprites/msg_blue_body_mid.png",
+      "sha256": "484092daed3eee94df813839949de5b459f4fa575a5d5cf7dbed226eda7f395f"
+    },
+    {
+      "name": "msg_mtom_down_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_mtom_down_leg.png",
+      "sha256": "ec2bba17dfa71c7f7c14e6ca3409dd83f8b42abd912ca674a03e3f2912ff9fd8"
+    },
+    {
+      "name": "msg_stol",
+      "path": "Assets/Playable/Art/Sprites/msg_stol.png",
+      "sha256": "c953fc2f54ef03ee58016e9efee053c89739513e74162d6f7b5fcc1ef0a55eb8"
+    },
+    {
+      "name": "msg_red_up_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_red_up_arm.png",
+      "sha256": "e2ceb7277f4f8d60bb6430a22bd15d882107274516bc1254df1cec16d2e19a3f"
+    },
+    {
+      "name": "msg_dym",
+      "path": "Assets/Playable/Art/Sprites/msg_dym.png",
+      "sha256": "0d64510f2e99ceafd39274d34ea43f4de1ad3cdede1b03458dceb3abd67f4dc5"
+    },
+    {
+      "name": "msg_mkak_up_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_mkak_up_leg.png",
+      "sha256": "6e0f63cd62ec84e2a9e2c578c444cf6225b3f5c41b29de5bde93eaf5259c0daa"
+    },
+    {
+      "name": "msg_mirror_up_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_mirror_up_leg.png",
+      "sha256": "38910ad97cc7c13a43a293539b4c12c51ab4c20a590734a05911545cf513b09a"
+    },
+    {
+      "name": "msg_msk_foot",
+      "path": "Assets/Playable/Art/Sprites/msg_msk_foot.png",
+      "sha256": "358e5d784d40e498bbe90bde6e13a7701dc260b8cb6c4a20535aa604dab0585f"
+    },
+    {
+      "name": "msg_lsk_foot",
+      "path": "Assets/Playable/Art/Sprites/msg_lsk_foot.png",
+      "sha256": "decf8423b2ace443e8b01f40e3e8bb8f1cdd61143ddd952ea0ec3d04a44f55f7"
+    },
+    {
+      "name": "msg_no1",
+      "path": "Assets/Playable/Art/Sprites/msg_no1.png",
+      "sha256": "ba81c1d3d481f2a787b2493a7bcbbfc58b50a8003d37a5195ed3b02cd9284cfb"
+    },
+    {
+      "name": "msg_main_up_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_main_up_leg.png",
+      "sha256": "a1c99dc194ee92c4797ec79f01d6a1a0526639b9586f980ad13308a1cbe3897a"
+    },
+    {
+      "name": "msg_corn_body",
+      "path": "Assets/Playable/Art/Sprites/msg_corn_body.png",
+      "sha256": "31bc2349f2aa97386565280aa436398c8bf24930f79a2b35673a81a5173ebd44"
+    },
+    {
+      "name": "msg_fr_foot",
+      "path": "Assets/Playable/Art/Sprites/msg_fr_foot.png",
+      "sha256": "07969a3d7c51b515d782600d4af1803dcf912ba6f09c1da63e37e2fa47740f3c"
+    },
+    {
+      "name": "msg_mkak_down_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_mkak_down_arm.png",
+      "sha256": "af1b0568ea02e31e9a6c9fb25f1e7814d95cdea69410ec3ba77f3e36d1865d59"
+    },
+    {
+      "name": "msg_shok",
+      "path": "Assets/Playable/Art/Sprites/msg_shok.png",
+      "sha256": "ba1290ab3bb26c2a1c8a7c3b19d5574d9623d1af5e7fb06d32bf5695e552ed40"
+    },
+    {
+      "name": "msg_tom_body_mid",
+      "path": "Assets/Playable/Art/Sprites/msg_tom_body_mid.png",
+      "sha256": "9572e7c57c1ab807da66a58cfddb01336012ad1b25b53c7719801cbb397aafd2"
+    },
+    {
+      "name": "msg_lsk_body_down",
+      "path": "Assets/Playable/Art/Sprites/msg_lsk_body_down.png",
+      "sha256": "75e5b9391b1b929a502a0e08ffb3caa5dac76d78dab42a77a2c6a594fe931703"
+    },
+    {
+      "name": "msg_mkak_foot",
+      "path": "Assets/Playable/Art/Sprites/msg_mkak_foot.png",
+      "sha256": "48c24d19161171e7e601577e20eeba060358cff85af869f3e92b21c98c0741a6"
+    },
+    {
+      "name": "msg_bsk_body_mid",
+      "path": "Assets/Playable/Art/Sprites/msg_bsk_body_mid.png",
+      "sha256": "9bc27017d0f7650c0a913186859ec07c75ed5e2a8e9c69d6816b390d2d2cc04c"
+    },
+    {
+      "name": "msg_msk_up_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_msk_up_leg.png",
+      "sha256": "fd498d419cf40a022018f0dc97b232ec0e73402629a3ba4bff8e439804c42f44"
+    },
+    {
+      "name": "msg_bullet",
+      "path": "Assets/Playable/Art/Sprites/msg_bullet.png",
+      "sha256": "89c1dfa3798628217ee7a66a3d9486596e6b2ef5fb5b8501dde03d6309385266"
+    },
+    {
+      "name": "msg_mdoc_head",
+      "path": "Assets/Playable/Art/Sprites/msg_mdoc_head.png",
+      "sha256": "4c8b9411f1af1e6fa542749255cb1e0fb017a5a7ce8716ddd529582629ddabfa"
+    },
+    {
+      "name": "msg_mtom_down_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_mtom_down_arm.png",
+      "sha256": "0590d3ea0e57350fc316b43fbe48f706a72a56288c8944dca628b76f37fe51df"
+    },
+    {
+      "name": "msg_mdoc_foot",
+      "path": "Assets/Playable/Art/Sprites/msg_mdoc_foot.png",
+      "sha256": "d89d04154cd8a9528c50fb2aabbcfc3e72783233149d97b6717796d8cf398be2"
+    },
+    {
+      "name": "msg_blue_up_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_blue_up_arm.png",
+      "sha256": "b8f0dc420fdcda4812484f9a911d8568959f71a1695141a56206e61c8a4c8857"
+    },
+    {
+      "name": "msg_corn_foot",
+      "path": "Assets/Playable/Art/Sprites/msg_corn_foot.png",
+      "sha256": "e8241b0e6db1c67074efc1c206061ccdfb499fe9e5a759183bb1a6b2928c771c"
+    },
+    {
+      "name": "msg_les_0",
+      "path": "Assets/Playable/Art/Sprites/msg_les_0.png",
+      "sha256": "22b72850f18fc26e7c967ae33320b57b78d9fdd434fcdb7151c86ecf7e398b7c"
+    },
+    {
+      "name": "msg_corn_down_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_corn_down_arm.png",
+      "sha256": "a78a9a4e51773b99b5b335fa25ea0e9d5fbdd41a0e26d94335ef5d446a099d0c"
+    },
+    {
+      "name": "main_sec_2",
+      "path": "Assets/Playable/Art/Sprites/main_sec_2.png",
+      "sha256": "81ec8a308997d8c4aec7d869f6d5cae90a15c0e5e8f2c03038c342ffa7b66ac9"
+    },
+    {
+      "name": "main_sec_0",
+      "path": "Assets/Playable/Art/Sprites/main_sec_0.png",
+      "sha256": "59742334a31bdb88af157c2dd09a1e99816c9bd06a5a07d59fd9b47e55aa721e"
+    },
+    {
+      "name": "main_sec_1",
+      "path": "Assets/Playable/Art/Sprites/main_sec_1.png",
+      "sha256": "d2d84a324ff3ce15b5a3012d157930b4e4493e4e125b92cec8dab5253aa490e3"
+    },
+    {
+      "name": "msg_fr_head",
+      "path": "Assets/Playable/Art/Sprites/msg_fr_head.png",
+      "sha256": "98b9b0c4030dae48b9d65b78c4db75ce81726d2fc49a3eb0cf7f804818748e8e"
+    },
+    {
+      "name": "msg_ruk",
+      "path": "Assets/Playable/Art/Sprites/msg_ruk.png",
+      "sha256": "d4c97d57cfb9e5b705feb4df3131e63a5cef23011e63b0d1a423a42ef3f496e8"
+    },
+    {
+      "name": "msg_corn_body_down",
+      "path": "Assets/Playable/Art/Sprites/msg_corn_body_down.png",
+      "sha256": "769f4450d993c52d1b284c8fa9b54cd56c83375d4e503b85a13872c7f197a3b9"
+    },
+    {
+      "name": "msg_mdoc_body_mid",
+      "path": "Assets/Playable/Art/Sprites/msg_mdoc_body_mid.png",
+      "sha256": "9ff939b348f8d08b7914b48ab82ca8918e6ca6afdfe606b4e2fcf2e9cd92909f"
+    },
+    {
+      "name": "msg_corn_head",
+      "path": "Assets/Playable/Art/Sprites/msg_corn_head.png",
+      "sha256": "2488af64218b4b1f44ca20383b7152ca988da9331e09556f2f488d58b765890d"
+    },
+    {
+      "name": "msg_red_foot",
+      "path": "Assets/Playable/Art/Sprites/msg_red_foot.png",
+      "sha256": "43c30f37e52af30fb563d318deb090117b43b8d21eeecdb65ebb8533cd15cd5b"
+    },
+    {
+      "name": "msg_tom_down_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_tom_down_leg.png",
+      "sha256": "0d27329466eef5e00ea38a41bc12a71edaf37584a2325e17ead6bed6f1d036b0"
+    },
+    {
+      "name": "msg_mtom_foot",
+      "path": "Assets/Playable/Art/Sprites/msg_mtom_foot.png",
+      "sha256": "76b77ab7cd347435b638e8a9cb1cb886faeeb243e8023de5125cf1278ac804d3"
+    },
+    {
+      "name": "msg_main_down_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_main_down_arm.png",
+      "sha256": "5557c2ce5dee11f3d77d755a76cd62546a04bc3f64ad49d308438f4c9d26f489"
+    },
+    {
+      "name": "msg_fr_body_down",
+      "path": "Assets/Playable/Art/Sprites/msg_fr_body_down.png",
+      "sha256": "b296342e4e4150f0bf8bd3e8a7637dff2833d45d8210f92ac7680826db5d5ba2"
+    },
+    {
+      "name": "msg_corn_up_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_corn_up_leg.png",
+      "sha256": "871c2ec1ff97ebdf4c2430a166e06eb006d86a49c10a15a59f42a2c949e57eaf"
+    },
+    {
+      "name": "main_btn_1",
+      "path": "Assets/Playable/Art/Sprites/main_btn_1.png",
+      "sha256": "f4a66106f9139bbcad3705f01bdcae8e4280062f2dabd24c803bec05bb22907e"
+    },
+    {
+      "name": "main_btn_0",
+      "path": "Assets/Playable/Art/Sprites/main_btn_0.png",
+      "sha256": "f4a66106f9139bbcad3705f01bdcae8e4280062f2dabd24c803bec05bb22907e"
+    },
+    {
+      "name": "msg_mkak_head",
+      "path": "Assets/Playable/Art/Sprites/msg_mkak_head.png",
+      "sha256": "e832f0728ac189259c2621b6ba16d2a7e1a05c040892c4dc5e682faa639306ba"
+    },
+    {
+      "name": "main_btn_2",
+      "path": "Assets/Playable/Art/Sprites/main_btn_2.png",
+      "sha256": "f4a66106f9139bbcad3705f01bdcae8e4280062f2dabd24c803bec05bb22907e"
+    },
+    {
+      "name": "msg_les_1",
+      "path": "Assets/Playable/Art/Sprites/msg_les_1.png",
+      "sha256": "af8941266579635b5f905ce707c031d45167b16da76a8d3b7e9b4b20fe1ad962"
+    },
+    {
+      "name": "msg_blue_down_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_blue_down_leg.png",
+      "sha256": "6834c9977265acef9f4307b3156a02d7704ba5967f4596aa5e63b377ebea5f30"
+    },
+    {
+      "name": "msg_tom_foot",
+      "path": "Assets/Playable/Art/Sprites/msg_tom_foot.png",
+      "sha256": "5eb9d68a9701ff40f1a5023ede839f0507da08055db6f80cb21ac9518f366be0"
+    },
+    {
+      "name": "msg_kak_body",
+      "path": "Assets/Playable/Art/Sprites/msg_kak_body.png",
+      "sha256": "c449ab8da021e9bd1a2d31d4867503a380dce2b6bad6bf4806cf4b7e41f8abc9"
+    },
+    {
+      "name": "msg_kak_body_mid",
+      "path": "Assets/Playable/Art/Sprites/msg_kak_body_mid.png",
+      "sha256": "e4d45bbc8bbd13590189a77b30a253f5371d620fe58fe04a2f3c0eee1d3e560d"
+    },
+    {
+      "name": "msg_spring_0",
+      "path": "Assets/Playable/Art/Sprites/msg_spring_0.png",
+      "sha256": "a21aecc109e6898ca2573da6a3865054a4a39f85c750efe9d0182861229e843c"
+    },
+    {
+      "name": "msg_spring_1",
+      "path": "Assets/Playable/Art/Sprites/msg_spring_1.png",
+      "sha256": "38ee6035635bf13691b3116ed104c50bd4c642c2e75e7c26d4484d48d4bed86b"
+    },
+    {
+      "name": "msg_spring_2",
+      "path": "Assets/Playable/Art/Sprites/msg_spring_2.png",
+      "sha256": "91e7f50023ae27f18d6999b4722f3e0c0d06c79833f1244d2276b9f6a4c9e9d2"
+    },
+    {
+      "name": "msg_el_5",
+      "path": "Assets/Playable/Art/Sprites/msg_el_5.png",
+      "sha256": "6100fe135e4e4cfe8fed0a388923b14110b9d68258c1f2a819bd2a3d5701867f"
+    },
+    {
+      "name": "msg_corn_body_mid",
+      "path": "Assets/Playable/Art/Sprites/msg_corn_body_mid.png",
+      "sha256": "56470d2fb340eb86773419592f9fd5c8b6ce04b269025ccbfbca0c229ffeeb70"
+    },
+    {
+      "name": "msg_mtom_up_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_mtom_up_arm.png",
+      "sha256": "b9b574d177635b9b65744033d0dc9417ba421be343557533c54301f88edc4d7f"
+    },
+    {
+      "name": "main_finger",
+      "path": "Assets/Playable/Art/Sprites/main_finger.png",
+      "sha256": "221732430fa2f26d5273b9aecdffaf3ef87558542b93e19b98d2275d641d075c"
+    },
+    {
+      "name": "msg_el_7",
+      "path": "Assets/Playable/Art/Sprites/msg_el_7.png",
+      "sha256": "41f22603e8c0e914026b2c9a77b18c4d9dec125ac1d6af4aa18385c7ea9ca24e"
+    },
+    {
+      "name": "msg_doc_foot",
+      "path": "Assets/Playable/Art/Sprites/msg_doc_foot.png",
+      "sha256": "832504cf870886c8d136dbc819738ee49c48701b715bea7a6b7103f12e41e5e3"
+    },
+    {
+      "name": "msg_mirror_head",
+      "path": "Assets/Playable/Art/Sprites/msg_mirror_head.png",
+      "sha256": "c5ad32889ce4bffeca58a0bbf4858433456ac9a8f0d6c52208f5e722212c33cd"
+    },
+    {
+      "name": "msg_el_2",
+      "path": "Assets/Playable/Art/Sprites/msg_el_2.png",
+      "sha256": "d4befd6716e9fa08f2801fa9a16db910e553df2af12a52855853414b6b3e2f23"
+    },
+    {
+      "name": "msg_el_3",
+      "path": "Assets/Playable/Art/Sprites/msg_el_3.png",
+      "sha256": "837ebff3bbdde88d038ad3ab854deb610a4a89d00d8e6f4723fcd64db9c57cc9"
+    },
+    {
+      "name": "msg_corn_up_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_corn_up_arm.png",
+      "sha256": "871c2ec1ff97ebdf4c2430a166e06eb006d86a49c10a15a59f42a2c949e57eaf"
+    },
+    {
+      "name": "msg_mcorn_body_mid",
+      "path": "Assets/Playable/Art/Sprites/msg_mcorn_body_mid.png",
+      "sha256": "49bced6b1fc112bc2b499af79b722e778d91006071989ad3e27ca23234d9c2a3"
+    },
+    {
+      "name": "msg_sk_foot",
+      "path": "Assets/Playable/Art/Sprites/msg_sk_foot.png",
+      "sha256": "2e0433548cf35dae57a778cb7a5938ff10aa2dc8155429418a30f40a102bee42"
+    },
+    {
+      "name": "msg_mkak_up_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_mkak_up_arm.png",
+      "sha256": "6e0f63cd62ec84e2a9e2c578c444cf6225b3f5c41b29de5bde93eaf5259c0daa"
+    },
+    {
+      "name": "msg_mirror_body_mid",
+      "path": "Assets/Playable/Art/Sprites/msg_mirror_body_mid.png",
+      "sha256": "b201fcc390b5e2856b05beb4171bf3481a467998e4e3c84eba5030951d01d002"
+    },
+    {
+      "name": "msg_sk_body_down",
+      "path": "Assets/Playable/Art/Sprites/msg_sk_body_down.png",
+      "sha256": "1a36f3199aea1908163d08bb2d08f7869b13ff79dc05a08204fe5ce099ea7c1b"
+    },
+    {
+      "name": "msg_red_body_down",
+      "path": "Assets/Playable/Art/Sprites/msg_red_body_down.png",
+      "sha256": "1d697d489e62da06c71c23197e83cfb4553fdd2ac708de87d7a02c3d518b2a0f"
+    },
+    {
+      "name": "msg_mcorn_down_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_mcorn_down_arm.png",
+      "sha256": "2256f1c2f93724f2a3f1a5a5f007e2a74471e14180c3f9ccbf04b4316b443419"
+    },
+    {
+      "name": "msg_bsk_down_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_bsk_down_arm.png",
+      "sha256": "7cbd10a832503edf7619b54331b00426cb90a456483f6898db6851f7911781c4"
+    },
+    {
+      "name": "msg_fr_up_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_fr_up_leg.png",
+      "sha256": "77cfae3232a99b8a67fe0eeacf213f40d25027e5849f34d4c8ab3fd34865d068"
+    },
+    {
+      "name": "msg_blue_head",
+      "path": "Assets/Playable/Art/Sprites/msg_blue_head.png",
+      "sha256": "7b8fc6481bc7c54a882ad0f21fc9a6ecd4d598a8d23e4a7662b483ddde159202"
+    },
+    {
+      "name": "msg_punch",
+      "path": "Assets/Playable/Art/Sprites/msg_punch.png",
+      "sha256": "502670934fbfa20646e9cb611b194fe0b4d0e63fb2fbcc37ca49dfd0a5a591ce"
+    },
+    {
+      "name": "msg_fr_down_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_fr_down_arm.png",
+      "sha256": "17f08158330f31e6014cbb9b460f47e3c3607eeac20ad9b352196f6f777517ff"
+    },
+    {
+      "name": "msg_blue_body",
+      "path": "Assets/Playable/Art/Sprites/msg_blue_body.png",
+      "sha256": "40c8a5f69e21cc75928caa362390d035b28502e3085916c89feee470eb42a8a9"
+    },
+    {
+      "name": "msg_sk_head",
+      "path": "Assets/Playable/Art/Sprites/msg_sk_head.png",
+      "sha256": "0c1d02a5d3448e4a2e463911b17a5d2ce4e4e50f6a6181a7d988465a62923ba4"
+    },
+    {
+      "name": "msg_stolb",
+      "path": "Assets/Playable/Art/Sprites/msg_stolb.png",
+      "sha256": "45be4651380dac73cb9853b0950c27d22bdc0f2cac26b543e01dd2c63d85a440"
+    },
+    {
+      "name": "msg_tom_up_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_tom_up_leg.png",
+      "sha256": "885a86ae68c540a345af0c0c014cf391433df08b499ceabbe77f752987c96cd1"
+    },
+    {
+      "name": "msg_el_4",
+      "path": "Assets/Playable/Art/Sprites/msg_el_4.png",
+      "sha256": "68095e32bd3d0f2da266679b488bdf9cebdf603bdca0bfd4e723eb20605a1d44"
+    },
+    {
+      "name": "msg_bsk_up_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_bsk_up_leg.png",
+      "sha256": "2b1dd296c6e411f08410bb77b2188b18e648a8b2d8b4ba95bb12332217868d68"
+    },
+    {
+      "name": "msg_el_6",
+      "path": "Assets/Playable/Art/Sprites/msg_el_6.png",
+      "sha256": "de0046c0ce6af5096948060b1c8ac0fea88a134345c61d396a54074001caa354"
+    },
+    {
+      "name": "msg_bsk_up_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_bsk_up_arm.png",
+      "sha256": "a0d3a4a22a4a3768ae8c11e40a5fba55496b98337608d50414376678afa5cf90"
+    },
+    {
+      "name": "msg_el_0",
+      "path": "Assets/Playable/Art/Sprites/msg_el_0.png",
+      "sha256": "7dd7fd45acb45ab335568bba6530c5a3950b2280573be5adfc61c9198ec145b6"
+    },
+    {
+      "name": "msg_mirror_body_down",
+      "path": "Assets/Playable/Art/Sprites/msg_mirror_body_down.png",
+      "sha256": "0ae982a80fdd3c5214a65828d880b1810910944e1dae2a7abce8c76b70450a33"
+    },
+    {
+      "name": "msg_mcorn_body",
+      "path": "Assets/Playable/Art/Sprites/msg_mcorn_body.png",
+      "sha256": "b8eb5c690fe40eb5de473075da602b222cc6732df6d95af32e3778c65b109f56"
+    },
+    {
+      "name": "msg_bsk_head",
+      "path": "Assets/Playable/Art/Sprites/msg_bsk_head.png",
+      "sha256": "bd0fe3ac8ea4eee46366505e5ccefe467425681d45371ddb13f6eb2f8e231661"
+    },
+    {
+      "name": "msg_fr_body_mid",
+      "path": "Assets/Playable/Art/Sprites/msg_fr_body_mid.png",
+      "sha256": "27d8d1a42962850f791fea6d7e19afe09acab5e341ccba8973e42d3619dcc99f"
+    },
+    {
+      "name": "msg_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_arm.png",
+      "sha256": "8ffefdd2bc637ec71074731e48ae481971d14c683e202ffa5697a88dcadfc74f"
+    },
+    {
+      "name": "msg_mkak_down_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_mkak_down_leg.png",
+      "sha256": "1691f8acb3bbc60365416f6ba1c40c9866fa4e85f3c7c72790adcdc778c1ef64"
+    },
+    {
+      "name": "msg_main_head",
+      "path": "Assets/Playable/Art/Sprites/msg_main_head.png",
+      "sha256": "6cb005850c9719c99ecc6d203e1792c347f25eb190e33a3e44b6e718ca57889e"
+    },
+    {
+      "name": "msg_doc_body_mid",
+      "path": "Assets/Playable/Art/Sprites/msg_doc_body_mid.png",
+      "sha256": "7cf8c0ff679fea4e9aa5b3be2f8e5e08768069fafbc7e6252a487e4aefcb5fde"
+    },
+    {
+      "name": "msg_kak_head",
+      "path": "Assets/Playable/Art/Sprites/msg_kak_head.png",
+      "sha256": "e0aa959c495179f731159e3955c54c86940973b8da5f3742c9550e777a7a3ccb"
+    },
+    {
+      "name": "msg_sk_body_mid",
+      "path": "Assets/Playable/Art/Sprites/msg_sk_body_mid.png",
+      "sha256": "31c0acbe12ba376c56d0719098a514dd5b8b53a1f59215f9afd5a79950ea643b"
+    },
+    {
+      "name": "msg_doc_down_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_doc_down_arm.png",
+      "sha256": "7e57446ac4d63991bbacdaea0a7b7997e031f55ef1c9b8c51bae1d6c73dd3474"
+    },
+    {
+      "name": "msg_can",
+      "path": "Assets/Playable/Art/Sprites/msg_can.png",
+      "sha256": "f5c79053fc5a99499acafa822ff8d678c310b3a6916f7a1464d06a2f094eba48"
+    },
+    {
+      "name": "msg_el_1",
+      "path": "Assets/Playable/Art/Sprites/msg_el_1.png",
+      "sha256": "9c445d0fd9b2c2ca231b176cc2a413f3970c6fe12aeedabf100123d3abf89f86"
+    },
+    {
+      "name": "msg_red_body",
+      "path": "Assets/Playable/Art/Sprites/msg_red_body.png",
+      "sha256": "86ca0ef93c658c8f7a50d9d7df92213aa8aebecc9b976df069d0cd2a9beae2f0"
+    },
+    {
+      "name": "msg_blood",
+      "path": "Assets/Playable/Art/Sprites/msg_blood.png",
+      "sha256": "8bc8b20ca1c4e6696376ce703676dbf28142cac7a5cf271929ac3cefcb30712c"
+    },
+    {
+      "name": "msg_fr_up_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_fr_up_arm.png",
+      "sha256": "77cfae3232a99b8a67fe0eeacf213f40d25027e5849f34d4c8ab3fd34865d068"
+    },
+    {
+      "name": "msg_bsk_foot",
+      "path": "Assets/Playable/Art/Sprites/msg_bsk_foot.png",
+      "sha256": "ef2c22261bc645b9d6eea7faaf2878ca978228d94a21273996a907f142bc3750"
+    },
+    {
+      "name": "msg_msk_head",
+      "path": "Assets/Playable/Art/Sprites/msg_msk_head.png",
+      "sha256": "eb8065c60b8b96ec8f4e20ef7239880cb31db6d102859f1e4c88b862f5b9838d"
+    },
+    {
+      "name": "msg_red_head",
+      "path": "Assets/Playable/Art/Sprites/msg_red_head.png",
+      "sha256": "763d640c4b421ef33668c283dc3698be3b2feaf6a0c91a8d9685e2d5bd5db962"
+    },
+    {
+      "name": "msg_mdoc_body",
+      "path": "Assets/Playable/Art/Sprites/msg_mdoc_body.png",
+      "sha256": "07138cb3dd32e30cce0496b03dffd3d947d757332b114d27a965b4d7fa4ab8d7"
+    },
+    {
+      "name": "msg_no2",
+      "path": "Assets/Playable/Art/Sprites/msg_no2.png",
+      "sha256": "0d0c20bc3613d865aaca0f62ca5b5c34a959ccbab7c2ab98447d2c9a47555930"
+    },
+    {
+      "name": "msg_blue_body_down",
+      "path": "Assets/Playable/Art/Sprites/msg_blue_body_down.png",
+      "sha256": "7ad38e127dac1cdc260a8db60b3176959038ba765e58c6da910afe12b39cbda5"
+    },
+    {
+      "name": "msg_mtom_body",
+      "path": "Assets/Playable/Art/Sprites/msg_mtom_body.png",
+      "sha256": "b88ca28f36da44be058705f868fab20e0abc14fa583d44d21b3fbd3f79c99f7d"
+    },
+    {
+      "name": "msg_sk_body",
+      "path": "Assets/Playable/Art/Sprites/msg_sk_body.png",
+      "sha256": "2b5033e1553d200a2161435ec3e36dfdaa184d1a190de6a714af214446afc596"
+    },
+    {
+      "name": "msg_floor",
+      "path": "Assets/Playable/Art/Sprites/msg_floor.png",
+      "sha256": "1a37048dbae4054a5480bfec99632999490c65d76693271b9541e40ac557cd33"
+    },
+    {
+      "name": "msg_tom_down_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_tom_down_arm.png",
+      "sha256": "117f9e339edcba9472f0fa874211a8f0af3f74d6bff8418405dd586a12e0fff8"
+    },
+    {
+      "name": "msg_doc_body_down",
+      "path": "Assets/Playable/Art/Sprites/msg_doc_body_down.png",
+      "sha256": "9525a1744c4c03e0cf050852c7c22f289d52b6a8f3cef341322ec7e70e4d01df"
+    },
+    {
+      "name": "msg_mcorn_body_down",
+      "path": "Assets/Playable/Art/Sprites/msg_mcorn_body_down.png",
+      "sha256": "b40d67ca279f92527cbed5a887aadbb3b802cfa067f723b5857d3c6a36d98110"
+    },
+    {
+      "name": "msg_mirror_up_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_mirror_up_arm.png",
+      "sha256": "38910ad97cc7c13a43a293539b4c12c51ab4c20a590734a05911545cf513b09a"
+    },
+    {
+      "name": "msg_fr_body",
+      "path": "Assets/Playable/Art/Sprites/msg_fr_body.png",
+      "sha256": "08bccc1723c461e9631bdb7643befdc2f40d423675bde97df86a38f09646eaba"
+    },
+    {
+      "name": "msg_melon",
+      "path": "Assets/Playable/Art/Sprites/msg_melon.png",
+      "sha256": "460c8b6258ac10369c3ac12b71ea0ff08d7d298b3b3c7a36fab7afb345214bf4"
+    },
+    {
+      "name": "msg_bsk_body_down",
+      "path": "Assets/Playable/Art/Sprites/msg_bsk_body_down.png",
+      "sha256": "79e00c49645fc605ffc7c13699ce3932b147c561d7fb6b6c838c1965346cf396"
+    },
+    {
+      "name": "msg_kak_body_down",
+      "path": "Assets/Playable/Art/Sprites/msg_kak_body_down.png",
+      "sha256": "00b68cf357a59567067f27b9f2787312b5685e1b8e66887facad5f0e67ff383c"
+    },
+    {
+      "name": "msg_fr_down_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_fr_down_leg.png",
+      "sha256": "7cd8f31ad95c83d5bcf15d3d742c730356011d3e36b805eb860b22b5066d4027"
+    },
+    {
+      "name": "msg_mdoc_body_down",
+      "path": "Assets/Playable/Art/Sprites/msg_mdoc_body_down.png",
+      "sha256": "b3e20b14c3138ba7f716c65bc3dae8f1be30ce8f9ad7fa2e556720a8c502917a"
+    },
+    {
+      "name": "msg_main_foot",
+      "path": "Assets/Playable/Art/Sprites/msg_main_foot.png",
+      "sha256": "2ef202daf819b9b2ae8da8f25833427bc9fe2468f0204da03f1dc66c76a03164"
+    },
+    {
+      "name": "msg_mirror_body",
+      "path": "Assets/Playable/Art/Sprites/msg_mirror_body.png",
+      "sha256": "f87ad22b30d927fe2c4cd0849beffd3ecc14ba04d33c6c274cb31d1dfaaf6737"
+    },
+    {
+      "name": "msg_bita",
+      "path": "Assets/Playable/Art/Sprites/msg_bita.png",
+      "sha256": "bdc4c2feaccbc27d369a26e4b5998b926d4d28eba5aae7c7e0b198d0191ef722"
+    },
+    {
+      "name": "msg_corn_down_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_corn_down_leg.png",
+      "sha256": "22f5ba82051a61cd038f5e45c29d889c07d88be641b2c435c261bf6f2f677f58"
+    },
+    {
+      "name": "msg_mtom_up_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_mtom_up_leg.png",
+      "sha256": "4bf0ca4db54aa4a767250aa8dd26facb1e48068500c3b138741292e97b9952e1"
+    },
+    {
+      "name": "msg_lsk_down_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_lsk_down_leg.png",
+      "sha256": "e4d8939d4a8c0d715a0bf97870b919a3505175a198f6ec2d73e2ddb4ecc877ff"
+    },
+    {
+      "name": "msg_bsk_body",
+      "path": "Assets/Playable/Art/Sprites/msg_bsk_body.png",
+      "sha256": "07742c8da92bded8d3f0d34976fa3c199faa04c6cca993afa1b513247bc732c7"
+    },
+    {
+      "name": "msg_sk_down_arm",
+      "path": "Assets/Playable/Art/Sprites/msg_sk_down_arm.png",
+      "sha256": "7196b859bad530bc3e13a0ad3cd4a1b251585bd405cd202c303373c75671277a"
+    },
+    {
+      "name": "msg_sk_down_leg",
+      "path": "Assets/Playable/Art/Sprites/msg_sk_down_leg.png",
+      "sha256": "b1857d50561a63be328b50a25e3bf53113dba3b6bb3230dc286a047439ab5cf1"
+    },
+    {
+      "name": "msg_main_body_mid",
+      "path": "Assets/Playable/Art/Sprites/msg_main_body_mid.png",
+      "sha256": "239bb498a53a69820dbaa8a55e2cf132f3668f3aeac286d0e1ad5c3fa66c517e"
+    }
+  ]
+}
