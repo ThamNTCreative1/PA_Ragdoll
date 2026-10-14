@@ -1,0 +1,72 @@
+{
+  "ignores": [
+    "C:/Users/Admin/Downloads/PA_Ragdoll-SRG_V04/PA_Ragdoll-SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
+    "C:/Users/Admin/Downloads/PA_Ragdoll-SRG_V04/PA_Ragdoll-SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs",
+    "C:/Users/Admin/Downloads/PA_Ragdoll-SRG_V04/PA_Ragdoll-SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs",
+    "C:/Users/Admin/Downloads/PA_Ragdoll-SRG_V04/PA_Ragdoll-SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenProShortcuts.cs"
+  ],
+  "groups": [
+    [
+      "C:/Users/Admin/Downloads/PA_Ragdoll-SRG_V04/PA_Ragdoll-SRG_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/AudioController.cs",
+      "C:/Users/Admin/Downloads/PA_Ragdoll-SRG_V04/PA_Ragdoll-SRG_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/GameController.cs",
+      "C:/Users/Admin/Downloads/PA_Ragdoll-SRG_V04/PA_Ragdoll-SRG_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/CameraController.cs",
+      "C:/Users/Admin/Downloads/PA_Ragdoll-SRG_V04/PA_Ragdoll-SRG_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/LavaController.cs",
+      "C:/Users/Admin/Downloads/PA_Ragdoll-SRG_V04/PA_Ragdoll-SRG_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/LavaPartDisappear.cs",
+      "C:/Users/Admin/Downloads/PA_Ragdoll-SRG_V04/PA_Ragdoll-SRG_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/LunaController.cs",
+      "C:/Users/Admin/Downloads/PA_Ragdoll-SRG_V04/PA_Ragdoll-SRG_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/TakeDamage.cs",
+      "C:/Users/Admin/Downloads/PA_Ragdoll-SRG_V04/PA_Ragdoll-SRG_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/BodyPiece.cs",
+      "C:/Users/Admin/Downloads/PA_Ragdoll-SRG_V04/PA_Ragdoll-SRG_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/BodyController.cs",
+      "C:/Users/Admin/Downloads/PA_Ragdoll-SRG_V04/PA_Ragdoll-SRG_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Dragable.cs",
+      "C:/Users/Admin/Downloads/PA_Ragdoll-SRG_V04/PA_Ragdoll-SRG_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/DragController.cs"
+    ],
+    [
+      "C:/Users/Admin/Downloads/PA_Ragdoll-SRG_V04/PA_Ragdoll-SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs"
+    ],
+    [
+      "C:/Users/Admin/Downloads/PA_Ragdoll-SRG_V04/PA_Ragdoll-SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleEPOOutline.cs"
+    ],
+    [
+      "C:/Users/Admin/Downloads/PA_Ragdoll-SRG_V04/PA_Ragdoll-SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs"
+    ],
+    [
+      "C:/Users/Admin/Downloads/PA_Ragdoll-SRG_V04/PA_Ragdoll-SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs"
+    ],
+    [
+      "C:/Users/Admin/Downloads/PA_Ragdoll-SRG_V04/PA_Ragdoll-SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs"
+    ],
+    [
+      "C:/Users/Admin/Downloads/PA_Ragdoll-SRG_V04/PA_Ragdoll-SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
+      "C:/Users/Admin/Downloads/PA_Ragdoll-SRG_V04/PA_Ragdoll-SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs"
+    ],
+    [
+      "C:/Users/Admin/Downloads/PA_Ragdoll-SRG_V04/PA_Ragdoll-SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
+    ],
+    [
+      "C:/Users/Admin/Downloads/PA_Ragdoll-SRG_V04/PA_Ragdoll-SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs"
+    ],
+    [
+      "C:/Users/Admin/Downloads/PA_Ragdoll-SRG_V04/PA_Ragdoll-SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenDeAudio.cs"
+    ],
+    [
+      "C:/Users/Admin/Downloads/PA_Ragdoll-SRG_V04/PA_Ragdoll-SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenDeUnityExtended.cs"
+    ],
+    [
+      "C:/Users/Admin/Downloads/PA_Ragdoll-SRG_V04/PA_Ragdoll-SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenProShortcuts.cs"
+    ],
+    [
+      "C:/Users/Admin/Downloads/PA_Ragdoll-SRG_V04/PA_Ragdoll-SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenTextMeshPro.cs"
+    ],
+    [
+      "C:/Users/Admin/Downloads/PA_Ragdoll-SRG_V04/PA_Ragdoll-SRG_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenTk2d.cs"
+    ],
+    [
+      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
+    ],
+    [
+      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
+    ],
+    [
+      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+    ]
+  ]
+}

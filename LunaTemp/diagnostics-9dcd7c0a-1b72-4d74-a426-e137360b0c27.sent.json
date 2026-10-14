@@ -1,0 +1,202 @@
+{
+    "BuildID": "9dcd7c0a-1b72-4d74-a426-e137360b0c27",
+    "Command": "project:upload",
+    "ProjectID": "2ee65b7bf37279a4a8c8b2625d5057f9",
+    "ProjectStateHash": "6a75e5665993bf3c3df07a0a7da3ec88f48cfab1b7b78c157d40b902ea67cd6d",
+    "StageCompletedAt": 3,
+    "EarliestFatalError": 0,
+    "StartTime": 1791880313019,
+    "EndTime": 1791880345699,
+    "PlaygroundUserID": 36785,
+    "OperatingSystem": "win32",
+    "UnityPackageID": null,
+    "TargetPlatform": "playground",
+    "UnityVersion": "6000.0.78f1",
+    "LunaVersion": "7.2.0",
+    "LogCount": 6,
+    "Logs": [
+        {
+            "LogID": "0fc30980-595f-49a1-97ff-312c8c38794e",
+            "Order": 6,
+            "Timestamp": 1791880345897,
+            "Stage": 3,
+            "ErrorType": 3,
+            "ErrorCode": "LP3007",
+            "Description": "You are not using any custom events",
+            "Details": [
+                "You are not using any custom events. It is recommended to use custom events to have a better understanding of the playable."
+            ],
+            "DescriptionValues": [
+                ""
+            ],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "6c9a4347-d9fd-41c9-abe1-c549202c180c",
+            "Order": 0,
+            "Timestamp": 1791880327808,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1014",
+            "Description": "We recommend running Runtime Analysis to find and remove all unused code",
+            "Details": [
+                "Navigate to the Runtime Analysis → Code tab to enable code stripping. Before uploading the playable, please make sure to have played all scenario’s of the playable in a development build to make Runtime Analysis work properly."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "dcb08ad9-fb75-4571-b000-9b7665b11750",
+            "Order": 1,
+            "Timestamp": 1791880327808,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1016",
+            "Description": "Extensive usage of Rigidbody Component",
+            "Details": [
+                "There is extensive usage of the Rigidbody component.\nExcessive usage of any component can be detrimental to performance on lower and in some cases higher end devices, consider reducing the amount the component is used.\nRecommended count: 10, current count 48."
+            ],
+            "DescriptionValues": [
+                "Rigidbody"
+            ],
+            "DetailsValues": [
+                "Rigidbody",
+                "10",
+                "48"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "46a8261f-e97c-4a5b-81f3-937d7d813554",
+            "Order": 2,
+            "Timestamp": 1791880327808,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1016",
+            "Description": "Extensive usage of ParticleSystem Component",
+            "Details": [
+                "There is extensive usage of the ParticleSystem component.\nExcessive usage of any component can be detrimental to performance on lower and in some cases higher end devices, consider reducing the amount the component is used.\nRecommended count: 10, current count 33."
+            ],
+            "DescriptionValues": [
+                "ParticleSystem"
+            ],
+            "DetailsValues": [
+                "ParticleSystem",
+                "10",
+                "33"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "ccd5c209-8e82-4bdb-a6ce-013240854f27",
+            "Order": 3,
+            "Timestamp": 1791880327825,
+            "Stage": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP1032",
+            "Description": "Package(s) is not supported in Luna",
+            "Details": [
+                "Currently package(s) com.unity.timeline are not supported in Luna. We recommend you to remove it and workaround it's functionality."
+            ],
+            "DescriptionValues": [
+                "com.unity.timeline (1.8.12)"
+            ],
+            "DetailsValues": [
+                "com.unity.timeline"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "C:/Users/Admin/Downloads/PA_Ragdoll-SRG_V04/PA_Ragdoll-SRG_V04/Packages\\manifest.json",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "b1cd51ed-007d-4704-98e2-8c4508583ff9",
+            "Order": 4,
+            "Timestamp": 1791880327827,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1010",
+            "Description": "Looks like a collider was scaled, this might affect performance.",
+            "Details": [
+                "tt",
+                "tt",
+                "tt",
+                "tt",
+                "tt",
+                "tt",
+                "GameObject",
+                "Root_M",
+                "Hip_L",
+                "Knee_L",
+                "Foot Collider",
+                "Hip_R",
+                "Knee_R",
+                "Foot Collider",
+                "Spine2_M",
+                "Head_M",
+                "Shoulder_L",
+                "Elbow_L",
+                "Wrist_L",
+                "Shoulder_R",
+                "Elbow_R",
+                "Wrist_R",
+                "GameObject(Clone)",
+                "squeePlayer",
+                "Knife",
+                "Root_M",
+                "Hip_L",
+                "Knee_L",
+                "Foot Collider",
+                "Hip_R",
+                "Knee_R",
+                "Foot Collider",
+                "Spine2_M",
+                "Head_M",
+                "Shoulder_L",
+                "Elbow_L",
+                "Wrist_L",
+                "Shoulder_R",
+                "Elbow_R",
+                "Wrist_R",
+                "squeePlayer",
+                "Verity",
+                "gugugaga",
+                "stalkercalm_geo"
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [],
+            "LogCount": 44,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        }
+    ]
+}
