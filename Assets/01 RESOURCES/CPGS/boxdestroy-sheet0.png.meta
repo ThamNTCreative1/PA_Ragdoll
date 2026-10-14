@@ -1,0 +1,3575 @@
+fileFormatVersion: 2
+guid: ad50ef5c24a869a47bef2823ece4e2bf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8427445098911774501
+    second: boxdestroy-sheet0_0
+  - first:
+      213: 5605944270611429493
+    second: boxdestroy-sheet0_1
+  - first:
+      213: 7605921662439713132
+    second: boxdestroy-sheet0_2
+  - first:
+      213: 1637436994286745191
+    second: boxdestroy-sheet0_3
+  - first:
+      213: 988488690266720201
+    second: boxdestroy-sheet0_4
+  - first:
+      213: 5101061037722406987
+    second: boxdestroy-sheet0_5
+  - first:
+      213: -6186766723426757816
+    second: boxdestroy-sheet0_6
+  - first:
+      213: -4733098044425642420
+    second: boxdestroy-sheet0_7
+  - first:
+      213: 9040491811295210815
+    second: boxdestroy-sheet0_8
+  - first:
+      213: 4222780349587908618
+    second: boxdestroy-sheet0_9
+  - first:
+      213: 1465855793062601609
+    second: boxdestroy-sheet0_10
+  - first:
+      213: -137671638446515341
+    second: boxdestroy-sheet0_11
+  - first:
+      213: -5636667520276153838
+    second: boxdestroy-sheet0_12
+  - first:
+      213: 4542031155009698546
+    second: boxdestroy-sheet0_13
+  - first:
+      213: 8343153039023920788
+    second: boxdestroy-sheet0_14
+  - first:
+      213: 3481783649880478057
+    second: boxdestroy-sheet0_15
+  - first:
+      213: -6688909299140343280
+    second: boxdestroy-sheet0_16
+  - first:
+      213: -6778312387086779917
+    second: boxdestroy-sheet0_17
+  - first:
+      213: -5884300185399756607
+    second: boxdestroy-sheet0_18
+  - first:
+      213: 3659432473099114813
+    second: boxdestroy-sheet0_19
+  - first:
+      213: 1520589758286253350
+    second: boxdestroy-sheet0_20
+  - first:
+      213: -6096514112888101043
+    second: boxdestroy-sheet0_21
+  - first:
+      213: -6419451800150674505
+    second: boxdestroy-sheet0_22
+  - first:
+      213: -5812890567064119616
+    second: boxdestroy-sheet0_23
+  - first:
+      213: -276002406322699432
+    second: boxdestroy-sheet0_24
+  - first:
+      213: 6098673872726476012
+    second: boxdestroy-sheet0_25
+  - first:
+      213: 673989132874299256
+    second: boxdestroy-sheet0_26
+  - first:
+      213: -2696866423556354119
+    second: boxdestroy-sheet0_27
+  - first:
+      213: 2162492128905884845
+    second: boxdestroy-sheet0_28
+  - first:
+      213: -7037445458698221558
+    second: boxdestroy-sheet0_29
+  - first:
+      213: 1707274795657391543
+    second: boxdestroy-sheet0_30
+  - first:
+      213: -3224921348279577928
+    second: boxdestroy-sheet0_31
+  - first:
+      213: 6324923655690769383
+    second: boxdestroy-sheet0_32
+  - first:
+      213: -3956559902051870781
+    second: boxdestroy-sheet0_33
+  - first:
+      213: -696796275258224737
+    second: boxdestroy-sheet0_34
+  - first:
+      213: 6444516156859859637
+    second: boxdestroy-sheet0_35
+  - first:
+      213: 1791941522798994341
+    second: boxdestroy-sheet0_36
+  - first:
+      213: 3494920234049327383
+    second: boxdestroy-sheet0_37
+  - first:
+      213: 914813694447815544
+    second: boxdestroy-sheet0_38
+  - first:
+      213: -4965817690734479814
+    second: boxdestroy-sheet0_39
+  - first:
+      213: -6580611207855664002
+    second: boxdestroy-sheet0_40
+  - first:
+      213: -7301347422349062113
+    second: boxdestroy-sheet0_41
+  - first:
+      213: 5872162404659769862
+    second: boxdestroy-sheet0_42
+  - first:
+      213: -6322295069438965708
+    second: boxdestroy-sheet0_43
+  - first:
+      213: -109836925271972046
+    second: boxdestroy-sheet0_44
+  - first:
+      213: 4121274000224242579
+    second: boxdestroy-sheet0_45
+  - first:
+      213: -6712153613835571579
+    second: boxdestroy-sheet0_46
+  - first:
+      213: 4968231025956658120
+    second: boxdestroy-sheet0_47
+  - first:
+      213: -3695378019917317278
+    second: boxdestroy-sheet0_48
+  - first:
+      213: 8514636982614598658
+    second: boxdestroy-sheet0_49
+  - first:
+      213: -1173486623467219114
+    second: boxdestroy-sheet0_50
+  - first:
+      213: 3302470753148002328
+    second: boxdestroy-sheet0_51
+  - first:
+      213: -1653204708790873564
+    second: boxdestroy-sheet0_52
+  - first:
+      213: 6202058253255000820
+    second: boxdestroy-sheet0_53
+  - first:
+      213: 2069022146451255117
+    second: boxdestroy-sheet0_54
+  - first:
+      213: -5112194132140831955
+    second: boxdestroy-sheet0_55
+  - first:
+      213: -8642583421424666512
+    second: boxdestroy-sheet0_56
+  - first:
+      213: -8671594635109231880
+    second: boxdestroy-sheet0_57
+  - first:
+      213: 5676306269570597316
+    second: boxdestroy-sheet0_58
+  - first:
+      213: 3853689438875055836
+    second: boxdestroy-sheet0_59
+  - first:
+      213: -2586160430055536860
+    second: boxdestroy-sheet0_60
+  - first:
+      213: -8952625355613709412
+    second: boxdestroy-sheet0_61
+  - first:
+      213: 7198907376952335703
+    second: boxdestroy-sheet0_62
+  - first:
+      213: -8380923952286943627
+    second: boxdestroy-sheet0_63
+  - first:
+      213: -4625339852397759253
+    second: boxdestroy-sheet0_64
+  - first:
+      213: 3444827054729345543
+    second: boxdestroy-sheet0_65
+  - first:
+      213: 8690717348907793841
+    second: boxdestroy-sheet0_66
+  - first:
+      213: -1693308094763707746
+    second: boxdestroy-sheet0_67
+  - first:
+      213: -8418418718102708487
+    second: boxdestroy-sheet0_68
+  - first:
+      213: -2163628473007625721
+    second: boxdestroy-sheet0_69
+  - first:
+      213: 8275260074778863227
+    second: boxdestroy-sheet0_70
+  - first:
+      213: -5240851898872639526
+    second: boxdestroy-sheet0_71
+  - first:
+      213: 6508845000410618537
+    second: boxdestroy-sheet0_72
+  - first:
+      213: -6286914667551305086
+    second: boxdestroy-sheet0_73
+  - first:
+      213: -6242176709170784034
+    second: boxdestroy-sheet0_74
+  - first:
+      213: -2398357694583439170
+    second: boxdestroy-sheet0_75
+  - first:
+      213: -4605273451532251158
+    second: boxdestroy-sheet0_76
+  - first:
+      213: 7586429882056962621
+    second: boxdestroy-sheet0_77
+  - first:
+      213: -3558042679826468775
+    second: boxdestroy-sheet0_78
+  - first:
+      213: 5284689403391144643
+    second: boxdestroy-sheet0_79
+  - first:
+      213: -2364911564051041534
+    second: boxdestroy-sheet0_80
+  - first:
+      213: 2996347615632815733
+    second: boxdestroy-sheet0_81
+  - first:
+      213: 5387483011423250867
+    second: boxdestroy-sheet0_82
+  - first:
+      213: -2173290797602322799
+    second: boxdestroy-sheet0_83
+  - first:
+      213: 652292566729562877
+    second: boxdestroy-sheet0_84
+  - first:
+      213: 6496136792022178461
+    second: boxdestroy-sheet0_85
+  - first:
+      213: 1409979604040933281
+    second: boxdestroy-sheet0_86
+  - first:
+      213: -7364917001154650705
+    second: boxdestroy-sheet0_87
+  - first:
+      213: 5836642859363014964
+    second: boxdestroy-sheet0_88
+  - first:
+      213: 52760997283891851
+    second: boxdestroy-sheet0_89
+  - first:
+      213: 899349725693959080
+    second: boxdestroy-sheet0_90
+  - first:
+      213: -4213400841643721709
+    second: boxdestroy-sheet0_91
+  - first:
+      213: 2670025735870895111
+    second: boxdestroy-sheet0_92
+  - first:
+      213: 3159382946073045481
+    second: boxdestroy-sheet0_93
+  - first:
+      213: 1400631211157016508
+    second: boxdestroy-sheet0_94
+  - first:
+      213: 697822521477165007
+    second: boxdestroy-sheet0_95
+  - first:
+      213: 31386004419132218
+    second: boxdestroy-sheet0_96
+  - first:
+      213: 275777677565455378
+    second: boxdestroy-sheet0_97
+  - first:
+      213: -420169832740732326
+    second: boxdestroy-sheet0_98
+  - first:
+      213: 3419540986064309381
+    second: boxdestroy-sheet0_99
+  - first:
+      213: -6533849084822173495
+    second: boxdestroy-sheet0_100
+  - first:
+      213: -6065751353285119875
+    second: boxdestroy-sheet0_101
+  - first:
+      213: 1449658964593910152
+    second: boxdestroy-sheet0_102
+  - first:
+      213: -3882870894138055475
+    second: boxdestroy-sheet0_103
+  - first:
+      213: 6205250590774083101
+    second: boxdestroy-sheet0_104
+  - first:
+      213: 653531537756980160
+    second: boxdestroy-sheet0_105
+  - first:
+      213: 1375209321142100839
+    second: boxdestroy-sheet0_106
+  - first:
+      213: -3242546370738497447
+    second: boxdestroy-sheet0_107
+  - first:
+      213: -174073588607105660
+    second: boxdestroy-sheet0_108
+  - first:
+      213: -4672818250241077485
+    second: boxdestroy-sheet0_109
+  - first:
+      213: -2771846840561921427
+    second: boxdestroy-sheet0_110
+  - first:
+      213: -3408037335595074278
+    second: boxdestroy-sheet0_111
+  - first:
+      213: -338663577823644895
+    second: boxdestroy-sheet0_112
+  - first:
+      213: 6881935118080672331
+    second: boxdestroy-sheet0_113
+  - first:
+      213: 3736351128859561332
+    second: boxdestroy-sheet0_114
+  - first:
+      213: -1131639204233766253
+    second: boxdestroy-sheet0_115
+  - first:
+      213: 3583065554298616243
+    second: boxdestroy-sheet0_116
+  - first:
+      213: 1928487499434153606
+    second: boxdestroy-sheet0_117
+  - first:
+      213: 1052456167883384934
+    second: boxdestroy-sheet0_118
+  - first:
+      213: -8041442931101440264
+    second: boxdestroy-sheet0_119
+  - first:
+      213: -2722088266819963131
+    second: boxdestroy-sheet0_120
+  - first:
+      213: 6560955412836611316
+    second: boxdestroy-sheet0_121
+  - first:
+      213: -8371532383876468148
+    second: boxdestroy-sheet0_122
+  - first:
+      213: -6028274248729526267
+    second: boxdestroy-sheet0_123
+  - first:
+      213: -1971859647045562920
+    second: boxdestroy-sheet0_124
+  - first:
+      213: -1936395164130686158
+    second: boxdestroy-sheet0_125
+  - first:
+      213: 807974861034481272
+    second: boxdestroy-sheet0_126
+  - first:
+      213: -1734301168821991719
+    second: boxdestroy-sheet0_127
+  - first:
+      213: -592778666130308582
+    second: boxdestroy-sheet0_128
+  - first:
+      213: 348660065432785897
+    second: boxdestroy-sheet0_129
+  - first:
+      213: -3633149152173108595
+    second: boxdestroy-sheet0_130
+  - first:
+      213: -978855780459982479
+    second: boxdestroy-sheet0_131
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 403
+        width: 27
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd8c1434553bb0b80800000000000000
+      internalID: -8427445098911774501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 403
+        width: 24
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5783e60dc905ccd40800000000000000
+      internalID: 5605944270611429493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 403
+        width: 22
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c69ea2f3479ad8960800000000000000
+      internalID: 7605921662439713132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_3
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 443
+        width: 28
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7667b82554859b610800000000000000
+      internalID: 1637436994286745191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_4
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 461
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c7c6dff931d7bd00800000000000000
+      internalID: 988488690266720201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_5
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 461
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b40970bbcfb9ac640800000000000000
+      internalID: 5101061037722406987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_6
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 401
+        width: 12
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 843d0f5a170342aa0800000000000000
+      internalID: -6186766723426757816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_7
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 393
+        width: 38
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4ed9e6d768a05eb0800000000000000
+      internalID: -4733098044425642420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_8
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 389
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3d241f5767467d70800000000000000
+      internalID: 9040491811295210815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_9
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 403
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a08efadca545a9a30800000000000000
+      internalID: 4222780349587908618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_10
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 387
+        width: 28
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 983e17dc314c75410800000000000000
+      internalID: 1465855793062601609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_11
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 403
+        width: 38
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37bdfbecf54e61ef0800000000000000
+      internalID: -137671638446515341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_12
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 397
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21a35f031c886c1b0800000000000000
+      internalID: -5636667520276153838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_13
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 405
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fa3c115549880f30800000000000000
+      internalID: 4542031155009698546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_14
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 401
+        width: 10
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 496ddbd2c75d8c370800000000000000
+      internalID: 8343153039023920788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_15
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 275
+        width: 20
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96193e348c7c15030800000000000000
+      internalID: 3481783649880478057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_16
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 335
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01acee98e683c23a0800000000000000
+      internalID: -6688909299140343280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_17
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 339
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f9ff070cc89ee1a0800000000000000
+      internalID: -6778312387086779917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_18
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 339
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c87b716824c65ea0800000000000000
+      internalID: -5884300185399756607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_19
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 333
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d391a9e127ae8c230800000000000000
+      internalID: 3659432473099114813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_20
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 311
+        width: 18
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62dcfb724583a1510800000000000000
+      internalID: 1520589758286253350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_21
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 333
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d47262d07b4d46ba0800000000000000
+      internalID: -6096514112888101043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_22
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 329
+        width: 28
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b3f647799689e6a0800000000000000
+      internalID: -6419451800150674505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_23
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 331
+        width: 28
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c69ce7c3d6745fa0800000000000000
+      internalID: -5812890567064119616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_24
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 333
+        width: 12
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8538bf516417b2cf0800000000000000
+      internalID: -276002406322699432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_25
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 275
+        width: 14
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce441d83397d2a450800000000000000
+      internalID: 6098673872726476012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_26
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 339
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 877327f9b8d7a5900800000000000000
+      internalID: 673989132874299256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_27
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 339
+        width: 8
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bfce31c64ec29ad0800000000000000
+      internalID: -2696866423556354119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_28
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 281
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da473054227b20e10800000000000000
+      internalID: 2162492128905884845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_29
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 285
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a084b1c24a8f55e90800000000000000
+      internalID: -7037445458698221558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_30
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 279
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bde221916571b710800000000000000
+      internalID: 1707274795657391543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_31
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 275
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b2d83fbe17ce33d0800000000000000
+      internalID: -3224921348279577928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_32
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 281
+        width: 8
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e3d9e0dd84a6c750800000000000000
+      internalID: 6324923655690769383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_33
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 265
+        width: 28
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c7d4a95bb97719c0800000000000000
+      internalID: -3956559902051870781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_34
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 279
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9f0b6cba7b7456f0800000000000000
+      internalID: -696796275258224737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_35
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 283
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b2c5e6dc458f6950800000000000000
+      internalID: 6444516156859859637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_36
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 283
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a3e4b422514ed810800000000000000
+      internalID: 1791941522798994341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_37
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 279
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 711d5dc9f63708030800000000000000
+      internalID: 3494920234049327383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_38
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 281
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87b893d453212bc00800000000000000
+      internalID: 914813694447815544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_39
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 277
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a36bb6cce1fd51bb0800000000000000
+      internalID: -4965817690734479814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_40
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 277
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e741fc6d8f8fca4a0800000000000000
+      internalID: -6580611207855664002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_41
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 219
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f109b2d14376caa90800000000000000
+      internalID: -7301347422349062113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_42
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 223
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6023621589c1e7150800000000000000
+      internalID: 5872162404659769862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_43
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 193
+        width: 18
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43803ec9122b248a0800000000000000
+      internalID: -6322295069438965708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_44
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 221
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23761fdf5e7c97ef0800000000000000
+      internalID: -109836925271972046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_45
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 223
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39b4b652ed4b13930800000000000000
+      internalID: 4121274000224242579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_46
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 211
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58ee979c9d3a9d2a0800000000000000
+      internalID: -6712153613835571579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_47
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 219
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cb98389bc3b2f440800000000000000
+      internalID: 4968231025956658120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_48
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 221
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26bba04154167bcc0800000000000000
+      internalID: -3695378019917317278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_49
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 181
+        width: 12
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 204a52429311a2670800000000000000
+      internalID: 8514636982614598658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_50
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 213
+        width: 20
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65750932220f6bfe0800000000000000
+      internalID: -1173486623467219114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_51
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 221
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 810e08a17abb4dd20800000000000000
+      internalID: 3302470753148002328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_52
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 221
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 422548f8313ae09e0800000000000000
+      internalID: -1653204708790873564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_53
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 191
+        width: 14
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f24b851f13221650800000000000000
+      internalID: 6202058253255000820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_54
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 199
+        width: 20
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4fa4a71ea4a6bc10800000000000000
+      internalID: 2069022146451255117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_55
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 201
+        width: 20
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2bc8eab586dd09b0800000000000000
+      internalID: -5112194132140831955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_56
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 219
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0787d482b206f0880800000000000000
+      internalID: -8642583421424666512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_57
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 127
+        width: 31
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f2912a9f9e48a780800000000000000
+      internalID: -8671594635109231880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_58
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 131
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c104125a7a46ce40800000000000000
+      internalID: 5676306269570597316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_59
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 159
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd672de702e0b7530800000000000000
+      internalID: 3853689438875055836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_60
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 147
+        width: 18
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4274e5a7acc1c1cd0800000000000000
+      internalID: -2586160430055536860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_61
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 155
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9b5d7f0ca2e1c380800000000000000
+      internalID: -8952625355613709412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_62
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 155
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75dde2e2e18a7e360800000000000000
+      internalID: 7198907376952335703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_63
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 157
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 576bf56c11af0bb80800000000000000
+      internalID: -8380923952286943627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_64
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 137
+        width: 18
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be4bf5c09ed7fcfb0800000000000000
+      internalID: -4625339852397759253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_65
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 159
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70a3ccd64fb7ecf20800000000000000
+      internalID: 3444827054729345543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_66
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 141
+        width: 16
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bd39f82261ab9870800000000000000
+      internalID: 8690717348907793841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_67
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 129
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e92d05462492088e0800000000000000
+      internalID: -1693308094763707746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_68
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 131
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fe1df057c4cb2b80800000000000000
+      internalID: -8418418718102708487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_69
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 155
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70aa5700e5f39f1e0800000000000000
+      internalID: -2163628473007625721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_70
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 141
+        width: 16
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b76aa2d9131a7d270800000000000000
+      internalID: 8275260074778863227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_71
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 131
+        width: 12
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adfc34717f0c447b0800000000000000
+      internalID: -5240851898872639526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_72
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 139
+        width: 16
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aa5d83ea00145a50800000000000000
+      internalID: 6508845000410618537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_73
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 127
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 282596b5b6460c8a0800000000000000
+      internalID: -6286914667551305086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_74
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 159
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed898a00b555f59a0800000000000000
+      internalID: -6242176709170784034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_75
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 139
+        width: 16
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb08702426257bed0800000000000000
+      internalID: -2398357694583439170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_76
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 93
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aef02e31238c610c0800000000000000
+      internalID: -4605273451532251158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_77
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 89
+        width: 14
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d32f96978c9684960800000000000000
+      internalID: 7586429882056962621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_78
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 97
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 950b345b80b4f9ec0800000000000000
+      internalID: -3558042679826468775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_79
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 65
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c2766d430df65940800000000000000
+      internalID: 5284689403391144643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_80
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 87
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 203368b56752e2fd0800000000000000
+      internalID: -2364911564051041534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_81
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 83
+        width: 18
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 576f165f74a259920800000000000000
+      internalID: 2996347615632815733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_82
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 83
+        width: 18
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b9a559314f24ca40800000000000000
+      internalID: 5387483011423250867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_83
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 65
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 196c94fb88be6d1e0800000000000000
+      internalID: -2173290797602322799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_84
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 89
+        width: 18
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfa1b8922a86d0900800000000000000
+      internalID: 652292566729562877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_85
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 65
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9ad3dc8ef9e62a50800000000000000
+      internalID: 6496136792022178461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_86
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 95
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1afd76fbaf0419310800000000000000
+      internalID: 1409979604040933281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_87
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 95
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fad11f9220f8ac990800000000000000
+      internalID: -7364917001154650705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_88
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 81
+        width: 14
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4391729b1cbeff050800000000000000
+      internalID: 5836642859363014964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_89
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 77
+        width: 16
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8a0a15f8d17bb000800000000000000
+      internalID: 52760997283891851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_90
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 77
+        width: 16
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ab55d08fc12b7c00800000000000000
+      internalID: 899349725693959080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_91
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 79
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31c7e71124ef685c0800000000000000
+      internalID: -4213400841643721709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_92
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 87
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7045cb7a246dd0520800000000000000
+      internalID: 2670025735870895111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_93
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 77
+        width: 12
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e96c12ec0268db20800000000000000
+      internalID: 3159382946073045481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_94
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 77
+        width: 14
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbfc65a6aaa007310800000000000000
+      internalID: 1400631211157016508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_95
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 71
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcfe9e4d2e92fa900800000000000000
+      internalID: 697822521477165007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_96
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 69
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3b325c97618f6000800000000000000
+      internalID: 31386004419132218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_97
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 65
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21c654c2652c3d300800000000000000
+      internalID: 275777677565455378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_98
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 71
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a52472663c14b2af0800000000000000
+      internalID: -420169832740732326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_99
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 67
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58c8049c866a47f20800000000000000
+      internalID: 3419540986064309381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_100
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 37
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c8c92b00ea1355a0800000000000000
+      internalID: -6533849084822173495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_101
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 31
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d70789b284f12dba0800000000000000
+      internalID: -6065751353285119875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_102
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 41
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 881a41ec5293e1410800000000000000
+      internalID: 1449658964593910152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_103
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 33
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc4a23e7e754d1ac0800000000000000
+      internalID: -3882870894138055475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_104
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 33
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1e3f55198a7d1650800000000000000
+      internalID: 6205250590774083101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_105
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 19
+        width: 12
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c30585987fc11900800000000000000
+      internalID: 653531537756980160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_106
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 39
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7632b766799b51310800000000000000
+      internalID: 1375209321142100839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_107
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 37
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 958566c61492003d0800000000000000
+      internalID: -3242546370738497447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_108
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 27
+        width: 12
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 485cb425ef0959df0800000000000000
+      internalID: -174073588607105660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_109
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 35
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31f0b6e1f80d62fb0800000000000000
+      internalID: -4672818250241077485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_110
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 33
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6294800cfb6889d0800000000000000
+      internalID: -2771846840561921427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_111
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 31
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1d369e891834b0d0800000000000000
+      internalID: -3408037335595074278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_112
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 39
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12375713543dc4bf0800000000000000
+      internalID: -338663577823644895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_113
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 15
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b420c70278b818f50800000000000000
+      internalID: 6881935118080672331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_114
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5
+        width: 39
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47dcdcf3e8f2ad330800000000000000
+      internalID: 3736351128859561332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_115
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 3
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39a9db1b32c9b40f0800000000000000
+      internalID: -1131639204233766253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_116
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 13
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b938e2432b99b130800000000000000
+      internalID: 3583065554298616243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_117
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 13
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 686dd85c92d53ca10800000000000000
+      internalID: 1928487499434153606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_118
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 1
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 668ab5cfe431b9e00800000000000000
+      internalID: 1052456167883384934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_119
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 9
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f66f12724e076090800000000000000
+      internalID: -8041442931101440264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_120
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 1
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 507ffe0c423393ad0800000000000000
+      internalID: -2722088266819963131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_121
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 31
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f47d41cf223d0b50800000000000000
+      internalID: 6560955412836611316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_122
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 1
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c423d51b6a752db80800000000000000
+      internalID: -8371532383876468148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_123
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 9
+        width: 42
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50087db8284475ca0800000000000000
+      internalID: -6028274248729526267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_124
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 3
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dd0cee291c82a4e0800000000000000
+      internalID: -1971859647045562920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_125
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 7
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23bc4319bda8025e0800000000000000
+      internalID: -1936395164130686158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_126
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 11
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 876e763fad0863b00800000000000000
+      internalID: 807974861034481272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_127
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 7
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d602d296468ee7e0800000000000000
+      internalID: -1734301168821991719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_128
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 1
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a128fde91f606c7f0800000000000000
+      internalID: -592778666130308582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_129
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 11
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e35c737b70b6d400800000000000000
+      internalID: 348660065432785897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_130
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 9
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d82d5b86816749dc0800000000000000
+      internalID: -3633149152173108595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxdestroy-sheet0_131
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 5
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17158579ad76a62f0800000000000000
+      internalID: -978855780459982479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      boxdestroy-sheet0_0: -8427445098911774501
+      boxdestroy-sheet0_1: 5605944270611429493
+      boxdestroy-sheet0_10: 1465855793062601609
+      boxdestroy-sheet0_100: -6533849084822173495
+      boxdestroy-sheet0_101: -6065751353285119875
+      boxdestroy-sheet0_102: 1449658964593910152
+      boxdestroy-sheet0_103: -3882870894138055475
+      boxdestroy-sheet0_104: 6205250590774083101
+      boxdestroy-sheet0_105: 653531537756980160
+      boxdestroy-sheet0_106: 1375209321142100839
+      boxdestroy-sheet0_107: -3242546370738497447
+      boxdestroy-sheet0_108: -174073588607105660
+      boxdestroy-sheet0_109: -4672818250241077485
+      boxdestroy-sheet0_11: -137671638446515341
+      boxdestroy-sheet0_110: -2771846840561921427
+      boxdestroy-sheet0_111: -3408037335595074278
+      boxdestroy-sheet0_112: -338663577823644895
+      boxdestroy-sheet0_113: 6881935118080672331
+      boxdestroy-sheet0_114: 3736351128859561332
+      boxdestroy-sheet0_115: -1131639204233766253
+      boxdestroy-sheet0_116: 3583065554298616243
+      boxdestroy-sheet0_117: 1928487499434153606
+      boxdestroy-sheet0_118: 1052456167883384934
+      boxdestroy-sheet0_119: -8041442931101440264
+      boxdestroy-sheet0_12: -5636667520276153838
+      boxdestroy-sheet0_120: -2722088266819963131
+      boxdestroy-sheet0_121: 6560955412836611316
+      boxdestroy-sheet0_122: -8371532383876468148
+      boxdestroy-sheet0_123: -6028274248729526267
+      boxdestroy-sheet0_124: -1971859647045562920
+      boxdestroy-sheet0_125: -1936395164130686158
+      boxdestroy-sheet0_126: 807974861034481272
+      boxdestroy-sheet0_127: -1734301168821991719
+      boxdestroy-sheet0_128: -592778666130308582
+      boxdestroy-sheet0_129: 348660065432785897
+      boxdestroy-sheet0_13: 4542031155009698546
+      boxdestroy-sheet0_130: -3633149152173108595
+      boxdestroy-sheet0_131: -978855780459982479
+      boxdestroy-sheet0_14: 8343153039023920788
+      boxdestroy-sheet0_15: 3481783649880478057
+      boxdestroy-sheet0_16: -6688909299140343280
+      boxdestroy-sheet0_17: -6778312387086779917
+      boxdestroy-sheet0_18: -5884300185399756607
+      boxdestroy-sheet0_19: 3659432473099114813
+      boxdestroy-sheet0_2: 7605921662439713132
+      boxdestroy-sheet0_20: 1520589758286253350
+      boxdestroy-sheet0_21: -6096514112888101043
+      boxdestroy-sheet0_22: -6419451800150674505
+      boxdestroy-sheet0_23: -5812890567064119616
+      boxdestroy-sheet0_24: -276002406322699432
+      boxdestroy-sheet0_25: 6098673872726476012
+      boxdestroy-sheet0_26: 673989132874299256
+      boxdestroy-sheet0_27: -2696866423556354119
+      boxdestroy-sheet0_28: 2162492128905884845
+      boxdestroy-sheet0_29: -7037445458698221558
+      boxdestroy-sheet0_3: 1637436994286745191
+      boxdestroy-sheet0_30: 1707274795657391543
+      boxdestroy-sheet0_31: -3224921348279577928
+      boxdestroy-sheet0_32: 6324923655690769383
+      boxdestroy-sheet0_33: -3956559902051870781
+      boxdestroy-sheet0_34: -696796275258224737
+      boxdestroy-sheet0_35: 6444516156859859637
+      boxdestroy-sheet0_36: 1791941522798994341
+      boxdestroy-sheet0_37: 3494920234049327383
+      boxdestroy-sheet0_38: 914813694447815544
+      boxdestroy-sheet0_39: -4965817690734479814
+      boxdestroy-sheet0_4: 988488690266720201
+      boxdestroy-sheet0_40: -6580611207855664002
+      boxdestroy-sheet0_41: -7301347422349062113
+      boxdestroy-sheet0_42: 5872162404659769862
+      boxdestroy-sheet0_43: -6322295069438965708
+      boxdestroy-sheet0_44: -109836925271972046
+      boxdestroy-sheet0_45: 4121274000224242579
+      boxdestroy-sheet0_46: -6712153613835571579
+      boxdestroy-sheet0_47: 4968231025956658120
+      boxdestroy-sheet0_48: -3695378019917317278
+      boxdestroy-sheet0_49: 8514636982614598658
+      boxdestroy-sheet0_5: 5101061037722406987
+      boxdestroy-sheet0_50: -1173486623467219114
+      boxdestroy-sheet0_51: 3302470753148002328
+      boxdestroy-sheet0_52: -1653204708790873564
+      boxdestroy-sheet0_53: 6202058253255000820
+      boxdestroy-sheet0_54: 2069022146451255117
+      boxdestroy-sheet0_55: -5112194132140831955
+      boxdestroy-sheet0_56: -8642583421424666512
+      boxdestroy-sheet0_57: -8671594635109231880
+      boxdestroy-sheet0_58: 5676306269570597316
+      boxdestroy-sheet0_59: 3853689438875055836
+      boxdestroy-sheet0_6: -6186766723426757816
+      boxdestroy-sheet0_60: -2586160430055536860
+      boxdestroy-sheet0_61: -8952625355613709412
+      boxdestroy-sheet0_62: 7198907376952335703
+      boxdestroy-sheet0_63: -8380923952286943627
+      boxdestroy-sheet0_64: -4625339852397759253
+      boxdestroy-sheet0_65: 3444827054729345543
+      boxdestroy-sheet0_66: 8690717348907793841
+      boxdestroy-sheet0_67: -1693308094763707746
+      boxdestroy-sheet0_68: -8418418718102708487
+      boxdestroy-sheet0_69: -2163628473007625721
+      boxdestroy-sheet0_7: -4733098044425642420
+      boxdestroy-sheet0_70: 8275260074778863227
+      boxdestroy-sheet0_71: -5240851898872639526
+      boxdestroy-sheet0_72: 6508845000410618537
+      boxdestroy-sheet0_73: -6286914667551305086
+      boxdestroy-sheet0_74: -6242176709170784034
+      boxdestroy-sheet0_75: -2398357694583439170
+      boxdestroy-sheet0_76: -4605273451532251158
+      boxdestroy-sheet0_77: 7586429882056962621
+      boxdestroy-sheet0_78: -3558042679826468775
+      boxdestroy-sheet0_79: 5284689403391144643
+      boxdestroy-sheet0_8: 9040491811295210815
+      boxdestroy-sheet0_80: -2364911564051041534
+      boxdestroy-sheet0_81: 2996347615632815733
+      boxdestroy-sheet0_82: 5387483011423250867
+      boxdestroy-sheet0_83: -2173290797602322799
+      boxdestroy-sheet0_84: 652292566729562877
+      boxdestroy-sheet0_85: 6496136792022178461
+      boxdestroy-sheet0_86: 1409979604040933281
+      boxdestroy-sheet0_87: -7364917001154650705
+      boxdestroy-sheet0_88: 5836642859363014964
+      boxdestroy-sheet0_89: 52760997283891851
+      boxdestroy-sheet0_9: 4222780349587908618
+      boxdestroy-sheet0_90: 899349725693959080
+      boxdestroy-sheet0_91: -4213400841643721709
+      boxdestroy-sheet0_92: 2670025735870895111
+      boxdestroy-sheet0_93: 3159382946073045481
+      boxdestroy-sheet0_94: 1400631211157016508
+      boxdestroy-sheet0_95: 697822521477165007
+      boxdestroy-sheet0_96: 31386004419132218
+      boxdestroy-sheet0_97: 275777677565455378
+      boxdestroy-sheet0_98: -420169832740732326
+      boxdestroy-sheet0_99: 3419540986064309381
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
