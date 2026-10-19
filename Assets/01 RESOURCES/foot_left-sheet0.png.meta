@@ -1,0 +1,242 @@
+fileFormatVersion: 2
+guid: 5b7f4dbeba2439645b5ba2bf2c17a07c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8258984233348701500
+    second: foot_left-sheet0_0
+  - first:
+      213: -8329416004159741494
+    second: foot_left-sheet0_1
+  - first:
+      213: -5441661854784359017
+    second: foot_left-sheet0_2
+  - first:
+      213: -7067504015979922166
+    second: foot_left-sheet0_3
+  - first:
+      213: -5802788158127239922
+    second: foot_left-sheet0_4
+  - first:
+      213: -3440504285965054505
+    second: foot_left-sheet0_5
+  - first:
+      213: -8021757686365138492
+    second: foot_left-sheet0_6
+  - first:
+      213: -4219617724639478589
+    second: foot_left-sheet0_7
+  - first:
+      213: -442132688223616493
+    second: foot_left-sheet0_8
+  - first:
+      213: -9059948473617651927
+    second: foot_left-sheet0_9
+  - first:
+      213: 7383537574917742501
+    second: foot_left-sheet0_10
+  - first:
+      213: -7229852951334797161
+    second: foot_left-sheet0_11
+  - first:
+      213: -3800253923093967313
+    second: foot_left-sheet0_12
+  - first:
+      213: 784486794240888363
+    second: foot_left-sheet0_13
+  - first:
+      213: -8528487124349840210
+    second: foot_left-sheet0_14
+  - first:
+      213: 5546197322767926133
+    second: foot_left-sheet0_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: foot_left-sheet0_0
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 68
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3d1d4af66ecd9270800000000000000
+      internalID: 8258984233348701500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: fe056cd16f31ddb459928e60f4243494
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      foot_left-sheet0_0: 8258984233348701500
+      foot_left-sheet0_1: -8329416004159741494
+      foot_left-sheet0_10: 7383537574917742501
+      foot_left-sheet0_11: -7229852951334797161
+      foot_left-sheet0_12: -3800253923093967313
+      foot_left-sheet0_13: 784486794240888363
+      foot_left-sheet0_14: -8528487124349840210
+      foot_left-sheet0_15: 5546197322767926133
+      foot_left-sheet0_2: -5441661854784359017
+      foot_left-sheet0_3: -7067504015979922166
+      foot_left-sheet0_4: -5802788158127239922
+      foot_left-sheet0_5: -3440504285965054505
+      foot_left-sheet0_6: -8021757686365138492
+      foot_left-sheet0_7: -4219617724639478589
+      foot_left-sheet0_8: -442132688223616493
+      foot_left-sheet0_9: -9059948473617651927
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
