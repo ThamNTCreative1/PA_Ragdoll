@@ -10,6 +10,7 @@ public class LunaController : MonoBehaviour
     [LunaPlaygroundField("Time Play")] public float TimePlay;
     [SerializeField] private RawImage BGImage;
     [SerializeField] private List<Button> CTA;
+    [SerializeField] private GameObject endCard;
     void Start()
     {
         BGImage.texture = BGTexture;
@@ -25,6 +26,6 @@ public class LunaController : MonoBehaviour
     {
         yield return new WaitForSeconds(TimePlay);
         Luna.Unity.LifeCycle.GameEnded();
-        if (UseTime) ClickCTA();
+        if (UseTime) endCard.SetActive(true);
     }
 }

@@ -1127,6 +1127,7 @@ Deserializers["LunaController"] = function (request, data, root) {
   request.r(i581[i + 0], i581[i + 1], 1, i580, '')
   }
   i578.CTA = i580
+  request.r(i579[7], i579[8], 0, i578, 'endCard')
   return i578
 }
 
@@ -1738,13 +1739,13 @@ Deserializers.productName = "SSP_Luna-SSP_V01";
 
 Deserializers.lunaInitializationTime = "10/19/2026 04:50:16";
 
-Deserializers.lunaDaysRunning = "0.0";
+Deserializers.lunaDaysRunning = "0.1";
 
 Deserializers.lunaVersion = "7.2.0";
 
 Deserializers.lunaSHA = "ea08d29afe2968efcb8d91d5624f033c6485cc68";
 
-Deserializers.creativeName = "C1_2610_TamNTM_KSBP_V01_NgocBTU";
+Deserializers.creativeName = "C1_2610_TamNTM_KSBP_V02_NgocBTU";
 
 Deserializers.lunaAppID = "43487";
 
@@ -1792,7 +1793,7 @@ Deserializers.graphicsConstraint = 24;
 
 Deserializers.linearColorSpace = true;
 
-Deserializers.buildID = "8bb045fa-ca6e-4bdc-91d8-4bba55356872";
+Deserializers.buildID = "3c50505d-3328-425a-bc0c-0f29e5380214";
 
 Deserializers.runtimeInitializeOnLoadInfos = [[["Unity","PerformanceTesting","PerformanceTest","ResetStaticsOnLoad"],["UnityEngine","U2D","Animation","GpuDeformationSystem","CreateFallbackBuffer"],["UnityEngine","Experimental","Rendering","ScriptableRuntimeReflectionSystemSettings","ScriptingDirtyReflectionSystemInstance"]],[["Unity","VisualScripting","RuntimeVSUsageUtility","RuntimeInitializeOnLoadBeforeSceneLoad"],["UnityEngine","AI","NavMesh","ClearPreUpdateListeners"]],[["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"]],[],[["UnityEngine","Timeline","AnimatorBindingCache","ResetStaticsOnLoad"],["UnityEngine","Timeline","TrackAsset","ResetStaticsOnLoad"],["UnityEngine","Timeline","AnimationPreviewUtilities","ResetStaticsOnLoad"],["Unity","PerformanceTesting","Data","RunSettings","ResetStaticsOnLoad"],["Unity","PerformanceTesting","PlayerCallbacks","ResetStaticsOnLoad"]]];
 
