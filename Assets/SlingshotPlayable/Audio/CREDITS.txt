@@ -1,0 +1,7 @@
+Audio credits (all CC0 / public domain)
+- BGM_HappyClappyLoop.wav: 'Happy Clappy Loop' by OwlishMedia, OpenGameArt, CC0 - https://opengameart.org/content/happy-clappy-loop
+- Hit_*.ogg: Kenney 'Impact Sounds', CC0 - https://kenney.nl/assets/impact-sounds
+- Guard_Knock.ogg, CTA_Jingle.ogg: Kenney 'Music Jingles', CC0 - https://kenney.nl/assets/music-jingles
+- Sling_Release.wav, Sling_Grab.wav, Spawn_Pop.wav: Kenney 'Interface Sounds', CC0 - https://kenney.nl/assets/interface-sounds
+- Spawn_PowerUp.ogg: Kenney 'Digital Audio', CC0 - https://kenney.nl/assets/digital-audio
+- Fly_Whizz.wav: synthesized for this project (no third-party source)

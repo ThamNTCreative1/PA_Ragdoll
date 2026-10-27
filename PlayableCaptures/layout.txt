@@ -1,0 +1,139 @@
+# layout (portrait 1080x1920) — x,y = top-left corner in % of screen, w,h in %; origin top-left
+# path | kind | x% y% w% h% | sorting | extra
+SlingshotPlayable/Sling/Front elastic | LineRenderer | 21 46 16 7 | Default/45 | 
+SlingshotPlayable/Sling/Back elastic | LineRenderer | 14 46 16 7 | Default/27 | 
+SlingshotPlayable/Map/Background/Water/Water | SpriteRenderer | 309 66 56 31 | Default/40 | sprite=WaterTiled color=#FFFFFFD9 OFFSCREEN
+SlingshotPlayable/Map/Background/Water/Water | SpriteRenderer | 253 66 56 31 | Default/40 | sprite=WaterTiled color=#FFFFFFD9 OFFSCREEN
+SlingshotPlayable/Characters/Zombies/Zombie BONNIE/ZHand_Right_0_0/Visual | SpriteRenderer | 143 33 2 5 | Default/33 | sprite=zpurple_hand OFFSCREEN
+SlingshotPlayable/Map/Background/Water/Water | SpriteRenderer | 309 128 56 31 | Default/40 | sprite=WaterTiled color=#C2C2FFD9 OFFSCREEN
+SlingshotPlayable/Characters/Zombies/Zombie FREDDY/ZBody_0_0/Visual | SpriteRenderer | 91 52 5 5 | Default/30 | sprite=zbrown_body
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | 260 -130 70 39 | Default/1 | sprite=SkyTiled OFFSCREEN
+SlingshotPlayable/Map/Props/table | SpriteRenderer | 212 37 16 5 | Default/26 | sprite=table OFFSCREEN
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | 121 -91 70 39 | Default/1 | sprite=SkyTiled OFFSCREEN
+SlingshotPlayable/Characters/Zombies/Zombie MANGLE/Foot_Right_0_2/Visual | SpriteRenderer | 228 37 2 5 | Default/32 | sprite=zwhite_foot OFFSCREEN
+SlingshotPlayable/Characters/Zombies/Zombie BONNIE/ZFoot_Right_0_0/Visual | SpriteRenderer | 145 37 2 5 | Default/32 | sprite=zpurple_foot OFFSCREEN
+SlingshotPlayable/Map/Background/Water/Water | SpriteRenderer | 87 66 56 31 | Default/40 | sprite=WaterTiled color=#FFFFFFD9
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | -18 -13 70 39 | Default/1 | sprite=SkyTiled
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | 52 -52 70 39 | Default/1 | sprite=SkyTiled OFFSCREEN
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | -18 -91 70 39 | Default/1 | sprite=SkyTiled OFFSCREEN
+SlingshotPlayable/Characters/Zombies/Zombie FOXY/ZHand_Right_0_0/Visual | SpriteRenderer | 160 53 2 5 | Default/33 | sprite=zred_hand OFFSCREEN
+SlingshotPlayable/Characters/Heroes/Hero 1/Foot_Right_0_0/Visual | SpriteRenderer | 22 29 6 5 | Default/32 | sprite=brown_foot
+SlingshotPlayable/Map/Background/Water/Water | SpriteRenderer | 309 97 56 31 | Default/40 | sprite=WaterTiled color=#E0E0FFD9 OFFSCREEN
+SlingshotPlayable/Characters/Zombies/Zombie BONNIE/ZHand_Left_0_0/Visual | SpriteRenderer | 149 33 2 5 | Default/29 | sprite=zpurple_hand OFFSCREEN
+SlingshotPlayable/Characters/Heroes/Hero 1/Hand_Left_0_0/Visual | SpriteRenderer | 16 24 7 5 | Default/29 | sprite=brown_hand
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | 121 -13 70 39 | Default/1 | sprite=SkyTiled OFFSCREEN
+SlingshotPlayable/Map/Background/Sand/Sand | SpriteRenderer | -25 128 56 31 | Default/19 | sprite=SandTiled OFFSCREEN
+SlingshotPlayable/Map/Background/Water/Water | SpriteRenderer | 198 128 56 31 | Default/40 | sprite=WaterTiled color=#C2C2FFD9 OFFSCREEN
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | -18 -52 70 39 | Default/1 | sprite=SkyTiled OFFSCREEN
+SlingshotPlayable/Map/Background/Sand/Sand | SpriteRenderer | 31 128 56 31 | Default/19 | sprite=SandTiled OFFSCREEN
+SlingshotPlayable/Characters/Zombies/Zombie BONNIE/ZFoot_Left_0_0/Visual | SpriteRenderer | 148 37 2 5 | Default/31 | sprite=zpurple_foot OFFSCREEN
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | -87 -130 70 39 | Default/1 | sprite=SkyTiled OFFSCREEN
+SlingshotPlayable/Map/Background/Sand/Sand | SpriteRenderer | -25 66 56 31 | Default/19 | sprite=SandTiled
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | 191 27 70 39 | Default/1 | sprite=SkyTiled OFFSCREEN
+SlingshotPlayable/Characters/Heroes/Hero 1/Head_0_0/Visual | SpriteRenderer | 19 19 12 6 | Default/34 | sprite=brown_head
+SlingshotPlayable/Characters/Zombies/Zombie CHICA/ZHand_Right_0_0/Visual | SpriteRenderer | 235 13 2 5 | Default/33 | sprite=zyellow_hand OFFSCREEN
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | 191 -91 70 39 | Default/1 | sprite=SkyTiled OFFSCREEN
+SlingshotPlayable/Map/Background/Water/Water | SpriteRenderer | 253 128 56 31 | Default/40 | sprite=WaterTiled color=#C2C2FFD9 OFFSCREEN
+SlingshotPlayable/Map/Props/woodbox | SpriteRenderer | 279 45 9 5 | Default/26 | sprite=woodbox OFFSCREEN
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | 260 -13 70 39 | Default/1 | sprite=SkyTiled OFFSCREEN
+SlingshotPlayable/Map/Background/Water right fill | SpriteRenderer | 420 66 744 94 | Default/40 | sprite=WaterTiled color=#E0E0FFD9 OFFSCREEN
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | -87 27 70 39 | Default/1 | sprite=SkyTiled OFFSCREEN
+SlingshotPlayable/Characters/Zombies/Zombie MANGLE/Foot_Left_0_2/Visual | SpriteRenderer | 232 37 2 5 | Default/31 | sprite=zwhite_foot OFFSCREEN
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | 260 -91 70 39 | Default/1 | sprite=SkyTiled OFFSCREEN
+SlingshotPlayable/Map/Background/Sand/Sand | SpriteRenderer | -80 97 56 31 | Default/19 | sprite=SandTiled OFFSCREEN
+SlingshotPlayable/Characters/Zombies/Zombie FREDDY/ZFoot_Right_0_0/Visual | SpriteRenderer | 91 57 2 5 | Default/32 | sprite=zbrown_foot
+SlingshotPlayable/Map/Props/woodbox | SpriteRenderer | 126 37 9 5 | Default/26 | sprite=woodbox OFFSCREEN
+SlingshotPlayable/Map/Background/Sand/Sand | SpriteRenderer | -136 97 56 31 | Default/19 | sprite=SandTiled OFFSCREEN
+SlingshotPlayable/Characters/Zombies/Zombie CHICA/ZHead_0_0/Visual | SpriteRenderer | 236 8 8 5 | Default/34 | sprite=zyellow_head OFFSCREEN
+SlingshotPlayable/Characters/Zombies/Zombie FOXY/ZFoot_Right_0_0/Visual | SpriteRenderer | 162 57 2 5 | Default/32 | sprite=zred_foot OFFSCREEN
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | -87 -91 70 39 | Default/1 | sprite=SkyTiled OFFSCREEN
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | 330 -13 70 39 | Default/1 | sprite=SkyTiled OFFSCREEN
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | 330 -130 70 39 | Default/1 | sprite=SkyTiled OFFSCREEN
+SlingshotPlayable/Map/Background/Water/Water | SpriteRenderer | 365 97 56 31 | Default/40 | sprite=WaterTiled color=#E0E0FFD9 OFFSCREEN
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | 191 -13 70 39 | Default/1 | sprite=SkyTiled OFFSCREEN
+SlingshotPlayable/Characters/Zombies/Zombie FOXY/ZHead_0_1/Visual | SpriteRenderer | 160 47 9 5 | Default/34 | sprite=zred_head OFFSCREEN
+SlingshotPlayable/Characters/Zombies/Zombie FREDDY/ZHand_Left_0_0/Visual | SpriteRenderer | 95 53 2 5 | Default/29 | sprite=zbrown_hand
+SlingshotPlayable/Characters/Zombies/Zombie BONNIE/ZBody_0_0/Visual | SpriteRenderer | 145 32 5 5 | Default/30 | sprite=zpurple_body OFFSCREEN
+SlingshotPlayable/Characters/Zombies/Zombie FOXY/ZBody_0_0/Visual | SpriteRenderer | 162 52 5 5 | Default/30 | sprite=zred_body OFFSCREEN
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | 52 -13 70 39 | Default/1 | sprite=SkyTiled
+SlingshotPlayable/Characters/Heroes/Hero 1/Body_0_0/Visual | SpriteRenderer | 23 24 5 5 | Default/30 | sprite=brown_body
+SlingshotPlayable/Map/Background/Sand left fill | SpriteRenderer | -992 66 856 94 | Default/19 | sprite=SandTiled OFFSCREEN
+SlingshotPlayable/Map/Background/Sand/Sand | SpriteRenderer | -136 66 56 31 | Default/19 | sprite=SandTiled OFFSCREEN
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | 121 -52 70 39 | Default/1 | sprite=SkyTiled OFFSCREEN
+SlingshotPlayable/Characters/Zombies/Zombie MANGLE/Head_0_2/Visual | SpriteRenderer | 226 27 9 5 | Default/34 | sprite=zwhite_head OFFSCREEN
+SlingshotPlayable/Characters/Zombies/Zombie CHICA/ZFoot_Left_0_0/Visual | SpriteRenderer | 240 18 2 5 | Default/31 | sprite=zyellow_foot OFFSCREEN
+SlingshotPlayable/Map/Background/Full Background | SpriteRenderer | -992 -541 2157 1213 | Default/0 | sprite=SkyTiled
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | 330 -52 70 39 | Default/1 | sprite=SkyTiled OFFSCREEN
+SlingshotPlayable/Characters/Heroes/Hero 1/Foot_Left_0_0/Visual | SpriteRenderer | 19 29 6 5 | Default/31 | sprite=brown_foot
+SlingshotPlayable/Map/Background/Water/Water | SpriteRenderer | 142 128 56 31 | Default/40 | sprite=WaterTiled color=#C2C2FFD9 OFFSCREEN
+SlingshotPlayable/Characters/Heroes/Hero 1/Hand_Right_0_0/Visual | SpriteRenderer | 22 24 8 4 | Default/33 | sprite=brown_hand
+SlingshotPlayable/Characters/Zombies/Zombie MANGLE/Hand_Right_0_2/Visual | SpriteRenderer | 227 33 2 5 | Default/33 | sprite=zwhite_hand OFFSCREEN
+SlingshotPlayable/Map/Background/Water lower fill | SpriteRenderer | 87 160 1078 513 | Default/40 | sprite=WaterTiled color=#E0E0FFD9 OFFSCREEN
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | 121 -130 70 39 | Default/1 | sprite=SkyTiled OFFSCREEN
+SlingshotPlayable/Characters/Zombies/Zombie CHICA/ZHand_Left_0_0/Visual | SpriteRenderer | 242 13 2 5 | Default/29 | sprite=zyellow_hand OFFSCREEN
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | -87 -52 70 39 | Default/1 | sprite=SkyTiled OFFSCREEN
+SlingshotPlayable/Characters/Zombies/Zombie FOXY/ZHand_Left_0_0/Visual | SpriteRenderer | 167 53 2 5 | Default/29 | sprite=zred_hand OFFSCREEN
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | 191 -130 70 39 | Default/1 | sprite=SkyTiled OFFSCREEN
+SlingshotPlayable/Map/Props/woodbox | SpriteRenderer | 200 56 10 5 | Default/26 | sprite=woodbox OFFSCREEN
+SlingshotPlayable/Map/Background/Water/Water | SpriteRenderer | 142 97 56 31 | Default/40 | sprite=WaterTiled color=#E0E0FFD9 OFFSCREEN
+SlingshotPlayable/Map/Background/Sand/Sand | SpriteRenderer | -25 97 56 31 | Default/19 | sprite=SandTiled
+SlingshotPlayable/Map/Background/Water/Water | SpriteRenderer | 365 128 56 31 | Default/40 | sprite=WaterTiled color=#C2C2FFD9 OFFSCREEN
+SlingshotPlayable/Map/Ship/Ship front | SpriteRenderer | 45 -9 264 90 | Default/20 | sprite=ShipFront
+SlingshotPlayable/Characters/Zombies/Zombie FOXY/ZFoot_Left_0_0/Visual | SpriteRenderer | 165 57 2 5 | Default/31 | sprite=zred_foot OFFSCREEN
+SlingshotPlayable/Map/Background/Water/Water | SpriteRenderer | 87 128 56 31 | Default/40 | sprite=WaterTiled color=#C2C2FFD9 OFFSCREEN
+SlingshotPlayable/Characters/Zombies/Zombie MANGLE/Body_0_2/Visual | SpriteRenderer | 228 32 5 5 | Default/30 | sprite=zwhite_body OFFSCREEN
+SlingshotPlayable/Map/Background/Water/Water | SpriteRenderer | 198 97 56 31 | Default/40 | sprite=WaterTiled color=#E0E0FFD9 OFFSCREEN
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | 330 27 70 39 | Default/1 | sprite=SkyTiled OFFSCREEN
+SlingshotPlayable/Map/Background/Sand/Sand | SpriteRenderer | -136 128 56 31 | Default/19 | sprite=SandTiled OFFSCREEN
+SlingshotPlayable/Characters/Zombies/Zombie FREDDY/ZFoot_Left_0_0/Visual | SpriteRenderer | 94 57 2 5 | Default/31 | sprite=zbrown_foot
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | 330 -91 70 39 | Default/1 | sprite=SkyTiled OFFSCREEN
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | -18 -130 70 39 | Default/1 | sprite=SkyTiled OFFSCREEN
+SlingshotPlayable/Map/Background/Sand lower fill | SpriteRenderer | -992 160 1078 513 | Default/19 | sprite=SandTiled OFFSCREEN
+SlingshotPlayable/Map/Background/Water/Water | SpriteRenderer | 198 66 56 31 | Default/40 | sprite=WaterTiled color=#FFFFFFD9 OFFSCREEN
+SlingshotPlayable/Characters/Zombies/Zombie BONNIE/ZHead_0_2/Visual | SpriteRenderer | 144 27 7 5 | Default/34 | sprite=zpurple_head OFFSCREEN
+SlingshotPlayable/Map/Background/Sand/Sand | SpriteRenderer | 31 66 56 31 | Default/19 | sprite=SandTiled
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | -18 27 70 39 | Default/1 | sprite=SkyTiled
+SlingshotPlayable/Map/Background/Water/Water | SpriteRenderer | 253 97 56 31 | Default/40 | sprite=WaterTiled color=#E0E0FFD9 OFFSCREEN
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | 260 27 70 39 | Default/1 | sprite=SkyTiled OFFSCREEN
+SlingshotPlayable/Map/Props/chair | SpriteRenderer | 210 36 7 6 | Default/26 | sprite=chair OFFSCREEN
+SlingshotPlayable/Characters/Zombies/Zombie CHICA/ZBody_0_0/Visual | SpriteRenderer | 237 13 5 5 | Default/30 | sprite=zyellow_body OFFSCREEN
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | 52 27 70 39 | Default/1 | sprite=SkyTiled
+SlingshotPlayable/Characters/Zombies/Zombie FREDDY/ZHead_0_0/Visual | SpriteRenderer | 89 47 10 5 | Default/34 | sprite=zbrown_head
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | -87 -13 70 39 | Default/1 | sprite=SkyTiled OFFSCREEN
+SlingshotPlayable/Map/Background/Sand/Sand | SpriteRenderer | -80 66 56 31 | Default/19 | sprite=SandTiled OFFSCREEN
+SlingshotPlayable/Map/Ship/Ship back | SpriteRenderer | 45 -9 264 90 | Default/3 | sprite=ShipBack
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | 52 -130 70 39 | Default/1 | sprite=SkyTiled OFFSCREEN
+SlingshotPlayable/Map/Background/Water/Water | SpriteRenderer | 142 66 56 31 | Default/40 | sprite=WaterTiled color=#FFFFFFD9 OFFSCREEN
+SlingshotPlayable/Characters/Zombies/Zombie FREDDY/ZHand_Right_0_0/Visual | SpriteRenderer | 89 53 2 5 | Default/33 | sprite=zbrown_hand
+SlingshotPlayable/Map/Background/Sand/Sand | SpriteRenderer | 31 97 56 31 | Default/19 | sprite=SandTiled
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | 121 27 70 39 | Default/1 | sprite=SkyTiled OFFSCREEN
+SlingshotPlayable/Map/Background/Water/Water | SpriteRenderer | 365 66 56 31 | Default/40 | sprite=WaterTiled color=#FFFFFFD9 OFFSCREEN
+SlingshotPlayable/Map/Background/Sand/Sand | SpriteRenderer | -80 128 56 31 | Default/19 | sprite=SandTiled OFFSCREEN
+SlingshotPlayable/Sling/Slingshot | SpriteRenderer | 17 48 18 18 | Default/25 | sprite=Slingshot
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | 191 -52 70 39 | Default/1 | sprite=SkyTiled OFFSCREEN
+SlingshotPlayable/Map/Background/Water/Water | SpriteRenderer | 87 97 56 31 | Default/40 | sprite=WaterTiled color=#E0E0FFD9
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | 52 -91 70 39 | Default/1 | sprite=SkyTiled OFFSCREEN
+SlingshotPlayable/Map/Background/Wall/Wall | SpriteRenderer | 260 -52 70 39 | Default/1 | sprite=SkyTiled OFFSCREEN
+SlingshotPlayable/Characters/Zombies/Zombie CHICA/ZFoot_Right_0_0/Visual | SpriteRenderer | 237 18 2 5 | Default/32 | sprite=zyellow_foot OFFSCREEN
+SlingshotPlayable/Characters/Zombies/Zombie MANGLE/Hand_Left_0_2/Visual | SpriteRenderer | 233 33 2 5 | Default/29 | sprite=zwhite_hand OFFSCREEN
+SlingshotPlayable/Playable UI/Hero name outline | UI | 1 85 98 4 | canvas 200 | Text text="FREDDY"
+SlingshotPlayable/Playable UI/Hero name outline | UI | 1 85 98 4 | canvas 200 | Text text="FREDDY"
+SlingshotPlayable/Playable UI/Hero name outline | UI | 1 85 98 4 | canvas 200 | Text text="FREDDY"
+SlingshotPlayable/Playable UI/Prompt | UI | 1 90 98 6 | canvas 200 | Text text="DRAG BACK & RELEASE"
+SlingshotPlayable/Playable UI/Prompt shadow | UI | 2 90 98 6 | canvas 200 | Text text="DRAG BACK & RELEASE"
+SlingshotPlayable/Playable UI/Hero name outline | UI | 1 85 98 4 | canvas 200 | Text text="FREDDY"
+SlingshotPlayable/Playable UI/Prompt outline | UI | 1 90 98 6 | canvas 200 | Text text="DRAG BACK & RELEASE"
+SlingshotPlayable/Playable UI/Hero name shadow | UI | 1 85 98 4 | canvas 200 | Text text="FREDDY"
+SlingshotPlayable/Playable UI/Prompt outline | UI | 1 90 98 6 | canvas 200 | Text text="DRAG BACK & RELEASE"
+SlingshotPlayable/Playable UI/Hero name outline | UI | 1 85 98 4 | canvas 200 | Text text="FREDDY"
+SlingshotPlayable/Playable UI/Prompt outline | UI | 1 90 98 6 | canvas 200 | Text text="DRAG BACK & RELEASE"
+SlingshotPlayable/Playable UI/Hero name outline | UI | 1 85 98 4 | canvas 200 | Text text="FREDDY"
+SlingshotPlayable/Playable UI/Prompt outline | UI | 0 90 98 6 | canvas 200 | Text text="DRAG BACK & RELEASE"
+SlingshotPlayable/Playable UI/Prompt outline | UI | 1 90 98 6 | canvas 200 | Text text="DRAG BACK & RELEASE"
+SlingshotPlayable/Playable UI/Prompt outline | UI | 1 90 98 6 | canvas 200 | Text text="DRAG BACK & RELEASE"
+SlingshotPlayable/Playable UI/Prompt outline | UI | 1 90 98 6 | canvas 200 | Text text="DRAG BACK & RELEASE"
+SlingshotPlayable/Playable UI/Hero name | UI | 1 85 98 4 | canvas 200 | Text text="FREDDY"
+SlingshotPlayable/Playable UI/Hero name outline | UI | 1 85 98 4 | canvas 200 | Text text="FREDDY"
+SlingshotPlayable/Playable UI/Tutorial Hand/Hand | UI | 23 50 15 10 | canvas 200 | Image sprite=TutorialHand
+SlingshotPlayable/Playable UI/Prompt outline | UI | 1 90 98 6 | canvas 200 | Text text="DRAG BACK & RELEASE"
+SlingshotPlayable/Playable UI/Hero name outline | UI | 1 85 98 4 | canvas 200 | Text text="FREDDY"

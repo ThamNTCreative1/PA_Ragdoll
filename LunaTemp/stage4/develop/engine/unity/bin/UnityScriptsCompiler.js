@@ -1,4088 +1,153 @@
-if ( TRACE ) { TRACE( JSON.parse( '["AudioController#CreateIns","AudioController#Awake","AudioController#BootstrapPool","AudioController#Start","AudioController#PlaySFX","AudioController#GetFreeSource","AudioController#CreateNewSource","BonkController#OnCollisionEnter2D","DG.Tweening.DOTweenAnimation#Dispatch_OnReset","DG.Tweening.DOTweenAnimation#TypeToDOTargetType","DG.Tweening.DOTweenAnimation#init","DG.Tweening.DOTweenAnimation#Awake","DG.Tweening.DOTweenAnimation#Start","DG.Tweening.DOTweenAnimation#Reset","DG.Tweening.DOTweenAnimation#OnDestroy","DG.Tweening.DOTweenAnimation#RewindThenRecreateTween","DG.Tweening.DOTweenAnimation#RewindThenRecreateTweenAndPlay","DG.Tweening.DOTweenAnimation#RecreateTween","DG.Tweening.DOTweenAnimation#RecreateTweenAndPlay","DG.Tweening.DOTweenAnimation#CreateTween","DG.Tweening.DOTweenAnimation#GetTweens","DG.Tweening.DOTweenAnimation#SetAnimationTarget","DG.Tweening.DOTweenAnimation#DOPlay","DG.Tweening.DOTweenAnimation#DOPlayBackwards","DG.Tweening.DOTweenAnimation#DOPlayForward","DG.Tweening.DOTweenAnimation#DOPause","DG.Tweening.DOTweenAnimation#DOTogglePause","DG.Tweening.DOTweenAnimation#DORewind","DG.Tweening.DOTweenAnimation#DORestart","DG.Tweening.DOTweenAnimation#DORestart$1","DG.Tweening.DOTweenAnimation#DOComplete","DG.Tweening.DOTweenAnimation#DOKill","DG.Tweening.DOTweenAnimation#DOPlayById","DG.Tweening.DOTweenAnimation#DOPlayAllById","DG.Tweening.DOTweenAnimation#DOPauseAllById","DG.Tweening.DOTweenAnimation#DOPlayBackwardsById","DG.Tweening.DOTweenAnimation#DOPlayBackwardsAllById","DG.Tweening.DOTweenAnimation#DOPlayForwardById","DG.Tweening.DOTweenAnimation#DOPlayForwardAllById","DG.Tweening.DOTweenAnimation#DOPlayNext","DG.Tweening.DOTweenAnimation#DORewindAndPlayNext","DG.Tweening.DOTweenAnimation#DORewindAllById","DG.Tweening.DOTweenAnimation#DORestartById","DG.Tweening.DOTweenAnimation#DORestartAllById","DG.Tweening.DOTweenAnimation#DOKillById","DG.Tweening.DOTweenAnimation#DOKillAllById","DG.Tweening.DOTweenAnimation#CreateEditorPreview","DG.Tweening.DOTweenAnimation#GetTweenGO","DG.Tweening.DOTweenAnimation#GetTweenTarget","DG.Tweening.DOTweenAnimation#ReEvaluateRelativeTween","DG.Tweening.DOTweenAnimationExtensions#IsSameOrSubclassOf","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#ctor","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#ctor","DG.Tweening.DOTweenCYInstruction.WaitForKill#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForKill#ctor","DG.Tweening.DOTweenCYInstruction.WaitForPosition#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForPosition#ctor","DG.Tweening.DOTweenCYInstruction.WaitForRewind#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForRewind#ctor","DG.Tweening.DOTweenCYInstruction.WaitForStart#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForStart#ctor","DG.Tweening.DOTweenModulePhysics2D#DOMove","DG.Tweening.DOTweenModulePhysics2D#DOMoveX","DG.Tweening.DOTweenModulePhysics2D#DOMoveY","DG.Tweening.DOTweenModulePhysics2D#DORotate","DG.Tweening.DOTweenModulePhysics2D#DOJump","DG.Tweening.DOTweenModulePhysics2D#DOPath","DG.Tweening.DOTweenModulePhysics2D#DOPath$1","DG.Tweening.DOTweenModulePhysics2D#DOLocalPath","DG.Tweening.DOTweenModulePhysics2D#DOLocalPath$1","DG.Tweening.DOTweenModuleSprite#DOColor","DG.Tweening.DOTweenModuleSprite#DOFade","DG.Tweening.DOTweenModuleSprite#DOGradientColor","DG.Tweening.DOTweenModuleSprite#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOFade","DG.Tweening.DOTweenModuleUI#DOFade$1","DG.Tweening.DOTweenModuleUI#DOFade$2","DG.Tweening.DOTweenModuleUI#DOFade$3","DG.Tweening.DOTweenModuleUI#DOFade$4","DG.Tweening.DOTweenModuleUI#DOColor","DG.Tweening.DOTweenModuleUI#DOColor$1","DG.Tweening.DOTweenModuleUI#DOColor$2","DG.Tweening.DOTweenModuleUI#DOColor$3","DG.Tweening.DOTweenModuleUI#DOFillAmount","DG.Tweening.DOTweenModuleUI#DOGradientColor","DG.Tweening.DOTweenModuleUI#DOFlexibleSize","DG.Tweening.DOTweenModuleUI#DOMinSize","DG.Tweening.DOTweenModuleUI#DOPreferredSize","DG.Tweening.DOTweenModuleUI#DOScale","DG.Tweening.DOTweenModuleUI#DOAnchorPos","DG.Tweening.DOTweenModuleUI#DOAnchorPosX","DG.Tweening.DOTweenModuleUI#DOAnchorPosY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3D","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DX","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DZ","DG.Tweening.DOTweenModuleUI#DOAnchorMax","DG.Tweening.DOTweenModuleUI#DOAnchorMin","DG.Tweening.DOTweenModuleUI#DOPivot","DG.Tweening.DOTweenModuleUI#DOPivotX","DG.Tweening.DOTweenModuleUI#DOPivotY","DG.Tweening.DOTweenModuleUI#DOSizeDelta","DG.Tweening.DOTweenModuleUI#DOPunchAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos$1","DG.Tweening.DOTweenModuleUI#DOJumpAnchorPos","DG.Tweening.DOTweenModuleUI#DONormalizedPos","DG.Tweening.DOTweenModuleUI#DOHorizontalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOVerticalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOValue","DG.Tweening.DOTweenModuleUI#DOCounter","DG.Tweening.DOTweenModuleUI#DOText","DG.Tweening.DOTweenModuleUI#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOBlendableColor$1","DG.Tweening.DOTweenModuleUI#DOBlendableColor$2","DG.Tweening.DOTweenModuleUI#DOShapeCircle","DG.Tweening.DOTweenModuleUI.Utils#SwitchToRectTransform","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor$1","DG.Tweening.DOTweenModuleUnityVersion#WaitForCompletion","DG.Tweening.DOTweenModuleUnityVersion#WaitForRewind","DG.Tweening.DOTweenModuleUnityVersion#WaitForKill","DG.Tweening.DOTweenModuleUnityVersion#WaitForElapsedLoops","DG.Tweening.DOTweenModuleUnityVersion#WaitForPosition","DG.Tweening.DOTweenModuleUnityVersion#WaitForStart","DG.Tweening.DOTweenModuleUnityVersion#DOOffset","DG.Tweening.DOTweenModuleUnityVersion#DOTiling","DG.Tweening.DOTweenModuleUtils#Init","DG.Tweening.DOTweenModuleUtils#Preserver","DG.Tweening.DOTweenModuleUtils.Physics#SetOrientationOnPath","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody2D","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody","DG.Tweening.DOTweenModuleUtils.Physics#CreateDOTweenPathTween","DG.Tweening.DOTweenProShortcuts#ctor","DG.Tweening.DOTweenProShortcuts#DOSpiral","GameController#CreateIns","GameController#Awake","GameController#SetPlayer","GameController#SetMonster","GameController#SetCharacter","GameController#KillMonster","GameController#ChangeLevel","LunaController#init","LunaController#Start","LunaController#SetupCharacter","LunaController#SetupButton","LunaController#SetupMap","LunaController#RoundNumber","LunaController#ClickCTA","LunaController#EndGame","MonsterController#init","MonsterController#Dead","TargetController#AddTarget","TargetController#Update","TargetController#CheckInput","TargetController#SetTargetPoint","TargetController#RemoveTargetPoint","TargetController#RemoveTarget","TargetController#NextTarget","TargetController#IsEmpty","VFXController#CreateIns","VFXController#Awake","VFXController#BootstrapPool","VFXController#CreateNewVFX","VFXController#GetFreeVFX","VFXController#SpawnVFX","VFXController#ReturnToPool"]' ) ); }
+if ( TRACE ) { TRACE( JSON.parse( '["HeroSkin#init","HeroSkins#SpriteSize","HeroSkins#init","HeroSkins#Apply","HeroSkins#SetBody","HeroSkins#SetHead","HeroSkins#SetLimb","LunaController#init","LunaController#Awake","LunaControllerFNAF#init","LunaControllerFNAF#Awake","PlayableCameraController#IsPanning#get","PlayableCameraController#IsAiming#get","PlayableCameraController#init","PlayableCameraController#SetAim","PlayableCameraController#AimMin","PlayableCameraController#AimMax","PlayableCameraController#AimCenter","PlayableCameraController#AimFrame","PlayableCameraController#FitView","PlayableCameraController#OnPreCull","PlayableCameraController#PanTo","PlayableCameraController#LateUpdate","PlayableFlowController#ShotCount#get","PlayableFlowController#CanGrab#get","PlayableFlowController#init","PlayableFlowController#Start","PlayableFlowController#StartMusic","PlayableFlowController#BeginInput","PlayableFlowController#HeroId","PlayableFlowController#HeroName","PlayableFlowController#LoadActor","PlayableFlowController#SpawnTap","PlayableFlowController#NextShot","PlayableFlowController#BeginDrag","PlayableFlowController#StartDragging","PlayableFlowController#BeginDragScreen","PlayableFlowController#DragScreen","PlayableFlowController#Drag","PlayableFlowController#UpdateTrajectory","PlayableFlowController#ReleaseShot","PlayableFlowController#Update","PlayableFlowController#ReadInput","PlayableFlowController#World","PlayableFlowController#PointerDown","PlayableFlowController#CancelDrag","PlayableFlowController#OnApplicationFocus","PlayableFlowController#UpdateBands","PlayableFlowController#SetDots","PlayableFlowController#ShowHeroSelect","PlayableFlowController#WasShot","PlayableFlowController#InSelect","PlayableFlowController#TrySelect","PlayableFlowController#ShowEndCard","PlayableFlowController#PlaceHandAtScreen","PlayableFlowController#UpdateHandReady","PlayableFlowController#UpdateUI","PlayableFlowController#PlayImpact","PlayableFlowController#PlayKnock","PlayableFlowController#PlaySfx","PlayableFlowController#OpenStore","RagdollActor#init","RagdollActor#Awake","RagdollActor#IgnoreSelfCollision","RagdollActor#Initialize","RagdollActor#LoadAt","RagdollActor#SyncBodies","RagdollActor#SetCollidersEnabled","RagdollActor#SetDragging","RagdollActor#Launch","RagdollActor#IsSettled","RagdollActor#FreezeWhenSettled","RagdollActor#FixedUpdate","RagdollActor#Freeze","RagdollActor#ReactToHit","RagdollImpact#init","RagdollImpact#OnCollisionStay2D","RagdollImpact#OnCollisionEnter2D","TextOutline#init","TextOutline#Awake","TextOutline#LateUpdate","TextOutline#Sync"]' ) ); }
 /**
- * @version 1.0.9789.29921
+ * @version 1.0.9796.24566
  * @copyright anton
  * @compiler Bridge.NET 17.9.42-luna
  */
 Bridge.assembly("UnityScriptsCompiler", function ($asm, globals) {
     "use strict";
 
-    /*AudioController start.*/
-    Bridge.define("AudioController", {
-        inherits: [UnityEngine.MonoBehaviour],
-        statics: {
-            fields: {
-                Ins: null
-            }
-        },
+    /*HeroSkin start.*/
+    Bridge.define("HeroSkin", {
         fields: {
-            BGM: null,
-            musicSource: null,
-            pool: null,
-            SFXPool: null
-        },
-        methods: {
-            /*AudioController.CreateIns start.*/
-            CreateIns: function () {
-if ( TRACE ) { TRACE( "AudioController#CreateIns", this ); }
-
-                if (UnityEngine.Object.op_Implicit(AudioController.Ins) && UnityEngine.MonoBehaviour.op_Inequality(AudioController.Ins, this)) {
-                    UnityEngine.MonoBehaviour.Destroy(this.gameObject);
-                    return;
-                }
-                AudioController.Ins = this;
-                UnityEngine.Object.DontDestroyOnLoad(this.gameObject);
-            },
-            /*AudioController.CreateIns end.*/
-
-            /*AudioController.Awake start.*/
-            Awake: function () {
-if ( TRACE ) { TRACE( "AudioController#Awake", this ); }
-
-                this.CreateIns();
-                this.BootstrapPool();
-            },
-            /*AudioController.Awake end.*/
-
-            /*AudioController.BootstrapPool start.*/
-            BootstrapPool: function () {
-if ( TRACE ) { TRACE( "AudioController#BootstrapPool", this ); }
-
-                this.SFXPool = new (System.Collections.Generic.Queue$1(UnityEngine.AudioSource)).ctor();
-                this.SFXPool.Enqueue(this.CreateNewSource());
-                this.SFXPool.Enqueue(this.CreateNewSource());
-                this.SFXPool.Enqueue(this.CreateNewSource());
-                this.SFXPool.Enqueue(this.CreateNewSource());
-                this.SFXPool.Enqueue(this.CreateNewSource());
-            },
-            /*AudioController.BootstrapPool end.*/
-
-            /*AudioController.Start start.*/
-            Start: function () {
-if ( TRACE ) { TRACE( "AudioController#Start", this ); }
-
-                this.musicSource.clip = this.BGM;
-                this.musicSource.Play();
-            },
-            /*AudioController.Start end.*/
-
-            /*AudioController.PlaySFX start.*/
-            PlaySFX: function (clip) {
-if ( TRACE ) { TRACE( "AudioController#PlaySFX", this ); }
-
-                if (!UnityEngine.Object.op_Implicit(clip)) {
-                    return;
-                }
-                this.GetFreeSource().PlayOneShot(clip);
-            },
-            /*AudioController.PlaySFX end.*/
-
-            /*AudioController.GetFreeSource start.*/
-            GetFreeSource: function () {
-if ( TRACE ) { TRACE( "AudioController#GetFreeSource", this ); }
-
-                if (this.SFXPool.Count > 0) {
-                    return this.SFXPool.Dequeue();
-                }
-                return this.CreateNewSource();
-            },
-            /*AudioController.GetFreeSource end.*/
-
-            /*AudioController.CreateNewSource start.*/
-            CreateNewSource: function () {
-if ( TRACE ) { TRACE( "AudioController#CreateNewSource", this ); }
-
-                var s = new UnityEngine.GameObject.ctor().AddComponent(UnityEngine.AudioSource);
-                s.transform.SetParent(this.pool);
-                return s;
-            },
-            /*AudioController.CreateNewSource end.*/
-
-
-        }
-    });
-    /*AudioController end.*/
-
-    /*BonkController start.*/
-    Bridge.define("BonkController", {
-        inherits: [UnityEngine.MonoBehaviour],
-        fields: {
-            target: null,
-            maxBonk: 0,
-            hitSound: null,
-            count: 0
-        },
-        methods: {
-            /*BonkController.OnCollisionEnter2D start.*/
-            OnCollisionEnter2D: function (collision) {
-if ( TRACE ) { TRACE( "BonkController#OnCollisionEnter2D", this ); }
-
-                if (!collision.gameObject.CompareTag(this.target)) {
-                    return;
-                }
-                AudioController.Ins.PlaySFX(this.hitSound);
-                this.count = (this.count + 1) | 0;
-                if (this.count === this.maxBonk) {
-                    GameController.Ins.KillMonster();
-                }
-                VFXController.Ins.SpawnVFX(UnityEngine.Vector2.FromVector3(collision.transform.position));
-            },
-            /*BonkController.OnCollisionEnter2D end.*/
-
-
-        }
-    });
-    /*BonkController end.*/
-    /** @namespace System */
-
-    /**
-     * @memberof System
-     * @callback System.Action
-     * @param   {DG.Tweening.DOTweenAnimation}    arg
-     * @return  {void}
-     */
-
-
-    /*DG.Tweening.DOTweenAnimation start.*/
-    /** @namespace DG.Tweening */
-
-    /**
-     * Attach this to a GameObject to create a tween
-     *
-     * @public
-     * @class DG.Tweening.DOTweenAnimation
-     * @augments DG.Tweening.Core.ABSAnimationComponent
-     */
-    Bridge.define("DG.Tweening.DOTweenAnimation", {
-        inherits: [DG.Tweening.Core.ABSAnimationComponent],
-        statics: {
-            events: {
-                /**
-                 * Used internally by the editor
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenAnimation
-                 * @memberof DG.Tweening.DOTweenAnimation
-                 * @function addOnReset
-                 * @param   {System.Action}    value
-                 * @return  {void}
-                 */
-                /**
-                 * Used internally by the editor
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenAnimation
-                 * @memberof DG.Tweening.DOTweenAnimation
-                 * @function removeOnReset
-                 * @param   {System.Action}    value
-                 * @return  {void}
-                 */
-                OnReset: null
-            },
-            methods: {
-                /*DG.Tweening.DOTweenAnimation.Dispatch_OnReset:static start.*/
-                Dispatch_OnReset: function (anim) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#Dispatch_OnReset", this ); }
-
-                    if (!Bridge.staticEquals(DG.Tweening.DOTweenAnimation.OnReset, null)) {
-                        DG.Tweening.DOTweenAnimation.OnReset(anim);
-                    }
-                },
-                /*DG.Tweening.DOTweenAnimation.Dispatch_OnReset:static end.*/
-
-                /*DG.Tweening.DOTweenAnimation.TypeToDOTargetType:static start.*/
-                TypeToDOTargetType: function (t) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#TypeToDOTargetType", this ); }
-
-                    var str = Bridge.getTypeName(t);
-                    var dotIndex = str.lastIndexOf(".");
-                    if (dotIndex !== -1) {
-                        str = str.substr(((dotIndex + 1) | 0));
-                    }
-                    if (System.String.indexOf(str, "Renderer") !== -1 && (!Bridge.referenceEquals(str, "SpriteRenderer"))) {
-                        str = "Renderer";
-                    }
-                    //#if true // PHYSICS_MARKER
-                    //            if (str == "Rigidbody") str = "Transform";
-                    //#endif
-                    //#if true // PHYSICS2D_MARKER
-                    //            if (str == "Rigidbody2D") str = "Transform";
-                    //#endif
-                    //            if (str == "RectTransform") str = "Transform";
-                    if (Bridge.referenceEquals(str, "RawImage") || Bridge.referenceEquals(str, "Graphic")) {
-                        str = "Image";
-                    } // RawImages/Graphics are managed like Images for DOTweenAnimation (color and fade use Graphic target anyway)
-                    return System.Nullable.getValue(Bridge.cast(Bridge.unbox(System.Enum.parse(DG.Tweening.DOTweenAnimation.TargetType, str), DG.Tweening.DOTweenAnimation.TargetType), System.Int32));
-                },
-                /*DG.Tweening.DOTweenAnimation.TypeToDOTargetType:static end.*/
-
-
-            }
-        },
-        fields: {
-            targetIsSelf: false,
-            targetGO: null,
-            tweenTargetIsTargetGO: false,
-            delay: 0,
-            duration: 0,
-            easeType: 0,
-            easeCurve: null,
-            loopType: 0,
-            loops: 0,
-            id: null,
-            isRelative: false,
-            isFrom: false,
-            isIndependentUpdate: false,
-            autoKill: false,
-            autoGenerate: false,
-            isActive: false,
-            isValid: false,
-            target: null,
-            animationType: 0,
-            targetType: 0,
-            forcedTargetType: 0,
-            autoPlay: false,
-            useTargetAsV3: false,
-            endValueFloat: 0,
-            endValueV3: null,
-            endValueV2: null,
-            endValueColor: null,
-            endValueString: null,
-            endValueRect: null,
-            endValueTransform: null,
-            optionalBool0: false,
-            optionalBool1: false,
-            optionalFloat0: 0,
-            optionalInt0: 0,
-            optionalRotationMode: 0,
-            optionalScrambleMode: 0,
-            optionalShakeRandomnessMode: 0,
-            optionalString: null,
-            _tweenAutoGenerationCalled: false,
-            _playCount: 0
+            label: null,
+            head: null,
+            body: null,
+            handLeft: null,
+            handRight: null,
+            footLeft: null,
+            footRight: null,
+            portrait: null,
+            headPivot: null,
+            handLeftPivot: null,
+            handRightPivot: null,
+            footLeftPivot: null,
+            footRightPivot: null
         },
         ctors: {
             init: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#init", this ); }
-
-                this.endValueV3 = new UnityEngine.Vector3();
-                this.endValueV2 = new UnityEngine.Vector2();
-                this.endValueColor = new UnityEngine.Color();
-                this.endValueRect = new UnityEngine.Rect();
-                this.targetIsSelf = true;
-                this.tweenTargetIsTargetGO = true;
-                this.duration = 1;
-                this.easeType = DG.Tweening.Ease.OutQuad;
-                this.easeCurve = new pc.AnimationCurve({keyframes: [ new pc.Keyframe(0, 0, 0, 0), new pc.Keyframe(1, 1, 0, 0) ]});
-                this.loopType = DG.Tweening.LoopType.Restart;
-                this.loops = 1;
-                this.id = "";
-                this.isIndependentUpdate = false;
-                this.autoKill = true;
-                this.autoGenerate = true;
-                this.isActive = true;
-                this.autoPlay = true;
-                this.endValueColor = new pc.Color( 1, 1, 1, 1 );
-                this.endValueString = "";
-                this.endValueRect = new UnityEngine.Rect.$ctor1(0, 0, 0, 0);
-                this.optionalRotationMode = DG.Tweening.RotateMode.Fast;
-                this.optionalScrambleMode = DG.Tweening.ScrambleMode.None;
-                this.optionalShakeRandomnessMode = DG.Tweening.ShakeRandomnessMode.Full;
-                this._playCount = -1;
-            }
-        },
-        methods: {
-            /*DG.Tweening.DOTweenAnimation.Awake start.*/
-            Awake: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#Awake", this ); }
-
-                if (!this.isActive || !this.autoGenerate) {
-                    return;
-                }
-
-                if (this.animationType !== DG.Tweening.DOTweenAnimation.AnimationType.Move || !this.useTargetAsV3) {
-                    // Don't create tweens if we're using a RectTransform as a Move target,
-                    // because that will work only inside Start
-                    this.CreateTween(false, this.autoPlay);
-                    this._tweenAutoGenerationCalled = true;
-                }
-            },
-            /*DG.Tweening.DOTweenAnimation.Awake end.*/
-
-            /*DG.Tweening.DOTweenAnimation.Start start.*/
-            Start: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#Start", this ); }
-
-                if (this._tweenAutoGenerationCalled || !this.isActive || !this.autoGenerate) {
-                    return;
-                }
-
-                this.CreateTween(false, this.autoPlay);
-                this._tweenAutoGenerationCalled = true;
-            },
-            /*DG.Tweening.DOTweenAnimation.Start end.*/
-
-            /*DG.Tweening.DOTweenAnimation.Reset start.*/
-            Reset: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#Reset", this ); }
-
-                DG.Tweening.DOTweenAnimation.Dispatch_OnReset(this);
-            },
-            /*DG.Tweening.DOTweenAnimation.Reset end.*/
-
-            /*DG.Tweening.DOTweenAnimation.OnDestroy start.*/
-            OnDestroy: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#OnDestroy", this ); }
-
-                if (this.tween != null && this.tween.active) {
-                    DG.Tweening.TweenExtensions.Kill(this.tween);
-                }
-                this.tween = null;
-            },
-            /*DG.Tweening.DOTweenAnimation.OnDestroy end.*/
-
-            /*DG.Tweening.DOTweenAnimation.RewindThenRecreateTween start.*/
-            /**
-             * Creates/recreates the tween without playing it, but first rewinding and killing the existing one if present.
-             *
-             * @instance
-             * @public
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @return  {void}
-             */
-            RewindThenRecreateTween: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#RewindThenRecreateTween", this ); }
-
-                if (this.tween != null && this.tween.active) {
-                    DG.Tweening.TweenExtensions.Rewind(this.tween);
-                }
-                this.CreateTween(true, false);
-            },
-            /*DG.Tweening.DOTweenAnimation.RewindThenRecreateTween end.*/
-
-            /*DG.Tweening.DOTweenAnimation.RewindThenRecreateTweenAndPlay start.*/
-            /**
-             * Creates/recreates the tween and plays it, first rewinding and killing the existing one if present.
-             *
-             * @instance
-             * @public
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @return  {void}
-             */
-            RewindThenRecreateTweenAndPlay: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#RewindThenRecreateTweenAndPlay", this ); }
-
-                if (this.tween != null && this.tween.active) {
-                    DG.Tweening.TweenExtensions.Rewind(this.tween);
-                }
-                this.CreateTween(true, true);
-            },
-            /*DG.Tweening.DOTweenAnimation.RewindThenRecreateTweenAndPlay end.*/
-
-            /*DG.Tweening.DOTweenAnimation.RecreateTween start.*/
-            /**
-             * Creates/recreates the tween from its target's current value without playing it, but first killing the existing one if present.
-             *
-             * @instance
-             * @public
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @return  {void}
-             */
-            RecreateTween: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#RecreateTween", this ); }
-
-                this.CreateTween(true, false);
-            },
-            /*DG.Tweening.DOTweenAnimation.RecreateTween end.*/
-
-            /*DG.Tweening.DOTweenAnimation.RecreateTweenAndPlay start.*/
-            /**
-             * Creates/recreates the tween from its target's current value and plays it, first killing the existing one if present.
-             *
-             * @instance
-             * @public
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @return  {void}
-             */
-            RecreateTweenAndPlay: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#RecreateTweenAndPlay", this ); }
-
-                this.CreateTween(true, true);
-            },
-            /*DG.Tweening.DOTweenAnimation.RecreateTweenAndPlay end.*/
-
-            /*DG.Tweening.DOTweenAnimation.CreateTween start.*/
-            /**
-             * Creates the tween manually (called automatically if AutoGenerate is set in the Inspector)
-             from its target's current value.
-             *
-             * @instance
-             * @public
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @param   {boolean}    regenerateIfExists    If TRUE and an existing tween was already created (and not killed), kills it and recreates it with the current
-             parameters. Otherwise, if a tween already exists, does nothing.
-             * @param   {boolean}    andPlay               If TRUE also plays the tween, otherwise only creates it
-             * @return  {void}
-             */
-            CreateTween: function (regenerateIfExists, andPlay) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#CreateTween", this ); }
-
-                if (regenerateIfExists === void 0) { regenerateIfExists = false; }
-                if (andPlay === void 0) { andPlay = true; }
-                if (!this.isValid) {
-                    if (regenerateIfExists) { // Called manually: warn users
-                        UnityEngine.Debug.LogWarning$1(System.String.format("{0} :: This DOTweenAnimation isn't valid and its tween won't be created", [this.gameObject.name]), this.gameObject);
-                    }
-                    return;
-                }
-                if (this.tween != null) {
-                    if (this.tween.active) {
-                        if (regenerateIfExists) {
-                            DG.Tweening.TweenExtensions.Kill(this.tween);
-                        } else {
-                            return;
-                        }
-                    }
-                    this.tween = null;
-                }
-
-                //            if (target == null) {
-                //                Debug.LogWarning(string.Format("{0} :: This DOTweenAnimation's target is NULL, because the animation was created with a DOTween Pro version older than 0.9.255. To fix this, exit Play mode then simply select this object, and it will update automatically", this.gameObject.name), this.gameObject);
-                //                return;
-                //            }
-
-                var tweenGO = this.GetTweenGO();
-                if (UnityEngine.Component.op_Equality(this.target, null) || UnityEngine.GameObject.op_Equality(tweenGO, null)) {
-                    if (this.targetIsSelf && UnityEngine.Component.op_Equality(this.target, null)) {
-                        // Old error caused during upgrade from DOTween Pro 0.9.255
-                        UnityEngine.Debug.LogWarning$1(System.String.format("{0} :: This DOTweenAnimation's target is NULL, because the animation was created with a DOTween Pro version older than 0.9.255. To fix this, exit Play mode then simply select this object, and it will update automatically", [this.gameObject.name]), this.gameObject);
-                    } else {
-                        // Missing non-self target
-                        UnityEngine.Debug.LogWarning$1(System.String.format("{0} :: This DOTweenAnimation's target/GameObject is unset: the tween will not be created.", [this.gameObject.name]), this.gameObject);
-                    }
-                    return;
-                }
-
-                if (this.forcedTargetType !== DG.Tweening.DOTweenAnimation.TargetType.Unset) {
-                    this.targetType = this.forcedTargetType;
-                }
-                if (this.targetType === DG.Tweening.DOTweenAnimation.TargetType.Unset) {
-                    // Legacy DOTweenAnimation (made with a version older than 0.9.450) without stored targetType > assign it now
-                    this.targetType = DG.Tweening.DOTweenAnimation.TypeToDOTargetType(Bridge.getType(this.target));
-                }
-
-                switch (this.animationType) {
-                    case DG.Tweening.DOTweenAnimation.AnimationType.None: 
-                        break;
-                    case DG.Tweening.DOTweenAnimation.AnimationType.Move: 
-                        if (this.useTargetAsV3) {
-                            this.isRelative = false;
-                            if (UnityEngine.Component.op_Equality(this.endValueTransform, null)) {
-                                UnityEngine.Debug.LogWarning$1(System.String.format("{0} :: This tween's TO target is NULL, a Vector3 of (0,0,0) will be used instead", [this.gameObject.name]), this.gameObject);
-                                this.endValueV3 = pc.Vec3.ZERO.clone();
-                            } else {
-                                if (this.targetType === DG.Tweening.DOTweenAnimation.TargetType.RectTransform) {
-                                    var endValueT = Bridge.as(this.endValueTransform, UnityEngine.RectTransform);
-                                    if (UnityEngine.Component.op_Equality(endValueT, null)) {
-                                        UnityEngine.Debug.LogWarning$1(System.String.format("{0} :: This tween's TO target should be a RectTransform, a Vector3 of (0,0,0) will be used instead", [this.gameObject.name]), this.gameObject);
-                                        this.endValueV3 = pc.Vec3.ZERO.clone();
-                                    } else {
-                                        var rTarget = Bridge.as(this.target, UnityEngine.RectTransform);
-                                        if (UnityEngine.Component.op_Equality(rTarget, null)) {
-                                            UnityEngine.Debug.LogWarning$1(System.String.format("{0} :: This tween's target and TO target are not of the same type. Please reassign the values", [this.gameObject.name]), this.gameObject);
-                                        } else {
-                                            // Problem: doesn't work inside Awake (ararargh!)
-                                            this.endValueV3 = UnityEngine.Vector3.FromVector2(DG.Tweening.DOTweenModuleUI.Utils.SwitchToRectTransform(endValueT, rTarget));
-                                        }
-                                    }
-                                } else {
-                                    this.endValueV3 = this.endValueTransform.position.$clone();
-                                }
-                            }
-                        }
-                        switch (this.targetType) {
-                            case DG.Tweening.DOTweenAnimation.TargetType.Transform: 
-                                this.tween = DG.Tweening.ShortcutExtensions.DOMove(Bridge.cast(this.target, UnityEngine.Transform), this.endValueV3.$clone(), this.duration, this.optionalBool0);
-                                break;
-                            case DG.Tweening.DOTweenAnimation.TargetType.RectTransform: 
-                                this.tween = DG.Tweening.DOTweenModuleUI.DOAnchorPos3D(Bridge.cast(this.target, UnityEngine.RectTransform), this.endValueV3.$clone(), this.duration, this.optionalBool0);
-                                break;
-                            case DG.Tweening.DOTweenAnimation.TargetType.Rigidbody: 
-                                this.tween = DG.Tweening.ShortcutExtensions.DOMove(Bridge.cast(this.target, UnityEngine.Transform), this.endValueV3.$clone(), this.duration, this.optionalBool0);
-                                break;
-                            case DG.Tweening.DOTweenAnimation.TargetType.Rigidbody2D: 
-                                this.tween = DG.Tweening.DOTweenModulePhysics2D.DOMove(Bridge.cast(this.target, UnityEngine.Rigidbody2D), UnityEngine.Vector2.FromVector3(this.endValueV3.$clone()), this.duration, this.optionalBool0);
-                                break;
-                        }
-                        break;
-                    case DG.Tweening.DOTweenAnimation.AnimationType.LocalMove: 
-                        this.tween = DG.Tweening.ShortcutExtensions.DOLocalMove(tweenGO.transform, this.endValueV3.$clone(), this.duration, this.optionalBool0);
-                        break;
-                    case DG.Tweening.DOTweenAnimation.AnimationType.Rotate: 
-                        switch (this.targetType) {
-                            case DG.Tweening.DOTweenAnimation.TargetType.Transform: 
-                                this.tween = DG.Tweening.ShortcutExtensions.DORotate(Bridge.cast(this.target, UnityEngine.Transform), this.endValueV3.$clone(), this.duration, this.optionalRotationMode);
-                                break;
-                            case DG.Tweening.DOTweenAnimation.TargetType.Rigidbody: 
-                                this.tween = DG.Tweening.ShortcutExtensions.DORotate(Bridge.cast(this.target, UnityEngine.Transform), this.endValueV3.$clone(), this.duration, this.optionalRotationMode);
-                                break;
-                            case DG.Tweening.DOTweenAnimation.TargetType.Rigidbody2D: 
-                                this.tween = DG.Tweening.DOTweenModulePhysics2D.DORotate(Bridge.cast(this.target, UnityEngine.Rigidbody2D), this.endValueFloat, this.duration);
-                                break;
-                        }
-                        break;
-                    case DG.Tweening.DOTweenAnimation.AnimationType.LocalRotate: 
-                        this.tween = DG.Tweening.ShortcutExtensions.DOLocalRotate(tweenGO.transform, this.endValueV3.$clone(), this.duration, this.optionalRotationMode);
-                        break;
-                    case DG.Tweening.DOTweenAnimation.AnimationType.Scale: 
-                        switch (this.targetType) {
-                            default: 
-                                this.tween = DG.Tweening.ShortcutExtensions.DOScale$1(tweenGO.transform, this.optionalBool0 ? new pc.Vec3( this.endValueFloat, this.endValueFloat, this.endValueFloat ) : this.endValueV3.$clone(), this.duration);
-                                break;
-                        }
-                        break;
-                    case DG.Tweening.DOTweenAnimation.AnimationType.UIWidthHeight: 
-                        this.tween = DG.Tweening.DOTweenModuleUI.DOSizeDelta(Bridge.cast(this.target, UnityEngine.RectTransform), this.optionalBool0 ? new pc.Vec2( this.endValueFloat, this.endValueFloat ) : this.endValueV2.$clone(), this.duration);
-                        break;
-                    case DG.Tweening.DOTweenAnimation.AnimationType.Color: 
-                        this.isRelative = false;
-                        switch (this.targetType) {
-                            case DG.Tweening.DOTweenAnimation.TargetType.Renderer: 
-                                this.tween = DG.Tweening.ShortcutExtensions.DOColor$3(Bridge.cast(this.target, UnityEngine.Renderer).material, this.endValueColor.$clone(), this.duration);
-                                break;
-                            case DG.Tweening.DOTweenAnimation.TargetType.Light: 
-                                this.tween = DG.Tweening.ShortcutExtensions.DOColor$1(Bridge.cast(this.target, UnityEngine.Light), this.endValueColor.$clone(), this.duration);
-                                break;
-                            case DG.Tweening.DOTweenAnimation.TargetType.SpriteRenderer: 
-                                this.tween = DG.Tweening.DOTweenModuleSprite.DOColor(Bridge.cast(this.target, UnityEngine.SpriteRenderer), this.endValueColor.$clone(), this.duration);
-                                break;
-                            case DG.Tweening.DOTweenAnimation.TargetType.Image: 
-                                this.tween = DG.Tweening.DOTweenModuleUI.DOColor(Bridge.cast(this.target, UnityEngine.UI.Graphic), this.endValueColor.$clone(), this.duration);
-                                break;
-                            case DG.Tweening.DOTweenAnimation.TargetType.Text: 
-                                this.tween = DG.Tweening.DOTweenModuleUI.DOColor$3(Bridge.cast(this.target, UnityEngine.UI.Text), this.endValueColor.$clone(), this.duration);
-                                break;
-                        }
-                        break;
-                    case DG.Tweening.DOTweenAnimation.AnimationType.Fade: 
-                        this.isRelative = false;
-                        switch (this.targetType) {
-                            case DG.Tweening.DOTweenAnimation.TargetType.Renderer: 
-                                this.tween = DG.Tweening.ShortcutExtensions.DOFade$1(Bridge.cast(this.target, UnityEngine.Renderer).material, this.endValueFloat, this.duration);
-                                break;
-                            case DG.Tweening.DOTweenAnimation.TargetType.Light: 
-                                this.tween = DG.Tweening.ShortcutExtensions.DOIntensity(Bridge.cast(this.target, UnityEngine.Light), this.endValueFloat, this.duration);
-                                break;
-                            case DG.Tweening.DOTweenAnimation.TargetType.SpriteRenderer: 
-                                this.tween = DG.Tweening.DOTweenModuleSprite.DOFade(Bridge.cast(this.target, UnityEngine.SpriteRenderer), this.endValueFloat, this.duration);
-                                break;
-                            case DG.Tweening.DOTweenAnimation.TargetType.Image: 
-                                this.tween = DG.Tweening.DOTweenModuleUI.DOFade$1(Bridge.cast(this.target, UnityEngine.UI.Graphic), this.endValueFloat, this.duration);
-                                break;
-                            case DG.Tweening.DOTweenAnimation.TargetType.Text: 
-                                this.tween = DG.Tweening.DOTweenModuleUI.DOFade$4(Bridge.cast(this.target, UnityEngine.UI.Text), this.endValueFloat, this.duration);
-                                break;
-                            case DG.Tweening.DOTweenAnimation.TargetType.CanvasGroup: 
-                                this.tween = DG.Tweening.DOTweenModuleUI.DOFade(Bridge.cast(this.target, UnityEngine.CanvasGroup), this.endValueFloat, this.duration);
-                                break;
-                        }
-                        break;
-                    case DG.Tweening.DOTweenAnimation.AnimationType.Text: 
-                        switch (this.targetType) {
-                            case DG.Tweening.DOTweenAnimation.TargetType.Text: 
-                                this.tween = DG.Tweening.DOTweenModuleUI.DOText(Bridge.cast(this.target, UnityEngine.UI.Text), this.endValueString, this.duration, this.optionalBool0, this.optionalScrambleMode, this.optionalString);
-                                break;
-                        }
-                        break;
-                    case DG.Tweening.DOTweenAnimation.AnimationType.PunchPosition: 
-                        switch (this.targetType) {
-                            case DG.Tweening.DOTweenAnimation.TargetType.Transform: 
-                                this.tween = DG.Tweening.ShortcutExtensions.DOPunchPosition(Bridge.cast(this.target, UnityEngine.Transform), this.endValueV3.$clone(), this.duration, this.optionalInt0, this.optionalFloat0, this.optionalBool0);
-                                break;
-                            case DG.Tweening.DOTweenAnimation.TargetType.RectTransform: 
-                                this.tween = DG.Tweening.DOTweenModuleUI.DOPunchAnchorPos(Bridge.cast(this.target, UnityEngine.RectTransform), UnityEngine.Vector2.FromVector3(this.endValueV3.$clone()), this.duration, this.optionalInt0, this.optionalFloat0, this.optionalBool0);
-                                break;
-                        }
-                        break;
-                    case DG.Tweening.DOTweenAnimation.AnimationType.PunchScale: 
-                        this.tween = DG.Tweening.ShortcutExtensions.DOPunchScale(tweenGO.transform, this.endValueV3.$clone(), this.duration, this.optionalInt0, this.optionalFloat0);
-                        break;
-                    case DG.Tweening.DOTweenAnimation.AnimationType.PunchRotation: 
-                        this.tween = DG.Tweening.ShortcutExtensions.DOPunchRotation(tweenGO.transform, this.endValueV3.$clone(), this.duration, this.optionalInt0, this.optionalFloat0);
-                        break;
-                    case DG.Tweening.DOTweenAnimation.AnimationType.ShakePosition: 
-                        switch (this.targetType) {
-                            case DG.Tweening.DOTweenAnimation.TargetType.Transform: 
-                                this.tween = DG.Tweening.ShortcutExtensions.DOShakePosition$3(Bridge.cast(this.target, UnityEngine.Transform), this.duration, this.endValueV3.$clone(), this.optionalInt0, this.optionalFloat0, this.optionalBool0, this.optionalBool1, this.optionalShakeRandomnessMode);
-                                break;
-                            case DG.Tweening.DOTweenAnimation.TargetType.RectTransform: 
-                                this.tween = DG.Tweening.DOTweenModuleUI.DOShakeAnchorPos$1(Bridge.cast(this.target, UnityEngine.RectTransform), this.duration, UnityEngine.Vector2.FromVector3(this.endValueV3.$clone()), this.optionalInt0, this.optionalFloat0, this.optionalBool0, this.optionalBool1, this.optionalShakeRandomnessMode);
-                                break;
-                        }
-                        break;
-                    case DG.Tweening.DOTweenAnimation.AnimationType.ShakeScale: 
-                        this.tween = DG.Tweening.ShortcutExtensions.DOShakeScale$1(tweenGO.transform, this.duration, this.endValueV3.$clone(), this.optionalInt0, this.optionalFloat0, this.optionalBool1, this.optionalShakeRandomnessMode);
-                        break;
-                    case DG.Tweening.DOTweenAnimation.AnimationType.ShakeRotation: 
-                        this.tween = DG.Tweening.ShortcutExtensions.DOShakeRotation$3(tweenGO.transform, this.duration, this.endValueV3.$clone(), this.optionalInt0, this.optionalFloat0, this.optionalBool1, this.optionalShakeRandomnessMode);
-                        break;
-                    case DG.Tweening.DOTweenAnimation.AnimationType.CameraAspect: 
-                        this.tween = DG.Tweening.ShortcutExtensions.DOAspect(Bridge.cast(this.target, UnityEngine.Camera), this.endValueFloat, this.duration);
-                        break;
-                    case DG.Tweening.DOTweenAnimation.AnimationType.CameraBackgroundColor: 
-                        this.tween = DG.Tweening.ShortcutExtensions.DOColor(Bridge.cast(this.target, UnityEngine.Camera), this.endValueColor.$clone(), this.duration);
-                        break;
-                    case DG.Tweening.DOTweenAnimation.AnimationType.CameraFieldOfView: 
-                        this.tween = DG.Tweening.ShortcutExtensions.DOFieldOfView(Bridge.cast(this.target, UnityEngine.Camera), this.endValueFloat, this.duration);
-                        break;
-                    case DG.Tweening.DOTweenAnimation.AnimationType.CameraOrthoSize: 
-                        this.tween = DG.Tweening.ShortcutExtensions.DOOrthoSize(Bridge.cast(this.target, UnityEngine.Camera), this.endValueFloat, this.duration);
-                        break;
-                    case DG.Tweening.DOTweenAnimation.AnimationType.CameraPixelRect: 
-                        this.tween = DG.Tweening.ShortcutExtensions.DOPixelRect(Bridge.cast(this.target, UnityEngine.Camera), this.endValueRect.$clone(), this.duration);
-                        break;
-                    case DG.Tweening.DOTweenAnimation.AnimationType.CameraRect: 
-                        this.tween = DG.Tweening.ShortcutExtensions.DORect(Bridge.cast(this.target, UnityEngine.Camera), this.endValueRect.$clone(), this.duration);
-                        break;
-                }
-
-                if (this.tween == null) {
-                    return;
-                }
-
-                // Created
-
-                if (this.isFrom) {
-                    DG.Tweening.TweenSettingsExtensions.From$1(DG.Tweening.Tweener, Bridge.cast(this.tween, DG.Tweening.Tweener), this.isRelative);
-                } else {
-                    DG.Tweening.TweenSettingsExtensions.SetRelative$1(DG.Tweening.Tween, this.tween, this.isRelative);
-                }
-                var setTarget = this.GetTweenTarget();
-                DG.Tweening.TweenSettingsExtensions.OnKill(DG.Tweening.Tween, DG.Tweening.TweenSettingsExtensions.SetAutoKill$1(DG.Tweening.Tween, DG.Tweening.TweenSettingsExtensions.SetLoops$1(DG.Tweening.Tween, DG.Tweening.TweenSettingsExtensions.SetDelay(DG.Tweening.Tween, DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Tween, this.tween, setTarget), this.delay), this.loops, this.loopType), this.autoKill), Bridge.fn.bind(this, function () {
-                    this.tween = null;
-                }));
-                if (this.isSpeedBased) {
-                    DG.Tweening.TweenSettingsExtensions.SetSpeedBased(DG.Tweening.Tween, this.tween);
-                }
-                if (this.easeType === DG.Tweening.Ease.INTERNAL_Custom) {
-                    DG.Tweening.TweenSettingsExtensions.SetEase(DG.Tweening.Tween, this.tween, this.easeCurve);
-                } else {
-                    DG.Tweening.TweenSettingsExtensions.SetEase$2(DG.Tweening.Tween, this.tween, this.easeType);
-                }
-                if (!System.String.isNullOrEmpty(this.id)) {
-                    DG.Tweening.TweenSettingsExtensions.SetId$2(DG.Tweening.Tween, this.tween, this.id);
-                }
-                DG.Tweening.TweenSettingsExtensions.SetUpdate(DG.Tweening.Tween, this.tween, this.isIndependentUpdate);
-
-                if (this.hasOnStart) {
-                    if (this.onStart != null) {
-                        DG.Tweening.TweenSettingsExtensions.OnStart(DG.Tweening.Tween, this.tween, Bridge.fn.cacheBind(this.onStart, this.onStart.Invoke));
-                    }
-                } else {
-                    this.onStart = null;
-                }
-                if (this.hasOnPlay) {
-                    if (this.onPlay != null) {
-                        DG.Tweening.TweenSettingsExtensions.OnPlay(DG.Tweening.Tween, this.tween, Bridge.fn.cacheBind(this.onPlay, this.onPlay.Invoke));
-                    }
-                } else {
-                    this.onPlay = null;
-                }
-                if (this.hasOnUpdate) {
-                    if (this.onUpdate != null) {
-                        DG.Tweening.TweenSettingsExtensions.OnUpdate(DG.Tweening.Tween, this.tween, Bridge.fn.cacheBind(this.onUpdate, this.onUpdate.Invoke));
-                    }
-                } else {
-                    this.onUpdate = null;
-                }
-                if (this.hasOnStepComplete) {
-                    if (this.onStepComplete != null) {
-                        DG.Tweening.TweenSettingsExtensions.OnStepComplete(DG.Tweening.Tween, this.tween, Bridge.fn.cacheBind(this.onStepComplete, this.onStepComplete.Invoke));
-                    }
-                } else {
-                    this.onStepComplete = null;
-                }
-                if (this.hasOnComplete) {
-                    if (this.onComplete != null) {
-                        DG.Tweening.TweenSettingsExtensions.OnComplete(DG.Tweening.Tween, this.tween, Bridge.fn.cacheBind(this.onComplete, this.onComplete.Invoke));
-                    }
-                } else {
-                    this.onComplete = null;
-                }
-                if (this.hasOnRewind) {
-                    if (this.onRewind != null) {
-                        DG.Tweening.TweenSettingsExtensions.OnRewind(DG.Tweening.Tween, this.tween, Bridge.fn.cacheBind(this.onRewind, this.onRewind.Invoke));
-                    }
-                } else {
-                    this.onRewind = null;
-                }
-
-                if (andPlay) {
-                    DG.Tweening.TweenExtensions.Play(DG.Tweening.Tween, this.tween);
-                } else {
-                    DG.Tweening.TweenExtensions.Pause(DG.Tweening.Tween, this.tween);
-                }
-
-                if (this.hasOnTweenCreated && this.onTweenCreated != null) {
-                    this.onTweenCreated.Invoke();
-                }
-            },
-            /*DG.Tweening.DOTweenAnimation.CreateTween end.*/
-
-            /*DG.Tweening.DOTweenAnimation.GetTweens start.*/
-            /**
-             * Returns the tweens (if generated and not killed) created by all DOTweenAnimations on this gameObject,
-             in the same order as they appear in the Inspector (top to bottom).<p />
-             Note that a tween is generated inside the Awake call (except RectTransform tweens which are generated inside Start),
-             so this method won't return them before that
-             *
-             * @instance
-             * @public
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @return  {System.Collections.Generic.List$1}
-             */
-            GetTweens: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#GetTweens", this ); }
-
-                var $t;
-                var result = new (System.Collections.Generic.List$1(DG.Tweening.Tween)).ctor();
-                var anims = this.GetComponents(DG.Tweening.DOTweenAnimation);
-                $t = Bridge.getEnumerator(anims);
-                try {
-                    while ($t.moveNext()) {
-                        var anim = $t.Current;
-                        if (anim.tween != null && anim.tween.active) {
-                            result.add(anim.tween);
-                        }
-                    }
-                } finally {
-                    if (Bridge.is($t, System.IDisposable)) {
-                        $t.System$IDisposable$Dispose();
-                    }
-                }
-                return result;
-            },
-            /*DG.Tweening.DOTweenAnimation.GetTweens end.*/
-
-            /*DG.Tweening.DOTweenAnimation.SetAnimationTarget start.*/
-            /**
-             * Sets the animation target (which must be of the same type of the one set in the Inspector).
-             This is useful if you want to change it BEFORE this {@link }
-             creates a tween, while after that it won't have any effect.<p />
-             Consider that a {@link } creates its tween inside its Awake (except for special tweens),
-             so you will need to sure your code runs before this object's Awake (via ScriptExecutionOrder or enabling/disabling methods)
-             *
-             * @instance
-             * @public
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @param   {UnityEngine.Component}    tweenTarget                                   New target for the animation (must be of the same type of the previous one)
-             * @param   {boolean}                  useTweenTargetGameObjectForGroupOperations    If TRUE also uses tweenTarget's gameObject when settings the target-ID of the tween
-             (which is used with DOPlay/DORestart/etc to apply the same operation on all tweens that have the same target-id).<p />
-             You should usually leave this to TRUE if you change the target.
-             * @return  {void}
-             */
-            SetAnimationTarget: function (tweenTarget, useTweenTargetGameObjectForGroupOperations) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#SetAnimationTarget", this ); }
-
-                if (useTweenTargetGameObjectForGroupOperations === void 0) { useTweenTargetGameObjectForGroupOperations = true; }
-                var newTargetType = DG.Tweening.DOTweenAnimation.TypeToDOTargetType(Bridge.getType(this.target));
-                if (newTargetType !== this.targetType) {
-                    UnityEngine.Debug.LogError$2("DOTweenAnimation \u25ba SetAnimationTarget: the new target is of a different type from the one set in the Inspector");
-                    return;
-                }
-                this.target = tweenTarget;
-                this.targetGO = this.target.gameObject;
-                this.tweenTargetIsTargetGO = useTweenTargetGameObjectForGroupOperations;
-            },
-            /*DG.Tweening.DOTweenAnimation.SetAnimationTarget end.*/
-
-            /*DG.Tweening.DOTweenAnimation.DOPlay start.*/
-            /**
-             * Plays all tweens whose target-id is the same as the one set by this animation
-             *
-             * @instance
-             * @public
-             * @override
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @return  {void}
-             */
-            DOPlay: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#DOPlay", this ); }
-
-                DG.Tweening.DOTween.Play(this.GetTweenTarget());
-            },
-            /*DG.Tweening.DOTweenAnimation.DOPlay end.*/
-
-            /*DG.Tweening.DOTweenAnimation.DOPlayBackwards start.*/
-            /**
-             * Plays backwards all tweens whose target-id is the same as the one set by this animation
-             *
-             * @instance
-             * @public
-             * @override
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @return  {void}
-             */
-            DOPlayBackwards: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#DOPlayBackwards", this ); }
-
-                DG.Tweening.DOTween.PlayBackwards(this.GetTweenTarget());
-            },
-            /*DG.Tweening.DOTweenAnimation.DOPlayBackwards end.*/
-
-            /*DG.Tweening.DOTweenAnimation.DOPlayForward start.*/
-            /**
-             * Plays foward all tweens whose target-id is the same as the one set by this animation
-             *
-             * @instance
-             * @public
-             * @override
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @return  {void}
-             */
-            DOPlayForward: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#DOPlayForward", this ); }
-
-                DG.Tweening.DOTween.PlayForward(this.GetTweenTarget());
-            },
-            /*DG.Tweening.DOTweenAnimation.DOPlayForward end.*/
-
-            /*DG.Tweening.DOTweenAnimation.DOPause start.*/
-            /**
-             * Pauses all tweens whose target-id is the same as the one set by this animation
-             *
-             * @instance
-             * @public
-             * @override
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @return  {void}
-             */
-            DOPause: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#DOPause", this ); }
-
-                DG.Tweening.DOTween.Pause(this.GetTweenTarget());
-            },
-            /*DG.Tweening.DOTweenAnimation.DOPause end.*/
-
-            /*DG.Tweening.DOTweenAnimation.DOTogglePause start.*/
-            /**
-             * Pauses/unpauses (depending on the current state) all tweens whose target-id is the same as the one set by this animation
-             *
-             * @instance
-             * @public
-             * @override
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @return  {void}
-             */
-            DOTogglePause: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#DOTogglePause", this ); }
-
-                DG.Tweening.DOTween.TogglePause(this.GetTweenTarget());
-            },
-            /*DG.Tweening.DOTweenAnimation.DOTogglePause end.*/
-
-            /*DG.Tweening.DOTweenAnimation.DORewind start.*/
-            /**
-             * Rewinds all tweens created by this animation in the correct order
-             *
-             * @instance
-             * @public
-             * @override
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @return  {void}
-             */
-            DORewind: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#DORewind", this ); }
-
-                this._playCount = -1;
-                // Rewind using Components order (in case there are multiple animations on the same property)
-                var anims = this.gameObject.GetComponents(DG.Tweening.DOTweenAnimation);
-                for (var i = (anims.length - 1) | 0; i > -1; i = (i - 1) | 0) {
-                    var t = anims[i].tween;
-                    if (t != null && DG.Tweening.TweenExtensions.IsInitialized(t)) {
-                        DG.Tweening.TweenExtensions.Rewind(anims[i].tween);
-                    }
-                }
-                // DOTween.Rewind(GetTweenTarget());
-            },
-            /*DG.Tweening.DOTweenAnimation.DORewind end.*/
-
-            /*DG.Tweening.DOTweenAnimation.DORestart start.*/
-            /**
-             * Restarts all tweens whose target-id is the same as the one set by this animation
-             *
-             * @instance
-             * @public
-             * @override
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @return  {void}
-             */
-            DORestart: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#DORestart", this ); }
-
-                this.DORestart$1(false);
-            },
-            /*DG.Tweening.DOTweenAnimation.DORestart end.*/
-
-            /*DG.Tweening.DOTweenAnimation.DORestart$1 start.*/
-            /**
-             * Restarts all tweens whose target-id is the same as the one set by this animation
-             *
-             * @instance
-             * @public
-             * @override
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @param   {boolean}    fromHere    If TRUE, re-evaluates the tween's start and end values from its current position.
-             Set it to TRUE when spawning the same DOTweenAnimation in different positions (like when using a pooling system)
-             * @return  {void}
-             */
-            DORestart$1: function (fromHere) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#DORestart$1", this ); }
-
-                this._playCount = -1;
-                if (this.tween == null) {
-                    if (DG.Tweening.Core.Debugger.logPriority > 1) {
-                        DG.Tweening.Core.Debugger.LogNullTween(this.tween);
-                    }
-                    return;
-                }
-                if (fromHere && this.isRelative) {
-                    this.ReEvaluateRelativeTween();
-                }
-                DG.Tweening.DOTween.Restart(this.GetTweenTarget());
-            },
-            /*DG.Tweening.DOTweenAnimation.DORestart$1 end.*/
-
-            /*DG.Tweening.DOTweenAnimation.DOComplete start.*/
-            /**
-             * Completes all tweens whose target-id is the same as the one set by this animation
-             *
-             * @instance
-             * @public
-             * @override
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @return  {void}
-             */
-            DOComplete: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#DOComplete", this ); }
-
-                DG.Tweening.DOTween.Complete(this.GetTweenTarget());
-            },
-            /*DG.Tweening.DOTweenAnimation.DOComplete end.*/
-
-            /*DG.Tweening.DOTweenAnimation.DOKill start.*/
-            /**
-             * Kills all tweens whose target-id is the same as the one set by this animation
-             *
-             * @instance
-             * @public
-             * @override
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @return  {void}
-             */
-            DOKill: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#DOKill", this ); }
-
-                DG.Tweening.DOTween.Kill(this.GetTweenTarget());
-                this.tween = null;
-            },
-            /*DG.Tweening.DOTweenAnimation.DOKill end.*/
-
-            /*DG.Tweening.DOTweenAnimation.DOPlayById start.*/
-            /**
-             * Plays all tweens with the given ID and whose target-id is the same as the one set by this animation
-             *
-             * @instance
-             * @public
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @param   {string}    id
-             * @return  {void}
-             */
-            DOPlayById: function (id) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#DOPlayById", this ); }
-
-                DG.Tweening.DOTween.Play$1(this.GetTweenTarget(), id);
-            },
-            /*DG.Tweening.DOTweenAnimation.DOPlayById end.*/
-
-            /*DG.Tweening.DOTweenAnimation.DOPlayAllById start.*/
-            /**
-             * Plays all tweens with the given ID (regardless of their target gameObject)
-             *
-             * @instance
-             * @public
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @param   {string}    id
-             * @return  {void}
-             */
-            DOPlayAllById: function (id) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#DOPlayAllById", this ); }
-
-                DG.Tweening.DOTween.Play(id);
-            },
-            /*DG.Tweening.DOTweenAnimation.DOPlayAllById end.*/
-
-            /*DG.Tweening.DOTweenAnimation.DOPauseAllById start.*/
-            /**
-             * Pauses all tweens that with the given ID (regardless of their target gameObject)
-             *
-             * @instance
-             * @public
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @param   {string}    id
-             * @return  {void}
-             */
-            DOPauseAllById: function (id) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#DOPauseAllById", this ); }
-
-                DG.Tweening.DOTween.Pause(id);
-            },
-            /*DG.Tweening.DOTweenAnimation.DOPauseAllById end.*/
-
-            /*DG.Tweening.DOTweenAnimation.DOPlayBackwardsById start.*/
-            /**
-             * Plays backwards all tweens with the given ID and whose target-id is the same as the one set by this animation
-             *
-             * @instance
-             * @public
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @param   {string}    id
-             * @return  {void}
-             */
-            DOPlayBackwardsById: function (id) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#DOPlayBackwardsById", this ); }
-
-                DG.Tweening.DOTween.PlayBackwards$1(this.GetTweenTarget(), id);
-            },
-            /*DG.Tweening.DOTweenAnimation.DOPlayBackwardsById end.*/
-
-            /*DG.Tweening.DOTweenAnimation.DOPlayBackwardsAllById start.*/
-            /**
-             * Plays backwards all tweens with the given ID (regardless of their target gameObject)
-             *
-             * @instance
-             * @public
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @param   {string}    id
-             * @return  {void}
-             */
-            DOPlayBackwardsAllById: function (id) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#DOPlayBackwardsAllById", this ); }
-
-                DG.Tweening.DOTween.PlayBackwards(id);
-            },
-            /*DG.Tweening.DOTweenAnimation.DOPlayBackwardsAllById end.*/
-
-            /*DG.Tweening.DOTweenAnimation.DOPlayForwardById start.*/
-            /**
-             * Plays forward all tweens with the given ID and whose target-id is the same as the one set by this animation
-             *
-             * @instance
-             * @public
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @param   {string}    id
-             * @return  {void}
-             */
-            DOPlayForwardById: function (id) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#DOPlayForwardById", this ); }
-
-                DG.Tweening.DOTween.PlayForward$1(this.GetTweenTarget(), id);
-            },
-            /*DG.Tweening.DOTweenAnimation.DOPlayForwardById end.*/
-
-            /*DG.Tweening.DOTweenAnimation.DOPlayForwardAllById start.*/
-            /**
-             * Plays forward all tweens with the given ID (regardless of their target gameObject)
-             *
-             * @instance
-             * @public
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @param   {string}    id
-             * @return  {void}
-             */
-            DOPlayForwardAllById: function (id) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#DOPlayForwardAllById", this ); }
-
-                DG.Tweening.DOTween.PlayForward(id);
-            },
-            /*DG.Tweening.DOTweenAnimation.DOPlayForwardAllById end.*/
-
-            /*DG.Tweening.DOTweenAnimation.DOPlayNext start.*/
-            /**
-             * Plays the next animation on this animation's gameObject (if any)
-             *
-             * @instance
-             * @public
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @return  {void}
-             */
-            DOPlayNext: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#DOPlayNext", this ); }
-
-                var anims = this.GetComponents(DG.Tweening.DOTweenAnimation);
-                while (this._playCount < ((anims.length - 1) | 0)) {
-                    this._playCount = (this._playCount + 1) | 0;
-                    var anim = anims[this._playCount];
-                    if (UnityEngine.MonoBehaviour.op_Inequality(anim, null) && anim.tween != null && anim.tween.active && !DG.Tweening.TweenExtensions.IsPlaying(anim.tween) && !DG.Tweening.TweenExtensions.IsComplete(anim.tween)) {
-                        DG.Tweening.TweenExtensions.Play(DG.Tweening.Tween, anim.tween);
-                        break;
-                    }
-                }
-            },
-            /*DG.Tweening.DOTweenAnimation.DOPlayNext end.*/
-
-            /*DG.Tweening.DOTweenAnimation.DORewindAndPlayNext start.*/
-            /**
-             * Rewinds all tweens with the given ID and whose target-id is the same as the one set by this animation,
-             then plays the next animation on this animation's gameObject (if any)
-             *
-             * @instance
-             * @public
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @return  {void}
-             */
-            DORewindAndPlayNext: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#DORewindAndPlayNext", this ); }
-
-                this._playCount = -1;
-                DG.Tweening.DOTween.Rewind(this.GetTweenTarget());
-                this.DOPlayNext();
-            },
-            /*DG.Tweening.DOTweenAnimation.DORewindAndPlayNext end.*/
-
-            /*DG.Tweening.DOTweenAnimation.DORewindAllById start.*/
-            /**
-             * Rewinds all tweens with the given ID (regardless of their target gameObject)
-             *
-             * @instance
-             * @public
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @param   {string}    id
-             * @return  {void}
-             */
-            DORewindAllById: function (id) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#DORewindAllById", this ); }
-
-                this._playCount = -1;
-                DG.Tweening.DOTween.Rewind(id);
-            },
-            /*DG.Tweening.DOTweenAnimation.DORewindAllById end.*/
-
-            /*DG.Tweening.DOTweenAnimation.DORestartById start.*/
-            /**
-             * Restarts all tweens with the given ID and whose target-id is the same as the one set by this animation
-             *
-             * @instance
-             * @public
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @param   {string}    id
-             * @return  {void}
-             */
-            DORestartById: function (id) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#DORestartById", this ); }
-
-                this._playCount = -1;
-                DG.Tweening.DOTween.Restart$1(this.GetTweenTarget(), id);
-            },
-            /*DG.Tweening.DOTweenAnimation.DORestartById end.*/
-
-            /*DG.Tweening.DOTweenAnimation.DORestartAllById start.*/
-            /**
-             * Restarts all tweens with the given ID (regardless of their target gameObject)
-             *
-             * @instance
-             * @public
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @param   {string}    id
-             * @return  {void}
-             */
-            DORestartAllById: function (id) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#DORestartAllById", this ); }
-
-                this._playCount = -1;
-                DG.Tweening.DOTween.Restart(id);
-            },
-            /*DG.Tweening.DOTweenAnimation.DORestartAllById end.*/
-
-            /*DG.Tweening.DOTweenAnimation.DOKillById start.*/
-            /**
-             * Kills all tweens with the given ID and whose target-id is the same as the one set by this animation
-             *
-             * @instance
-             * @public
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @param   {string}    id
-             * @return  {void}
-             */
-            DOKillById: function (id) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#DOKillById", this ); }
-
-                DG.Tweening.DOTween.Kill$1(this.GetTweenTarget(), id);
-            },
-            /*DG.Tweening.DOTweenAnimation.DOKillById end.*/
-
-            /*DG.Tweening.DOTweenAnimation.DOKillAllById start.*/
-            /**
-             * Kills all tweens with the given ID (regardless of their target gameObject)
-             *
-             * @instance
-             * @public
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @param   {string}    id
-             * @return  {void}
-             */
-            DOKillAllById: function (id) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#DOKillAllById", this ); }
-
-                DG.Tweening.DOTween.Kill(id);
-            },
-            /*DG.Tweening.DOTweenAnimation.DOKillAllById end.*/
-
-            /*DG.Tweening.DOTweenAnimation.CreateEditorPreview start.*/
-            /**
-             * Previews the tween in the editor. Only for DOTween internal usage: don't use otherwise.
-             *
-             * @instance
-             * @public
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @return  {DG.Tweening.Tween}
-             */
-            CreateEditorPreview: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#CreateEditorPreview", this ); }
-
-                if (UnityEngine.Application.isPlaying) {
-                    return null;
-                }
-
-                // CHANGE: first param switched to TRUE otherwise changing an animation and replaying in editor would still play old one
-                this.CreateTween(true, this.autoPlay);
-                return this.tween;
-            },
-            /*DG.Tweening.DOTweenAnimation.CreateEditorPreview end.*/
-
-            /*DG.Tweening.DOTweenAnimation.GetTweenGO start.*/
-            /**
-             * Returns the gameObject whose target component should be animated
-             *
-             * @instance
-             * @private
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @return  {UnityEngine.GameObject}
-             */
-            GetTweenGO: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#GetTweenGO", this ); }
-
-                return this.targetIsSelf ? this.gameObject : this.targetGO;
-            },
-            /*DG.Tweening.DOTweenAnimation.GetTweenGO end.*/
-
-            /*DG.Tweening.DOTweenAnimation.GetTweenTarget start.*/
-            /**
-             * Returns the GameObject which should be used/retrieved for SetTarget
-             *
-             * @instance
-             * @private
-             * @this DG.Tweening.DOTweenAnimation
-             * @memberof DG.Tweening.DOTweenAnimation
-             * @return  {UnityEngine.GameObject}
-             */
-            GetTweenTarget: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#GetTweenTarget", this ); }
-
-                return this.targetIsSelf || !this.tweenTargetIsTargetGO ? this.gameObject : this.targetGO;
-            },
-            /*DG.Tweening.DOTweenAnimation.GetTweenTarget end.*/
-
-            /*DG.Tweening.DOTweenAnimation.ReEvaluateRelativeTween start.*/
-            ReEvaluateRelativeTween: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimation#ReEvaluateRelativeTween", this ); }
-
-                var tweenGO = this.GetTweenGO();
-                if (UnityEngine.GameObject.op_Equality(tweenGO, null)) {
-                    UnityEngine.Debug.LogWarning$1(System.String.format("{0} :: This DOTweenAnimation's target/GameObject is unset: the tween will not be created.", [this.gameObject.name]), this.gameObject);
-                    return;
-                }
-                if (this.animationType === DG.Tweening.DOTweenAnimation.AnimationType.Move) {
-                    Bridge.cast(this.tween, DG.Tweening.Tweener).ChangeEndValue(tweenGO.transform.position.$clone().add( this.endValueV3 ).$clone(), true);
-                } else if (this.animationType === DG.Tweening.DOTweenAnimation.AnimationType.LocalMove) {
-                    Bridge.cast(this.tween, DG.Tweening.Tweener).ChangeEndValue(tweenGO.transform.localPosition.$clone().add( this.endValueV3 ).$clone(), true);
-                }
-            },
-            /*DG.Tweening.DOTweenAnimation.ReEvaluateRelativeTween end.*/
-
-
-        },
-        overloads: {
-            "DORestart(bool)": "DORestart$1"
-        }
-    });
-    /*DG.Tweening.DOTweenAnimation end.*/
-
-    /*DG.Tweening.DOTweenAnimation+AnimationType start.*/
-    Bridge.define("DG.Tweening.DOTweenAnimation.AnimationType", {
-        $kind: 1006,
-        statics: {
-            fields: {
-                None: 0,
-                Move: 1,
-                LocalMove: 2,
-                Rotate: 3,
-                LocalRotate: 4,
-                Scale: 5,
-                Color: 6,
-                Fade: 7,
-                Text: 8,
-                PunchPosition: 9,
-                PunchRotation: 10,
-                PunchScale: 11,
-                ShakePosition: 12,
-                ShakeRotation: 13,
-                ShakeScale: 14,
-                CameraAspect: 15,
-                CameraBackgroundColor: 16,
-                CameraFieldOfView: 17,
-                CameraOrthoSize: 18,
-                CameraPixelRect: 19,
-                CameraRect: 20,
-                UIWidthHeight: 21
+if ( TRACE ) { TRACE( "HeroSkin#init", this ); }
+
+                this.headPivot = new UnityEngine.Vector2();
+                this.handLeftPivot = new UnityEngine.Vector2();
+                this.handRightPivot = new UnityEngine.Vector2();
+                this.footLeftPivot = new UnityEngine.Vector2();
+                this.footRightPivot = new UnityEngine.Vector2();
+                this.headPivot = new pc.Vec2( 0.5, 0.986 );
+                this.handLeftPivot = new pc.Vec2( 0.5, 0.094 );
+                this.handRightPivot = new pc.Vec2( 0.5, 0.094 );
+                this.footLeftPivot = new pc.Vec2( 0.5, 0.094 );
+                this.footRightPivot = new pc.Vec2( 0.5, 0.094 );
             }
         }
     });
-    /*DG.Tweening.DOTweenAnimation+AnimationType end.*/
+    /*HeroSkin end.*/
 
-    /*DG.Tweening.DOTweenAnimation+TargetType start.*/
-    Bridge.define("DG.Tweening.DOTweenAnimation.TargetType", {
-        $kind: 1006,
-        statics: {
-            fields: {
-                Unset: 0,
-                Camera: 1,
-                CanvasGroup: 2,
-                Image: 3,
-                Light: 4,
-                RectTransform: 5,
-                Renderer: 6,
-                SpriteRenderer: 7,
-                Rigidbody: 8,
-                Rigidbody2D: 9,
-                Text: 10,
-                Transform: 11,
-                tk2dBaseSprite: 12,
-                tk2dTextMesh: 13,
-                TextMeshPro: 14,
-                TextMeshProUGUI: 15
-            }
-        }
-    });
-    /*DG.Tweening.DOTweenAnimation+TargetType end.*/
-
-    /*DG.Tweening.DOTweenAnimationExtensions start.*/
-    Bridge.define("DG.Tweening.DOTweenAnimationExtensions", {
-        statics: {
-            methods: {
-                /*DG.Tweening.DOTweenAnimationExtensions.IsSameOrSubclassOf:static start.*/
-                IsSameOrSubclassOf: function (T, t) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenAnimationExtensions#IsSameOrSubclassOf", this ); }
-
-                    return Bridge.is(t, T);
-                },
-                /*DG.Tweening.DOTweenAnimationExtensions.IsSameOrSubclassOf:static end.*/
-
-
-            }
-        }
-    });
-    /*DG.Tweening.DOTweenAnimationExtensions end.*/
-
-    /*DG.Tweening.DOTweenCYInstruction start.*/
-    Bridge.define("DG.Tweening.DOTweenCYInstruction");
-    /*DG.Tweening.DOTweenCYInstruction end.*/
-
-    /*DG.Tweening.DOTweenCYInstruction+WaitForCompletion start.*/
-    Bridge.define("DG.Tweening.DOTweenCYInstruction.WaitForCompletion", {
-        inherits: [UnityEngine.CustomYieldInstruction],
-        $kind: 1002,
-        fields: {
-            t: null
-        },
-        props: {
-            keepWaiting: {
-                get: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenCYInstruction.WaitForCompletion#keepWaiting#get", this ); }
-
-                    return this.t.active && !DG.Tweening.TweenExtensions.IsComplete(this.t);
-                }
-            }
-        },
-        ctors: {
-            ctor: function (tween) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenCYInstruction.WaitForCompletion#ctor", this ); }
-
-                this.$initialize();
-                UnityEngine.CustomYieldInstruction.ctor.call(this);
-                this.t = tween;
-            }
-        }
-    });
-    /*DG.Tweening.DOTweenCYInstruction+WaitForCompletion end.*/
-
-    /*DG.Tweening.DOTweenCYInstruction+WaitForElapsedLoops start.*/
-    Bridge.define("DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops", {
-        inherits: [UnityEngine.CustomYieldInstruction],
-        $kind: 1002,
-        fields: {
-            t: null,
-            elapsedLoops: 0
-        },
-        props: {
-            keepWaiting: {
-                get: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#keepWaiting#get", this ); }
-
-                    return this.t.active && DG.Tweening.TweenExtensions.CompletedLoops(this.t) < this.elapsedLoops;
-                }
-            }
-        },
-        ctors: {
-            ctor: function (tween, elapsedLoops) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#ctor", this ); }
-
-                this.$initialize();
-                UnityEngine.CustomYieldInstruction.ctor.call(this);
-                this.t = tween;
-                this.elapsedLoops = elapsedLoops;
-            }
-        }
-    });
-    /*DG.Tweening.DOTweenCYInstruction+WaitForElapsedLoops end.*/
-
-    /*DG.Tweening.DOTweenCYInstruction+WaitForKill start.*/
-    Bridge.define("DG.Tweening.DOTweenCYInstruction.WaitForKill", {
-        inherits: [UnityEngine.CustomYieldInstruction],
-        $kind: 1002,
-        fields: {
-            t: null
-        },
-        props: {
-            keepWaiting: {
-                get: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenCYInstruction.WaitForKill#keepWaiting#get", this ); }
-
-                    return this.t.active;
-                }
-            }
-        },
-        ctors: {
-            ctor: function (tween) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenCYInstruction.WaitForKill#ctor", this ); }
-
-                this.$initialize();
-                UnityEngine.CustomYieldInstruction.ctor.call(this);
-                this.t = tween;
-            }
-        }
-    });
-    /*DG.Tweening.DOTweenCYInstruction+WaitForKill end.*/
-
-    /*DG.Tweening.DOTweenCYInstruction+WaitForPosition start.*/
-    Bridge.define("DG.Tweening.DOTweenCYInstruction.WaitForPosition", {
-        inherits: [UnityEngine.CustomYieldInstruction],
-        $kind: 1002,
-        fields: {
-            t: null,
-            position: 0
-        },
-        props: {
-            keepWaiting: {
-                get: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenCYInstruction.WaitForPosition#keepWaiting#get", this ); }
-
-                    return this.t.active && this.t.position * (((DG.Tweening.TweenExtensions.CompletedLoops(this.t) + 1) | 0)) < this.position;
-                }
-            }
-        },
-        ctors: {
-            ctor: function (tween, position) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenCYInstruction.WaitForPosition#ctor", this ); }
-
-                this.$initialize();
-                UnityEngine.CustomYieldInstruction.ctor.call(this);
-                this.t = tween;
-                this.position = position;
-            }
-        }
-    });
-    /*DG.Tweening.DOTweenCYInstruction+WaitForPosition end.*/
-
-    /*DG.Tweening.DOTweenCYInstruction+WaitForRewind start.*/
-    Bridge.define("DG.Tweening.DOTweenCYInstruction.WaitForRewind", {
-        inherits: [UnityEngine.CustomYieldInstruction],
-        $kind: 1002,
-        fields: {
-            t: null
-        },
-        props: {
-            keepWaiting: {
-                get: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenCYInstruction.WaitForRewind#keepWaiting#get", this ); }
-
-                    return this.t.active && (!this.t.playedOnce || this.t.position * (((DG.Tweening.TweenExtensions.CompletedLoops(this.t) + 1) | 0)) > 0);
-                }
-            }
-        },
-        ctors: {
-            ctor: function (tween) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenCYInstruction.WaitForRewind#ctor", this ); }
-
-                this.$initialize();
-                UnityEngine.CustomYieldInstruction.ctor.call(this);
-                this.t = tween;
-            }
-        }
-    });
-    /*DG.Tweening.DOTweenCYInstruction+WaitForRewind end.*/
-
-    /*DG.Tweening.DOTweenCYInstruction+WaitForStart start.*/
-    Bridge.define("DG.Tweening.DOTweenCYInstruction.WaitForStart", {
-        inherits: [UnityEngine.CustomYieldInstruction],
-        $kind: 1002,
-        fields: {
-            t: null
-        },
-        props: {
-            keepWaiting: {
-                get: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenCYInstruction.WaitForStart#keepWaiting#get", this ); }
-
-                    return this.t.active && !this.t.playedOnce;
-                }
-            }
-        },
-        ctors: {
-            ctor: function (tween) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenCYInstruction.WaitForStart#ctor", this ); }
-
-                this.$initialize();
-                UnityEngine.CustomYieldInstruction.ctor.call(this);
-                this.t = tween;
-            }
-        }
-    });
-    /*DG.Tweening.DOTweenCYInstruction+WaitForStart end.*/
-
-    /*DG.Tweening.DOTweenModulePhysics2D start.*/
-    Bridge.define("DG.Tweening.DOTweenModulePhysics2D", {
-        statics: {
-            methods: {
-                /*DG.Tweening.DOTweenModulePhysics2D.DOMove:static start.*/
-                /**
-                 * Tweens a Rigidbody2D's position to the given value.
-                 Also stores the Rigidbody2D as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModulePhysics2D
-                 * @memberof DG.Tweening.DOTweenModulePhysics2D
-                 * @param   {UnityEngine.Rigidbody2D}           target      
-                 * @param   {UnityEngine.Vector2}               endValue    The end value to reach
-                 * @param   {number}                            duration    The duration of the tween
-                 * @param   {boolean}                           snapping    If TRUE the tween will smoothly snap all values to integers
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOMove: function (target, endValue, duration, snapping) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModulePhysics2D#DOMove", this ); }
-
-                    if (snapping === void 0) { snapping = false; }
-                    var t = DG.Tweening.DOTween.To$11(function () {
-                        return target.position;
-                    }, Bridge.fn.cacheBind(target, target.MovePosition), endValue.$clone(), duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetOptions$9(t, snapping), target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModulePhysics2D.DOMove:static end.*/
-
-                /*DG.Tweening.DOTweenModulePhysics2D.DOMoveX:static start.*/
-                /**
-                 * Tweens a Rigidbody2D's X position to the given value.
-                 Also stores the Rigidbody2D as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModulePhysics2D
-                 * @memberof DG.Tweening.DOTweenModulePhysics2D
-                 * @param   {UnityEngine.Rigidbody2D}           target      
-                 * @param   {number}                            endValue    The end value to reach
-                 * @param   {number}                            duration    The duration of the tween
-                 * @param   {boolean}                           snapping    If TRUE the tween will smoothly snap all values to integers
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOMoveX: function (target, endValue, duration, snapping) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModulePhysics2D#DOMoveX", this ); }
-
-                    if (snapping === void 0) { snapping = false; }
-                    var t = DG.Tweening.DOTween.To$11(function () {
-                        return target.position;
-                    }, Bridge.fn.cacheBind(target, target.MovePosition), new pc.Vec2( endValue, 0 ), duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetOptions$8(t, DG.Tweening.AxisConstraint.X, snapping), target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModulePhysics2D.DOMoveX:static end.*/
-
-                /*DG.Tweening.DOTweenModulePhysics2D.DOMoveY:static start.*/
-                /**
-                 * Tweens a Rigidbody2D's Y position to the given value.
-                 Also stores the Rigidbody2D as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModulePhysics2D
-                 * @memberof DG.Tweening.DOTweenModulePhysics2D
-                 * @param   {UnityEngine.Rigidbody2D}           target      
-                 * @param   {number}                            endValue    The end value to reach
-                 * @param   {number}                            duration    The duration of the tween
-                 * @param   {boolean}                           snapping    If TRUE the tween will smoothly snap all values to integers
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOMoveY: function (target, endValue, duration, snapping) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModulePhysics2D#DOMoveY", this ); }
-
-                    if (snapping === void 0) { snapping = false; }
-                    var t = DG.Tweening.DOTween.To$11(function () {
-                        return target.position;
-                    }, Bridge.fn.cacheBind(target, target.MovePosition), new pc.Vec2( 0, endValue ), duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetOptions$8(t, DG.Tweening.AxisConstraint.Y, snapping), target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModulePhysics2D.DOMoveY:static end.*/
-
-                /*DG.Tweening.DOTweenModulePhysics2D.DORotate:static start.*/
-                /**
-                 * Tweens a Rigidbody2D's rotation to the given value.
-                 Also stores the Rigidbody2D as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModulePhysics2D
-                 * @memberof DG.Tweening.DOTweenModulePhysics2D
-                 * @param   {UnityEngine.Rigidbody2D}           target      
-                 * @param   {number}                            endValue    The end value to reach
-                 * @param   {number}                            duration    The duration of the tween
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DORotate: function (target, endValue, duration) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModulePhysics2D#DORotate", this ); }
-
-                    var t = DG.Tweening.DOTween.To$4(function () {
-                        return target.rotation;
-                    }, Bridge.fn.cacheBind(target, target.MoveRotation), endValue, duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Core.TweenerCore$3(System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions), t, target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModulePhysics2D.DORotate:static end.*/
-
-                /*DG.Tweening.DOTweenModulePhysics2D.DOJump:static start.*/
-                /**
-                 * Tweens a Rigidbody2D's position to the given value, while also applying a jump effect along the Y axis.
-                 Returns a Sequence instead of a Tweener.
-                 Also stores the Rigidbody2D as the tween's target so it can be used for filtered operations.
-                 <p>IMPORTANT: a rigidbody2D can't be animated in a jump arc using MovePosition, so the tween will directly set the position</p>
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModulePhysics2D
-                 * @memberof DG.Tweening.DOTweenModulePhysics2D
-                 * @param   {UnityEngine.Rigidbody2D}    target       
-                 * @param   {UnityEngine.Vector2}        endValue     The end value to reach
-                 * @param   {number}                     jumpPower    Power of the jump (the max height of the jump is represented by this plus the final Y offset)
-                 * @param   {number}                     numJumps     Total number of jumps
-                 * @param   {number}                     duration     The duration of the tween
-                 * @param   {boolean}                    snapping     If TRUE the tween will smoothly snap all values to integers
-                 * @return  {DG.Tweening.Sequence}
-                 */
-                DOJump: function (target, endValue, jumpPower, numJumps, duration, snapping) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModulePhysics2D#DOJump", this ); }
-
-                    if (snapping === void 0) { snapping = false; }
-                    if (numJumps < 1) {
-                        numJumps = 1;
-                    }
-                    var startPosY = 0;
-                    var offsetY = -1;
-                    var offsetYSet = false;
-                    var s = DG.Tweening.DOTween.Sequence();
-                    var yTween = DG.Tweening.TweenSettingsExtensions.OnStart(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetLoops$1(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetRelative(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetEase$2(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetOptions$8(DG.Tweening.DOTween.To$11(function () {
-                        return target.position;
-                    }, function (x) {
-                        target.position = x.$clone();
-                    }, new pc.Vec2( 0, jumpPower ), duration / (Bridge.Int.mul(numJumps, 2))), DG.Tweening.AxisConstraint.Y, snapping), DG.Tweening.Ease.OutQuad)), Bridge.Int.mul(numJumps, 2), DG.Tweening.LoopType.Yoyo), function () {
-                        startPosY = target.position.y;
-                    });
-                    DG.Tweening.TweenSettingsExtensions.SetEase$2(DG.Tweening.Sequence, DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Sequence, DG.Tweening.TweenSettingsExtensions.Join(DG.Tweening.TweenSettingsExtensions.Append(s, DG.Tweening.TweenSettingsExtensions.SetEase$2(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetOptions$8(DG.Tweening.DOTween.To$11(function () {
-                        return target.position;
-                    }, function (x) {
-                        target.position = x.$clone();
-                    }, new pc.Vec2( endValue.x, 0 ), duration), DG.Tweening.AxisConstraint.X, snapping), DG.Tweening.Ease.Linear)), yTween), target), DG.Tweening.DOTween.defaultEaseType);
-                    DG.Tweening.TweenSettingsExtensions.OnUpdate(DG.Tweening.Tween, yTween, function () {
-                        if (!offsetYSet) {
-                            offsetYSet = true;
-                            offsetY = s.isRelative ? endValue.y : endValue.y - startPosY;
-                        }
-                        var pos = UnityEngine.Vector3.FromVector2(target.position.$clone());
-                        pos.y += DG.Tweening.DOVirtual.EasedValue(0, offsetY, DG.Tweening.TweenExtensions.ElapsedPercentage(yTween), DG.Tweening.Ease.OutQuad);
-                        target.MovePosition$1(pos);
-                    });
-                    return s;
-                },
-                /*DG.Tweening.DOTweenModulePhysics2D.DOJump:static end.*/
-
-                /*DG.Tweening.DOTweenModulePhysics2D.DOPath:static start.*/
-                /**
-                 * Tweens a Rigidbody2D's position through the given path waypoints, using the chosen path algorithm.
-                 Also stores the Rigidbody2D as the tween's target so it can be used for filtered operations.
-                 <p>NOTE: to tween a Rigidbody2D correctly it should be set to kinematic at least while being tweened.</p><p>BEWARE: doesn't work on Windows Phone store (waiting for Unity to fix their own bug).
-                 If you plan to publish there you should use a regular transform.DOPath.</p>
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModulePhysics2D
-                 * @memberof DG.Tweening.DOTweenModulePhysics2D
-                 * @param   {UnityEngine.Rigidbody2D}           target        
-                 * @param   {Array.<UnityEngine.Vector2>}       path          The waypoints to go through
-                 * @param   {number}                            duration      The duration of the tween
-                 * @param   {DG.Tweening.PathType}              pathType      The type of path: Linear (straight path), CatmullRom (curved CatmullRom path) or CubicBezier (curved with control points)
-                 * @param   {DG.Tweening.PathMode}              pathMode      The path mode: 3D, side-scroller 2D, top-down 2D
-                 * @param   {number}                            resolution    The resolution of the path (useless in case of Linear paths): higher resolutions make for more detailed curved paths but are more expensive.
-                 Defaults to 10, but a value of 5 is usually enough if you don't have dramatic long curves between waypoints
-                 * @param   {?UnityEngine.Color}                gizmoColor    The color of the path (shown when gizmos are active in the Play panel and the tween is running)
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOPath: function (target, path, duration, pathType, pathMode, resolution, gizmoColor) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModulePhysics2D#DOPath", this ); }
-
-                    if (pathType === void 0) { pathType = 0; }
-                    if (pathMode === void 0) { pathMode = 1; }
-                    if (resolution === void 0) { resolution = 10; }
-                    if (gizmoColor === void 0) { gizmoColor = null; }
-                    if (resolution < 1) {
-                        resolution = 1;
-                    }
-                    var len = path.length;
-                    var path3D = System.Array.init(len, function (){
-                        return new UnityEngine.Vector3();
-                    }, UnityEngine.Vector3);
-                    for (var i = 0; i < len; i = (i + 1) | 0) {
-                        path3D[i] = UnityEngine.Vector3.FromVector2(path[i].$clone());
-                    }
-                    var t = DG.Tweening.TweenSettingsExtensions.SetUpdate$1(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions), DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions), DG.Tweening.DOTween.To(UnityEngine.Vector3, DG.Tweening.Plugins.Core.PathCore.Path, DG.Tweening.Plugins.Options.PathOptions, DG.Tweening.Plugins.PathPlugin.Get(), function () {
-                        return UnityEngine.Vector3.FromVector2(target.position);
-                    }, function (x) {
-                        target.MovePosition$1(x);
-                    }, new DG.Tweening.Plugins.Core.PathCore.Path.$ctor1(pathType, path3D, resolution, System.Nullable.lift1("$clone", gizmoColor)), duration), target), DG.Tweening.UpdateType.Fixed);
-
-                    t.plugOptions.isRigidbody2D = true;
-                    t.plugOptions.mode = pathMode;
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModulePhysics2D.DOPath:static end.*/
-
-                /*DG.Tweening.DOTweenModulePhysics2D.DOPath$1:static start.*/
-                DOPath$1: function (target, path, duration, pathMode) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModulePhysics2D#DOPath$1", this ); }
-
-                    if (pathMode === void 0) { pathMode = 1; }
-                    var t = DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions), DG.Tweening.DOTween.To(UnityEngine.Vector3, DG.Tweening.Plugins.Core.PathCore.Path, DG.Tweening.Plugins.Options.PathOptions, DG.Tweening.Plugins.PathPlugin.Get(), function () {
-                        return UnityEngine.Vector3.FromVector2(target.position);
-                    }, function (x) {
-                        target.MovePosition$1(x);
-                    }, path, duration), target);
-
-                    t.plugOptions.isRigidbody2D = true;
-                    t.plugOptions.mode = pathMode;
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModulePhysics2D.DOPath$1:static end.*/
-
-                /*DG.Tweening.DOTweenModulePhysics2D.DOLocalPath:static start.*/
-                /**
-                 * Tweens a Rigidbody2D's localPosition through the given path waypoints, using the chosen path algorithm.
-                 Also stores the Rigidbody2D as the tween's target so it can be used for filtered operations
-                 <p>NOTE: to tween a Rigidbody2D correctly it should be set to kinematic at least while being tweened.</p><p>BEWARE: doesn't work on Windows Phone store (waiting for Unity to fix their own bug).
-                 If you plan to publish there you should use a regular transform.DOLocalPath.</p>
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModulePhysics2D
-                 * @memberof DG.Tweening.DOTweenModulePhysics2D
-                 * @param   {UnityEngine.Rigidbody2D}           target        
-                 * @param   {Array.<UnityEngine.Vector2>}       path          The waypoint to go through
-                 * @param   {number}                            duration      The duration of the tween
-                 * @param   {DG.Tweening.PathType}              pathType      The type of path: Linear (straight path), CatmullRom (curved CatmullRom path) or CubicBezier (curved with control points)
-                 * @param   {DG.Tweening.PathMode}              pathMode      The path mode: 3D, side-scroller 2D, top-down 2D
-                 * @param   {number}                            resolution    The resolution of the path: higher resolutions make for more detailed curved paths but are more expensive.
-                 Defaults to 10, but a value of 5 is usually enough if you don't have dramatic long curves between waypoints
-                 * @param   {?UnityEngine.Color}                gizmoColor    The color of the path (shown when gizmos are active in the Play panel and the tween is running)
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOLocalPath: function (target, path, duration, pathType, pathMode, resolution, gizmoColor) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModulePhysics2D#DOLocalPath", this ); }
-
-                    if (pathType === void 0) { pathType = 0; }
-                    if (pathMode === void 0) { pathMode = 1; }
-                    if (resolution === void 0) { resolution = 10; }
-                    if (gizmoColor === void 0) { gizmoColor = null; }
-                    if (resolution < 1) {
-                        resolution = 1;
-                    }
-                    var len = path.length;
-                    var path3D = System.Array.init(len, function (){
-                        return new UnityEngine.Vector3();
-                    }, UnityEngine.Vector3);
-                    for (var i = 0; i < len; i = (i + 1) | 0) {
-                        path3D[i] = UnityEngine.Vector3.FromVector2(path[i].$clone());
-                    }
-                    var trans = target.transform;
-                    var t = DG.Tweening.TweenSettingsExtensions.SetUpdate$1(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions), DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions), DG.Tweening.DOTween.To(UnityEngine.Vector3, DG.Tweening.Plugins.Core.PathCore.Path, DG.Tweening.Plugins.Options.PathOptions, DG.Tweening.Plugins.PathPlugin.Get(), function () {
-                        return trans.localPosition;
-                    }, function (x) {
-                        target.MovePosition$1(UnityEngine.Component.op_Equality(trans.parent, null) ? x.$clone() : trans.parent.TransformPoint$1(x));
-                    }, new DG.Tweening.Plugins.Core.PathCore.Path.$ctor1(pathType, path3D, resolution, System.Nullable.lift1("$clone", gizmoColor)), duration), target), DG.Tweening.UpdateType.Fixed);
-
-                    t.plugOptions.isRigidbody2D = true;
-                    t.plugOptions.mode = pathMode;
-                    t.plugOptions.useLocalPosition = true;
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModulePhysics2D.DOLocalPath:static end.*/
-
-                /*DG.Tweening.DOTweenModulePhysics2D.DOLocalPath$1:static start.*/
-                DOLocalPath$1: function (target, path, duration, pathMode) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModulePhysics2D#DOLocalPath$1", this ); }
-
-                    if (pathMode === void 0) { pathMode = 1; }
-                    var trans = target.transform;
-                    var t = DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions), DG.Tweening.DOTween.To(UnityEngine.Vector3, DG.Tweening.Plugins.Core.PathCore.Path, DG.Tweening.Plugins.Options.PathOptions, DG.Tweening.Plugins.PathPlugin.Get(), function () {
-                        return trans.localPosition;
-                    }, function (x) {
-                        target.MovePosition$1(UnityEngine.Component.op_Equality(trans.parent, null) ? x.$clone() : trans.parent.TransformPoint$1(x));
-                    }, path, duration), target);
-
-                    t.plugOptions.isRigidbody2D = true;
-                    t.plugOptions.mode = pathMode;
-                    t.plugOptions.useLocalPosition = true;
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModulePhysics2D.DOLocalPath$1:static end.*/
-
-
-            }
-        }
-    });
-    /*DG.Tweening.DOTweenModulePhysics2D end.*/
-
-    /*DG.Tweening.DOTweenModuleSprite start.*/
-    Bridge.define("DG.Tweening.DOTweenModuleSprite", {
-        statics: {
-            methods: {
-                /*DG.Tweening.DOTweenModuleSprite.DOColor:static start.*/
-                /**
-                 * Tweens a SpriteRenderer's color to the given value.
-                 Also stores the spriteRenderer as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleSprite
-                 * @memberof DG.Tweening.DOTweenModuleSprite
-                 * @param   {UnityEngine.SpriteRenderer}        target      
-                 * @param   {UnityEngine.Color}                 endValue    The end value to reach
-                 * @param   {number}                            duration    The duration of the tween
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOColor: function (target, endValue, duration) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleSprite#DOColor", this ); }
-
-                    var t = DG.Tweening.DOTween.To$8(function () {
-                        return target.color;
-                    }, function (x) {
-                        target.color = x.$clone();
-                    }, endValue.$clone(), duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Core.TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions), t, target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleSprite.DOColor:static end.*/
-
-                /*DG.Tweening.DOTweenModuleSprite.DOFade:static start.*/
-                /**
-                 * Tweens a Material's alpha color to the given value.
-                 Also stores the spriteRenderer as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleSprite
-                 * @memberof DG.Tweening.DOTweenModuleSprite
-                 * @param   {UnityEngine.SpriteRenderer}        target      
-                 * @param   {number}                            endValue    The end value to reach
-                 * @param   {number}                            duration    The duration of the tween
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOFade: function (target, endValue, duration) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleSprite#DOFade", this ); }
-
-                    var t = DG.Tweening.DOTween.ToAlpha(function () {
-                        return target.color;
-                    }, function (x) {
-                        target.color = x.$clone();
-                    }, endValue, duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Core.TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions), t, target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleSprite.DOFade:static end.*/
-
-                /*DG.Tweening.DOTweenModuleSprite.DOGradientColor:static start.*/
-                /**
-                 * Tweens a SpriteRenderer's color using the given gradient
-                 (NOTE 1: only uses the colors of the gradient, not the alphas - NOTE 2: creates a Sequence, not a Tweener).
-                 Also stores the image as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleSprite
-                 * @memberof DG.Tweening.DOTweenModuleSprite
-                 * @param   {UnityEngine.SpriteRenderer}    target      
-                 * @param   {pc.ColorGradient}              gradient    The gradient to use
-                 * @param   {number}                        duration    The duration of the tween
-                 * @return  {DG.Tweening.Sequence}
-                 */
-                DOGradientColor: function (target, gradient, duration) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleSprite#DOGradientColor", this ); }
-
-                    var s = DG.Tweening.DOTween.Sequence();
-                    var colors = gradient.colorKeys;
-                    var len = colors.length;
-                    for (var i = 0; i < len; i = (i + 1) | 0) {
-                        var c = colors[i];
-                        if (i === 0 && c.time <= 0) {
-                            target.color = c.color.$clone();
-                            continue;
-                        }
-                        var colorDuration = i === ((len - 1) | 0) ? duration - DG.Tweening.TweenExtensions.Duration(s, false) : duration * (i === 0 ? c.time : c.time - colors[((i - 1) | 0)].time);
-                        DG.Tweening.TweenSettingsExtensions.Append(s, DG.Tweening.TweenSettingsExtensions.SetEase$2(DG.Tweening.Core.TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions), DG.Tweening.DOTweenModuleSprite.DOColor(target, c.color.$clone(), colorDuration), DG.Tweening.Ease.Linear));
-                    }
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Sequence, s, target);
-                    return s;
-                },
-                /*DG.Tweening.DOTweenModuleSprite.DOGradientColor:static end.*/
-
-                /*DG.Tweening.DOTweenModuleSprite.DOBlendableColor:static start.*/
-                /**
-                 * Tweens a SpriteRenderer's color to the given value,
-                 in a way that allows other DOBlendableColor tweens to work together on the same target,
-                 instead than fight each other as multiple DOColor would do.
-                 Also stores the SpriteRenderer as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleSprite
-                 * @memberof DG.Tweening.DOTweenModuleSprite
-                 * @param   {UnityEngine.SpriteRenderer}    target      
-                 * @param   {UnityEngine.Color}             endValue    The value to tween to
-                 * @param   {number}                        duration    The duration of the tween
-                 * @return  {DG.Tweening.Tweener}
-                 */
-                DOBlendableColor: function (target, endValue, duration) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleSprite#DOBlendableColor", this ); }
-
-                    var $t;
-                    endValue = ($t = target.color, new pc.Color( endValue.r - $t.r, endValue.g - $t.g, endValue.b - $t.b, endValue.a - $t.a ));
-                    var to = new pc.Color( 0, 0, 0, 0 );
-                    return DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Core.TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions), DG.Tweening.Core.Extensions.Blendable(UnityEngine.Color, UnityEngine.Color, DG.Tweening.Plugins.Options.ColorOptions, DG.Tweening.DOTween.To$8(function () {
-                        return to;
-                    }, function (x) {
-                        var $t1;
-                        var diff = new pc.Color( x.r - to.r, x.g - to.g, x.b - to.b, x.a - to.a );
-                        to = x.$clone();
-                        target.color = ($t1 = target.color.$clone(), new pc.Color( $t1.r + diff.$clone().r, $t1.g + diff.$clone().g, $t1.b + diff.$clone().b, $t1.a + diff.$clone().a ));
-                    }, endValue.$clone(), duration)), target);
-                },
-                /*DG.Tweening.DOTweenModuleSprite.DOBlendableColor:static end.*/
-
-
-            }
-        }
-    });
-    /*DG.Tweening.DOTweenModuleSprite end.*/
-
-    /*DG.Tweening.DOTweenModuleUI start.*/
-    Bridge.define("DG.Tweening.DOTweenModuleUI", {
-        statics: {
-            methods: {
-                /*DG.Tweening.DOTweenModuleUI.DOFade:static start.*/
-                /**
-                 * Tweens a CanvasGroup's alpha color to the given value.
-                 Also stores the canvasGroup as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.CanvasGroup}           target      
-                 * @param   {number}                            endValue    The end value to reach
-                 * @param   {number}                            duration    The duration of the tween
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOFade: function (target, endValue, duration) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOFade", this ); }
-
-                    var t = DG.Tweening.DOTween.To$4(function () {
-                        return target.alpha;
-                    }, function (x) {
-                        target.alpha = x;
-                    }, endValue, duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Core.TweenerCore$3(System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions), t, target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOFade:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOFade$1:static start.*/
-                /**
-                 * Tweens an Graphic's alpha color to the given value.
-                 Also stores the image as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.UI.Graphic}            target      
-                 * @param   {number}                            endValue    The end value to reach
-                 * @param   {number}                            duration    The duration of the tween
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOFade$1: function (target, endValue, duration) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOFade$1", this ); }
-
-                    var t = DG.Tweening.DOTween.ToAlpha(function () {
-                        return target.color;
-                    }, function (x) {
-                        target.color = x.$clone();
-                    }, endValue, duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Core.TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions), t, target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOFade$1:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOFade$2:static start.*/
-                /**
-                 * Tweens an Image's alpha color to the given value.
-                 Also stores the image as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.UI.Image}              target      
-                 * @param   {number}                            endValue    The end value to reach
-                 * @param   {number}                            duration    The duration of the tween
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOFade$2: function (target, endValue, duration) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOFade$2", this ); }
-
-                    var t = DG.Tweening.DOTween.ToAlpha(function () {
-                        return target.color;
-                    }, function (x) {
-                        target.color = x.$clone();
-                    }, endValue, duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Core.TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions), t, target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOFade$2:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOFade$3:static start.*/
-                /**
-                 * Tweens a Outline's effectColor alpha to the given value.
-                 Also stores the Outline as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.UI.Outline}            target      
-                 * @param   {number}                            endValue    The end value to reach
-                 * @param   {number}                            duration    The duration of the tween
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOFade$3: function (target, endValue, duration) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOFade$3", this ); }
-
-                    var t = DG.Tweening.DOTween.ToAlpha(function () {
-                        return target.effectColor;
-                    }, function (x) {
-                        target.effectColor = x.$clone();
-                    }, endValue, duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Core.TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions), t, target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOFade$3:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOFade$4:static start.*/
-                /**
-                 * Tweens a Text's alpha color to the given value.
-                 Also stores the Text as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.UI.Text}               target      
-                 * @param   {number}                            endValue    The end value to reach
-                 * @param   {number}                            duration    The duration of the tween
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOFade$4: function (target, endValue, duration) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOFade$4", this ); }
-
-                    var t = DG.Tweening.DOTween.ToAlpha(function () {
-                        return target.color;
-                    }, function (x) {
-                        target.color = x.$clone();
-                    }, endValue, duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Core.TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions), t, target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOFade$4:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOColor:static start.*/
-                /**
-                 * Tweens an Graphic's color to the given value.
-                 Also stores the image as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.UI.Graphic}            target      
-                 * @param   {UnityEngine.Color}                 endValue    The end value to reach
-                 * @param   {number}                            duration    The duration of the tween
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOColor: function (target, endValue, duration) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOColor", this ); }
-
-                    var t = DG.Tweening.DOTween.To$8(function () {
-                        return target.color;
-                    }, function (x) {
-                        target.color = x.$clone();
-                    }, endValue.$clone(), duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Core.TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions), t, target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOColor:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOColor$1:static start.*/
-                /**
-                 * Tweens an Image's color to the given value.
-                 Also stores the image as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.UI.Image}              target      
-                 * @param   {UnityEngine.Color}                 endValue    The end value to reach
-                 * @param   {number}                            duration    The duration of the tween
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOColor$1: function (target, endValue, duration) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOColor$1", this ); }
-
-                    var t = DG.Tweening.DOTween.To$8(function () {
-                        return target.color;
-                    }, function (x) {
-                        target.color = x.$clone();
-                    }, endValue.$clone(), duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Core.TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions), t, target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOColor$1:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOColor$2:static start.*/
-                /**
-                 * Tweens a Outline's effectColor to the given value.
-                 Also stores the Outline as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.UI.Outline}            target      
-                 * @param   {UnityEngine.Color}                 endValue    The end value to reach
-                 * @param   {number}                            duration    The duration of the tween
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOColor$2: function (target, endValue, duration) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOColor$2", this ); }
-
-                    var t = DG.Tweening.DOTween.To$8(function () {
-                        return target.effectColor;
-                    }, function (x) {
-                        target.effectColor = x.$clone();
-                    }, endValue.$clone(), duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Core.TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions), t, target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOColor$2:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOColor$3:static start.*/
-                /**
-                 * Tweens a Text's color to the given value.
-                 Also stores the Text as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.UI.Text}               target      
-                 * @param   {UnityEngine.Color}                 endValue    The end value to reach
-                 * @param   {number}                            duration    The duration of the tween
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOColor$3: function (target, endValue, duration) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOColor$3", this ); }
-
-                    var t = DG.Tweening.DOTween.To$8(function () {
-                        return target.color;
-                    }, function (x) {
-                        target.color = x.$clone();
-                    }, endValue.$clone(), duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Core.TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions), t, target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOColor$3:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOFillAmount:static start.*/
-                /**
-                 * Tweens an Image's fillAmount to the given value.
-                 Also stores the image as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.UI.Image}              target      
-                 * @param   {number}                            endValue    The end value to reach (0 to 1)
-                 * @param   {number}                            duration    The duration of the tween
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOFillAmount: function (target, endValue, duration) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOFillAmount", this ); }
-
-                    if (endValue > 1) {
-                        endValue = 1;
-                    } else {
-                        if (endValue < 0) {
-                            endValue = 0;
-                        }
-                    }
-                    var t = DG.Tweening.DOTween.To$4(function () {
-                        return target.fillAmount;
-                    }, function (x) {
-                        target.fillAmount = x;
-                    }, endValue, duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Core.TweenerCore$3(System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions), t, target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOFillAmount:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOGradientColor:static start.*/
-                /**
-                 * Tweens an Image's colors using the given gradient
-                 (NOTE 1: only uses the colors of the gradient, not the alphas - NOTE 2: creates a Sequence, not a Tweener).
-                 Also stores the image as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.UI.Image}    target      
-                 * @param   {pc.ColorGradient}        gradient    The gradient to use
-                 * @param   {number}                  duration    The duration of the tween
-                 * @return  {DG.Tweening.Sequence}
-                 */
-                DOGradientColor: function (target, gradient, duration) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOGradientColor", this ); }
-
-                    var s = DG.Tweening.DOTween.Sequence();
-                    var colors = gradient.colorKeys;
-                    var len = colors.length;
-                    for (var i = 0; i < len; i = (i + 1) | 0) {
-                        var c = colors[i];
-                        if (i === 0 && c.time <= 0) {
-                            target.color = c.color.$clone();
-                            continue;
-                        }
-                        var colorDuration = i === ((len - 1) | 0) ? duration - DG.Tweening.TweenExtensions.Duration(s, false) : duration * (i === 0 ? c.time : c.time - colors[((i - 1) | 0)].time);
-                        DG.Tweening.TweenSettingsExtensions.Append(s, DG.Tweening.TweenSettingsExtensions.SetEase$2(DG.Tweening.Core.TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions), DG.Tweening.DOTweenModuleUI.DOColor$1(target, c.color.$clone(), colorDuration), DG.Tweening.Ease.Linear));
-                    }
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Sequence, s, target);
-                    return s;
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOGradientColor:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOFlexibleSize:static start.*/
-                /**
-                 * Tweens an LayoutElement's flexibleWidth/Height to the given value.
-                 Also stores the LayoutElement as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.UI.LayoutElement}      target      
-                 * @param   {UnityEngine.Vector2}               endValue    The end value to reach
-                 * @param   {number}                            duration    The duration of the tween
-                 * @param   {boolean}                           snapping    If TRUE the tween will smoothly snap all values to integers
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOFlexibleSize: function (target, endValue, duration, snapping) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOFlexibleSize", this ); }
-
-                    if (snapping === void 0) { snapping = false; }
-                    var t = DG.Tweening.DOTween.To$11(function () {
-                        return new pc.Vec2( target.flexibleWidth, target.flexibleHeight );
-                    }, function (x) {
-                        target.flexibleWidth = x.x;
-                        target.flexibleHeight = x.y;
-                    }, endValue.$clone(), duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetOptions$9(t, snapping), target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOFlexibleSize:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOMinSize:static start.*/
-                /**
-                 * Tweens an LayoutElement's minWidth/Height to the given value.
-                 Also stores the LayoutElement as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.UI.LayoutElement}      target      
-                 * @param   {UnityEngine.Vector2}               endValue    The end value to reach
-                 * @param   {number}                            duration    The duration of the tween
-                 * @param   {boolean}                           snapping    If TRUE the tween will smoothly snap all values to integers
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOMinSize: function (target, endValue, duration, snapping) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOMinSize", this ); }
-
-                    if (snapping === void 0) { snapping = false; }
-                    var t = DG.Tweening.DOTween.To$11(function () {
-                        return new pc.Vec2( target.minWidth, target.minHeight );
-                    }, function (x) {
-                        target.minWidth = x.x;
-                        target.minHeight = x.y;
-                    }, endValue.$clone(), duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetOptions$9(t, snapping), target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOMinSize:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOPreferredSize:static start.*/
-                /**
-                 * Tweens an LayoutElement's preferredWidth/Height to the given value.
-                 Also stores the LayoutElement as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.UI.LayoutElement}      target      
-                 * @param   {UnityEngine.Vector2}               endValue    The end value to reach
-                 * @param   {number}                            duration    The duration of the tween
-                 * @param   {boolean}                           snapping    If TRUE the tween will smoothly snap all values to integers
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOPreferredSize: function (target, endValue, duration, snapping) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOPreferredSize", this ); }
-
-                    if (snapping === void 0) { snapping = false; }
-                    var t = DG.Tweening.DOTween.To$11(function () {
-                        return new pc.Vec2( target.preferredWidth, target.preferredHeight );
-                    }, function (x) {
-                        target.preferredWidth = x.x;
-                        target.preferredHeight = x.y;
-                    }, endValue.$clone(), duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetOptions$9(t, snapping), target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOPreferredSize:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOScale:static start.*/
-                /**
-                 * Tweens a Outline's effectDistance to the given value.
-                 Also stores the Outline as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.UI.Outline}            target      
-                 * @param   {UnityEngine.Vector2}               endValue    The end value to reach
-                 * @param   {number}                            duration    The duration of the tween
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOScale: function (target, endValue, duration) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOScale", this ); }
-
-                    var t = DG.Tweening.DOTween.To$11(function () {
-                        return target.effectDistance;
-                    }, function (x) {
-                        target.effectDistance = x.$clone();
-                    }, endValue.$clone(), duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions), t, target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOScale:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOAnchorPos:static start.*/
-                /**
-                 * Tweens a RectTransform's anchoredPosition to the given value.
-                 Also stores the RectTransform as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.RectTransform}         target      
-                 * @param   {UnityEngine.Vector2}               endValue    The end value to reach
-                 * @param   {number}                            duration    The duration of the tween
-                 * @param   {boolean}                           snapping    If TRUE the tween will smoothly snap all values to integers
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOAnchorPos: function (target, endValue, duration, snapping) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOAnchorPos", this ); }
-
-                    if (snapping === void 0) { snapping = false; }
-                    var t = DG.Tweening.DOTween.To$11(function () {
-                        return target.anchoredPosition;
-                    }, function (x) {
-                        target.anchoredPosition = x.$clone();
-                    }, endValue.$clone(), duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetOptions$9(t, snapping), target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOAnchorPos:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOAnchorPosX:static start.*/
-                /**
-                 * Tweens a RectTransform's anchoredPosition X to the given value.
-                 Also stores the RectTransform as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.RectTransform}         target      
-                 * @param   {number}                            endValue    The end value to reach
-                 * @param   {number}                            duration    The duration of the tween
-                 * @param   {boolean}                           snapping    If TRUE the tween will smoothly snap all values to integers
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOAnchorPosX: function (target, endValue, duration, snapping) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOAnchorPosX", this ); }
-
-                    if (snapping === void 0) { snapping = false; }
-                    var t = DG.Tweening.DOTween.To$11(function () {
-                        return target.anchoredPosition;
-                    }, function (x) {
-                        target.anchoredPosition = x.$clone();
-                    }, new pc.Vec2( endValue, 0 ), duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetOptions$8(t, DG.Tweening.AxisConstraint.X, snapping), target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOAnchorPosX:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOAnchorPosY:static start.*/
-                /**
-                 * Tweens a RectTransform's anchoredPosition Y to the given value.
-                 Also stores the RectTransform as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.RectTransform}         target      
-                 * @param   {number}                            endValue    The end value to reach
-                 * @param   {number}                            duration    The duration of the tween
-                 * @param   {boolean}                           snapping    If TRUE the tween will smoothly snap all values to integers
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOAnchorPosY: function (target, endValue, duration, snapping) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOAnchorPosY", this ); }
-
-                    if (snapping === void 0) { snapping = false; }
-                    var t = DG.Tweening.DOTween.To$11(function () {
-                        return target.anchoredPosition;
-                    }, function (x) {
-                        target.anchoredPosition = x.$clone();
-                    }, new pc.Vec2( 0, endValue ), duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetOptions$8(t, DG.Tweening.AxisConstraint.Y, snapping), target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOAnchorPosY:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOAnchorPos3D:static start.*/
-                /**
-                 * Tweens a RectTransform's anchoredPosition3D to the given value.
-                 Also stores the RectTransform as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.RectTransform}         target      
-                 * @param   {UnityEngine.Vector3}               endValue    The end value to reach
-                 * @param   {number}                            duration    The duration of the tween
-                 * @param   {boolean}                           snapping    If TRUE the tween will smoothly snap all values to integers
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOAnchorPos3D: function (target, endValue, duration, snapping) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOAnchorPos3D", this ); }
-
-                    if (snapping === void 0) { snapping = false; }
-                    var t = DG.Tweening.DOTween.To$12(function () {
-                        return target.anchoredPosition3D;
-                    }, function (x) {
-                        target.anchoredPosition3D = x.$clone();
-                    }, endValue.$clone(), duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetOptions$13(t, snapping), target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOAnchorPos3D:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOAnchorPos3DX:static start.*/
-                /**
-                 * Tweens a RectTransform's anchoredPosition3D X to the given value.
-                 Also stores the RectTransform as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.RectTransform}         target      
-                 * @param   {number}                            endValue    The end value to reach
-                 * @param   {number}                            duration    The duration of the tween
-                 * @param   {boolean}                           snapping    If TRUE the tween will smoothly snap all values to integers
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOAnchorPos3DX: function (target, endValue, duration, snapping) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOAnchorPos3DX", this ); }
-
-                    if (snapping === void 0) { snapping = false; }
-                    var t = DG.Tweening.DOTween.To$12(function () {
-                        return target.anchoredPosition3D;
-                    }, function (x) {
-                        target.anchoredPosition3D = x.$clone();
-                    }, new pc.Vec3( endValue, 0, 0 ), duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetOptions$12(t, DG.Tweening.AxisConstraint.X, snapping), target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOAnchorPos3DX:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOAnchorPos3DY:static start.*/
-                /**
-                 * Tweens a RectTransform's anchoredPosition3D Y to the given value.
-                 Also stores the RectTransform as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.RectTransform}         target      
-                 * @param   {number}                            endValue    The end value to reach
-                 * @param   {number}                            duration    The duration of the tween
-                 * @param   {boolean}                           snapping    If TRUE the tween will smoothly snap all values to integers
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOAnchorPos3DY: function (target, endValue, duration, snapping) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOAnchorPos3DY", this ); }
-
-                    if (snapping === void 0) { snapping = false; }
-                    var t = DG.Tweening.DOTween.To$12(function () {
-                        return target.anchoredPosition3D;
-                    }, function (x) {
-                        target.anchoredPosition3D = x.$clone();
-                    }, new pc.Vec3( 0, endValue, 0 ), duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetOptions$12(t, DG.Tweening.AxisConstraint.Y, snapping), target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOAnchorPos3DY:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOAnchorPos3DZ:static start.*/
-                /**
-                 * Tweens a RectTransform's anchoredPosition3D Z to the given value.
-                 Also stores the RectTransform as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.RectTransform}         target      
-                 * @param   {number}                            endValue    The end value to reach
-                 * @param   {number}                            duration    The duration of the tween
-                 * @param   {boolean}                           snapping    If TRUE the tween will smoothly snap all values to integers
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOAnchorPos3DZ: function (target, endValue, duration, snapping) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOAnchorPos3DZ", this ); }
-
-                    if (snapping === void 0) { snapping = false; }
-                    var t = DG.Tweening.DOTween.To$12(function () {
-                        return target.anchoredPosition3D;
-                    }, function (x) {
-                        target.anchoredPosition3D = x.$clone();
-                    }, new pc.Vec3( 0, 0, endValue ), duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetOptions$12(t, DG.Tweening.AxisConstraint.Z, snapping), target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOAnchorPos3DZ:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOAnchorMax:static start.*/
-                /**
-                 * Tweens a RectTransform's anchorMax to the given value.
-                 Also stores the RectTransform as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.RectTransform}         target      
-                 * @param   {UnityEngine.Vector2}               endValue    The end value to reach
-                 * @param   {number}                            duration    The duration of the tween
-                 * @param   {boolean}                           snapping    If TRUE the tween will smoothly snap all values to integers
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOAnchorMax: function (target, endValue, duration, snapping) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOAnchorMax", this ); }
-
-                    if (snapping === void 0) { snapping = false; }
-                    var t = DG.Tweening.DOTween.To$11(function () {
-                        return target.anchorMax;
-                    }, function (x) {
-                        target.anchorMax = x.$clone();
-                    }, endValue.$clone(), duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetOptions$9(t, snapping), target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOAnchorMax:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOAnchorMin:static start.*/
-                /**
-                 * Tweens a RectTransform's anchorMin to the given value.
-                 Also stores the RectTransform as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.RectTransform}         target      
-                 * @param   {UnityEngine.Vector2}               endValue    The end value to reach
-                 * @param   {number}                            duration    The duration of the tween
-                 * @param   {boolean}                           snapping    If TRUE the tween will smoothly snap all values to integers
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOAnchorMin: function (target, endValue, duration, snapping) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOAnchorMin", this ); }
-
-                    if (snapping === void 0) { snapping = false; }
-                    var t = DG.Tweening.DOTween.To$11(function () {
-                        return target.anchorMin;
-                    }, function (x) {
-                        target.anchorMin = x.$clone();
-                    }, endValue.$clone(), duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetOptions$9(t, snapping), target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOAnchorMin:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOPivot:static start.*/
-                /**
-                 * Tweens a RectTransform's pivot to the given value.
-                 Also stores the RectTransform as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.RectTransform}         target      
-                 * @param   {UnityEngine.Vector2}               endValue    The end value to reach
-                 * @param   {number}                            duration    The duration of the tween
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOPivot: function (target, endValue, duration) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOPivot", this ); }
-
-                    var t = DG.Tweening.DOTween.To$11(function () {
-                        return target.pivot;
-                    }, function (x) {
-                        target.pivot = x.$clone();
-                    }, endValue.$clone(), duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions), t, target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOPivot:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOPivotX:static start.*/
-                /**
-                 * Tweens a RectTransform's pivot X to the given value.
-                 Also stores the RectTransform as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.RectTransform}         target      
-                 * @param   {number}                            endValue    The end value to reach
-                 * @param   {number}                            duration    The duration of the tween
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOPivotX: function (target, endValue, duration) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOPivotX", this ); }
-
-                    var t = DG.Tweening.DOTween.To$11(function () {
-                        return target.pivot;
-                    }, function (x) {
-                        target.pivot = x.$clone();
-                    }, new pc.Vec2( endValue, 0 ), duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetOptions$8(t, DG.Tweening.AxisConstraint.X), target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOPivotX:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOPivotY:static start.*/
-                /**
-                 * Tweens a RectTransform's pivot Y to the given value.
-                 Also stores the RectTransform as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.RectTransform}         target      
-                 * @param   {number}                            endValue    The end value to reach
-                 * @param   {number}                            duration    The duration of the tween
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOPivotY: function (target, endValue, duration) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOPivotY", this ); }
-
-                    var t = DG.Tweening.DOTween.To$11(function () {
-                        return target.pivot;
-                    }, function (x) {
-                        target.pivot = x.$clone();
-                    }, new pc.Vec2( 0, endValue ), duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetOptions$8(t, DG.Tweening.AxisConstraint.Y), target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOPivotY:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOSizeDelta:static start.*/
-                /**
-                 * Tweens a RectTransform's sizeDelta to the given value.
-                 Also stores the RectTransform as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.RectTransform}         target      
-                 * @param   {UnityEngine.Vector2}               endValue    The end value to reach
-                 * @param   {number}                            duration    The duration of the tween
-                 * @param   {boolean}                           snapping    If TRUE the tween will smoothly snap all values to integers
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOSizeDelta: function (target, endValue, duration, snapping) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOSizeDelta", this ); }
-
-                    if (snapping === void 0) { snapping = false; }
-                    var t = DG.Tweening.DOTween.To$11(function () {
-                        return target.sizeDelta;
-                    }, function (x) {
-                        target.sizeDelta = x.$clone();
-                    }, endValue.$clone(), duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetOptions$9(t, snapping), target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOSizeDelta:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOPunchAnchorPos:static start.*/
-                /**
-                 * Punches a RectTransform's anchoredPosition towards the given direction and then back to the starting one
-                 as if it was connected to the starting position via an elastic.
-                 Also stores the RectTransform as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.RectTransform}    target        
-                 * @param   {UnityEngine.Vector2}          punch         The direction and strength of the punch (added to the RectTransform's current position)
-                 * @param   {number}                       duration      The duration of the tween
-                 * @param   {number}                       vibrato       Indicates how much will the punch vibrate
-                 * @param   {number}                       elasticity    Represents how much (0 to 1) the vector will go beyond the starting position when bouncing backwards.
-                 1 creates a full oscillation between the punch direction and the opposite direction,
-                 while 0 oscillates only between the punch and the start position
-                 * @param   {boolean}                      snapping      If TRUE the tween will smoothly snap all values to integers
-                 * @return  {DG.Tweening.Tweener}
-                 */
-                DOPunchAnchorPos: function (target, punch, duration, vibrato, elasticity, snapping) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOPunchAnchorPos", this ); }
-
-                    if (vibrato === void 0) { vibrato = 10; }
-                    if (elasticity === void 0) { elasticity = 1.0; }
-                    if (snapping === void 0) { snapping = false; }
-                    return DG.Tweening.TweenSettingsExtensions.SetOptions$11(DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,System.Array.type(UnityEngine.Vector3),DG.Tweening.Plugins.Options.Vector3ArrayOptions), DG.Tweening.DOTween.Punch(function () {
-                        return UnityEngine.Vector3.FromVector2(target.anchoredPosition);
-                    }, function (x) {
-                        target.anchoredPosition = UnityEngine.Vector2.FromVector3(x.$clone());
-                    }, UnityEngine.Vector3.FromVector2(punch.$clone()), duration, vibrato, elasticity), target), snapping);
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOPunchAnchorPos:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOShakeAnchorPos:static start.*/
-                /**
-                 * Shakes a RectTransform's anchoredPosition with the given values.
-                 Also stores the RectTransform as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.RectTransform}          target            
-                 * @param   {number}                             duration          The duration of the tween
-                 * @param   {number}                             strength          The shake strength
-                 * @param   {number}                             vibrato           Indicates how much will the shake vibrate
-                 * @param   {number}                             randomness        Indicates how much the shake will be random (0 to 180 - values higher than 90 kind of suck, so beware). 
-                 Setting it to 0 will shake along a single direction.
-                 * @param   {boolean}                            snapping          If TRUE the tween will smoothly snap all values to integers
-                 * @param   {boolean}                            fadeOut           If TRUE the shake will automatically fadeOut smoothly within the tween's duration, otherwise it will not
-                 * @param   {DG.Tweening.ShakeRandomnessMode}    randomnessMode    Randomness mode
-                 * @return  {DG.Tweening.Tweener}
-                 */
-                DOShakeAnchorPos: function (target, duration, strength, vibrato, randomness, snapping, fadeOut, randomnessMode) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos", this ); }
-
-                    if (strength === void 0) { strength = 100.0; }
-                    if (vibrato === void 0) { vibrato = 10; }
-                    if (randomness === void 0) { randomness = 90.0; }
-                    if (snapping === void 0) { snapping = false; }
-                    if (fadeOut === void 0) { fadeOut = true; }
-                    if (randomnessMode === void 0) { randomnessMode = 0; }
-                    return DG.Tweening.TweenSettingsExtensions.SetOptions$11(DG.Tweening.Core.Extensions.SetSpecialStartupMode(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,System.Array.type(UnityEngine.Vector3),DG.Tweening.Plugins.Options.Vector3ArrayOptions), DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,System.Array.type(UnityEngine.Vector3),DG.Tweening.Plugins.Options.Vector3ArrayOptions), DG.Tweening.DOTween.Shake(function () {
-                        return UnityEngine.Vector3.FromVector2(target.anchoredPosition);
-                    }, function (x) {
-                        target.anchoredPosition = UnityEngine.Vector2.FromVector3(x.$clone());
-                    }, duration, strength, vibrato, randomness, true, fadeOut, randomnessMode), target), DG.Tweening.Core.Enums.SpecialStartupMode.SetShake), snapping);
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOShakeAnchorPos:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOShakeAnchorPos$1:static start.*/
-                /**
-                 * Shakes a RectTransform's anchoredPosition with the given values.
-                 Also stores the RectTransform as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.RectTransform}          target            
-                 * @param   {number}                             duration          The duration of the tween
-                 * @param   {UnityEngine.Vector2}                strength          The shake strength on each axis
-                 * @param   {number}                             vibrato           Indicates how much will the shake vibrate
-                 * @param   {number}                             randomness        Indicates how much the shake will be random (0 to 180 - values higher than 90 kind of suck, so beware). 
-                 Setting it to 0 will shake along a single direction.
-                 * @param   {boolean}                            snapping          If TRUE the tween will smoothly snap all values to integers
-                 * @param   {boolean}                            fadeOut           If TRUE the shake will automatically fadeOut smoothly within the tween's duration, otherwise it will not
-                 * @param   {DG.Tweening.ShakeRandomnessMode}    randomnessMode    Randomness mode
-                 * @return  {DG.Tweening.Tweener}
-                 */
-                DOShakeAnchorPos$1: function (target, duration, strength, vibrato, randomness, snapping, fadeOut, randomnessMode) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos$1", this ); }
-
-                    if (vibrato === void 0) { vibrato = 10; }
-                    if (randomness === void 0) { randomness = 90.0; }
-                    if (snapping === void 0) { snapping = false; }
-                    if (fadeOut === void 0) { fadeOut = true; }
-                    if (randomnessMode === void 0) { randomnessMode = 0; }
-                    return DG.Tweening.TweenSettingsExtensions.SetOptions$11(DG.Tweening.Core.Extensions.SetSpecialStartupMode(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,System.Array.type(UnityEngine.Vector3),DG.Tweening.Plugins.Options.Vector3ArrayOptions), DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,System.Array.type(UnityEngine.Vector3),DG.Tweening.Plugins.Options.Vector3ArrayOptions), DG.Tweening.DOTween.Shake$1(function () {
-                        return UnityEngine.Vector3.FromVector2(target.anchoredPosition);
-                    }, function (x) {
-                        target.anchoredPosition = UnityEngine.Vector2.FromVector3(x.$clone());
-                    }, duration, UnityEngine.Vector3.FromVector2(strength.$clone()), vibrato, randomness, fadeOut, randomnessMode), target), DG.Tweening.Core.Enums.SpecialStartupMode.SetShake), snapping);
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOShakeAnchorPos$1:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOJumpAnchorPos:static start.*/
-                /**
-                 * Tweens a RectTransform's anchoredPosition to the given value, while also applying a jump effect along the Y axis.
-                 Returns a Sequence instead of a Tweener.
-                 Also stores the RectTransform as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.RectTransform}    target       
-                 * @param   {UnityEngine.Vector2}          endValue     The end value to reach
-                 * @param   {number}                       jumpPower    Power of the jump (the max height of the jump is represented by this plus the final Y offset)
-                 * @param   {number}                       numJumps     Total number of jumps
-                 * @param   {number}                       duration     The duration of the tween
-                 * @param   {boolean}                      snapping     If TRUE the tween will smoothly snap all values to integers
-                 * @return  {DG.Tweening.Sequence}
-                 */
-                DOJumpAnchorPos: function (target, endValue, jumpPower, numJumps, duration, snapping) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOJumpAnchorPos", this ); }
-
-                    if (snapping === void 0) { snapping = false; }
-                    if (numJumps < 1) {
-                        numJumps = 1;
-                    }
-                    var startPosY = 0;
-                    var offsetY = -1;
-                    var offsetYSet = false;
-
-                    // Separate Y Tween so we can elaborate elapsedPercentage on that insted of on the Sequence
-                    // (in case users add a delay or other elements to the Sequence)
-                    var s = DG.Tweening.DOTween.Sequence();
-                    var yTween = DG.Tweening.TweenSettingsExtensions.OnStart(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetLoops$1(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetRelative(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetEase$2(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetOptions$8(DG.Tweening.DOTween.To$11(function () {
-                        return target.anchoredPosition;
-                    }, function (x) {
-                        target.anchoredPosition = x.$clone();
-                    }, new pc.Vec2( 0, jumpPower ), duration / (Bridge.Int.mul(numJumps, 2))), DG.Tweening.AxisConstraint.Y, snapping), DG.Tweening.Ease.OutQuad)), Bridge.Int.mul(numJumps, 2), DG.Tweening.LoopType.Yoyo), function () {
-                        startPosY = target.anchoredPosition.y;
-                    });
-                    DG.Tweening.TweenSettingsExtensions.SetEase$2(DG.Tweening.Sequence, DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Sequence, DG.Tweening.TweenSettingsExtensions.Join(DG.Tweening.TweenSettingsExtensions.Append(s, DG.Tweening.TweenSettingsExtensions.SetEase$2(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetOptions$8(DG.Tweening.DOTween.To$11(function () {
-                        return target.anchoredPosition;
-                    }, function (x) {
-                        target.anchoredPosition = x.$clone();
-                    }, new pc.Vec2( endValue.x, 0 ), duration), DG.Tweening.AxisConstraint.X, snapping), DG.Tweening.Ease.Linear)), yTween), target), DG.Tweening.DOTween.defaultEaseType);
-                    DG.Tweening.TweenSettingsExtensions.OnUpdate(DG.Tweening.Sequence, s, function () {
-                        if (!offsetYSet) {
-                            offsetYSet = true;
-                            offsetY = s.isRelative ? endValue.y : endValue.y - startPosY;
-                        }
-                        var pos = target.anchoredPosition.$clone();
-                        pos.y += DG.Tweening.DOVirtual.EasedValue(0, offsetY, DG.Tweening.TweenExtensions.ElapsedDirectionalPercentage(s), DG.Tweening.Ease.OutQuad);
-                        target.anchoredPosition = pos.$clone();
-                    });
-                    return s;
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOJumpAnchorPos:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DONormalizedPos:static start.*/
-                /**
-                 * Tweens a ScrollRect's horizontal/verticalNormalizedPosition to the given value.
-                 Also stores the ScrollRect as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.UI.ScrollRect}    target      
-                 * @param   {UnityEngine.Vector2}          endValue    The end value to reach
-                 * @param   {number}                       duration    The duration of the tween
-                 * @param   {boolean}                      snapping    If TRUE the tween will smoothly snap all values to integers
-                 * @return  {DG.Tweening.Tweener}
-                 */
-                DONormalizedPos: function (target, endValue, duration, snapping) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DONormalizedPos", this ); }
-
-                    if (snapping === void 0) { snapping = false; }
-                    return DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetOptions$9(DG.Tweening.DOTween.To$11(function () {
-                        return new pc.Vec2( target.horizontalNormalizedPosition, target.verticalNormalizedPosition );
-                    }, function (x) {
-                        target.horizontalNormalizedPosition = x.x;
-                        target.verticalNormalizedPosition = x.y;
-                    }, endValue.$clone(), duration), snapping), target);
-                },
-                /*DG.Tweening.DOTweenModuleUI.DONormalizedPos:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOHorizontalNormalizedPos:static start.*/
-                /**
-                 * Tweens a ScrollRect's horizontalNormalizedPosition to the given value.
-                 Also stores the ScrollRect as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.UI.ScrollRect}    target      
-                 * @param   {number}                       endValue    The end value to reach
-                 * @param   {number}                       duration    The duration of the tween
-                 * @param   {boolean}                      snapping    If TRUE the tween will smoothly snap all values to integers
-                 * @return  {DG.Tweening.Tweener}
-                 */
-                DOHorizontalNormalizedPos: function (target, endValue, duration, snapping) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOHorizontalNormalizedPos", this ); }
-
-                    if (snapping === void 0) { snapping = false; }
-                    return DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetOptions$2(DG.Tweening.DOTween.To$4(function () {
-                        return target.horizontalNormalizedPosition;
-                    }, function (x) {
-                        target.horizontalNormalizedPosition = x;
-                    }, endValue, duration), snapping), target);
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOHorizontalNormalizedPos:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOVerticalNormalizedPos:static start.*/
-                /**
-                 * Tweens a ScrollRect's verticalNormalizedPosition to the given value.
-                 Also stores the ScrollRect as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.UI.ScrollRect}    target      
-                 * @param   {number}                       endValue    The end value to reach
-                 * @param   {number}                       duration    The duration of the tween
-                 * @param   {boolean}                      snapping    If TRUE the tween will smoothly snap all values to integers
-                 * @return  {DG.Tweening.Tweener}
-                 */
-                DOVerticalNormalizedPos: function (target, endValue, duration, snapping) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOVerticalNormalizedPos", this ); }
-
-                    if (snapping === void 0) { snapping = false; }
-                    return DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetOptions$2(DG.Tweening.DOTween.To$4(function () {
-                        return target.verticalNormalizedPosition;
-                    }, function (x) {
-                        target.verticalNormalizedPosition = x;
-                    }, endValue, duration), snapping), target);
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOVerticalNormalizedPos:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOValue:static start.*/
-                /**
-                 * Tweens a Slider's value to the given value.
-                 Also stores the Slider as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.UI.Slider}             target      
-                 * @param   {number}                            endValue    The end value to reach
-                 * @param   {number}                            duration    The duration of the tween
-                 * @param   {boolean}                           snapping    If TRUE the tween will smoothly snap all values to integers
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOValue: function (target, endValue, duration, snapping) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOValue", this ); }
-
-                    if (snapping === void 0) { snapping = false; }
-                    var t = DG.Tweening.DOTween.To$4(function () {
-                        return target.value;
-                    }, function (x) {
-                        target.value = x;
-                    }, endValue, duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetOptions$2(t, snapping), target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOValue:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOCounter:static start.*/
-                /**
-                 * Tweens a Text's text from one integer to another, with options for thousands separators
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.UI.Text}                 target                   
-                 * @param   {number}                              fromValue                The value to start from
-                 * @param   {number}                              endValue                 The end value to reach
-                 * @param   {number}                              duration                 The duration of the tween
-                 * @param   {boolean}                             addThousandsSeparator    If TRUE (default) also adds thousands separators
-                 * @param   {System.Globalization.CultureInfo}    culture                  The {@link } to use (InvariantCulture if NULL)
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOCounter: function (target, fromValue, endValue, duration, addThousandsSeparator, culture) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOCounter", this ); }
-
-                    if (addThousandsSeparator === void 0) { addThousandsSeparator = true; }
-                    if (culture === void 0) { culture = null; }
-                    var v = fromValue;
-                    var cInfo = !addThousandsSeparator ? null : culture || System.Globalization.CultureInfo.invariantCulture;
-                    var t = DG.Tweening.DOTween.To$2(function () {
-                        return v;
-                    }, function (x) {
-                        v = x;
-                        target.text = addThousandsSeparator ? System.Int32.format(v, "N0", cInfo) : Bridge.toString(v);
-                    }, endValue, duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Core.TweenerCore$3(System.Int32,System.Int32,DG.Tweening.Plugins.Options.NoOptions), t, target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOCounter:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOText:static start.*/
-                /**
-                 * Tweens a Text's text to the given value.
-                 Also stores the Text as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.UI.Text}               target             
-                 * @param   {string}                            endValue           The end string to tween to
-                 * @param   {number}                            duration           The duration of the tween
-                 * @param   {boolean}                           richTextEnabled    If TRUE (default), rich text will be interpreted correctly while animated,
-                 otherwise all tags will be considered as normal text
-                 * @param   {DG.Tweening.ScrambleMode}          scrambleMode       The type of scramble mode to use, if any
-                 * @param   {string}                            scrambleChars      A string containing the characters to use for scrambling.
-                 Use as many characters as possible (minimum 10) because DOTween uses a fast scramble mode which gives better results with more characters.
-                 Leave it to NULL (default) to use default ones
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOText: function (target, endValue, duration, richTextEnabled, scrambleMode, scrambleChars) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOText", this ); }
-
-                    if (richTextEnabled === void 0) { richTextEnabled = true; }
-                    if (scrambleMode === void 0) { scrambleMode = 0; }
-                    if (scrambleChars === void 0) { scrambleChars = null; }
-                    if (endValue == null) {
-                        if (DG.Tweening.Core.Debugger.logPriority > 0) {
-                            DG.Tweening.Core.Debugger.LogWarning("You can't pass a NULL string to DOText: an empty string will be used instead to avoid errors");
-                        }
-                        endValue = "";
-                    }
-                    var t = DG.Tweening.DOTween.To$5(function () {
-                        return target.text;
-                    }, function (x) {
-                        target.text = x;
-                    }, endValue, duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetOptions$3(t, richTextEnabled, scrambleMode, scrambleChars), target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOText:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOBlendableColor:static start.*/
-                /**
-                 * Tweens a Graphic's color to the given value,
-                 in a way that allows other DOBlendableColor tweens to work together on the same target,
-                 instead than fight each other as multiple DOColor would do.
-                 Also stores the Graphic as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.UI.Graphic}    target      
-                 * @param   {UnityEngine.Color}         endValue    The value to tween to
-                 * @param   {number}                    duration    The duration of the tween
-                 * @return  {DG.Tweening.Tweener}
-                 */
-                DOBlendableColor: function (target, endValue, duration) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOBlendableColor", this ); }
-
-                    var $t;
-                    endValue = ($t = target.color, new pc.Color( endValue.r - $t.r, endValue.g - $t.g, endValue.b - $t.b, endValue.a - $t.a ));
-                    var to = new pc.Color( 0, 0, 0, 0 );
-                    return DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Core.TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions), DG.Tweening.Core.Extensions.Blendable(UnityEngine.Color, UnityEngine.Color, DG.Tweening.Plugins.Options.ColorOptions, DG.Tweening.DOTween.To$8(function () {
-                        return to;
-                    }, function (x) {
-                        var $t1;
-                        var diff = new pc.Color( x.r - to.r, x.g - to.g, x.b - to.b, x.a - to.a );
-                        to = x.$clone();
-                        target.color = ($t1 = target.color.$clone(), new pc.Color( $t1.r + diff.$clone().r, $t1.g + diff.$clone().g, $t1.b + diff.$clone().b, $t1.a + diff.$clone().a ));
-                    }, endValue.$clone(), duration)), target);
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOBlendableColor:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOBlendableColor$1:static start.*/
-                /**
-                 * Tweens a Image's color to the given value,
-                 in a way that allows other DOBlendableColor tweens to work together on the same target,
-                 instead than fight each other as multiple DOColor would do.
-                 Also stores the Image as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.UI.Image}    target      
-                 * @param   {UnityEngine.Color}       endValue    The value to tween to
-                 * @param   {number}                  duration    The duration of the tween
-                 * @return  {DG.Tweening.Tweener}
-                 */
-                DOBlendableColor$1: function (target, endValue, duration) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOBlendableColor$1", this ); }
-
-                    var $t;
-                    endValue = ($t = target.color, new pc.Color( endValue.r - $t.r, endValue.g - $t.g, endValue.b - $t.b, endValue.a - $t.a ));
-                    var to = new pc.Color( 0, 0, 0, 0 );
-                    return DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Core.TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions), DG.Tweening.Core.Extensions.Blendable(UnityEngine.Color, UnityEngine.Color, DG.Tweening.Plugins.Options.ColorOptions, DG.Tweening.DOTween.To$8(function () {
-                        return to;
-                    }, function (x) {
-                        var $t1;
-                        var diff = new pc.Color( x.r - to.r, x.g - to.g, x.b - to.b, x.a - to.a );
-                        to = x.$clone();
-                        target.color = ($t1 = target.color.$clone(), new pc.Color( $t1.r + diff.$clone().r, $t1.g + diff.$clone().g, $t1.b + diff.$clone().b, $t1.a + diff.$clone().a ));
-                    }, endValue.$clone(), duration)), target);
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOBlendableColor$1:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOBlendableColor$2:static start.*/
-                /**
-                 * Tweens a Text's color BY the given value,
-                 in a way that allows other DOBlendableColor tweens to work together on the same target,
-                 instead than fight each other as multiple DOColor would do.
-                 Also stores the Text as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.UI.Text}    target      
-                 * @param   {UnityEngine.Color}      endValue    The value to tween to
-                 * @param   {number}                 duration    The duration of the tween
-                 * @return  {DG.Tweening.Tweener}
-                 */
-                DOBlendableColor$2: function (target, endValue, duration) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOBlendableColor$2", this ); }
-
-                    var $t;
-                    endValue = ($t = target.color, new pc.Color( endValue.r - $t.r, endValue.g - $t.g, endValue.b - $t.b, endValue.a - $t.a ));
-                    var to = new pc.Color( 0, 0, 0, 0 );
-                    return DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Core.TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions), DG.Tweening.Core.Extensions.Blendable(UnityEngine.Color, UnityEngine.Color, DG.Tweening.Plugins.Options.ColorOptions, DG.Tweening.DOTween.To$8(function () {
-                        return to;
-                    }, function (x) {
-                        var $t1;
-                        var diff = new pc.Color( x.r - to.r, x.g - to.g, x.b - to.b, x.a - to.a );
-                        to = x.$clone();
-                        target.color = ($t1 = target.color.$clone(), new pc.Color( $t1.r + diff.$clone().r, $t1.g + diff.$clone().g, $t1.b + diff.$clone().b, $t1.a + diff.$clone().a ));
-                    }, endValue.$clone(), duration)), target);
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOBlendableColor$2:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUI.DOShapeCircle:static start.*/
-                /**
-                 * Tweens a RectTransform's anchoredPosition so that it draws a circle around the given center.
-                 Also stores the RectTransform as the tween's target so it can be used for filtered operations.<p />
-                 IMPORTANT: SetFrom(value) requires a {@link } instead of a float, where the X property represents the "from degrees value"
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI
-                 * @memberof DG.Tweening.DOTweenModuleUI
-                 * @param   {UnityEngine.RectTransform}         target             
-                 * @param   {UnityEngine.Vector2}               center             Circle-center/pivot around which to rotate (in UI anchoredPosition coordinates)
-                 * @param   {number}                            endValueDegrees    The end value degrees to reach (to rotate counter-clockwise pass a negative value)
-                 * @param   {number}                            duration           The duration of the tween
-                 * @param   {boolean}                           relativeCenter     If TRUE the {@link } coordinates will be considered as relative to the target's current anchoredPosition
-                 * @param   {boolean}                           snapping           If TRUE the tween will smoothly snap all values to integers
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOShapeCircle: function (target, center, endValueDegrees, duration, relativeCenter, snapping) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI#DOShapeCircle", this ); }
-
-                    if (relativeCenter === void 0) { relativeCenter = false; }
-                    if (snapping === void 0) { snapping = false; }
-                    var t = DG.Tweening.DOTween.To(UnityEngine.Vector2, UnityEngine.Vector2, DG.Tweening.Plugins.CircleOptions, DG.Tweening.Plugins.CirclePlugin.Get(), function () {
-                        return target.anchoredPosition;
-                    }, function (x) {
-                        target.anchoredPosition = x.$clone();
-                    }, center.$clone(), duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Tweener, DG.Tweening.TweenSettingsExtensions.SetOptions$7(t, endValueDegrees, relativeCenter, snapping), target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUI.DOShapeCircle:static end.*/
-
-
-            }
-        }
-    });
-    /*DG.Tweening.DOTweenModuleUI end.*/
-
-    /*DG.Tweening.DOTweenModuleUI+Utils start.*/
-    Bridge.define("DG.Tweening.DOTweenModuleUI.Utils", {
-        $kind: 1002,
-        statics: {
-            methods: {
-                /*DG.Tweening.DOTweenModuleUI+Utils.SwitchToRectTransform:static start.*/
-                /**
-                 * Converts the anchoredPosition of the first RectTransform to the second RectTransform,
-                 taking into consideration offset, anchors and pivot, and returns the new anchoredPosition
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUI.Utils
-                 * @memberof DG.Tweening.DOTweenModuleUI.Utils
-                 * @param   {UnityEngine.RectTransform}    from    
-                 * @param   {UnityEngine.RectTransform}    to
-                 * @return  {UnityEngine.Vector2}
-                 */
-                SwitchToRectTransform: function (from, to) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUI.Utils#SwitchToRectTransform", this ); }
-
-                    var localPoint = { v : new UnityEngine.Vector2() };
-                    var fromPivotDerivedOffset = new pc.Vec2( from.rect.width * 0.5 + from.rect.xMin, from.rect.height * 0.5 + from.rect.yMin );
-                    var screenP = UnityEngine.RectTransformUtility.WorldToScreenPoint(null, from.position);
-                    screenP = screenP.$clone().add( fromPivotDerivedOffset.$clone() );
-                    UnityEngine.RectTransformUtility.ScreenPointToLocalPointInRectangle(to, screenP, null, localPoint);
-                    var pivotDerivedOffset = new pc.Vec2( to.rect.width * 0.5 + to.rect.xMin, to.rect.height * 0.5 + to.rect.yMin );
-                    return to.anchoredPosition.$clone().add( localPoint.v ).sub( pivotDerivedOffset );
-                },
-                /*DG.Tweening.DOTweenModuleUI+Utils.SwitchToRectTransform:static end.*/
-
-
-            }
-        }
-    });
-    /*DG.Tweening.DOTweenModuleUI+Utils end.*/
-
-    /*DG.Tweening.DOTweenModuleUnityVersion start.*/
-    /**
-     * Shortcuts/functions that are not strictly related to specific Modules
-     but are available only on some Unity versions
-     *
-     * @static
-     * @abstract
-     * @public
-     * @class DG.Tweening.DOTweenModuleUnityVersion
-     */
-    Bridge.define("DG.Tweening.DOTweenModuleUnityVersion", {
-        statics: {
-            methods: {
-                /*DG.Tweening.DOTweenModuleUnityVersion.DOGradientColor:static start.*/
-                /**
-                 * Tweens a Material's color using the given gradient
-                 (NOTE 1: only uses the colors of the gradient, not the alphas - NOTE 2: creates a Sequence, not a Tweener).
-                 Also stores the image as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUnityVersion
-                 * @memberof DG.Tweening.DOTweenModuleUnityVersion
-                 * @param   {UnityEngine.Material}    target      
-                 * @param   {pc.ColorGradient}        gradient    The gradient to use
-                 * @param   {number}                  duration    The duration of the tween
-                 * @return  {DG.Tweening.Sequence}
-                 */
-                DOGradientColor: function (target, gradient, duration) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor", this ); }
-
-                    var s = DG.Tweening.DOTween.Sequence();
-                    var colors = gradient.colorKeys;
-                    var len = colors.length;
-                    for (var i = 0; i < len; i = (i + 1) | 0) {
-                        var c = colors[i];
-                        if (i === 0 && c.time <= 0) {
-                            target.color = c.color.$clone();
-                            continue;
-                        }
-                        var colorDuration = i === ((len - 1) | 0) ? duration - DG.Tweening.TweenExtensions.Duration(s, false) : duration * (i === 0 ? c.time : c.time - colors[((i - 1) | 0)].time);
-                        DG.Tweening.TweenSettingsExtensions.Append(s, DG.Tweening.TweenSettingsExtensions.SetEase$2(DG.Tweening.Core.TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions), DG.Tweening.ShortcutExtensions.DOColor$3(target, c.color.$clone(), colorDuration), DG.Tweening.Ease.Linear));
-                    }
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Sequence, s, target);
-                    return s;
-                },
-                /*DG.Tweening.DOTweenModuleUnityVersion.DOGradientColor:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUnityVersion.DOGradientColor$1:static start.*/
-                /**
-                 * Tweens a Material's named color property using the given gradient
-                 (NOTE 1: only uses the colors of the gradient, not the alphas - NOTE 2: creates a Sequence, not a Tweener).
-                 Also stores the image as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUnityVersion
-                 * @memberof DG.Tweening.DOTweenModuleUnityVersion
-                 * @param   {UnityEngine.Material}    target      
-                 * @param   {pc.ColorGradient}        gradient    The gradient to use
-                 * @param   {string}                  property    The name of the material property to tween (like _Tint or _SpecColor)
-                 * @param   {number}                  duration    The duration of the tween
-                 * @return  {DG.Tweening.Sequence}
-                 */
-                DOGradientColor$1: function (target, gradient, property, duration) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor$1", this ); }
-
-                    var s = DG.Tweening.DOTween.Sequence();
-                    var colors = gradient.colorKeys;
-                    var len = colors.length;
-                    for (var i = 0; i < len; i = (i + 1) | 0) {
-                        var c = colors[i];
-                        if (i === 0 && c.time <= 0) {
-                            target.SetColor$1(property, c.color);
-                            continue;
-                        }
-                        var colorDuration = i === ((len - 1) | 0) ? duration - DG.Tweening.TweenExtensions.Duration(s, false) : duration * (i === 0 ? c.time : c.time - colors[((i - 1) | 0)].time);
-                        DG.Tweening.TweenSettingsExtensions.Append(s, DG.Tweening.TweenSettingsExtensions.SetEase$2(DG.Tweening.Core.TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions), DG.Tweening.ShortcutExtensions.DOColor$4(target, c.color.$clone(), property, colorDuration), DG.Tweening.Ease.Linear));
-                    }
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Sequence, s, target);
-                    return s;
-                },
-                /*DG.Tweening.DOTweenModuleUnityVersion.DOGradientColor$1:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUnityVersion.WaitForCompletion:static start.*/
-                /**
-                 * Returns a {@link } that waits until the tween is killed or complete.
-                 It can be used inside a coroutine as a yield.
-                 <p>Example usage:</p><pre><code>yield return myTween.WaitForCompletion(true);</code></pre>
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUnityVersion
-                 * @memberof DG.Tweening.DOTweenModuleUnityVersion
-                 * @param   {DG.Tweening.Tween}                     t                               
-                 * @param   {boolean}                               returnCustomYieldInstruction
-                 * @return  {UnityEngine.CustomYieldInstruction}
-                 */
-                WaitForCompletion: function (t, returnCustomYieldInstruction) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUnityVersion#WaitForCompletion", this ); }
-
-                    if (!t.active) {
-                        if (DG.Tweening.Core.Debugger.logPriority > 0) {
-                            DG.Tweening.Core.Debugger.LogInvalidTween(t);
-                        }
-                        return null;
-                    }
-                    return new DG.Tweening.DOTweenCYInstruction.WaitForCompletion(t);
-                },
-                /*DG.Tweening.DOTweenModuleUnityVersion.WaitForCompletion:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUnityVersion.WaitForRewind:static start.*/
-                /**
-                 * Returns a {@link } that waits until the tween is killed or rewinded.
-                 It can be used inside a coroutine as a yield.
-                 <p>Example usage:</p><pre><code>yield return myTween.WaitForRewind();</code></pre>
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUnityVersion
-                 * @memberof DG.Tweening.DOTweenModuleUnityVersion
-                 * @param   {DG.Tweening.Tween}                     t                               
-                 * @param   {boolean}                               returnCustomYieldInstruction
-                 * @return  {UnityEngine.CustomYieldInstruction}
-                 */
-                WaitForRewind: function (t, returnCustomYieldInstruction) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUnityVersion#WaitForRewind", this ); }
-
-                    if (!t.active) {
-                        if (DG.Tweening.Core.Debugger.logPriority > 0) {
-                            DG.Tweening.Core.Debugger.LogInvalidTween(t);
-                        }
-                        return null;
-                    }
-                    return new DG.Tweening.DOTweenCYInstruction.WaitForRewind(t);
-                },
-                /*DG.Tweening.DOTweenModuleUnityVersion.WaitForRewind:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUnityVersion.WaitForKill:static start.*/
-                /**
-                 * Returns a {@link } that waits until the tween is killed.
-                 It can be used inside a coroutine as a yield.
-                 <p>Example usage:</p><pre><code>yield return myTween.WaitForKill();</code></pre>
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUnityVersion
-                 * @memberof DG.Tweening.DOTweenModuleUnityVersion
-                 * @param   {DG.Tweening.Tween}                     t                               
-                 * @param   {boolean}                               returnCustomYieldInstruction
-                 * @return  {UnityEngine.CustomYieldInstruction}
-                 */
-                WaitForKill: function (t, returnCustomYieldInstruction) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUnityVersion#WaitForKill", this ); }
-
-                    if (!t.active) {
-                        if (DG.Tweening.Core.Debugger.logPriority > 0) {
-                            DG.Tweening.Core.Debugger.LogInvalidTween(t);
-                        }
-                        return null;
-                    }
-                    return new DG.Tweening.DOTweenCYInstruction.WaitForKill(t);
-                },
-                /*DG.Tweening.DOTweenModuleUnityVersion.WaitForKill:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUnityVersion.WaitForElapsedLoops:static start.*/
-                /**
-                 * Returns a {@link } that waits until the tween is killed or has gone through the given amount of loops.
-                 It can be used inside a coroutine as a yield.
-                 <p>Example usage:</p><pre><code>yield return myTween.WaitForElapsedLoops(2);</code></pre>
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUnityVersion
-                 * @memberof DG.Tweening.DOTweenModuleUnityVersion
-                 * @param   {DG.Tweening.Tween}                     t                               
-                 * @param   {number}                                elapsedLoops                    Elapsed loops to wait for
-                 * @param   {boolean}                               returnCustomYieldInstruction
-                 * @return  {UnityEngine.CustomYieldInstruction}
-                 */
-                WaitForElapsedLoops: function (t, elapsedLoops, returnCustomYieldInstruction) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUnityVersion#WaitForElapsedLoops", this ); }
-
-                    if (!t.active) {
-                        if (DG.Tweening.Core.Debugger.logPriority > 0) {
-                            DG.Tweening.Core.Debugger.LogInvalidTween(t);
-                        }
-                        return null;
-                    }
-                    return new DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops(t, elapsedLoops);
-                },
-                /*DG.Tweening.DOTweenModuleUnityVersion.WaitForElapsedLoops:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUnityVersion.WaitForPosition:static start.*/
-                /**
-                 * Returns a {@link } that waits until the tween is killed
-                 or has reached the given time position (loops included, delays excluded).
-                 It can be used inside a coroutine as a yield.
-                 <p>Example usage:</p><pre><code>yield return myTween.WaitForPosition(2.5f);</code></pre>
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUnityVersion
-                 * @memberof DG.Tweening.DOTweenModuleUnityVersion
-                 * @param   {DG.Tweening.Tween}                     t                               
-                 * @param   {number}                                position                        Position (loops included, delays excluded) to wait for
-                 * @param   {boolean}                               returnCustomYieldInstruction
-                 * @return  {UnityEngine.CustomYieldInstruction}
-                 */
-                WaitForPosition: function (t, position, returnCustomYieldInstruction) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUnityVersion#WaitForPosition", this ); }
-
-                    if (!t.active) {
-                        if (DG.Tweening.Core.Debugger.logPriority > 0) {
-                            DG.Tweening.Core.Debugger.LogInvalidTween(t);
-                        }
-                        return null;
-                    }
-                    return new DG.Tweening.DOTweenCYInstruction.WaitForPosition(t, position);
-                },
-                /*DG.Tweening.DOTweenModuleUnityVersion.WaitForPosition:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUnityVersion.WaitForStart:static start.*/
-                /**
-                 * Returns a {@link } that waits until the tween is killed or started
-                 (meaning when the tween is set in a playing state the first time, after any eventual delay).
-                 It can be used inside a coroutine as a yield.
-                 <p>Example usage:</p><pre><code>yield return myTween.WaitForStart();</code></pre>
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUnityVersion
-                 * @memberof DG.Tweening.DOTweenModuleUnityVersion
-                 * @param   {DG.Tweening.Tween}                     t                               
-                 * @param   {boolean}                               returnCustomYieldInstruction
-                 * @return  {UnityEngine.CustomYieldInstruction}
-                 */
-                WaitForStart: function (t, returnCustomYieldInstruction) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUnityVersion#WaitForStart", this ); }
-
-                    if (!t.active) {
-                        if (DG.Tweening.Core.Debugger.logPriority > 0) {
-                            DG.Tweening.Core.Debugger.LogInvalidTween(t);
-                        }
-                        return null;
-                    }
-                    return new DG.Tweening.DOTweenCYInstruction.WaitForStart(t);
-                },
-                /*DG.Tweening.DOTweenModuleUnityVersion.WaitForStart:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUnityVersion.DOOffset:static start.*/
-                /**
-                 * Tweens a Material's named texture offset property with the given ID to the given value.
-                 Also stores the material as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUnityVersion
-                 * @memberof DG.Tweening.DOTweenModuleUnityVersion
-                 * @param   {UnityEngine.Material}              target        
-                 * @param   {UnityEngine.Vector2}               endValue      The end value to reach
-                 * @param   {number}                            propertyID    The ID of the material property to tween (also called nameID in Unity's manual)
-                 * @param   {number}                            duration      The duration of the tween
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOOffset: function (target, endValue, propertyID, duration) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUnityVersion#DOOffset", this ); }
-
-                    if (!target.HasProperty(propertyID)) {
-                        if (DG.Tweening.Core.Debugger.logPriority > 0) {
-                            DG.Tweening.Core.Debugger.LogMissingMaterialProperty(propertyID);
-                        }
-                        return null;
-                    }
-                    var t = DG.Tweening.DOTween.To$11(function () {
-                        return target.GetTextureOffset(propertyID);
-                    }, function (x) {
-                        target.SetTextureOffset(propertyID, x);
-                    }, endValue.$clone(), duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions), t, target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUnityVersion.DOOffset:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUnityVersion.DOTiling:static start.*/
-                /**
-                 * Tweens a Material's named texture scale property with the given ID to the given value.
-                 Also stores the material as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUnityVersion
-                 * @memberof DG.Tweening.DOTweenModuleUnityVersion
-                 * @param   {UnityEngine.Material}              target        
-                 * @param   {UnityEngine.Vector2}               endValue      The end value to reach
-                 * @param   {number}                            propertyID    The ID of the material property to tween (also called nameID in Unity's manual)
-                 * @param   {number}                            duration      The duration of the tween
-                 * @return  {DG.Tweening.Core.TweenerCore$3}
-                 */
-                DOTiling: function (target, endValue, propertyID, duration) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUnityVersion#DOTiling", this ); }
-
-                    if (!target.HasProperty(propertyID)) {
-                        if (DG.Tweening.Core.Debugger.logPriority > 0) {
-                            DG.Tweening.Core.Debugger.LogMissingMaterialProperty(propertyID);
-                        }
-                        return null;
-                    }
-                    var t = DG.Tweening.DOTween.To$11(function () {
-                        return target.GetTextureScale(propertyID);
-                    }, function (x) {
-                        target.SetTextureScale(propertyID, x);
-                    }, endValue.$clone(), duration);
-                    DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions), t, target);
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUnityVersion.DOTiling:static end.*/
-
-
-            }
-        }
-    });
-    /*DG.Tweening.DOTweenModuleUnityVersion end.*/
-
-    /*DG.Tweening.DOTweenModuleUtils start.*/
-    /**
-     * Utility functions that deal with available Modules.
-     Modules defines:
-     - DOTAUDIO
-     - DOTPHYSICS
-     - DOTPHYSICS2D
-     - DOTSPRITE
-     - DOTUI
-     Extra defines set and used for implementation of external assets:
-     - DOTWEEN_TMP ► TextMesh Pro
-     - DOTWEEN_TK2D ► 2D Toolkit
-     *
-     * @static
-     * @abstract
-     * @public
-     * @class DG.Tweening.DOTweenModuleUtils
-     */
-    Bridge.define("DG.Tweening.DOTweenModuleUtils", {
-        statics: {
-            fields: {
-                _initialized: false
-            },
-            methods: {
-                /*DG.Tweening.DOTweenModuleUtils.Init:static start.*/
-                /**
-                 * Called via Reflection by DOTweenComponent on Awake
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenModuleUtils
-                 * @memberof DG.Tweening.DOTweenModuleUtils
-                 * @return  {void}
-                 */
-                Init: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUtils#Init", this ); }
-
-                    if (DG.Tweening.DOTweenModuleUtils._initialized) {
-                        return;
-                    }
-
-                    DG.Tweening.DOTweenModuleUtils._initialized = true;
-                    DG.Tweening.Core.DOTweenExternalCommand.addSetOrientationOnPath(DG.Tweening.DOTweenModuleUtils.Physics.SetOrientationOnPath);
-
-                },
-                /*DG.Tweening.DOTweenModuleUtils.Init:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUtils.Preserver:static start.*/
-                Preserver: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUtils#Preserver", this ); }
-
-                    var loadedAssemblies = System.AppDomain.getAssemblies();
-                    var mi = Bridge.Reflection.getMembers(UnityEngine.MonoBehaviour, 8, 284, "Stub");
-                },
-                /*DG.Tweening.DOTweenModuleUtils.Preserver:static end.*/
-
-
-            }
-        }
-    });
-    /*DG.Tweening.DOTweenModuleUtils end.*/
-
-    /*DG.Tweening.DOTweenModuleUtils+Physics start.*/
-    Bridge.define("DG.Tweening.DOTweenModuleUtils.Physics", {
-        $kind: 1002,
-        statics: {
-            methods: {
-                /*DG.Tweening.DOTweenModuleUtils+Physics.SetOrientationOnPath:static start.*/
-                SetOrientationOnPath: function (options, t, newRot, trans) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUtils.Physics#SetOrientationOnPath", this ); }
-
-                    trans.rotation = newRot.$clone();
-                },
-                /*DG.Tweening.DOTweenModuleUtils+Physics.SetOrientationOnPath:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUtils+Physics.HasRigidbody2D:static start.*/
-                HasRigidbody2D: function (target) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody2D", this ); }
-
-                    return UnityEngine.Component.op_Inequality(target.GetComponent(UnityEngine.Rigidbody2D), null);
-                },
-                /*DG.Tweening.DOTweenModuleUtils+Physics.HasRigidbody2D:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUtils+Physics.HasRigidbody:static start.*/
-                HasRigidbody: function (target) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody", this ); }
-
-                    return false;
-                },
-                /*DG.Tweening.DOTweenModuleUtils+Physics.HasRigidbody:static end.*/
-
-                /*DG.Tweening.DOTweenModuleUtils+Physics.CreateDOTweenPathTween:static start.*/
-                CreateDOTweenPathTween: function (target, tweenRigidbody, isLocal, path, duration, pathMode) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUtils.Physics#CreateDOTweenPathTween", this ); }
-
-                    var t = null;
-                    var rBodyFoundAndTweened = false;
-                    if (!rBodyFoundAndTweened && tweenRigidbody) {
-                        var rBody2D = target.GetComponent(UnityEngine.Rigidbody2D);
-                        if (UnityEngine.Component.op_Inequality(rBody2D, null)) {
-                            rBodyFoundAndTweened = true;
-                            t = isLocal ? DG.Tweening.DOTweenModulePhysics2D.DOLocalPath$1(rBody2D, path, duration, pathMode) : DG.Tweening.DOTweenModulePhysics2D.DOPath$1(rBody2D, path, duration, pathMode);
-                        }
-                    }
-                    if (!rBodyFoundAndTweened) {
-                        t = isLocal ? DG.Tweening.ShortcutExtensions.DOLocalPath(target.transform, path, duration, pathMode) : DG.Tweening.ShortcutExtensions.DOPath(target.transform, path, duration, pathMode);
-                    }
-                    return t;
-                },
-                /*DG.Tweening.DOTweenModuleUtils+Physics.CreateDOTweenPathTween:static end.*/
-
-
-            }
-        }
-    });
-    /*DG.Tweening.DOTweenModuleUtils+Physics end.*/
-
-    /*DG.Tweening.DOTweenProShortcuts start.*/
-    Bridge.define("DG.Tweening.DOTweenProShortcuts", {
-        statics: {
-            ctors: {
-                ctor: function () {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenProShortcuts#ctor", this ); }
-
-                    // Create stub instances of custom plugins, in order to allow IL2CPP to understand they must be included in the build
-                    var stub = new DG.Tweening.Plugins.SpiralPlugin();
-                }
-            },
-            methods: {
-                /*DG.Tweening.DOTweenProShortcuts.DOSpiral:static start.*/
-                /**
-                 * Tweens a Transform's localPosition in a spiral shape.
-                 Also stores the transform as the tween's target so it can be used for filtered operations
-                 *
-                 * @static
-                 * @public
-                 * @this DG.Tweening.DOTweenProShortcuts
-                 * @memberof DG.Tweening.DOTweenProShortcuts
-                 * @param   {UnityEngine.Transform}     target       
-                 * @param   {number}                    duration     The duration of the tween
-                 * @param   {?UnityEngine.Vector3}      axis         The axis around which the spiral will rotate
-                 * @param   {DG.Tweening.SpiralMode}    mode         The type of spiral movement
-                 * @param   {number}                    speed        Speed of the rotations
-                 * @param   {number}                    frequency    Frequency of the rotation. Lower values lead to wider spirals
-                 * @param   {number}                    depth        Indicates how much the tween should move along the spiral's axis
-                 * @param   {boolean}                   snapping     If TRUE the tween will smoothly snap all values to integers
-                 * @return  {DG.Tweening.Tweener}
-                 */
-                DOSpiral: function (target, duration, axis, mode, speed, frequency, depth, snapping) {
-if ( TRACE ) { TRACE( "DG.Tweening.DOTweenProShortcuts#DOSpiral", this ); }
-
-                    if (axis === void 0) { axis = null; }
-                    if (mode === void 0) { mode = 0; }
-                    if (speed === void 0) { speed = 1.0; }
-                    if (frequency === void 0) { frequency = 10.0; }
-                    if (depth === void 0) { depth = 0.0; }
-                    if (snapping === void 0) { snapping = false; }
-                    if (UnityEngine.Mathf.Approximately(speed, 0)) {
-                        speed = 1;
-                    }
-                    if (pc.Vec3.equals( axis, null ) || pc.Vec3.equals( axis, pc.Vec3.ZERO.clone() )) {
-                        axis = new pc.Vec3( 0, 0, 1 );
-                    }
-
-                    var t = DG.Tweening.TweenSettingsExtensions.SetTarget(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.SpiralOptions), DG.Tweening.DOTween.To(UnityEngine.Vector3, UnityEngine.Vector3, DG.Tweening.Plugins.SpiralOptions, DG.Tweening.Plugins.SpiralPlugin.Get(), function () {
-                        return target.localPosition;
-                    }, function (x) {
-                        target.localPosition = x.$clone();
-                    }, System.Nullable.getValue(axis), duration), target);
-
-                    t.plugOptions.mode = mode;
-                    t.plugOptions.speed = speed;
-                    t.plugOptions.frequency = frequency;
-                    t.plugOptions.depth = depth;
-                    t.plugOptions.snapping = snapping;
-                    return t;
-                },
-                /*DG.Tweening.DOTweenProShortcuts.DOSpiral:static end.*/
-
-
-            }
-        }
-    });
-    /*DG.Tweening.DOTweenProShortcuts end.*/
-
-    /*GameController start.*/
-    Bridge.define("GameController", {
+    /*HeroSkins start.*/
+    Bridge.define("HeroSkins", {
         inherits: [UnityEngine.MonoBehaviour],
         statics: {
-            fields: {
-                Ins: null
+            methods: {
+                /*HeroSkins.SpriteSize:static start.*/
+                SpriteSize: function (sp) {
+if ( TRACE ) { TRACE( "HeroSkins#SpriteSize", this ); }
+
+                    return new pc.Vec2( sp.rect.width / sp.pixelsPerUnit, sp.rect.height / sp.pixelsPerUnit );
+                },
+                /*HeroSkins.SpriteSize:static end.*/
+
+
             }
         },
         fields: {
-            stage1LeftCharacter: null,
-            stage1RightCharacter: null,
-            stage2LeftCharacter: null,
-            stage2RightCharacter: null,
-            stage3LeftCharacter: null,
-            stage3MidCharacter: null,
-            stage3RightCharacter: null,
-            players1: null,
-            players2: null,
-            monsters: null,
-            monsters1: null,
-            monsters2: null,
-            mainCamera: null,
-            cameraPos: null,
-            speedMove: 0,
-            target: null,
-            index: 0,
-            end: false,
-            endUI: null
+            skins: null,
+            headPixel: 0,
+            limbPixel: null,
+            bodySize: null,
+            neckLocal: null
+        },
+        ctors: {
+            init: function () {
+if ( TRACE ) { TRACE( "HeroSkins#init", this ); }
+
+                this.limbPixel = new UnityEngine.Vector2();
+                this.bodySize = new UnityEngine.Vector2();
+                this.neckLocal = new UnityEngine.Vector2();
+                this.headPixel = 0.0105;
+                this.limbPixel = new pc.Vec2( 0.0144, 0.01125 );
+                this.bodySize = new pc.Vec2( 0.43, 0.86 );
+                this.neckLocal = new pc.Vec2( 0, -0.375 );
+            }
         },
         methods: {
-            /*GameController.CreateIns start.*/
-            CreateIns: function () {
-if ( TRACE ) { TRACE( "GameController#CreateIns", this ); }
+            /*HeroSkins.Apply start.*/
+            Apply: function (actor, id) {
+if ( TRACE ) { TRACE( "HeroSkins#Apply", this ); }
 
-                if (UnityEngine.Object.op_Implicit(GameController.Ins) && UnityEngine.MonoBehaviour.op_Inequality(GameController.Ins, this)) {
-                    UnityEngine.MonoBehaviour.Destroy(this.gameObject);
+                if (this.skins == null || id < 0 || id >= this.skins.length || actor.renderers == null || actor.renderers.length < 6) {
                     return;
                 }
-                GameController.Ins = this;
-                UnityEngine.Object.DontDestroyOnLoad(this.gameObject);
+                var s = this.skins[id];
+                this.SetBody(actor.renderers[0], s.body);
+                this.SetHead(actor.renderers[1], s.head, s.headPivot);
+                this.SetLimb(actor.renderers[2], s.handLeft, s.handLeftPivot);
+                this.SetLimb(actor.renderers[3], s.footLeft, s.footLeftPivot);
+                this.SetLimb(actor.renderers[4], s.handRight, s.handRightPivot);
+                this.SetLimb(actor.renderers[5], s.footRight, s.footRightPivot);
             },
-            /*GameController.CreateIns end.*/
+            /*HeroSkins.Apply end.*/
 
-            /*GameController.Awake start.*/
-            Awake: function () {
-if ( TRACE ) { TRACE( "GameController#Awake", this ); }
+            /*HeroSkins.SetBody start.*/
+            SetBody: function (r, sp) {
+if ( TRACE ) { TRACE( "HeroSkins#SetBody", this ); }
 
-                this.CreateIns();
-            },
-            /*GameController.Awake end.*/
-
-            /*GameController.SetPlayer start.*/
-            SetPlayer: function (stage, index) {
-if ( TRACE ) { TRACE( "GameController#SetPlayer", this ); }
-
-                if (stage === 0) {
-                    this.target.AddTarget(this.players1.getItem(index));
-                }
-                if (stage === 1) {
-                    this.target.AddTarget(this.players2.getItem(index));
-                }
-            },
-            /*GameController.SetPlayer end.*/
-
-            /*GameController.SetMonster start.*/
-            SetMonster: function (stage, index) {
-if ( TRACE ) { TRACE( "GameController#SetMonster", this ); }
-
-                if (stage === 0) {
-                    this.monsters.add(this.monsters1.getItem(index));
-                }
-                if (stage === 1) {
-                    this.monsters.add(this.monsters2.getItem(index));
-                }
-            },
-            /*GameController.SetMonster end.*/
-
-            /*GameController.SetCharacter start.*/
-            SetCharacter: function (stage, pos, index) {
-if ( TRACE ) { TRACE( "GameController#SetCharacter", this ); }
-
-                if (stage === 0) {
-                    if (pos === 0) {
-                        this.stage1LeftCharacter.getItem(index).SetActive(true);
-                    }
-                    if (pos === 1) {
-                        this.stage1RightCharacter.getItem(index).SetActive(true);
-                    }
-                }
-                if (stage === 1) {
-                    if (pos === 0) {
-                        this.stage2LeftCharacter.getItem(index).SetActive(true);
-                    }
-                    if (pos === 1) {
-                        this.stage2RightCharacter.getItem(index).SetActive(true);
-                    }
-                }
-                if (stage === 2) {
-                    if (pos === 0) {
-                        this.stage3LeftCharacter.getItem(index).SetActive(true);
-                    }
-                    if (pos === 1) {
-                        this.stage3MidCharacter.getItem(index).SetActive(true);
-                    }
-                    if (pos === 2) {
-                        this.stage3RightCharacter.getItem(index).SetActive(true);
-                    }
-                }
-            },
-            /*GameController.SetCharacter end.*/
-
-            /*GameController.KillMonster start.*/
-            KillMonster: function () {
-if ( TRACE ) { TRACE( "GameController#KillMonster", this ); }
-
-                if (this.end) {
+                if (sp == null) {
                     return;
                 }
-                this.monsters.getItem(this.index).Dead();
-                this.index = (this.index + 1) | 0;
-                this.StartCoroutine$1(this.ChangeLevel());
+                r.sprite = sp;
+                var b = HeroSkins.SpriteSize(sp);
+                r.transform.localScale = new pc.Vec3( this.bodySize.x / b.x, this.bodySize.y / b.y, 1 );
+                r.transform.localPosition = pc.Vec3.ZERO.clone();
             },
-            /*GameController.KillMonster end.*/
+            /*HeroSkins.SetBody end.*/
 
-            /*GameController.ChangeLevel start.*/
-            ChangeLevel: function () {
-if ( TRACE ) { TRACE( "GameController#ChangeLevel", this ); }
+            /*HeroSkins.SetHead start.*/
+            SetHead: function (r, sp, pivot) {
+if ( TRACE ) { TRACE( "HeroSkins#SetHead", this ); }
 
-                var $step = 0,
-                    $jumpFromFinally,
-                    $returnValue,
-                    isMove,
-                    $async_e;
-
-                var $enumerator = new Bridge.GeneratorEnumerator(Bridge.fn.bind(this, function () {
-                    try {
-                        for (;;) {
-                            switch ($step) {
-                                case 0: {
-                                    $enumerator.current = new UnityEngine.WaitUntil(Bridge.fn.bind(this, function () {
-                                            return this.target.IsEmpty();
-                                        }));
-                                        $step = 1;
-                                        return true;
-                                }
-                                case 1: {
-                                    isMove = true;
-                                    $step = 2;
-                                    continue;
-                                }
-                                case 2: {
-                                    if ( isMove && !this.end ) {
-                                            $step = 3;
-                                            continue;
-                                        } 
-                                        $step = 5;
-                                        continue;
-                                }
-                                case 3: {
-                                    this.mainCamera.transform.position = pc.Vec3.moveTowards( this.mainCamera.position, this.cameraPos.getItem(this.index), this.speedMove * UnityEngine.Time.deltaTime );
-                                        if (pc.Vec3.equals( this.mainCamera.transform.position, this.cameraPos.getItem(this.index) )) {
-                                            isMove = false;
-                                        }
-                                        $enumerator.current = null;
-                                        $step = 4;
-                                        return true;
-                                }
-                                case 4: {
-                                    
-                                        $step = 2;
-                                        continue;
-                                }
-                                case 5: {
-                                    this.target.NextTarget();
-                                        if (this.index >= this.monsters.Count) {
-                                            this.end = true;
-                                            this.endUI.SetActive(true);
-                                        }
-
-                                }
-                                default: {
-                                    return false;
-                                }
-                            }
-                        }
-                    } catch($async_e1) {
-                        $async_e = System.Exception.create($async_e1);
-                        throw $async_e;
-                    }
-                }));
-                return $enumerator;
+                if (sp == null) {
+                    return;
+                }
+                r.sprite = sp;
+                var w = sp.rect.width, h = sp.rect.height, ppu = sp.pixelsPerUnit;
+                r.transform.localScale = new pc.Vec3( this.headPixel * ppu, this.headPixel * ppu, 1 );
+                var dx = (pivot.x * w - w * 0.5) * this.headPixel;
+                var dy = (h * 0.5 - pivot.y * h) * this.headPixel;
+                r.transform.localPosition = new pc.Vec3( this.neckLocal.x - dx, this.neckLocal.y - dy, 0 );
             },
-            /*GameController.ChangeLevel end.*/
+            /*HeroSkins.SetHead end.*/
+
+            /*HeroSkins.SetLimb start.*/
+            SetLimb: function (r, sp, pivot) {
+if ( TRACE ) { TRACE( "HeroSkins#SetLimb", this ); }
+
+                if (sp == null) {
+                    return;
+                }
+                r.sprite = sp;
+                var w = sp.rect.width, h = sp.rect.height, ppu = sp.pixelsPerUnit;
+                r.transform.localScale = new pc.Vec3( this.limbPixel.x * ppu, this.limbPixel.y * ppu, 1 );
+                var attachY = (25.9840012) * this.limbPixel.y; // vị trí vai/hông của tay chân chuẩn 16x64
+                var dx = (pivot.x * w - w * 0.5) * this.limbPixel.x;
+                var dy = (h * 0.5 - pivot.y * h) * this.limbPixel.y;
+                r.transform.localPosition = new pc.Vec3( -dx, attachY - dy, 0 );
+            },
+            /*HeroSkins.SetLimb end.*/
 
 
         }
     });
-    /*GameController end.*/
+    /*HeroSkins end.*/
 
     /*IAmAnEmptyScriptJustToMakeCodelessProjectsCompileProperty start.*/
     Bridge.define("IAmAnEmptyScriptJustToMakeCodelessProjectsCompileProperty", {
@@ -4094,530 +159,1667 @@ if ( TRACE ) { TRACE( "GameController#ChangeLevel", this ); }
     Bridge.define("LunaController", {
         inherits: [UnityEngine.MonoBehaviour],
         fields: {
-            BGTexture: null,
-            UseTime: false,
-            TimePlay: 0,
-            TitleText: null,
-            ColorTitleText: null,
-            BGImage: null,
-            title: null,
-            CTA: null,
-            endCard: null,
-            Stage1Left: 0,
-            Stage1Right: 0,
-            Stage2Left: 0,
-            Stage2Right: 0,
-            Stage3Left: 0,
-            Stage3Mid: 0,
-            Stage3Right: 0,
-            Button1: 0,
-            Button2: 0,
-            Button3: 0,
-            buttonSprite: null,
-            button1Image: null,
-            button2Image: null,
-            button3Image: null,
-            UseMap2: false,
-            map2: null
+            version: 0,
+            backgroundMusic: null,
+            musicEnabled: false,
+            musicVolume: 0,
+            heroShot1: 0,
+            heroShot2: 0,
+            heroShot3: 0,
+            heroShot4: 0,
+            flow: null
         },
         ctors: {
             init: function () {
 if ( TRACE ) { TRACE( "LunaController#init", this ); }
 
-                this.ColorTitleText = new UnityEngine.Color();
+                this.version = LunaController.PlayableVersion.Ver1_3Taps;
+                this.musicEnabled = true;
+                this.musicVolume = 0.45;
+                this.heroShot1 = LunaController.Hero.Player416;
+                this.heroShot2 = LunaController.Hero.Rumi;
+                this.heroShot3 = LunaController.Hero.RedHair;
+                this.heroShot4 = LunaController.Hero.BlueHair;
             }
         },
         methods: {
-            /*LunaController.Start start.*/
-            Start: function () {
-if ( TRACE ) { TRACE( "LunaController#Start", this ); }
+            /*LunaController.Awake start.*/
+            Awake: function () {
+if ( TRACE ) { TRACE( "LunaController#Awake", this ); }
 
-                this.BGImage.texture = this.BGTexture;
-                this.title.text = this.TitleText;
-                this.title.color = this.ColorTitleText.$clone();
-                this.CTA.ForEach(Bridge.fn.bind(this, function (b) {
-                    b.onClick.AddListener(Bridge.fn.cacheBind(this, this.ClickCTA));
-                }));
-                this.SetupCharacter();
-                this.SetupButton();
-                this.SetupMap();
-                this.StartCoroutine$1(this.EndGame());
-            },
-            /*LunaController.Start end.*/
-
-            /*LunaController.SetupCharacter start.*/
-            SetupCharacter: function () {
-if ( TRACE ) { TRACE( "LunaController#SetupCharacter", this ); }
-
-                // Stage 1
-                GameController.Ins.SetCharacter(0, 0, this.RoundNumber(this.Stage1Left));
-                GameController.Ins.SetCharacter(0, 1, this.RoundNumber(this.Stage1Right));
-                GameController.Ins.SetPlayer(0, this.RoundNumber(this.Stage1Right));
-                GameController.Ins.SetMonster(0, this.RoundNumber(this.Stage1Left));
-
-                // Stage2
-                GameController.Ins.SetCharacter(1, 0, this.RoundNumber(this.Stage2Left));
-                GameController.Ins.SetCharacter(1, 1, this.RoundNumber(this.Stage2Right));
-                GameController.Ins.SetPlayer(1, this.RoundNumber(this.Stage2Right));
-                GameController.Ins.SetMonster(1, this.RoundNumber(this.Stage2Left));
-
-                // Stage 3
-                GameController.Ins.SetCharacter(2, 0, this.RoundNumber(this.Stage3Left));
-                GameController.Ins.SetCharacter(2, 1, this.RoundNumber(this.Stage3Mid));
-                GameController.Ins.SetCharacter(2, 2, this.RoundNumber(this.Stage3Right));
-            },
-            /*LunaController.SetupCharacter end.*/
-
-            /*LunaController.SetupButton start.*/
-            SetupButton: function () {
-if ( TRACE ) { TRACE( "LunaController#SetupButton", this ); }
-
-                this.button1Image.sprite = this.buttonSprite.getItem(this.RoundNumber(this.Button1));
-                this.button2Image.sprite = this.buttonSprite.getItem(this.RoundNumber(this.Button2));
-                this.button3Image.sprite = this.buttonSprite.getItem(this.RoundNumber(this.Button3));
-            },
-            /*LunaController.SetupButton end.*/
-
-            /*LunaController.SetupMap start.*/
-            SetupMap: function () {
-if ( TRACE ) { TRACE( "LunaController#SetupMap", this ); }
-
-                if (this.UseMap2) {
-                    this.map2.SetActive(true);
+                if (UnityEngine.MonoBehaviour.op_Equality(this.flow, null)) {
+                    this.flow = UnityEngine.Object.FindObjectOfType(PlayableFlowController);
                 }
+                if (UnityEngine.MonoBehaviour.op_Equality(this.flow, null)) {
+                    return;
+                }
+                this.flow.playableVersion = this.version;
+                if (this.backgroundMusic != null) {
+                    this.flow.bgm = this.backgroundMusic;
+                }
+                if (!this.musicEnabled) {
+                    this.flow.bgm = null;
+                }
+                this.flow.musicVolume = this.musicVolume;
+                this.flow.heroOrder = System.Array.init([this.heroShot1, this.heroShot2, this.heroShot3, this.heroShot4], System.Int32);
             },
-            /*LunaController.SetupMap end.*/
-
-            /*LunaController.RoundNumber start.*/
-            RoundNumber: function (number) {
-if ( TRACE ) { TRACE( "LunaController#RoundNumber", this ); }
-
-                return Math.max(0, Math.min(number, 9));
-            },
-            /*LunaController.RoundNumber end.*/
-
-            /*LunaController.ClickCTA start.*/
-            ClickCTA: function () {
-if ( TRACE ) { TRACE( "LunaController#ClickCTA", this ); }
-
-                Luna.Unity.Playable.InstallFullGame();
-            },
-            /*LunaController.ClickCTA end.*/
-
-            /*LunaController.EndGame start.*/
-            EndGame: function () {
-if ( TRACE ) { TRACE( "LunaController#EndGame", this ); }
-
-                var $step = 0,
-                    $jumpFromFinally,
-                    $returnValue,
-                    $async_e;
-
-                var $enumerator = new Bridge.GeneratorEnumerator(Bridge.fn.bind(this, function () {
-                    try {
-                        for (;;) {
-                            switch ($step) {
-                                case 0: {
-                                    $enumerator.current = new UnityEngine.WaitForSeconds(this.TimePlay);
-                                        $step = 1;
-                                        return true;
-                                }
-                                case 1: {
-                                    Luna.Unity.LifeCycle.GameEnded();
-                                        if (this.UseTime) {
-                                            this.endCard.SetActive(true);
-                                        }
-
-                                }
-                                default: {
-                                    return false;
-                                }
-                            }
-                        }
-                    } catch($async_e1) {
-                        $async_e = System.Exception.create($async_e1);
-                        throw $async_e;
-                    }
-                }));
-                return $enumerator;
-            },
-            /*LunaController.EndGame end.*/
+            /*LunaController.Awake end.*/
 
 
         }
     });
     /*LunaController end.*/
 
-    /*MonsterController start.*/
-    Bridge.define("MonsterController", {
+    /*LunaController+Hero start.*/
+    Bridge.define("LunaController.Hero", {
+        $kind: 1006,
+        statics: {
+            fields: {
+                Player416: 0,
+                Rumi: 1,
+                RedHair: 2,
+                BlueHair: 3,
+                BlackHair: 4,
+                TOP: 5
+            }
+        }
+    });
+    /*LunaController+Hero end.*/
+
+    /*LunaController+PlayableVersion start.*/
+    Bridge.define("LunaController.PlayableVersion", {
+        $kind: 1006,
+        statics: {
+            fields: {
+                Ver1_3Taps: 1,
+                Ver2_StoreAtTap2: 2
+            }
+        }
+    });
+    /*LunaController+PlayableVersion end.*/
+
+    /*LunaControllerFNAF start.*/
+    Bridge.define("LunaControllerFNAF", {
         inherits: [UnityEngine.MonoBehaviour],
         fields: {
-            joint: null,
-            rb: null,
-            deadSFX: null,
-            force: null
+            version: 0,
+            backgroundMusic: null,
+            musicEnabled: false,
+            musicVolume: 0,
+            heroShot1: 0,
+            heroShot2: 0,
+            heroShot3: 0,
+            heroShot4: 0,
+            flow: null
         },
         ctors: {
             init: function () {
-if ( TRACE ) { TRACE( "MonsterController#init", this ); }
+if ( TRACE ) { TRACE( "LunaControllerFNAF#init", this ); }
 
-                this.force = new UnityEngine.Vector2();
-                this.force = new pc.Vec2( 1000, 1000 );
+                this.version = LunaControllerFNAF.PlayableVersion.Ver1_3Taps;
+                this.musicEnabled = true;
+                this.musicVolume = 0.45;
+                this.heroShot1 = LunaControllerFNAF.Hero.Freddy;
+                this.heroShot2 = LunaControllerFNAF.Hero.Bonnie;
+                this.heroShot3 = LunaControllerFNAF.Hero.Foxy;
+                this.heroShot4 = LunaControllerFNAF.Hero.Chica;
             }
         },
         methods: {
-            /*MonsterController.Dead start.*/
-            Dead: function () {
-if ( TRACE ) { TRACE( "MonsterController#Dead", this ); }
+            /*LunaControllerFNAF.Awake start.*/
+            Awake: function () {
+if ( TRACE ) { TRACE( "LunaControllerFNAF#Awake", this ); }
 
-                AudioController.Ins.PlaySFX(this.deadSFX);
-                this.joint.enabled = false;
-                this.rb.AddForce(this.force);
+                if (UnityEngine.MonoBehaviour.op_Equality(this.flow, null)) {
+                    this.flow = UnityEngine.Object.FindObjectOfType(PlayableFlowController);
+                }
+                if (UnityEngine.MonoBehaviour.op_Equality(this.flow, null)) {
+                    return;
+                }
+                this.flow.playableVersion = this.version;
+                if (this.backgroundMusic != null) {
+                    this.flow.bgm = this.backgroundMusic;
+                }
+                if (!this.musicEnabled) {
+                    this.flow.bgm = null;
+                }
+                this.flow.musicVolume = this.musicVolume;
+                this.flow.heroOrder = System.Array.init([this.heroShot1, this.heroShot2, this.heroShot3, this.heroShot4], System.Int32);
             },
-            /*MonsterController.Dead end.*/
+            /*LunaControllerFNAF.Awake end.*/
 
 
         }
     });
-    /*MonsterController end.*/
+    /*LunaControllerFNAF end.*/
 
-    /*TargetController start.*/
-    Bridge.define("TargetController", {
-        inherits: [UnityEngine.MonoBehaviour],
-        fields: {
-            listTarget: null,
-            currentTarget: null,
-            index: 0,
-            tut: null
-        },
-        methods: {
-            /*TargetController.AddTarget start.*/
-            AddTarget: function (target) {
-if ( TRACE ) { TRACE( "TargetController#AddTarget", this ); }
-
-                this.listTarget.add(target);
-                this.currentTarget = this.listTarget.getItem(this.index);
-            },
-            /*TargetController.AddTarget end.*/
-
-            /*TargetController.Update start.*/
-            Update: function () {
-if ( TRACE ) { TRACE( "TargetController#Update", this ); }
-
-                this.CheckInput();
-            },
-            /*TargetController.Update end.*/
-
-            /*TargetController.CheckInput start.*/
-            CheckInput: function () {
-if ( TRACE ) { TRACE( "TargetController#CheckInput", this ); }
-
-                if (UnityEngine.Input.GetMouseButton(0)) {
-                    if (UnityEngine.Object.op_Implicit(this.tut)) {
-                        UnityEngine.MonoBehaviour.Destroy(this.tut);
-                    }
-                    var point = UnityEngine.Vector2.FromVector3(UnityEngine.Camera.main.ScreenToWorldPoint(UnityEngine.Input.mousePosition));
-                    this.SetTargetPoint(point);
-                }
-                if (UnityEngine.Input.GetMouseButtonUp(0)) {
-                    this.RemoveTargetPoint();
-                }
-            },
-            /*TargetController.CheckInput end.*/
-
-            /*TargetController.SetTargetPoint start.*/
-            SetTargetPoint: function (point) {
-if ( TRACE ) { TRACE( "TargetController#SetTargetPoint", this ); }
-
-                if (!UnityEngine.Object.op_Implicit(this.currentTarget)) {
-                    return;
-                }
-                this.currentTarget.target = point.$clone();
-                this.currentTarget.enabled = true;
-            },
-            /*TargetController.SetTargetPoint end.*/
-
-            /*TargetController.RemoveTargetPoint start.*/
-            RemoveTargetPoint: function () {
-if ( TRACE ) { TRACE( "TargetController#RemoveTargetPoint", this ); }
-
-                if (!UnityEngine.Object.op_Implicit(this.currentTarget)) {
-                    return;
-                }
-                this.currentTarget.enabled = false;
-            },
-            /*TargetController.RemoveTargetPoint end.*/
-
-            /*TargetController.RemoveTarget start.*/
-            RemoveTarget: function () {
-if ( TRACE ) { TRACE( "TargetController#RemoveTarget", this ); }
-
-                if (UnityEngine.Object.op_Implicit(this.currentTarget)) {
-                    this.RemoveTargetPoint();
-                }
-                this.currentTarget = null;
-            },
-            /*TargetController.RemoveTarget end.*/
-
-            /*TargetController.NextTarget start.*/
-            NextTarget: function () {
-if ( TRACE ) { TRACE( "TargetController#NextTarget", this ); }
-
-                if (this.index >= this.listTarget.Count) {
-                    return;
-                }
-                this.currentTarget.gameObject.SetActive(false);
-                this.index = (this.index + 1) | 0;
-                this.currentTarget = this.index < this.listTarget.Count ? this.listTarget.getItem(this.index) : null;
-            },
-            /*TargetController.NextTarget end.*/
-
-            /*TargetController.IsEmpty start.*/
-            IsEmpty: function () {
-if ( TRACE ) { TRACE( "TargetController#IsEmpty", this ); }
-
-                return !this.currentTarget.enabled;
-            },
-            /*TargetController.IsEmpty end.*/
-
-
-        }
-    });
-    /*TargetController end.*/
-
-    /*VFXController start.*/
-    Bridge.define("VFXController", {
-        inherits: [UnityEngine.MonoBehaviour],
+    /*LunaControllerFNAF+Hero start.*/
+    Bridge.define("LunaControllerFNAF.Hero", {
+        $kind: 1006,
         statics: {
             fields: {
-                Ins: null
+                Freddy: 0,
+                Bonnie: 1,
+                Foxy: 2,
+                Mangle: 3,
+                Chica: 4
+            }
+        }
+    });
+    /*LunaControllerFNAF+Hero end.*/
+
+    /*LunaControllerFNAF+PlayableVersion start.*/
+    Bridge.define("LunaControllerFNAF.PlayableVersion", {
+        $kind: 1006,
+        statics: {
+            fields: {
+                Ver1_3Taps: 1,
+                Ver2_StoreAtTap2: 2
+            }
+        }
+    });
+    /*LunaControllerFNAF+PlayableVersion end.*/
+
+    /*PlayableCameraController start.*/
+    Bridge.define("PlayableCameraController", {
+        inherits: [UnityEngine.MonoBehaviour],
+        fields: {
+            view: null,
+            followTarget: null,
+            slingPosition: null,
+            mapPosition: null,
+            slingFrame: null,
+            mapFrame: null,
+            uiVerticalReserve: 0,
+            panDuration: 0,
+            aimRoomMin: null,
+            aimRoomMax: null,
+            aimFocusMargin: null,
+            aimFocus: null,
+            aimPosition: null,
+            aimFrame: null,
+            aimZoomOutTime: 0,
+            aimZoomInTime: 0,
+            aiming: false,
+            aimBlend: 0,
+            start: null,
+            destination: null,
+            elapsed: 0,
+            panning: false,
+            onAfterMove: null
+        },
+        props: {
+            IsPanning: {
+                get: function () {
+if ( TRACE ) { TRACE( "PlayableCameraController#IsPanning#get", this ); }
+
+                    return this.panning;
+                }
+            },
+            IsAiming: {
+                get: function () {
+if ( TRACE ) { TRACE( "PlayableCameraController#IsAiming#get", this ); }
+
+                    return this.aiming;
+                }
             }
         },
-        fields: {
-            bloodPrefab: null,
-            bloodPool: null,
-            pool: null
+        ctors: {
+            init: function () {
+if ( TRACE ) { TRACE( "PlayableCameraController#init", this ); }
+
+                this.slingPosition = new UnityEngine.Vector3();
+                this.mapPosition = new UnityEngine.Vector3();
+                this.slingFrame = new UnityEngine.Vector2();
+                this.mapFrame = new UnityEngine.Vector2();
+                this.aimRoomMin = new UnityEngine.Vector2();
+                this.aimRoomMax = new UnityEngine.Vector2();
+                this.aimFocusMargin = new UnityEngine.Vector2();
+                this.aimFocus = new UnityEngine.Vector2();
+                this.aimPosition = new UnityEngine.Vector3();
+                this.aimFrame = new UnityEngine.Vector2();
+                this.start = new UnityEngine.Vector3();
+                this.destination = new UnityEngine.Vector3();
+                this.slingPosition = new pc.Vec3( -4.2, 3.6, -10 );
+                this.mapPosition = new pc.Vec3( 12.6, 4.9, -10 );
+                this.slingFrame = new pc.Vec2( 11.5, 8.2 );
+                this.mapFrame = new pc.Vec2( 17.2, 11.2 );
+                this.uiVerticalReserve = 0.28;
+                this.panDuration = 1.2;
+                this.aimRoomMin = new pc.Vec2( 4.4, -0.6 );
+                this.aimRoomMax = new pc.Vec2( 20.9, 10.6 );
+                this.aimFocusMargin = new pc.Vec2( 1.3, 1.9 );
+                this.aimFocus = new pc.Vec2( -7, 3.1 );
+                this.aimPosition = new pc.Vec3( 6.3, 5.0, -10 );
+                this.aimFrame = new pc.Vec2( 30.0, 12.0 );
+                this.aimZoomOutTime = 0.45;
+                this.aimZoomInTime = 0.6;
+            }
         },
         methods: {
-            /*VFXController.CreateIns start.*/
-            CreateIns: function () {
-if ( TRACE ) { TRACE( "VFXController#CreateIns", this ); }
+            /*PlayableCameraController.SetAim start.*/
+            SetAim: function (on) {
+if ( TRACE ) { TRACE( "PlayableCameraController#SetAim", this ); }
 
-                if (UnityEngine.Object.op_Implicit(VFXController.Ins) && UnityEngine.MonoBehaviour.op_Inequality(VFXController.Ins, this)) {
-                    UnityEngine.MonoBehaviour.Destroy(this.gameObject);
+                this.aiming = on;
+                if (on) {
+                    this.panning = false;
+                }
+            },
+            /*PlayableCameraController.SetAim end.*/
+
+            /*PlayableCameraController.AimMin start.*/
+            AimMin: function () {
+if ( TRACE ) { TRACE( "PlayableCameraController#AimMin", this ); }
+
+                var $t;
+                return ($t = this.aimFocus.$clone().sub( this.aimFocusMargin ), new pc.Vec2( Math.min( this.aimRoomMin.x, $t.x ), Math.min( this.aimRoomMin.y, $t.y ) ));
+            },
+            /*PlayableCameraController.AimMin end.*/
+
+            /*PlayableCameraController.AimMax start.*/
+            AimMax: function () {
+if ( TRACE ) { TRACE( "PlayableCameraController#AimMax", this ); }
+
+                var $t;
+                return ($t = this.aimFocus.$clone().add( this.aimFocusMargin ), new pc.Vec2( Math.max( this.aimRoomMax.x, $t.x ), Math.max( this.aimRoomMax.y, $t.y ) ));
+            },
+            /*PlayableCameraController.AimMax end.*/
+
+            /*PlayableCameraController.AimCenter start.*/
+            AimCenter: function () {
+if ( TRACE ) { TRACE( "PlayableCameraController#AimCenter", this ); }
+
+                return (this.AimMin().add( this.AimMax() )).scale( 0.5 );
+            },
+            /*PlayableCameraController.AimCenter end.*/
+
+            /*PlayableCameraController.AimFrame start.*/
+            AimFrame: function () {
+if ( TRACE ) { TRACE( "PlayableCameraController#AimFrame", this ); }
+
+                return this.AimMax().sub( this.AimMin() );
+            },
+            /*PlayableCameraController.AimFrame end.*/
+
+            /*PlayableCameraController.FitView start.*/
+            FitView: function () {
+if ( TRACE ) { TRACE( "PlayableCameraController#FitView", this ); }
+
+                if (UnityEngine.Component.op_Equality(this.view, null)) {
                     return;
                 }
-                VFXController.Ins = this;
-                UnityEngine.Object.DontDestroyOnLoad(this.gameObject);
+                var aspect = this.view.targetTexture != null ? this.view.targetTexture.width / this.view.targetTexture.height : this.view.aspect;
+                aspect = UnityEngine.Mathf.Max(0.3, aspect);
+                var t = Math.max(0, Math.min(1, pc.math.inverseLerp(this.slingPosition.x, this.mapPosition.x, this.transform.position.x)));
+                var frame = new pc.Vec2().lerp( this.slingFrame, this.mapFrame, t );
+                var a = this.aimBlend * this.aimBlend * (3 - 2 * this.aimBlend);
+                frame = new pc.Vec2().lerp( frame, this.AimFrame(), a );
+                var byHeight = frame.y * 0.5 / (1 - this.uiVerticalReserve);
+                var byWidth = frame.x * 0.5 / aspect;
+                this.view.orthographicSize = UnityEngine.Mathf.Max(byHeight, byWidth);
             },
-            /*VFXController.CreateIns end.*/
+            /*PlayableCameraController.FitView end.*/
 
-            /*VFXController.Awake start.*/
-            Awake: function () {
-if ( TRACE ) { TRACE( "VFXController#Awake", this ); }
+            /*PlayableCameraController.OnPreCull start.*/
+            OnPreCull: function () {
+if ( TRACE ) { TRACE( "PlayableCameraController#OnPreCull", this ); }
 
-                this.CreateIns();
-                this.BootstrapPool();
+                this.FitView();
             },
-            /*VFXController.Awake end.*/
+            /*PlayableCameraController.OnPreCull end.*/
 
-            /*VFXController.BootstrapPool start.*/
-            BootstrapPool: function () {
-if ( TRACE ) { TRACE( "VFXController#BootstrapPool", this ); }
+            /*PlayableCameraController.PanTo start.*/
+            PanTo: function (target) {
+if ( TRACE ) { TRACE( "PlayableCameraController#PanTo", this ); }
 
-                this.bloodPool = new (System.Collections.Generic.Queue$1(UnityEngine.GameObject)).ctor();
-                this.bloodPool.Enqueue(this.CreateNewVFX());
-                this.bloodPool.Enqueue(this.CreateNewVFX());
-                this.bloodPool.Enqueue(this.CreateNewVFX());
-                this.bloodPool.Enqueue(this.CreateNewVFX());
-                this.bloodPool.Enqueue(this.CreateNewVFX());
+                this.followTarget = null;
+                this.start = this.transform.position.$clone();
+                this.destination = target.$clone();
+                this.elapsed = 0;
+                this.panning = true;
             },
-            /*VFXController.BootstrapPool end.*/
+            /*PlayableCameraController.PanTo end.*/
 
-            /*VFXController.CreateNewVFX start.*/
-            CreateNewVFX: function () {
-if ( TRACE ) { TRACE( "VFXController#CreateNewVFX", this ); }
+            /*PlayableCameraController.LateUpdate start.*/
+            LateUpdate: function () {
+if ( TRACE ) { TRACE( "PlayableCameraController#LateUpdate", this ); }
 
-                var vfx = UnityEngine.Object.Instantiate(UnityEngine.GameObject, this.bloodPrefab);
-                vfx.transform.SetParent(this.pool);
-                return vfx;
-            },
-            /*VFXController.CreateNewVFX end.*/
-
-            /*VFXController.GetFreeVFX start.*/
-            GetFreeVFX: function () {
-if ( TRACE ) { TRACE( "VFXController#GetFreeVFX", this ); }
-
-                if (this.bloodPool.Count > 0) {
-                    return this.bloodPool.Dequeue();
+                if (!UnityEngine.Application.isPlaying) {
+                    this.FitView();
+                    return;
                 }
-                return this.CreateNewVFX();
+                var dt = UnityEngine.Time.deltaTime;
+                this.aimBlend = UnityEngine.Mathf.MoveTowards(this.aimBlend, this.aiming ? 1 : 0, dt / UnityEngine.Mathf.Max(0.01, this.aiming ? this.aimZoomOutTime : this.aimZoomInTime));
+                if (this.aiming) {
+                    var c = this.AimCenter();
+                    this.transform.position = new pc.Vec3().lerp( this.transform.position, new pc.Vec3( c.x, c.y, -10 ), 1 - UnityEngine.Mathf.Exp(-7 * dt) );
+                } else if (this.panning) {
+                    this.elapsed += dt;
+                    var t = Math.max(0, Math.min(1, this.elapsed / this.panDuration));
+                    this.transform.position = new pc.Vec3().lerp( this.start, this.destination, t * t * (3 - 2 * t) );
+                    if (t >= 1) {
+                        this.panning = false;
+                    }
+                } else if (UnityEngine.Component.op_Inequality(this.followTarget, null)) {
+                    var p = this.followTarget.position.$clone();
+                    p.x = Math.max(this.slingPosition.x, Math.min(p.x + 2, this.mapPosition.x + 3));
+                    p.y = Math.max(this.slingPosition.y, Math.min(p.y + 1.2, this.mapPosition.y + 2));
+                    p.z = -10;
+                    this.transform.position = new pc.Vec3().lerp( this.transform.position, p, 1 - UnityEngine.Mathf.Exp(-6 * dt) );
+                }
+                this.FitView();
+                if (!Bridge.staticEquals(this.onAfterMove, null)) {
+                    this.onAfterMove();
+                }
             },
-            /*VFXController.GetFreeVFX end.*/
+            /*PlayableCameraController.LateUpdate end.*/
 
-            /*VFXController.SpawnVFX start.*/
-            SpawnVFX: function (position) {
-if ( TRACE ) { TRACE( "VFXController#SpawnVFX", this ); }
 
-                var vfx = this.GetFreeVFX();
-                vfx.transform.position = UnityEngine.Vector3.FromVector2(position.$clone());
-                vfx.SetActive(true);
-                this.StartCoroutine$1(this.ReturnToPool(vfx));
+        }
+    });
+    /*PlayableCameraController end.*/
+
+    /*PlayableFlowController start.*/
+    Bridge.define("PlayableFlowController", {
+        inherits: [UnityEngine.MonoBehaviour],
+        fields: {
+            playableVersion: 0,
+            tapCount: 0,
+            phase: 0,
+            actors: null,
+            cameraRig: null,
+            leftBand: null,
+            rightBand: null,
+            trajectoryDots: null,
+            handGuide: null,
+            handAlpha: null,
+            prompt: null,
+            actorLabel: null,
+            versionLabel: null,
+            audioSource: null,
+            launchSound: null,
+            impactSound: null,
+            musicSource: null,
+            bgm: null,
+            grabSound: null,
+            spawnSound: null,
+            knockSound: null,
+            ctaSound: null,
+            impactSounds: null,
+            flySound: null,
+            flyVolume: 0,
+            spawnVolume: 0,
+            musicVolume: 0,
+            lastImpactSound: 0,
+            anchor: null,
+            leftBandTip: null,
+            rightBandTip: null,
+            grabRadius: 0,
+            maxPull: 0,
+            launchScale: 0,
+            introHold: 0,
+            resultHold: 0,
+            maxFlightTime: 0,
+            storeOpened: false,
+            installCallCount: 0,
+            heroSkins: null,
+            heroOrder: null,
+            shotIndex: 0,
+            introText: null,
+            selectRoot: null,
+            selectButtons: null,
+            selectFrames: null,
+            selectPortraits: null,
+            selectNames: null,
+            frameNormal: null,
+            frameHighlight: null,
+            handTargetButton: 0,
+            endCardRoot: null,
+            endCardPortrait: null,
+            endCardTitle: null,
+            ctaButton: null,
+            current: null,
+            view: null,
+            uiCamera: null,
+            timer: 0,
+            flightTime: 0,
+            settledTime: 0,
+            handTimer: 0,
+            hitTime: 0,
+            hitReturnTime: 0,
+            minHitTime: 0,
+            started: false,
+            gameEnded: false,
+            pointerId: 0,
+            pull: null,
+            selectIds: null,
+            dotBaseScale: null,
+            grabScreen: null,
+            grabOffset: null,
+            grabUnitsPerPixel: 0,
+            dotSizeStart: 0,
+            dotSizeEnd: 0,
+            trajectoryTime: 0,
+            ignoreNearPull: 0
+        },
+        props: {
+            ShotCount: {
+                get: function () {
+if ( TRACE ) { TRACE( "PlayableFlowController#ShotCount#get", this ); }
+
+                    return this.playableVersion === 2 ? 2 : 4;
+                }
             },
-            /*VFXController.SpawnVFX end.*/
+            CanGrab: {
+                get: function () {
+if ( TRACE ) { TRACE( "PlayableFlowController#CanGrab#get", this ); }
 
-            /*VFXController.ReturnToPool start.*/
-            ReturnToPool: function (blood) {
-if ( TRACE ) { TRACE( "VFXController#ReturnToPool", this ); }
+                    return this.phase === PlayableFlowController.Phase.Ready || this.phase === PlayableFlowController.Phase.PanToSling || this.phase === PlayableFlowController.Phase.IntroMap;
+                }
+            }
+        },
+        ctors: {
+            init: function () {
+if ( TRACE ) { TRACE( "PlayableFlowController#init", this ); }
 
-                var $step = 0,
-                    $jumpFromFinally,
-                    $returnValue,
-                    $async_e;
+                this.anchor = new UnityEngine.Vector2();
+                this.leftBandTip = new UnityEngine.Vector3();
+                this.rightBandTip = new UnityEngine.Vector3();
+                this.pull = new UnityEngine.Vector2();
+                this.grabScreen = new UnityEngine.Vector2();
+                this.grabOffset = new UnityEngine.Vector2();
+                this.playableVersion = 1;
+                this.flyVolume = 0.8;
+                this.spawnVolume = 1.0;
+                this.musicVolume = 0.45;
+                this.anchor = new pc.Vec2( -7, 2.6 );
+                this.leftBandTip = new pc.Vec3( -7.8, 3.44, 0 );
+                this.rightBandTip = new pc.Vec3( -6.21, 3.44, 0 );
+                this.grabRadius = 1.8;
+                this.maxPull = 2.2;
+                this.launchScale = 8.2;
+                this.introHold = 1.25;
+                this.resultHold = 1.25;
+                this.maxFlightTime = 15;
+                this.heroOrder = System.Array.init([
+                    0, 
+                    1, 
+                    2, 
+                    3
+                ], System.Int32);
+                this.introText = "REACH THE GUARDS!";
+                this.handTargetButton = 1;
+                this.hitReturnTime = 2.5;
+                this.minHitTime = 2.0;
+                this.pointerId = -1;
+                this.selectIds = System.Array.init(3, 0, System.Int32);
+                this.dotSizeStart = 0.13;
+                this.dotSizeEnd = 0.05;
+                this.trajectoryTime = 3.2;
+                this.ignoreNearPull = 2.5;
+            }
+        },
+        methods: {
+            /*PlayableFlowController.Start start.*/
+            Start: function () {
+if ( TRACE ) { TRACE( "PlayableFlowController#Start", this ); }
 
-                var $enumerator = new Bridge.GeneratorEnumerator(Bridge.fn.bind(this, function () {
-                    try {
-                        for (;;) {
-                            switch ($step) {
-                                case 0: {
-                                    $enumerator.current = new UnityEngine.WaitForSeconds(4);
-                                        $step = 1;
-                                        return true;
-                                }
-                                case 1: {
-                                    blood.SetActive(false);
-                                        this.bloodPool.Enqueue(blood);
+                UnityEngine.Application.runInBackground = true;
+                this.view = this.cameraRig.view;
+                this.uiCamera = this.handGuide.GetComponentInParent(UnityEngine.Canvas).worldCamera;
+                this.dotBaseScale = System.Array.init(this.trajectoryDots.length, function (){
+                    return new UnityEngine.Vector3();
+                }, UnityEngine.Vector3);
+                for (var i = 0; i < this.trajectoryDots.length; i = (i + 1) | 0) {
+                    this.dotBaseScale[i] = this.trajectoryDots[i].localScale.$clone();
+                }
+                this.cameraRig.onAfterMove = Bridge.fn.cacheBind(this, this.UpdateHandReady);
+                this.playableVersion = Math.max(1, Math.min(this.playableVersion, 2));
+                this.tapCount = 0;
+                this.shotIndex = 0;
+                this.storeOpened = false;
+                this.installCallCount = 0;
+                for (var i1 = 0; i1 < this.actors.length; i1 = (i1 + 1) | 0) {
+                    this.actors[i1].gameObject.SetActive(false);
+                    this.actors[i1].Initialize();
+                }
+                if (UnityEngine.GameObject.op_Inequality(this.selectRoot, null)) {
+                    this.selectRoot.SetActive(false);
+                }
+                if (UnityEngine.GameObject.op_Inequality(this.endCardRoot, null)) {
+                    this.endCardRoot.SetActive(false);
+                }
+                this.LoadActor(0);
+                this.cameraRig.transform.position = this.cameraRig.mapPosition.$clone();
+                this.phase = PlayableFlowController.Phase.IntroMap;
+                this.timer = 0;
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.versionLabel, null)) {
+                    this.versionLabel.text = this.playableVersion === 1 ? "VER 1" : "VER 2";
+                }
+                this.prompt.text = this.introText;
+                this.SetDots(false);
+                this.StartMusic(); // BGM chạy ngay khi vào playable
+            },
+            /*PlayableFlowController.Start end.*/
 
-                                }
-                                default: {
-                                    return false;
+            /*PlayableFlowController.StartMusic start.*/
+            StartMusic: function () {
+if ( TRACE ) { TRACE( "PlayableFlowController#StartMusic", this ); }
+
+                if (UnityEngine.Component.op_Equality(this.musicSource, null) || this.bgm == null || this.musicSource.isPlaying) {
+                    return;
+                }
+                this.musicSource.clip = this.bgm;
+                this.musicSource.loop = true;
+                this.musicSource.volume = this.musicVolume;
+                this.musicSource.Play();
+            },
+            /*PlayableFlowController.StartMusic end.*/
+
+            /*PlayableFlowController.BeginInput start.*/
+            BeginInput: function () {
+if ( TRACE ) { TRACE( "PlayableFlowController#BeginInput", this ); }
+
+                if (this.started) {
+                    return;
+                }
+                this.started = true;
+                this.StartMusic();
+                Luna.Unity.LifeCycle.GameStarted();
+            },
+            /*PlayableFlowController.BeginInput end.*/
+
+            /*PlayableFlowController.HeroId start.*/
+            HeroId: function (shot) {
+if ( TRACE ) { TRACE( "PlayableFlowController#HeroId", this ); }
+
+                return this.heroOrder != null && shot < this.heroOrder.length ? this.heroOrder[shot] : shot;
+            },
+            /*PlayableFlowController.HeroId end.*/
+
+            /*PlayableFlowController.HeroName start.*/
+            HeroName: function (id) {
+if ( TRACE ) { TRACE( "PlayableFlowController#HeroName", this ); }
+
+                var $t;
+                return UnityEngine.MonoBehaviour.op_Inequality(this.heroSkins, null) && id >= 0 && id < this.heroSkins.skins.length ? ($t = this.heroSkins.skins)[id].label : "";
+            },
+            /*PlayableFlowController.HeroName end.*/
+
+            /*PlayableFlowController.LoadActor start.*/
+            LoadActor: function (index) {
+if ( TRACE ) { TRACE( "PlayableFlowController#LoadActor", this ); }
+
+                this.current = this.actors[UnityEngine.Mathf.Min(index, ((this.actors.length - 1) | 0))];
+                var id = this.HeroId(index);
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.heroSkins, null)) {
+                    this.heroSkins.Apply(this.current, id);
+                }
+                this.current.LoadAt(this.anchor);
+                this.pull = this.anchor.$clone();
+                this.actorLabel.text = this.HeroName(id);
+                this.UpdateBands(this.anchor);
+                this.handTimer = 0;
+            },
+            /*PlayableFlowController.LoadActor end.*/
+
+            /*PlayableFlowController.SpawnTap start.*/
+            SpawnTap: function () {
+if ( TRACE ) { TRACE( "PlayableFlowController#SpawnTap", this ); }
+
+                this.NextShot();
+            },
+            /*PlayableFlowController.SpawnTap end.*/
+
+            /*PlayableFlowController.NextShot start.*/
+            NextShot: function () {
+if ( TRACE ) { TRACE( "PlayableFlowController#NextShot", this ); }
+
+                this.shotIndex = (this.shotIndex + 1) | 0;
+                this.tapCount = this.shotIndex;
+                if (this.shotIndex >= this.ShotCount) {
+                    this.ShowHeroSelect();
+                    return;
+                }
+                this.LoadActor(this.shotIndex);
+                this.phase = PlayableFlowController.Phase.Ready;
+                this.timer = 0;
+                this.PlaySfx(this.spawnSound, this.spawnVolume);
+            },
+            /*PlayableFlowController.NextShot end.*/
+
+            /*PlayableFlowController.BeginDrag start.*/
+            BeginDrag: function (world) {
+if ( TRACE ) { TRACE( "PlayableFlowController#BeginDrag", this ); }
+
+                if (!this.CanGrab || (world.$clone().sub( this.anchor )).lengthSq() > this.grabRadius * this.grabRadius) {
+                    return false;
+                }
+                return this.StartDragging(world);
+            },
+            /*PlayableFlowController.BeginDrag end.*/
+
+            /*PlayableFlowController.StartDragging start.*/
+            StartDragging: function (world) {
+if ( TRACE ) { TRACE( "PlayableFlowController#StartDragging", this ); }
+
+                this.BeginInput();
+                this.phase = PlayableFlowController.Phase.Dragging;
+                this.current.SetDragging(true);
+                this.current.SetCollidersEnabled(false); // để tia dò điểm rơi không đụng chính nhân vật
+                this.grabOffset = world.$clone().sub( this.anchor );
+                this.grabScreen = pc.Vec2.ZERO.clone();
+                this.grabUnitsPerPixel = 0;
+                this.Drag(world.$clone());
+                this.PlaySfx(this.grabSound, 0.6);
+                this.cameraRig.SetAim(true); // zoom ra để thấy phòng địch + điểm rơi
+                return true;
+            },
+            /*PlayableFlowController.StartDragging end.*/
+
+            /*PlayableFlowController.BeginDragScreen start.*/
+            BeginDragScreen: function (screen) {
+if ( TRACE ) { TRACE( "PlayableFlowController#BeginDragScreen", this ); }
+
+                if (!this.CanGrab) {
+                    return;
+                }
+                var world = this.World(screen);
+                // Vùng chạm: trong bán kính world HOẶC trong ~16% cạnh ngắn màn hình quanh nhân vật
+                // (khi camera zoom xa nhân vật rất nhỏ, chạm theo world dễ trượt).
+                var heroScreen = this.view.WorldToScreenPoint(new pc.Vec3( this.anchor.x, this.anchor.y, 0 ));
+                var screenRadius = UnityEngine.Mathf.Min(this.view.pixelWidth, this.view.pixelHeight) * 0.16;
+                var near = (world.$clone().sub( this.anchor )).lengthSq() <= this.grabRadius * this.grabRadius || (screen.$clone().sub( new pc.Vec2( heroScreen.x, heroScreen.y ) )).lengthSq() <= screenRadius * screenRadius;
+                if (!near || !this.StartDragging(world)) {
+                    return;
+                }
+                this.grabScreen = screen.$clone();
+                this.grabUnitsPerPixel = this.view.orthographicSize * 2.0 / UnityEngine.Mathf.Max(1, this.view.pixelHeight);
+            },
+            /*PlayableFlowController.BeginDragScreen end.*/
+
+            /*PlayableFlowController.DragScreen start.*/
+            DragScreen: function (screen) {
+if ( TRACE ) { TRACE( "PlayableFlowController#DragScreen", this ); }
+
+                if (this.phase !== PlayableFlowController.Phase.Dragging) {
+                    return;
+                }
+                if (this.grabUnitsPerPixel <= 0) {
+                    this.Drag(this.World(screen));
+                    return;
+                }
+                this.Drag(this.anchor.$clone().add( this.grabOffset ).add( (screen.$clone().sub( this.grabScreen )).scale( this.grabUnitsPerPixel ) ));
+            },
+            /*PlayableFlowController.DragScreen end.*/
+
+            /*PlayableFlowController.Drag start.*/
+            Drag: function (world) {
+if ( TRACE ) { TRACE( "PlayableFlowController#Drag", this ); }
+
+                if (this.phase !== PlayableFlowController.Phase.Dragging) {
+                    return;
+                }
+                var delta = pc.Vec2.lengthClamp( world.$clone().sub( this.anchor ), this.maxPull );
+                delta.x = UnityEngine.Mathf.Min(0.1, delta.x);
+                this.pull = this.anchor.$clone().add( delta );
+                this.current.transform.position = UnityEngine.Vector3.FromVector2(this.pull.$clone());
+                this.UpdateBands(this.pull);
+                this.cameraRig.aimFocus = this.pull.$clone();
+                this.UpdateTrajectory((this.anchor.$clone().sub( this.pull )).scale( this.launchScale ));
+            },
+            /*PlayableFlowController.Drag end.*/
+
+            /*PlayableFlowController.UpdateTrajectory start.*/
+            UpdateTrajectory: function (velocity) {
+if ( TRACE ) { TRACE( "PlayableFlowController#UpdateTrajectory", this ); }
+
+                var g = UnityEngine.Physics2D.gravity.$clone();
+                var a = 0.5 * g.y, b = velocity.y, c = this.pull.y;
+                var disc = b * b - 4 * a * c;
+                var total = a < 0 && disc > 0 ? (-b - Math.sqrt(disc)) / (2 * a) : 3.0;
+                total = Math.max(0.4, Math.min(total, this.trajectoryTime));
+                var dotScale = Math.max(1.0, Math.min(this.view.orthographicSize / 9.0, 2.0)); // chấm to hơn chút khi camera zoom ra (có giới hạn)
+                var n = this.trajectoryDots.length;
+                var prev = this.pull.$clone();
+                var landed = false;
+                var shown = 0;
+                for (var i = 0; i < n; i = (i + 1) | 0) {
+                    var dot = this.trajectoryDots[i];
+                    if (landed) {
+                        dot.gameObject.SetActive(false);
+                        continue;
+                    }
+                    shown = (shown + 1) | 0;
+                    var t = total * (((i + 1) | 0)) / n;
+                    var p = this.pull.$clone().add( velocity.$clone().scale( t ) ).add( g.$clone().scale( 0.5 ).scale( t ).scale( t ) );
+                    // 3 tia song song (giữa / trên / dưới) ~ bề dày thân nhân vật, để không lọt qua khe giữa các khớp.
+                    // Không dùng hit.fraction (Luna có thể không hỗ trợ) -> tự tính từ hit.point.
+                    // Bỏ qua va chạm sát ná (nhân vật đang kéo / chính cái ná) để đường chấm không bị cắt cụt.
+                    var best = 2.0;
+                    var segLen = prev.$clone().sub( p ).length();
+                    if (segLen > 0.0001 && (p.$clone().sub( this.pull )).lengthSq() > this.ignoreNearPull * this.ignoreNearPull) {
+                        for (var k = -1; k <= 1; k = (k + 1) | 0) {
+                            var off = new pc.Vec2( 0, k * 0.3 );
+                            var hit = UnityEngine.Physics2D.Linecast(prev.$clone().add( off ), p.$clone().add( off ));
+                            if (UnityEngine.Component.op_Equality(hit.collider, null) || hit.collider.transform.IsChildOf(this.current.transform)) {
+                                continue;
+                            }
+                            var frac = prev.$clone().add( off ).sub( hit.point ).length() / segLen;
+                            if (frac < best) {
+                                best = frac;
+                            }
+                        }
+                    }
+                    if (best <= 1.0) {
+                        p = new pc.Vec2().lerp( prev, p, best );
+                        landed = true;
+                    }
+                    dot.gameObject.SetActive(true);
+                    dot.position = UnityEngine.Vector3.FromVector2(p.$clone());
+                    prev = p.$clone();
+                }
+                // Chấm to ở gần ná, nhỏ dần đều tới chấm cuối (điểm rơi).
+                for (var i1 = 0; i1 < shown; i1 = (i1 + 1) | 0) {
+                    var k1 = shown > 1 ? i1 / (((shown - 1) | 0)) : 0;
+                    var size = pc.math.lerp(this.dotSizeStart, this.dotSizeEnd, k1) * dotScale;
+                    // dotBaseScale[0] là scale ứng với chấm .13 đơn vị world (đặt trong editor)
+                    this.trajectoryDots[i1].localScale = this.dotBaseScale[0].$clone().clone().scale( (size / 0.13) );
+                }
+            },
+            /*PlayableFlowController.UpdateTrajectory end.*/
+
+            /*PlayableFlowController.ReleaseShot start.*/
+            ReleaseShot: function () {
+if ( TRACE ) { TRACE( "PlayableFlowController#ReleaseShot", this ); }
+
+                if (this.phase !== PlayableFlowController.Phase.Dragging) {
+                    return;
+                }
+                this.SetDots(false);
+                this.cameraRig.SetAim(false);
+                if ((this.pull.$clone().sub( this.anchor )).lengthSq() < 0.035) {
+                    this.current.transform.position = UnityEngine.Vector3.FromVector2(this.anchor.$clone());
+                    this.current.SetDragging(false);
+                    this.UpdateBands(this.anchor);
+                    this.phase = PlayableFlowController.Phase.Ready;
+                    this.cameraRig.PanTo(this.cameraRig.slingPosition);
+                    return;
+                }
+                this.current.Launch((this.anchor.$clone().sub( this.pull )).scale( this.launchScale ));
+                this.cameraRig.followTarget = this.current.torso.transform;
+                this.UpdateBands(this.anchor);
+                this.phase = PlayableFlowController.Phase.Flying;
+                this.flightTime = 0;
+                this.settledTime = 0;
+                this.hitTime = 0;
+                if (this.launchSound != null) {
+                    this.audioSource.PlayOneShot$1(this.launchSound, 0.55);
+                }
+                this.PlaySfx(this.flySound, this.flyVolume);
+            },
+            /*PlayableFlowController.ReleaseShot end.*/
+
+            /*PlayableFlowController.Update start.*/
+            Update: function () {
+if ( TRACE ) { TRACE( "PlayableFlowController#Update", this ); }
+
+                this.timer += UnityEngine.Time.deltaTime;
+                this.handTimer += UnityEngine.Time.deltaTime;
+                if (this.phase === PlayableFlowController.Phase.IntroMap && this.timer >= this.introHold) {
+                    this.cameraRig.PanTo(this.cameraRig.slingPosition);
+                    this.phase = PlayableFlowController.Phase.PanToSling;
+                } else if (this.phase === PlayableFlowController.Phase.PanToSling && !this.cameraRig.IsPanning) {
+                    this.phase = PlayableFlowController.Phase.Ready;
+                    this.timer = 0;
+                    this.handTimer = 0;
+                } else if (this.phase === PlayableFlowController.Phase.Flying) {
+                    this.flightTime += UnityEngine.Time.deltaTime;
+                    this.settledTime = this.current.hasCollided && this.current.IsSettled() ? this.settledTime + UnityEngine.Time.deltaTime : 0;
+                    if (this.current.hasCollided) {
+                        this.hitTime += UnityEngine.Time.deltaTime;
+                    }
+                    var p = this.current.torso.position.$clone();
+                    // Chạm vào thứ gì đó ~1.3s (hoặc nằm yên sớm hơn) là quay về ná.
+                    // Chỉ quay về ná SAU khi đã va chạm: đủ hitReturnTime (2.5s), hoặc đã nằm yên và va chạm >= 2s.
+                    // Không giới hạn thời gian bay. Chỉ về ná khi đã va chạm, hoặc nhân vật bay ra khỏi bản đồ.
+                    var afterHit = this.current.hasCollided && (this.hitTime >= this.hitReturnTime || (this.settledTime > 0.3 && this.hitTime >= this.minHitTime));
+                    if (afterHit || p.y < -6 || p.x > 40 || p.x < -30) {
+                        this.phase = PlayableFlowController.Phase.ResultDelay;
+                        this.timer = 0;
+                    }
+                } else if (this.phase === PlayableFlowController.Phase.ResultDelay && this.timer >= this.resultHold) {
+                    // Không đóng băng ngay (nhân vật có thể còn đang bay/nảy -> bị treo lơ lửng).
+                    // Để vật lý chạy tiếp, nhân vật tự đóng băng khi đã nằm yên trên sàn.
+                    this.current.FreezeWhenSettled();
+                    this.cameraRig.PanTo(this.cameraRig.slingPosition);
+                    this.phase = PlayableFlowController.Phase.ReturnToSling;
+                } else if (this.phase === PlayableFlowController.Phase.ReturnToSling && !this.cameraRig.IsPanning) {
+                    this.timer = 0;
+                    this.NextShot();
+                }
+                this.UpdateUI();
+                this.ReadInput();
+            },
+            /*PlayableFlowController.Update end.*/
+
+            /*PlayableFlowController.ReadInput start.*/
+            ReadInput: function () {
+if ( TRACE ) { TRACE( "PlayableFlowController#ReadInput", this ); }
+
+                if (UnityEngine.Input.touchCount > 0) {
+                    var t = UnityEngine.Input.GetTouch(0);
+                    if (t.phase === UnityEngine.TouchPhase.Began) {
+                        this.pointerId = t.fingerId;
+                        this.PointerDown(t.position);
+                    } else if (t.fingerId === this.pointerId) {
+                        if (t.phase === UnityEngine.TouchPhase.Ended) {
+                            this.ReleaseShot();
+                            this.pointerId = -1;
+                        } else if (t.phase === UnityEngine.TouchPhase.Canceled) {
+                            this.CancelDrag();
+                            this.pointerId = -1;
+                        } else {
+                            this.DragScreen(t.position);
+                        }
+                    }
+                    return;
+                }
+                if (UnityEngine.Input.GetMouseButtonDown(0)) {
+                    this.PointerDown(UnityEngine.Vector2.FromVector3(UnityEngine.Input.mousePosition));
+                } else {
+                    if (UnityEngine.Input.GetMouseButtonUp(0)) {
+                        this.ReleaseShot();
+                    } else {
+                        if (UnityEngine.Input.GetMouseButton(0)) {
+                            this.DragScreen(UnityEngine.Vector2.FromVector3(UnityEngine.Input.mousePosition));
+                        }
+                    }
+                }
+            },
+            /*PlayableFlowController.ReadInput end.*/
+
+            /*PlayableFlowController.World start.*/
+            World: function (p) {
+if ( TRACE ) { TRACE( "PlayableFlowController#World", this ); }
+
+                return UnityEngine.Vector2.FromVector3(this.view.ScreenToWorldPoint(new pc.Vec3( p.x, p.y, 10 )));
+            },
+            /*PlayableFlowController.World end.*/
+
+            /*PlayableFlowController.PointerDown start.*/
+            PointerDown: function (p) {
+if ( TRACE ) { TRACE( "PlayableFlowController#PointerDown", this ); }
+
+                // Màn chọn nhân vật: chạm bất kỳ đâu -> end game + CTA luôn (không qua end card).
+                if (this.phase === PlayableFlowController.Phase.SelectHero) {
+                    this.BeginInput();
+                    this.PlaySfx(this.ctaSound, 0.8);
+                    this.OpenStore();
+                    return;
+                }
+                if (this.phase === PlayableFlowController.Phase.EndCard || this.phase === PlayableFlowController.Phase.Store) {
+                    this.OpenStore();
+                    return;
+                }
+                this.BeginDragScreen(p);
+            },
+            /*PlayableFlowController.PointerDown end.*/
+
+            /*PlayableFlowController.CancelDrag start.*/
+            CancelDrag: function () {
+if ( TRACE ) { TRACE( "PlayableFlowController#CancelDrag", this ); }
+
+                if (this.phase !== PlayableFlowController.Phase.Dragging) {
+                    return;
+                }
+                this.current.transform.position = UnityEngine.Vector3.FromVector2(this.anchor.$clone());
+                this.current.SetDragging(false);
+                this.UpdateBands(this.anchor);
+                this.SetDots(false);
+                this.phase = PlayableFlowController.Phase.Ready;
+                this.cameraRig.SetAim(false);
+                this.cameraRig.PanTo(this.cameraRig.slingPosition);
+            },
+            /*PlayableFlowController.CancelDrag end.*/
+
+            /*PlayableFlowController.OnApplicationFocus start.*/
+            OnApplicationFocus: function (focus) {
+if ( TRACE ) { TRACE( "PlayableFlowController#OnApplicationFocus", this ); }
+
+                if (!focus) {
+                    this.CancelDrag();
+                }
+            },
+            /*PlayableFlowController.OnApplicationFocus end.*/
+
+            /*PlayableFlowController.UpdateBands start.*/
+            UpdateBands: function (point) {
+if ( TRACE ) { TRACE( "PlayableFlowController#UpdateBands", this ); }
+
+                this.leftBand.SetPosition(0, this.leftBandTip);
+                this.leftBand.SetPosition(1, UnityEngine.Vector3.FromVector2(point));
+                this.rightBand.SetPosition(0, this.rightBandTip);
+                this.rightBand.SetPosition(1, UnityEngine.Vector3.FromVector2(point));
+            },
+            /*PlayableFlowController.UpdateBands end.*/
+
+            /*PlayableFlowController.SetDots start.*/
+            SetDots: function (on) {
+if ( TRACE ) { TRACE( "PlayableFlowController#SetDots", this ); }
+
+                for (var i = 0; i < this.trajectoryDots.length; i = (i + 1) | 0) {
+                    this.trajectoryDots[i].gameObject.SetActive(on);
+                }
+            },
+            /*PlayableFlowController.SetDots end.*/
+
+            /*PlayableFlowController.ShowHeroSelect start.*/
+            ShowHeroSelect: function () {
+if ( TRACE ) { TRACE( "PlayableFlowController#ShowHeroSelect", this ); }
+
+                var $t;
+                this.phase = PlayableFlowController.Phase.SelectHero;
+                this.handTimer = 0;
+                var n = UnityEngine.MonoBehaviour.op_Inequality(this.heroSkins, null) ? this.heroSkins.skins.length : 0, count = 0;
+                // Ưu tiên nhân vật chưa bắn, thiếu thì lấy nhân vật đã bắn (từ lượt đầu).
+                for (var id = 0; id < n && count < 3; id = (id + 1) | 0) {
+                    if (!this.WasShot(id)) {
+                        this.selectIds[Bridge.identity(count, ((count = (count + 1) | 0)))] = id;
+                    }
+                }
+                for (var s = 0; s < this.ShotCount && count < 3; s = (s + 1) | 0) {
+                    if (!this.InSelect(this.HeroId(s), count)) {
+                        this.selectIds[Bridge.identity(count, ((count = (count + 1) | 0)))] = this.HeroId(s);
+                    }
+                }
+                for (var i = 0; i < this.selectButtons.length; i = (i + 1) | 0) {
+                    var on = i < count;
+                    this.selectButtons[i].gameObject.SetActive(on);
+                    if (!on) {
+                        continue;
+                    }
+                    var skin = ($t = this.heroSkins.skins)[this.selectIds[i]];
+                    this.selectPortraits[i].sprite = skin.portrait;
+                    this.selectNames[i].text = skin.label;
+                    this.selectFrames[i].sprite = i === this.handTargetButton ? this.frameHighlight : this.frameNormal;
+                }
+                if (UnityEngine.GameObject.op_Inequality(this.selectRoot, null)) {
+                    this.selectRoot.SetActive(true);
+                }
+                this.PlaySfx(this.spawnSound, this.spawnVolume);
+            },
+            /*PlayableFlowController.ShowHeroSelect end.*/
+
+            /*PlayableFlowController.WasShot start.*/
+            WasShot: function (id) {
+if ( TRACE ) { TRACE( "PlayableFlowController#WasShot", this ); }
+
+                for (var s = 0; s < this.ShotCount; s = (s + 1) | 0) {
+                    if (this.HeroId(s) === id) {
+                        return true;
+                    }
+                }
+                return false;
+            },
+            /*PlayableFlowController.WasShot end.*/
+
+            /*PlayableFlowController.InSelect start.*/
+            InSelect: function (id, count) {
+if ( TRACE ) { TRACE( "PlayableFlowController#InSelect", this ); }
+
+                for (var i = 0; i < count; i = (i + 1) | 0) {
+                    if (this.selectIds[i] === id) {
+                        return true;
+                    }
+                }
+                return false;
+            },
+            /*PlayableFlowController.InSelect end.*/
+
+            /*PlayableFlowController.TrySelect start.*/
+            TrySelect: function (screen) {
+if ( TRACE ) { TRACE( "PlayableFlowController#TrySelect", this ); }
+
+                for (var i = 0; i < this.selectButtons.length; i = (i + 1) | 0) {
+                    if (this.selectButtons[i].gameObject.activeSelf && UnityEngine.RectTransformUtility.RectangleContainsScreenPoint$1(this.selectButtons[i], screen, this.uiCamera)) {
+                        this.BeginInput();
+                        this.ShowEndCard(this.selectIds[i]);
+                        return;
+                    }
+                }
+            },
+            /*PlayableFlowController.TrySelect end.*/
+
+            /*PlayableFlowController.ShowEndCard start.*/
+            ShowEndCard: function (id) {
+if ( TRACE ) { TRACE( "PlayableFlowController#ShowEndCard", this ); }
+
+                var $t;
+                if (UnityEngine.GameObject.op_Inequality(this.selectRoot, null)) {
+                    this.selectRoot.SetActive(false);
+                }
+                this.phase = PlayableFlowController.Phase.EndCard;
+                this.handTimer = 0;
+                var skin = ($t = this.heroSkins.skins)[id];
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.endCardPortrait, null)) {
+                    this.endCardPortrait.sprite = skin.portrait;
+                }
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.endCardTitle, null)) {
+                    this.endCardTitle.text = "PLAY AS " + (skin.label || "") + "!";
+                }
+                if (UnityEngine.GameObject.op_Inequality(this.endCardRoot, null)) {
+                    this.endCardRoot.SetActive(true);
+                }
+                this.PlaySfx(this.ctaSound, 0.8);
+                if (!this.gameEnded) {
+                    this.gameEnded = true;
+                    Luna.Unity.LifeCycle.GameEnded();
+                }
+            },
+            /*PlayableFlowController.ShowEndCard end.*/
+
+            /*PlayableFlowController.PlaceHandAtScreen start.*/
+            PlaceHandAtScreen: function (screen) {
+if ( TRACE ) { TRACE( "PlayableFlowController#PlaceHandAtScreen", this ); }
+
+                var local = { v : new UnityEngine.Vector2() };
+                UnityEngine.RectTransformUtility.ScreenPointToLocalPointInRectangle(Bridge.cast(this.handGuide.parent, UnityEngine.RectTransform), screen, this.uiCamera, local);
+                this.handGuide.anchoredPosition = local.v.$clone();
+            },
+            /*PlayableFlowController.PlaceHandAtScreen end.*/
+
+            /*PlayableFlowController.UpdateHandReady start.*/
+            UpdateHandReady: function () {
+if ( TRACE ) { TRACE( "PlayableFlowController#UpdateHandReady", this ); }
+
+                if (this.phase !== PlayableFlowController.Phase.Ready) {
+                    return;
+                }
+                var cycle = 2.0;
+                var t = (this.handTimer % cycle) / cycle;
+                var move = Math.max(0, Math.min(1, (t - 0.15) / 0.5));
+                move = move * move * (3 - 2 * move);
+                var alpha = t < 0.12 ? t / 0.12 : (t > 0.82 ? Math.max(0, Math.min(1, (1 - t) / 0.18)) : 1.0);
+                var press = t < 0.15 ? pc.math.lerp(1.12, 1.0, Math.max(0, Math.min(1, (t - 0.05) / 0.1))) : 1.0;
+                var p = this.anchor.$clone().add( new pc.Vec2( -1.5, -1.6 ).scale( move ) );
+                var sp = this.view.WorldToScreenPoint(new pc.Vec3( p.x, p.y, 0 ));
+                this.PlaceHandAtScreen(new pc.Vec2( sp.x + 6, sp.y - 6 ));
+                this.handGuide.localScale = new pc.Vec3( 1, 1, 1 ).clone().scale( press );
+                this.handAlpha.alpha = alpha;
+            },
+            /*PlayableFlowController.UpdateHandReady end.*/
+
+            /*PlayableFlowController.UpdateUI start.*/
+            UpdateUI: function () {
+if ( TRACE ) { TRACE( "PlayableFlowController#UpdateUI", this ); }
+
+                var ready = this.phase === PlayableFlowController.Phase.Ready;
+                var select = this.phase === PlayableFlowController.Phase.SelectHero;
+                var endCard = this.phase === PlayableFlowController.Phase.EndCard && UnityEngine.Component.op_Inequality(this.ctaButton, null);
+                if (!ready) {
+                    this.handAlpha.alpha = select || endCard ? 1 : 0;
+                }
+                // (tay hướng dẫn lúc Ready được đặt trong UpdateHandReady, chạy SAU khi camera di chuyển)
+                if ((select && this.handTargetButton < this.selectButtons.length) || endCard) {
+                    // Tính thẳng trong toạ độ canvas để không phụ thuộc độ phân giải màn hình.
+                    var b = select ? this.selectButtons[this.handTargetButton] : this.ctaButton;
+                    var parent = Bridge.cast(this.handGuide.parent, UnityEngine.RectTransform);
+                    var local = parent.InverseTransformPoint(b.position);
+                    var bob = Math.abs(Math.sin(this.handTimer * 4.0));
+                    var ox = select ? 10 : 90;
+                    this.handGuide.anchoredPosition = new pc.Vec2( local.x + ox + bob * 22, local.y - 20 - bob * 30 );
+                    this.handGuide.localScale = new pc.Vec3( 1, 1, 1 ).clone().scale( (1 - (1 - bob) * 0.12) );
+                    if (select) {
+                        for (var i = 0; i < this.selectButtons.length; i = (i + 1) | 0) {
+                            this.selectButtons[i].localScale = new pc.Vec3( 1, 1, 1 ).clone().scale( (i === this.handTargetButton ? 1.06 + 0.04 * Math.sin(this.handTimer * 6.0) : 1.0) );
+                        }
+                    }
+                }
+                if (this.phase === PlayableFlowController.Phase.EndCard && UnityEngine.Component.op_Inequality(this.ctaButton, null)) {
+                    this.ctaButton.localScale = new pc.Vec3( 1, 1, 1 ).clone().scale( (1 + 0.07 * Math.sin(this.handTimer * 6.0)) );
+                }
+
+                this.prompt.color = new pc.Color( 1, 1, 1, 1 );
+                if (ready || this.phase === PlayableFlowController.Phase.Dragging) {
+                    this.prompt.text = "DRAG BACK & RELEASE";
+                } else {
+                    if (this.phase === PlayableFlowController.Phase.Flying) {
+                        this.prompt.text = "";
+                    } else {
+                        if (this.phase === PlayableFlowController.Phase.ResultDelay || this.phase === PlayableFlowController.Phase.ReturnToSling) {
+                            this.prompt.text = "TRY ANOTHER HERO!";
+                        } else {
+                            if (select) {
+                                this.prompt.text = "CHOOSE YOUR HERO!";
+                            } else {
+                                if (this.phase === PlayableFlowController.Phase.EndCard || this.phase === PlayableFlowController.Phase.Store) {
+                                    this.prompt.text = "";
                                 }
                             }
                         }
-                    } catch($async_e1) {
-                        $async_e = System.Exception.create($async_e1);
-                        throw $async_e;
                     }
-                }));
-                return $enumerator;
+                }
+                this.actorLabel.enabled = ready || this.phase === PlayableFlowController.Phase.Dragging;
             },
-            /*VFXController.ReturnToPool end.*/
+            /*PlayableFlowController.UpdateUI end.*/
+
+            /*PlayableFlowController.PlayImpact start.*/
+            PlayImpact: function () {
+if ( TRACE ) { TRACE( "PlayableFlowController#PlayImpact", this ); }
+
+                if (!this.started || UnityEngine.Time.time < this.lastImpactSound + 0.07) {
+                    return;
+                }
+                this.lastImpactSound = UnityEngine.Time.time;
+                var clip = this.impactSounds != null && this.impactSounds.length > 0 ? this.impactSounds[UnityEngine.Random.Range(0, this.impactSounds.length)] : this.impactSound;
+                this.PlaySfx(clip, 0.5);
+            },
+            /*PlayableFlowController.PlayImpact end.*/
+
+            /*PlayableFlowController.PlayKnock start.*/
+            PlayKnock: function () {
+if ( TRACE ) { TRACE( "PlayableFlowController#PlayKnock", this ); }
+
+                if (this.started) {
+                    this.PlaySfx(this.knockSound, 0.8);
+                }
+            },
+            /*PlayableFlowController.PlayKnock end.*/
+
+            /*PlayableFlowController.PlaySfx start.*/
+            PlaySfx: function (clip, volume) {
+if ( TRACE ) { TRACE( "PlayableFlowController#PlaySfx", this ); }
+
+                if (clip != null && UnityEngine.Component.op_Inequality(this.audioSource, null)) {
+                    this.audioSource.PlayOneShot$1(clip, volume);
+                }
+            },
+            /*PlayableFlowController.PlaySfx end.*/
+
+            /*PlayableFlowController.OpenStore start.*/
+            OpenStore: function () {
+if ( TRACE ) { TRACE( "PlayableFlowController#OpenStore", this ); }
+
+                this.storeOpened = true;
+                this.installCallCount = (this.installCallCount + 1) | 0;
+                if (this.phase !== PlayableFlowController.Phase.EndCard && this.phase !== PlayableFlowController.Phase.SelectHero) {
+                    this.phase = PlayableFlowController.Phase.Store;
+                }
+                if (!this.gameEnded) {
+                    this.gameEnded = true;
+                    Luna.Unity.LifeCycle.GameEnded();
+                }
+                Luna.Unity.Playable.InstallFullGame();
+            },
+            /*PlayableFlowController.OpenStore end.*/
 
 
         }
     });
-    /*VFXController end.*/
+    /*PlayableFlowController end.*/
+
+    /*PlayableFlowController+Phase start.*/
+    Bridge.define("PlayableFlowController.Phase", {
+        $kind: 1006,
+        statics: {
+            fields: {
+                IntroMap: 0,
+                PanToSling: 1,
+                Ready: 2,
+                Dragging: 3,
+                Flying: 4,
+                ResultDelay: 5,
+                ReturnToSling: 6,
+                AwaitSpawnTap: 7,
+                Store: 8,
+                SelectHero: 9,
+                EndCard: 10
+            }
+        }
+    });
+    /*PlayableFlowController+Phase end.*/
+
+    /*RagdollActor start.*/
+    Bridge.define("RagdollActor", {
+        inherits: [UnityEngine.MonoBehaviour],
+        fields: {
+            torso: null,
+            bodies: null,
+            renderers: null,
+            hasCollided: false,
+            reactiveTarget: false,
+            knockedDown: false,
+            localPositions: null,
+            localRotations: null,
+            orders: null,
+            initialized: false,
+            ownColliders: null,
+            launchTime: 0,
+            pendingFreeze: false,
+            restTime: 0
+        },
+        ctors: {
+            init: function () {
+if ( TRACE ) { TRACE( "RagdollActor#init", this ); }
+
+                this.launchTime = -100;
+            }
+        },
+        methods: {
+            /*RagdollActor.Awake start.*/
+            Awake: function () {
+if ( TRACE ) { TRACE( "RagdollActor#Awake", this ); }
+
+                this.IgnoreSelfCollision();
+            },
+            /*RagdollActor.Awake end.*/
+
+            /*RagdollActor.IgnoreSelfCollision start.*/
+            IgnoreSelfCollision: function () {
+if ( TRACE ) { TRACE( "RagdollActor#IgnoreSelfCollision", this ); }
+
+                var colliders = this.GetComponentsInChildren$1(UnityEngine.Collider2D, true);
+                for (var i = 0; i < colliders.length; i = (i + 1) | 0) {
+                    for (var j = (i + 1) | 0; j < colliders.length; j = (j + 1) | 0) {
+                        UnityEngine.Physics2D.IgnoreCollision(colliders[i], colliders[j]);
+                    }
+                }
+            },
+            /*RagdollActor.IgnoreSelfCollision end.*/
+
+            /*RagdollActor.Initialize start.*/
+            Initialize: function () {
+if ( TRACE ) { TRACE( "RagdollActor#Initialize", this ); }
+
+                if (this.initialized) {
+                    return;
+                }
+                this.initialized = true;
+                this.IgnoreSelfCollision();
+                this.localPositions = System.Array.init(this.bodies.length, function (){
+                    return new UnityEngine.Vector3();
+                }, UnityEngine.Vector3);
+                this.localRotations = System.Array.init(this.bodies.length, function (){
+                    return new UnityEngine.Quaternion();
+                }, UnityEngine.Quaternion);
+                this.orders = System.Array.init(this.renderers.length, 0, System.Int32);
+                for (var i = 0; i < this.bodies.length; i = (i + 1) | 0) {
+                    this.localPositions[i] = this.bodies[i].transform.localPosition.$clone();
+                    this.localRotations[i] = this.bodies[i].transform.localRotation.$clone();
+                }
+                for (var i1 = 0; i1 < this.renderers.length; i1 = (i1 + 1) | 0) {
+                    this.orders[i1] = this.renderers[i1].sortingOrder;
+                }
+            },
+            /*RagdollActor.Initialize end.*/
+
+            /*RagdollActor.LoadAt start.*/
+            LoadAt: function (position) {
+if ( TRACE ) { TRACE( "RagdollActor#LoadAt", this ); }
+
+                this.Initialize();
+                // Đặt vị trí + tư thế TRƯỚC khi bật object để body vật lý được tạo đúng chỗ.
+                this.transform.position = UnityEngine.Vector3.FromVector2(position.$clone());
+                this.hasCollided = false;
+                this.pendingFreeze = false;
+                for (var i = 0; i < this.bodies.length; i = (i + 1) | 0) {
+                    this.bodies[i].simulated = false;
+                    this.bodies[i].bodyType = UnityEngine.RigidbodyType2D.Dynamic;
+                    this.bodies[i].transform.localPosition = this.localPositions[i].$clone();
+                    this.bodies[i].transform.localRotation = this.localRotations[i].$clone();
+                }
+                this.gameObject.SetActive(true);
+                this.SyncBodies();
+            },
+            /*RagdollActor.LoadAt end.*/
+
+            /*RagdollActor.SyncBodies start.*/
+            SyncBodies: function () {
+if ( TRACE ) { TRACE( "RagdollActor#SyncBodies", this ); }
+
+                for (var i = 0; i < this.bodies.length; i = (i + 1) | 0) {
+                    var t = this.bodies[i].transform;
+                    this.bodies[i].position = UnityEngine.Vector2.FromVector3(t.position.$clone());
+                    this.bodies[i].rotation = t.eulerAngles.z;
+                    this.bodies[i].linearVelocity = pc.Vec2.ZERO.clone();
+                    this.bodies[i].angularVelocity = 0;
+                }
+            },
+            /*RagdollActor.SyncBodies end.*/
+
+            /*RagdollActor.SetCollidersEnabled start.*/
+            SetCollidersEnabled: function (on) {
+if ( TRACE ) { TRACE( "RagdollActor#SetCollidersEnabled", this ); }
+
+                if (this.ownColliders == null) {
+                    this.ownColliders = this.GetComponentsInChildren$1(UnityEngine.Collider2D, true);
+                }
+                for (var i = 0; i < this.ownColliders.length; i = (i + 1) | 0) {
+                    this.ownColliders[i].enabled = on;
+                }
+                // Tắt/bật collider làm mất IgnoreCollision -> đặt lại để tay chân không va vào nhau rồi văng.
+                if (on) {
+                    this.IgnoreSelfCollision();
+                }
+            },
+            /*RagdollActor.SetCollidersEnabled end.*/
+
+            /*RagdollActor.SetDragging start.*/
+            SetDragging: function (dragging) {
+if ( TRACE ) { TRACE( "RagdollActor#SetDragging", this ); }
+
+                if (!dragging) {
+                    this.SetCollidersEnabled(true);
+                }
+                if (this.orders == null) {
+                    return;
+                }
+                for (var i = 0; i < this.renderers.length; i = (i + 1) | 0) {
+                    this.renderers[i].sortingOrder = dragging ? ((100 + i) | 0) : this.orders[i];
+                }
+            },
+            /*RagdollActor.SetDragging end.*/
+
+            /*RagdollActor.Launch start.*/
+            Launch: function (velocity) {
+if ( TRACE ) { TRACE( "RagdollActor#Launch", this ); }
+
+                this.launchTime = UnityEngine.Time.time;
+                this.SetDragging(false);
+                this.SyncBodies();
+                for (var i = 0; i < this.bodies.length; i = (i + 1) | 0) {
+                    this.bodies[i].simulated = true;
+                }
+                for (var i1 = 0; i1 < this.bodies.length; i1 = (i1 + 1) | 0) {
+                    this.bodies[i1].linearVelocity = velocity.$clone();
+                    this.bodies[i1].angularVelocity = i1 % 2 === 0 ? 55 : -45;
+                }
+            },
+            /*RagdollActor.Launch end.*/
+
+            /*RagdollActor.IsSettled start.*/
+            IsSettled: function () {
+if ( TRACE ) { TRACE( "RagdollActor#IsSettled", this ); }
+
+                for (var i = 0; i < this.bodies.length; i = (i + 1) | 0) {
+                    if (this.bodies[i].linearVelocity.lengthSq() > 0.16 || Math.abs(this.bodies[i].angularVelocity) > 35) {
+                        return false;
+                    }
+                }
+                return true;
+            },
+            /*RagdollActor.IsSettled end.*/
+
+            /*RagdollActor.FreezeWhenSettled start.*/
+            FreezeWhenSettled: function () {
+if ( TRACE ) { TRACE( "RagdollActor#FreezeWhenSettled", this ); }
+
+                this.pendingFreeze = true;
+                this.restTime = 0;
+            },
+            /*RagdollActor.FreezeWhenSettled end.*/
+
+            /*RagdollActor.FixedUpdate start.*/
+            FixedUpdate: function () {
+if ( TRACE ) { TRACE( "RagdollActor#FixedUpdate", this ); }
+
+                if (!this.pendingFreeze) {
+                    return;
+                }
+                this.restTime = this.IsSettled() ? this.restTime + UnityEngine.Time.fixedDeltaTime : 0;
+                if (this.restTime > 0.5 || (UnityEngine.Component.op_Inequality(this.torso, null) && this.torso.position.y < -6)) {
+                    this.Freeze();
+                }
+            },
+            /*RagdollActor.FixedUpdate end.*/
+
+            /*RagdollActor.Freeze start.*/
+            Freeze: function () {
+if ( TRACE ) { TRACE( "RagdollActor#Freeze", this ); }
+
+                this.pendingFreeze = false;
+                for (var i = 0; i < this.bodies.length; i = (i + 1) | 0) {
+                    this.bodies[i].bodyType = UnityEngine.RigidbodyType2D.Static;
+                }
+            },
+            /*RagdollActor.Freeze end.*/
+
+            /*RagdollActor.ReactToHit start.*/
+            ReactToHit: function (velocity) {
+if ( TRACE ) { TRACE( "RagdollActor#ReactToHit", this ); }
+
+                if (!this.reactiveTarget || this.knockedDown || velocity.lengthSq() < 4) {
+                    return;
+                }
+                this.knockedDown = true;
+                for (var i = 0; i < this.bodies.length; i = (i + 1) | 0) {
+                    this.bodies[i].bodyType = UnityEngine.RigidbodyType2D.Dynamic;
+                    this.bodies[i].linearVelocity = velocity.$clone().scale( 0.35 );
+                    this.bodies[i].angularVelocity = Bridge.Int.mul((i % 2 === 0 ? 1 : -1), 100);
+                }
+            },
+            /*RagdollActor.ReactToHit end.*/
+
+
+        }
+    });
+    /*RagdollActor end.*/
+
+    /*RagdollImpact start.*/
+    Bridge.define("RagdollImpact", {
+        inherits: [UnityEngine.MonoBehaviour],
+        statics: {
+            fields: {
+                launchGrace: 0
+            },
+            ctors: {
+                init: function () {
+if ( TRACE ) { TRACE( "RagdollImpact#init", this ); }
+
+                    this.launchGrace = 0.4;
+                }
+            }
+        },
+        fields: {
+            actor: null,
+            flow: null,
+            lastSound: 0
+        },
+        methods: {
+            /*RagdollImpact.OnCollisionStay2D start.*/
+            OnCollisionStay2D: function (hit) {
+if ( TRACE ) { TRACE( "RagdollImpact#OnCollisionStay2D", this ); }
+
+                if (UnityEngine.MonoBehaviour.op_Equality(this.actor, null) || this.actor.hasCollided || this.actor.reactiveTarget) {
+                    return;
+                }
+                if (UnityEngine.Component.op_Inequality(hit.collider, null) && hit.collider.transform.IsChildOf(this.actor.transform)) {
+                    return;
+                }
+                if (UnityEngine.Time.time - this.actor.launchTime >= RagdollImpact.launchGrace) {
+                    this.actor.hasCollided = true;
+                }
+            },
+            /*RagdollImpact.OnCollisionStay2D end.*/
+
+            /*RagdollImpact.OnCollisionEnter2D start.*/
+            OnCollisionEnter2D: function (hit) {
+if ( TRACE ) { TRACE( "RagdollImpact#OnCollisionEnter2D", this ); }
+
+                // Bỏ qua va chạm giữa các bộ phận của CHÍNH nhân vật này (trên Luna IgnoreCollision
+                // có thể không giữ được) -> tránh tính "đã va chạm" ngay lúc vừa bắn.
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.actor, null) && UnityEngine.Component.op_Inequality(hit.collider, null) && hit.collider.transform.IsChildOf(this.actor.transform)) {
+                    return;
+                }
+                // Kéo ná xuống thấp thì chân nhân vật chạm sàn ngay lúc thả -> không tính là "đã va chạm"
+                // trong khoảng ngắn đầu tiên sau khi bắn (nếu không sẽ đếm giờ và quay về ná khi còn đang bay).
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.actor, null) && !this.actor.reactiveTarget && UnityEngine.Time.time - this.actor.launchTime < RagdollImpact.launchGrace) {
+                    return;
+                }
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.actor, null)) {
+                    var wasDown = this.actor.knockedDown;
+                    this.actor.hasCollided = true;
+                    this.actor.ReactToHit(hit.relativeVelocity);
+                    if (!wasDown && this.actor.knockedDown && UnityEngine.MonoBehaviour.op_Inequality(this.flow, null)) {
+                        this.flow.PlayKnock();
+                    }
+                }
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.flow, null) && UnityEngine.Time.time > this.lastSound + 0.18 && hit.relativeVelocity.lengthSq() > 8) {
+                    this.lastSound = UnityEngine.Time.time;
+                    this.flow.PlayImpact();
+                }
+            },
+            /*RagdollImpact.OnCollisionEnter2D end.*/
+
+
+        }
+    });
+    /*RagdollImpact end.*/
+
+    /*TextOutline start.*/
+    Bridge.define("TextOutline", {
+        inherits: [UnityEngine.MonoBehaviour],
+        fields: {
+            outlineColor: null,
+            thickness: 0,
+            shadowColor: null,
+            shadowOffset: null,
+            copies: null,
+            baseAlpha: null,
+            source: null,
+            lastText: null,
+            lastEnabled: false,
+            lastAlpha: 0
+        },
+        ctors: {
+            init: function () {
+if ( TRACE ) { TRACE( "TextOutline#init", this ); }
+
+                this.outlineColor = new UnityEngine.Color();
+                this.shadowColor = new UnityEngine.Color();
+                this.shadowOffset = new UnityEngine.Vector2();
+                this.outlineColor = new pc.Color( 0.08, 0.04, 0.06, 1 );
+                this.thickness = 4;
+                this.shadowColor = new pc.Color( 0, 0, 0, 0.85 );
+                this.shadowOffset = new pc.Vec2( 6, -7 );
+                this.lastAlpha = -1;
+            }
+        },
+        methods: {
+            /*TextOutline.Awake start.*/
+            Awake: function () {
+if ( TRACE ) { TRACE( "TextOutline#Awake", this ); }
+
+                this.source = this.GetComponent(UnityEngine.UI.Text);
+                this.Sync(true);
+            },
+            /*TextOutline.Awake end.*/
+
+            /*TextOutline.LateUpdate start.*/
+            LateUpdate: function () {
+if ( TRACE ) { TRACE( "TextOutline#LateUpdate", this ); }
+
+                this.Sync(false);
+            },
+            /*TextOutline.LateUpdate end.*/
+
+            /*TextOutline.Sync start.*/
+            Sync: function (force) {
+if ( TRACE ) { TRACE( "TextOutline#Sync", this ); }
+
+                if (this.copies == null || UnityEngine.MonoBehaviour.op_Equality(this.source, null)) {
+                    return;
+                }
+                var en = this.source.enabled && this.source.gameObject.activeInHierarchy;
+                var a = this.source.color.a;
+                if (!force && Bridge.referenceEquals(this.source.text, this.lastText) && en === this.lastEnabled && Math.abs(a - this.lastAlpha) < 0.01) {
+                    return;
+                }
+                this.lastText = this.source.text;
+                this.lastEnabled = en;
+                this.lastAlpha = a;
+                for (var i = 0; i < this.copies.length; i = (i + 1) | 0) {
+                    if (UnityEngine.MonoBehaviour.op_Equality(this.copies[i], null)) {
+                        continue;
+                    }
+                    this.copies[i].text = this.lastText;
+                    this.copies[i].enabled = en;
+                    var c = this.copies[i].color.$clone();
+                    c.a = this.baseAlpha[i] * a;
+                    this.copies[i].color = c.$clone();
+                }
+            },
+            /*TextOutline.Sync end.*/
+
+
+        }
+    });
+    /*TextOutline end.*/
 
     if ( MODULE_reflection ) {
     var $m = Bridge.setMetadata,
-        $n = ["System","UnityEngine","System.Collections.Generic","System.Collections","UnityEngine.UI","DG.Tweening","DG.Tweening.Plugins.Core.PathCore","DG.Tweening.Core","System.Globalization","DG.Tweening.Plugins.Options"];
+        $n = ["System","UnityEngine","UnityEngine.UI"];
 
-    /*AudioController start.*/
-    $m("AudioController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"BootstrapPool","t":8,"sn":"BootstrapPool","rt":$n[0].Void},{"a":1,"n":"CreateIns","t":8,"sn":"CreateIns","rt":$n[0].Void},{"a":1,"n":"CreateNewSource","t":8,"sn":"CreateNewSource","rt":$n[1].AudioSource},{"a":1,"n":"GetFreeSource","t":8,"sn":"GetFreeSource","rt":$n[1].AudioSource},{"a":2,"n":"PlaySFX","t":8,"pi":[{"n":"clip","pt":$n[1].AudioClip,"ps":0}],"sn":"PlaySFX","rt":$n[0].Void,"p":[$n[1].AudioClip]},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"at":[new UnityEngine.LunaPlaygroundAssetAttribute("BGM", 0, null)],"a":2,"n":"BGM","t":4,"rt":$n[1].AudioClip,"sn":"BGM"},{"a":2,"n":"Ins","is":true,"t":4,"rt":AudioController,"sn":"Ins"},{"a":1,"n":"SFXPool","t":4,"rt":$n[2].Queue$1(UnityEngine.AudioSource),"sn":"SFXPool"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"musicSource","t":4,"rt":$n[1].AudioSource,"sn":"musicSource"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"pool","t":4,"rt":$n[1].Transform,"sn":"pool"}]}; }, $n);
-    /*AudioController end.*/
+    /*LunaControllerFNAF start.*/
+    $m("LunaControllerFNAF", function () { return {"nested":[LunaControllerFNAF.PlayableVersion,LunaControllerFNAF.Hero],"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"at":[new UnityEngine.LunaPlaygroundAssetAttribute("Background Music", 1, null)],"a":2,"n":"backgroundMusic","t":4,"rt":$n[1].AudioClip,"sn":"backgroundMusic"},{"a":2,"n":"flow","t":4,"rt":PlayableFlowController,"sn":"flow"},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Hero Shot 1", 4, null, false, null)],"a":2,"n":"heroShot1","t":4,"rt":LunaControllerFNAF.Hero,"sn":"heroShot1","box":function ($v) { return Bridge.box($v, LunaControllerFNAF.Hero, System.Enum.toStringFn(LunaControllerFNAF.Hero));}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Hero Shot 2", 5, null, false, null)],"a":2,"n":"heroShot2","t":4,"rt":LunaControllerFNAF.Hero,"sn":"heroShot2","box":function ($v) { return Bridge.box($v, LunaControllerFNAF.Hero, System.Enum.toStringFn(LunaControllerFNAF.Hero));}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Hero Shot 3", 6, null, false, null)],"a":2,"n":"heroShot3","t":4,"rt":LunaControllerFNAF.Hero,"sn":"heroShot3","box":function ($v) { return Bridge.box($v, LunaControllerFNAF.Hero, System.Enum.toStringFn(LunaControllerFNAF.Hero));}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Hero Shot 4", 7, null, false, null)],"a":2,"n":"heroShot4","t":4,"rt":LunaControllerFNAF.Hero,"sn":"heroShot4","box":function ($v) { return Bridge.box($v, LunaControllerFNAF.Hero, System.Enum.toStringFn(LunaControllerFNAF.Hero));}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Music Enabled", 2, null, false, null)],"a":2,"n":"musicEnabled","t":4,"rt":$n[0].Boolean,"sn":"musicEnabled","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Music Volume", 3, null, false, null),new UnityEngine.RangeAttribute(0.0, 1.0)],"a":2,"n":"musicVolume","t":4,"rt":$n[0].Single,"sn":"musicVolume","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Playable Version", 0, null, false, null)],"a":2,"n":"version","t":4,"rt":LunaControllerFNAF.PlayableVersion,"sn":"version","box":function ($v) { return Bridge.box($v, LunaControllerFNAF.PlayableVersion, System.Enum.toStringFn(LunaControllerFNAF.PlayableVersion));}}]}; }, $n);
+    /*LunaControllerFNAF end.*/
 
-    /*BonkController start.*/
-    $m("BonkController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"OnCollisionEnter2D","t":8,"pi":[{"n":"collision","pt":$n[1].Collision2D,"ps":0}],"sn":"OnCollisionEnter2D","rt":$n[0].Void,"p":[$n[1].Collision2D]},{"a":1,"n":"count","t":4,"rt":$n[0].Int32,"sn":"count","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"hitSound","t":4,"rt":$n[1].AudioClip,"sn":"hitSound"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"maxBonk","t":4,"rt":$n[0].Int32,"sn":"maxBonk","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"target","t":4,"rt":$n[0].String,"sn":"target"}]}; }, $n);
-    /*BonkController end.*/
+    /*LunaControllerFNAF+PlayableVersion start.*/
+    $m("LunaControllerFNAF.PlayableVersion", function () { return {"td":LunaControllerFNAF,"att":258,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"Ver1_3Taps","is":true,"t":4,"rt":LunaControllerFNAF.PlayableVersion,"sn":"Ver1_3Taps","box":function ($v) { return Bridge.box($v, LunaControllerFNAF.PlayableVersion, System.Enum.toStringFn(LunaControllerFNAF.PlayableVersion));}},{"a":2,"n":"Ver2_StoreAtTap2","is":true,"t":4,"rt":LunaControllerFNAF.PlayableVersion,"sn":"Ver2_StoreAtTap2","box":function ($v) { return Bridge.box($v, LunaControllerFNAF.PlayableVersion, System.Enum.toStringFn(LunaControllerFNAF.PlayableVersion));}}]}; }, $n);
+    /*LunaControllerFNAF+PlayableVersion end.*/
 
-    /*GameController start.*/
-    $m("GameController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"ChangeLevel","t":8,"sn":"ChangeLevel","rt":$n[3].IEnumerator},{"a":1,"n":"CreateIns","t":8,"sn":"CreateIns","rt":$n[0].Void},{"a":2,"n":"KillMonster","t":8,"sn":"KillMonster","rt":$n[0].Void},{"a":2,"n":"SetCharacter","t":8,"pi":[{"n":"stage","pt":$n[0].Int32,"ps":0},{"n":"pos","pt":$n[0].Int32,"ps":1},{"n":"index","pt":$n[0].Int32,"ps":2}],"sn":"SetCharacter","rt":$n[0].Void,"p":[$n[0].Int32,$n[0].Int32,$n[0].Int32]},{"a":2,"n":"SetMonster","t":8,"pi":[{"n":"stage","pt":$n[0].Int32,"ps":0},{"n":"index","pt":$n[0].Int32,"ps":1}],"sn":"SetMonster","rt":$n[0].Void,"p":[$n[0].Int32,$n[0].Int32]},{"a":2,"n":"SetPlayer","t":8,"pi":[{"n":"stage","pt":$n[0].Int32,"ps":0},{"n":"index","pt":$n[0].Int32,"ps":1}],"sn":"SetPlayer","rt":$n[0].Void,"p":[$n[0].Int32,$n[0].Int32]},{"a":2,"n":"Ins","is":true,"t":4,"rt":GameController,"sn":"Ins"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"cameraPos","t":4,"rt":$n[2].List$1(UnityEngine.Vector3),"sn":"cameraPos"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"end","t":4,"rt":$n[0].Boolean,"sn":"end","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"endUI","t":4,"rt":$n[1].GameObject,"sn":"endUI"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"index","t":4,"rt":$n[0].Int32,"sn":"index","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.HeaderAttribute("Control"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"mainCamera","t":4,"rt":$n[1].Transform,"sn":"mainCamera"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"monsters","t":4,"rt":$n[2].List$1(MonsterController),"sn":"monsters"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"monsters1","t":4,"rt":$n[2].List$1(MonsterController),"sn":"monsters1"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"monsters2","t":4,"rt":$n[2].List$1(MonsterController),"sn":"monsters2"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"players1","t":4,"rt":$n[2].List$1(UnityEngine.TargetJoint2D),"sn":"players1"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"players2","t":4,"rt":$n[2].List$1(UnityEngine.TargetJoint2D),"sn":"players2"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"speedMove","t":4,"rt":$n[0].Single,"sn":"speedMove","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.HeaderAttribute("Custom"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"stage1LeftCharacter","t":4,"rt":$n[2].List$1(UnityEngine.GameObject),"sn":"stage1LeftCharacter"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"stage1RightCharacter","t":4,"rt":$n[2].List$1(UnityEngine.GameObject),"sn":"stage1RightCharacter"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"stage2LeftCharacter","t":4,"rt":$n[2].List$1(UnityEngine.GameObject),"sn":"stage2LeftCharacter"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"stage2RightCharacter","t":4,"rt":$n[2].List$1(UnityEngine.GameObject),"sn":"stage2RightCharacter"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"stage3LeftCharacter","t":4,"rt":$n[2].List$1(UnityEngine.GameObject),"sn":"stage3LeftCharacter"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"stage3MidCharacter","t":4,"rt":$n[2].List$1(UnityEngine.GameObject),"sn":"stage3MidCharacter"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"stage3RightCharacter","t":4,"rt":$n[2].List$1(UnityEngine.GameObject),"sn":"stage3RightCharacter"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"target","t":4,"rt":TargetController,"sn":"target"}]}; }, $n);
-    /*GameController end.*/
+    /*LunaControllerFNAF+Hero start.*/
+    $m("LunaControllerFNAF.Hero", function () { return {"td":LunaControllerFNAF,"att":258,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"Bonnie","is":true,"t":4,"rt":LunaControllerFNAF.Hero,"sn":"Bonnie","box":function ($v) { return Bridge.box($v, LunaControllerFNAF.Hero, System.Enum.toStringFn(LunaControllerFNAF.Hero));}},{"a":2,"n":"Chica","is":true,"t":4,"rt":LunaControllerFNAF.Hero,"sn":"Chica","box":function ($v) { return Bridge.box($v, LunaControllerFNAF.Hero, System.Enum.toStringFn(LunaControllerFNAF.Hero));}},{"a":2,"n":"Foxy","is":true,"t":4,"rt":LunaControllerFNAF.Hero,"sn":"Foxy","box":function ($v) { return Bridge.box($v, LunaControllerFNAF.Hero, System.Enum.toStringFn(LunaControllerFNAF.Hero));}},{"a":2,"n":"Freddy","is":true,"t":4,"rt":LunaControllerFNAF.Hero,"sn":"Freddy","box":function ($v) { return Bridge.box($v, LunaControllerFNAF.Hero, System.Enum.toStringFn(LunaControllerFNAF.Hero));}},{"a":2,"n":"Mangle","is":true,"t":4,"rt":LunaControllerFNAF.Hero,"sn":"Mangle","box":function ($v) { return Bridge.box($v, LunaControllerFNAF.Hero, System.Enum.toStringFn(LunaControllerFNAF.Hero));}}]}; }, $n);
+    /*LunaControllerFNAF+Hero end.*/
+
+    /*HeroSkin start.*/
+    $m("HeroSkin", function () { return {"att":1056769,"a":2,"at":[new System.SerializableAttribute()],"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"body","t":4,"rt":$n[1].Sprite,"sn":"body"},{"a":2,"n":"footLeft","t":4,"rt":$n[1].Sprite,"sn":"footLeft"},{"a":2,"n":"footLeftPivot","t":4,"rt":$n[1].Vector2,"sn":"footLeftPivot"},{"a":2,"n":"footRight","t":4,"rt":$n[1].Sprite,"sn":"footRight"},{"a":2,"n":"footRightPivot","t":4,"rt":$n[1].Vector2,"sn":"footRightPivot"},{"a":2,"n":"handLeft","t":4,"rt":$n[1].Sprite,"sn":"handLeft"},{"a":2,"n":"handLeftPivot","t":4,"rt":$n[1].Vector2,"sn":"handLeftPivot"},{"a":2,"n":"handRight","t":4,"rt":$n[1].Sprite,"sn":"handRight"},{"a":2,"n":"handRightPivot","t":4,"rt":$n[1].Vector2,"sn":"handRightPivot"},{"a":2,"n":"head","t":4,"rt":$n[1].Sprite,"sn":"head"},{"a":2,"n":"headPivot","t":4,"rt":$n[1].Vector2,"sn":"headPivot"},{"a":2,"n":"label","t":4,"rt":$n[0].String,"sn":"label"},{"a":2,"n":"portrait","t":4,"rt":$n[1].Sprite,"sn":"portrait"}]}; }, $n);
+    /*HeroSkin end.*/
+
+    /*HeroSkins start.*/
+    $m("HeroSkins", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"Apply","t":8,"pi":[{"n":"actor","pt":RagdollActor,"ps":0},{"n":"id","pt":$n[0].Int32,"ps":1}],"sn":"Apply","rt":$n[0].Void,"p":[RagdollActor,$n[0].Int32]},{"a":1,"n":"SetBody","t":8,"pi":[{"n":"r","pt":$n[1].SpriteRenderer,"ps":0},{"n":"sp","pt":$n[1].Sprite,"ps":1}],"sn":"SetBody","rt":$n[0].Void,"p":[$n[1].SpriteRenderer,$n[1].Sprite]},{"a":1,"n":"SetHead","t":8,"pi":[{"n":"r","pt":$n[1].SpriteRenderer,"ps":0},{"n":"sp","pt":$n[1].Sprite,"ps":1},{"n":"pivot","pt":$n[1].Vector2,"ps":2}],"sn":"SetHead","rt":$n[0].Void,"p":[$n[1].SpriteRenderer,$n[1].Sprite,$n[1].Vector2]},{"a":1,"n":"SetLimb","t":8,"pi":[{"n":"r","pt":$n[1].SpriteRenderer,"ps":0},{"n":"sp","pt":$n[1].Sprite,"ps":1},{"n":"pivot","pt":$n[1].Vector2,"ps":2}],"sn":"SetLimb","rt":$n[0].Void,"p":[$n[1].SpriteRenderer,$n[1].Sprite,$n[1].Vector2]},{"a":1,"n":"SpriteSize","is":true,"t":8,"pi":[{"n":"sp","pt":$n[1].Sprite,"ps":0}],"sn":"SpriteSize","rt":$n[1].Vector2,"p":[$n[1].Sprite]},{"a":2,"n":"bodySize","t":4,"rt":$n[1].Vector2,"sn":"bodySize"},{"a":2,"n":"headPixel","t":4,"rt":$n[0].Single,"sn":"headPixel","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"limbPixel","t":4,"rt":$n[1].Vector2,"sn":"limbPixel"},{"a":2,"n":"neckLocal","t":4,"rt":$n[1].Vector2,"sn":"neckLocal"},{"a":2,"n":"skins","t":4,"rt":System.Array.type(HeroSkin),"sn":"skins"}]}; }, $n);
+    /*HeroSkins end.*/
 
     /*LunaController start.*/
-    $m("LunaController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"ClickCTA","t":8,"sn":"ClickCTA","rt":$n[0].Void},{"a":1,"n":"EndGame","t":8,"sn":"EndGame","rt":$n[3].IEnumerator},{"a":1,"n":"RoundNumber","t":8,"pi":[{"n":"number","pt":$n[0].Int32,"ps":0}],"sn":"RoundNumber","rt":$n[0].Int32,"p":[$n[0].Int32],"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"SetupButton","t":8,"sn":"SetupButton","rt":$n[0].Void},{"a":1,"n":"SetupCharacter","t":8,"sn":"SetupCharacter","rt":$n[0].Void},{"a":1,"n":"SetupMap","t":8,"sn":"SetupMap","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"BGImage","t":4,"rt":$n[4].RawImage,"sn":"BGImage"},{"at":[new UnityEngine.HeaderAttribute("Custom PLB"),new UnityEngine.LunaPlaygroundAssetAttribute("BG Image", 0, null)],"a":2,"n":"BGTexture","t":4,"rt":$n[1].Texture2D,"sn":"BGTexture"},{"at":[new UnityEngine.HeaderAttribute("Custom Button"),new UnityEngine.LunaPlaygroundFieldAttribute("Button 1", -1, null, false, null)],"a":2,"n":"Button1","t":4,"rt":$n[0].Int32,"sn":"Button1","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Button 1", -1, null, false, null)],"a":2,"n":"Button2","t":4,"rt":$n[0].Int32,"sn":"Button2","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Button 1", -1, null, false, null)],"a":2,"n":"Button3","t":4,"rt":$n[0].Int32,"sn":"Button3","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"CTA","t":4,"rt":$n[2].List$1(UnityEngine.UI.Button),"sn":"CTA"},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Color Title Stage 3", -1, null, false, null)],"a":2,"n":"ColorTitleText","t":4,"rt":$n[1].Color,"sn":"ColorTitleText"},{"at":[new UnityEngine.HeaderAttribute("Custom Character"),new UnityEngine.LunaPlaygroundFieldAttribute("Stage 1 Left Character 0 -> 7", -1, null, false, null)],"a":2,"n":"Stage1Left","t":4,"rt":$n[0].Int32,"sn":"Stage1Left","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Stage 1 Right Character 0 -> 7", -1, null, false, null)],"a":2,"n":"Stage1Right","t":4,"rt":$n[0].Int32,"sn":"Stage1Right","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Stage 2 Left Character 0 -> 7", -1, null, false, null)],"a":2,"n":"Stage2Left","t":4,"rt":$n[0].Int32,"sn":"Stage2Left","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Stage 2 Right Character 0 -> 7", -1, null, false, null)],"a":2,"n":"Stage2Right","t":4,"rt":$n[0].Int32,"sn":"Stage2Right","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Stage 3 Left Character 0 -> 7", -1, null, false, null)],"a":2,"n":"Stage3Left","t":4,"rt":$n[0].Int32,"sn":"Stage3Left","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Stage 3 Mid Character 0 -> 7", -1, null, false, null)],"a":2,"n":"Stage3Mid","t":4,"rt":$n[0].Int32,"sn":"Stage3Mid","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Stage 3 Right Character 0 -> 7", -1, null, false, null)],"a":2,"n":"Stage3Right","t":4,"rt":$n[0].Int32,"sn":"Stage3Right","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Time Play", -1, null, false, null)],"a":2,"n":"TimePlay","t":4,"rt":$n[0].Single,"sn":"TimePlay","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Title Stage 3", -1, null, false, null)],"a":2,"n":"TitleText","t":4,"rt":$n[0].String,"sn":"TitleText"},{"at":[new UnityEngine.HeaderAttribute("Custom Map"),new UnityEngine.LunaPlaygroundFieldAttribute("Use Map Stage 2", -1, null, false, null)],"a":2,"n":"UseMap2","t":4,"rt":$n[0].Boolean,"sn":"UseMap2","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Limit Time Play?", -1, null, false, null)],"a":2,"n":"UseTime","t":4,"rt":$n[0].Boolean,"sn":"UseTime","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"button1Image","t":4,"rt":$n[4].Image,"sn":"button1Image"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"button2Image","t":4,"rt":$n[4].Image,"sn":"button2Image"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"button3Image","t":4,"rt":$n[4].Image,"sn":"button3Image"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"buttonSprite","t":4,"rt":$n[2].List$1(UnityEngine.Sprite),"sn":"buttonSprite"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"endCard","t":4,"rt":$n[1].GameObject,"sn":"endCard"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"map2","t":4,"rt":$n[1].GameObject,"sn":"map2"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"title","t":4,"rt":$n[4].Text,"sn":"title"}]}; }, $n);
+    $m("LunaController", function () { return {"nested":[LunaController.PlayableVersion,LunaController.Hero],"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"at":[new UnityEngine.LunaPlaygroundAssetAttribute("Background Music", 1, null)],"a":2,"n":"backgroundMusic","t":4,"rt":$n[1].AudioClip,"sn":"backgroundMusic"},{"a":2,"n":"flow","t":4,"rt":PlayableFlowController,"sn":"flow"},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Hero Shot 1", 4, null, false, null)],"a":2,"n":"heroShot1","t":4,"rt":LunaController.Hero,"sn":"heroShot1","box":function ($v) { return Bridge.box($v, LunaController.Hero, System.Enum.toStringFn(LunaController.Hero));}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Hero Shot 2", 5, null, false, null)],"a":2,"n":"heroShot2","t":4,"rt":LunaController.Hero,"sn":"heroShot2","box":function ($v) { return Bridge.box($v, LunaController.Hero, System.Enum.toStringFn(LunaController.Hero));}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Hero Shot 3", 6, null, false, null)],"a":2,"n":"heroShot3","t":4,"rt":LunaController.Hero,"sn":"heroShot3","box":function ($v) { return Bridge.box($v, LunaController.Hero, System.Enum.toStringFn(LunaController.Hero));}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Hero Shot 4", 7, null, false, null)],"a":2,"n":"heroShot4","t":4,"rt":LunaController.Hero,"sn":"heroShot4","box":function ($v) { return Bridge.box($v, LunaController.Hero, System.Enum.toStringFn(LunaController.Hero));}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Music Enabled", 2, null, false, null)],"a":2,"n":"musicEnabled","t":4,"rt":$n[0].Boolean,"sn":"musicEnabled","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Music Volume", 3, null, false, null),new UnityEngine.RangeAttribute(0.0, 1.0)],"a":2,"n":"musicVolume","t":4,"rt":$n[0].Single,"sn":"musicVolume","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Playable Version", 0, null, false, null)],"a":2,"n":"version","t":4,"rt":LunaController.PlayableVersion,"sn":"version","box":function ($v) { return Bridge.box($v, LunaController.PlayableVersion, System.Enum.toStringFn(LunaController.PlayableVersion));}}]}; }, $n);
     /*LunaController end.*/
 
-    /*MonsterController start.*/
-    $m("MonsterController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"Dead","t":8,"sn":"Dead","rt":$n[0].Void},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"deadSFX","t":4,"rt":$n[1].AudioClip,"sn":"deadSFX"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"force","t":4,"rt":$n[1].Vector2,"sn":"force"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"joint","t":4,"rt":$n[1].TargetJoint2D,"sn":"joint"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"rb","t":4,"rt":$n[1].Rigidbody2D,"sn":"rb"}]}; }, $n);
-    /*MonsterController end.*/
+    /*LunaController+PlayableVersion start.*/
+    $m("LunaController.PlayableVersion", function () { return {"td":LunaController,"att":258,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"Ver1_3Taps","is":true,"t":4,"rt":LunaController.PlayableVersion,"sn":"Ver1_3Taps","box":function ($v) { return Bridge.box($v, LunaController.PlayableVersion, System.Enum.toStringFn(LunaController.PlayableVersion));}},{"a":2,"n":"Ver2_StoreAtTap2","is":true,"t":4,"rt":LunaController.PlayableVersion,"sn":"Ver2_StoreAtTap2","box":function ($v) { return Bridge.box($v, LunaController.PlayableVersion, System.Enum.toStringFn(LunaController.PlayableVersion));}}]}; }, $n);
+    /*LunaController+PlayableVersion end.*/
 
-    /*TargetController start.*/
-    $m("TargetController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"AddTarget","t":8,"pi":[{"n":"target","pt":$n[1].TargetJoint2D,"ps":0}],"sn":"AddTarget","rt":$n[0].Void,"p":[$n[1].TargetJoint2D]},{"a":1,"n":"CheckInput","t":8,"sn":"CheckInput","rt":$n[0].Void},{"a":2,"n":"IsEmpty","t":8,"sn":"IsEmpty","rt":$n[0].Boolean,"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"NextTarget","t":8,"sn":"NextTarget","rt":$n[0].Void},{"a":2,"n":"RemoveTarget","t":8,"sn":"RemoveTarget","rt":$n[0].Void},{"a":1,"n":"RemoveTargetPoint","t":8,"sn":"RemoveTargetPoint","rt":$n[0].Void},{"a":1,"n":"SetTargetPoint","t":8,"pi":[{"n":"point","pt":$n[1].Vector2,"ps":0}],"sn":"SetTargetPoint","rt":$n[0].Void,"p":[$n[1].Vector2]},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"currentTarget","t":4,"rt":$n[1].TargetJoint2D,"sn":"currentTarget"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"index","t":4,"rt":$n[0].Int32,"sn":"index","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"listTarget","t":4,"rt":$n[2].List$1(UnityEngine.TargetJoint2D),"sn":"listTarget"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"tut","t":4,"rt":$n[1].GameObject,"sn":"tut"}]}; }, $n);
-    /*TargetController end.*/
+    /*LunaController+Hero start.*/
+    $m("LunaController.Hero", function () { return {"td":LunaController,"att":258,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"BlackHair","is":true,"t":4,"rt":LunaController.Hero,"sn":"BlackHair","box":function ($v) { return Bridge.box($v, LunaController.Hero, System.Enum.toStringFn(LunaController.Hero));}},{"a":2,"n":"BlueHair","is":true,"t":4,"rt":LunaController.Hero,"sn":"BlueHair","box":function ($v) { return Bridge.box($v, LunaController.Hero, System.Enum.toStringFn(LunaController.Hero));}},{"a":2,"n":"Player416","is":true,"t":4,"rt":LunaController.Hero,"sn":"Player416","box":function ($v) { return Bridge.box($v, LunaController.Hero, System.Enum.toStringFn(LunaController.Hero));}},{"a":2,"n":"RedHair","is":true,"t":4,"rt":LunaController.Hero,"sn":"RedHair","box":function ($v) { return Bridge.box($v, LunaController.Hero, System.Enum.toStringFn(LunaController.Hero));}},{"a":2,"n":"Rumi","is":true,"t":4,"rt":LunaController.Hero,"sn":"Rumi","box":function ($v) { return Bridge.box($v, LunaController.Hero, System.Enum.toStringFn(LunaController.Hero));}},{"a":2,"n":"TOP","is":true,"t":4,"rt":LunaController.Hero,"sn":"TOP","box":function ($v) { return Bridge.box($v, LunaController.Hero, System.Enum.toStringFn(LunaController.Hero));}}]}; }, $n);
+    /*LunaController+Hero end.*/
 
-    /*VFXController start.*/
-    $m("VFXController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"BootstrapPool","t":8,"sn":"BootstrapPool","rt":$n[0].Void},{"a":1,"n":"CreateIns","t":8,"sn":"CreateIns","rt":$n[0].Void},{"a":1,"n":"CreateNewVFX","t":8,"sn":"CreateNewVFX","rt":$n[1].GameObject},{"a":1,"n":"GetFreeVFX","t":8,"sn":"GetFreeVFX","rt":$n[1].GameObject},{"a":1,"n":"ReturnToPool","t":8,"pi":[{"n":"blood","pt":$n[1].GameObject,"ps":0}],"sn":"ReturnToPool","rt":$n[3].IEnumerator,"p":[$n[1].GameObject]},{"a":2,"n":"SpawnVFX","t":8,"pi":[{"n":"position","pt":$n[1].Vector2,"ps":0}],"sn":"SpawnVFX","rt":$n[0].Void,"p":[$n[1].Vector2]},{"a":2,"n":"Ins","is":true,"t":4,"rt":VFXController,"sn":"Ins"},{"a":1,"n":"bloodPool","t":4,"rt":$n[2].Queue$1(UnityEngine.GameObject),"sn":"bloodPool"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"bloodPrefab","t":4,"rt":$n[1].GameObject,"sn":"bloodPrefab"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"pool","t":4,"rt":$n[1].Transform,"sn":"pool"}]}; }, $n);
-    /*VFXController end.*/
+    /*PlayableCameraController start.*/
+    $m("PlayableCameraController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"AimCenter","t":8,"sn":"AimCenter","rt":$n[1].Vector2},{"a":1,"n":"AimFrame","t":8,"sn":"AimFrame","rt":$n[1].Vector2},{"a":1,"n":"AimMax","t":8,"sn":"AimMax","rt":$n[1].Vector2},{"a":1,"n":"AimMin","t":8,"sn":"AimMin","rt":$n[1].Vector2},{"a":1,"n":"FitView","t":8,"sn":"FitView","rt":$n[0].Void},{"a":1,"n":"LateUpdate","t":8,"sn":"LateUpdate","rt":$n[0].Void},{"a":1,"n":"OnPreCull","t":8,"sn":"OnPreCull","rt":$n[0].Void},{"a":2,"n":"PanTo","t":8,"pi":[{"n":"target","pt":$n[1].Vector3,"ps":0}],"sn":"PanTo","rt":$n[0].Void,"p":[$n[1].Vector3]},{"a":2,"n":"SetAim","t":8,"pi":[{"n":"on","pt":$n[0].Boolean,"ps":0}],"sn":"SetAim","rt":$n[0].Void,"p":[$n[0].Boolean]},{"a":2,"n":"IsAiming","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_IsAiming","t":8,"rt":$n[0].Boolean,"fg":"IsAiming","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"IsAiming"},{"a":2,"n":"IsPanning","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_IsPanning","t":8,"rt":$n[0].Boolean,"fg":"IsPanning","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"IsPanning"},{"a":1,"n":"aimBlend","t":4,"rt":$n[0].Single,"sn":"aimBlend","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.HideInInspector()],"a":2,"n":"aimFocus","t":4,"rt":$n[1].Vector2,"sn":"aimFocus"},{"a":2,"n":"aimFocusMargin","t":4,"rt":$n[1].Vector2,"sn":"aimFocusMargin"},{"a":2,"n":"aimFrame","t":4,"rt":$n[1].Vector2,"sn":"aimFrame"},{"a":2,"n":"aimPosition","t":4,"rt":$n[1].Vector3,"sn":"aimPosition"},{"a":2,"n":"aimRoomMax","t":4,"rt":$n[1].Vector2,"sn":"aimRoomMax"},{"at":[new UnityEngine.HeaderAttribute("Aim (khi k\u00e9o d\u00e2y n\u00e1)")],"a":2,"n":"aimRoomMin","t":4,"rt":$n[1].Vector2,"sn":"aimRoomMin"},{"a":2,"n":"aimZoomInTime","t":4,"rt":$n[0].Single,"sn":"aimZoomInTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"aimZoomOutTime","t":4,"rt":$n[0].Single,"sn":"aimZoomOutTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"aiming","t":4,"rt":$n[0].Boolean,"sn":"aiming","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"destination","t":4,"rt":$n[1].Vector3,"sn":"destination"},{"a":1,"n":"elapsed","t":4,"rt":$n[0].Single,"sn":"elapsed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"followTarget","t":4,"rt":$n[1].Transform,"sn":"followTarget"},{"a":2,"n":"mapFrame","t":4,"rt":$n[1].Vector2,"sn":"mapFrame"},{"a":2,"n":"mapPosition","t":4,"rt":$n[1].Vector3,"sn":"mapPosition"},{"a":2,"n":"onAfterMove","t":4,"rt":Function,"sn":"onAfterMove"},{"a":2,"n":"panDuration","t":4,"rt":$n[0].Single,"sn":"panDuration","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"panning","t":4,"rt":$n[0].Boolean,"sn":"panning","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"slingFrame","t":4,"rt":$n[1].Vector2,"sn":"slingFrame"},{"a":2,"n":"slingPosition","t":4,"rt":$n[1].Vector3,"sn":"slingPosition"},{"a":1,"n":"start","t":4,"rt":$n[1].Vector3,"sn":"start"},{"at":[new UnityEngine.RangeAttribute(0.0, 0.5)],"a":2,"n":"uiVerticalReserve","t":4,"rt":$n[0].Single,"sn":"uiVerticalReserve","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"view","t":4,"rt":$n[1].Camera,"sn":"view"}]}; }, $n);
+    /*PlayableCameraController end.*/
+
+    /*PlayableFlowController start.*/
+    $m("PlayableFlowController", function () { return {"nested":[PlayableFlowController.Phase],"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"BeginDrag","t":8,"pi":[{"n":"world","pt":$n[1].Vector2,"ps":0}],"sn":"BeginDrag","rt":$n[0].Boolean,"p":[$n[1].Vector2],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"BeginDragScreen","t":8,"pi":[{"n":"screen","pt":$n[1].Vector2,"ps":0}],"sn":"BeginDragScreen","rt":$n[0].Void,"p":[$n[1].Vector2]},{"a":1,"n":"BeginInput","t":8,"sn":"BeginInput","rt":$n[0].Void},{"a":1,"n":"CancelDrag","t":8,"sn":"CancelDrag","rt":$n[0].Void},{"a":2,"n":"Drag","t":8,"pi":[{"n":"world","pt":$n[1].Vector2,"ps":0}],"sn":"Drag","rt":$n[0].Void,"p":[$n[1].Vector2]},{"a":1,"n":"DragScreen","t":8,"pi":[{"n":"screen","pt":$n[1].Vector2,"ps":0}],"sn":"DragScreen","rt":$n[0].Void,"p":[$n[1].Vector2]},{"a":1,"n":"HeroId","t":8,"pi":[{"n":"shot","pt":$n[0].Int32,"ps":0}],"sn":"HeroId","rt":$n[0].Int32,"p":[$n[0].Int32],"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"HeroName","t":8,"pi":[{"n":"id","pt":$n[0].Int32,"ps":0}],"sn":"HeroName","rt":$n[0].String,"p":[$n[0].Int32]},{"a":1,"n":"InSelect","t":8,"pi":[{"n":"id","pt":$n[0].Int32,"ps":0},{"n":"count","pt":$n[0].Int32,"ps":1}],"sn":"InSelect","rt":$n[0].Boolean,"p":[$n[0].Int32,$n[0].Int32],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"LoadActor","t":8,"pi":[{"n":"index","pt":$n[0].Int32,"ps":0}],"sn":"LoadActor","rt":$n[0].Void,"p":[$n[0].Int32]},{"a":1,"n":"NextShot","t":8,"sn":"NextShot","rt":$n[0].Void},{"a":1,"n":"OnApplicationFocus","t":8,"pi":[{"n":"focus","pt":$n[0].Boolean,"ps":0}],"sn":"OnApplicationFocus","rt":$n[0].Void,"p":[$n[0].Boolean]},{"a":2,"n":"OpenStore","t":8,"sn":"OpenStore","rt":$n[0].Void},{"a":1,"n":"PlaceHandAtScreen","t":8,"pi":[{"n":"screen","pt":$n[1].Vector2,"ps":0}],"sn":"PlaceHandAtScreen","rt":$n[0].Void,"p":[$n[1].Vector2]},{"a":2,"n":"PlayImpact","t":8,"sn":"PlayImpact","rt":$n[0].Void},{"a":2,"n":"PlayKnock","t":8,"sn":"PlayKnock","rt":$n[0].Void},{"a":1,"n":"PlaySfx","t":8,"pi":[{"n":"clip","pt":$n[1].AudioClip,"ps":0},{"n":"volume","pt":$n[0].Single,"ps":1}],"sn":"PlaySfx","rt":$n[0].Void,"p":[$n[1].AudioClip,$n[0].Single]},{"a":1,"n":"PointerDown","t":8,"pi":[{"n":"p","pt":$n[1].Vector2,"ps":0}],"sn":"PointerDown","rt":$n[0].Void,"p":[$n[1].Vector2]},{"a":1,"n":"ReadInput","t":8,"sn":"ReadInput","rt":$n[0].Void},{"a":2,"n":"ReleaseShot","t":8,"sn":"ReleaseShot","rt":$n[0].Void},{"a":1,"n":"SetDots","t":8,"pi":[{"n":"on","pt":$n[0].Boolean,"ps":0}],"sn":"SetDots","rt":$n[0].Void,"p":[$n[0].Boolean]},{"a":1,"n":"ShowEndCard","t":8,"pi":[{"n":"id","pt":$n[0].Int32,"ps":0}],"sn":"ShowEndCard","rt":$n[0].Void,"p":[$n[0].Int32]},{"a":1,"n":"ShowHeroSelect","t":8,"sn":"ShowHeroSelect","rt":$n[0].Void},{"a":2,"n":"SpawnTap","t":8,"sn":"SpawnTap","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"StartDragging","t":8,"pi":[{"n":"world","pt":$n[1].Vector2,"ps":0}],"sn":"StartDragging","rt":$n[0].Boolean,"p":[$n[1].Vector2],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"StartMusic","t":8,"sn":"StartMusic","rt":$n[0].Void},{"a":1,"n":"TrySelect","t":8,"pi":[{"n":"screen","pt":$n[1].Vector2,"ps":0}],"sn":"TrySelect","rt":$n[0].Void,"p":[$n[1].Vector2]},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":1,"n":"UpdateBands","t":8,"pi":[{"n":"point","pt":$n[1].Vector2,"ps":0}],"sn":"UpdateBands","rt":$n[0].Void,"p":[$n[1].Vector2]},{"a":1,"n":"UpdateHandReady","t":8,"sn":"UpdateHandReady","rt":$n[0].Void},{"a":1,"n":"UpdateTrajectory","t":8,"pi":[{"n":"velocity","pt":$n[1].Vector2,"ps":0}],"sn":"UpdateTrajectory","rt":$n[0].Void,"p":[$n[1].Vector2]},{"a":1,"n":"UpdateUI","t":8,"sn":"UpdateUI","rt":$n[0].Void},{"a":1,"n":"WasShot","t":8,"pi":[{"n":"id","pt":$n[0].Int32,"ps":0}],"sn":"WasShot","rt":$n[0].Boolean,"p":[$n[0].Int32],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"World","t":8,"pi":[{"n":"p","pt":$n[1].Vector2,"ps":0}],"sn":"World","rt":$n[1].Vector2,"p":[$n[1].Vector2]},{"a":1,"n":"CanGrab","t":16,"rt":$n[0].Boolean,"g":{"a":1,"n":"get_CanGrab","t":8,"rt":$n[0].Boolean,"fg":"CanGrab","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"CanGrab"},{"a":1,"n":"ShotCount","t":16,"rt":$n[0].Int32,"g":{"a":1,"n":"get_ShotCount","t":8,"rt":$n[0].Int32,"fg":"ShotCount","box":function ($v) { return Bridge.box($v, System.Int32);}},"fn":"ShotCount"},{"a":2,"n":"actorLabel","t":4,"rt":$n[2].Text,"sn":"actorLabel"},{"a":2,"n":"actors","t":4,"rt":System.Array.type(RagdollActor),"sn":"actors"},{"a":2,"n":"anchor","t":4,"rt":$n[1].Vector2,"sn":"anchor"},{"a":2,"n":"audioSource","t":4,"rt":$n[1].AudioSource,"sn":"audioSource"},{"a":2,"n":"bgm","t":4,"rt":$n[1].AudioClip,"sn":"bgm"},{"a":2,"n":"cameraRig","t":4,"rt":PlayableCameraController,"sn":"cameraRig"},{"a":2,"n":"ctaButton","t":4,"rt":$n[1].RectTransform,"sn":"ctaButton"},{"a":2,"n":"ctaSound","t":4,"rt":$n[1].AudioClip,"sn":"ctaSound"},{"a":1,"n":"current","t":4,"rt":RagdollActor,"sn":"current"},{"a":1,"n":"dotBaseScale","t":4,"rt":System.Array.type(UnityEngine.Vector3),"sn":"dotBaseScale"},{"a":2,"n":"dotSizeEnd","t":4,"rt":$n[0].Single,"sn":"dotSizeEnd","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"dotSizeStart","t":4,"rt":$n[0].Single,"sn":"dotSizeStart","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"endCardPortrait","t":4,"rt":$n[2].Image,"sn":"endCardPortrait"},{"a":2,"n":"endCardRoot","t":4,"rt":$n[1].GameObject,"sn":"endCardRoot"},{"a":2,"n":"endCardTitle","t":4,"rt":$n[2].Text,"sn":"endCardTitle"},{"a":1,"n":"flightTime","t":4,"rt":$n[0].Single,"sn":"flightTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"flySound","t":4,"rt":$n[1].AudioClip,"sn":"flySound"},{"at":[new UnityEngine.RangeAttribute(0.0, 1.0)],"a":2,"n":"flyVolume","t":4,"rt":$n[0].Single,"sn":"flyVolume","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"frameHighlight","t":4,"rt":$n[1].Sprite,"sn":"frameHighlight"},{"a":2,"n":"frameNormal","t":4,"rt":$n[1].Sprite,"sn":"frameNormal"},{"a":1,"n":"gameEnded","t":4,"rt":$n[0].Boolean,"sn":"gameEnded","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"grabOffset","t":4,"rt":$n[1].Vector2,"sn":"grabOffset"},{"a":2,"n":"grabRadius","t":4,"rt":$n[0].Single,"sn":"grabRadius","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"grabScreen","t":4,"rt":$n[1].Vector2,"sn":"grabScreen"},{"a":2,"n":"grabSound","t":4,"rt":$n[1].AudioClip,"sn":"grabSound"},{"a":1,"n":"grabUnitsPerPixel","t":4,"rt":$n[0].Single,"sn":"grabUnitsPerPixel","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"handAlpha","t":4,"rt":$n[1].CanvasGroup,"sn":"handAlpha"},{"a":2,"n":"handGuide","t":4,"rt":$n[1].RectTransform,"sn":"handGuide"},{"a":2,"n":"handTargetButton","t":4,"rt":$n[0].Int32,"sn":"handTargetButton","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"handTimer","t":4,"rt":$n[0].Single,"sn":"handTimer","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"heroOrder","t":4,"rt":$n[0].Array.type(System.Int32),"sn":"heroOrder"},{"at":[new UnityEngine.HeaderAttribute("Heroes")],"a":2,"n":"heroSkins","t":4,"rt":HeroSkins,"sn":"heroSkins"},{"a":2,"n":"hitReturnTime","t":4,"rt":$n[0].Single,"sn":"hitReturnTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"hitTime","t":4,"rt":$n[0].Single,"sn":"hitTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"ignoreNearPull","t":4,"rt":$n[0].Single,"sn":"ignoreNearPull","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"impactSound","t":4,"rt":$n[1].AudioClip,"sn":"impactSound"},{"a":2,"n":"impactSounds","t":4,"rt":System.Array.type(UnityEngine.AudioClip),"sn":"impactSounds"},{"a":2,"n":"installCallCount","t":4,"rt":$n[0].Int32,"sn":"installCallCount","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"introHold","t":4,"rt":$n[0].Single,"sn":"introHold","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"introText","t":4,"rt":$n[0].String,"sn":"introText"},{"a":2,"n":"knockSound","t":4,"rt":$n[1].AudioClip,"sn":"knockSound"},{"a":1,"n":"lastImpactSound","t":4,"rt":$n[0].Single,"sn":"lastImpactSound","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"launchScale","t":4,"rt":$n[0].Single,"sn":"launchScale","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"launchSound","t":4,"rt":$n[1].AudioClip,"sn":"launchSound"},{"a":2,"n":"leftBand","t":4,"rt":$n[1].LineRenderer,"sn":"leftBand"},{"a":2,"n":"leftBandTip","t":4,"rt":$n[1].Vector3,"sn":"leftBandTip"},{"a":2,"n":"maxFlightTime","t":4,"rt":$n[0].Single,"sn":"maxFlightTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"maxPull","t":4,"rt":$n[0].Single,"sn":"maxPull","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"minHitTime","t":4,"rt":$n[0].Single,"sn":"minHitTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"musicSource","t":4,"rt":$n[1].AudioSource,"sn":"musicSource"},{"at":[new UnityEngine.RangeAttribute(0.0, 1.0)],"a":2,"n":"musicVolume","t":4,"rt":$n[0].Single,"sn":"musicVolume","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"phase","t":4,"rt":PlayableFlowController.Phase,"sn":"phase","box":function ($v) { return Bridge.box($v, PlayableFlowController.Phase, System.Enum.toStringFn(PlayableFlowController.Phase));}},{"at":[new UnityEngine.RangeAttribute(1.0, 2.0)],"a":2,"n":"playableVersion","t":4,"rt":$n[0].Int32,"sn":"playableVersion","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"pointerId","t":4,"rt":$n[0].Int32,"sn":"pointerId","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"prompt","t":4,"rt":$n[2].Text,"sn":"prompt"},{"a":1,"n":"pull","t":4,"rt":$n[1].Vector2,"sn":"pull"},{"a":2,"n":"resultHold","t":4,"rt":$n[0].Single,"sn":"resultHold","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"rightBand","t":4,"rt":$n[1].LineRenderer,"sn":"rightBand"},{"a":2,"n":"rightBandTip","t":4,"rt":$n[1].Vector3,"sn":"rightBandTip"},{"a":2,"n":"selectButtons","t":4,"rt":System.Array.type(UnityEngine.RectTransform),"sn":"selectButtons"},{"a":2,"n":"selectFrames","t":4,"rt":System.Array.type(UnityEngine.UI.Image),"sn":"selectFrames"},{"a":1,"n":"selectIds","t":4,"rt":$n[0].Array.type(System.Int32),"sn":"selectIds"},{"a":2,"n":"selectNames","t":4,"rt":System.Array.type(UnityEngine.UI.Text),"sn":"selectNames"},{"a":2,"n":"selectPortraits","t":4,"rt":System.Array.type(UnityEngine.UI.Image),"sn":"selectPortraits"},{"at":[new UnityEngine.HeaderAttribute("Hero select + End card")],"a":2,"n":"selectRoot","t":4,"rt":$n[1].GameObject,"sn":"selectRoot"},{"a":1,"n":"settledTime","t":4,"rt":$n[0].Single,"sn":"settledTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"shotIndex","t":4,"rt":$n[0].Int32,"sn":"shotIndex","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"spawnSound","t":4,"rt":$n[1].AudioClip,"sn":"spawnSound"},{"at":[new UnityEngine.RangeAttribute(0.0, 1.0)],"a":2,"n":"spawnVolume","t":4,"rt":$n[0].Single,"sn":"spawnVolume","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"started","t":4,"rt":$n[0].Boolean,"sn":"started","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"storeOpened","t":4,"rt":$n[0].Boolean,"sn":"storeOpened","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"tapCount","t":4,"rt":$n[0].Int32,"sn":"tapCount","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"timer","t":4,"rt":$n[0].Single,"sn":"timer","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"trajectoryDots","t":4,"rt":System.Array.type(UnityEngine.Transform),"sn":"trajectoryDots"},{"a":2,"n":"trajectoryTime","t":4,"rt":$n[0].Single,"sn":"trajectoryTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"uiCamera","t":4,"rt":$n[1].Camera,"sn":"uiCamera"},{"a":2,"n":"versionLabel","t":4,"rt":$n[2].Text,"sn":"versionLabel"},{"a":1,"n":"view","t":4,"rt":$n[1].Camera,"sn":"view"}]}; }, $n);
+    /*PlayableFlowController end.*/
+
+    /*PlayableFlowController+Phase start.*/
+    $m("PlayableFlowController.Phase", function () { return {"td":PlayableFlowController,"att":258,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"AwaitSpawnTap","is":true,"t":4,"rt":PlayableFlowController.Phase,"sn":"AwaitSpawnTap","box":function ($v) { return Bridge.box($v, PlayableFlowController.Phase, System.Enum.toStringFn(PlayableFlowController.Phase));}},{"a":2,"n":"Dragging","is":true,"t":4,"rt":PlayableFlowController.Phase,"sn":"Dragging","box":function ($v) { return Bridge.box($v, PlayableFlowController.Phase, System.Enum.toStringFn(PlayableFlowController.Phase));}},{"a":2,"n":"EndCard","is":true,"t":4,"rt":PlayableFlowController.Phase,"sn":"EndCard","box":function ($v) { return Bridge.box($v, PlayableFlowController.Phase, System.Enum.toStringFn(PlayableFlowController.Phase));}},{"a":2,"n":"Flying","is":true,"t":4,"rt":PlayableFlowController.Phase,"sn":"Flying","box":function ($v) { return Bridge.box($v, PlayableFlowController.Phase, System.Enum.toStringFn(PlayableFlowController.Phase));}},{"a":2,"n":"IntroMap","is":true,"t":4,"rt":PlayableFlowController.Phase,"sn":"IntroMap","box":function ($v) { return Bridge.box($v, PlayableFlowController.Phase, System.Enum.toStringFn(PlayableFlowController.Phase));}},{"a":2,"n":"PanToSling","is":true,"t":4,"rt":PlayableFlowController.Phase,"sn":"PanToSling","box":function ($v) { return Bridge.box($v, PlayableFlowController.Phase, System.Enum.toStringFn(PlayableFlowController.Phase));}},{"a":2,"n":"Ready","is":true,"t":4,"rt":PlayableFlowController.Phase,"sn":"Ready","box":function ($v) { return Bridge.box($v, PlayableFlowController.Phase, System.Enum.toStringFn(PlayableFlowController.Phase));}},{"a":2,"n":"ResultDelay","is":true,"t":4,"rt":PlayableFlowController.Phase,"sn":"ResultDelay","box":function ($v) { return Bridge.box($v, PlayableFlowController.Phase, System.Enum.toStringFn(PlayableFlowController.Phase));}},{"a":2,"n":"ReturnToSling","is":true,"t":4,"rt":PlayableFlowController.Phase,"sn":"ReturnToSling","box":function ($v) { return Bridge.box($v, PlayableFlowController.Phase, System.Enum.toStringFn(PlayableFlowController.Phase));}},{"a":2,"n":"SelectHero","is":true,"t":4,"rt":PlayableFlowController.Phase,"sn":"SelectHero","box":function ($v) { return Bridge.box($v, PlayableFlowController.Phase, System.Enum.toStringFn(PlayableFlowController.Phase));}},{"a":2,"n":"Store","is":true,"t":4,"rt":PlayableFlowController.Phase,"sn":"Store","box":function ($v) { return Bridge.box($v, PlayableFlowController.Phase, System.Enum.toStringFn(PlayableFlowController.Phase));}}]}; }, $n);
+    /*PlayableFlowController+Phase end.*/
+
+    /*RagdollActor start.*/
+    $m("RagdollActor", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"FixedUpdate","t":8,"sn":"FixedUpdate","rt":$n[0].Void},{"a":2,"n":"Freeze","t":8,"sn":"Freeze","rt":$n[0].Void},{"a":2,"n":"FreezeWhenSettled","t":8,"sn":"FreezeWhenSettled","rt":$n[0].Void},{"a":1,"n":"IgnoreSelfCollision","t":8,"sn":"IgnoreSelfCollision","rt":$n[0].Void},{"a":2,"n":"Initialize","t":8,"sn":"Initialize","rt":$n[0].Void},{"a":2,"n":"IsSettled","t":8,"sn":"IsSettled","rt":$n[0].Boolean,"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"Launch","t":8,"pi":[{"n":"velocity","pt":$n[1].Vector2,"ps":0}],"sn":"Launch","rt":$n[0].Void,"p":[$n[1].Vector2]},{"a":2,"n":"LoadAt","t":8,"pi":[{"n":"position","pt":$n[1].Vector2,"ps":0}],"sn":"LoadAt","rt":$n[0].Void,"p":[$n[1].Vector2]},{"a":2,"n":"ReactToHit","t":8,"pi":[{"n":"velocity","pt":$n[1].Vector2,"ps":0}],"sn":"ReactToHit","rt":$n[0].Void,"p":[$n[1].Vector2]},{"a":2,"n":"SetCollidersEnabled","t":8,"pi":[{"n":"on","pt":$n[0].Boolean,"ps":0}],"sn":"SetCollidersEnabled","rt":$n[0].Void,"p":[$n[0].Boolean]},{"a":2,"n":"SetDragging","t":8,"pi":[{"n":"dragging","pt":$n[0].Boolean,"ps":0}],"sn":"SetDragging","rt":$n[0].Void,"p":[$n[0].Boolean]},{"a":1,"n":"SyncBodies","t":8,"sn":"SyncBodies","rt":$n[0].Void},{"a":2,"n":"bodies","t":4,"rt":System.Array.type(UnityEngine.Rigidbody2D),"sn":"bodies"},{"a":2,"n":"hasCollided","t":4,"rt":$n[0].Boolean,"sn":"hasCollided","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"initialized","t":4,"rt":$n[0].Boolean,"sn":"initialized","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"knockedDown","t":4,"rt":$n[0].Boolean,"sn":"knockedDown","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"launchTime","t":4,"rt":$n[0].Single,"sn":"launchTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"localPositions","t":4,"rt":System.Array.type(UnityEngine.Vector3),"sn":"localPositions"},{"a":1,"n":"localRotations","t":4,"rt":System.Array.type(UnityEngine.Quaternion),"sn":"localRotations"},{"a":1,"n":"orders","t":4,"rt":$n[0].Array.type(System.Int32),"sn":"orders"},{"a":1,"n":"ownColliders","t":4,"rt":System.Array.type(UnityEngine.Collider2D),"sn":"ownColliders"},{"a":1,"n":"pendingFreeze","t":4,"rt":$n[0].Boolean,"sn":"pendingFreeze","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"reactiveTarget","t":4,"rt":$n[0].Boolean,"sn":"reactiveTarget","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"renderers","t":4,"rt":System.Array.type(UnityEngine.SpriteRenderer),"sn":"renderers"},{"a":1,"n":"restTime","t":4,"rt":$n[0].Single,"sn":"restTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"torso","t":4,"rt":$n[1].Rigidbody2D,"sn":"torso"}]}; }, $n);
+    /*RagdollActor end.*/
+
+    /*RagdollImpact start.*/
+    $m("RagdollImpact", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"OnCollisionEnter2D","t":8,"pi":[{"n":"hit","pt":$n[1].Collision2D,"ps":0}],"sn":"OnCollisionEnter2D","rt":$n[0].Void,"p":[$n[1].Collision2D]},{"a":1,"n":"OnCollisionStay2D","t":8,"pi":[{"n":"hit","pt":$n[1].Collision2D,"ps":0}],"sn":"OnCollisionStay2D","rt":$n[0].Void,"p":[$n[1].Collision2D]},{"a":2,"n":"actor","t":4,"rt":RagdollActor,"sn":"actor"},{"a":2,"n":"flow","t":4,"rt":PlayableFlowController,"sn":"flow"},{"a":1,"n":"lastSound","t":4,"rt":$n[0].Single,"sn":"lastSound","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"launchGrace","is":true,"t":4,"rt":$n[0].Single,"sn":"launchGrace","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}}]}; }, $n);
+    /*RagdollImpact end.*/
+
+    /*TextOutline start.*/
+    $m("TextOutline", function () { return {"att":1048577,"a":2,"at":[new UnityEngine.RequireComponent.ctor(UnityEngine.UI.Text)],"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"LateUpdate","t":8,"sn":"LateUpdate","rt":$n[0].Void},{"a":1,"n":"Sync","t":8,"pi":[{"n":"force","pt":$n[0].Boolean,"ps":0}],"sn":"Sync","rt":$n[0].Void,"p":[$n[0].Boolean]},{"a":2,"n":"baseAlpha","t":4,"rt":$n[0].Array.type(System.Single),"sn":"baseAlpha"},{"a":2,"n":"copies","t":4,"rt":System.Array.type(UnityEngine.UI.Text),"sn":"copies"},{"a":1,"n":"lastAlpha","t":4,"rt":$n[0].Single,"sn":"lastAlpha","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"lastEnabled","t":4,"rt":$n[0].Boolean,"sn":"lastEnabled","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"lastText","t":4,"rt":$n[0].String,"sn":"lastText"},{"a":2,"n":"outlineColor","t":4,"rt":$n[1].Color,"sn":"outlineColor"},{"a":2,"n":"shadowColor","t":4,"rt":$n[1].Color,"sn":"shadowColor"},{"a":2,"n":"shadowOffset","t":4,"rt":$n[1].Vector2,"sn":"shadowOffset"},{"a":1,"n":"source","t":4,"rt":$n[2].Text,"sn":"source"},{"a":2,"n":"thickness","t":4,"rt":$n[0].Single,"sn":"thickness","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}}]}; }, $n);
+    /*TextOutline end.*/
 
     /*IAmAnEmptyScriptJustToMakeCodelessProjectsCompileProperty start.*/
     $m("IAmAnEmptyScriptJustToMakeCodelessProjectsCompileProperty", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"}]}; }, $n);
     /*IAmAnEmptyScriptJustToMakeCodelessProjectsCompileProperty end.*/
-
-    /*DG.Tweening.DOTweenModulePhysics2D start.*/
-    $m("DG.Tweening.DOTweenModulePhysics2D", function () { return {"att":1048961,"a":2,"s":true,"m":[{"a":2,"n":"DOJump","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].Rigidbody2D,"ps":0},{"n":"endValue","pt":$n[1].Vector2,"ps":1},{"n":"jumpPower","pt":$n[0].Single,"ps":2},{"n":"numJumps","pt":$n[0].Int32,"ps":3},{"n":"duration","pt":$n[0].Single,"ps":4},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":5}],"sn":"DOJump","rt":$n[5].Sequence,"p":[$n[1].Rigidbody2D,$n[1].Vector2,$n[0].Single,$n[0].Int32,$n[0].Single,$n[0].Boolean]},{"a":4,"n":"DOLocalPath","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].Rigidbody2D,"ps":0},{"n":"path","pt":$n[6].Path,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"pathMode","dv":1,"o":true,"pt":$n[5].PathMode,"ps":3}],"sn":"DOLocalPath$1","rt":$n[7].TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions),"p":[$n[1].Rigidbody2D,$n[6].Path,$n[0].Single,$n[5].PathMode]},{"a":2,"n":"DOLocalPath","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].Rigidbody2D,"ps":0},{"n":"path","pt":System.Array.type(UnityEngine.Vector2),"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"pathType","dv":0,"o":true,"pt":$n[5].PathType,"ps":3},{"n":"pathMode","dv":1,"o":true,"pt":$n[5].PathMode,"ps":4},{"n":"resolution","dv":10,"o":true,"pt":$n[0].Int32,"ps":5},{"n":"gizmoColor","dv":null,"o":true,"pt":$n[0].Nullable$1(UnityEngine.Color),"ps":6}],"sn":"DOLocalPath","rt":$n[7].TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions),"p":[$n[1].Rigidbody2D,System.Array.type(UnityEngine.Vector2),$n[0].Single,$n[5].PathType,$n[5].PathMode,$n[0].Int32,$n[0].Nullable$1(UnityEngine.Color)]},{"a":2,"n":"DOMove","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].Rigidbody2D,"ps":0},{"n":"endValue","pt":$n[1].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOMove","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[1].Rigidbody2D,$n[1].Vector2,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOMoveX","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].Rigidbody2D,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOMoveX","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[1].Rigidbody2D,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOMoveY","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].Rigidbody2D,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOMoveY","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[1].Rigidbody2D,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":4,"n":"DOPath","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].Rigidbody2D,"ps":0},{"n":"path","pt":$n[6].Path,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"pathMode","dv":1,"o":true,"pt":$n[5].PathMode,"ps":3}],"sn":"DOPath$1","rt":$n[7].TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions),"p":[$n[1].Rigidbody2D,$n[6].Path,$n[0].Single,$n[5].PathMode]},{"a":2,"n":"DOPath","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].Rigidbody2D,"ps":0},{"n":"path","pt":System.Array.type(UnityEngine.Vector2),"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"pathType","dv":0,"o":true,"pt":$n[5].PathType,"ps":3},{"n":"pathMode","dv":1,"o":true,"pt":$n[5].PathMode,"ps":4},{"n":"resolution","dv":10,"o":true,"pt":$n[0].Int32,"ps":5},{"n":"gizmoColor","dv":null,"o":true,"pt":$n[0].Nullable$1(UnityEngine.Color),"ps":6}],"sn":"DOPath","rt":$n[7].TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions),"p":[$n[1].Rigidbody2D,System.Array.type(UnityEngine.Vector2),$n[0].Single,$n[5].PathType,$n[5].PathMode,$n[0].Int32,$n[0].Nullable$1(UnityEngine.Color)]},{"a":2,"n":"DORotate","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].Rigidbody2D,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DORotate","rt":$n[7].TweenerCore$3(System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions),"p":[$n[1].Rigidbody2D,$n[0].Single,$n[0].Single]}]}; }, $n);
-    /*DG.Tweening.DOTweenModulePhysics2D end.*/
-
-    /*DG.Tweening.DOTweenModuleSprite start.*/
-    $m("DG.Tweening.DOTweenModuleSprite", function () { return {"att":1048961,"a":2,"s":true,"m":[{"a":2,"n":"DOBlendableColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].SpriteRenderer,"ps":0},{"n":"endValue","pt":$n[1].Color,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOBlendableColor","rt":$n[5].Tweener,"p":[$n[1].SpriteRenderer,$n[1].Color,$n[0].Single]},{"a":2,"n":"DOColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].SpriteRenderer,"ps":0},{"n":"endValue","pt":$n[1].Color,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOColor","rt":$n[7].TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions),"p":[$n[1].SpriteRenderer,$n[1].Color,$n[0].Single]},{"a":2,"n":"DOFade","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].SpriteRenderer,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOFade","rt":$n[7].TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions),"p":[$n[1].SpriteRenderer,$n[0].Single,$n[0].Single]},{"a":2,"n":"DOGradientColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].SpriteRenderer,"ps":0},{"n":"gradient","pt":pc.ColorGradient,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOGradientColor","rt":$n[5].Sequence,"p":[$n[1].SpriteRenderer,pc.ColorGradient,$n[0].Single]}]}; }, $n);
-    /*DG.Tweening.DOTweenModuleSprite end.*/
-
-    /*DG.Tweening.DOTweenModuleUI start.*/
-    $m("DG.Tweening.DOTweenModuleUI", function () { return {"nested":[$n[5].DOTweenModuleUI.Utils],"att":1048961,"a":2,"s":true,"m":[{"a":2,"n":"DOAnchorMax","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].RectTransform,"ps":0},{"n":"endValue","pt":$n[1].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOAnchorMax","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[1].RectTransform,$n[1].Vector2,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOAnchorMin","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].RectTransform,"ps":0},{"n":"endValue","pt":$n[1].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOAnchorMin","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[1].RectTransform,$n[1].Vector2,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOAnchorPos","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].RectTransform,"ps":0},{"n":"endValue","pt":$n[1].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOAnchorPos","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[1].RectTransform,$n[1].Vector2,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOAnchorPos3D","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].RectTransform,"ps":0},{"n":"endValue","pt":$n[1].Vector3,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOAnchorPos3D","rt":$n[7].TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[1].RectTransform,$n[1].Vector3,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOAnchorPos3DX","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].RectTransform,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOAnchorPos3DX","rt":$n[7].TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[1].RectTransform,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOAnchorPos3DY","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].RectTransform,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOAnchorPos3DY","rt":$n[7].TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[1].RectTransform,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOAnchorPos3DZ","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].RectTransform,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOAnchorPos3DZ","rt":$n[7].TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[1].RectTransform,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOAnchorPosX","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].RectTransform,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOAnchorPosX","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[1].RectTransform,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOAnchorPosY","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].RectTransform,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOAnchorPosY","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[1].RectTransform,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOBlendableColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[4].Graphic,"ps":0},{"n":"endValue","pt":$n[1].Color,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOBlendableColor","rt":$n[5].Tweener,"p":[$n[4].Graphic,$n[1].Color,$n[0].Single]},{"a":2,"n":"DOBlendableColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[4].Image,"ps":0},{"n":"endValue","pt":$n[1].Color,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOBlendableColor$1","rt":$n[5].Tweener,"p":[$n[4].Image,$n[1].Color,$n[0].Single]},{"a":2,"n":"DOBlendableColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[4].Text,"ps":0},{"n":"endValue","pt":$n[1].Color,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOBlendableColor$2","rt":$n[5].Tweener,"p":[$n[4].Text,$n[1].Color,$n[0].Single]},{"a":2,"n":"DOColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[4].Graphic,"ps":0},{"n":"endValue","pt":$n[1].Color,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOColor","rt":$n[7].TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions),"p":[$n[4].Graphic,$n[1].Color,$n[0].Single]},{"a":2,"n":"DOColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[4].Image,"ps":0},{"n":"endValue","pt":$n[1].Color,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOColor$1","rt":$n[7].TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions),"p":[$n[4].Image,$n[1].Color,$n[0].Single]},{"a":2,"n":"DOColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[4].Outline,"ps":0},{"n":"endValue","pt":$n[1].Color,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOColor$2","rt":$n[7].TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions),"p":[$n[4].Outline,$n[1].Color,$n[0].Single]},{"a":2,"n":"DOColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[4].Text,"ps":0},{"n":"endValue","pt":$n[1].Color,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOColor$3","rt":$n[7].TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions),"p":[$n[4].Text,$n[1].Color,$n[0].Single]},{"a":2,"n":"DOCounter","is":true,"t":8,"pi":[{"n":"target","pt":$n[4].Text,"ps":0},{"n":"fromValue","pt":$n[0].Int32,"ps":1},{"n":"endValue","pt":$n[0].Int32,"ps":2},{"n":"duration","pt":$n[0].Single,"ps":3},{"n":"addThousandsSeparator","dv":true,"o":true,"pt":$n[0].Boolean,"ps":4},{"n":"culture","dv":null,"o":true,"pt":$n[8].CultureInfo,"ps":5}],"sn":"DOCounter","rt":$n[7].TweenerCore$3(System.Int32,System.Int32,DG.Tweening.Plugins.Options.NoOptions),"p":[$n[4].Text,$n[0].Int32,$n[0].Int32,$n[0].Single,$n[0].Boolean,$n[8].CultureInfo]},{"a":2,"n":"DOFade","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].CanvasGroup,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOFade","rt":$n[7].TweenerCore$3(System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions),"p":[$n[1].CanvasGroup,$n[0].Single,$n[0].Single]},{"a":2,"n":"DOFade","is":true,"t":8,"pi":[{"n":"target","pt":$n[4].Graphic,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOFade$1","rt":$n[7].TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions),"p":[$n[4].Graphic,$n[0].Single,$n[0].Single]},{"a":2,"n":"DOFade","is":true,"t":8,"pi":[{"n":"target","pt":$n[4].Image,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOFade$2","rt":$n[7].TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions),"p":[$n[4].Image,$n[0].Single,$n[0].Single]},{"a":2,"n":"DOFade","is":true,"t":8,"pi":[{"n":"target","pt":$n[4].Outline,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOFade$3","rt":$n[7].TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions),"p":[$n[4].Outline,$n[0].Single,$n[0].Single]},{"a":2,"n":"DOFade","is":true,"t":8,"pi":[{"n":"target","pt":$n[4].Text,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOFade$4","rt":$n[7].TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions),"p":[$n[4].Text,$n[0].Single,$n[0].Single]},{"a":2,"n":"DOFillAmount","is":true,"t":8,"pi":[{"n":"target","pt":$n[4].Image,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOFillAmount","rt":$n[7].TweenerCore$3(System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions),"p":[$n[4].Image,$n[0].Single,$n[0].Single]},{"a":2,"n":"DOFlexibleSize","is":true,"t":8,"pi":[{"n":"target","pt":$n[4].LayoutElement,"ps":0},{"n":"endValue","pt":$n[1].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOFlexibleSize","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[4].LayoutElement,$n[1].Vector2,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOGradientColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[4].Image,"ps":0},{"n":"gradient","pt":pc.ColorGradient,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOGradientColor","rt":$n[5].Sequence,"p":[$n[4].Image,pc.ColorGradient,$n[0].Single]},{"a":2,"n":"DOHorizontalNormalizedPos","is":true,"t":8,"pi":[{"n":"target","pt":$n[4].ScrollRect,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOHorizontalNormalizedPos","rt":$n[5].Tweener,"p":[$n[4].ScrollRect,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOJumpAnchorPos","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].RectTransform,"ps":0},{"n":"endValue","pt":$n[1].Vector2,"ps":1},{"n":"jumpPower","pt":$n[0].Single,"ps":2},{"n":"numJumps","pt":$n[0].Int32,"ps":3},{"n":"duration","pt":$n[0].Single,"ps":4},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":5}],"sn":"DOJumpAnchorPos","rt":$n[5].Sequence,"p":[$n[1].RectTransform,$n[1].Vector2,$n[0].Single,$n[0].Int32,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOMinSize","is":true,"t":8,"pi":[{"n":"target","pt":$n[4].LayoutElement,"ps":0},{"n":"endValue","pt":$n[1].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOMinSize","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[4].LayoutElement,$n[1].Vector2,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DONormalizedPos","is":true,"t":8,"pi":[{"n":"target","pt":$n[4].ScrollRect,"ps":0},{"n":"endValue","pt":$n[1].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DONormalizedPos","rt":$n[5].Tweener,"p":[$n[4].ScrollRect,$n[1].Vector2,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOPivot","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].RectTransform,"ps":0},{"n":"endValue","pt":$n[1].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOPivot","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[1].RectTransform,$n[1].Vector2,$n[0].Single]},{"a":2,"n":"DOPivotX","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].RectTransform,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOPivotX","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[1].RectTransform,$n[0].Single,$n[0].Single]},{"a":2,"n":"DOPivotY","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].RectTransform,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOPivotY","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[1].RectTransform,$n[0].Single,$n[0].Single]},{"a":2,"n":"DOPreferredSize","is":true,"t":8,"pi":[{"n":"target","pt":$n[4].LayoutElement,"ps":0},{"n":"endValue","pt":$n[1].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOPreferredSize","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[4].LayoutElement,$n[1].Vector2,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOPunchAnchorPos","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].RectTransform,"ps":0},{"n":"punch","pt":$n[1].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"vibrato","dv":10,"o":true,"pt":$n[0].Int32,"ps":3},{"n":"elasticity","dv":1.0,"o":true,"pt":$n[0].Single,"ps":4},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":5}],"sn":"DOPunchAnchorPos","rt":$n[5].Tweener,"p":[$n[1].RectTransform,$n[1].Vector2,$n[0].Single,$n[0].Int32,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOScale","is":true,"t":8,"pi":[{"n":"target","pt":$n[4].Outline,"ps":0},{"n":"endValue","pt":$n[1].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOScale","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[4].Outline,$n[1].Vector2,$n[0].Single]},{"a":2,"n":"DOShakeAnchorPos","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].RectTransform,"ps":0},{"n":"duration","pt":$n[0].Single,"ps":1},{"n":"strength","dv":100.0,"o":true,"pt":$n[0].Single,"ps":2},{"n":"vibrato","dv":10,"o":true,"pt":$n[0].Int32,"ps":3},{"n":"randomness","dv":90.0,"o":true,"pt":$n[0].Single,"ps":4},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":5},{"n":"fadeOut","dv":true,"o":true,"pt":$n[0].Boolean,"ps":6},{"n":"randomnessMode","dv":0,"o":true,"pt":$n[5].ShakeRandomnessMode,"ps":7}],"sn":"DOShakeAnchorPos","rt":$n[5].Tweener,"p":[$n[1].RectTransform,$n[0].Single,$n[0].Single,$n[0].Int32,$n[0].Single,$n[0].Boolean,$n[0].Boolean,$n[5].ShakeRandomnessMode]},{"a":2,"n":"DOShakeAnchorPos","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].RectTransform,"ps":0},{"n":"duration","pt":$n[0].Single,"ps":1},{"n":"strength","pt":$n[1].Vector2,"ps":2},{"n":"vibrato","dv":10,"o":true,"pt":$n[0].Int32,"ps":3},{"n":"randomness","dv":90.0,"o":true,"pt":$n[0].Single,"ps":4},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":5},{"n":"fadeOut","dv":true,"o":true,"pt":$n[0].Boolean,"ps":6},{"n":"randomnessMode","dv":0,"o":true,"pt":$n[5].ShakeRandomnessMode,"ps":7}],"sn":"DOShakeAnchorPos$1","rt":$n[5].Tweener,"p":[$n[1].RectTransform,$n[0].Single,$n[1].Vector2,$n[0].Int32,$n[0].Single,$n[0].Boolean,$n[0].Boolean,$n[5].ShakeRandomnessMode]},{"a":2,"n":"DOShapeCircle","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].RectTransform,"ps":0},{"n":"center","pt":$n[1].Vector2,"ps":1},{"n":"endValueDegrees","pt":$n[0].Single,"ps":2},{"n":"duration","pt":$n[0].Single,"ps":3},{"n":"relativeCenter","dv":false,"o":true,"pt":$n[0].Boolean,"ps":4},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":5}],"sn":"DOShapeCircle","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.CircleOptions),"p":[$n[1].RectTransform,$n[1].Vector2,$n[0].Single,$n[0].Single,$n[0].Boolean,$n[0].Boolean]},{"a":2,"n":"DOSizeDelta","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].RectTransform,"ps":0},{"n":"endValue","pt":$n[1].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOSizeDelta","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[1].RectTransform,$n[1].Vector2,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOText","is":true,"t":8,"pi":[{"n":"target","pt":$n[4].Text,"ps":0},{"n":"endValue","pt":$n[0].String,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"richTextEnabled","dv":true,"o":true,"pt":$n[0].Boolean,"ps":3},{"n":"scrambleMode","dv":0,"o":true,"pt":$n[5].ScrambleMode,"ps":4},{"n":"scrambleChars","dv":null,"o":true,"pt":$n[0].String,"ps":5}],"sn":"DOText","rt":$n[7].TweenerCore$3(System.String,System.String,DG.Tweening.Plugins.Options.StringOptions),"p":[$n[4].Text,$n[0].String,$n[0].Single,$n[0].Boolean,$n[5].ScrambleMode,$n[0].String]},{"a":2,"n":"DOValue","is":true,"t":8,"pi":[{"n":"target","pt":$n[4].Slider,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOValue","rt":$n[7].TweenerCore$3(System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions),"p":[$n[4].Slider,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOVerticalNormalizedPos","is":true,"t":8,"pi":[{"n":"target","pt":$n[4].ScrollRect,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOVerticalNormalizedPos","rt":$n[5].Tweener,"p":[$n[4].ScrollRect,$n[0].Single,$n[0].Single,$n[0].Boolean]}]}; }, $n);
-    /*DG.Tweening.DOTweenModuleUI end.*/
-
-    /*DG.Tweening.DOTweenModuleUI+Utils start.*/
-    $m("DG.Tweening.DOTweenModuleUI.Utils", function () { return {"td":$n[5].DOTweenModuleUI,"att":1048962,"a":2,"s":true,"m":[{"a":2,"n":"SwitchToRectTransform","is":true,"t":8,"pi":[{"n":"from","pt":$n[1].RectTransform,"ps":0},{"n":"to","pt":$n[1].RectTransform,"ps":1}],"sn":"SwitchToRectTransform","rt":$n[1].Vector2,"p":[$n[1].RectTransform,$n[1].RectTransform]}]}; }, $n);
-    /*DG.Tweening.DOTweenModuleUI+Utils end.*/
-
-    /*DG.Tweening.DOTweenModuleUnityVersion start.*/
-    $m("DG.Tweening.DOTweenModuleUnityVersion", function () { return {"att":1048961,"a":2,"s":true,"m":[{"a":2,"n":"DOGradientColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].Material,"ps":0},{"n":"gradient","pt":pc.ColorGradient,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOGradientColor","rt":$n[5].Sequence,"p":[$n[1].Material,pc.ColorGradient,$n[0].Single]},{"a":2,"n":"DOGradientColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].Material,"ps":0},{"n":"gradient","pt":pc.ColorGradient,"ps":1},{"n":"property","pt":$n[0].String,"ps":2},{"n":"duration","pt":$n[0].Single,"ps":3}],"sn":"DOGradientColor$1","rt":$n[5].Sequence,"p":[$n[1].Material,pc.ColorGradient,$n[0].String,$n[0].Single]},{"a":2,"n":"DOOffset","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].Material,"ps":0},{"n":"endValue","pt":$n[1].Vector2,"ps":1},{"n":"propertyID","pt":$n[0].Int32,"ps":2},{"n":"duration","pt":$n[0].Single,"ps":3}],"sn":"DOOffset","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[1].Material,$n[1].Vector2,$n[0].Int32,$n[0].Single]},{"a":2,"n":"DOTiling","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].Material,"ps":0},{"n":"endValue","pt":$n[1].Vector2,"ps":1},{"n":"propertyID","pt":$n[0].Int32,"ps":2},{"n":"duration","pt":$n[0].Single,"ps":3}],"sn":"DOTiling","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[1].Material,$n[1].Vector2,$n[0].Int32,$n[0].Single]},{"a":2,"n":"WaitForCompletion","is":true,"t":8,"pi":[{"n":"t","pt":$n[5].Tween,"ps":0},{"n":"returnCustomYieldInstruction","pt":$n[0].Boolean,"ps":1}],"sn":"WaitForCompletion","rt":$n[1].CustomYieldInstruction,"p":[$n[5].Tween,$n[0].Boolean]},{"a":2,"n":"WaitForElapsedLoops","is":true,"t":8,"pi":[{"n":"t","pt":$n[5].Tween,"ps":0},{"n":"elapsedLoops","pt":$n[0].Int32,"ps":1},{"n":"returnCustomYieldInstruction","pt":$n[0].Boolean,"ps":2}],"sn":"WaitForElapsedLoops","rt":$n[1].CustomYieldInstruction,"p":[$n[5].Tween,$n[0].Int32,$n[0].Boolean]},{"a":2,"n":"WaitForKill","is":true,"t":8,"pi":[{"n":"t","pt":$n[5].Tween,"ps":0},{"n":"returnCustomYieldInstruction","pt":$n[0].Boolean,"ps":1}],"sn":"WaitForKill","rt":$n[1].CustomYieldInstruction,"p":[$n[5].Tween,$n[0].Boolean]},{"a":2,"n":"WaitForPosition","is":true,"t":8,"pi":[{"n":"t","pt":$n[5].Tween,"ps":0},{"n":"position","pt":$n[0].Single,"ps":1},{"n":"returnCustomYieldInstruction","pt":$n[0].Boolean,"ps":2}],"sn":"WaitForPosition","rt":$n[1].CustomYieldInstruction,"p":[$n[5].Tween,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"WaitForRewind","is":true,"t":8,"pi":[{"n":"t","pt":$n[5].Tween,"ps":0},{"n":"returnCustomYieldInstruction","pt":$n[0].Boolean,"ps":1}],"sn":"WaitForRewind","rt":$n[1].CustomYieldInstruction,"p":[$n[5].Tween,$n[0].Boolean]},{"a":2,"n":"WaitForStart","is":true,"t":8,"pi":[{"n":"t","pt":$n[5].Tween,"ps":0},{"n":"returnCustomYieldInstruction","pt":$n[0].Boolean,"ps":1}],"sn":"WaitForStart","rt":$n[1].CustomYieldInstruction,"p":[$n[5].Tween,$n[0].Boolean]}]}; }, $n);
-    /*DG.Tweening.DOTweenModuleUnityVersion end.*/
-
-    /*DG.Tweening.DOTweenCYInstruction start.*/
-    $m("DG.Tweening.DOTweenCYInstruction", function () { return {"nested":[$n[5].DOTweenCYInstruction.WaitForCompletion,$n[5].DOTweenCYInstruction.WaitForRewind,$n[5].DOTweenCYInstruction.WaitForKill,$n[5].DOTweenCYInstruction.WaitForElapsedLoops,$n[5].DOTweenCYInstruction.WaitForPosition,$n[5].DOTweenCYInstruction.WaitForStart],"att":1048961,"a":2,"s":true}; }, $n);
-    /*DG.Tweening.DOTweenCYInstruction end.*/
-
-    /*DG.Tweening.DOTweenCYInstruction+WaitForCompletion start.*/
-    $m("DG.Tweening.DOTweenCYInstruction.WaitForCompletion", function () { return {"td":$n[5].DOTweenCYInstruction,"att":1048578,"a":2,"m":[{"a":2,"n":".ctor","t":1,"p":[$n[5].Tween],"pi":[{"n":"tween","pt":$n[5].Tween,"ps":0}],"sn":"ctor"},{"ov":true,"a":2,"n":"keepWaiting","t":16,"rt":$n[0].Boolean,"g":{"ov":true,"a":2,"n":"get_keepWaiting","t":8,"rt":$n[0].Boolean,"fg":"keepWaiting","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"keepWaiting"},{"a":1,"n":"t","t":4,"rt":$n[5].Tween,"sn":"t","ro":true}]}; }, $n);
-    /*DG.Tweening.DOTweenCYInstruction+WaitForCompletion end.*/
-
-    /*DG.Tweening.DOTweenCYInstruction+WaitForRewind start.*/
-    $m("DG.Tweening.DOTweenCYInstruction.WaitForRewind", function () { return {"td":$n[5].DOTweenCYInstruction,"att":1048578,"a":2,"m":[{"a":2,"n":".ctor","t":1,"p":[$n[5].Tween],"pi":[{"n":"tween","pt":$n[5].Tween,"ps":0}],"sn":"ctor"},{"ov":true,"a":2,"n":"keepWaiting","t":16,"rt":$n[0].Boolean,"g":{"ov":true,"a":2,"n":"get_keepWaiting","t":8,"rt":$n[0].Boolean,"fg":"keepWaiting","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"keepWaiting"},{"a":1,"n":"t","t":4,"rt":$n[5].Tween,"sn":"t","ro":true}]}; }, $n);
-    /*DG.Tweening.DOTweenCYInstruction+WaitForRewind end.*/
-
-    /*DG.Tweening.DOTweenCYInstruction+WaitForKill start.*/
-    $m("DG.Tweening.DOTweenCYInstruction.WaitForKill", function () { return {"td":$n[5].DOTweenCYInstruction,"att":1048578,"a":2,"m":[{"a":2,"n":".ctor","t":1,"p":[$n[5].Tween],"pi":[{"n":"tween","pt":$n[5].Tween,"ps":0}],"sn":"ctor"},{"ov":true,"a":2,"n":"keepWaiting","t":16,"rt":$n[0].Boolean,"g":{"ov":true,"a":2,"n":"get_keepWaiting","t":8,"rt":$n[0].Boolean,"fg":"keepWaiting","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"keepWaiting"},{"a":1,"n":"t","t":4,"rt":$n[5].Tween,"sn":"t","ro":true}]}; }, $n);
-    /*DG.Tweening.DOTweenCYInstruction+WaitForKill end.*/
-
-    /*DG.Tweening.DOTweenCYInstruction+WaitForElapsedLoops start.*/
-    $m("DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops", function () { return {"td":$n[5].DOTweenCYInstruction,"att":1048578,"a":2,"m":[{"a":2,"n":".ctor","t":1,"p":[$n[5].Tween,$n[0].Int32],"pi":[{"n":"tween","pt":$n[5].Tween,"ps":0},{"n":"elapsedLoops","pt":$n[0].Int32,"ps":1}],"sn":"ctor"},{"ov":true,"a":2,"n":"keepWaiting","t":16,"rt":$n[0].Boolean,"g":{"ov":true,"a":2,"n":"get_keepWaiting","t":8,"rt":$n[0].Boolean,"fg":"keepWaiting","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"keepWaiting"},{"a":1,"n":"elapsedLoops","t":4,"rt":$n[0].Int32,"sn":"elapsedLoops","ro":true,"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"t","t":4,"rt":$n[5].Tween,"sn":"t","ro":true}]}; }, $n);
-    /*DG.Tweening.DOTweenCYInstruction+WaitForElapsedLoops end.*/
-
-    /*DG.Tweening.DOTweenCYInstruction+WaitForPosition start.*/
-    $m("DG.Tweening.DOTweenCYInstruction.WaitForPosition", function () { return {"td":$n[5].DOTweenCYInstruction,"att":1048578,"a":2,"m":[{"a":2,"n":".ctor","t":1,"p":[$n[5].Tween,$n[0].Single],"pi":[{"n":"tween","pt":$n[5].Tween,"ps":0},{"n":"position","pt":$n[0].Single,"ps":1}],"sn":"ctor"},{"ov":true,"a":2,"n":"keepWaiting","t":16,"rt":$n[0].Boolean,"g":{"ov":true,"a":2,"n":"get_keepWaiting","t":8,"rt":$n[0].Boolean,"fg":"keepWaiting","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"keepWaiting"},{"a":1,"n":"position","t":4,"rt":$n[0].Single,"sn":"position","ro":true,"box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"t","t":4,"rt":$n[5].Tween,"sn":"t","ro":true}]}; }, $n);
-    /*DG.Tweening.DOTweenCYInstruction+WaitForPosition end.*/
-
-    /*DG.Tweening.DOTweenCYInstruction+WaitForStart start.*/
-    $m("DG.Tweening.DOTweenCYInstruction.WaitForStart", function () { return {"td":$n[5].DOTweenCYInstruction,"att":1048578,"a":2,"m":[{"a":2,"n":".ctor","t":1,"p":[$n[5].Tween],"pi":[{"n":"tween","pt":$n[5].Tween,"ps":0}],"sn":"ctor"},{"ov":true,"a":2,"n":"keepWaiting","t":16,"rt":$n[0].Boolean,"g":{"ov":true,"a":2,"n":"get_keepWaiting","t":8,"rt":$n[0].Boolean,"fg":"keepWaiting","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"keepWaiting"},{"a":1,"n":"t","t":4,"rt":$n[5].Tween,"sn":"t","ro":true}]}; }, $n);
-    /*DG.Tweening.DOTweenCYInstruction+WaitForStart end.*/
-
-    /*DG.Tweening.DOTweenModuleUtils start.*/
-    $m("DG.Tweening.DOTweenModuleUtils", function () { return {"nested":[$n[5].DOTweenModuleUtils.Physics],"att":1048961,"a":2,"s":true,"m":[{"at":[new UnityEngine.Scripting.PreserveAttribute()],"a":2,"n":"Init","is":true,"t":8,"sn":"Init","rt":$n[0].Void},{"at":[new UnityEngine.Scripting.PreserveAttribute()],"a":1,"n":"Preserver","is":true,"t":8,"sn":"Preserver","rt":$n[0].Void},{"a":1,"n":"_initialized","is":true,"t":4,"rt":$n[0].Boolean,"sn":"_initialized","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}}]}; }, $n);
-    /*DG.Tweening.DOTweenModuleUtils end.*/
-
-    /*DG.Tweening.DOTweenModuleUtils+Physics start.*/
-    $m("DG.Tweening.DOTweenModuleUtils.Physics", function () { return {"td":$n[5].DOTweenModuleUtils,"att":1048962,"a":2,"s":true,"m":[{"at":[new UnityEngine.Scripting.PreserveAttribute()],"a":2,"n":"CreateDOTweenPathTween","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].MonoBehaviour,"ps":0},{"n":"tweenRigidbody","pt":$n[0].Boolean,"ps":1},{"n":"isLocal","pt":$n[0].Boolean,"ps":2},{"n":"path","pt":$n[6].Path,"ps":3},{"n":"duration","pt":$n[0].Single,"ps":4},{"n":"pathMode","pt":$n[5].PathMode,"ps":5}],"sn":"CreateDOTweenPathTween","rt":$n[7].TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions),"p":[$n[1].MonoBehaviour,$n[0].Boolean,$n[0].Boolean,$n[6].Path,$n[0].Single,$n[5].PathMode]},{"at":[new UnityEngine.Scripting.PreserveAttribute()],"a":2,"n":"HasRigidbody","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].Component,"ps":0}],"sn":"HasRigidbody","rt":$n[0].Boolean,"p":[$n[1].Component],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"HasRigidbody2D","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].Component,"ps":0}],"sn":"HasRigidbody2D","rt":$n[0].Boolean,"p":[$n[1].Component],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"SetOrientationOnPath","is":true,"t":8,"pi":[{"n":"options","pt":$n[9].PathOptions,"ps":0},{"n":"t","pt":$n[5].Tween,"ps":1},{"n":"newRot","pt":$n[1].Quaternion,"ps":2},{"n":"trans","pt":$n[1].Transform,"ps":3}],"sn":"SetOrientationOnPath","rt":$n[0].Void,"p":[$n[9].PathOptions,$n[5].Tween,$n[1].Quaternion,$n[1].Transform]}]}; }, $n);
-    /*DG.Tweening.DOTweenModuleUtils+Physics end.*/
-
-    /*DG.Tweening.DOTweenAnimation start.*/
-    $m("DG.Tweening.DOTweenAnimation", function () { return {"nested":[$n[5].DOTweenAnimation.AnimationType,$n[5].DOTweenAnimation.TargetType],"att":1048577,"a":2,"at":[new UnityEngine.AddComponentMenu.ctor("DOTween/DOTween Animation")],"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":2,"n":"CreateEditorPreview","t":8,"sn":"CreateEditorPreview","rt":$n[5].Tween},{"a":2,"n":"CreateTween","t":8,"pi":[{"n":"regenerateIfExists","dv":false,"o":true,"pt":$n[0].Boolean,"ps":0},{"n":"andPlay","dv":true,"o":true,"pt":$n[0].Boolean,"ps":1}],"sn":"CreateTween","rt":$n[0].Void,"p":[$n[0].Boolean,$n[0].Boolean]},{"ov":true,"a":2,"n":"DOComplete","t":8,"sn":"DOComplete","rt":$n[0].Void},{"ov":true,"a":2,"n":"DOKill","t":8,"sn":"DOKill","rt":$n[0].Void},{"a":2,"n":"DOKillAllById","t":8,"pi":[{"n":"id","pt":$n[0].String,"ps":0}],"sn":"DOKillAllById","rt":$n[0].Void,"p":[$n[0].String]},{"a":2,"n":"DOKillById","t":8,"pi":[{"n":"id","pt":$n[0].String,"ps":0}],"sn":"DOKillById","rt":$n[0].Void,"p":[$n[0].String]},{"ov":true,"a":2,"n":"DOPause","t":8,"sn":"DOPause","rt":$n[0].Void},{"a":2,"n":"DOPauseAllById","t":8,"pi":[{"n":"id","pt":$n[0].String,"ps":0}],"sn":"DOPauseAllById","rt":$n[0].Void,"p":[$n[0].String]},{"ov":true,"a":2,"n":"DOPlay","t":8,"sn":"DOPlay","rt":$n[0].Void},{"a":2,"n":"DOPlayAllById","t":8,"pi":[{"n":"id","pt":$n[0].String,"ps":0}],"sn":"DOPlayAllById","rt":$n[0].Void,"p":[$n[0].String]},{"ov":true,"a":2,"n":"DOPlayBackwards","t":8,"sn":"DOPlayBackwards","rt":$n[0].Void},{"a":2,"n":"DOPlayBackwardsAllById","t":8,"pi":[{"n":"id","pt":$n[0].String,"ps":0}],"sn":"DOPlayBackwardsAllById","rt":$n[0].Void,"p":[$n[0].String]},{"a":2,"n":"DOPlayBackwardsById","t":8,"pi":[{"n":"id","pt":$n[0].String,"ps":0}],"sn":"DOPlayBackwardsById","rt":$n[0].Void,"p":[$n[0].String]},{"a":2,"n":"DOPlayById","t":8,"pi":[{"n":"id","pt":$n[0].String,"ps":0}],"sn":"DOPlayById","rt":$n[0].Void,"p":[$n[0].String]},{"ov":true,"a":2,"n":"DOPlayForward","t":8,"sn":"DOPlayForward","rt":$n[0].Void},{"a":2,"n":"DOPlayForwardAllById","t":8,"pi":[{"n":"id","pt":$n[0].String,"ps":0}],"sn":"DOPlayForwardAllById","rt":$n[0].Void,"p":[$n[0].String]},{"a":2,"n":"DOPlayForwardById","t":8,"pi":[{"n":"id","pt":$n[0].String,"ps":0}],"sn":"DOPlayForwardById","rt":$n[0].Void,"p":[$n[0].String]},{"a":2,"n":"DOPlayNext","t":8,"sn":"DOPlayNext","rt":$n[0].Void},{"ov":true,"a":2,"n":"DORestart","t":8,"sn":"DORestart","rt":$n[0].Void},{"ov":true,"a":2,"n":"DORestart","t":8,"pi":[{"n":"fromHere","pt":$n[0].Boolean,"ps":0}],"sn":"DORestart$1","rt":$n[0].Void,"p":[$n[0].Boolean]},{"a":2,"n":"DORestartAllById","t":8,"pi":[{"n":"id","pt":$n[0].String,"ps":0}],"sn":"DORestartAllById","rt":$n[0].Void,"p":[$n[0].String]},{"a":2,"n":"DORestartById","t":8,"pi":[{"n":"id","pt":$n[0].String,"ps":0}],"sn":"DORestartById","rt":$n[0].Void,"p":[$n[0].String]},{"ov":true,"a":2,"n":"DORewind","t":8,"sn":"DORewind","rt":$n[0].Void},{"a":2,"n":"DORewindAllById","t":8,"pi":[{"n":"id","pt":$n[0].String,"ps":0}],"sn":"DORewindAllById","rt":$n[0].Void,"p":[$n[0].String]},{"a":2,"n":"DORewindAndPlayNext","t":8,"sn":"DORewindAndPlayNext","rt":$n[0].Void},{"ov":true,"a":2,"n":"DOTogglePause","t":8,"sn":"DOTogglePause","rt":$n[0].Void},{"a":1,"n":"Dispatch_OnReset","is":true,"t":8,"pi":[{"n":"anim","pt":$n[5].DOTweenAnimation,"ps":0}],"sn":"Dispatch_OnReset","rt":$n[0].Void,"p":[$n[5].DOTweenAnimation]},{"a":1,"n":"GetTweenGO","t":8,"sn":"GetTweenGO","rt":$n[1].GameObject},{"a":1,"n":"GetTweenTarget","t":8,"sn":"GetTweenTarget","rt":$n[1].GameObject},{"a":2,"n":"GetTweens","t":8,"sn":"GetTweens","rt":$n[2].List$1(DG.Tweening.Tween)},{"a":1,"n":"OnDestroy","t":8,"sn":"OnDestroy","rt":$n[0].Void},{"a":1,"n":"ReEvaluateRelativeTween","t":8,"sn":"ReEvaluateRelativeTween","rt":$n[0].Void},{"a":2,"n":"RecreateTween","t":8,"sn":"RecreateTween","rt":$n[0].Void},{"a":2,"n":"RecreateTweenAndPlay","t":8,"sn":"RecreateTweenAndPlay","rt":$n[0].Void},{"a":1,"n":"Reset","t":8,"sn":"Reset","rt":$n[0].Void},{"a":2,"n":"RewindThenRecreateTween","t":8,"sn":"RewindThenRecreateTween","rt":$n[0].Void},{"a":2,"n":"RewindThenRecreateTweenAndPlay","t":8,"sn":"RewindThenRecreateTweenAndPlay","rt":$n[0].Void},{"a":2,"n":"SetAnimationTarget","t":8,"pi":[{"n":"tweenTarget","pt":$n[1].Component,"ps":0},{"n":"useTweenTargetGameObjectForGroupOperations","dv":true,"o":true,"pt":$n[0].Boolean,"ps":1}],"sn":"SetAnimationTarget","rt":$n[0].Void,"p":[$n[1].Component,$n[0].Boolean]},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":2,"n":"TypeToDOTargetType","is":true,"t":8,"pi":[{"n":"t","pt":$n[0].Type,"ps":0}],"sn":"TypeToDOTargetType","rt":$n[5].DOTweenAnimation.TargetType,"p":[$n[0].Type],"box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.TargetType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.TargetType));}},{"a":1,"n":"_playCount","t":4,"rt":$n[0].Int32,"sn":"_playCount","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"_tweenAutoGenerationCalled","t":4,"rt":$n[0].Boolean,"sn":"_tweenAutoGenerationCalled","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"animationType","t":4,"rt":$n[5].DOTweenAnimation.AnimationType,"sn":"animationType","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.AnimationType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.AnimationType));}},{"a":2,"n":"autoGenerate","t":4,"rt":$n[0].Boolean,"sn":"autoGenerate","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"autoKill","t":4,"rt":$n[0].Boolean,"sn":"autoKill","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"autoPlay","t":4,"rt":$n[0].Boolean,"sn":"autoPlay","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"delay","t":4,"rt":$n[0].Single,"sn":"delay","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"duration","t":4,"rt":$n[0].Single,"sn":"duration","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"easeCurve","t":4,"rt":pc.AnimationCurve,"sn":"easeCurve"},{"a":2,"n":"easeType","t":4,"rt":$n[5].Ease,"sn":"easeType","box":function ($v) { return Bridge.box($v, DG.Tweening.Ease, System.Enum.toStringFn(DG.Tweening.Ease));}},{"a":2,"n":"endValueColor","t":4,"rt":$n[1].Color,"sn":"endValueColor"},{"a":2,"n":"endValueFloat","t":4,"rt":$n[0].Single,"sn":"endValueFloat","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"endValueRect","t":4,"rt":$n[1].Rect,"sn":"endValueRect"},{"a":2,"n":"endValueString","t":4,"rt":$n[0].String,"sn":"endValueString"},{"a":2,"n":"endValueTransform","t":4,"rt":$n[1].Transform,"sn":"endValueTransform"},{"a":2,"n":"endValueV2","t":4,"rt":$n[1].Vector2,"sn":"endValueV2"},{"a":2,"n":"endValueV3","t":4,"rt":$n[1].Vector3,"sn":"endValueV3"},{"a":2,"n":"forcedTargetType","t":4,"rt":$n[5].DOTweenAnimation.TargetType,"sn":"forcedTargetType","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.TargetType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.TargetType));}},{"a":2,"n":"id","t":4,"rt":$n[0].String,"sn":"id"},{"a":2,"n":"isActive","t":4,"rt":$n[0].Boolean,"sn":"isActive","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"isFrom","t":4,"rt":$n[0].Boolean,"sn":"isFrom","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"isIndependentUpdate","t":4,"rt":$n[0].Boolean,"sn":"isIndependentUpdate","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"isRelative","t":4,"rt":$n[0].Boolean,"sn":"isRelative","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"isValid","t":4,"rt":$n[0].Boolean,"sn":"isValid","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"loopType","t":4,"rt":$n[5].LoopType,"sn":"loopType","box":function ($v) { return Bridge.box($v, DG.Tweening.LoopType, System.Enum.toStringFn(DG.Tweening.LoopType));}},{"a":2,"n":"loops","t":4,"rt":$n[0].Int32,"sn":"loops","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"optionalBool0","t":4,"rt":$n[0].Boolean,"sn":"optionalBool0","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"optionalBool1","t":4,"rt":$n[0].Boolean,"sn":"optionalBool1","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"optionalFloat0","t":4,"rt":$n[0].Single,"sn":"optionalFloat0","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"optionalInt0","t":4,"rt":$n[0].Int32,"sn":"optionalInt0","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"optionalRotationMode","t":4,"rt":$n[5].RotateMode,"sn":"optionalRotationMode","box":function ($v) { return Bridge.box($v, DG.Tweening.RotateMode, System.Enum.toStringFn(DG.Tweening.RotateMode));}},{"a":2,"n":"optionalScrambleMode","t":4,"rt":$n[5].ScrambleMode,"sn":"optionalScrambleMode","box":function ($v) { return Bridge.box($v, DG.Tweening.ScrambleMode, System.Enum.toStringFn(DG.Tweening.ScrambleMode));}},{"a":2,"n":"optionalShakeRandomnessMode","t":4,"rt":$n[5].ShakeRandomnessMode,"sn":"optionalShakeRandomnessMode","box":function ($v) { return Bridge.box($v, DG.Tweening.ShakeRandomnessMode, System.Enum.toStringFn(DG.Tweening.ShakeRandomnessMode));}},{"a":2,"n":"optionalString","t":4,"rt":$n[0].String,"sn":"optionalString"},{"a":2,"n":"target","t":4,"rt":$n[1].Component,"sn":"target"},{"a":2,"n":"targetGO","t":4,"rt":$n[1].GameObject,"sn":"targetGO"},{"a":2,"n":"targetIsSelf","t":4,"rt":$n[0].Boolean,"sn":"targetIsSelf","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"targetType","t":4,"rt":$n[5].DOTweenAnimation.TargetType,"sn":"targetType","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.TargetType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.TargetType));}},{"a":2,"n":"tweenTargetIsTargetGO","t":4,"rt":$n[0].Boolean,"sn":"tweenTargetIsTargetGO","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"useTargetAsV3","t":4,"rt":$n[0].Boolean,"sn":"useTargetAsV3","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"OnReset","is":true,"t":2,"ad":{"a":2,"n":"add_OnReset","is":true,"t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"addOnReset","rt":$n[0].Void,"p":[Function]},"r":{"a":2,"n":"remove_OnReset","is":true,"t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"removeOnReset","rt":$n[0].Void,"p":[Function]}}]}; }, $n);
-    /*DG.Tweening.DOTweenAnimation end.*/
-
-    /*DG.Tweening.DOTweenAnimation+AnimationType start.*/
-    $m("DG.Tweening.DOTweenAnimation.AnimationType", function () { return {"td":$n[5].DOTweenAnimation,"att":258,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"CameraAspect","is":true,"t":4,"rt":$n[5].DOTweenAnimation.AnimationType,"sn":"CameraAspect","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.AnimationType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.AnimationType));}},{"a":2,"n":"CameraBackgroundColor","is":true,"t":4,"rt":$n[5].DOTweenAnimation.AnimationType,"sn":"CameraBackgroundColor","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.AnimationType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.AnimationType));}},{"a":2,"n":"CameraFieldOfView","is":true,"t":4,"rt":$n[5].DOTweenAnimation.AnimationType,"sn":"CameraFieldOfView","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.AnimationType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.AnimationType));}},{"a":2,"n":"CameraOrthoSize","is":true,"t":4,"rt":$n[5].DOTweenAnimation.AnimationType,"sn":"CameraOrthoSize","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.AnimationType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.AnimationType));}},{"a":2,"n":"CameraPixelRect","is":true,"t":4,"rt":$n[5].DOTweenAnimation.AnimationType,"sn":"CameraPixelRect","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.AnimationType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.AnimationType));}},{"a":2,"n":"CameraRect","is":true,"t":4,"rt":$n[5].DOTweenAnimation.AnimationType,"sn":"CameraRect","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.AnimationType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.AnimationType));}},{"a":2,"n":"Color","is":true,"t":4,"rt":$n[5].DOTweenAnimation.AnimationType,"sn":"Color","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.AnimationType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.AnimationType));}},{"a":2,"n":"Fade","is":true,"t":4,"rt":$n[5].DOTweenAnimation.AnimationType,"sn":"Fade","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.AnimationType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.AnimationType));}},{"a":2,"n":"LocalMove","is":true,"t":4,"rt":$n[5].DOTweenAnimation.AnimationType,"sn":"LocalMove","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.AnimationType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.AnimationType));}},{"a":2,"n":"LocalRotate","is":true,"t":4,"rt":$n[5].DOTweenAnimation.AnimationType,"sn":"LocalRotate","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.AnimationType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.AnimationType));}},{"a":2,"n":"Move","is":true,"t":4,"rt":$n[5].DOTweenAnimation.AnimationType,"sn":"Move","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.AnimationType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.AnimationType));}},{"a":2,"n":"None","is":true,"t":4,"rt":$n[5].DOTweenAnimation.AnimationType,"sn":"None","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.AnimationType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.AnimationType));}},{"a":2,"n":"PunchPosition","is":true,"t":4,"rt":$n[5].DOTweenAnimation.AnimationType,"sn":"PunchPosition","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.AnimationType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.AnimationType));}},{"a":2,"n":"PunchRotation","is":true,"t":4,"rt":$n[5].DOTweenAnimation.AnimationType,"sn":"PunchRotation","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.AnimationType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.AnimationType));}},{"a":2,"n":"PunchScale","is":true,"t":4,"rt":$n[5].DOTweenAnimation.AnimationType,"sn":"PunchScale","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.AnimationType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.AnimationType));}},{"a":2,"n":"Rotate","is":true,"t":4,"rt":$n[5].DOTweenAnimation.AnimationType,"sn":"Rotate","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.AnimationType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.AnimationType));}},{"a":2,"n":"Scale","is":true,"t":4,"rt":$n[5].DOTweenAnimation.AnimationType,"sn":"Scale","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.AnimationType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.AnimationType));}},{"a":2,"n":"ShakePosition","is":true,"t":4,"rt":$n[5].DOTweenAnimation.AnimationType,"sn":"ShakePosition","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.AnimationType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.AnimationType));}},{"a":2,"n":"ShakeRotation","is":true,"t":4,"rt":$n[5].DOTweenAnimation.AnimationType,"sn":"ShakeRotation","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.AnimationType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.AnimationType));}},{"a":2,"n":"ShakeScale","is":true,"t":4,"rt":$n[5].DOTweenAnimation.AnimationType,"sn":"ShakeScale","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.AnimationType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.AnimationType));}},{"a":2,"n":"Text","is":true,"t":4,"rt":$n[5].DOTweenAnimation.AnimationType,"sn":"Text","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.AnimationType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.AnimationType));}},{"a":2,"n":"UIWidthHeight","is":true,"t":4,"rt":$n[5].DOTweenAnimation.AnimationType,"sn":"UIWidthHeight","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.AnimationType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.AnimationType));}}]}; }, $n);
-    /*DG.Tweening.DOTweenAnimation+AnimationType end.*/
-
-    /*DG.Tweening.DOTweenAnimation+TargetType start.*/
-    $m("DG.Tweening.DOTweenAnimation.TargetType", function () { return {"td":$n[5].DOTweenAnimation,"att":258,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"Camera","is":true,"t":4,"rt":$n[5].DOTweenAnimation.TargetType,"sn":"Camera","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.TargetType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.TargetType));}},{"a":2,"n":"CanvasGroup","is":true,"t":4,"rt":$n[5].DOTweenAnimation.TargetType,"sn":"CanvasGroup","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.TargetType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.TargetType));}},{"a":2,"n":"Image","is":true,"t":4,"rt":$n[5].DOTweenAnimation.TargetType,"sn":"Image","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.TargetType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.TargetType));}},{"a":2,"n":"Light","is":true,"t":4,"rt":$n[5].DOTweenAnimation.TargetType,"sn":"Light","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.TargetType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.TargetType));}},{"a":2,"n":"RectTransform","is":true,"t":4,"rt":$n[5].DOTweenAnimation.TargetType,"sn":"RectTransform","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.TargetType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.TargetType));}},{"a":2,"n":"Renderer","is":true,"t":4,"rt":$n[5].DOTweenAnimation.TargetType,"sn":"Renderer","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.TargetType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.TargetType));}},{"a":2,"n":"Rigidbody","is":true,"t":4,"rt":$n[5].DOTweenAnimation.TargetType,"sn":"Rigidbody","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.TargetType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.TargetType));}},{"a":2,"n":"Rigidbody2D","is":true,"t":4,"rt":$n[5].DOTweenAnimation.TargetType,"sn":"Rigidbody2D","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.TargetType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.TargetType));}},{"a":2,"n":"SpriteRenderer","is":true,"t":4,"rt":$n[5].DOTweenAnimation.TargetType,"sn":"SpriteRenderer","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.TargetType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.TargetType));}},{"a":2,"n":"Text","is":true,"t":4,"rt":$n[5].DOTweenAnimation.TargetType,"sn":"Text","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.TargetType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.TargetType));}},{"a":2,"n":"TextMeshPro","is":true,"t":4,"rt":$n[5].DOTweenAnimation.TargetType,"sn":"TextMeshPro","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.TargetType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.TargetType));}},{"a":2,"n":"TextMeshProUGUI","is":true,"t":4,"rt":$n[5].DOTweenAnimation.TargetType,"sn":"TextMeshProUGUI","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.TargetType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.TargetType));}},{"a":2,"n":"Transform","is":true,"t":4,"rt":$n[5].DOTweenAnimation.TargetType,"sn":"Transform","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.TargetType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.TargetType));}},{"a":2,"n":"Unset","is":true,"t":4,"rt":$n[5].DOTweenAnimation.TargetType,"sn":"Unset","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.TargetType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.TargetType));}},{"a":2,"n":"tk2dBaseSprite","is":true,"t":4,"rt":$n[5].DOTweenAnimation.TargetType,"sn":"tk2dBaseSprite","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.TargetType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.TargetType));}},{"a":2,"n":"tk2dTextMesh","is":true,"t":4,"rt":$n[5].DOTweenAnimation.TargetType,"sn":"tk2dTextMesh","box":function ($v) { return Bridge.box($v, DG.Tweening.DOTweenAnimation.TargetType, System.Enum.toStringFn(DG.Tweening.DOTweenAnimation.TargetType));}}]}; }, $n);
-    /*DG.Tweening.DOTweenAnimation+TargetType end.*/
-
-    /*DG.Tweening.DOTweenAnimationExtensions start.*/
-    $m("DG.Tweening.DOTweenAnimationExtensions", function () { return {"att":1048961,"a":2,"s":true,"m":[{"a":2,"n":"IsSameOrSubclassOf","is":true,"t":8,"pi":[{"n":"t","pt":$n[1].Component,"ps":0}],"tpc":1,"tprm":["T"],"sn":"IsSameOrSubclassOf","rt":$n[0].Boolean,"p":[$n[1].Component],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}}]}; }, $n);
-    /*DG.Tweening.DOTweenAnimationExtensions end.*/
-
-    /*DG.Tweening.DOTweenProShortcuts start.*/
-    $m("DG.Tweening.DOTweenProShortcuts", function () { return {"att":385,"a":2,"s":true,"m":[{"n":".cctor","t":1,"sn":"ctor","sm":true},{"a":2,"n":"DOSpiral","is":true,"t":8,"pi":[{"n":"target","pt":$n[1].Transform,"ps":0},{"n":"duration","pt":$n[0].Single,"ps":1},{"n":"axis","dv":null,"o":true,"pt":$n[0].Nullable$1(UnityEngine.Vector3),"ps":2},{"n":"mode","dv":0,"o":true,"pt":$n[5].SpiralMode,"ps":3},{"n":"speed","dv":1.0,"o":true,"pt":$n[0].Single,"ps":4},{"n":"frequency","dv":10.0,"o":true,"pt":$n[0].Single,"ps":5},{"n":"depth","dv":0.0,"o":true,"pt":$n[0].Single,"ps":6},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":7}],"sn":"DOSpiral","rt":$n[5].Tweener,"p":[$n[1].Transform,$n[0].Single,$n[0].Nullable$1(UnityEngine.Vector3),$n[5].SpiralMode,$n[0].Single,$n[0].Single,$n[0].Single,$n[0].Boolean]}]}; }, $n);
-    /*DG.Tweening.DOTweenProShortcuts end.*/
 
     }});
