@@ -1,9 +1,11 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class AudioController : MonoBehaviour
 {
-    [LunaPlaygroundAsset("BGM")] public AudioClip BGM;
+    [SerializeField] private LunaController lunaController;
+    public AudioClip BGM => lunaController.BGM;
     [SerializeField] private AudioSource musicSource;
     [SerializeField] private Transform pool;
     private Queue<AudioSource> SFXPool;
@@ -40,7 +42,9 @@ public class AudioController : MonoBehaviour
     public void PlaySFX(AudioClip clip)
     {
         if (!clip) return;
-        GetFreeSource().PlayOneShot(clip);
+        AudioSource source = GetFreeSource();
+        source.PlayOneShot(clip);
+        StartCoroutine(ReturnSource(source, clip.length));
     }
     private AudioSource GetFreeSource()
     {
@@ -49,8 +53,16 @@ public class AudioController : MonoBehaviour
     }
     private AudioSource CreateNewSource()
     {
-        AudioSource s = new GameObject().AddComponent<AudioSource>();
+        AudioSource s = new GameObject("SFX Source").AddComponent<AudioSource>();
         s.transform.SetParent(pool);
+        s.playOnAwake = false;
         return s;
+    }
+
+    private IEnumerator ReturnSource(AudioSource source, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        source.Stop();
+        SFXPool.Enqueue(source);
     }
 }

@@ -1,7 +1,5 @@
 {
   "ignores": [
-    "F:/UnityProjects/FPS_V02/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs",
-    "F:/UnityProjects/FPS_V02/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs",
     "F:/UnityProjects/FPS_V02/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
     "F:/UnityProjects/FPS_V02/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs",
     "F:/UnityProjects/FPS_V02/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs",
@@ -10,15 +8,13 @@
   "groups": [
     [
       "F:/UnityProjects/FPS_V02/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/AudioController.cs",
-      "F:/UnityProjects/FPS_V02/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/BonkController.cs",
-      "F:/UnityProjects/FPS_V02/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/GameController.cs",
+      "F:/UnityProjects/FPS_V02/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/MelonSandboxGameplay.cs",
+      "F:/UnityProjects/FPS_V02/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/SandboxEnemyMover.cs",
+      "F:/UnityProjects/FPS_V02/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/MelonHitTarget.cs",
+      "F:/UnityProjects/FPS_V02/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/SandboxCharacterBalance.cs",
+      "F:/UnityProjects/FPS_V02/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/SandboxVariantButton.cs",
       "F:/UnityProjects/FPS_V02/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/LunaController.cs",
-      "F:/UnityProjects/FPS_V02/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/MonsterController.cs",
-      "F:/UnityProjects/FPS_V02/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/TargetController.cs",
-      "F:/UnityProjects/FPS_V02/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/VFXController.cs"
-    ],
-    [
-      "F:/UnityProjects/FPS_V02/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/BalanceController.cs"
+      "F:/UnityProjects/FPS_V02/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/SpawnTutorial.cs"
     ],
     [
       "F:/UnityProjects/FPS_V02/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs"
