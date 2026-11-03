@@ -1,0 +1,12 @@
+{
+  "duration_seconds": 4,
+  "fps": 30,
+  "bones": 6,
+  "triangles": 2004,
+  "materials": 1,
+  "loop_seam_m": 2.6656007498500226e-07,
+  "vertical_range_m": 0.08000004291534424,
+  "rotor_speed_revolutions_per_second": 2.5,
+  "rotor_radius_error_m": 1.1989535270151563e-07,
+  "minimum_rotor_vertex_motion_m": 0.09792366369548511
+}

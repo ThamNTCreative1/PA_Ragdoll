@@ -1,0 +1,1 @@
+Original Eks.Art imported. Triangles=35818; texture=True; clip=TungSahur_Original_Idle; duration=4; looping=True

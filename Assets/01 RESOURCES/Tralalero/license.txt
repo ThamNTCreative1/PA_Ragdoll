@@ -1,0 +1,11 @@
+Model Information:
+* title:	3D Model Tralalero Tralala
+* source:	https://sketchfab.com/3d-models/3d-model-tralalero-tralala-91e1f90165c04d67beac1e8361362007
+* author:	andreescobarbovo (https://sketchfab.com/andreescobarbovo)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "3D Model Tralalero Tralala" (https://sketchfab.com/3d-models/3d-model-tralalero-tralala-91e1f90165c04d67beac1e8361362007) by andreescobarbovo (https://sketchfab.com/andreescobarbovo) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,22 @@
+{
+  "fbx": {
+    "triangles": 540,
+    "foot_drift": 0,
+    "loop_seam": 0.0,
+    "nonmanifold_edges": 0,
+    "arm_swing_radians": {
+      "L": 0.05235927179455757,
+      "R": 0.05235927179455757
+    }
+  },
+  "glb": {
+    "triangles": 540,
+    "foot_drift": 0,
+    "loop_seam": 0.0,
+    "nonmanifold_edges": 0,
+    "arm_swing_radians": {
+      "L": 0.05235927179455757,
+      "R": 0.05235927179455757
+    }
+  }
+}

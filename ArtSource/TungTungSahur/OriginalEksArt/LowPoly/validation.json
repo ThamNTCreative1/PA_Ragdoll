@@ -1,0 +1,13 @@
+{
+  "original_triangles": 35818,
+  "lowpoly_triangles": 980,
+  "vertices": 490,
+  "uv_layers": 2,
+  "materials": 1,
+  "source_boundary_edges": 0,
+  "source_nonmanifold_edges": 0,
+  "boundary_edges": 0,
+  "nonmanifold_edges": 0,
+  "zero_area_faces": 0,
+  "status": "static shape review, no idle yet"
+}

@@ -1,0 +1,1 @@
+Triangles=540; duration=4; looping=True; palette=True

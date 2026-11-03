@@ -1,0 +1,30 @@
+{
+  "before_triangles": 540,
+  "after_triangles": 488,
+  "removed_hidden_quads": 26,
+  "original_vertex_positions_unchanged": true,
+  "colors_unchanged": true,
+  "render_comparison": {
+    "Front": {
+      "max_channel_difference": 0.00784313678741455,
+      "mean_channel_difference": 1.167133731883041e-07
+    },
+    "ThreeQuarter": {
+      "max_channel_difference": 0.0156862735748291,
+      "mean_channel_difference": 6.792068347749591e-07
+    },
+    "Back": {
+      "max_channel_difference": 0.003921598196029663,
+      "mean_channel_difference": 7.294585202544113e-08
+    },
+    "Side": {
+      "max_channel_difference": 0.003921568393707275,
+      "mean_channel_difference": 5.673565439678896e-08
+    },
+    "Below": {
+      "max_channel_difference": 0.0,
+      "mean_channel_difference": 0.0
+    }
+  },
+  "note": "Hidden internal faces removed. Internal boundary edges are deliberately retained; exterior silhouette unchanged."
+}

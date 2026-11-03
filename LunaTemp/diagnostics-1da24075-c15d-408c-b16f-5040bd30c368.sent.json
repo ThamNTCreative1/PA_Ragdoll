@@ -1,0 +1,110 @@
+{
+    "BuildID": "1da24075-c15d-408c-b16f-5040bd30c368",
+    "Command": "project:upload",
+    "ProjectID": "3c1cf68ae04b7ff46b0afe9fb106512c",
+    "ProjectStateHash": "1f901846219d1c1b58afcc1e2e5ebddaadbfef3ed90ee4fa74cc6c17e5d82c79",
+    "StageCompletedAt": 3,
+    "EarliestFatalError": 0,
+    "StartTime": 1793673647279,
+    "EndTime": 1793673679567,
+    "PlaygroundUserID": 36785,
+    "OperatingSystem": "win32",
+    "UnityPackageID": null,
+    "TargetPlatform": "playground",
+    "UnityVersion": "6000.0.78f1",
+    "LunaVersion": "7.2.0",
+    "LogCount": 4,
+    "Logs": [
+        {
+            "LogID": "38d6228d-1ef1-4dd8-a1f9-030e15af9ba0",
+            "Order": 4,
+            "Timestamp": 1793673679889,
+            "Stage": 3,
+            "ErrorType": 3,
+            "ErrorCode": "LP3007",
+            "Description": "You are not using any custom events",
+            "Details": [
+                "You are not using any custom events. It is recommended to use custom events to have a better understanding of the playable."
+            ],
+            "DescriptionValues": [
+                ""
+            ],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "969d778d-0688-4608-bbe9-12c018d537dd",
+            "Order": 0,
+            "Timestamp": 1793673657639,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1014",
+            "Description": "We recommend running Runtime Analysis to find and remove all unused code",
+            "Details": [
+                "Navigate to the Runtime Analysis → Code tab to enable code stripping. Before uploading the playable, please make sure to have played all scenario’s of the playable in a development build to make Runtime Analysis work properly."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "d26a268b-c201-46d3-ab06-950b0c272a90",
+            "Order": 1,
+            "Timestamp": 1793673657650,
+            "Stage": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP1032",
+            "Description": "Package(s) is not supported in Luna",
+            "Details": [
+                "Currently package(s) com.unity.timeline are not supported in Luna. We recommend you to remove it and workaround it's functionality."
+            ],
+            "DescriptionValues": [
+                "com.unity.timeline (1.8.12)"
+            ],
+            "DetailsValues": [
+                "com.unity.timeline"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "F:/UnityProjects/OBP_V04/Packages\\manifest.json",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "07e1f94a-6221-42f0-a670-7dae54ac7b0b",
+            "Order": 2,
+            "Timestamp": 1793673657652,
+            "Stage": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP1033",
+            "Description": "Use of unsupported Character Controller detected.",
+            "Details": [
+                "Not all features of the Character Controller are implemented yet, which is found on the Player GameObject. This can result into unexpected behaviour! Please work around this feature instead."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [
+                "Use of unsupported Character Controller detected.",
+                "Use of unsupported Character Controller detected."
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        }
+    ]
+}

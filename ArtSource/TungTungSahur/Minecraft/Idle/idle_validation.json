@@ -1,0 +1,14 @@
+{
+  "triangles": 540,
+  "bones": 4,
+  "duration_seconds": 4,
+  "dip_meters": 0.018,
+  "arm_swing_degrees": 3,
+  "bat_rigidly_attached_to": "Arm_L",
+  "feet_max_drift": 0,
+  "loop_seam_max": 0.0,
+  "nonmanifold_edges_during_idle": 0,
+  "inverted_components_during_idle": 0,
+  "materials": 1,
+  "textures": 0
+}

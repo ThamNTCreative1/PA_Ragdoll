@@ -1,0 +1,35 @@
+{
+  "export_mesh": {
+    "triangles": 540,
+    "closed_components": 45,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "zero_area_faces": 0,
+    "inverted_components": 0,
+    "color_attributes": [
+      "Color"
+    ]
+  },
+  "fbx": {
+    "triangles": 540,
+    "closed_components": 45,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "zero_area_faces": 0,
+    "inverted_components": 0,
+    "color_attributes": [
+      "Color"
+    ]
+  },
+  "glb": {
+    "triangles": 540,
+    "closed_components": 45,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "zero_area_faces": 0,
+    "inverted_components": 0,
+    "color_attributes": [
+      "Color"
+    ]
+  }
+}

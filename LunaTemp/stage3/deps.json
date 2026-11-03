@@ -1,0 +1,94 @@
+{
+  "ignores": [
+    "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
+    "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs",
+    "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs",
+    "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenProShortcuts.cs"
+  ],
+  "groups": [
+    [
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/BrainrotVoxel/BrainrotVoxelActor.cs"
+    ],
+    [
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/CameraController.cs",
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/GameManager.cs",
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/FreezeGun.cs",
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/KeyboardInput.cs",
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/PlayerController.cs",
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/ShieldManager.cs",
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/TutorialController.cs",
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/FreezableMonster.cs",
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/SoundManager.cs",
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/CollectedHint.cs",
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/NoTargetHint.cs",
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/Crosshair.cs",
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/FloatingFreezeText.cs",
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/MoneyPopup.cs",
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/GroundArrow.cs",
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/WaveHazard.cs",
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/ActionButton.cs",
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/VirtualJoystick.cs",
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/DamageFlash.cs",
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/LunaController.cs",
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/CameraDragArea.cs"
+    ],
+    [
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/Billboard.cs"
+    ],
+    [
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/HandHintAnim.cs"
+    ],
+    [
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/UIPulse.cs"
+    ],
+    [
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs"
+    ],
+    [
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleEPOOutline.cs"
+    ],
+    [
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs"
+    ],
+    [
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs"
+    ],
+    [
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs"
+    ],
+    [
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs"
+    ],
+    [
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
+    ],
+    [
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs"
+    ],
+    [
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenDeAudio.cs"
+    ],
+    [
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenDeUnityExtended.cs"
+    ],
+    [
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenProShortcuts.cs"
+    ],
+    [
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenTextMeshPro.cs"
+    ],
+    [
+      "F:/UnityProjects/OBP_V04/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenTk2d.cs"
+    ],
+    [
+      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
+    ],
+    [
+      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
+    ],
+    [
+      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+    ]
+  ]
+}

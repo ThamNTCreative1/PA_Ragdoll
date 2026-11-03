@@ -1,0 +1,66 @@
+{
+    "scene": "Assets/01 RESOURCES/BrainrotVoxel/Scenes/BrainrotVoxel_Showroom.unity",
+    "placements": [
+        {
+            "name": "TralaleroTralala",
+            "prefab": "Assets/01 RESOURCES/Tralalero/Tralalero_Original_Idle.prefab",
+            "position": {
+                "x": -10.399999618530274,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "height": 2.384324550628662,
+            "ground": 0.0,
+            "idle": true
+        },
+        {
+            "name": "BallerinaCappuccina",
+            "prefab": "Assets/01 RESOURCES/BallerinaCappuccina/Ballerina_Voxel_Idle.prefab",
+            "position": {
+                "x": -5.199999809265137,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "height": 2.5623421669006349,
+            "ground": 0.0,
+            "idle": true
+        },
+        {
+            "name": "BombardiroCrocodilo",
+            "prefab": "Assets/01 RESOURCES/BombardiroCrocodilo/Bombardiro_Idle.prefab",
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "height": 0.8927192687988281,
+            "ground": 0.0,
+            "idle": true
+        },
+        {
+            "name": "LiriliLarila",
+            "prefab": "Assets/01 RESOURCES/Lirili/Lirili_Idle.prefab",
+            "position": {
+                "x": 5.199999809265137,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "height": 2.6806280612945558,
+            "ground": 0.0,
+            "idle": true
+        },
+        {
+            "name": "TungTungSahur",
+            "prefab": "Assets/01 RESOURCES/TungTungSahur/TungSahur_Minecraft_Idle.prefab",
+            "position": {
+                "x": 10.399999618530274,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "height": 2.5206103324890138,
+            "ground": 0.0,
+            "idle": true
+        }
+    ],
+    "visibleModels": 5
+}
