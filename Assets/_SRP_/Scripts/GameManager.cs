@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,6 +16,7 @@ namespace Playable
 
         [LunaPlaygroundAsset("Background Music")] [SerializeField]
         private AudioClip _backgroundMusic;
+        public AudioClip BackgroundMusic => _backgroundMusic;
 
         [LunaPlaygroundAsset("Background Texture")] [SerializeField]
         private Texture2D _backgroundTexture;
@@ -67,6 +68,7 @@ namespace Playable
 
         public void CountEvent()
         {
+            if (_hasEnded) return;
             _quantityEvent++;
             if (_quantityEvent >= _totalEvent)
             {
@@ -84,7 +86,8 @@ namespace Playable
             yield return new WaitForSeconds(_endTime);
             EndGame();
             yield return new WaitForSeconds(1);
-            ShowCTA();
+            var game = MelonSandbox.MelonGame.Instance;
+            if (!game || !game.appLovin) ShowCTA();
         }
 
         private Sprite CreateSprite(Texture2D texture)

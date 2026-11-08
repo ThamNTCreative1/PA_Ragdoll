@@ -88,6 +88,14 @@ MonoBehaviour:
     keywords:
       "\L\u2025": []
   - shaderCompilerPlatform: 9
+    shader: {fileID: 4800000, guid: e6377f80d3aeab34cb51920bd4e4dc51, type: 3}
+    passType: 0
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 0
+    keywords:
+      "\L\u2025": []
+  - shaderCompilerPlatform: 9
     shader: {fileID: 10770, guid: 0000000000000000f000000000000000, type: 0}
     passType: 0
     passId: 0
@@ -204,9 +212,25 @@ MonoBehaviour:
     upToDate: 0
     keywords:
       "\L\u2025": []
+  - shaderCompilerPlatform: 5
+    shader: {fileID: 4800000, guid: e6377f80d3aeab34cb51920bd4e4dc51, type: 3}
+    passType: 0
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 0
+    keywords:
+      "\L\u2025": []
+  - shaderCompilerPlatform: 9
+    shader: {fileID: 4800000, guid: e6377f80d3aeab34cb51920bd4e4dc51, type: 3}
+    passType: 0
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 0
+    keywords:
+      "\L\u2025": []
   _includedShaderVariants: []
   _excludedShaderVariants: []
-  version: 201
+  version: 362
   _shaderParsedShaders:
   - ParsedSubShaders:
     - Index: 0
@@ -773,6 +797,134 @@ MonoBehaviour:
     Variants:
     - shaderCompilerPlatform: 9
       shader: {fileID: 4800000, guid: e1e6b77f7c4d7264297a7eb704bcc121, type: 3}
+      passType: 0
+      passId: 0
+      subShaderIndex: 0
+      upToDate: 0
+      keywords:
+        "\L\u2025": []
+  - ParsedSubShaders:
+    - Index: 0
+      Passes:
+      - Shader: {fileID: 4800000, guid: e6377f80d3aeab34cb51920bd4e4dc51, type: 3}
+        ShaderVariants:
+        - ShaderCompilerPlatform: 9
+          NoShaderVariant: 0
+          VertexProgram: "\n#version 300 es\n\n#define HLSLCC_ENABLE_UNIFORM_BUFFERS
+            0\n#if HLSLCC_ENABLE_UNIFORM_BUFFERS\n#define UNITY_UNIFORM\n#else\n#define
+            UNITY_UNIFORM uniform\n#endif\n#define UNITY_SUPPORTS_UNIFORM_LOCATION
+            0\n#if UNITY_SUPPORTS_UNIFORM_LOCATION\n#define UNITY_LOCATION(x) layout(location
+            = x)\n#define UNITY_BINDING(x) layout(binding = x, std140)\n#else\n#define
+            UNITY_LOCATION(x)\n#define UNITY_BINDING(x) layout(std140)\n#endif\nuniform
+            \tvec4 hlslcc_mtx4x4unity_ObjectToWorld[4];\nuniform \tvec4 hlslcc_mtx4x4unity_MatrixVP[4];\nin
+            highp vec4 in_POSITION0;\nout highp vec3 vs_TEXCOORD0;\nvec4 u_xlat0;\nvec4
+            u_xlat1;\nvoid main()\n{\n    u_xlat0 = in_POSITION0.yyyy * hlslcc_mtx4x4unity_ObjectToWorld[1];\n   
+            u_xlat0 = hlslcc_mtx4x4unity_ObjectToWorld[0] * in_POSITION0.xxxx + u_xlat0;\n   
+            u_xlat0 = hlslcc_mtx4x4unity_ObjectToWorld[2] * in_POSITION0.zzzz + u_xlat0;\n   
+            u_xlat1 = u_xlat0 + hlslcc_mtx4x4unity_ObjectToWorld[3];\n    vs_TEXCOORD0.xyz
+            = hlslcc_mtx4x4unity_ObjectToWorld[3].xyz * in_POSITION0.www + u_xlat0.xyz;\n   
+            u_xlat0 = u_xlat1.yyyy * hlslcc_mtx4x4unity_MatrixVP[1];\n    u_xlat0
+            = hlslcc_mtx4x4unity_MatrixVP[0] * u_xlat1.xxxx + u_xlat0;\n    u_xlat0
+            = hlslcc_mtx4x4unity_MatrixVP[2] * u_xlat1.zzzz + u_xlat0;\n    gl_Position
+            = hlslcc_mtx4x4unity_MatrixVP[3] * u_xlat1.wwww + u_xlat0;\n    return;\n}\n\n"
+          FragmentProgram: "\n#version 300 es\n\nprecision highp float;\nprecision
+            highp int;\n#define HLSLCC_ENABLE_UNIFORM_BUFFERS 0\n#if HLSLCC_ENABLE_UNIFORM_BUFFERS\n#define
+            UNITY_UNIFORM\n#else\n#define UNITY_UNIFORM uniform\n#endif\n#define
+            UNITY_SUPPORTS_UNIFORM_LOCATION 0\n#if UNITY_SUPPORTS_UNIFORM_LOCATION\n#define
+            UNITY_LOCATION(x) layout(location = x)\n#define UNITY_BINDING(x) layout(binding
+            = x, std140)\n#else\n#define UNITY_LOCATION(x)\n#define UNITY_BINDING(x)
+            layout(std140)\n#endif\nuniform \tvec4 _Color;\nuniform \tvec4 _SpriteUVX;\nuniform
+            \tvec4 _SpriteUVY;\nuniform \tvec4 _SpriteRowX;\nuniform \tvec4 _SpriteRowY;\nuniform
+            \tfloat _CellSize;\nuniform \tfloat _OpaqueRegion;\nUNITY_LOCATION(0)
+            uniform mediump sampler2D _MainTex;\nin highp  vec3 vs_TEXCOORD0;\nlayout(location
+            = 0) out mediump vec4 SV_Target0;\nvec4 u_xlat0;\nvec4 u_xlat1;\nmediump
+            vec4 u_xlat16_1;\nvec3 u_xlat2;\nmediump float u_xlat16_3;\nvec3 u_xlat4;\nbool
+            u_xlatb4;\nvec2 u_xlat8;\nbool u_xlatb8;\nvoid main()\n{\n    u_xlat0.xy
+            = vs_TEXCOORD0.xy / vec2(_CellSize);\n    u_xlat0.xy = floor(u_xlat0.xy);\n   
+            u_xlat8.xy = u_xlat0.xy + vec2(0.5, 0.5);\n    u_xlat0.x = dot(u_xlat0.xy,
+            vec2(12.9898005, 78.2330017));\n    u_xlat0.x = sin(u_xlat0.x);\n   
+            u_xlat0.x = u_xlat0.x * 43758.5469;\n    u_xlat0.x = fract(u_xlat0.x);\n   
+            u_xlat0.x = u_xlat0.x * 0.300000012 + 0.850000024;\n    u_xlat1.xy =
+            u_xlat8.xy * vec2(_CellSize);\n    u_xlat1.z = vs_TEXCOORD0.z;\n    u_xlat1.w
+            = 1.0;\n    u_xlat2.x = dot(_SpriteRowX, u_xlat1);\n    u_xlat2.y = dot(_SpriteRowY,
+            u_xlat1);\n    u_xlat4.xy = (-u_xlat2.xy) + vec2(1.0, 1.0);\n    u_xlat4.x
+            = min(u_xlat4.y, u_xlat4.x);\n    u_xlat8.x = min(u_xlat2.y, u_xlat2.x);\n   
+            u_xlat4.x = min(u_xlat4.x, u_xlat8.x);\n    u_xlatb4 = u_xlat4.x<0.0;\n   
+            u_xlatb8 = _OpaqueRegion<0.5;\n    u_xlatb4 = u_xlatb8 && u_xlatb4;\n   
+            if(u_xlatb4){discard;}\n    u_xlat4.xz = u_xlat2.xy;\n    u_xlat4.xz
+            = clamp(u_xlat4.xz, 0.0, 1.0);\n    u_xlat1.xy = (bool(u_xlatb8)) ? u_xlat2.xy
+            : u_xlat4.xz;\n    u_xlat1.z = 1.0;\n    u_xlat2.x = dot(_SpriteUVX.xyz,
+            u_xlat1.xyz);\n    u_xlat2.y = dot(_SpriteUVY.xyz, u_xlat1.xyz);\n   
+            u_xlat16_1 = texture(_MainTex, u_xlat2.xy);\n    u_xlat16_3 = u_xlat16_1.w
+            * _Color.w + -0.150000006;\n    u_xlatb4 = u_xlat16_3<0.0;\n    u_xlatb4
+            = u_xlatb8 && u_xlatb4;\n    if(u_xlatb4){discard;}\n    u_xlat2.xyz
+            = u_xlat16_1.xyz * _Color.xyz + vec3(-0.200000003, -0.280000001, -0.340000004);\n   
+            u_xlat1 = u_xlat16_1 * _Color;\n    u_xlat2.xyz = u_xlat1.www * u_xlat2.xyz
+            + vec3(0.200000003, 0.280000001, 0.340000004);\n    u_xlat0.xyw = u_xlat0.xxx
+            * u_xlat2.xyz;\n    SV_Target0.xyz = (bool(u_xlatb8)) ? u_xlat1.xyz :
+            u_xlat0.xyw;\n    SV_Target0.w = 1.0;\n    return;\n}\n\n"
+          LOD: 0
+          readDepth: 0
+          PassId: 0
+          SubShaderIndex: 0
+          Keywords:
+            "\L\u2025": []
+          Tags:
+          - Key: QUEUE
+            Value: Transparent
+          - Key: RenderType
+            Value: Transparent
+        DefinedKeywords:
+          "\L\u2025":
+          - STEREO_CUBEMAP_RENDER_ON
+          - STEREO_INSTANCING_ON
+          - STEREO_MULTIVIEW_ON
+          - UNITY_SINGLE_PASS_STEREO
+        KeywordGroups: []
+        KeywordsMinimalCardinality: 0
+        ContainsInvalidVariant: 0
+        VariantStructures:
+        - shaderCompilerPlatform: 9
+          shader: {fileID: 4800000, guid: e6377f80d3aeab34cb51920bd4e4dc51, type: 3}
+          passType: 0
+          passId: 0
+          subShaderIndex: 0
+          upToDate: 0
+          keywords:
+            "\L\u2025": []
+        CompilationErrors: []
+        HasDepthReader: 0
+        Id: 0
+        SubShaderIndex: 0
+        SerializedObjectId: 0
+        Tags:
+        - Key: QUEUE
+          Value: Transparent
+        - Key: RenderType
+          Value: Transparent
+        UsePass:
+          shader: 
+          pass: 
+        GrabPassTextureName: 
+        PlatformMask: -1
+      Shader: {fileID: 4800000, guid: e6377f80d3aeab34cb51920bd4e4dc51, type: 3}
+      Tags:
+      - Key: QUEUE
+        Value: Transparent
+      - Key: RenderType
+        Value: Transparent
+    Shader: {fileID: 4800000, guid: e6377f80d3aeab34cb51920bd4e4dc51, type: 3}
+    ShaderPath: Assets/_SRP_/Shaders/MelonMosaic.shader
+    ShaderDefinedKeywords:
+    - STEREO_CUBEMAP_RENDER_ON
+    - STEREO_INSTANCING_ON
+    - STEREO_MULTIVIEW_ON
+    - UNITY_SINGLE_PASS_STEREO
+    fallbackShader: {fileID: 0}
+    CompilationErrors: []
+    Variants:
+    - shaderCompilerPlatform: 9
+      shader: {fileID: 4800000, guid: e6377f80d3aeab34cb51920bd4e4dc51, type: 3}
       passType: 0
       passId: 0
       subShaderIndex: 0

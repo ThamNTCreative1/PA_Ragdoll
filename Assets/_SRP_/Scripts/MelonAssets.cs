@@ -21,6 +21,7 @@ namespace MelonSandbox
         public AudioClip[] sounds;
         public TextAsset originalLayout;
         public Material damageMaterial;
+        public Material mosaicMaterial;
         public Font uiFont;
         public GameObject[] characterPrefabs;
         public GameObject[] toolPrefabs;

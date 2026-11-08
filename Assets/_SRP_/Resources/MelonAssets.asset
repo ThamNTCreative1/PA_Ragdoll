@@ -231,6 +231,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 06880ebe82087714b93257f594d71dfb, type: 3}
   - {fileID: 8300000, guid: dc2d74a1ef36b134fa7e5fe8b756154d, type: 3}
   originalLayout: {fileID: 4900000, guid: cb2f8ecb1da85ef44a520599744e575b, type: 3}
+  mosaicMaterial: {fileID: 2100000, guid: 1f1741df779a50842a92f04704cd4acd, type: 2}
   damageMaterial: {fileID: 2100000, guid: 64ea495c743b14f4a9017f6ca6c7f159, type: 2}
   uiFont: {fileID: 12800000, guid: 174ed4d1b20ddd5408024e21affb2d07, type: 3}
   characterPrefabs:

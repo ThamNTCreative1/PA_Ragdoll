@@ -51,6 +51,7 @@ namespace MelonSandbox.Editor
             catalog.sprites = Directory.GetFiles("Assets/Playable/Art/Sprites", "*.png").OrderBy(x => x).Select(x => AssetDatabase.LoadAssetAtPath<Sprite>(x.Replace('\\', '/'))).Where(x => x).ToArray();
             catalog.sounds = Directory.GetFiles(Root + "/Audio", "*.*", SearchOption.TopDirectoryOnly).Where(x => x.EndsWith(".mp3") || x.EndsWith(".ogg") || x.EndsWith(".wav")).Select(x => AssetDatabase.LoadAssetAtPath<AudioClip>(x.Replace('\\', '/'))).Where(x => x).ToArray();
             catalog.originalLayout = AssetDatabase.LoadAssetAtPath<TextAsset>(Root + "/Data/original-layout.json");
+            catalog.mosaicMaterial = AssetDatabase.LoadAssetAtPath<Material>(Root + "/Resources/MelonMosaic.mat");
             catalog.damageMaterial = mat; EditorUtility.SetDirty(catalog); AssetDatabase.SaveAssets();
             var scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
             // Opening a single scene can unload assets referenced only by the old scene.

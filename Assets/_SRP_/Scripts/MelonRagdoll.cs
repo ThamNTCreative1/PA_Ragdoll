@@ -12,6 +12,8 @@ namespace MelonSandbox
         public int targetGroup;
         public bool parade;
         float paradeStart, paradeDistance;
+        TargetJoint2D loweredHeadSupport;
+        MelonPrivacyCover privacyCover;
         public MelonGame game;
         void Awake() { if (!game) game = MelonGame.Instance; }
         public List<MelonLimb> limbs = new List<MelonLimb>();
@@ -356,9 +358,59 @@ namespace MelonSandbox
             }
             supports[0].target = target;
         }
+        public void LowerArms()
+        {
+            if (!skinName.StartsWith("Sprunky_")) return;
+            foreach (var support in supports)
+                if (support && (support.gameObject == GetLimb("r_hand").gameObject
+                    || support.gameObject == GetLimb("l_hand").gameObject)) support.enabled = false;
+            foreach (var side in new[] { "r_", "l_" })
+            {
+                var upper = GetLimb(side + "up_arm");
+                var lower = GetLimb(side + "down_arm");
+                var hand = GetLimb(side + "hand");
+                var shoulder = upper.GetComponent<HingeJoint2D>();
+                Vector2 pivot = shoulder.connectedBody.transform.TransformPoint(shoulder.connectedAnchor);
+                float angle = Vector2.SignedAngle((Vector2)hand.transform.position - pivot, Vector2.down);
+                var rotation = Quaternion.Euler(0, 0, angle);
+                foreach (var limb in new[] { upper, lower, hand })
+                {
+                    limb.transform.position = (Vector3)pivot + rotation * (limb.transform.position - (Vector3)pivot);
+                    limb.transform.rotation = rotation * limb.transform.rotation;
+                    limb.body.position = limb.transform.position;
+                    limb.body.rotation = limb.transform.eulerAngles.z;
+                }
+                foreach (var limb in new[] { upper, lower, hand })
+                {
+                    var joint = limb.GetComponent<HingeJoint2D>();
+                    var connected = joint.connectedBody;
+                    joint.connectedBody = null; joint.connectedBody = connected;
+                }
+            }
+            if (!loweredHeadSupport)
+            {
+                Support(Head, Head.transform.position);
+                loweredHeadSupport = supports[supports.Count - 1];
+            }
+            loweredHeadSupport.target = Head.transform.position;
+            loweredHeadSupport.enabled = true;
+        }
+        public void ResetVariantEffects()
+        {
+            if (loweredHeadSupport) loweredHeadSupport.enabled = false;
+            if (privacyCover) MelonGame.Dispose(privacyCover.gameObject);
+            privacyCover = null;
+        }
         public void Apply(MelonToolKind kind, MelonLimb contact, Vector2 point)
         {
             if (dead) return;
+            if (game.coverSprunkyOnHit && !privacyCover && skinName.StartsWith("Sprunky_"))
+            {
+                var cover = new GameObject("Sprunky privacy cover");
+                cover.transform.SetParent(game.world, false);
+                privacyCover = cover.AddComponent<MelonPrivacyCover>();
+                privacyCover.Build(this);
+            }
             if (kind == MelonToolKind.Saw || kind == MelonToolKind.Rifle)
             {
                 hits = Mathf.Min(hits + 1, 6); life = Mathf.Max(0, 100 - hits * 17);

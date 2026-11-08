@@ -13,6 +13,18 @@ namespace MelonSandbox
         public static MelonGame Instance { get; private set; }
         void Awake() { Instance = this; }
         void OnDestroy() { if (Instance == this) Instance = null; }
+        [Header("Luna variants")]
+        [LunaPlaygroundField("AppLovin")]
+        [Tooltip("Only open the store after the endgame block button is clicked.")]
+        public bool appLovin;
+        [LunaPlaygroundField("Mute SFX and replace music")]
+        public bool muteSfxAndReplaceMusic;
+        [LunaPlaygroundField("Stage 1 arms down")]
+        public bool stageOneArmsDown;
+        [LunaPlaygroundField("Cover Sprunky on item hit")]
+        public bool coverSprunkyOnHit;
+        [Min(0f), Tooltip("Extra world-space margin around the full Sprunky mosaic region.")]
+        public float mosaicPadding = .6f;
         public MelonAssets assets;
         [Range(0, 3)] public int startingStage;
         public Camera gameCamera;
@@ -52,7 +64,7 @@ namespace MelonSandbox
             {
                 Application.runInBackground = true;
                 Time.timeScale = 1; Physics2D.gravity = new Vector2(0, -20);
-                music = gameObject.AddComponent<AudioSource>(); music.loop = true; music.clip = assets.Sound("music"); music.volume = .25f;
+                music = gameObject.AddComponent<AudioSource>(); music.loop = true; music.clip = ReplacementMusic(); music.volume = .25f;
                 effects = gameObject.AddComponent<AudioSource>(); effects.volume = .7f;
                 loop = gameObject.AddComponent<AudioSource>(); loop.loop = true; loop.volume = .4f;
             }
@@ -86,6 +98,8 @@ namespace MelonSandbox
             tools.Clear(); tools.AddRange(current.tools);
             current.Restore(this);
             current.gameObject.SetActive(true);
+            if (Stage == 0 && stageOneArmsDown)
+                foreach (var character in characters) character.LowerArms();
             // Luna can create the serialized hinges before body rotations are restored.
             // Rebind after activation to establish the reference angle from the final pose.
 #if UNITY_LUNA
@@ -132,20 +146,20 @@ namespace MelonSandbox
             {
                 for (int i = 0; i < 4; i++)
                     assets.Visual("msg_stolb", world, FromPixels(-50 + 250 * i, 679.5f), new Vector2(1.12f, 8.17f), -20);
-                Spawn("Sprunky_21", new Vector2(-50, 0), true);
-                Spawn("Sprunky_20", new Vector2(200, 0), true);
-                Spawn("Sprunky_33", new Vector2(450, 0), true);
+                Spawn("Sprunky_1", new Vector2(-50, 0), true);
+                Spawn("Sprunky_2", new Vector2(200, 0), true);
+                Spawn("Sprunky_3", new Vector2(450, 0), true);
             }
             else if (Stage == 1)
             {
-                string[] skins = { "Sprunky_22", "Sprunky_11", "Sprunky_32", "Sprunky_12" };
+                string[] skins = { "Sprunky_4", "Sprunky_5", "Sprunky_1", "Sprunky_2" };
                 for (int i = 0; i < skins.Length; i++) Spawn(skins[i], new Vector2(-200 + i * 200, 0), false);
                 CreateTool(MelonToolKind.Saw, FromPixels(-400, 600));
                 CreateTool(MelonToolKind.Shock, FromPixels(900, 800));
             }
             else if (Stage == 2)
             {
-                string[] skins = { "Sprunky_22", "Sprunky_9", "Sprunky_31", "Sprunky_13", "Sprunky_19", "Sprunky_3", "Sprunky_21" };
+                string[] skins = { "Sprunky_2", "Sprunky_3", "Sprunky_4", "Sprunky_5", "Sprunky_1", "Sprunky_2", "Sprunky_3" };
                 for (int i = 0; i < skins.Length; i++)
                 {
                     var c = Spawn(skins[i], new Vector2(-200 + (i % 4) * 150, i >= 4 ? -1045 : 0), false);
@@ -160,7 +174,7 @@ namespace MelonSandbox
             }
             else
             {
-                string[] parade = { "Sprunky_5", "Sprunky_9", "Sprunky_21", "Sprunky_22", "Sprunky_19", "Sprunky_3", "Sprunky_4" };
+                string[] parade = { "Sprunky_5", "Sprunky_1", "Sprunky_2", "Sprunky_3", "Sprunky_4", "Sprunky_5", "Sprunky_1" };
                 for (int i = 0; i < parade.Length; i++) Spawn(parade[i], new Vector2(-500 * (parade.Length - 1 - i), 0), false).BeginParade();
             }
             lastInput = Time.unscaledTime;
@@ -199,6 +213,7 @@ namespace MelonSandbox
             foreach (var old in characters)
                 foreach (var a in old.GetComponentsInChildren<Collider2D>())
                     foreach (var b in c.GetComponentsInChildren<Collider2D>()) MelonGame.IgnoreActiveCollision(a, b);
+            if (Stage == 0 && stageOneArmsDown) c.LowerArms();
             characters.Add(c); return c;
         }
         void Prop(string key, Vector2 position, bool isStatic)
@@ -273,6 +288,7 @@ namespace MelonSandbox
                         MelonGame.IgnoreActiveCollision(collider, tool.GetComponent<Collider2D>());
             Sound("bita"); hud.Refresh();
             StartCoroutine(SyringeRecovery(tool, i, stageGeneration));
+            if (Playable.GameManager.Instance) Playable.GameManager.Instance.CountEvent();
             return true;
         }
         IEnumerator SyringeRecovery(MelonTool tool, int index, int generation)
@@ -330,12 +346,18 @@ namespace MelonSandbox
                 p.gravity = blood ? 8 : -2; p.lifetime = electric ? .2f : Random.Range(.5f, 1.1f); p.grow = !blood;
             }
         }
+        AudioClip ReplacementMusic()
+        {
+            var manager = GetComponent<Playable.GameManager>();
+            return muteSfxAndReplaceMusic && manager && manager.BackgroundMusic
+                ? manager.BackgroundMusic : assets.Sound("music");
+        }
         public void Sound(string name, float volume = 1)
-        { if (effects && assets.Sound(name)) effects.PlayOneShot(assets.Sound(name), volume); }
+        { if (!muteSfxAndReplaceMusic && effects && assets.Sound(name)) effects.PlayOneShot(assets.Sound(name), volume); }
         public void Loop(string name)
         {
             if (!loop) return;
-            loop.Stop(); loop.clip = string.IsNullOrEmpty(name) ? null : assets.Sound(name); if (loop.clip) loop.Play();
+            loop.Stop(); loop.clip = muteSfxAndReplaceMusic || string.IsNullOrEmpty(name) ? null : assets.Sound(name); if (loop.clip) loop.Play();
         }
         public void TogglePause()
         { Paused = !Paused; Time.timeScale = Paused ? 0 : 1; if (hud) hud.Refresh(); }

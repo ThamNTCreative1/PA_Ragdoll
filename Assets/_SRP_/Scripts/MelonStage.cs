@@ -76,10 +76,21 @@ namespace MelonSandbox
                 bodies[i].linearVelocity = Vector2.zero; bodies[i].angularVelocity = 0;
                 bodies[i].constraints = constraints[i];
             }
-            for (int i = 0; i < hinges.Length; i++) hinges[i].enabled = hingeEnabled[i];
+            for (int i = 0; i < hinges.Length; i++)
+            {
+                hinges[i].enabled = hingeEnabled[i];
+                // Reset reference angles after restoring an alternate arm pose.
+                var connected = hinges[i].connectedBody;
+                if (connected)
+                {
+                    hinges[i].connectedBody = null;
+                    hinges[i].connectedBody = connected;
+                }
+            }
             for (int i = 0; i < supports.Length; i++) { supports[i].target = targets[i]; supports[i].enabled = true; }
             foreach (var character in characters)
             {
+                character.ResetVariantEffects();
                 character.StopAllCoroutines(); character.game = game;
                 character.dead = false; character.life = 100; character.hits = 0; character.parade = false;
                 foreach (var limb in character.limbs) limb.ResetDamage();

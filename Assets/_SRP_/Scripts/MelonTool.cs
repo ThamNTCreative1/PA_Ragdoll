@@ -47,11 +47,16 @@ namespace MelonSandbox
         }
         public void Grab(Vector2 position)
         {
+            if (held || !game || game.Paused) return;
             held = true; body.WakeUp();
             drag = gameObject.AddComponent<TargetJoint2D>(); drag.autoConfigureTarget = false;
             drag.maxForce = 3000; drag.frequency = 7; drag.dampingRatio = .9f;
             drag.target = position;
             game.Loop(kind == MelonToolKind.Saw ? "pila" : kind == MelonToolKind.Shock ? "shok" : kind == MelonToolKind.Flame ? "flame" : null);
+            // Count one interaction per grab, not each drag frame, hit or bullet.
+            bool countUse = game.Stage == 1 && (kind == MelonToolKind.Saw || kind == MelonToolKind.Shock)
+                || game.Stage == 2 && (kind == MelonToolKind.Flame || kind == MelonToolKind.Rifle);
+            if (countUse && Playable.GameManager.Instance) Playable.GameManager.Instance.CountEvent();
         }
         public void Drag(Vector2 point) { if (drag) drag.target = point; }
         public void Drop() { held = false; if (drag) Destroy(drag); game.Loop(null); }

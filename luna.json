@@ -1,8 +1,8 @@
 {
     "version": "7.2.0",
     "projectId": "83336d6262c2dbe44ad1c159a3170903",
-    "applicationID": 42814,
-    "creativeName": "C1_2610_HuyNQ_SRP_V06_HoaiTT",
+    "applicationID": 42944,
+    "creativeName": "C1_2610_HuyNQ_SPS_V06_TrangHTT",
     "pgServer": "EU",
     "window": {
         "‐⁘": true
@@ -16334,11 +16334,11 @@
                     },
                     {
                         "name": "width#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "height#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "filterMode#get",
@@ -17648,19 +17648,19 @@
                     },
                     {
                         "name": "sortingOrder#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "sortingLayerID#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "sortingLayerID#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "sortingLayerIndex#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "sortingLayerName#get",
@@ -22112,11 +22112,11 @@
                     },
                     {
                         "name": "Load",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Load$2",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "UpdateUnityObject",
@@ -22176,7 +22176,7 @@
                     },
                     {
                         "name": "NormalizeResourcePath",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -22444,7 +22444,7 @@
                     },
                     {
                         "name": "renderQueue#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "mainTextureOffset#get",
@@ -22500,7 +22500,7 @@
                     },
                     {
                         "name": "SetFloat$1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetFloat",
@@ -22548,7 +22548,7 @@
                     },
                     {
                         "name": "SetColor$1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetColor",
@@ -22738,11 +22738,11 @@
                     },
                     {
                         "name": "vertices#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "uv#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "uv#set",
@@ -22834,7 +22834,7 @@
                     },
                     {
                         "name": "triangles#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "vertexCount#get",
@@ -22862,7 +22862,7 @@
                     },
                     {
                         "name": "ctor",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetSubMesh",
@@ -22886,7 +22886,7 @@
                     },
                     {
                         "name": "RecalculateBounds",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "RecalculateNormals",
@@ -22898,11 +22898,11 @@
                     },
                     {
                         "name": "ConvertUVChannelToSemantics",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetUVs",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetUVs$1",
@@ -22938,7 +22938,7 @@
                     },
                     {
                         "name": "SetVertices",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetVertices",
@@ -22998,11 +22998,11 @@
                     },
                     {
                         "name": "SetIndices$2",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetTriangles$3",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetTriangles$2",
@@ -23010,11 +23010,11 @@
                     },
                     {
                         "name": "SetTriangles$1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetTriangles",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetTriangles$4",
@@ -23054,7 +23054,7 @@
                     },
                     {
                         "name": "ConvertArrayToListInPlace",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Clone",
@@ -23248,7 +23248,7 @@
                     },
                     {
                         "name": "textureRect#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "bounds#get",
@@ -23260,7 +23260,7 @@
                     },
                     {
                         "name": "vertices#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "triangles#get",
@@ -23268,7 +23268,7 @@
                     },
                     {
                         "name": "uv#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "pivot#get",
@@ -23570,15 +23570,15 @@
                     },
                     {
                         "name": "sharedMesh#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "UpdateMeshInHandle",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -24212,11 +24212,11 @@
                 "instanceMethods": [
                     {
                         "name": "init",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnDidApplyAnimationProperties",
@@ -28299,6 +28299,10 @@
                     {
                         "name": "GetTool",
                         "excluded": false
+                    },
+                    {
+                        "name": "ReplacementMusic",
+                        "excluded": false
                     }
                 ]
             },
@@ -28517,6 +28521,14 @@
                     {
                         "name": "GetLimb",
                         "excluded": false
+                    },
+                    {
+                        "name": "LowerArms",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ResetVariantEffects",
+                        "excluded": false
                     }
                 ]
             },
@@ -28608,7 +28620,7 @@
                     },
                     {
                         "name": "CountEvent",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "CountdownEndGame",
@@ -28620,6 +28632,10 @@
                     },
                     {
                         "name": "CreateSprite",
+                        "excluded": true
+                    },
+                    {
+                        "name": "BackgroundMusic#get",
                         "excluded": true
                     }
                 ]
@@ -31295,6 +31311,44 @@
                         "excluded": false
                     }
                 ]
+            },
+            {
+                "className": "MelonSandbox.MelonPrivacyCover",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Build",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetHidden",
+                        "excluded": false
+                    },
+                    {
+                        "name": "LateUpdate",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDisable",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnDestroy",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ConfigureSpriteUV",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SpriteWorldBounds",
+                        "excluded": false
+                    }
+                ]
             }
         ],
         "stubberDataList": [],
@@ -31345,7 +31399,168 @@
                     "script": "",
                     "ext": ""
                 },
-                "overrides": []
+                "overrides": [
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:15.003",
+                        "lengthInSeconds": 15.003000259399414,
+                        "bitrate": 56,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_SRP_/Audio/music.mp3"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:15.136",
+                        "lengthInSeconds": 15.13599967956543,
+                        "bitrate": 56,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_Game/Audio/Fluffing a Duck.mp3"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:15.136",
+                        "lengthInSeconds": 15.13599967956543,
+                        "bitrate": 56,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_SRP_/Audio/flame.mp3"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:15.136",
+                        "lengthInSeconds": 15.13599967956543,
+                        "bitrate": 56,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_SRP_/Audio/shok.mp3"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:15.136",
+                        "lengthInSeconds": 15.13599967956543,
+                        "bitrate": 56,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_SRP_/Audio/pila.ogg"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:15.136",
+                        "lengthInSeconds": 15.13599967956543,
+                        "bitrate": 56,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_SRP_/Audio/fire.mp3"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:15.136",
+                        "lengthInSeconds": 15.13599967956543,
+                        "bitrate": 56,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_SRP_/Audio/jar.mp3"
+                    },
+                    {
+                        "channels": 0,
+                        "startTime": "00:00.000",
+                        "endTime": "00:15.136",
+                        "lengthInSeconds": 15.13599967956543,
+                        "bitrate": 56,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_SRP_/Audio/trsk.mp3"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:15.136",
+                        "lengthInSeconds": 15.13599967956543,
+                        "bitrate": 56,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_SRP_/Audio/doc.mp3"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:15.136",
+                        "lengthInSeconds": 15.13599967956543,
+                        "bitrate": 56,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_SRP_/Audio/smert_2.mp3"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:15.136",
+                        "lengthInSeconds": 15.13599967956543,
+                        "bitrate": 56,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_SRP_/Audio/ohog.mp3"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:15.136",
+                        "lengthInSeconds": 15.13599967956543,
+                        "bitrate": 56,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_SRP_/Audio/shok_run.mp3"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:15.136",
+                        "lengthInSeconds": 15.13599967956543,
+                        "bitrate": 56,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_SRP_/Audio/smert_1.mp3"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:15.136",
+                        "lengthInSeconds": 15.13599967956543,
+                        "bitrate": 56,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_SRP_/Audio/bita.mp3"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:15.136",
+                        "lengthInSeconds": 15.13599967956543,
+                        "bitrate": 56,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_SRP_/Audio/pila_run.mp3"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:15.136",
+                        "lengthInSeconds": 15.13599967956543,
+                        "bitrate": 56,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_SRP_/Audio/hand.mp3"
+                    }
+                ]
             },
             "font": {
                 "default": {
