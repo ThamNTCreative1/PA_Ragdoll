@@ -1,73 +1,79 @@
 {
   "ignores": [
-    "F:/UnityProjects/KSDH_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs",
-    "F:/UnityProjects/KSDH_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs",
-    "F:/UnityProjects/KSDH_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
-    "F:/UnityProjects/KSDH_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs",
-    "F:/UnityProjects/KSDH_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs",
-    "F:/UnityProjects/KSDH_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenProShortcuts.cs"
+    "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs",
+    "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs",
+    "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
+    "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs",
+    "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs",
+    "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenProShortcuts.cs"
   ],
   "groups": [
     [
-      "F:/UnityProjects/KSDH_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/AudioController.cs",
-      "F:/UnityProjects/KSDH_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/BonkController.cs",
-      "F:/UnityProjects/KSDH_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/GameController.cs",
-      "F:/UnityProjects/KSDH_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/LunaController.cs",
-      "F:/UnityProjects/KSDH_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/MonsterController.cs",
-      "F:/UnityProjects/KSDH_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/TargetController.cs",
-      "F:/UnityProjects/KSDH_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/VFXController.cs"
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/AudioController.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/BonkController.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/GameController.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/LunaController.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/MonsterController.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/TargetController.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/VFXController.cs"
     ],
     [
-      "F:/UnityProjects/KSDH_V03/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/BalanceController.cs"
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/BalanceController.cs"
     ],
     [
-      "F:/UnityProjects/KSDH_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs"
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/StairRace/RagdollPose.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/StairRace/StairRaceGame.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/StairRace/TapButton.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/StairRace/ResponsiveLayout.cs"
     ],
     [
-      "F:/UnityProjects/KSDH_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleEPOOutline.cs"
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs"
     ],
     [
-      "F:/UnityProjects/KSDH_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs"
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleEPOOutline.cs"
     ],
     [
-      "F:/UnityProjects/KSDH_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs"
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs"
     ],
     [
-      "F:/UnityProjects/KSDH_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs"
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs"
     ],
     [
-      "F:/UnityProjects/KSDH_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
-      "F:/UnityProjects/KSDH_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs"
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs"
     ],
     [
-      "F:/UnityProjects/KSDH_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs"
     ],
     [
-      "F:/UnityProjects/KSDH_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs"
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
     ],
     [
-      "F:/UnityProjects/KSDH_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenDeAudio.cs"
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs"
     ],
     [
-      "F:/UnityProjects/KSDH_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenDeUnityExtended.cs"
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenDeAudio.cs"
     ],
     [
-      "F:/UnityProjects/KSDH_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenProShortcuts.cs"
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenDeUnityExtended.cs"
     ],
     [
-      "F:/UnityProjects/KSDH_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenTextMeshPro.cs"
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenProShortcuts.cs"
     ],
     [
-      "F:/UnityProjects/KSDH_V03/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenTk2d.cs"
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenTextMeshPro.cs"
     ],
     [
-      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
+      "D:/ProjectGitHub/PA_Ragdoll/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenTk2d.cs"
     ],
     [
-      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
+      "F:/7.2.0/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
     ],
     [
-      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+      "F:/7.2.0/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
+    ],
+    [
+      "F:/7.2.0/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.AssemblyAttributes.cs"
     ]
   ]
 }

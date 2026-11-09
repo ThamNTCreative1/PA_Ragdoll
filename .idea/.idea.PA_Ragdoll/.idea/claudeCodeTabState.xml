@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ClaudeCodeTabState">
+    <option name="tabSessions">
+      <map>
+        <entry key="0">
+          <value>
+            <TabSessionState>
+              <option name="projectPath" value="D:\ProjectGitHub\PA_Ragdoll" />
+              <option name="provider" value="claude" />
+              <option name="sessionId" value="cccc6ece-26a7-49f9-96dd-96093602f793" />
+              <option name="cwd" value="D:\ProjectGitHub\PA_Ragdoll" />
+              <option name="model" value="claude-sonnet-5[1m]" />
+              <option name="permissionMode" value="bypassPermissions" />
+            </TabSessionState>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
