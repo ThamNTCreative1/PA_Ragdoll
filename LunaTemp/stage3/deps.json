@@ -1,0 +1,94 @@
+{
+  "ignores": [
+    "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs",
+    "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs",
+    "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
+    "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs",
+    "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs",
+    "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenProShortcuts.cs"
+  ],
+  "groups": [
+    [
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/AudioController.cs",
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/BonkController.cs",
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/MonsterController.cs",
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/GameController.cs",
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/LunaController.cs",
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Power/PowerController.cs",
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Power/PowerBase.cs",
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Power/Burning.cs",
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Power/FirePower.cs",
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Power/IFireSource.cs",
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Power/IDamageable.cs",
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Power/LightningStrike.cs",
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Power/LightningPower.cs",
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Power/StormPower.cs",
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Power/RainEffect.cs",
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Power/ScreenFx.cs",
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Power/CameraShake.cs",
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Power/FireFx.cs",
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Power/ElectricFx.cs",
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Power/TornadoPower.cs",
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/TargetController.cs",
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Power/SwipeHandTut.cs",
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Power/CycleHand.cs",
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Power/PowerTutorial.cs",
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/VFXController.cs"
+    ],
+    [
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/BalanceController.cs"
+    ],
+    [
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Power/HintHand.cs"
+    ],
+    [
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs"
+    ],
+    [
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleEPOOutline.cs"
+    ],
+    [
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs"
+    ],
+    [
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs"
+    ],
+    [
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs"
+    ],
+    [
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs"
+    ],
+    [
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
+    ],
+    [
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs"
+    ],
+    [
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenDeAudio.cs"
+    ],
+    [
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenDeUnityExtended.cs"
+    ],
+    [
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenProShortcuts.cs"
+    ],
+    [
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenTextMeshPro.cs"
+    ],
+    [
+      "F:/UnityProjects/PSF_V01/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenTk2d.cs"
+    ],
+    [
+      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
+    ],
+    [
+      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
+    ],
+    [
+      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+    ]
+  ]
+}

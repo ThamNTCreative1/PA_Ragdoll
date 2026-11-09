@@ -1,0 +1,110 @@
+{
+    "BuildID": "adecf5f5-755f-4502-b282-cf0c1b3a05b3",
+    "Command": "project:upload",
+    "ProjectID": "01d8b819bddb11e4ea7a644267642880",
+    "ProjectStateHash": "5c449d818fc779706dad922ffbb07f428c18538679d1937abc28ff458a49d611",
+    "StageCompletedAt": 3,
+    "EarliestFatalError": 0,
+    "StartTime": 1793940628362,
+    "EndTime": 1793940661634,
+    "PlaygroundUserID": 42593,
+    "OperatingSystem": "win32",
+    "UnityPackageID": null,
+    "TargetPlatform": "playground",
+    "UnityVersion": "6000.0.78f1",
+    "LunaVersion": "7.2.0",
+    "LogCount": 4,
+    "Logs": [
+        {
+            "LogID": "68ab9d63-974a-4918-b029-39dbabf4d05b",
+            "Order": 4,
+            "Timestamp": 1793940662029,
+            "Stage": 3,
+            "ErrorType": 3,
+            "ErrorCode": "LP3007",
+            "Description": "You are not using any custom events",
+            "Details": [
+                "You are not using any custom events. It is recommended to use custom events to have a better understanding of the playable."
+            ],
+            "DescriptionValues": [
+                ""
+            ],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "779ba87d-e833-4f87-93f1-7f52d85f8cb4",
+            "Order": 0,
+            "Timestamp": 1793940635660,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1014",
+            "Description": "We recommend running Runtime Analysis to find and remove all unused code",
+            "Details": [
+                "Navigate to the Runtime Analysis → Code tab to enable code stripping. Before uploading the playable, please make sure to have played all scenario’s of the playable in a development build to make Runtime Analysis work properly."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "773595ea-6156-4756-b396-ca6fae6f7ebf",
+            "Order": 1,
+            "Timestamp": 1793940635660,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1024",
+            "Description": "Huge RAM usage",
+            "Details": [
+                "Playable have huge RAM usage (257.18 MB). Recommended RAM value is lower than 256.00 MB to support low-end devices"
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [
+                "256.00",
+                "257.18"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "34121b4d-3677-4246-9323-b03cbacc669c",
+            "Order": 2,
+            "Timestamp": 1793940635670,
+            "Stage": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP1032",
+            "Description": "Package(s) is not supported in Luna",
+            "Details": [
+                "Currently package(s) com.unity.timeline are not supported in Luna. We recommend you to remove it and workaround it's functionality."
+            ],
+            "DescriptionValues": [
+                "com.unity.timeline (1.8.12)"
+            ],
+            "DetailsValues": [
+                "com.unity.timeline"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "F:/UnityProjects/PSF_V01/Packages\\manifest.json",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        }
+    ]
+}
