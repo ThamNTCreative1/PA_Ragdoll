@@ -42,7 +42,7 @@ namespace MelonAd
         static bool IsGround(Collider2D o)
         {
             if (o == null || o.isTrigger) return false;
-            if (o.GetComponent<Spike>() != null || o.GetComponent<Acid>() != null) return false;
+            if (o.GetComponent<Spike>() != null || o.GetComponent<Acid>() != null || o.GetComponent<MonsterPit>() != null) return false;
             if (o.GetComponent<RagdollPart>() != null) return false;
             Rigidbody2D orb = o.attachedRigidbody;
             if (orb != null && orb.bodyType == RigidbodyType2D.Dynamic) return false; // chair, loose props
@@ -141,7 +141,9 @@ namespace MelonAd
 
         public void OnPartTrigger(RagdollPart p, Collider2D other)
         {
-            if (other.GetComponent<Acid>() != null) Melt(p);
+            MonsterPit pit = other.GetComponent<MonsterPit>();
+            if (pit != null) Eaten(p, pit);
+            else if (other.GetComponent<Acid>() != null) Melt(p);
             else if (other.GetComponent<ExitZone>() != null) exitContacts++;
         }
 
@@ -180,6 +182,19 @@ namespace MelonAd
             StartHole(p);
         }
 
+        bool eaten;
+
+        /// <summary>Fell into the monster pit: the monsters eat the body (alive or already dead).</summary>
+        void Eaten(RagdollPart p, MonsterPit pit)
+        {
+            if (eaten) return;
+            eaten = true;
+            kisDead = true;
+            AudioManager.I.PlayIfIdle(Sfx.Ohog);
+            Die();
+            pit.Eat(this, p);
+        }
+
         void Shot(RagdollPart p)
         {
             if (!kisDead) FxManager.I.Blood(p.transform.position, 15);
@@ -210,6 +225,7 @@ namespace MelonAd
         {
             Dead = false;
             kisDead = false;
+            eaten = false;
             exitContacts = 0;
             groundContacts = 0;
             exitTimer = 0f;

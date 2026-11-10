@@ -88,6 +88,8 @@ namespace MelonAd
             for (int i = 0; i < spikes.Length; i++) spikes[i].ResetState();
             Acid[] acids = GetComponentsInChildren<Acid>(true);
             for (int i = 0; i < acids.Length; i++) acids[i].ResetState();
+            MonsterPit[] pits = GetComponentsInChildren<MonsterPit>(true);
+            for (int i = 0; i < pits.Length; i++) pits[i].ResetState();
             if (rifle != null) rifle.ResetState();
             if (flameThrower != null) flameThrower.ResetState();
             if (man != null) man.ResetState();

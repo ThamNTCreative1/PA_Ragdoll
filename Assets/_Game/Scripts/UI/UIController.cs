@@ -31,6 +31,14 @@ namespace MelonAd
         public RectTransform winFinger;
         public Button nextButton;
 
+        [Header("Intro (\"Survive 99 nights\")")]
+        public GameObject introRoot;
+        public RectTransform introCard;
+        public CanvasGroup introGroup;
+        [Tooltip("Seconds before the intro hides itself (a tap hides it earlier).")]
+        public float introDuration = 2.5f;
+        public float introFade = 0.3f;
+
         [Header("Animation")]
         public float slideDistance = 1000f;
         public float slideDuration = 0.25f;
@@ -126,6 +134,13 @@ namespace MelonAd
         }
 
         Popup fail, win;
+        Vector3 introScale0;
+        float introT = -1f;
+        float introOutT = -1f;
+
+        /// <summary>True while the intro panel is on screen (gameplay input is ignored).</summary>
+        public bool IntroActive { get { return introRoot != null && introRoot.activeSelf && introOutT < 0f; } }
+
         Vector3 headScale0;
         Quaternion headRot0;
         float headT;
@@ -144,6 +159,53 @@ namespace MelonAd
             win.Init();
             if (retryButton != null) retryButton.onClick.AddListener(OnRetryClicked);
             if (nextButton != null) nextButton.onClick.AddListener(OnNextClicked);
+            if (introRoot != null)
+            {
+                if (introCard != null) introScale0 = introCard.localScale;
+                introRoot.SetActive(true);
+                introT = 0f;
+                introOutT = -1f;
+                ApplyIntro();
+            }
+        }
+
+        /// <summary>Starts the intro fade-out (called on the first tap).</summary>
+        public void DismissIntro()
+        {
+            if (introRoot == null || !introRoot.activeSelf || introOutT >= 0f) return;
+            introOutT = 0f;
+        }
+
+        void TickIntro(float dt)
+        {
+            if (introRoot == null || !introRoot.activeSelf) return;
+            introT += dt;
+            if (introOutT < 0f && introT >= introDuration) introOutT = 0f;
+            if (introOutT >= 0f)
+            {
+                introOutT += dt / Mathf.Max(0.01f, introFade);
+                if (introOutT >= 1f)
+                {
+                    introRoot.SetActive(false);
+                    return;
+                }
+            }
+            ApplyIntro();
+        }
+
+        void ApplyIntro()
+        {
+            // pop in (overshoot) + gentle breathing, then fade/shrink out
+            float k = Mathf.Clamp01(introT / 0.35f);
+            float pop = k < 1f ? k + 0.5f * Mathf.Sin(Mathf.PI * k) : 1f + 0.03f * Mathf.Sin((introT - 0.35f) * 4f);
+            float a = 1f;
+            if (introOutT >= 0f)
+            {
+                a = 1f - introOutT;
+                pop *= 1f - 0.2f * introOutT;
+            }
+            if (introCard != null) introCard.localScale = introScale0 * pop;
+            if (introGroup != null) introGroup.alpha = a;
         }
 
         void OnRetryClicked()
@@ -177,6 +239,7 @@ namespace MelonAd
         void Update()
         {
             float dt = Mathf.Min(Time.deltaTime, 0.05f);
+            TickIntro(dt);
             if (hint != null && hint.activeSelf && head != null) AnimateHead(dt);
             fail.Tick(this, dt);
             win.Tick(this, dt);

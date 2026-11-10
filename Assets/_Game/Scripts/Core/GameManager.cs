@@ -162,12 +162,17 @@ namespace MelonAd
 
         void OnPointerDown(Vector2 p)
         {
-            ui.ShowHint(false);
             if (!musicStarted)
             {
                 musicStarted = true;
                 AudioManager.I.Play(Sfx.Music);
             }
+            if (ui.IntroActive)
+            {
+                ui.DismissIntro();
+                return;
+            }
+            ui.ShowHint(false);
             if (State != GameState.Run) return;
 
             Collider2D[] hits = Physics2D.OverlapPointAll(p, pickMask);
