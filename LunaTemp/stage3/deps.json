@@ -11,6 +11,8 @@
       "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Ragdoll/CharacterSelector.cs",
       "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/LunaController.cs",
       "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Luna/LunaBridge.cs",
+      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/UI/CtaOverlay.cs",
+      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/UI/UIController.cs",
       "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Core/GameConfig.cs",
       "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Hazards/FlameThrower.cs",
       "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Hazards/FlameParticle.cs",
@@ -20,8 +22,7 @@
       "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Hazards/Spike.cs",
       "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Ragdoll/RagdollPart.cs",
       "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Gameplay/ExitZone.cs",
-      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Gameplay/Pin.cs",
-      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/UI/UIController.cs"
+      "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Gameplay/Pin.cs"
     ],
     [
       "D:/UnityProjects/SRP_V05/LunaTemp/stage3/processed-scripts/Assets/_Game/Scripts/Core/CameraFit.cs"

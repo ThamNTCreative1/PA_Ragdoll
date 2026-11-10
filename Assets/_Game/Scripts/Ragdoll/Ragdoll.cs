@@ -20,6 +20,10 @@ namespace MelonAd
         public bool Dead { get; private set; }
 
         bool kisDead;
+
+        [Tooltip("Seconds the (alive) man must stay inside the exit zone before it counts as a win.")]
+        public float exitStayTime = 0.5f;
+        float exitTimer;
         float smokeTimer;
         float holeT = -1f;
 
@@ -31,9 +35,56 @@ namespace MelonAd
             rightFoot.rb.AddForce(new Vector2(0f, -footPull), ForceMode2D.Impulse);
         }
 
+        // Luna-safe tracking (callbacks only, no IsTouching / GetContacts)
+        int exitContacts;
+        int groundContacts;
+
+        static bool IsGround(Collider2D o)
+        {
+            if (o == null || o.isTrigger) return false;
+            if (o.GetComponent<Spike>() != null || o.GetComponent<Acid>() != null) return false;
+            if (o.GetComponent<RagdollPart>() != null) return false;
+            Rigidbody2D orb = o.attachedRigidbody;
+            if (orb != null && orb.bodyType == RigidbodyType2D.Dynamic) return false; // chair, loose props
+            return true;
+        }
+
+        bool IsFoot(RagdollPart p)
+        {
+            return p == leftFoot || p == rightFoot;
+        }
+
+        public void OnPartCollisionExit(RagdollPart p, Collision2D c)
+        {
+            if (IsFoot(p) && IsGround(c.collider) && groundContacts > 0) groundContacts--;
+        }
+
+        bool Grounded()
+        {
+            return groundContacts > 0;
+        }
+
+        bool InExit()
+        {
+            return exitContacts > 0;
+        }
+
+        public void OnPartTriggerExit(RagdollPart p, Collider2D other)
+        {
+            if (other.GetComponent<ExitZone>() != null && exitContacts > 0) exitContacts--;
+        }
+
         void Update()
         {
             float dt = Mathf.Min(Time.deltaTime, 0.05f);
+            // win only when alive, not dragged, standing on the ground and inside the exit zone
+            bool held = GameManager.I != null && GameManager.I.IsDragging;
+            if (!Dead && !held && Grounded() && InExit())
+            {
+                exitTimer += dt;
+                if (exitTimer >= exitStayTime && GameManager.I != null) GameManager.I.OnExitReached();
+            }
+            else exitTimer = 0f;
             smokeTimer -= dt;
             if (holeT >= 0f && holeT < 1f)
             {
@@ -57,6 +108,10 @@ namespace MelonAd
             else if (other.GetComponent<Spike>() != null)
             {
                 Melt(p);
+            }
+            else if (IsFoot(p) && IsGround(other))
+            {
+                groundContacts++;
             }
             else if (other.GetComponent<Bullet>() != null)
             {
@@ -87,7 +142,7 @@ namespace MelonAd
         public void OnPartTrigger(RagdollPart p, Collider2D other)
         {
             if (other.GetComponent<Acid>() != null) Melt(p);
-            else if (other.GetComponent<ExitZone>() != null && GameManager.I != null) GameManager.I.OnExitReached();
+            else if (other.GetComponent<ExitZone>() != null) exitContacts++;
         }
 
         void Burn(RagdollPart p)
@@ -155,6 +210,9 @@ namespace MelonAd
         {
             Dead = false;
             kisDead = false;
+            exitContacts = 0;
+            groundContacts = 0;
+            exitTimer = 0f;
             smokeTimer = 0f;
             holeT = -1f;
         }

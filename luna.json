@@ -1,8 +1,8 @@
 {
     "version": "7.2.0",
     "projectId": "83336d6262c2dbe44ad1c159a3170903",
-    "applicationID": 42814,
-    "creativeName": "SRP_V05_HoaiTT_DatDV",
+    "applicationID": 40364,
+    "creativeName": "C1_2610_DatDV_SSP_V08_YenTTH",
     "pgServer": "EU",
     "window": {
         "‐⁘": true
@@ -129,9 +129,11 @@
             ]
         },
         "scenes": [
+            "Assets/_Game/Scenes/Main_SSP.unity"
+        ],
+        "disabledScenes": [
             "Assets/_Game/Scenes/Main.unity"
         ],
-        "disabledScenes": [],
         "startupScene": 0,
         "packages": {
             "default": {

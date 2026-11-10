@@ -51,8 +51,8 @@ public class LunaController : MonoBehaviour
     private IEnumerator EndGame()
     {
         yield return new WaitForSeconds(TimePlay);
-        LunaBridge.GameEnded();
-        ClickCTA();
+        // no auto redirect: show the invisible CTA, the tap ends the game + opens the store
+        if (GameManager.I != null) GameManager.I.OnTimeUp();
     }
 }
 

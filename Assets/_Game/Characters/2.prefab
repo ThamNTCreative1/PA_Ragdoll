@@ -6197,6 +6197,7 @@ MonoBehaviour:
   holeDiameter: 1.28
   headLift: 25
   footPull: 18
+  exitStayTime: 0.5
   blockMask:
     serializedVersion: 2
     m_Bits: 128

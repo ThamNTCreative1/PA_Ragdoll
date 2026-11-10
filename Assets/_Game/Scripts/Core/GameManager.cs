@@ -19,6 +19,8 @@ namespace MelonAd
         public RectTransform zoomRoot;
         public Camera cam;
         public UIController ui;
+        [Tooltip("Invisible full-screen CTA shown on time-out / fail / win (no auto redirect).")]
+        public CtaOverlay cta;
         public Transform tapFinger;
         public Transform dragFinger;
         public SpriteRenderer dragFingerSprite;
@@ -28,6 +30,8 @@ namespace MelonAd
         public float winZoom = 1.526f;
         public Vector2 winFocus = new Vector2(8.717f, -1.805f);
         public float winZoomDuration = 1f;
+        [Tooltip("Seconds after reaching the exit before the WIN popup slides in.")]
+        public float winPopupDelay = 1f;
 
         [Header("Drag spring (Box2D mouse joint defaults)")]
         public float dragFrequency = 5f;
@@ -38,6 +42,9 @@ namespace MelonAd
         public Vector2 tapFingerOffset = new Vector2(0f, -5.2f);
 
         public GameState State { get; private set; }
+
+        /// <summary>True while the player is holding a body part.</summary>
+        public bool IsDragging { get { return dragGrab != null; } }
 
         int retriesUsed;
         bool musicStarted;
@@ -83,6 +90,7 @@ namespace MelonAd
                 Debug.LogError("[GameManager] Assign the Level_0 instance (LevelRefs) placed under Canvas/World.");
                 return;
             }
+            winPending = false;
             if (!firstRound) level.ResetLevel();
             firstRound = false;
             if (FxManager.I != null) FxManager.I.ClearAll();
@@ -98,6 +106,8 @@ namespace MelonAd
             }
 
             ui.HideFail();
+            ui.HideWin();
+            if (cta != null) cta.Hide();
             ui.ShowHint(true);
 
             bool tut = TutorialOn() && level.tutorPin != null;
@@ -152,12 +162,6 @@ namespace MelonAd
 
         void OnPointerDown(Vector2 p)
         {
-            if (State == GameState.Win)
-            {
-                LunaBridge.InstallFullGame();
-                return;
-            }
-
             ui.ShowHint(false);
             if (!musicStarted)
             {
@@ -217,7 +221,6 @@ namespace MelonAd
             {
                 if (level.rifle != null) level.rifle.OnPinRemoved();
             }
-            LunaBridge.Event("pin_removed", (int)pin.evt);
         }
 
         void UpdateTutorial(float dt)
@@ -280,7 +283,6 @@ namespace MelonAd
             AudioManager.I.Stop(Sfx.Flame);
             AudioManager.I.Stop(Sfx.Fire);
             HideFingers();
-            LunaBridge.Event("fail", retriesUsed);
             StartCoroutine(ShowFailLater());
         }
 
@@ -292,6 +294,7 @@ namespace MelonAd
             {
                 AudioManager.I.Play(Sfx.Fail);
                 ui.ShowFail();
+                if (cta != null) cta.Show();
             }
         }
 
@@ -306,21 +309,65 @@ namespace MelonAd
                 return;
             }
             retriesUsed++;
-            LunaBridge.Event("retry", retriesUsed);
             BeginRound();
         }
 
+        bool winPending;
+
+        /// <summary>Called by the exit trigger. The win is confirmed only if the man is still alive a moment later
+        /// (a body falling onto the spikes next to the sign must not count as a win).</summary>
         public void OnExitReached()
         {
-            if (State != GameState.Run) return;
+            if (State != GameState.Run || winPending) return;
+            if (level != null && level.man != null && level.man.Dead) return;
+            StartCoroutine(ConfirmWin());
+        }
+
+        IEnumerator ConfirmWin()
+        {
+            winPending = true;
+            yield return new WaitForSeconds(0.3f);
+            winPending = false;
+            if (State != GameState.Run) yield break;
+            if (level != null && level.man != null && level.man.Dead) yield break;
+            if (IsDragging) yield break; // picked up again: wait until it rests in the zone again
+            DoWin();
+        }
+
+        void DoWin()
+        {
             State = GameState.Win;
             dragGrab = null;
             HideFingers();
             AudioManager.I.Play(Sfx.Complete);
-            LunaBridge.Event("win", retriesUsed);
-            LunaBridge.GameEnded();
-            LunaBridge.InstallFullGame();
+            if (cta != null) cta.Show();
+            StartCoroutine(ShowWinLater());
             if (zoomRoot != null) zoomRoutine = StartCoroutine(ZoomToExit());
+        }
+
+        IEnumerator ShowWinLater()
+        {
+            yield return new WaitForSeconds(winPopupDelay);
+            if (State == GameState.Win)
+            {
+                ui.ShowWin();
+                if (cta != null) cta.Show(); // keep the invisible CTA above the popup
+            }
+        }
+
+        /// <summary>Luna play-time limit reached: stop the round and wait for a tap on the invisible CTA.</summary>
+        public void OnTimeUp()
+        {
+            if (State == GameState.Run)
+            {
+                State = GameState.Fail;
+                dragGrab = null;
+                AudioManager.I.Stop(Sfx.Flame);
+                AudioManager.I.Stop(Sfx.Fire);
+                HideFingers();
+                ui.ShowHint(false);
+            }
+            if (cta != null) cta.Show();
         }
 
         IEnumerator ZoomToExit()

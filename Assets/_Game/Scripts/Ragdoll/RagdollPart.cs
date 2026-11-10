@@ -31,9 +31,19 @@ namespace MelonAd
             owner.OnPartCollision(this, c);
         }
 
+        void OnCollisionExit2D(Collision2D c)
+        {
+            owner.OnPartCollisionExit(this, c);
+        }
+
         void OnTriggerEnter2D(Collider2D c)
         {
             owner.OnPartTrigger(this, c);
+        }
+
+        void OnTriggerExit2D(Collider2D c)
+        {
+            owner.OnPartTriggerExit(this, c);
         }
     }
 }

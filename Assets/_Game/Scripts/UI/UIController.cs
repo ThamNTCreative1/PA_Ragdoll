@@ -4,10 +4,10 @@ using UnityEngine.UI;
 namespace MelonAd
 {
     /// <summary>
-    /// Drives the hint (SAVE THE MELON + bobbing head) and the FAIL popup.
+    /// Drives the hint (bobbing head), the FAIL popup and the WIN popup.
     /// All layout lives on the Canvas in the scene and is freely editable:
     /// animations are applied RELATIVE to the position / scale / rotation you set in the editor.
-    /// FailRoot can be left active while editing; it is hidden automatically at start.
+    /// FailRoot / WinRoot can be left active while editing; they are hidden automatically at start.
     /// </summary>
     public class UIController : MonoBehaviour
     {
@@ -23,93 +23,163 @@ namespace MelonAd
         public RectTransform finger;
         public Button retryButton;
 
+        [Header("Win popup")]
+        public GameObject winRoot;
+        public RectTransform winPanel;
+        public CanvasGroup winPanelGroup;
+        public RectTransform winButton;
+        public RectTransform winFinger;
+        public Button nextButton;
+
         [Header("Animation")]
         public float slideDistance = 1000f;
         public float slideDuration = 0.25f;
         public float pulseDuration = 3f;
         public float wiggleDuration = 1.2f;
 
-        Vector2 panelPos0;
-        Vector3 headScale0, buttonScale0, fingerScale0;
-        Quaternion headRot0, buttonRot0;
-
-        float headT;
-        int headPhase;
-        float failT = -1f;
-        float btnT;
-        int btnPhase;
-
-        void Awake()
+        /// <summary>Slide-in panel + pulsing / wiggling button with a tapping finger.</summary>
+        class Popup
         {
-            panelPos0 = panel.anchoredPosition;
-            headScale0 = head.localScale;
-            headRot0 = head.localRotation;
-            buttonScale0 = button.localScale;
-            buttonRot0 = button.localRotation;
-            fingerScale0 = finger.localScale;
-            retryButton.onClick.AddListener(OnRetryClicked);
-            failRoot.SetActive(false);
-        }
+            public GameObject root;
+            public RectTransform panel, button, finger;
+            public CanvasGroup group;
+            Vector2 panelPos0;
+            Vector3 buttonScale0, fingerScale0;
+            Quaternion buttonRot0;
+            public float t = -1f;
+            float btnT;
+            int btnPhase;
 
-        void OnRetryClicked()
-        {
-            if (failT < 1f) return;
-            if (GameManager.I != null) GameManager.I.OnFailButton();
-        }
+            public bool Valid { get { return root != null && panel != null; } }
 
-        public void ShowHint(bool visible)
-        {
-            if (hint.activeSelf == visible) return;
-            hint.SetActive(visible);
-            headT = 0f;
-            headPhase = 0;
-            head.localScale = headScale0;
-            head.localRotation = headRot0;
-        }
-
-        public void ShowFail()
-        {
-            failRoot.SetActive(true);
-            failT = 0f;
-            btnT = 0f;
-            btnPhase = 0;
-            finger.gameObject.SetActive(false);
-            button.localScale = buttonScale0;
-            button.localRotation = buttonRot0;
-            ApplyFail(0f);
-        }
-
-        public void HideFail()
-        {
-            failRoot.SetActive(false);
-            failT = -1f;
-            panel.anchoredPosition = panelPos0;
-        }
-
-        void Update()
-        {
-            float dt = Mathf.Min(Time.deltaTime, 0.05f);
-            if (hint.activeSelf) AnimateHead(dt);
-            if (failT >= 0f)
+            public void Init()
             {
-                if (failT < 1f)
+                if (!Valid) return;
+                panelPos0 = panel.anchoredPosition;
+                if (button != null) { buttonScale0 = button.localScale; buttonRot0 = button.localRotation; }
+                if (finger != null) fingerScale0 = finger.localScale;
+                root.SetActive(false);
+            }
+
+            public void Show(UIController ui)
+            {
+                if (!Valid) return;
+                root.SetActive(true);
+                t = 0f;
+                btnT = 0f;
+                btnPhase = 0;
+                if (finger != null) finger.gameObject.SetActive(false);
+                if (button != null) { button.localScale = buttonScale0; button.localRotation = buttonRot0; }
+                Apply(ui, 0f);
+            }
+
+            public void Hide()
+            {
+                if (!Valid) return;
+                root.SetActive(false);
+                t = -1f;
+                panel.anchoredPosition = panelPos0;
+            }
+
+            public void Tick(UIController ui, float dt)
+            {
+                if (t < 0f) return;
+                if (t < 1f)
                 {
-                    failT += dt / slideDuration;
-                    if (failT > 1f) failT = 1f;
-                    ApplyFail(failT);
+                    t += dt / ui.slideDuration;
+                    if (t > 1f) t = 1f;
+                    Apply(ui, t);
+                }
+                else AnimateButton(ui, dt);
+            }
+
+            void Apply(UIController ui, float k0)
+            {
+                float k = k0 + 0.4f * Mathf.Sin(Mathf.PI * k0);
+                panel.anchoredPosition = panelPos0 + new Vector2(0f, ui.slideDistance * (1f - k));
+                if (group != null) group.alpha = Mathf.Min(1f, 10f * k0);
+            }
+
+            void AnimateButton(UIController ui, float dt)
+            {
+                if (button == null) return;
+                float dur = btnPhase == 0 ? ui.pulseDuration : ui.wiggleDuration;
+                btnT += dt / dur;
+                if (btnT >= 1f)
+                {
+                    btnT = 0f;
+                    btnPhase = 1 - btnPhase;
+                    button.localScale = buttonScale0;
+                    button.localRotation = buttonRot0;
+                    if (finger != null) finger.gameObject.SetActive(btnPhase == 1);
+                }
+                if (btnPhase == 0)
+                {
+                    button.localScale = buttonScale0 * (1f + Mathf.Sin(3f * Mathf.PI * btnT) / 20f);
                 }
                 else
                 {
-                    AnimateButton(dt);
+                    if (finger != null) finger.localScale = fingerScale0 * (1f - Mathf.Sin(Mathf.PI * btnT) / 8f);
+                    button.localRotation = buttonRot0 * Quaternion.Euler(0f, 0f, Wiggle(btnT));
                 }
             }
         }
 
-        void ApplyFail(float t)
+        Popup fail, win;
+        Vector3 headScale0;
+        Quaternion headRot0;
+        float headT;
+        int headPhase;
+
+        void Awake()
         {
-            float k = t + 0.4f * Mathf.Sin(Mathf.PI * t);
-            panel.anchoredPosition = panelPos0 + new Vector2(0f, slideDistance * (1f - k));
-            panelGroup.alpha = Mathf.Min(1f, 10f * t);
+            if (head != null)
+            {
+                headScale0 = head.localScale;
+                headRot0 = head.localRotation;
+            }
+            fail = new Popup { root = failRoot, panel = panel, group = panelGroup, button = button, finger = finger };
+            win = new Popup { root = winRoot, panel = winPanel, group = winPanelGroup, button = winButton, finger = winFinger };
+            fail.Init();
+            win.Init();
+            if (retryButton != null) retryButton.onClick.AddListener(OnRetryClicked);
+            if (nextButton != null) nextButton.onClick.AddListener(OnNextClicked);
+        }
+
+        void OnRetryClicked()
+        {
+            if (fail.t < 1f) return;
+            if (GameManager.I != null) GameManager.I.OnFailButton();
+        }
+
+        void OnNextClicked()
+        {
+            LunaBridge.GameEnded();
+            LunaBridge.InstallFullGame();
+        }
+
+        public void ShowHint(bool visible)
+        {
+            if (hint == null || hint.activeSelf == visible) return;
+            hint.SetActive(visible);
+            headT = 0f;
+            headPhase = 0;
+            if (head == null) return;
+            head.localScale = headScale0;
+            head.localRotation = headRot0;
+        }
+
+        public void ShowFail() { fail.Show(this); }
+        public void HideFail() { fail.Hide(); }
+        public void ShowWin() { win.Show(this); }
+        public void HideWin() { win.Hide(); }
+
+        void Update()
+        {
+            float dt = Mathf.Min(Time.deltaTime, 0.05f);
+            if (hint != null && hint.activeSelf && head != null) AnimateHead(dt);
+            fail.Tick(this, dt);
+            win.Tick(this, dt);
         }
 
         static float Wiggle(float t)
@@ -132,29 +202,6 @@ namespace MelonAd
                 head.localScale = headScale0 * (1f + Mathf.Sin(3f * Mathf.PI * headT) / 20f);
             else
                 head.localRotation = headRot0 * Quaternion.Euler(0f, 0f, Wiggle(headT));
-        }
-
-        void AnimateButton(float dt)
-        {
-            float dur = btnPhase == 0 ? pulseDuration : wiggleDuration;
-            btnT += dt / dur;
-            if (btnT >= 1f)
-            {
-                btnT = 0f;
-                btnPhase = 1 - btnPhase;
-                button.localScale = buttonScale0;
-                button.localRotation = buttonRot0;
-                finger.gameObject.SetActive(btnPhase == 1);
-            }
-            if (btnPhase == 0)
-            {
-                button.localScale = buttonScale0 * (1f + Mathf.Sin(3f * Mathf.PI * btnT) / 20f);
-            }
-            else
-            {
-                finger.localScale = fingerScale0 * (1f - Mathf.Sin(Mathf.PI * btnT) / 8f);
-                button.localRotation = buttonRot0 * Quaternion.Euler(0f, 0f, Wiggle(btnT));
-            }
         }
     }
 }
