@@ -11,43 +11,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4589492b-f29c-468f-9802-de4b76cb03a8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PA_Ragdoll/.idea/claudeCodeTabState.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PA_Ragdoll/.idea/claudeCodeTabState.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PA_Ragdoll/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PA_Ragdoll/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/SVC_Luna.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SVC_Luna.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Game/Scenes/Main_SSP.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Game/Scenes/Main_SSP.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Game/Scripts/Core/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Game/Scripts/Core/AudioManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LunaTemp/.buildID" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/.buildID" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LunaTemp/Assemblies/scriptData.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/Assemblies/scriptData.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LunaTemp/luna-cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/luna-cache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LunaTemp/project-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/project-config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LunaTemp/stage1/assets/bundles/addressables.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage1/assets/bundles/addressables.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LunaTemp/stage1/assets/project-settings/-1.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage1/assets/project-settings/-1.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LunaTemp/stage1/assets/resources/0.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage1/assets/resources/0.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LunaTemp/stage1/assets/scenes/0.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage1/assets/scenes/0.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LunaTemp/stage1/assets/shaders/26.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage1/assets/shaders/26.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LunaTemp/stage1/assets/shaders/26.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/LunaTemp/stage1/assets/shaders/28.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage1/assets/shaders/28.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LunaTemp/stage1/assets/shaders/32.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage1/assets/shaders/32.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LunaTemp/stage1/assets/shaders/48.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage1/assets/shaders/48.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LunaTemp/stage1/js/deserializers.js" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage1/js/deserializers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LunaTemp/stage1/js/playground.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage1/js/playground.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LunaTemp/stage1/js/rootPaths.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage1/js/rootPaths.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LunaTemp/stage1/js/roots.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage1/js/roots.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LunaTemp/stage1/js/unity.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage1/js/unity.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LunaTemp/stage2/assets/project-settings/-1.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage2/assets/project-settings/-1.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LunaTemp/stage2/assets/resources/0.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage2/assets/resources/0.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LunaTemp/stage2/assets/scenes/0.blob" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage2/assets/scenes/0.blob" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LunaTemp/stage2/assets/scenes/0.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage2/assets/scenes/0.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LunaTemp/stage2/assets/shaders/26.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage2/assets/shaders/26.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LunaTemp/stage2/assets/shaders/26_shaderPrograms.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage2/assets/shaders/26_shaderPrograms.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LunaTemp/stage2/assets/shaders/26.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LunaTemp/stage2/assets/shaders/26_shaderPrograms.glsl" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/LunaTemp/stage2/assets/shaders/28.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage2/assets/shaders/28.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LunaTemp/stage2/assets/shaders/28_shaderPrograms.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage2/assets/shaders/28_shaderPrograms.glsl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LunaTemp/stage2/assets/shaders/32.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage2/assets/shaders/32.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LunaTemp/stage2/assets/shaders/32_shaderPrograms.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage2/assets/shaders/32_shaderPrograms.glsl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LunaTemp/stage2/assets/shaders/48.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage2/assets/shaders/48.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LunaTemp/stage2/assets/shaders/48_shaderPrograms.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage2/assets/shaders/48_shaderPrograms.glsl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LunaTemp/stage2/js/deserializers.js" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage2/js/deserializers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LunaTemp/stage2/js/playground.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage2/js/playground.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LunaTemp/stage2/js/rootPaths.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage2/js/rootPaths.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LunaTemp/stage3/assets/bundles.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage3/assets/bundles.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LunaTemp/stage3/assets/bundles/-1/bundle.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage3/assets/bundles/-1/bundle.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LunaTemp/stage3/assets/bundles/-1/data.blob" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage3/assets/bundles/-1/data.blob" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LunaTemp/stage3/assets/bundles/-2/bundle.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage3/assets/bundles/-2/bundle.json" afterDir="false" />
@@ -55,6 +44,7 @@
       <change beforePath="$PROJECT_DIR$/LunaTemp/stage3/deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage3/deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LunaTemp/stage3/engine/unity/bin/UnityScriptsCompiler.js" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage3/engine/unity/bin/UnityScriptsCompiler.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LunaTemp/stage3/js/deserializers.js" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage3/js/deserializers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LunaTemp/stage3/js/playable_health_check.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage3/js/playable_health_check.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LunaTemp/stage3/js/playground.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage3/js/playground.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LunaTemp/stage3/js/rootPaths.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage3/js/rootPaths.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LunaTemp/stage4/develop/assets/bundles/-1/bundle.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage4/develop/assets/bundles/-1/bundle.json" afterDir="false" />
@@ -68,6 +58,7 @@
       <change beforePath="$PROJECT_DIR$/LunaTemp/stage4/develop/js/playground.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage4/develop/js/playground.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LunaTemp/stage4/develop/js/rootPaths.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage4/develop/js/rootPaths.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LunaTemp/stage4/develop/luna.json" beforeDir="false" afterPath="$PROJECT_DIR$/LunaTemp/stage4/develop/luna.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/luna.json" beforeDir="false" afterPath="$PROJECT_DIR$/luna.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -163,7 +154,7 @@
       <workItem from="1794192518999" duration="2049000" />
       <workItem from="1794195465230" duration="7089000" />
       <workItem from="1794306309871" duration="3013000" />
-      <workItem from="1794362276168" duration="3500000" />
+      <workItem from="1794362276168" duration="10758000" />
     </task>
     <servers />
   </component>

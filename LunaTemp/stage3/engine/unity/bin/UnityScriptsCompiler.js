@@ -1,6 +1,6 @@
-if ( TRACE ) { TRACE( JSON.parse( '["LunaController#init","LunaController#Awake","LunaController#Start","LunaController#ApplyCharacter","LunaController#ClickCTA","LunaController#EndGame","MelonAd.Acid#init","MelonAd.Acid#OnTriggerEnter2D","MelonAd.Acid#OnTriggerExit2D","MelonAd.Acid#Update","MelonAd.Acid#ResetState","MelonAd.AudioManager#init","MelonAd.AudioManager#Awake","MelonAd.AudioManager#Play","MelonAd.AudioManager#PlayOverlap","MelonAd.AudioManager#PlayIfIdle","MelonAd.AudioManager#IsPlaying","MelonAd.AudioManager#Stop","MelonAd.Bullet#init","MelonAd.Bullet#Launch","MelonAd.Bullet#Update","MelonAd.Bullet#OnCollisionEnter2D","MelonAd.CameraFit#init","MelonAd.CameraFit#OnEnable","MelonAd.CameraFit#LateUpdate","MelonAd.CameraFit#Apply","MelonAd.CharacterSelector#Current#get","MelonAd.CharacterSelector#Apply","MelonAd.CtaOverlay#Awake","MelonAd.CtaOverlay#Show","MelonAd.CtaOverlay#Hide","MelonAd.CtaOverlay#OnClick","MelonAd.FlameParticle#init","MelonAd.FlameParticle#Launch","MelonAd.FlameParticle#Update","MelonAd.FlameParticle#Apply","MelonAd.FlameThrower#init","MelonAd.FlameThrower#Start","MelonAd.FlameThrower#Update","MelonAd.FlameThrower#Emit","MelonAd.FlameThrower#ResetState","MelonAd.FxManager#SetAlpha","MelonAd.FxManager#RandOffset","MelonAd.FxManager#init","MelonAd.FxManager#Awake","MelonAd.FxManager#Create","MelonAd.FxManager#Take","MelonAd.FxManager#BurnPuff","MelonAd.FxManager#Debris","MelonAd.FxManager#Blood","MelonAd.FxManager#Bubble","MelonAd.FxManager#ClearAll","MelonAd.FxManager#Update","MelonAd.GameConfig#init","MelonAd.GameConfig#Awake","MelonAd.GameManager#IsDragging#get","MelonAd.GameManager#init","MelonAd.GameManager#Awake","MelonAd.GameManager#Start","MelonAd.GameManager#TutorialOn","MelonAd.GameManager#BeginRound","MelonAd.GameManager#WorldScale","MelonAd.GameManager#Update","MelonAd.GameManager#FixedUpdate","MelonAd.GameManager#ScreenToWorld","MelonAd.GameManager#OnPointerDown","MelonAd.GameManager#StartDrag","MelonAd.GameManager#RemovePin","MelonAd.GameManager#UpdateTutorial","MelonAd.GameManager#SetDragFingerAlpha","MelonAd.GameManager#HideFingers","MelonAd.GameManager#OnManDied","MelonAd.GameManager#ShowFailLater","MelonAd.GameManager#OnFailButton","MelonAd.GameManager#OnExitReached","MelonAd.GameManager#ConfirmWin","MelonAd.GameManager#DoWin","MelonAd.GameManager#ShowWinLater","MelonAd.GameManager#OnTimeUp","MelonAd.GameManager#ZoomToExit","MelonAd.Grabbable#CanGrab","MelonAd.LevelRefs#init","MelonAd.LevelRefs#Init","MelonAd.LevelRefs#Capture","MelonAd.LevelRefs#ResetLevel","MelonAd.LevelRefs.TState#init","MelonAd.LunaBridge#GameEnded","MelonAd.LunaBridge#InstallFullGame","MelonAd.LunaBridge#Event","MelonAd.MonsterPit#WaveArms","MelonAd.MonsterPit#Grab","MelonAd.MonsterPit#Hide","MelonAd.MonsterPit#init","MelonAd.MonsterPit#Awake","MelonAd.MonsterPit#Update","MelonAd.MonsterPit#Eat","MelonAd.MonsterPit#Closest","MelonAd.MonsterPit#Mouth","MelonAd.MonsterPit#EatRoutine","MelonAd.MonsterPit#Pull","MelonAd.MonsterPit#ResetState","MelonAd.MonsterPit.Mon#init","MelonAd.Pin#init","MelonAd.Pin#Remove","MelonAd.Pin#Fly","MelonAd.Pin#ResetState","MelonAd.Ragdoll#IsGround","MelonAd.Ragdoll#init","MelonAd.Ragdoll#FixedUpdate","MelonAd.Ragdoll#IsFoot","MelonAd.Ragdoll#OnPartCollisionExit","MelonAd.Ragdoll#Grounded","MelonAd.Ragdoll#InExit","MelonAd.Ragdoll#OnPartTriggerExit","MelonAd.Ragdoll#Update","MelonAd.Ragdoll#OnPartCollision","MelonAd.Ragdoll#Blocked","MelonAd.Ragdoll#OnPartTrigger","MelonAd.Ragdoll#Burn","MelonAd.Ragdoll#Melt","MelonAd.Ragdoll#Eaten","MelonAd.Ragdoll#Shot","MelonAd.Ragdoll#StartHole","MelonAd.Ragdoll#Die","MelonAd.Ragdoll#ResetState","MelonAd.RagdollPart#ShowBurnt","MelonAd.RagdollPart#ShowSkeleton","MelonAd.RagdollPart#OnCollisionEnter2D","MelonAd.RagdollPart#OnCollisionExit2D","MelonAd.RagdollPart#OnTriggerEnter2D","MelonAd.RagdollPart#OnTriggerExit2D","MelonAd.Rifle#init","MelonAd.Rifle#Start","MelonAd.Rifle#OnPinRemoved","MelonAd.Rifle#Update","MelonAd.Rifle#Shoot","MelonAd.Rifle#UpdateFlash","MelonAd.Rifle#Fall","MelonAd.Rifle#ResetState","MelonAd.Spike#Break","MelonAd.Spike#OnCollisionEnter2D","MelonAd.Spike#ResetState","MelonAd.StormFx#init","MelonAd.StormFx#Respawn","MelonAd.StormFx#Scale#get","MelonAd.StormFx#init","MelonAd.StormFx#Awake","MelonAd.StormFx#Start","MelonAd.StormFx#CamRect","MelonAd.StormFx#Begin","MelonAd.StormFx#Stop","MelonAd.StormFx#Update","MelonAd.StormFx#LateFlash","MelonAd.StormFx#InitRain","MelonAd.StormFx#UpdateRain","MelonAd.StormFx#Strike","MelonAd.StormFx#CreateBolt","MelonAd.StormFx#Build","MelonAd.StormFx#SetSegment","MelonAd.StormFx#Place","MelonAd.StormFx#Play","MelonAd.StormFx#Flash","MelonAd.StormFx#FlashRoutine","MelonAd.StormFx#SetFlash","MelonAd.StormFx#CreateSprite","MelonAd.StormFx.Bolt#init","MelonAd.UIController#Wiggle","MelonAd.UIController#IntroActive#get","MelonAd.UIController#init","MelonAd.UIController#Awake","MelonAd.UIController#DismissIntro","MelonAd.UIController#TickIntro","MelonAd.UIController#ApplyIntro","MelonAd.UIController#OnRetryClicked","MelonAd.UIController#OnNextClicked","MelonAd.UIController#ShowHint","MelonAd.UIController#ShowFail","MelonAd.UIController#HideFail","MelonAd.UIController#ShowWin","MelonAd.UIController#HideWin","MelonAd.UIController#Update","MelonAd.UIController#AnimateHead","MelonAd.UIController.Popup#Valid#get","MelonAd.UIController.Popup#init","MelonAd.UIController.Popup#Init","MelonAd.UIController.Popup#Show","MelonAd.UIController.Popup#Hide","MelonAd.UIController.Popup#Tick","MelonAd.UIController.Popup#Apply","MelonAd.UIController.Popup#AnimateButton","MelonAd.UICover#Aspect","MelonAd.UICover#LateUpdate"]' ) ); }
+if ( TRACE ) { TRACE( JSON.parse( '["LunaController#init","LunaController#Awake","LunaController#Start","LunaController#ApplyCharacter","LunaController#ClickCTA","LunaController#EndGame","MelonAd.Acid#init","MelonAd.Acid#OnTriggerEnter2D","MelonAd.Acid#OnTriggerExit2D","MelonAd.Acid#Update","MelonAd.Acid#ResetState","MelonAd.AudioManager#init","MelonAd.AudioManager#Awake","MelonAd.AudioManager#Play","MelonAd.AudioManager#PlayOverlap","MelonAd.AudioManager#PlayIfIdle","MelonAd.AudioManager#IsPlaying","MelonAd.AudioManager#Stop","MelonAd.Bullet#init","MelonAd.Bullet#Launch","MelonAd.Bullet#Update","MelonAd.Bullet#OnCollisionEnter2D","MelonAd.CharacterSelector#Current#get","MelonAd.CharacterSelector#Apply","MelonAd.CtaOverlay#Awake","MelonAd.CtaOverlay#Show","MelonAd.CtaOverlay#Hide","MelonAd.CtaOverlay#OnClick","MelonAd.FlameParticle#init","MelonAd.FlameParticle#Launch","MelonAd.FlameParticle#Update","MelonAd.FlameParticle#Apply","MelonAd.FlameThrower#init","MelonAd.FlameThrower#Start","MelonAd.FlameThrower#Update","MelonAd.FlameThrower#Emit","MelonAd.FlameThrower#ResetState","MelonAd.FxManager#SetAlpha","MelonAd.FxManager#RandOffset","MelonAd.FxManager#init","MelonAd.FxManager#Awake","MelonAd.FxManager#Create","MelonAd.FxManager#Take","MelonAd.FxManager#BurnPuff","MelonAd.FxManager#Debris","MelonAd.FxManager#Blood","MelonAd.FxManager#Bubble","MelonAd.FxManager#ClearAll","MelonAd.FxManager#Update","MelonAd.GameConfig#init","MelonAd.GameConfig#Awake","MelonAd.GameManager#IsDragging#get","MelonAd.GameManager#init","MelonAd.GameManager#Awake","MelonAd.GameManager#Start","MelonAd.GameManager#TutorialOn","MelonAd.GameManager#BeginRound","MelonAd.GameManager#WorldScale","MelonAd.GameManager#Update","MelonAd.GameManager#FixedUpdate","MelonAd.GameManager#ScreenToWorld","MelonAd.GameManager#OnPointerDown","MelonAd.GameManager#StartDrag","MelonAd.GameManager#RemovePin","MelonAd.GameManager#UpdateTutorial","MelonAd.GameManager#SetDragFingerAlpha","MelonAd.GameManager#HideFingers","MelonAd.GameManager#OnManDied","MelonAd.GameManager#ShowFailLater","MelonAd.GameManager#OnFailButton","MelonAd.GameManager#OnExitReached","MelonAd.GameManager#ConfirmWin","MelonAd.GameManager#DoWin","MelonAd.GameManager#ShowWinLater","MelonAd.GameManager#OnTimeUp","MelonAd.GameManager#ZoomToExit","MelonAd.Grabbable#CanGrab","MelonAd.LevelRefs#init","MelonAd.LevelRefs#Init","MelonAd.LevelRefs#Capture","MelonAd.LevelRefs#ResetLevel","MelonAd.LevelRefs.TState#init","MelonAd.LunaBridge#GameEnded","MelonAd.LunaBridge#InstallFullGame","MelonAd.LunaBridge#Event","MelonAd.MonsterPit#WaveArms","MelonAd.MonsterPit#Grab","MelonAd.MonsterPit#Hide","MelonAd.MonsterPit#init","MelonAd.MonsterPit#Awake","MelonAd.MonsterPit#Update","MelonAd.MonsterPit#Eat","MelonAd.MonsterPit#Closest","MelonAd.MonsterPit#Mouth","MelonAd.MonsterPit#EatRoutine","MelonAd.MonsterPit#Pull","MelonAd.MonsterPit#ResetState","MelonAd.MonsterPit.Mon#init","MelonAd.Pin#init","MelonAd.Pin#Remove","MelonAd.Pin#Fly","MelonAd.Pin#ResetState","MelonAd.Ragdoll#IsGround","MelonAd.Ragdoll#init","MelonAd.Ragdoll#FixedUpdate","MelonAd.Ragdoll#IsFoot","MelonAd.Ragdoll#OnPartCollisionExit","MelonAd.Ragdoll#Grounded","MelonAd.Ragdoll#InExit","MelonAd.Ragdoll#OnPartTriggerExit","MelonAd.Ragdoll#Update","MelonAd.Ragdoll#OnPartCollision","MelonAd.Ragdoll#Blocked","MelonAd.Ragdoll#OnPartTrigger","MelonAd.Ragdoll#Burn","MelonAd.Ragdoll#Melt","MelonAd.Ragdoll#Eaten","MelonAd.Ragdoll#Shot","MelonAd.Ragdoll#StartHole","MelonAd.Ragdoll#Die","MelonAd.Ragdoll#ResetState","MelonAd.RagdollPart#ShowBurnt","MelonAd.RagdollPart#ShowSkeleton","MelonAd.RagdollPart#OnCollisionEnter2D","MelonAd.RagdollPart#OnCollisionExit2D","MelonAd.RagdollPart#OnTriggerEnter2D","MelonAd.RagdollPart#OnTriggerExit2D","MelonAd.Rifle#init","MelonAd.Rifle#Start","MelonAd.Rifle#OnPinRemoved","MelonAd.Rifle#Update","MelonAd.Rifle#Shoot","MelonAd.Rifle#UpdateFlash","MelonAd.Rifle#Fall","MelonAd.Rifle#ResetState","MelonAd.Spike#Break","MelonAd.Spike#OnCollisionEnter2D","MelonAd.Spike#ResetState","MelonAd.StormFx#init","MelonAd.StormFx#Respawn","MelonAd.StormFx#Scale#get","MelonAd.StormFx#init","MelonAd.StormFx#Awake","MelonAd.StormFx#Start","MelonAd.StormFx#CamRect","MelonAd.StormFx#Begin","MelonAd.StormFx#Stop","MelonAd.StormFx#Update","MelonAd.StormFx#LateFlash","MelonAd.StormFx#InitRain","MelonAd.StormFx#UpdateRain","MelonAd.StormFx#Strike","MelonAd.StormFx#CreateBolt","MelonAd.StormFx#Build","MelonAd.StormFx#SetSegment","MelonAd.StormFx#Place","MelonAd.StormFx#Play","MelonAd.StormFx#Flash","MelonAd.StormFx#FlashRoutine","MelonAd.StormFx#SetFlash","MelonAd.StormFx#CreateSprite","MelonAd.StormFx.Bolt#init","MelonAd.UIController#Wiggle","MelonAd.UIController#IntroActive#get","MelonAd.UIController#init","MelonAd.UIController#Awake","MelonAd.UIController#DismissIntro","MelonAd.UIController#TickIntro","MelonAd.UIController#ApplyIntro","MelonAd.UIController#OnRetryClicked","MelonAd.UIController#OnNextClicked","MelonAd.UIController#ShowHint","MelonAd.UIController#ShowFail","MelonAd.UIController#HideFail","MelonAd.UIController#ShowWin","MelonAd.UIController#HideWin","MelonAd.UIController#Update","MelonAd.UIController#AnimateHead","MelonAd.UIController.Popup#Valid#get","MelonAd.UIController.Popup#init","MelonAd.UIController.Popup#Init","MelonAd.UIController.Popup#Show","MelonAd.UIController.Popup#Hide","MelonAd.UIController.Popup#Tick","MelonAd.UIController.Popup#Apply","MelonAd.UIController.Popup#AnimateButton","MelonAd.WeaponInventoryPLA#SetRect","MelonAd.WeaponInventoryPLA#Place","MelonAd.WeaponInventoryPLA#init","MelonAd.WeaponInventoryPLA#Awake","MelonAd.WeaponInventoryPLA#OnSlot","MelonAd.WeaponInventoryPLA#PlaySfx","MelonAd.WeaponInventoryPLA#Pop","MelonAd.WeaponInventoryPLA#Start","MelonAd.WeaponInventoryPLA#EndTimer","MelonAd.WeaponInventoryPLA#Update","MelonAd.WeaponInventoryPLA#LateUpdate","MelonAd.WeaponInventoryPLA#ApplySafeArea","MelonAd.WeaponInventoryPLA#CreateSafeRoot","MelonAd.WeaponInventoryPLA#ApplyLayout","MelonAd.WeaponInventoryPLA#RefreshGridNow","MelonAd.WeaponInventoryPLA#LayoutGrid","MelonAd.WeaponInventoryPLA#FitBackground","MelonAd.WeaponInventoryPLA#ScrollHint","MelonAd.WeaponInventoryPLA#Anim","MelonAd.WeaponInventoryPLA#SetHandScale","MelonAd.WeaponInventoryPLA#SetContentY","MelonAd.WeaponInventoryPLA#SetHandAlpha","MelonAd.WeaponInventoryPLA#OnStart"]' ) ); }
 /**
- * @version 1.0.9811.16579
+ * @version 1.0.9811.26636
  * @copyright anton
  * @compiler Bridge.NET 17.9.42-luna
  */
@@ -427,76 +427,6 @@ if ( TRACE ) { TRACE( "MelonAd.Bullet#OnCollisionEnter2D", this ); }
         }
     });
     /*MelonAd.Bullet end.*/
-
-    /*MelonAd.CameraFit start.*/
-    /**
-     * Sizes the orthographic camera with the same rule as CanvasScaler "Expand" (reference 1080x1920):
-     the whole reference area is always visible. Result: a Screen Space - Camera canvas keeps a CONSTANT
-     world scale on every device, so the level (physics) under Canvas/World behaves identically everywhere.
-     *
-     * @public
-     * @class MelonAd.CameraFit
-     * @augments UnityEngine.MonoBehaviour
-     */
-    Bridge.define("MelonAd.CameraFit", {
-        inherits: [UnityEngine.MonoBehaviour],
-        fields: {
-            designHeight: 0,
-            referenceResolution: null,
-            cam: null
-        },
-        ctors: {
-            init: function () {
-if ( TRACE ) { TRACE( "MelonAd.CameraFit#init", this ); }
-
-                this.referenceResolution = new UnityEngine.Vector2();
-                this.designHeight = 29.895;
-                this.referenceResolution = new pc.Vec2( 1080.0, 1920.0 );
-            }
-        },
-        methods: {
-            /*MelonAd.CameraFit.OnEnable start.*/
-            OnEnable: function () {
-if ( TRACE ) { TRACE( "MelonAd.CameraFit#OnEnable", this ); }
-
-                this.Apply();
-            },
-            /*MelonAd.CameraFit.OnEnable end.*/
-
-            /*MelonAd.CameraFit.LateUpdate start.*/
-            LateUpdate: function () {
-if ( TRACE ) { TRACE( "MelonAd.CameraFit#LateUpdate", this ); }
-
-                this.Apply();
-            },
-            /*MelonAd.CameraFit.LateUpdate end.*/
-
-            /*MelonAd.CameraFit.Apply start.*/
-            Apply: function () {
-if ( TRACE ) { TRACE( "MelonAd.CameraFit#Apply", this ); }
-
-                if (UnityEngine.Component.op_Equality(this.cam, null)) {
-                    this.cam = this.GetComponent(UnityEngine.Camera);
-                }
-                if (UnityEngine.Component.op_Equality(this.cam, null)) {
-                    return;
-                }
-                var designWidth = this.designHeight * this.referenceResolution.x / this.referenceResolution.y;
-                var size = this.designHeight * 0.5;
-                var byWidth = designWidth * 0.5 / UnityEngine.Mathf.Max(0.01, this.cam.aspect);
-                if (byWidth > size) {
-                    size = byWidth;
-                }
-                if (!UnityEngine.Mathf.Approximately(this.cam.orthographicSize, size)) {
-                    this.cam.orthographicSize = size;
-                }
-            },
-            /*MelonAd.CameraFit.Apply end.*/
-
-
-        }
-    });
-    /*MelonAd.CameraFit end.*/
 
     /*MelonAd.CharacterSelector start.*/
     /**
@@ -4692,76 +4622,956 @@ if ( TRACE ) { TRACE( "MelonAd.UIController.Popup#AnimateButton", this ); }
         }
     });
     /*MelonAd.UIController+Popup end.*/
+    /** @namespace System */
 
-    /*MelonAd.UICover start.*/
     /**
-     * Makes an Image / RawImage cover its parent rect while keeping the picture aspect.
+     * @memberof System
+     * @callback System.Action
+     * @param   {number}    arg
+     * @return  {void}
+     */
+
+
+    /*MelonAd.WeaponInventoryPLA start.*/
+    /**
+     * Weapon inventory playable: scrollable inventory grid (~3/4 of the screen) + "Test Your Weapons!" + green START CTA.
+     Portrait: inventory on top, text + CTA in the bottom quarter.
+     Landscape: inventory on the left 3/4, text + CTA in the right column.
+     Luna Playground: Background texture + BGM clip.
+     Hierarchy is built by Game/Weapon Inventory/Build Scene (WeaponInventoryBuilder).
      *
      * @public
-     * @class MelonAd.UICover
+     * @class MelonAd.WeaponInventoryPLA
      * @augments UnityEngine.MonoBehaviour
      */
-    Bridge.define("MelonAd.UICover", {
+    Bridge.define("MelonAd.WeaponInventoryPLA", {
         inherits: [UnityEngine.MonoBehaviour],
+        statics: {
+            methods: {
+                /*MelonAd.WeaponInventoryPLA.SetRect:static start.*/
+                SetRect: function (r, aMin, aMax, offMin, offMax) {
+if ( TRACE ) { TRACE( "MelonAd.WeaponInventoryPLA#SetRect", this ); }
+
+                    if (UnityEngine.Component.op_Equality(r, null)) {
+                        return;
+                    }
+                    r.anchorMin = aMin.$clone();
+                    r.anchorMax = aMax.$clone();
+                    r.offsetMin = offMin.$clone();
+                    r.offsetMax = offMax.$clone();
+                },
+                /*MelonAd.WeaponInventoryPLA.SetRect:static end.*/
+
+                /*MelonAd.WeaponInventoryPLA.Place:static start.*/
+                Place: function (r, anchor, size) {
+if ( TRACE ) { TRACE( "MelonAd.WeaponInventoryPLA#Place", this ); }
+
+                    if (UnityEngine.Component.op_Equality(r, null)) {
+                        return;
+                    }
+                    r.anchorMin = (r.anchorMax = anchor.$clone(), anchor.$clone());
+                    r.pivot = new pc.Vec2( 0.5, 0.5 );
+                    r.sizeDelta = size.$clone();
+                    r.anchoredPosition = pc.Vec2.ZERO.clone();
+                },
+                /*MelonAd.WeaponInventoryPLA.Place:static end.*/
+
+
+            }
+        },
         fields: {
-            target: null
+            BGTexture: null,
+            BGM: null,
+            EndTime: 0,
+            scaler: null,
+            background: null,
+            inventoryPanel: null,
+            header: null,
+            headerTitle: null,
+            headerCount: null,
+            scroll: null,
+            viewport: null,
+            content: null,
+            slots: null,
+            ctaArea: null,
+            title: null,
+            startButton: null,
+            startLabel: null,
+            bgmSource: null,
+            safeRoot: null,
+            minTopPortrait: 0,
+            minBottomPortrait: 0,
+            minSideLandscape: 0,
+            minBottomLandscape: 0,
+            targetCell: 0,
+            targetCellLandscape: 0,
+            gap: 0,
+            pad: 0,
+            nameHeight: 0,
+            minColumns: 0,
+            maxColumns: 0,
+            hand: null,
+            handImage: null,
+            handSwipeUp: false,
+            hintDelay: 0,
+            idleRepeat: 0,
+            loopPause: 0,
+            hintDistance: 0,
+            sfxSources: null,
+            clickSfx: null,
+            selectSfx: null,
+            bgmVolume: 0,
+            sfxVolume: 0,
+            landscape: false,
+            lastScreen: null,
+            lastViewport: null,
+            lastTouchTime: 0,
+            hintAborted: false,
+            nextSfx: 0,
+            pops: null
+        },
+        ctors: {
+            init: function () {
+if ( TRACE ) { TRACE( "MelonAd.WeaponInventoryPLA#init", this ); }
+
+                this.lastScreen = new UnityEngine.Vector2();
+                this.lastViewport = new UnityEngine.Vector2();
+                this.EndTime = 30.0;
+                this.slots = new (System.Collections.Generic.List$1(UnityEngine.RectTransform)).ctor();
+                this.minTopPortrait = 140.0;
+                this.minBottomPortrait = 30.0;
+                this.minSideLandscape = 90.0;
+                this.minBottomLandscape = 20.0;
+                this.targetCell = 280.0;
+                this.targetCellLandscape = 230.0;
+                this.gap = 22.0;
+                this.pad = 24.0;
+                this.nameHeight = 48.0;
+                this.minColumns = 3;
+                this.maxColumns = 6;
+                this.handSwipeUp = true;
+                this.hintDelay = 1.0;
+                this.idleRepeat = 4.0;
+                this.loopPause = 0.6;
+                this.hintDistance = 320.0;
+                this.sfxSources = new (System.Collections.Generic.List$1(UnityEngine.AudioSource)).ctor();
+                this.bgmVolume = 0.5;
+                this.sfxVolume = 1.0;
+            }
         },
         methods: {
-            /*MelonAd.UICover.Aspect start.*/
-            Aspect: function () {
-if ( TRACE ) { TRACE( "MelonAd.UICover#Aspect", this ); }
+            /*MelonAd.WeaponInventoryPLA.Awake start.*/
+            Awake: function () {
+if ( TRACE ) { TRACE( "MelonAd.WeaponInventoryPLA#Awake", this ); }
 
-                var img = Bridge.as(this.target, UnityEngine.UI.Image);
-                if (UnityEngine.MonoBehaviour.op_Inequality(img, null) && img.sprite != null) {
-                    return img.sprite.rect.width / img.sprite.rect.height;
+                if (UnityEngine.Component.op_Inequality(this.startButton, null)) {
+                    var b = this.startButton.GetComponent(UnityEngine.UI.Button);
+                    if (UnityEngine.MonoBehaviour.op_Inequality(b, null)) {
+                        b.onClick.AddListener(Bridge.fn.cacheBind(this, this.OnStart));
+                    }
                 }
-                var raw = Bridge.as(this.target, UnityEngine.UI.RawImage);
-                if (UnityEngine.MonoBehaviour.op_Inequality(raw, null) && raw.texture != null) {
-                    return raw.texture.width / raw.texture.height;
+                this.pops = System.Array.init(this.slots.Count, null, UnityEngine.Coroutine);
+                for (var i = 0; i < this.slots.Count; i = (i + 1) | 0) {
+                    if (UnityEngine.Component.op_Equality(this.slots.getItem(i), null)) {
+                        continue;
+                    }
+                    var b1 = this.slots.getItem(i).GetComponent(UnityEngine.UI.Button);
+                    var idx = { v : i };
+                    if (UnityEngine.MonoBehaviour.op_Inequality(b1, null)) {
+                        b1.onClick.AddListener((function ($me, idx) {
+                            return Bridge.fn.bind($me, function () {
+                                this.OnSlot(idx.v);
+                            });
+                        })(this, idx));
+                    }
                 }
-                return 0.0;
             },
-            /*MelonAd.UICover.Aspect end.*/
+            /*MelonAd.WeaponInventoryPLA.Awake end.*/
 
-            /*MelonAd.UICover.LateUpdate start.*/
+            /*MelonAd.WeaponInventoryPLA.OnSlot start.*/
+            OnSlot: function (i) {
+if ( TRACE ) { TRACE( "MelonAd.WeaponInventoryPLA#OnSlot", this ); }
+
+                this.PlaySfx(this.selectSfx != null ? this.selectSfx : this.clickSfx, 1.0);
+                this.slots.getItem(i).SetAsLastSibling(); // draw the bouncing slot above its neighbours
+                if (this.pops[i] != null) {
+                    this.StopCoroutine$2(this.pops[i]);
+                }
+                this.pops[i] = this.StartCoroutine$1(this.Pop(this.slots.getItem(i)));
+            },
+            /*MelonAd.WeaponInventoryPLA.OnSlot end.*/
+
+            /*MelonAd.WeaponInventoryPLA.PlaySfx start.*/
+            PlaySfx: function (clip, pitch) {
+if ( TRACE ) { TRACE( "MelonAd.WeaponInventoryPLA#PlaySfx", this ); }
+
+                if (clip == null || this.sfxSources.Count === 0) {
+                    return;
+                }
+                var s = this.sfxSources.getItem(this.nextSfx);
+                this.nextSfx = (((this.nextSfx + 1) | 0)) % this.sfxSources.Count;
+                s.Stop();
+                s.clip = clip;
+                s.pitch = pitch;
+                s.volume = this.sfxVolume;
+                s.Play();
+            },
+            /*MelonAd.WeaponInventoryPLA.PlaySfx end.*/
+
+            /*MelonAd.WeaponInventoryPLA.Pop start.*/
+            /**
+             * Slot bounce: quick grow then elastic settle.
+             *
+             * @instance
+             * @private
+             * @this MelonAd.WeaponInventoryPLA
+             * @memberof MelonAd.WeaponInventoryPLA
+             * @param   {UnityEngine.RectTransform}         r
+             * @return  {System.Collections.IEnumerator}
+             */
+            Pop: function (r) {
+if ( TRACE ) { TRACE( "MelonAd.WeaponInventoryPLA#Pop", this ); }
+
+                var $step = 0,
+                    $jumpFromFinally,
+                    $returnValue,
+                    dur,
+                    t,
+                    k,
+                    s,
+                    $async_e;
+
+                var $enumerator = new Bridge.GeneratorEnumerator(Bridge.fn.bind(this, function () {
+                    try {
+                        for (;;) {
+                            switch ($step) {
+                                case 0: {
+                                    dur = 0.32;
+                                        t = 0.0;
+                                    $step = 1;
+                                    continue;
+                                }
+                                case 1: {
+                                    if ( t < dur ) {
+                                            $step = 2;
+                                            continue;
+                                        } 
+                                        $step = 4;
+                                        continue;
+                                }
+                                case 2: {
+                                    t += UnityEngine.Time.deltaTime;
+                                        k = Math.max(0, Math.min(1, t / dur));
+                                        s = 1.0 + 0.18 * Math.sin(k * UnityEngine.Mathf.PI) * (1.0 - k * 0.5);
+                                        r.localScale = new pc.Vec3( s, s, 1.0 );
+                                        $enumerator.current = null;
+                                        $step = 3;
+                                        return true;
+                                }
+                                case 3: {
+                                    
+                                        $step = 1;
+                                        continue;
+                                }
+                                case 4: {
+                                    r.localScale = new pc.Vec3( 1, 1, 1 );
+
+                                }
+                                default: {
+                                    return false;
+                                }
+                            }
+                        }
+                    } catch($async_e1) {
+                        $async_e = System.Exception.create($async_e1);
+                        throw $async_e;
+                    }
+                }));
+                return $enumerator;
+            },
+            /*MelonAd.WeaponInventoryPLA.Pop end.*/
+
+            /*MelonAd.WeaponInventoryPLA.Start start.*/
+            Start: function () {
+if ( TRACE ) { TRACE( "MelonAd.WeaponInventoryPLA#Start", this ); }
+
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.background, null)) {
+                    if (this.BGTexture != null) {
+                        this.background.texture = this.BGTexture;
+                    }
+                    this.FitBackground();
+                }
+                if (UnityEngine.Component.op_Inequality(this.bgmSource, null)) {
+                    if (this.BGM != null) {
+                        this.bgmSource.clip = this.BGM;
+                    }
+                    this.bgmSource.loop = true;
+                    this.bgmSource.volume = this.bgmVolume;
+                    if (this.bgmSource.clip != null) {
+                        this.bgmSource.Play();
+                    }
+                }
+                this.ApplyLayout(true);
+                this.StartCoroutine$1(this.ScrollHint());
+                if (this.EndTime > 0.0) {
+                    this.StartCoroutine$1(this.EndTimer());
+                }
+            },
+            /*MelonAd.WeaponInventoryPLA.Start end.*/
+
+            /*MelonAd.WeaponInventoryPLA.EndTimer start.*/
+            /**
+             * Silent countdown (no UI): when it runs out the game ends and the store opens.
+             *
+             * @instance
+             * @private
+             * @this MelonAd.WeaponInventoryPLA
+             * @memberof MelonAd.WeaponInventoryPLA
+             * @return  {System.Collections.IEnumerator}
+             */
+            EndTimer: function () {
+if ( TRACE ) { TRACE( "MelonAd.WeaponInventoryPLA#EndTimer", this ); }
+
+                var $step = 0,
+                    $jumpFromFinally,
+                    $returnValue,
+                    $async_e;
+
+                var $enumerator = new Bridge.GeneratorEnumerator(Bridge.fn.bind(this, function () {
+                    try {
+                        for (;;) {
+                            switch ($step) {
+                                case 0: {
+                                    $enumerator.current = new UnityEngine.WaitForSeconds(this.EndTime);
+                                        $step = 1;
+                                        return true;
+                                }
+                                case 1: {
+                                    MelonAd.LunaBridge.GameEnded();
+                                        MelonAd.LunaBridge.InstallFullGame();
+
+                                }
+                                default: {
+                                    return false;
+                                }
+                            }
+                        }
+                    } catch($async_e1) {
+                        $async_e = System.Exception.create($async_e1);
+                        throw $async_e;
+                    }
+                }));
+                return $enumerator;
+            },
+            /*MelonAd.WeaponInventoryPLA.EndTimer end.*/
+
+            /*MelonAd.WeaponInventoryPLA.Update start.*/
+            Update: function () {
+if ( TRACE ) { TRACE( "MelonAd.WeaponInventoryPLA#Update", this ); }
+
+                if (UnityEngine.Input.GetMouseButtonDown(0) || UnityEngine.Input.GetMouseButton(0)) {
+                    // any touch hides the hand at once; it comes back after idleRepeat seconds without touch
+                    this.lastTouchTime = UnityEngine.Time.time;
+                    if (!this.hintAborted) {
+                        this.hintAborted = true;
+                        if (UnityEngine.Component.op_Inequality(this.hand, null)) {
+                            this.hand.gameObject.SetActive(false);
+                        }
+                    }
+                }
+
+                var s = new pc.Vec2( UnityEngine.Screen.width, UnityEngine.Screen.height );
+                if (!pc.Vec2.equals( s, this.lastScreen )) {
+                    this.ApplyLayout(false);
+                }
+
+                if (UnityEngine.Component.op_Inequality(this.startButton, null)) {
+                    var p = 1.0 + 0.06 * Math.sin(UnityEngine.Time.time * 6.0);
+                    this.startButton.localScale = new pc.Vec3( p, p, 1.0 );
+                }
+            },
+            /*MelonAd.WeaponInventoryPLA.Update end.*/
+
+            /*MelonAd.WeaponInventoryPLA.LateUpdate start.*/
             LateUpdate: function () {
-if ( TRACE ) { TRACE( "MelonAd.UICover#LateUpdate", this ); }
+if ( TRACE ) { TRACE( "MelonAd.WeaponInventoryPLA#LateUpdate", this ); }
 
-                if (UnityEngine.MonoBehaviour.op_Equality(this.target, null)) {
-                    return;
-                }
-                var aspect = this.Aspect();
-                if (aspect <= 0.0) {
-                    return;
-                }
-                var rt = Bridge.cast(this.transform, UnityEngine.RectTransform);
-                var parent = Bridge.as(rt.parent, UnityEngine.RectTransform);
-                if (UnityEngine.Component.op_Equality(parent, null)) {
-                    return;
-                }
-                var pr = parent.rect.$clone();
-                var w = pr.width;
-                var h = pr.height;
-                if (w / UnityEngine.Mathf.Max(1.0, h) > aspect) {
-                    h = w / aspect;
-                } else {
-                    w = h * aspect;
-                }
-                var size = new pc.Vec2( w, h );
-                if (!pc.Vec2.equals( rt.sizeDelta, size )) {
-                    rt.sizeDelta = size.$clone();
+                // safety net: the grid follows the viewport size once the canvas settled (CanvasScaler runs in Update)
+                if (UnityEngine.Component.op_Inequality(this.viewport, null) && !pc.Vec2.equals( this.viewport.rect.size, this.lastViewport )) {
+                    this.LayoutGrid();
                 }
             },
-            /*MelonAd.UICover.LateUpdate end.*/
+            /*MelonAd.WeaponInventoryPLA.LateUpdate end.*/
+
+            /*MelonAd.WeaponInventoryPLA.ApplySafeArea start.*/
+            /**
+             * Puts the inventory + CTA inside a safe frame (background stays full screen).
+             Inset per edge = max(device safe area, minimum reserve). The minimum covers notches / home bars that
+             web views and the Luna preview do not report through Screen.safeArea.
+             *
+             * @instance
+             * @private
+             * @this MelonAd.WeaponInventoryPLA
+             * @memberof MelonAd.WeaponInventoryPLA
+             * @return  {void}
+             */
+            ApplySafeArea: function () {
+if ( TRACE ) { TRACE( "MelonAd.WeaponInventoryPLA#ApplySafeArea", this ); }
+
+                if (UnityEngine.Component.op_Equality(this.safeRoot, null)) {
+                    this.CreateSafeRoot();
+                }
+                if (UnityEngine.Component.op_Equality(this.safeRoot, null)) {
+                    return;
+                }
+
+                var canvas = this.safeRoot.GetComponentInParent(UnityEngine.Canvas);
+                var scale = UnityEngine.Component.op_Inequality(canvas, null) && canvas.scaleFactor > 0.0 ? canvas.scaleFactor : 1.0;
+                var sa = UnityEngine.Screen.safeArea.$clone();
+                var left = sa.xMin / scale;
+                var right = (UnityEngine.Screen.width - sa.xMax) / scale;
+                var bottom = sa.yMin / scale;
+                var top = (UnityEngine.Screen.height - sa.yMax) / scale;
+
+                if (this.landscape) {
+                    // the notch can be on either side depending on rotation
+                    left = UnityEngine.Mathf.Max(left, this.minSideLandscape);
+                    right = UnityEngine.Mathf.Max(right, this.minSideLandscape);
+                    bottom = UnityEngine.Mathf.Max(bottom, this.minBottomLandscape);
+                } else {
+                    top = UnityEngine.Mathf.Max(top, this.minTopPortrait);
+                    bottom = UnityEngine.Mathf.Max(bottom, this.minBottomPortrait);
+                }
+
+                this.safeRoot.anchorMin = pc.Vec2.ZERO.clone();
+                this.safeRoot.anchorMax = pc.Vec2.ONE.clone();
+                this.safeRoot.offsetMin = new pc.Vec2( left, bottom );
+                this.safeRoot.offsetMax = new pc.Vec2( -right, -top );
+            },
+            /*MelonAd.WeaponInventoryPLA.ApplySafeArea end.*/
+
+            /*MelonAd.WeaponInventoryPLA.CreateSafeRoot start.*/
+            CreateSafeRoot: function () {
+if ( TRACE ) { TRACE( "MelonAd.WeaponInventoryPLA#CreateSafeRoot", this ); }
+
+                if (UnityEngine.Component.op_Equality(this.inventoryPanel, null) || UnityEngine.Component.op_Equality(this.ctaArea, null)) {
+                    return;
+                }
+                var go = new UnityEngine.GameObject.$ctor3("SafeArea", UnityEngine.RectTransform);
+                go.layer = this.inventoryPanel.gameObject.layer;
+                this.safeRoot = Bridge.cast(go.transform, UnityEngine.RectTransform);
+                this.safeRoot.SetParent(this.inventoryPanel.parent, false);
+                this.safeRoot.SetSiblingIndex(this.inventoryPanel.GetSiblingIndex());
+                this.inventoryPanel.SetParent(this.safeRoot, false);
+                this.ctaArea.SetParent(this.safeRoot, false);
+            },
+            /*MelonAd.WeaponInventoryPLA.CreateSafeRoot end.*/
+
+            /*MelonAd.WeaponInventoryPLA.ApplyLayout start.*/
+            ApplyLayout: function (force) {
+if ( TRACE ) { TRACE( "MelonAd.WeaponInventoryPLA#ApplyLayout", this ); }
+
+                this.lastScreen = new pc.Vec2( UnityEngine.Screen.width, UnityEngine.Screen.height );
+                var land = UnityEngine.Screen.width > UnityEngine.Screen.height;
+                var changed = force || land !== this.landscape;
+                this.landscape = land;
+                if (!changed) {
+                    this.FitBackground();
+                    this.RefreshGridNow();
+                    return;
+                }
+
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.scaler, null)) {
+                    this.scaler.uiScaleMode = UnityEngine.UI.CanvasScaler.ScaleMode.ScaleWithScreenSize;
+                    this.scaler.screenMatchMode = UnityEngine.UI.CanvasScaler.ScreenMatchMode.Expand;
+                    this.scaler.referenceResolution = this.landscape ? new pc.Vec2( 1920.0, 1080.0 ) : new pc.Vec2( 1080.0, 1920.0 );
+                }
+
+                if (this.landscape) {
+                    MelonAd.WeaponInventoryPLA.SetRect(this.inventoryPanel, new pc.Vec2( 0.0, 0.0 ), new pc.Vec2( 0.75, 1.0 ), new pc.Vec2( 36.0, 36.0 ), new pc.Vec2( -12.0, -36.0 ));
+                    MelonAd.WeaponInventoryPLA.SetRect(this.ctaArea, new pc.Vec2( 0.75, 0.0 ), new pc.Vec2( 1.0, 1.0 ), new pc.Vec2( 12.0, 36.0 ), new pc.Vec2( -36.0, -36.0 ));
+
+                    // title + CTA grouped around the vertical center (~55px gap between them)
+                    MelonAd.WeaponInventoryPLA.SetRect(this.title.rectTransform$1, new pc.Vec2( 0.0, 0.5 ), new pc.Vec2( 1.0, 0.7 ), pc.Vec2.ZERO.clone(), pc.Vec2.ZERO.clone());
+                    this.title.text = "Test Your\nWeapons!";
+                    this.title.fontSize = 58;
+                    this.title.alignment = TMPro.TextAlignmentOptions.Center;
+
+                    MelonAd.WeaponInventoryPLA.Place(this.startButton, new pc.Vec2( 0.5, 0.42 ), new pc.Vec2( 360.0, 130.0 ));
+                    this.startLabel.fontSize = 64;
+                } else {
+                    MelonAd.WeaponInventoryPLA.SetRect(this.inventoryPanel, new pc.Vec2( 0.0, 0.25 ), new pc.Vec2( 1.0, 1.0 ), new pc.Vec2( 30.0, 0.0 ), new pc.Vec2( -30.0, -40.0 ));
+                    MelonAd.WeaponInventoryPLA.SetRect(this.ctaArea, new pc.Vec2( 0.0, 0.0 ), new pc.Vec2( 1.0, 0.25 ), new pc.Vec2( 30.0, 30.0 ), new pc.Vec2( -30.0, -20.0 ));
+
+                    MelonAd.WeaponInventoryPLA.SetRect(this.title.rectTransform$1, new pc.Vec2( 0.0, 0.58 ), new pc.Vec2( 1.0, 1.0 ), pc.Vec2.ZERO.clone(), pc.Vec2.ZERO.clone());
+                    this.title.text = "Test Your Weapons!";
+                    this.title.fontSize = 72;
+                    this.title.alignment = TMPro.TextAlignmentOptions.Center;
+
+                    MelonAd.WeaponInventoryPLA.Place(this.startButton, new pc.Vec2( 0.5, 0.3 ), new pc.Vec2( 560.0, 160.0 ));
+                    this.startLabel.fontSize = 80;
+                }
+
+                this.FitBackground();
+                this.RefreshGridNow();
+            },
+            /*MelonAd.WeaponInventoryPLA.ApplyLayout end.*/
+
+            /*MelonAd.WeaponInventoryPLA.RefreshGridNow start.*/
+            /**
+             * Rebuilds the grid in the same frame as a screen resize/rotation (no one-frame overflow):
+             re-enabling the scaler applies the new scale factor immediately (CanvasScaler.OnEnable -&gt; Handle).
+             *
+             * @instance
+             * @private
+             * @this MelonAd.WeaponInventoryPLA
+             * @memberof MelonAd.WeaponInventoryPLA
+             * @return  {void}
+             */
+            RefreshGridNow: function () {
+if ( TRACE ) { TRACE( "MelonAd.WeaponInventoryPLA#RefreshGridNow", this ); }
+
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.scaler, null)) {
+                    this.scaler.enabled = false;
+                    this.scaler.enabled = true;
+                }
+                this.ApplySafeArea();
+                UnityEngine.Canvas.ForceUpdateCanvases();
+                this.lastViewport = pc.Vec2.ZERO.clone();
+                this.LayoutGrid();
+            },
+            /*MelonAd.WeaponInventoryPLA.RefreshGridNow end.*/
+
+            /*MelonAd.WeaponInventoryPLA.LayoutGrid start.*/
+            LayoutGrid: function () {
+if ( TRACE ) { TRACE( "MelonAd.WeaponInventoryPLA#LayoutGrid", this ); }
+
+                var $t;
+                if (UnityEngine.Component.op_Equality(this.viewport, null) || UnityEngine.Component.op_Equality(this.content, null)) {
+                    return;
+                }
+                var vp = this.viewport.rect.size.$clone();
+                if (vp.x <= 1.0 || vp.y <= 1.0) {
+                    return;
+                }
+                this.lastViewport = vp.$clone();
+
+                var usable = vp.x - this.pad * 2.0;
+                var target = this.landscape ? this.targetCellLandscape : this.targetCell;
+                var cols = Math.max(this.minColumns, Math.min(Math.floor((usable + this.gap) / (target + this.gap)), this.maxColumns));
+                var cell = (usable - this.gap * (((cols - 1) | 0))) / cols;
+                var slotH = cell + this.nameHeight;
+                var rows = (Bridge.Int.div((((((this.slots.Count + cols) | 0) - 1) | 0)), cols)) | 0;
+
+                var h = this.pad * 2.0 + rows * slotH + UnityEngine.Mathf.Max(0, ((rows - 1) | 0)) * this.gap;
+                this.content.anchorMin = new pc.Vec2( 0.0, 1.0 );
+                this.content.anchorMax = new pc.Vec2( 1.0, 1.0 );
+                this.content.pivot = new pc.Vec2( 0.5, 1.0 );
+                this.content.sizeDelta = new pc.Vec2( 0.0, h );
+
+                for (var i = 0; i < this.slots.Count; i = (i + 1) | 0) {
+                    var r = this.slots.getItem(i);
+                    if (UnityEngine.Component.op_Equality(r, null)) {
+                        continue;
+                    }
+                    var c = i % cols, row = (Bridge.Int.div(i, cols)) | 0;
+                    r.anchorMin = ($t = new pc.Vec2( 0.0, 1.0 ), r.anchorMax = $t.$clone(), $t);
+                    r.pivot = new pc.Vec2( 0.5, 0.5 ); // centered so the tap bounce scales in place
+                    r.sizeDelta = new pc.Vec2( cell, slotH );
+                    r.anchoredPosition = new pc.Vec2( this.pad + c * (cell + this.gap) + cell * 0.5, -(this.pad + row * (slotH + this.gap) + slotH * 0.5) );
+                }
+            },
+            /*MelonAd.WeaponInventoryPLA.LayoutGrid end.*/
+
+            /*MelonAd.WeaponInventoryPLA.FitBackground start.*/
+            /**
+             * Background covers the whole screen without stretching (aspect "envelope").
+             *
+             * @instance
+             * @private
+             * @this MelonAd.WeaponInventoryPLA
+             * @memberof MelonAd.WeaponInventoryPLA
+             * @return  {void}
+             */
+            FitBackground: function () {
+if ( TRACE ) { TRACE( "MelonAd.WeaponInventoryPLA#FitBackground", this ); }
+
+                if (UnityEngine.MonoBehaviour.op_Equality(this.background, null) || this.background.texture == null) {
+                    return;
+                }
+                var r = this.background.rectTransform;
+                r.anchorMin = pc.Vec2.ZERO.clone();
+                r.anchorMax = pc.Vec2.ONE.clone();
+                r.sizeDelta = pc.Vec2.ZERO.clone();
+                r.anchoredPosition = pc.Vec2.ZERO.clone();
+                var screenAspect = UnityEngine.Screen.width / UnityEngine.Mathf.Max(1, UnityEngine.Screen.height);
+                var texAspect = this.background.texture.width / UnityEngine.Mathf.Max(1, this.background.texture.height);
+                if (screenAspect > texAspect) {
+                    var h = texAspect / screenAspect;
+                    this.background.uvRect = new UnityEngine.Rect.$ctor1(0.0, (1.0 - h) * 0.5, 1.0, h);
+                } else {
+                    var w = screenAspect / texAspect;
+                    this.background.uvRect = new UnityEngine.Rect.$ctor1((1.0 - w) * 0.5, 0.0, w, 1.0);
+                }
+            },
+            /*MelonAd.WeaponInventoryPLA.FitBackground end.*/
+
+            /*MelonAd.WeaponInventoryPLA.ScrollHint start.*/
+            /**
+             * Hand tutorial: the hand presses on the list and swipes, the list follows the finger, then the hand
+             lifts and the list eases back. Runs after hintDelay, stops on touch, comes back after idleRepeat seconds.
+             Swipes up (reveals the items below); at the bottom of the list it swipes down instead.
+             *
+             * @instance
+             * @private
+             * @this MelonAd.WeaponInventoryPLA
+             * @memberof MelonAd.WeaponInventoryPLA
+             * @return  {System.Collections.IEnumerator}
+             */
+            ScrollHint: function () {
+if ( TRACE ) { TRACE( "MelonAd.WeaponInventoryPLA#ScrollHint", this ); }
+
+                var $step = 0,
+                    $jumpFromFinally,
+                    $returnValue,
+                    wait,
+                    maxY,
+                    startY,
+                    dir,
+                    dist,
+                    vh,
+                    travel,
+                    from,
+                    to,
+                    $async_e;
+
+                var $enumerator = new Bridge.GeneratorEnumerator(Bridge.fn.bind(this, function () {
+                    try {
+                        for (;;) {
+                            switch ($step) {
+                                case 0: {
+                                    this.SetHandAlpha(0.0);
+                                        wait = this.hintDelay;
+                                    $step = 1;
+                                    continue;
+                                }
+                                case 1: {
+                                    if ( true ) {
+                                            $step = 2;
+                                            continue;
+                                        } 
+                                        $step = 21;
+                                        continue;
+                                }
+                                case 2: {
+                                    if ( UnityEngine.Time.time - this.lastTouchTime < wait ) {
+                                            $step = 3;
+                                            continue;
+                                        } 
+                                        $step = 5;
+                                        continue;
+                                }
+                                case 3: {
+                                    $enumerator.current = null;
+                                        $step = 4;
+                                        return true;
+                                }
+                                case 4: {
+                                    
+                                        $step = 2;
+                                        continue;
+                                }
+                                case 5: {
+                                    wait = this.idleRepeat;
+
+                                        if (UnityEngine.Component.op_Equality(this.hand, null) || UnityEngine.Component.op_Equality(this.content, null) || UnityEngine.Component.op_Equality(this.viewport, null)) {
+                                            $step = 6;
+                                            continue;
+                                        } 
+                                        $step = 7;
+                                        continue;
+                                }
+                                case 6: {
+                                    return false;
+                                }
+                                case 7: {
+                                    maxY = UnityEngine.Mathf.Max(0.0, this.content.rect.height - this.viewport.rect.height);
+                                        if (maxY < 1.0) {
+                                            this.lastTouchTime = UnityEngine.Time.time;
+                                            $step = 1;
+                                            continue;
+                                        }
+
+                                        startY = { v : Math.max(0.0, Math.min(this.content.anchoredPosition.y, maxY)) };
+                                        // content y grows = list moves up = finger swipes up
+                                        dir = this.handSwipeUp ? 1.0 : -1.0;
+                                        if (startY.v + dir * 10.0 > maxY || startY.v + dir * 10.0 < 0.0) {
+                                            dir = -dir;
+                                        } // no room: swipe the other way
+                                        dist = { v : UnityEngine.Mathf.Min(this.hintDistance, dir > 0.0 ? maxY - startY.v : startY.v) * dir };
+
+                                        vh = this.viewport.rect.height;
+                                        travel = Math.max(0.0, Math.min(Math.abs(dist.v), vh * 0.45)) * (dist.v === 0 ? 1 : Math.sign(dist.v));
+                                        from = { v : new pc.Vec2( this.viewport.rect.width * 0.12, -travel * 0.5 ) };
+                                        to = { v : from.v.$clone().add( new pc.Vec2( 0.0, travel ) ) };
+
+                                        this.hintAborted = false;
+                                        if (UnityEngine.MonoBehaviour.op_Inequality(this.scroll, null)) {
+                                            this.scroll.StopMovement();
+                                        }
+                                        this.hand.gameObject.SetActive(true);
+                                        this.hand.anchoredPosition = from.v.$clone();
+                                        this.hand.localScale = new pc.Vec3( 1, 1, 1 ).clone().scale( 1.1 );
+
+                                        // appear
+                                        $enumerator.current = this.Anim(0.25, Bridge.fn.bind(this, function (k) {
+                                            this.SetHandAlpha(k);
+                                        }));
+                                        $step = 8;
+                                        return true;
+                                }
+                                case 8: {
+                                    // press
+                                        if (!this.hintAborted) {
+                                            $step = 9;
+                                            continue;
+                                        } 
+                                        $step = 11;
+                                        continue;
+                                }
+                                case 9: {
+                                    $enumerator.current = this.Anim(0.15, Bridge.fn.bind(this, function (k) {
+                                            this.SetHandScale(pc.math.lerp(1.1, 0.92, k));
+                                        }));
+                                        $step = 10;
+                                        return true;
+                                }
+                                case 10: {
+                                    $step = 11;
+                                    continue;
+                                }
+                                case 11: {
+                                    // swipe: hand + list move together
+                                        if (!this.hintAborted) {
+                                            $step = 12;
+                                            continue;
+                                        } 
+                                        $step = 14;
+                                        continue;
+                                }
+                                case 12: {
+                                    $enumerator.current = this.Anim(0.7, (function ($me, from, to, startY, dist) {
+                                            return Bridge.fn.bind($me, function (k) {
+                                                var e = pc.math.smoothstep(0.0, 1.0, k);
+                                                this.hand.anchoredPosition = new pc.Vec2().lerp( from.v, to.v, e );
+                                                this.SetContentY(startY.v + dist.v * e);
+                                            });
+                                        })(this, from, to, startY, dist));
+                                        $step = 13;
+                                        return true;
+                                }
+                                case 13: {
+                                    $step = 14;
+                                    continue;
+                                }
+                                case 14: {
+                                    // release + fade out
+                                        if (!this.hintAborted) {
+                                            $step = 15;
+                                            continue;
+                                        } 
+                                        $step = 17;
+                                        continue;
+                                }
+                                case 15: {
+                                    $enumerator.current = this.Anim(0.25, Bridge.fn.bind(this, function (k) {
+                                            this.SetHandScale(pc.math.lerp(0.92, 1.1, k));
+                                            this.SetHandAlpha(1.0 - k);
+                                        }));
+                                        $step = 16;
+                                        return true;
+                                }
+                                case 16: {
+                                    $step = 17;
+                                    continue;
+                                }
+                                case 17: {
+                                    // list eases back to where the player left it
+                                        if (!this.hintAborted) {
+                                            $step = 18;
+                                            continue;
+                                        } 
+                                        $step = 20;
+                                        continue;
+                                }
+                                case 18: {
+                                    $enumerator.current = this.Anim(0.45, (function ($me, startY, dist) {
+                                            return Bridge.fn.bind($me, function (k) {
+                                                this.SetContentY(startY.v + dist.v * (1.0 - pc.math.smoothstep(0.0, 1.0, k)));
+                                            });
+                                        })(this, startY, dist));
+                                        $step = 19;
+                                        return true;
+                                }
+                                case 19: {
+                                    $step = 20;
+                                    continue;
+                                }
+                                case 20: {
+                                    this.SetHandAlpha(0.0);
+                                        this.hand.gameObject.SetActive(false);
+                                        // still idle: short pause, then loop again
+                                        if (!this.hintAborted) {
+                                            this.lastTouchTime = UnityEngine.Time.time - this.idleRepeat + this.loopPause;
+                                        }
+
+                                        $step = 1;
+                                        continue;
+                                }
+                                case 21: {
+
+                                }
+                                default: {
+                                    return false;
+                                }
+                            }
+                        }
+                    } catch($async_e1) {
+                        $async_e = System.Exception.create($async_e1);
+                        throw $async_e;
+                    }
+                }));
+                return $enumerator;
+            },
+            /*MelonAd.WeaponInventoryPLA.ScrollHint end.*/
+
+            /*MelonAd.WeaponInventoryPLA.Anim start.*/
+            /**
+             * Runs step(k) for k 0..1 over dur; stops immediately when the player touches.
+             *
+             * @instance
+             * @private
+             * @this MelonAd.WeaponInventoryPLA
+             * @memberof MelonAd.WeaponInventoryPLA
+             * @param   {number}                            dur     
+             * @param   {System.Action}                     step
+             * @return  {System.Collections.IEnumerator}
+             */
+            Anim: function (dur, step) {
+if ( TRACE ) { TRACE( "MelonAd.WeaponInventoryPLA#Anim", this ); }
+
+                var $step = 0,
+                    $jumpFromFinally,
+                    $returnValue,
+                    t,
+                    $async_e;
+
+                var $enumerator = new Bridge.GeneratorEnumerator(Bridge.fn.bind(this, function () {
+                    try {
+                        for (;;) {
+                            switch ($step) {
+                                case 0: {
+                                    t = 0.0;
+                                    $step = 1;
+                                    continue;
+                                }
+                                case 1: {
+                                    if ( t < dur ) {
+                                            $step = 2;
+                                            continue;
+                                        } 
+                                        $step = 6;
+                                        continue;
+                                }
+                                case 2: {
+                                    if (this.hintAborted) {
+                                            $step = 3;
+                                            continue;
+                                        } 
+                                        $step = 4;
+                                        continue;
+                                }
+                                case 3: {
+                                    return false;
+                                }
+                                case 4: {
+                                    t += UnityEngine.Time.deltaTime;
+                                        step(Math.max(0, Math.min(1, t / dur)));
+                                        $enumerator.current = null;
+                                        $step = 5;
+                                        return true;
+                                }
+                                case 5: {
+                                    
+                                        $step = 1;
+                                        continue;
+                                }
+                                case 6: {
+
+                                }
+                                default: {
+                                    return false;
+                                }
+                            }
+                        }
+                    } catch($async_e1) {
+                        $async_e = System.Exception.create($async_e1);
+                        throw $async_e;
+                    }
+                }));
+                return $enumerator;
+            },
+            /*MelonAd.WeaponInventoryPLA.Anim end.*/
+
+            /*MelonAd.WeaponInventoryPLA.SetHandScale start.*/
+            SetHandScale: function (s) {
+if ( TRACE ) { TRACE( "MelonAd.WeaponInventoryPLA#SetHandScale", this ); }
+
+                this.hand.localScale = new pc.Vec3( s, s, 1.0 );
+            },
+            /*MelonAd.WeaponInventoryPLA.SetHandScale end.*/
+
+            /*MelonAd.WeaponInventoryPLA.SetContentY start.*/
+            SetContentY: function (y) {
+if ( TRACE ) { TRACE( "MelonAd.WeaponInventoryPLA#SetContentY", this ); }
+
+                var p = this.content.anchoredPosition.$clone();
+                p.y = y;
+                this.content.anchoredPosition = p.$clone();
+            },
+            /*MelonAd.WeaponInventoryPLA.SetContentY end.*/
+
+            /*MelonAd.WeaponInventoryPLA.SetHandAlpha start.*/
+            SetHandAlpha: function (a) {
+if ( TRACE ) { TRACE( "MelonAd.WeaponInventoryPLA#SetHandAlpha", this ); }
+
+                if (UnityEngine.MonoBehaviour.op_Equality(this.handImage, null)) {
+                    return;
+                }
+                var c = this.handImage.color.$clone();
+                c.a = a;
+                this.handImage.color = c.$clone();
+            },
+            /*MelonAd.WeaponInventoryPLA.SetHandAlpha end.*/
+
+            /*MelonAd.WeaponInventoryPLA.OnStart start.*/
+            OnStart: function () {
+if ( TRACE ) { TRACE( "MelonAd.WeaponInventoryPLA#OnStart", this ); }
+
+                this.PlaySfx(this.clickSfx, 1.0);
+                MelonAd.LunaBridge.GameEnded();
+                MelonAd.LunaBridge.InstallFullGame();
+            },
+            /*MelonAd.WeaponInventoryPLA.OnStart end.*/
 
 
         }
     });
-    /*MelonAd.UICover end.*/
+    /*MelonAd.WeaponInventoryPLA end.*/
 
     if ( MODULE_reflection ) {
     var $m = Bridge.setMetadata,
-        $n = ["System","System.Collections","UnityEngine.UI","UnityEngine","System.Collections.Generic","MelonAd"];
+        $n = ["System","System.Collections","UnityEngine.UI","UnityEngine","System.Collections.Generic","MelonAd","TMPro"];
 
     /*LunaController start.*/
     $m("LunaController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"ApplyCharacter","t":8,"sn":"ApplyCharacter","rt":$n[0].Void},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"ClickCTA","t":8,"sn":"ClickCTA","rt":$n[0].Void},{"a":1,"n":"EndGame","t":8,"sn":"EndGame","rt":$n[1].IEnumerator},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"BGImage","t":4,"rt":$n[2].RawImage,"sn":"BGImage"},{"at":[new UnityEngine.LunaPlaygroundAssetAttribute("BG Image", 0, null)],"a":2,"n":"BGTexture","t":4,"rt":$n[3].Texture2D,"sn":"BGTexture"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"CTA","t":4,"rt":$n[4].List$1(UnityEngine.UI.Button),"sn":"CTA"},{"at":[new UnityEngine.HeaderAttribute("Character"),new UnityEngine.LunaPlaygroundFieldAttribute("Character (0-5)", -1, null, false, null),new UnityEngine.RangeAttribute(0.0, 5.0)],"a":2,"n":"Character","t":4,"rt":$n[0].Int32,"sn":"Character","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Time Play", -1, null, false, null)],"a":2,"n":"TimePlay","t":4,"rt":$n[0].Single,"sn":"TimePlay","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Limit Time Play?", -1, null, false, null)],"a":2,"n":"UseTime","t":4,"rt":$n[0].Boolean,"sn":"UseTime","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"characterSelector","t":4,"rt":$n[5].CharacterSelector,"sn":"characterSelector"}]}; }, $n);
@@ -4778,10 +5588,6 @@ if ( TRACE ) { TRACE( "MelonAd.UICover#LateUpdate", this ); }
     /*MelonAd.AudioManager start.*/
     $m("MelonAd.AudioManager", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":2,"n":"IsPlaying","t":8,"pi":[{"n":"s","pt":$n[5].Sfx,"ps":0}],"sn":"IsPlaying","rt":$n[0].Boolean,"p":[$n[5].Sfx],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"Play","t":8,"pi":[{"n":"s","pt":$n[5].Sfx,"ps":0}],"sn":"Play","rt":$n[0].Void,"p":[$n[5].Sfx]},{"a":2,"n":"PlayIfIdle","t":8,"pi":[{"n":"s","pt":$n[5].Sfx,"ps":0}],"sn":"PlayIfIdle","rt":$n[0].Void,"p":[$n[5].Sfx]},{"a":2,"n":"PlayOverlap","t":8,"pi":[{"n":"s","pt":$n[5].Sfx,"ps":0}],"sn":"PlayOverlap","rt":$n[0].Void,"p":[$n[5].Sfx]},{"a":2,"n":"Stop","t":8,"pi":[{"n":"s","pt":$n[5].Sfx,"ps":0}],"sn":"Stop","rt":$n[0].Void,"p":[$n[5].Sfx]},{"a":2,"n":"I","is":true,"t":4,"rt":$n[5].AudioManager,"sn":"I"},{"at":[new UnityEngine.HeaderAttribute("Result")],"a":2,"n":"complete","t":4,"rt":$n[3].AudioClip,"sn":"complete"},{"a":2,"n":"doc","t":4,"rt":$n[3].AudioClip,"sn":"doc"},{"a":2,"n":"door","t":4,"rt":$n[3].AudioClip,"sn":"door"},{"a":2,"n":"fail","t":4,"rt":$n[3].AudioClip,"sn":"fail"},{"a":2,"n":"fire","t":4,"rt":$n[3].AudioClip,"sn":"fire"},{"a":2,"n":"flame","t":4,"rt":$n[3].AudioClip,"sn":"flame"},{"a":2,"n":"hurt","t":4,"rt":$n[3].AudioClip,"sn":"hurt"},{"a":2,"n":"jar","t":4,"rt":$n[3].AudioClip,"sn":"jar"},{"a":2,"n":"kis","t":4,"rt":$n[3].AudioClip,"sn":"kis"},{"a":2,"n":"music","t":4,"rt":$n[3].AudioClip,"sn":"music"},{"a":2,"n":"ohog","t":4,"rt":$n[3].AudioClip,"sn":"ohog"},{"a":2,"n":"rain","t":4,"rt":$n[3].AudioClip,"sn":"rain"},{"at":[new UnityEngine.RangeAttribute(0.0, 1.0)],"a":2,"n":"rainVolume","t":4,"rt":$n[0].Single,"sn":"rainVolume","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"sources","t":4,"rt":System.Array.type(UnityEngine.AudioSource),"sn":"sources"},{"at":[new UnityEngine.HeaderAttribute("Storm")],"a":2,"n":"thunder","t":4,"rt":$n[3].AudioClip,"sn":"thunder"}]}; }, $n);
     /*MelonAd.AudioManager end.*/
-
-    /*MelonAd.CameraFit start.*/
-    $m("MelonAd.CameraFit", function () { return {"att":1048577,"a":2,"at":[new UnityEngine.RequireComponent.ctor(UnityEngine.Camera)],"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"Apply","t":8,"sn":"Apply","rt":$n[0].Void},{"a":1,"n":"LateUpdate","t":8,"sn":"LateUpdate","rt":$n[0].Void},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[0].Void},{"a":1,"n":"cam","t":4,"rt":$n[3].Camera,"sn":"cam"},{"at":[new UnityEngine.TooltipAttribute("World units shown for the reference height (1920px).")],"a":2,"n":"designHeight","t":4,"rt":$n[0].Single,"sn":"designHeight","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"referenceResolution","t":4,"rt":$n[3].Vector2,"sn":"referenceResolution"}]}; }, $n);
-    /*MelonAd.CameraFit end.*/
 
     /*MelonAd.GameConfig start.*/
     $m("MelonAd.GameConfig", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":2,"n":"I","is":true,"t":4,"rt":$n[5].GameConfig,"sn":"I"},{"a":2,"n":"androidLink","t":4,"rt":$n[0].String,"sn":"androidLink"},{"a":2,"n":"failPopupDelay","t":4,"rt":$n[0].Single,"sn":"failPopupDelay","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"flameRate","t":4,"rt":$n[0].Single,"sn":"flameRate","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"iosLink","t":4,"rt":$n[0].String,"sn":"iosLink"},{"a":2,"n":"pinTapRadius","t":4,"rt":$n[0].Single,"sn":"pinTapRadius","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"retries","t":4,"rt":$n[0].Int32,"sn":"retries","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"rifleBurstAfterPin","t":4,"rt":$n[0].Single,"sn":"rifleBurstAfterPin","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"rifleInterval","t":4,"rt":$n[0].Single,"sn":"rifleInterval","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Show tutorial fingers", 6, "Tutorial", false, null)],"a":2,"n":"showTutorial","t":4,"rt":$n[0].Boolean,"sn":"showTutorial","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}}]}; }, $n);
@@ -4899,8 +5705,8 @@ if ( TRACE ) { TRACE( "MelonAd.UICover#LateUpdate", this ); }
     $m("MelonAd.UIController.Popup", function () { return {"td":$n[5].UIController,"att":1048579,"a":1,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"AnimateButton","t":8,"pi":[{"n":"ui","pt":$n[5].UIController,"ps":0},{"n":"dt","pt":$n[0].Single,"ps":1}],"sn":"AnimateButton","rt":$n[0].Void,"p":[$n[5].UIController,$n[0].Single]},{"a":1,"n":"Apply","t":8,"pi":[{"n":"ui","pt":$n[5].UIController,"ps":0},{"n":"k0","pt":$n[0].Single,"ps":1}],"sn":"Apply","rt":$n[0].Void,"p":[$n[5].UIController,$n[0].Single]},{"a":2,"n":"Hide","t":8,"sn":"Hide","rt":$n[0].Void},{"a":2,"n":"Init","t":8,"sn":"Init","rt":$n[0].Void},{"a":2,"n":"Show","t":8,"pi":[{"n":"ui","pt":$n[5].UIController,"ps":0}],"sn":"Show","rt":$n[0].Void,"p":[$n[5].UIController]},{"a":2,"n":"Tick","t":8,"pi":[{"n":"ui","pt":$n[5].UIController,"ps":0},{"n":"dt","pt":$n[0].Single,"ps":1}],"sn":"Tick","rt":$n[0].Void,"p":[$n[5].UIController,$n[0].Single]},{"a":2,"n":"Valid","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_Valid","t":8,"rt":$n[0].Boolean,"fg":"Valid","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"Valid"},{"a":1,"n":"btnPhase","t":4,"rt":$n[0].Int32,"sn":"btnPhase","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"btnT","t":4,"rt":$n[0].Single,"sn":"btnT","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"button","t":4,"rt":$n[3].RectTransform,"sn":"button"},{"a":1,"n":"buttonRot0","t":4,"rt":$n[3].Quaternion,"sn":"buttonRot0"},{"a":1,"n":"buttonScale0","t":4,"rt":$n[3].Vector3,"sn":"buttonScale0"},{"a":2,"n":"finger","t":4,"rt":$n[3].RectTransform,"sn":"finger"},{"a":1,"n":"fingerScale0","t":4,"rt":$n[3].Vector3,"sn":"fingerScale0"},{"a":2,"n":"group","t":4,"rt":$n[3].CanvasGroup,"sn":"group"},{"a":2,"n":"panel","t":4,"rt":$n[3].RectTransform,"sn":"panel"},{"a":1,"n":"panelPos0","t":4,"rt":$n[3].Vector2,"sn":"panelPos0"},{"a":2,"n":"root","t":4,"rt":$n[3].GameObject,"sn":"root"},{"a":2,"n":"t","t":4,"rt":$n[0].Single,"sn":"t","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}}]}; }, $n);
     /*MelonAd.UIController+Popup end.*/
 
-    /*MelonAd.UICover start.*/
-    $m("MelonAd.UICover", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Aspect","t":8,"sn":"Aspect","rt":$n[0].Single,"box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"LateUpdate","t":8,"sn":"LateUpdate","rt":$n[0].Void},{"a":2,"n":"target","t":4,"rt":$n[2].Graphic,"sn":"target"}]}; }, $n);
-    /*MelonAd.UICover end.*/
+    /*MelonAd.WeaponInventoryPLA start.*/
+    $m("MelonAd.WeaponInventoryPLA", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Anim","t":8,"pi":[{"n":"dur","pt":$n[0].Single,"ps":0},{"n":"step","pt":Function,"ps":1}],"sn":"Anim","rt":$n[1].IEnumerator,"p":[$n[0].Single,Function]},{"a":1,"n":"ApplyLayout","t":8,"pi":[{"n":"force","pt":$n[0].Boolean,"ps":0}],"sn":"ApplyLayout","rt":$n[0].Void,"p":[$n[0].Boolean]},{"a":1,"n":"ApplySafeArea","t":8,"sn":"ApplySafeArea","rt":$n[0].Void},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"CreateSafeRoot","t":8,"sn":"CreateSafeRoot","rt":$n[0].Void},{"a":1,"n":"EndTimer","t":8,"sn":"EndTimer","rt":$n[1].IEnumerator},{"a":1,"n":"FitBackground","t":8,"sn":"FitBackground","rt":$n[0].Void},{"a":1,"n":"LateUpdate","t":8,"sn":"LateUpdate","rt":$n[0].Void},{"a":1,"n":"LayoutGrid","t":8,"sn":"LayoutGrid","rt":$n[0].Void},{"a":1,"n":"OnSlot","t":8,"pi":[{"n":"i","pt":$n[0].Int32,"ps":0}],"sn":"OnSlot","rt":$n[0].Void,"p":[$n[0].Int32]},{"a":1,"n":"OnStart","t":8,"sn":"OnStart","rt":$n[0].Void},{"a":1,"n":"Place","is":true,"t":8,"pi":[{"n":"r","pt":$n[3].RectTransform,"ps":0},{"n":"anchor","pt":$n[3].Vector2,"ps":1},{"n":"size","pt":$n[3].Vector2,"ps":2}],"sn":"Place","rt":$n[0].Void,"p":[$n[3].RectTransform,$n[3].Vector2,$n[3].Vector2]},{"a":2,"n":"PlaySfx","t":8,"pi":[{"n":"clip","pt":$n[3].AudioClip,"ps":0},{"n":"pitch","pt":$n[0].Single,"ps":1}],"sn":"PlaySfx","rt":$n[0].Void,"p":[$n[3].AudioClip,$n[0].Single]},{"a":1,"n":"Pop","t":8,"pi":[{"n":"r","pt":$n[3].RectTransform,"ps":0}],"sn":"Pop","rt":$n[1].IEnumerator,"p":[$n[3].RectTransform]},{"a":1,"n":"RefreshGridNow","t":8,"sn":"RefreshGridNow","rt":$n[0].Void},{"a":1,"n":"ScrollHint","t":8,"sn":"ScrollHint","rt":$n[1].IEnumerator},{"a":1,"n":"SetContentY","t":8,"pi":[{"n":"y","pt":$n[0].Single,"ps":0}],"sn":"SetContentY","rt":$n[0].Void,"p":[$n[0].Single]},{"a":1,"n":"SetHandAlpha","t":8,"pi":[{"n":"a","pt":$n[0].Single,"ps":0}],"sn":"SetHandAlpha","rt":$n[0].Void,"p":[$n[0].Single]},{"a":1,"n":"SetHandScale","t":8,"pi":[{"n":"s","pt":$n[0].Single,"ps":0}],"sn":"SetHandScale","rt":$n[0].Void,"p":[$n[0].Single]},{"a":1,"n":"SetRect","is":true,"t":8,"pi":[{"n":"r","pt":$n[3].RectTransform,"ps":0},{"n":"aMin","pt":$n[3].Vector2,"ps":1},{"n":"aMax","pt":$n[3].Vector2,"ps":2},{"n":"offMin","pt":$n[3].Vector2,"ps":3},{"n":"offMax","pt":$n[3].Vector2,"ps":4}],"sn":"SetRect","rt":$n[0].Void,"p":[$n[3].RectTransform,$n[3].Vector2,$n[3].Vector2,$n[3].Vector2,$n[3].Vector2]},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"at":[new UnityEngine.LunaPlaygroundAssetAttribute("BGM", 1, "Weapon Inventory")],"a":2,"n":"BGM","t":4,"rt":$n[3].AudioClip,"sn":"BGM"},{"at":[new UnityEngine.LunaPlaygroundAssetAttribute("Background", 0, "Weapon Inventory")],"a":2,"n":"BGTexture","t":4,"rt":$n[3].Texture2D,"sn":"BGTexture"},{"at":[new UnityEngine.TooltipAttribute("Seconds from game start until the store opens automatically. 0 = off."),new UnityEngine.LunaPlaygroundFieldAttribute("End Time (s, 0 = off)", 2, "Weapon Inventory", false, null)],"a":2,"n":"EndTime","t":4,"rt":$n[0].Single,"sn":"EndTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"background","t":4,"rt":$n[2].RawImage,"sn":"background"},{"a":2,"n":"bgmSource","t":4,"rt":$n[3].AudioSource,"sn":"bgmSource"},{"at":[new UnityEngine.RangeAttribute(0.0, 1.0)],"a":2,"n":"bgmVolume","t":4,"rt":$n[0].Single,"sn":"bgmVolume","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.TooltipAttribute("START button.")],"a":2,"n":"clickSfx","t":4,"rt":$n[3].AudioClip,"sn":"clickSfx"},{"a":2,"n":"content","t":4,"rt":$n[3].RectTransform,"sn":"content"},{"a":2,"n":"ctaArea","t":4,"rt":$n[3].RectTransform,"sn":"ctaArea"},{"a":2,"n":"gap","t":4,"rt":$n[0].Single,"sn":"gap","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.HeaderAttribute("Hand tutorial (swipe hint)")],"a":2,"n":"hand","t":4,"rt":$n[3].RectTransform,"sn":"hand"},{"a":2,"n":"handImage","t":4,"rt":$n[2].Image,"sn":"handImage"},{"at":[new UnityEngine.TooltipAttribute("true: finger swipes up (list scrolls to the items below). Auto-flips at the end of the list.")],"a":2,"n":"handSwipeUp","t":4,"rt":$n[0].Boolean,"sn":"handSwipeUp","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"header","t":4,"rt":$n[3].RectTransform,"sn":"header"},{"a":2,"n":"headerCount","t":4,"rt":$n[6].TMP_Text,"sn":"headerCount"},{"a":2,"n":"headerTitle","t":4,"rt":$n[6].TMP_Text,"sn":"headerTitle"},{"a":1,"n":"hintAborted","t":4,"rt":$n[0].Boolean,"sn":"hintAborted","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.TooltipAttribute("Seconds before the first hint.")],"a":2,"n":"hintDelay","t":4,"rt":$n[0].Single,"sn":"hintDelay","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"hintDistance","t":4,"rt":$n[0].Single,"sn":"hintDistance","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.TooltipAttribute("Seconds without touch before the hint shows again.")],"a":2,"n":"idleRepeat","t":4,"rt":$n[0].Single,"sn":"idleRepeat","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"inventoryPanel","t":4,"rt":$n[3].RectTransform,"sn":"inventoryPanel"},{"a":1,"n":"landscape","t":4,"rt":$n[0].Boolean,"sn":"landscape","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"lastScreen","t":4,"rt":$n[3].Vector2,"sn":"lastScreen"},{"a":1,"n":"lastTouchTime","t":4,"rt":$n[0].Single,"sn":"lastTouchTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"lastViewport","t":4,"rt":$n[3].Vector2,"sn":"lastViewport"},{"at":[new UnityEngine.TooltipAttribute("Pause between two hint loops while the player stays idle.")],"a":2,"n":"loopPause","t":4,"rt":$n[0].Single,"sn":"loopPause","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"maxColumns","t":4,"rt":$n[0].Int32,"sn":"maxColumns","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"minBottomLandscape","t":4,"rt":$n[0].Single,"sn":"minBottomLandscape","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"minBottomPortrait","t":4,"rt":$n[0].Single,"sn":"minBottomPortrait","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"minColumns","t":4,"rt":$n[0].Int32,"sn":"minColumns","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"minSideLandscape","t":4,"rt":$n[0].Single,"sn":"minSideLandscape","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"minTopPortrait","t":4,"rt":$n[0].Single,"sn":"minTopPortrait","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"nameHeight","t":4,"rt":$n[0].Single,"sn":"nameHeight","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"nextSfx","t":4,"rt":$n[0].Int32,"sn":"nextSfx","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"pad","t":4,"rt":$n[0].Single,"sn":"pad","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"pops","t":4,"rt":System.Array.type(UnityEngine.Coroutine),"sn":"pops"},{"at":[new UnityEngine.HeaderAttribute("Safe area (notch / home bar), canvas units"),new UnityEngine.TooltipAttribute("Parent of InventoryPanel + CtaArea. Created at runtime if empty.")],"a":2,"n":"safeRoot","t":4,"rt":$n[3].RectTransform,"sn":"safeRoot"},{"at":[new UnityEngine.HeaderAttribute("Refs")],"a":2,"n":"scaler","t":4,"rt":$n[2].CanvasScaler,"sn":"scaler"},{"a":2,"n":"scroll","t":4,"rt":$n[2].ScrollRect,"sn":"scroll"},{"at":[new UnityEngine.TooltipAttribute("One select sound shared by every weapon slot.")],"a":2,"n":"selectSfx","t":4,"rt":$n[3].AudioClip,"sn":"selectSfx"},{"at":[new UnityEngine.HeaderAttribute("Sound"),new UnityEngine.TooltipAttribute("Pool of sources so overlapping SFX keep their own pitch.")],"a":2,"n":"sfxSources","t":4,"rt":$n[4].List$1(UnityEngine.AudioSource),"sn":"sfxSources"},{"at":[new UnityEngine.RangeAttribute(0.0, 1.0)],"a":2,"n":"sfxVolume","t":4,"rt":$n[0].Single,"sn":"sfxVolume","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"slots","t":4,"rt":$n[4].List$1(UnityEngine.RectTransform),"sn":"slots"},{"a":2,"n":"startButton","t":4,"rt":$n[3].RectTransform,"sn":"startButton"},{"a":2,"n":"startLabel","t":4,"rt":$n[6].TMP_Text,"sn":"startLabel"},{"at":[new UnityEngine.HeaderAttribute("Grid")],"a":2,"n":"targetCell","t":4,"rt":$n[0].Single,"sn":"targetCell","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.TooltipAttribute("Smaller cells in landscape so 4-5 columns fit (the panel is short there).")],"a":2,"n":"targetCellLandscape","t":4,"rt":$n[0].Single,"sn":"targetCellLandscape","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"title","t":4,"rt":$n[6].TMP_Text,"sn":"title"},{"a":2,"n":"viewport","t":4,"rt":$n[3].RectTransform,"sn":"viewport"}]}; }, $n);
+    /*MelonAd.WeaponInventoryPLA end.*/
 
     }});
