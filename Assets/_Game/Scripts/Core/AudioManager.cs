@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace MelonAd
 {
-    public enum Sfx { Music = 0, Doc = 1, Door = 2, Fire = 3, Flame = 4, Hurt = 5, Jar = 6, Kis = 7, Ohog = 8, Complete = 9, Fail = 10 }
+    public enum Sfx { Music = 0, Doc = 1, Door = 2, Fire = 3, Flame = 4, Hurt = 5, Jar = 6, Kis = 7, Ohog = 8, Complete = 9, Fail = 10, Thunder = 11, Rain = 12 }
 
     /// <summary>One AudioSource per clip, mirrors Howler usage in the original (playing() checks, loops).</summary>
     public class AudioManager : MonoBehaviour
@@ -15,19 +15,25 @@ namespace MelonAd
         public AudioClip complete;
         public AudioClip fail;
 
+        [Header("Storm")]
+        public AudioClip thunder;
+        public AudioClip rain;
+        [Range(0f, 1f)] public float rainVolume = 0.5f;
+
         AudioSource[] sources;
 
         void Awake()
         {
             I = this;
-            AudioClip[] clips = { music, doc, door, fire, flame, hurt, jar, kis, ohog, complete, fail };
+            AudioClip[] clips = { music, doc, door, fire, flame, hurt, jar, kis, ohog, complete, fail, thunder, rain };
             sources = new AudioSource[clips.Length];
             for (int i = 0; i < clips.Length; i++)
             {
                 AudioSource s = gameObject.AddComponent<AudioSource>();
                 s.clip = clips[i];
                 s.playOnAwake = false;
-                s.loop = i == (int)Sfx.Music || i == (int)Sfx.Fire || i == (int)Sfx.Flame;
+                s.loop = i == (int)Sfx.Music || i == (int)Sfx.Fire || i == (int)Sfx.Flame || i == (int)Sfx.Rain;
+                if (i == (int)Sfx.Rain) s.volume = rainVolume;
                 sources[i] = s;
             }
         }
