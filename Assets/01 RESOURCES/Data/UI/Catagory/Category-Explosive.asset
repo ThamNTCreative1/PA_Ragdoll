@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 266ce7c6c0a5bf048bd5488b92659ab9, type: 3}
+  m_Name: Category-Explosive
+  m_EditorClassIdentifier: Game.Data::Game.Data.UICategorySO
+  categoryId: explosive
+  displayName: Explosives
+  icon: {fileID: -4276760799471239746, guid: 60bffd56a40081646bdfdbca6a932bfc, type: 3}
+  sortOrder: 2
+  fullBleedIcons: 0
+  items:
+  - {fileID: 11400000, guid: 58c30d753b1798577a2a04619280477a, type: 2}
+  - {fileID: 11400000, guid: def32d8eb747d7f4cbed2fa266ad79a5, type: 2}
+  - {fileID: 11400000, guid: 3b1536874c2766543bb3504972911342, type: 2}
+  - {fileID: 11400000, guid: ff3f754a975049a790bcccfc891113a8, type: 2}
+  - {fileID: 11400000, guid: a340770d51c9402db4ce9878be56228e, type: 2}
+  - {fileID: 11400000, guid: 93c3fe6153dc456c85788550e6945e97, type: 2}
+  - {fileID: 11400000, guid: c6c822e97f884f828e25de7851d54b5d, type: 2}
+  - {fileID: 11400000, guid: 2d72dac638c149e088945192447c3176, type: 2}

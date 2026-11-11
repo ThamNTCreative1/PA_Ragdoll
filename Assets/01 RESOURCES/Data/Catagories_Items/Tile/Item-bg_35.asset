@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e707b8948a9341cdaea15cb3c3062c10, type: 3}
+  m_Name: Item-BG_35
+  m_EditorClassIdentifier: Game.Data::Game.Data.ItemSO
+  itemId: bg_35
+  displayName: BG_35
+  icon: {fileID: 1386345999, guid: 032a3ca31bc9aa04ba2532d0f9abc8af, type: 3}
+  prefab: {fileID: 500000000000001, guid: e82a8ce0d83d51ccae9a5fb7af31f3b4, type: 3}
+  type: 2
+  creature:
+    type: 0
+    maxHealth: 100
+    infectable: 1
+    infectedForm: {fileID: 0}
+    torso: {fileID: 0}
+    head: {fileID: 0}
+    leftArm: {fileID: 0}
+    rightArm: {fileID: 0}
+    leftLeg: {fileID: 0}
+    rightLeg: {fileID: 0}
+    behaviorKind: 0
+    moveSpeed: 2
+    detectionRadius: 5
+  weapon:
+    pickupRadius: 0.8
+    range: 7
+    fireRate: 1.5
+    damage: 25
+    knockback: 4
+  tile:
+    isBackgroundTile: 1
+    maxHealth: 30
+  explosive:
+    fuseSeconds: 0.6
+    radius: 2.5
+    damage: 40
+    force: 25
+  prop:
+    maxHealth: 20
+    shardCount: 4
+  wearable:
+    wearRadius: 0.6
+    wornOffset: {x: 0, y: 0.3}
+  fragments:
+    enabled: 1
+    launchMode: 1
+    impactSpeed: 3
+    impactFalloff: 1.5
+    impactInfluence: 0.7
+    spinJitter: 0.05
+    speedVariance: 0.2
+    angleVariance: 10
+    gravityScale: 1
+    shardMass: 0.05
+    collide: 1
+    preciseColliders: 0
+    fadeDelay: 0.8
+    fadeDuration: 1.2
+    pieces:
+    - rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0.5
+        height: 0.5
+      shape: []
+      launchAngle: -135
+      launchSpeed: 1.5
+      torque: 0
+      scale: 1
+    - rect:
+        serializedVersion: 2
+        x: 0.5
+        y: 0
+        width: 0.5
+        height: 0.5
+      shape: []
+      launchAngle: -45
+      launchSpeed: 1.5
+      torque: 0
+      scale: 1
+    - rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.5
+        width: 0.5
+        height: 0.5
+      shape: []
+      launchAngle: 135
+      launchSpeed: 1.5
+      torque: 0
+      scale: 1
+    - rect:
+        serializedVersion: 2
+        x: 0.5
+        y: 0.5
+        width: 0.5
+        height: 0.5
+      shape: []
+      launchAngle: 45
+      launchSpeed: 1.5
+      torque: 0
+      scale: 1
+  category: {fileID: 11400000, guid: d47b270da0e1433db691aa27e1aff012, type: 2}

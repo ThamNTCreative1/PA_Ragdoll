@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e707b8948a9341cdaea15cb3c3062c10, type: 3}
+  m_Name: Item-BG_24
+  m_EditorClassIdentifier: Game.Data::Game.Data.ItemSO
+  itemId: bg_24
+  displayName: BG_24
+  icon: {fileID: 112892976, guid: 032a3ca31bc9aa04ba2532d0f9abc8af, type: 3}
+  prefab: {fileID: 500000000000001, guid: e82a8ce0d83d51ccae9a5fb7af31f3b4, type: 3}
+  type: 2
+  creature:
+    type: 0
+    maxHealth: 100
+    infectable: 1
+    infectedForm: {fileID: 0}
+    torso: {fileID: 0}
+    head: {fileID: 0}
+    leftArm: {fileID: 0}
+    rightArm: {fileID: 0}
+    leftLeg: {fileID: 0}
+    rightLeg: {fileID: 0}
+    behaviorKind: 0
+    moveSpeed: 2
+    detectionRadius: 5
+  weapon:
+    pickupRadius: 0.8
+    range: 7
+    fireRate: 1.5
+    damage: 25
+    knockback: 4
+  tile:
+    isBackgroundTile: 1
+    maxHealth: 30
+  explosive:
+    fuseSeconds: 0.6
+    radius: 2.5
+    damage: 40
+    force: 25
+  prop:
+    maxHealth: 20
+    shardCount: 4
+  wearable:
+    wearRadius: 0.6
+    wornOffset: {x: 0, y: 0.3}
+  fragments:
+    enabled: 1
+    launchMode: 1
+    impactSpeed: 3
+    impactFalloff: 1.5
+    impactInfluence: 0.7
+    spinJitter: 0.05
+    speedVariance: 0.2
+    angleVariance: 10
+    gravityScale: 1
+    shardMass: 0.05
+    collide: 1
+    preciseColliders: 0
+    fadeDelay: 0.8
+    fadeDuration: 1.2
+    pieces:
+    - rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0.3831397
+        height: 0.4480336
+      shape: []
+      launchAngle: -138.17783
+      launchSpeed: 1.5
+      torque: 0
+      scale: 1
+    - rect:
+        serializedVersion: 2
+        x: 0.3831397
+        y: 0
+        width: 0.6168603
+        height: 0.56424814
+      shape: []
+      launchAngle: -48.676094
+      launchSpeed: 1.5
+      torque: 0
+      scale: 1
+    - rect:
+        serializedVersion: 2
+        x: 0.40875912
+        y: 0.59367394
+        width: 0.5693431
+        height: 0.35036498
+      shape:
+      - {x: 0.6788321, y: 0.59367394}
+      - {x: 0.69099754, y: 0.7104623}
+      - {x: 0.91727495, y: 0.6226423}
+      - {x: 0.9781022, y: 0.76155716}
+      - {x: 0.91727495, y: 0.9440389}
+      - {x: 0.5231144, y: 0.92214113}
+      - {x: 0.40875912, y: 0.7810219}
+      launchAngle: 55.822445
+      launchSpeed: 1.5
+      torque: 0
+      scale: 1
+    - rect:
+        serializedVersion: 2
+        x: 0.03163017
+        y: 0.5620438
+        width: 0.33576643
+        height: 0.4136253
+      shape:
+      - {x: 0.03163017, y: 0.5620438}
+      - {x: 0.3673966, y: 0.5620438}
+      - {x: 0.34306568, y: 0.79562044}
+      - {x: 0.35036495, y: 0.93430656}
+      - {x: 0.08272506, y: 0.9756691}
+      launchAngle: 144.0086
+      launchSpeed: 1.5
+      torque: 0
+      scale: 1
+  category: {fileID: 11400000, guid: d47b270da0e1433db691aa27e1aff012, type: 2}

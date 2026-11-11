@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - CreatureNormal
+  - CreatureLimb
+  - CreatureZombie
+  - CreatureArm
+  - Debris
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Arm
+    uniqueID: 1679681029
+    locked: 0
+  - name: Leg
+    uniqueID: 94866193
+    locked: 0
+  - name: Torso
+    uniqueID: 2960792801
+    locked: 0
+  - name: Head
+    uniqueID: 581581179
+    locked: 0
+  m_RenderingLayers:
+  - Default

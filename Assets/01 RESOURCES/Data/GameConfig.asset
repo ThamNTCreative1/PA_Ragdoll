@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b94c2dcd4790d64fba1e22ccc73ac52, type: 3}
+  m_Name: GameConfig
+  m_EditorClassIdentifier: Game.Data::Game.Data.GameConfigSO
+  targetFrameRate: 60
+  frameBudget:
+    simMsPerFrame: 8
+    tierScaleLow: 0.5
+    tierScaleMid: 1
+    tierScaleHigh: 1.5
+    categoryCaps:
+    - category: 0
+      capPerFrame: 12
+    - category: 1
+      capPerFrame: 24
+    - category: 2
+      capPerFrame: 16
+    - category: 3
+      capPerFrame: 8
+    - category: 4
+      capPerFrame: 2
+  lowTierMaxMemoryMB: 3072
+  highTierMinMemoryMB: 6144
+  highTierMinCores: 8
+  categories:
+  - {fileID: 11400000, guid: c4e66a3ec0514556a5525ad82929fa07, type: 2}
+  - {fileID: 11400000, guid: 713d8085b57b4d4b8430cff2df2873fb, type: 2}
+  - {fileID: 11400000, guid: e5978944d6664c73b0b68d6081d623a8, type: 2}
+  - {fileID: 11400000, guid: fead86ef1c5f4f7296563d777b95f003, type: 2}
+  - {fileID: 11400000, guid: d47b270da0e1433db691aa27e1aff012, type: 2}
+  - {fileID: 11400000, guid: 44d84de7afe94f9facc7019a2dc66216, type: 2}
+  indestructibleItems:
+  - {fileID: 11400000, guid: a90cbbc099dc470488eaa3d1528ac01e, type: 2}
+  banIcon: {fileID: 21300000, guid: dd9d56d1d9529744280eec187c188829, type: 3}
+  banHoldSeconds: 0.35
+  banFadeSeconds: 0.3
+  backdropTile: {fileID: 11400000, guid: 44a0287a084ae0440a4e026f4fbeb9b6, type: 2}
+  sfx: {fileID: 11400000, guid: 421e66869831ea14a8f8d11e16938ba4, type: 2}
+  spawnEffect: {fileID: 8530629826148982237, guid: 9fba3037aa720d74a9be0edff30c551e, type: 3}
+  bloodEffect: {fileID: 1576218163979382329, guid: 81fed32afb563ef4383cc80f37b65561, type: 3}
+  spriteFlashMaterial: {fileID: 2100000, guid: 7526210abecd4b40a34a849d2bb4ad1e, type: 2}

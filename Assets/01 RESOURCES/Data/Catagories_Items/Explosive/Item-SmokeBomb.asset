@@ -1,0 +1,198 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e707b8948a9341cdaea15cb3c3062c10, type: 3}
+  m_Name: Item-SmokeBomb
+  m_EditorClassIdentifier: Game.Data::Game.Data.ItemSO
+  itemId: explosive-smoke
+  displayName: Smoke Grenade
+  icon: {fileID: 5906641107176983621, guid: 734ead8d5a7374144986316d81af1031, type: 3}
+  iconRotation: 0
+  prefab: {fileID: 600000000000001, guid: 1adc7d64a778ffada17dbee251c0b332, type: 3}
+  type: 3
+  creature:
+    type: 0
+    maxHealth: 100
+    infectable: 1
+    infectedForm: {fileID: 0}
+    curedForm: {fileID: 0}
+    torso: {fileID: 0}
+    head: {fileID: 0}
+    leftArm: {fileID: 0}
+    rightArm: {fileID: 0}
+    leftLeg: {fileID: 0}
+    rightLeg: {fileID: 0}
+    lodSprite: {fileID: 0}
+    bloodColor: {r: 0.55, g: 0.05, b: 0.05, a: 1}
+    behaviorKind: 0
+    moveSpeed: 2
+    detectionRadius: 5
+    hurtClips: []
+    hurtVoiceChance: 0.35
+    deathClip: {fileID: 0}
+    infectedClip: {fileID: 0}
+    idleVoiceClips: []
+    idleVoiceInterval: {x: 6, y: 16}
+  weapon:
+    kind: 0
+    pickupRadius: 0.8
+    range: 7
+    fireRate: 1.5
+    damage: 25
+    knockback: 4
+    recoil: 1.5
+    projectileSpeed: 18
+    muzzleOffset: {x: 0.35, y: 0}
+    fireEffects: []
+    hitEffects: []
+    projectileSprite: {fileID: 0}
+    projectileScale: 1
+    projectileRotation: 0
+    pelletCount: 6
+    spreadDegrees: 22
+    launchedItem: {fileID: 0}
+    launchAngle: 25
+    launchGravity: 1
+    windupAngle: 35
+    followAngle: 55
+    armSpeed: 720
+    impactKick: 0.6
+    grip: 0
+    readyArmAngle: -60
+    useReadyStance: 1
+    supportArmOffset: 16
+    gripPoint: {x: 0, y: 0}
+    gripRotation: -90
+    scale: 1
+    sortingLayer: 
+    sortingOrder: 3
+    attackClips: []
+    attackVolume: 1
+    attackPitch: 1
+    fitFireRate: 1
+    attackPitchJitter: 0.05
+    hitClips: []
+    pickupClips: []
+  tile:
+    isBackgroundTile: 0
+    maxHealth: 30
+    crackRecoverDelay: 2
+    crackRecoverSeconds: 4
+    placeClip: {fileID: 0}
+    breakClip: {fileID: 0}
+  explosive:
+    kind: 2
+    trigger: 0
+    fuseSeconds: 0.6
+    scale: 1.28
+    bodyShape: 1
+    noseAngle: 90
+    radius: 2.5
+    damage: 0
+    force: 0
+    blastArc: 360
+    blastFacing: 90
+    detonateEffect: {fileID: 3906595099177301877, guid: 43cd9ffdb55757d4da5693769f0eb952, type: 3}
+    detonateEffectScale: 0.1
+    screenShakeStrength: 0
+    screenShakeDuration: 0
+    thrust: 14
+    maxSpeed: 12
+    trailEffect: {fileID: 0}
+    trailOffset: 0.3
+    trailScale: 1
+    blinkColor: {r: 1, g: 1, b: 1, a: 1}
+    blinkStartInterval: 0.45
+    blinkEndInterval: 0.06
+    smokeEffect: {fileID: 3906595099177301877, guid: 43cd9ffdb55757d4da5693769f0eb952, type: 3}
+    smokeSeconds: 4.78
+    smokeScale: 12
+    armSeconds: 0.8
+    settleSpeed: 0.15
+    armedSprite: {fileID: 0}
+    triggerOffset: {x: 0, y: 0.12}
+    triggerSize: {x: 0.5, y: 0.1}
+    detonateFrames: []
+    detonateFrameRate: 24
+    armClip: {fileID: 8300000, guid: 30ee7da63d5500e4f92c6015a708cc4e, type: 3}
+    flightClip: {fileID: 0}
+    explodeClips:
+    - {fileID: 8300000, guid: 4bcee911b26ad934b9db14991e638bf4, type: 3}
+    explodeVolume: 1
+  prop:
+    maxHealth: 20
+    shardCount: 4
+    breakOnContact: 0
+    breakableBy: 3
+    breakImpulse: 0
+    burstRadius: 0
+    burstEffects: []
+    burstEffect: {fileID: 0}
+    burstEffectScale: 1
+    lureRadius: 0
+    lureCreatures: 1
+    lureVerb: 0
+    lureOverridesTarget: 0
+    kickRange: 0.7
+    kickForce: 6
+    kickLift: 0.45
+    kickCooldown: 1.2
+    kicksToBreak: 0
+    kickClip: {fileID: 0}
+    eatSeconds: 1.6
+    eatBitesPerSecond: 3
+    eatClip: {fileID: 0}
+    eatEffects: []
+    breakClip: {fileID: 0}
+  wearable:
+    wearRadius: 0.6
+    wornOffset: {x: 0, y: 0.3}
+    wornScale: 1
+    wornRotation: 0
+    poses: []
+  fragments:
+    enabled: 1
+    launchMode: 0
+    impactSpeed: 3
+    impactFalloff: 1.5
+    impactInfluence: 0.7
+    spinJitter: 0.05
+    speedVariance: 0.2
+    angleVariance: 10
+    gravityScale: 1
+    shardMass: 0.05
+    collide: 1
+    preciseColliders: 0
+    fadeDelay: 0.8
+    fadeDuration: 1.2
+    pieces: []
+  category: {fileID: 11400000, guid: e5978944d6664c73b0b68d6081d623a8, type: 2}
+  unlock:
+    mode: 1
+    prerequisite: {fileID: 11400000, guid: a340770d51c9402db4ce9878be56228e, type: 2}
+    requirementText: 
+    task:
+      verb: 1
+      subject:
+        mode: 2
+        itemType: 0
+        category: {fileID: 11400000, guid: d47b270da0e1433db691aa27e1aff012, type: 2}
+        specificItem: {fileID: 0}
+        creatureType: 1
+      target:
+        mode: 0
+        itemType: 0
+        category: {fileID: 0}
+        specificItem: {fileID: 0}
+        creatureType: 1
+      requiredCount: 20
+    adsRequired: 1
+    adPlacement: 

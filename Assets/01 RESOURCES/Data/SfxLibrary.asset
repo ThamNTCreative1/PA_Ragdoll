@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 930dae5e9eb05b94b9264f961b41525f, type: 3}
+  m_Name: SfxLibrary
+  m_EditorClassIdentifier: Game.Data::Game.Data.SfxLibrarySO
+  uiClick: {fileID: 8300000, guid: 44a7042cf94ff0241bd665bf850201ce, type: 3}
+  error: {fileID: 8300000, guid: 251aea37b6ccd8d4bbd205136ef74c54, type: 3}
+  mailArrived: {fileID: 8300000, guid: dee35e908a4d72a4699f845df579fa7e, type: 3}
+  unlockReveal: {fileID: 8300000, guid: 03c77251549b0a24e93e6e50d4da7ccb, type: 3}
+  itemSpawn: {fileID: 8300000, guid: 488ec025662bccf49852e43d2d050c9c, type: 3}
+  itemDelete: {fileID: 8300000, guid: 6773d1edea89b9e4c8d08914cdf37de1, type: 3}
+  itemDrop: {fileID: 8300000, guid: 488ec025662bccf49852e43d2d050c9c, type: 3}
+  tilePlace: {fileID: 8300000, guid: 81514963cc3db0a4088e02af8ece58da, type: 3}
+  tileBreak: {fileID: 8300000, guid: afa3e2214d05cdd49a028a7fbf6fc32c, type: 3}
+  propBreak: {fileID: 8300000, guid: d28049b7ba597e743a9348973b15e83d, type: 3}
+  weaponPickup:
+  - {fileID: 8300000, guid: 6e1082e789f5dd6438225c77046127d9, type: 3}
+  - {fileID: 8300000, guid: 2cfa6f15a6ef4ff458651d8bb6dd0e85, type: 3}
+  wearablePickup:
+  - {fileID: 8300000, guid: fb78c97169145cc479e693c720a9ffe2, type: 3}
+  - {fileID: 8300000, guid: f5c5eb4dff2d21f4292759d058f7d817, type: 3}
+  - {fileID: 8300000, guid: 322aa3d508a3e2a459b2c3b48ca2bb89, type: 3}
+  - {fileID: 8300000, guid: 33157ebcb6ddd214fb1891827c31b313, type: 3}

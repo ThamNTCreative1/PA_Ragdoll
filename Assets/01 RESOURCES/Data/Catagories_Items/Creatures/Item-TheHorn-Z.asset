@@ -1,0 +1,198 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e707b8948a9341cdaea15cb3c3062c10, type: 3}
+  m_Name: Item-TheHorn-Z
+  m_EditorClassIdentifier: Game.Data::Game.Data.ItemSO
+  itemId: creature-thehorn-z
+  displayName: Zombie The Horn
+  icon: {fileID: 7825340635282634844, guid: 0225b2f67f17b8744bf834dbf4c23ae2, type: 3}
+  iconRotation: 0
+  prefab: {fileID: 7264845817317489497, guid: 298a47b66716e7248b4a4b581d605045, type: 3}
+  type: 0
+  creature:
+    type: 1
+    maxHealth: 200
+    infectable: 0
+    infectedForm: {fileID: 0}
+    curedForm: {fileID: 11400000, guid: 2f5dd8d6ee4859b4285b710db1c1d0e1, type: 2}
+    torso: {fileID: -4048478004862324197, guid: 61daba90f2e6b804b8cf20990913aac7, type: 3}
+    head: {fileID: -6743514128163594664, guid: 61daba90f2e6b804b8cf20990913aac7, type: 3}
+    leftArm: {fileID: -1546504917621340966, guid: 61daba90f2e6b804b8cf20990913aac7, type: 3}
+    rightArm: {fileID: 1264422098873771249, guid: 61daba90f2e6b804b8cf20990913aac7, type: 3}
+    leftLeg: {fileID: -6781611450071017947, guid: 61daba90f2e6b804b8cf20990913aac7, type: 3}
+    rightLeg: {fileID: 7311840140478030882, guid: 61daba90f2e6b804b8cf20990913aac7, type: 3}
+    lodSprite: {fileID: 0}
+    bloodColor: {r: 0.01821631, g: 0.21698111, b: 0, a: 1}
+    behaviorKind: 1
+    moveSpeed: 4
+    detectionRadius: 13.5
+    hurtClips:
+    - {fileID: 8300000, guid: 78d57e62978a95a4fba990de1ea04eaf, type: 3}
+    hurtVoiceChance: 0.821
+    deathClip: {fileID: 8300000, guid: ec83181212ca57a4ca2c36a01f74a640, type: 3}
+    infectedClip: {fileID: 8300000, guid: 4e986fafa2ff57440bb8e8fbf67372d3, type: 3}
+    idleVoiceClips: []
+    idleVoiceInterval: {x: 6, y: 16}
+  weapon:
+    kind: 0
+    pickupRadius: 0.8
+    range: 7
+    fireRate: 1.5
+    damage: 25
+    knockback: 4
+    recoil: 1.5
+    projectileSpeed: 18
+    muzzleOffset: {x: 0.35, y: 0}
+    fireEffects: []
+    hitEffects: []
+    projectileSprite: {fileID: 0}
+    projectileScale: 1
+    projectileRotation: 0
+    pelletCount: 6
+    spreadDegrees: 22
+    launchedItem: {fileID: 0}
+    launchAngle: 25
+    launchGravity: 1
+    windupAngle: 35
+    followAngle: 55
+    armSpeed: 720
+    impactKick: 0.6
+    grip: 0
+    readyArmAngle: -60
+    useReadyStance: 1
+    supportArmOffset: 16
+    gripPoint: {x: 0, y: 0}
+    gripRotation: -90
+    scale: 1
+    sortingLayer: 
+    sortingOrder: 3
+    attackClips: []
+    attackVolume: 1
+    attackPitch: 1
+    fitFireRate: 1
+    attackPitchJitter: 0.05
+    hitClips: []
+    pickupClips: []
+  tile:
+    isBackgroundTile: 0
+    maxHealth: 30
+    crackRecoverDelay: 2
+    crackRecoverSeconds: 4
+    placeClip: {fileID: 0}
+    breakClip: {fileID: 0}
+  explosive:
+    kind: 0
+    trigger: 0
+    fuseSeconds: 0.6
+    scale: 1
+    bodyShape: 0
+    noseAngle: 90
+    radius: 2.5
+    damage: 40
+    force: 25
+    blastArc: 360
+    blastFacing: 90
+    detonateEffect: {fileID: 0}
+    detonateEffectScale: 1
+    screenShakeStrength: 0.1
+    screenShakeDuration: 0.3
+    thrust: 14
+    maxSpeed: 12
+    trailEffect: {fileID: 0}
+    trailOffset: 0.3
+    trailScale: 1
+    blinkColor: {r: 1, g: 1, b: 1, a: 1}
+    blinkStartInterval: 0.45
+    blinkEndInterval: 0.06
+    smokeEffect: {fileID: 0}
+    smokeSeconds: 6
+    smokeScale: 1
+    armSeconds: 0.8
+    settleSpeed: 0.15
+    armedSprite: {fileID: 0}
+    triggerOffset: {x: 0, y: 0.12}
+    triggerSize: {x: 0.5, y: 0.1}
+    detonateFrames: []
+    detonateFrameRate: 24
+    armClip: {fileID: 0}
+    flightClip: {fileID: 0}
+    explodeClips: []
+    explodeVolume: 1
+  prop:
+    maxHealth: 20
+    shardCount: 4
+    breakOnContact: 0
+    breakableBy: 3
+    breakImpulse: 0
+    burstRadius: 0
+    burstEffects: []
+    burstEffect: {fileID: 0}
+    burstEffectScale: 1
+    lureRadius: 0
+    lureCreatures: 1
+    lureVerb: 0
+    lureOverridesTarget: 0
+    kickRange: 0.7
+    kickForce: 6
+    kickLift: 0.45
+    kickCooldown: 1.2
+    kicksToBreak: 0
+    kickClip: {fileID: 0}
+    eatSeconds: 1.6
+    eatBitesPerSecond: 3
+    eatClip: {fileID: 0}
+    eatEffects: []
+    breakClip: {fileID: 0}
+  wearable:
+    wearRadius: 0.6
+    wornOffset: {x: 0, y: 0.3}
+    wornScale: 1
+    wornRotation: 0
+    poses: []
+  fragments:
+    enabled: 1
+    launchMode: 1
+    impactSpeed: 3
+    impactFalloff: 1.5
+    impactInfluence: 0.7
+    spinJitter: 0.05
+    speedVariance: 0.2
+    angleVariance: 10
+    gravityScale: 1
+    shardMass: 0.05
+    collide: 1
+    preciseColliders: 0
+    fadeDelay: 0.8
+    fadeDuration: 1.2
+    pieces: []
+  category: {fileID: 11400000, guid: c4e66a3ec0514556a5525ad82929fa07, type: 2}
+  unlock:
+    mode: 1
+    prerequisite: {fileID: 0}
+    requirementText: 
+    task:
+      verb: 0
+      subject:
+        mode: 3
+        itemType: 0
+        category: {fileID: 0}
+        specificItem: {fileID: 11400000, guid: 2f5dd8d6ee4859b4285b710db1c1d0e1, type: 2}
+        creatureType: 1
+      target:
+        mode: 0
+        itemType: 0
+        category: {fileID: 0}
+        specificItem: {fileID: 0}
+        creatureType: 1
+      requiredCount: 10
+    adsRequired: 1
+    adPlacement: 

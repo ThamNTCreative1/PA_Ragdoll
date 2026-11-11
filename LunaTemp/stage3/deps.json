@@ -1,0 +1,271 @@
+{
+  "ignores": [
+    "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs",
+    "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs",
+    "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs",
+    "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs",
+    "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
+    "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs",
+    "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs",
+    "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenProShortcuts.cs"
+  ],
+  "groups": [
+    [
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/AudioController.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/UIButtonBounce.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/ServiceLocator.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/Audio/Sfx.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Creature/CreatureAgent.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Creature/CreatureCollisionRelay.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Creature/CreatureCreator.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Data/ItemSO.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Creature/InfectionRules.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Data/ItemType.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Data/ItemFacing.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/ItemCreator.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/ItemSpawnTool.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Interaction/CameraPanZoom.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Interaction/CameraController.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/PlayableIntro.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/LunaController.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Playable/PlayableBootstrap.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/GameResult.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/WeaponSelectPanel.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/EventBus/IEventBus.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/EventBus/EventBus.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Data/TaskReporter.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/PropEntity.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/PropLureRegistry.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Data/IItemDataReceiver.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/ExplosiveEntity.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/MinePlate.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Data/ItemStats.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Creature/ChaseBehavior.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Creature/CreatureBehaviorFactory.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Creature/ICreatureBehavior.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Creature/StayBehavior.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Creature/CreatureSnapshot.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Creature/CreatureManager.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Creature/TargetGrid.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Creature/WanderBehavior.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Creature/CreatureAiState.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Data/CreatureBehaviorKind.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Data/ItemFilter.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Data/TaskCondition.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Data/ItemUnlock.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Data/RewardPlacements.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/UnlockFlow.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Data/IItemDatabase.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Services/Items/ItemDatabaseService.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Data/UICategorySO.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Data/GameConfigSO.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/BanFeedback.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Data/SfxLibrarySO.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/TileEntity.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/ProjectileEntity.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/WeaponEntity.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Interaction/DragTool.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Data/InteractionConfigSO.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Interaction/PlayInput.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Interaction/LinkTool.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Interaction/ObjectLink.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/EffectSorting.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/EffectPool.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/BloodEffectSpawner.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/CornerMenuPanel.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/SoundToggleModel.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/BloodEffectModel.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/IUIService.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Playable/PlayableUIService.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/UIService.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/UIScreen.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/PlaceholderScreen.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/IAssetService.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/IGameService.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/Pooling/ObjectPoolService.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/Pooling/IObjectPoolService.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/PaletteGrid.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/PaletteItemCard.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/PaletteGridModel.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Data/IUnlockService.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Services/Unlocks/UnlockInbox.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Data/IUnlockInbox.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/MailButton.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/UnlockCollectionScreen.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/UnlockCollectionCard.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Services/Unlocks/UnlockService.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/EventBus/CategorySelectedEvent.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/CategoryTabBar.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/CategoryTabButton.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/CategoryTabSelectionModel.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/ToolStripPanel.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/ToolStripModel.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/SwapAction.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/EventBus/PaletteItemSelectedEvent.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/SpawnRegistry.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/ToolButtonState.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/EventBus/PanelCollapsedEvent.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/EventBus/SwapRequestedEvent.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/EventBus/SpawnFacingChangedEvent.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/EventBus/DeleteModeToggledEvent.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/EventBus/LinkModeToggledEvent.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/EventBus/ResetRequestedEvent.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/EventBus/ItemUnlockRequestedEvent.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/Simulation/SimulationBudgetService.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/Simulation/ISimulationBudget.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/Simulation/SimCategory.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/Simulation/SimBudgetCaps.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Data/FrameBudgetConfig.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/Simulation/DeviceTier.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Services/Audio/AudioService.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/Audio/IAudioService.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/Audio/SfxThrottleModel.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/SafeAreaFitter.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/BannerSpace.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/UnlockToast.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/IAnalyticsService.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/EventBus/SoundToggledEvent.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/EventBus/BloodEffectToggledEvent.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/HitEffectSpawner.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/SpawnEffectSpawner.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/ExplosionEffectSpawner.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/SmokeCloud.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/ExplosiveFlight.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Interaction/PointerProbe.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Data/IItemFacingReceiver.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/WearableEntity.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/EventBus/GameActionEvent.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/ItemUnlockPopup.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Data/CreatureType.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/BannerSuppression.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Data/FragmentProfile.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/FragmentSpawner.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/FragmentManager.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/TunnelGuard.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/TileGrid.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/TileChunkRenderer.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/SpriteUv.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Playable/MapTile.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/IDamageable.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/WorldCollision.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/TileColliderComposite.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/TilePlacePop.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/TileRecoveryDriver.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/FadeOutAndDespawn.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/GrenadePinEjector.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Data/IItemSpawnBehaviour.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/ItemSpawnMotion.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/IAdService.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Playable/PlayableAdService.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/AdOpeningOverlay.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Data/CreatureEffect.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Items/ExplosiveBlink.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/EventBus/CameraShakeEvent.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/SideSliderPanel.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/IdleTimer.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/EventBus/CameraZoomChangedEvent.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/EventBus/SliderValueChangedEvent.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Playable/ItemSpawnPoint.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/EventBus/MapSpawnedEvent.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Interaction/CameraZoomModel.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Interaction/CameraBoundsModel.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/EventBus/UndoRequestedEvent.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Ragdoll/RagdollBrain.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Data/RagdollTuningSO.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/EventBus/CreatureInfectedEvent.cs"
+    ],
+    [
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/EventBus/RewardedAdClosedEvent.cs"
+    ],
+    [
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/GameBootSignal.cs"
+    ],
+    [
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Core/IAdBreakPresenter.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/AdBreakPresenter.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/AdBreakScreen.cs"
+    ],
+    [
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Data/EditorToolMenus.cs"
+    ],
+    [
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Ragdoll/PidController.cs"
+    ],
+    [
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Ragdoll/PlaceholderSprite.cs"
+    ],
+    [
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/ButtonPulse.cs"
+    ],
+    [
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/CardRowFit.cs"
+    ],
+    [
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/FullBleedRect.cs"
+    ],
+    [
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/LoadingScreen.cs"
+    ],
+    [
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/NonDrawingGraphic.cs"
+    ],
+    [
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/TapHintHand.cs"
+    ],
+    [
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/UIIrisMask.cs"
+    ],
+    [
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/UI/WeaponTutorialHand.cs"
+    ],
+    [
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs"
+    ],
+    [
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleEPOOutline.cs"
+    ],
+    [
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs"
+    ],
+    [
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs"
+    ],
+    [
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs"
+    ],
+    [
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs"
+    ],
+    [
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
+    ],
+    [
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs"
+    ],
+    [
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenDeAudio.cs"
+    ],
+    [
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenDeUnityExtended.cs"
+    ],
+    [
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenProShortcuts.cs"
+    ],
+    [
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenTextMeshPro.cs"
+    ],
+    [
+      "F:/UnityProjects/RSNM_V06/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTweenPro/DOTweenTk2d.cs"
+    ],
+    [
+      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
+    ],
+    [
+      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
+    ],
+    [
+      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+    ]
+  ]
+}

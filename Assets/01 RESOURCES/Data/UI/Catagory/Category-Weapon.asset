@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 266ce7c6c0a5bf048bd5488b92659ab9, type: 3}
+  m_Name: Category-Weapon
+  m_EditorClassIdentifier: Game.Data::Game.Data.UICategorySO
+  categoryId: weapon
+  displayName: Weapons
+  icon: {fileID: 1368309134689209550, guid: 60bffd56a40081646bdfdbca6a932bfc, type: 3}
+  sortOrder: 1
+  fullBleedIcons: 0
+  items:
+  - {fileID: 11400000, guid: e636b00c48bbd27b851f01d9de1b307b, type: 2}
+  - {fileID: 11400000, guid: c5971cf8780e7fc4daeeed34ce48ba0e, type: 2}
+  - {fileID: 11400000, guid: 8106e27bef1d9ea4095fce3c1172dc78, type: 2}
+  - {fileID: 11400000, guid: 88bc9d07a8b64b14f92262147b208f7e, type: 2}
+  - {fileID: 11400000, guid: a7aab840e8e9b8948864a44f91aea704, type: 2}
+  - {fileID: 11400000, guid: 1c18d1528f88518408f32b5ada6f1471, type: 2}
+  - {fileID: 11400000, guid: 3ecf7cb61c35df14ab612a0e3c82df5f, type: 2}
+  - {fileID: 11400000, guid: afaa89469886f6e45946a4908e7c178d, type: 2}
+  - {fileID: 11400000, guid: 483c7ed6685119945b77ff9d085db7d0, type: 2}
+  - {fileID: 11400000, guid: c336a2b4c7d221d45b2ea94a4b134e59, type: 2}
+  - {fileID: 11400000, guid: 43ff46ab253f6f84ca51c4a90a7981ba, type: 2}
+  - {fileID: 11400000, guid: d61a1cca1aa646a41bfdfb6ed78bf57f, type: 2}
+  - {fileID: 11400000, guid: 5cf7fd800e0a2a54f92d4ab53068664f, type: 2}
+  - {fileID: 11400000, guid: b9b9b8a726a64b043b3cfe5ebc2e493c, type: 2}
+  - {fileID: 11400000, guid: 84588e1dae98d7a488ab4346e2288d42, type: 2}
+  - {fileID: 11400000, guid: 27fada6d8adeaaa458c83844002b952c, type: 2}
+  - {fileID: 11400000, guid: 07ef299dd91b8dc4b9fe1304b5ddd523, type: 2}
+  - {fileID: 11400000, guid: 15fc702f574f89c4bb1667a377c039ee, type: 2}

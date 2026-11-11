@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4c903ad8ead89c448a841fa244f7570, type: 3}
+  m_Name: RagdollTuning
+  m_EditorClassIdentifier: Game.Data::Game.Data.RagdollTuningSO
+  balanceForce: 11.47
+  walkLean: -2
+  airborneStiffness: 0.045
+  knockdownImpulse: 3.5
+  knockdownRecovery: 0.66
+  impactHurtSpeed: 15
+  impactDamagePerSpeed: 4
+  impactDamageMax: 35
+  impactDamageCarried: 1
+  impactHurtInterval: 0.35
+  knockbackScale: 1
+  knockbackLift: 0.725
+  knockbackMaxLift: 6
+  knockbackRetain: 0.5
+  clawKnockback: 1.66
+  clawInterval: 0.6
+  clawArmThrow: 0.5
+  clawInfection: 0.99
+  infectionDecay: 0.35
+  headSpring: 70
+  headDamp: 7
+  neckStrength: 5.91
+  hipStrength: 60
+  muscleGain: 9
+  muscleMaxSpeed: 320
+  cadence: 2
+  hipSwing: 12
+  hipForwardSign: -1
+  stepLift: 22
+  assistGain: 2.5
+  pushOffset: 0.4
+  stanceFriction: 1
+  swingFriction: 0.02
+  armReachSpread: 8
+  armReachStrength: 8
+  reachSway: 16
+  reachSwaySpeed: 3
+  reachSettle: 1.96
+  armAimCone: 5
+  armCone: 65.2
+  armSwingSpeed: 3.62
+  armIdleTorque: 0.8

@@ -1,0 +1,255 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e707b8948a9341cdaea15cb3c3062c10, type: 3}
+  m_Name: Item-CyborgHelmet
+  m_EditorClassIdentifier: Game.Data::Game.Data.ItemSO
+  itemId: wearable-cyborg-helmet
+  displayName: Cyborg Helmet
+  icon: {fileID: -5144071126407012206, guid: 387d28752b48b534a94a9cfc1e843d9c, type: 3}
+  iconRotation: 0
+  prefab: {fileID: 630000000000001, guid: b33cbc610390120706ad29115a451b1f, type: 3}
+  type: 5
+  creature:
+    type: 0
+    maxHealth: 100
+    infectable: 1
+    infectedForm: {fileID: 0}
+    curedForm: {fileID: 0}
+    torso: {fileID: 0}
+    head: {fileID: 0}
+    leftArm: {fileID: 0}
+    rightArm: {fileID: 0}
+    leftLeg: {fileID: 0}
+    rightLeg: {fileID: 0}
+    lodSprite: {fileID: 0}
+    bloodColor: {r: 0.55, g: 0.05, b: 0.05, a: 1}
+    behaviorKind: 0
+    moveSpeed: 2
+    detectionRadius: 5
+    hurtClips: []
+    hurtVoiceChance: 0.35
+    deathClip: {fileID: 0}
+    infectedClip: {fileID: 0}
+    idleVoiceClips: []
+    idleVoiceInterval: {x: 6, y: 16}
+  weapon:
+    kind: 0
+    pickupRadius: 0.8
+    range: 7
+    fireRate: 1.5
+    damage: 25
+    knockback: 4
+    recoil: 1.5
+    projectileSpeed: 18
+    muzzleOffset: {x: 0.35, y: 0}
+    fireEffects: []
+    hitEffects: []
+    projectileSprite: {fileID: 0}
+    projectileScale: 1
+    projectileRotation: 0
+    pelletCount: 6
+    spreadDegrees: 22
+    launchedItem: {fileID: 0}
+    launchAngle: 25
+    launchGravity: 1
+    windupAngle: 35
+    followAngle: 55
+    armSpeed: 720
+    impactKick: 0.6
+    grip: 0
+    readyArmAngle: -60
+    useReadyStance: 1
+    supportArmOffset: 16
+    gripPoint: {x: 0, y: 0}
+    gripRotation: -90
+    scale: 1
+    sortingLayer: 
+    sortingOrder: 3
+    attackClips: []
+    attackVolume: 1
+    attackPitch: 1
+    fitFireRate: 1
+    attackPitchJitter: 0.05
+    hitClips: []
+    pickupClips: []
+  tile:
+    isBackgroundTile: 0
+    maxHealth: 30
+    crackRecoverDelay: 2
+    crackRecoverSeconds: 4
+    placeClip: {fileID: 0}
+    breakClip: {fileID: 0}
+  explosive:
+    kind: 0
+    trigger: 0
+    fuseSeconds: 0.6
+    scale: 1
+    bodyShape: 0
+    noseAngle: 90
+    radius: 2.5
+    damage: 40
+    force: 25
+    blastArc: 360
+    blastFacing: 90
+    detonateEffect: {fileID: 0}
+    detonateEffectScale: 1
+    screenShakeStrength: 0.1
+    screenShakeDuration: 0.3
+    thrust: 14
+    maxSpeed: 12
+    trailEffect: {fileID: 0}
+    trailOffset: 0.3
+    trailScale: 1
+    blinkColor: {r: 1, g: 1, b: 1, a: 1}
+    blinkStartInterval: 0.45
+    blinkEndInterval: 0.06
+    smokeEffect: {fileID: 0}
+    smokeSeconds: 6
+    smokeScale: 1
+    armSeconds: 0.8
+    settleSpeed: 0.15
+    armedSprite: {fileID: 0}
+    triggerOffset: {x: 0, y: 0.12}
+    triggerSize: {x: 0.5, y: 0.1}
+    detonateFrames: []
+    detonateFrameRate: 24
+    armClip: {fileID: 0}
+    flightClip: {fileID: 0}
+    explodeClips: []
+    explodeVolume: 1
+  prop:
+    maxHealth: 20
+    shardCount: 4
+    breakOnContact: 0
+    breakableBy: 3
+    breakImpulse: 0
+    burstRadius: 0
+    burstEffects: []
+    burstEffect: {fileID: 0}
+    burstEffectScale: 1
+    lureRadius: 0
+    lureCreatures: 1
+    lureVerb: 0
+    lureOverridesTarget: 0
+    kickRange: 0.7
+    kickForce: 6
+    kickLift: 0.45
+    kickCooldown: 1.2
+    kicksToBreak: 0
+    kickClip: {fileID: 0}
+    eatSeconds: 1.6
+    eatBitesPerSecond: 3
+    eatClip: {fileID: 0}
+    eatEffects: []
+    breakClip: {fileID: 0}
+  wearable:
+    wearRadius: 0.6
+    effects:
+      speedMultiplier: 1.5
+      scaleMultiplier: 1
+      extraJumpBlocks: 2
+      immuneToInfection: 1
+      ignoredByZombies: 0
+    wornOffset: {x: 0, y: 0.3}
+    wornScale: 1
+    wornRotation: 0
+    poses:
+    - creature: {fileID: 11400000, guid: 4fbe9065f65a64842a92fff54e6d847b, type: 2}
+      offset: {x: -0.0069001084, y: 0.07574653}
+      scale: 0.7539541
+      rotation: 0
+    - creature: {fileID: 11400000, guid: 882b5be0c96e76b44a226f127a09f260, type: 2}
+      offset: {x: -0.006900108, y: 0.13439737}
+      scale: 0.6752269
+      rotation: 0
+    - creature: {fileID: 11400000, guid: b842641079988fd44862397c8c68355a, type: 2}
+      offset: {x: -0.0017250273, y: 0.07919653}
+      scale: 0.6891303
+      rotation: 0
+    - creature: {fileID: 11400000, guid: 47998cad00edcfa48ba58040ab29ad08, type: 2}
+      offset: {x: 0.000000005122274, y: 0.12404728}
+      scale: 0.6948465
+      rotation: 0
+    - creature: {fileID: 11400000, guid: 6f85b20e6c5e78c478d1c89fc2facaae, type: 2}
+      offset: {x: -0.00517508, y: 0.0464211}
+      scale: 0.7211143
+      rotation: 0
+    - creature: {fileID: 11400000, guid: 2ca88e6fbe4e10247bd3c58029c453c5, type: 2}
+      offset: {x: 0.0034500542, y: 0.060221292}
+      scale: 0.70796055
+      rotation: 0
+    - creature: {fileID: 11400000, guid: 60a2a2db391748c8800d76d5ee1e5b9f, type: 2}
+      offset: {x: -0.0034500542, y: 0.037795987}
+      scale: 0.59378767
+      rotation: 0
+    - creature: {fileID: 11400000, guid: 023ef0f70f7f77b45b66f09fc69cdd8d, type: 2}
+      offset: {x: 0.000000003259629, y: 0.08092153}
+      scale: 0.5990761
+      rotation: 0
+    - creature: {fileID: 11400000, guid: 2f5dd8d6ee4859b4285b710db1c1d0e1, type: 2}
+      offset: {x: -0.0017250269, y: 0.21719867}
+      scale: 0.55807537
+      rotation: 0
+    - creature: {fileID: 11400000, guid: 1db34272ce0987c4f9dc3809ae81ff33, type: 2}
+      offset: {x: -0.0017250269, y: 0.20339845}
+      scale: 0.6058596
+      rotation: 0
+    - creature: {fileID: 11400000, guid: 70b78e6562781c64db3b0508c73bace0, type: 2}
+      offset: {x: -0.010350163, y: 0.079196505}
+      scale: 0.7591152
+      rotation: 0
+    - creature: {fileID: 11400000, guid: 808dfd1be0b62e240a01527830c3828c, type: 2}
+      offset: {x: -0.0034500537, y: 0.13267231}
+      scale: 0.6538174
+      rotation: 0
+    - creature: {fileID: 11400000, guid: 214f72dcf6c1e3d4fa90a4b3c37ef2b1, type: 2}
+      offset: {x: 0.0017250269, y: 0.14992268}
+      scale: 0.5659121
+      rotation: 0
+  fragments:
+    enabled: 1
+    launchMode: 1
+    impactSpeed: 3
+    impactFalloff: 1.5
+    impactInfluence: 0.7
+    spinJitter: 0.05
+    speedVariance: 0.2
+    angleVariance: 10
+    gravityScale: 1
+    shardMass: 0.05
+    collide: 1
+    preciseColliders: 0
+    fadeDelay: 0.8
+    fadeDuration: 1.2
+    pieces: []
+  category: {fileID: 11400000, guid: fead86ef1c5f4f7296563d777b95f003, type: 2}
+  unlock:
+    mode: 1
+    prerequisite: {fileID: 0}
+    requirementText: 
+    task:
+      verb: 2
+      subject:
+        mode: 2
+        itemType: 0
+        category: {fileID: 11400000, guid: 713d8085b57b4d4b8430cff2df2873fb, type: 2}
+        specificItem: {fileID: 0}
+        creatureType: 1
+      target:
+        mode: 1
+        itemType: 0
+        category: {fileID: 0}
+        specificItem: {fileID: 0}
+        creatureType: 1
+      requiredCount: 10
+    adsRequired: 1
+    adPlacement: 

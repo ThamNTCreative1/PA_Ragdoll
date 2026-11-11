@@ -1,0 +1,255 @@
+{
+    "BuildID": "1be697a7-393c-44bb-8765-cd3690dd20b0",
+    "Command": "project:upload",
+    "ProjectID": "01f452236d8ec9944b4213699af7e98e",
+    "ProjectStateHash": "ac5bbcc978fa2a3ec6bbb705411be3187e37f4eca2e6623e00623b5c1f25e110",
+    "StageCompletedAt": 3,
+    "EarliestFatalError": 0,
+    "StartTime": 1794385757401,
+    "EndTime": 1794385802466,
+    "PlaygroundUserID": 42593,
+    "OperatingSystem": "win32",
+    "UnityPackageID": null,
+    "TargetPlatform": "playground",
+    "UnityVersion": "6000.0.78f1",
+    "LunaVersion": "7.2.0",
+    "LogCount": 10,
+    "Logs": [
+        {
+            "LogID": "4ed38213-32ae-4d31-bd14-6d3a3c0c106b",
+            "Order": 6,
+            "Timestamp": 1794385803280,
+            "Stage": 3,
+            "ErrorType": 0,
+            "ErrorCode": "LP3005",
+            "Description": "You are using a Luna reserved keyword: enabled",
+            "Details": [
+                "You are using a reserved keyword: enabled for Luna. Please change the name of the field/class"
+            ],
+            "DescriptionValues": [
+                "enabled"
+            ],
+            "DetailsValues": [
+                "enabled"
+            ],
+            "LogCount": 1,
+            "LinePosition": 243,
+            "FilePath": "F:\\UnityProjects\\RSNM_V06\\Assets\\00 SCRIPTS\\UI\\CornerMenuPanel.cs",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "1eefd525-6b03-4390-8d32-232b4850809e",
+            "Order": 6,
+            "Timestamp": 1794385803281,
+            "Stage": 3,
+            "ErrorType": 0,
+            "ErrorCode": "LP3005",
+            "Description": "You are using a Luna reserved keyword: enabled",
+            "Details": [
+                "You are using a reserved keyword: enabled for Luna. Please change the name of the field/class"
+            ],
+            "DescriptionValues": [
+                "enabled"
+            ],
+            "DetailsValues": [
+                "enabled"
+            ],
+            "LogCount": 1,
+            "LinePosition": 258,
+            "FilePath": "F:\\UnityProjects\\RSNM_V06\\Assets\\00 SCRIPTS\\UI\\CornerMenuPanel.cs",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "c664811b-9c52-459d-aad7-d3c538a100fa",
+            "Order": 6,
+            "Timestamp": 1794385803402,
+            "Stage": 3,
+            "ErrorType": 0,
+            "ErrorCode": "LP3005",
+            "Description": "You are using a Luna reserved keyword: enabled",
+            "Details": [
+                "You are using a reserved keyword: enabled for Luna. Please change the name of the field/class"
+            ],
+            "DescriptionValues": [
+                "enabled"
+            ],
+            "DetailsValues": [
+                "enabled"
+            ],
+            "LogCount": 1,
+            "LinePosition": 165,
+            "FilePath": "F:\\UnityProjects\\RSNM_V06\\Assets\\00 SCRIPTS\\UI\\ToolStripPanel.cs",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "43580519-5692-47c2-83d9-72c658b2702f",
+            "Order": 6,
+            "Timestamp": 1794385803405,
+            "Stage": 3,
+            "ErrorType": 0,
+            "ErrorCode": "LP3005",
+            "Description": "You are using a Luna reserved keyword: enabled",
+            "Details": [
+                "You are using a reserved keyword: enabled for Luna. Please change the name of the field/class"
+            ],
+            "DescriptionValues": [
+                "enabled"
+            ],
+            "DetailsValues": [
+                "enabled"
+            ],
+            "LogCount": 1,
+            "LinePosition": 173,
+            "FilePath": "F:\\UnityProjects\\RSNM_V06\\Assets\\00 SCRIPTS\\UI\\ToolStripPanel.cs",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "3da923a6-3987-4186-ac8a-0e85c611291a",
+            "Order": 6,
+            "Timestamp": 1794385803553,
+            "Stage": 3,
+            "ErrorType": 3,
+            "ErrorCode": "LP3007",
+            "Description": "You are not using any custom events",
+            "Details": [
+                "You are not using any custom events. It is recommended to use custom events to have a better understanding of the playable."
+            ],
+            "DescriptionValues": [
+                ""
+            ],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "7e580246-ff0d-428e-bab2-359ca990fb03",
+            "Order": 0,
+            "Timestamp": 1794385770496,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1014",
+            "Description": "We recommend running Runtime Analysis to find and remove all unused code",
+            "Details": [
+                "Navigate to the Runtime Analysis → Code tab to enable code stripping. Before uploading the playable, please make sure to have played all scenario’s of the playable in a development build to make Runtime Analysis work properly."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "a6ad8fa7-2ad6-4ba7-95a5-6904585d2676",
+            "Order": 1,
+            "Timestamp": 1794385770496,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1016",
+            "Description": "Extensive usage of ParticleSystem Component",
+            "Details": [
+                "There is extensive usage of the ParticleSystem component.\nExcessive usage of any component can be detrimental to performance on lower and in some cases higher end devices, consider reducing the amount the component is used.\nRecommended count: 10, current count 28."
+            ],
+            "DescriptionValues": [
+                "ParticleSystem"
+            ],
+            "DetailsValues": [
+                "ParticleSystem",
+                "10",
+                "28"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "a91155a6-fd50-4029-83bb-87fd9a95d750",
+            "Order": 2,
+            "Timestamp": 1794385770496,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1024",
+            "Description": "Huge RAM usage",
+            "Details": [
+                "Playable have huge RAM usage (306.62 MB). Recommended RAM value is lower than 256.00 MB to support low-end devices"
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [
+                "256.00",
+                "306.62"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "3d202c0b-9dbf-419f-ad98-af320efc1012",
+            "Order": 3,
+            "Timestamp": 1794385770510,
+            "Stage": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP1032",
+            "Description": "Package(s) is not supported in Luna",
+            "Details": [
+                "Currently package(s) com.unity.timeline are not supported in Luna. We recommend you to remove it and workaround it's functionality."
+            ],
+            "DescriptionValues": [
+                "com.unity.timeline (1.8.12)"
+            ],
+            "DetailsValues": [
+                "com.unity.timeline"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "F:/UnityProjects/RSNM_V06/Packages\\manifest.json",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "673468ba-3160-4d9d-a95d-5432635eb519",
+            "Order": 4,
+            "Timestamp": 1794385770511,
+            "Stage": 1,
+            "ErrorType": 3,
+            "ErrorCode": "LP1002",
+            "Description": "Repeat wrap mode used on a texture with non power-of-two dimensions, this might not be rendered correctly.",
+            "Details": [
+                "Repeat wrap mode used on 'thething' texture at 'Assets/01 RESOURCES/Sprites/UI/thething.png' with non power-of-two dimensions, this might not be rendered correctly."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [
+                "thething",
+                "Assets/01 RESOURCES/Sprites/UI/thething.png"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "Assets/01 RESOURCES/Sprites/UI/thething.png",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        }
+    ]
+}
