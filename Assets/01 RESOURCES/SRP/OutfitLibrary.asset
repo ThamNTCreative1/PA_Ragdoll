@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fb95c392628da44abd57d8351ff3ff0, type: 3}
+  m_Name: OutfitLibrary
+  m_EditorClassIdentifier: 
+  Outfits:
+  - Name: Astronaut
+    Hat: {fileID: 5225015045159171327, guid: 5cc7103b0a5c5df4dbb60479b689c6aa, type: 3}
+    HatOffset: {x: 0, y: 0.0815}
+    Chest: {fileID: 3947853857581235070, guid: 5cc7103b0a5c5df4dbb60479b689c6aa, type: 3}
+    Lower: {fileID: 4211177064917375778, guid: 5cc7103b0a5c5df4dbb60479b689c6aa, type: 3}
+  - Name: Gangster
+    Hat: {fileID: 850867840587452524, guid: 5cc7103b0a5c5df4dbb60479b689c6aa, type: 3}
+    HatOffset: {x: 0, y: 0.03}
+    Chest: {fileID: 7664617273825581623, guid: 5cc7103b0a5c5df4dbb60479b689c6aa, type: 3}
+    Lower: {fileID: -6283176784228059654, guid: 5cc7103b0a5c5df4dbb60479b689c6aa, type: 3}
+  - Name: Soldier
+    Hat: {fileID: -7392331663527375585, guid: 5cc7103b0a5c5df4dbb60479b689c6aa, type: 3}
+    HatOffset: {x: 0, y: 0.03}
+    Chest: {fileID: 1324262357599024167, guid: 5cc7103b0a5c5df4dbb60479b689c6aa, type: 3}
+    Lower: {fileID: 6213706988307081883, guid: 5cc7103b0a5c5df4dbb60479b689c6aa, type: 3}
+  - Name: Viking
+    Hat: {fileID: 8326401456437337382, guid: 5cc7103b0a5c5df4dbb60479b689c6aa, type: 3}
+    HatOffset: {x: 0, y: 0.03}
+    Chest: {fileID: -6710247936148940830, guid: 5cc7103b0a5c5df4dbb60479b689c6aa, type: 3}
+    Lower: {fileID: -7313623049673838101, guid: 5cc7103b0a5c5df4dbb60479b689c6aa, type: 3}
