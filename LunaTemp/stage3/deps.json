@@ -1,0 +1,37 @@
+{
+  "ignores": [],
+  "groups": [
+    [
+      "F:/UnityProjects/SSP_V09/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/AcidAudio.cs",
+      "F:/UnityProjects/SSP_V09/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/AcidGame.cs",
+      "F:/UnityProjects/SSP_V09/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/AcidFx.cs",
+      "F:/UnityProjects/SSP_V09/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/AcidMan.cs",
+      "F:/UnityProjects/SSP_V09/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/AcidStick.cs",
+      "F:/UnityProjects/SSP_V09/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/AcidGhost.cs",
+      "F:/UnityProjects/SSP_V09/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/AcidHit.cs",
+      "F:/UnityProjects/SSP_V09/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/AcidIntro.cs",
+      "F:/UnityProjects/SSP_V09/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/AcidTank.cs",
+      "F:/UnityProjects/SSP_V09/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/LunaController.cs",
+      "F:/UnityProjects/SSP_V09/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/AcidCustomBG.cs",
+      "F:/UnityProjects/SSP_V09/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/AcidKillCounter.cs"
+    ],
+    [
+      "F:/UnityProjects/SSP_V09/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/AcidFailPanel.cs"
+    ],
+    [
+      "F:/UnityProjects/SSP_V09/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/AcidWave.cs"
+    ],
+    [
+      "F:/UnityProjects/SSP_V09/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/CameraFit.cs"
+    ],
+    [
+      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
+    ],
+    [
+      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
+    ],
+    [
+      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+    ]
+  ]
+}
