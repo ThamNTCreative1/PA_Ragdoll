@@ -28,48 +28,111 @@ namespace MelonAd.EditorTools
         const int SfxPool = 4;
         const string ScenePath = Root + "Scenes/Main_WeaponInventory.unity";
 
-        // in-game order (VuKhi_TongHop): icon file name, display name
+        // icon file name (Art/Weapons/Icons), display name
         static readonly string[,] Items =
         {
+            // weapon.zip / melee
             { "Kunai", "KUNAI" },
-            { "SungTruongOngNgam", "SNIPER" },
-            { "SungTruongDai", "RIFLE" },
-            { "SungPhongLuu_SMG", "SMG" },
-            { "RiuGo", "WOOD AXE" },
-            { "SungLaser", "LASER GUN" },
-            { "Revolver", "REVOLVER" },
-            { "RiuDen", "BLACK AXE" },
-            { "RiuDo", "RED AXE" },
-            { "Giao", "SPEAR" },
-            { "CanCau", "FISHING ROD" },
-            { "ChuyGai", "MACE" },
-            // from aaa.unitypackage
-            { "Bat", "BAT" },
-            { "Saw", "CHAINSAW" },
-            { "Flamethrower", "FLAMETHROWER" },
-            // from ExportedProject (weapons2-sheet0, ReferenceWeaponRules kinds)
-            { "Crossbow", "CROSSBOW" },
-            { "FlareGun", "FLARE GUN" },
-            { "Minigun", "MINIGUN" },
+            { "Dagger", "DAGGER" },
+            { "Short_Sword", "SHORT SWORD" },
+            { "Sword", "SWORD" },
             { "Katana", "KATANA" },
-            { "Torch", "TORCH" },
-            { "LaserSword", "LASER SWORD" },
+            { "Machete", "MACHETE" },
+            { "Cleaver", "CLEAVER" },
+            { "Sickle", "SICKLE" },
+            { "Rapier", "RAPIER" },
+            { "Hwando", "HWANDO" },
+            { "Frost_Sabre", "FROST SABRE" },
+            { "Blaze_Sword", "BLAZE SWORD" },
+            { "Prism_Saber", "PRISM SABER" },
+            { "Talisman_Sword", "TALISMAN SWORD" },
+            { "Star_war_sword", "STAR SWORD" },
+            { "Nodachi", "NODACHI" },
+            { "Greatsword", "GREATSWORD" },
+            { "Axe", "AXE" },
+            { "Battle_Axe", "BATTLE AXE" },
+            { "Baseball_Bat", "BASEBALL BAT" },
+            { "Nail_Bat", "NAIL BAT" },
+            { "Golf_Club", "GOLF CLUB" },
+            { "Hockey_Stick", "HOCKEY STICK" },
+            { "Tennis_Racket", "TENNIS RACKET" },
+            { "Pan", "PAN" },
+            { "Pipe_Wrench", "PIPE WRENCH" },
+            { "Plunger", "PLUNGER" },
+            { "Broom", "BROOM" },
+            { "Shovel", "SHOVEL" },
             { "Sledgehammer", "SLEDGEHAMMER" },
-            { "PhaoHoa", "FIREWORK" },
-            { "TenLua", "ROCKET" },
-            { "BomHatNhan", "NUKE" },
-            { "LuuDan", "GRENADE" },
-            { "LuuDanKhoi", "SMOKE BOMB" },
-            { "Min", "LANDMINE" },
-            { "TNT", "TNT" },
-            // from ExportedProject (bombs2-sheet0, ReferenceBomb kinds 8-14)
-            { "Molotov", "MOLOTOV" },
-            { "FreezeBomb", "FREEZE BOMB" },
-            { "BlackHole", "BLACK HOLE" },
-            { "TeslaBomb", "TESLA BOMB" },
-            { "ClusterBomb", "CLUSTER BOMB" },
-            { "Decoy", "DECOY" },
-            { "StickyBomb", "STICKY BOMB" },
+            { "Rubber_Hammer", "RUBBER HAMMER" },
+            { "Thunder_Hammer", "THUNDER HAMMER" },
+            { "Spiked_Mace", "SPIKED MACE" },
+            { "Flail", "FLAIL" },
+            { "Kanabo", "KANABO" },
+            { "Dokkaebi_Club", "DOKKAEBI CLUB" },
+            { "Bo_Staff", "BO STAFF" },
+            { "Halberd", "HALBERD" },
+            { "Glaive", "GLAIVE" },
+            { "Trident", "TRIDENT" },
+            { "Demon_Scythe", "DEMON SCYTHE" },
+            { "Chainsaw", "CHAINSAW" },
+            { "Iron_Fan", "IRON FAN" },
+            { "Lightstick", "LIGHTSTICK" },
+            { "Mic_Stand", "MIC STAND" },
+            { "Selfie_Stick", "SELFIE STICK" },
+            { "Rock_Guitar", "ROCK GUITAR" },
+            { "Giant_Lollipop", "GIANT LOLLIPOP" },
+            { "Rubber_Chicken", "RUBBER CHICKEN" },
+            { "Big_Tuna", "BIG TUNA" },
+            // weapon.zip / ranged
+            { "Pistol", "PISTOL" },
+            { "Revolver", "REVOLVER" },
+            { "Flintlock_Pistol", "FLINTLOCK PISTOL" },
+            { "Machine_Pistol", "MACHINE PISTOL" },
+            { "Laser_Pistol", "LASER PISTOL" },
+            { "Flare_Gun", "FLARE GUN" },
+            { "Submachine_Gun", "SUBMACHINE GUN" },
+            { "Drum_SMG", "DRUM SMG" },
+            { "AK", "AK" },
+            { "Burst_Rifle", "BURST RIFLE" },
+            { "Marksman_Rifle", "MARKSMAN RIFLE" },
+            { "Sniper_Rifle", "SNIPER RIFLE" },
+            { "Anti_Tank_Rifle", "ANTI TANK RIFLE" },
+            { "Shotgun", "SHOTGUN" },
+            { "Double_Barrel", "DOUBLE BARREL" },
+            { "Auto_Shotgun", "AUTO SHOTGUN" },
+            { "Blunderbuss", "BLUNDERBUSS" },
+            { "Light_Machine_Gun", "LIGHT MACHINE GUN" },
+            { "Heavy_Machine_Gun", "HEAVY MACHINE GUN" },
+            { "Minigun", "MINIGUN" },
+            { "Golden_Minigun", "GOLDEN MINIGUN" },
+            { "Bow", "BOW" },
+            { "Crossbow", "CROSSBOW" },
+            { "Slingshot", "SLINGSHOT" },
+            { "Harpoon_Gun", "HARPOON GUN" },
+            { "Nail_Gun", "NAIL GUN" },
+            { "Grenade_Launcher", "GRENADE LAUNCHER" },
+            { "Hand_Mortar", "HAND MORTAR" },
+            { "RPG", "RPG" },
+            { "Homing_Launcher", "HOMING LAUNCHER" },
+            { "Rocket_Pod", "ROCKET POD" },
+            { "Airstrike_Beacon", "AIRSTRIKE BEACON" },
+            { "Flamethrower", "FLAMETHROWER" },
+            { "Freeze_Ray", "FREEZE RAY" },
+            { "Fire_Extinguisher", "FIRE EXTINGUISHER" },
+            { "Laser_Rifle", "LASER RIFLE" },
+            { "Lightning_Gun", "LIGHTNING GUN" },
+            { "Railgun", "RAILGUN" },
+            { "Plasma_Gun", "PLASMA GUN" },
+            { "Plasma_Shotgun", "PLASMA SHOTGUN" },
+            { "Black_Hole_Cannon", "BLACK HOLE CANNON" },
+            { "Saw_Launcher", "SAW LAUNCHER" },
+            { "Water_Gun", "WATER GUN" },
+            { "Bubble_Gun", "BUBBLE GUN" },
+            { "Paintball_Gun", "PAINTBALL GUN" },
+            { "Confetti_gun", "CONFETTI GUN" },
+            { "Heart_Blaster", "HEART BLASTER" },
+            { "Lightstick_Blaster", "LIGHTSTICK BLASTER" },
+            { "Boxing_Glove_Gun", "BOXING GLOVE GUN" },
+            { "Boombox_Cannon", "BOOMBOX CANNON" },
         };
 
         static readonly Color TextLight = new Color32(236, 238, 242, 255);
@@ -179,11 +242,16 @@ namespace MelonAd.EditorTools
                 RectTransform slot = NewUI("Slot_" + file, content);
                 slot.sizeDelta = new Vector2(280f, 328f);
 
+                // square tap area (transparent) holding the weapon art tilted diagonally to the upper right
                 var icon = NewUI("Icon", slot).gameObject.AddComponent<Image>();
-                icon.sprite = LoadSprite(IconDir + file + ".png");
+                icon.color = new Color(1f, 1f, 1f, 0f);
                 icon.raycastTarget = true; // tap target (drags still go to the ScrollRect)
+                var art = NewUI("Art", icon.rectTransform).gameObject.AddComponent<Image>();
+                art.sprite = LoadSprite(IconDir + file + ".png");
+                art.raycastTarget = false;
+                LayoutDiagonal(art);
                 var slotBtn = slot.gameObject.AddComponent<Button>();
-                slotBtn.targetGraphic = icon;
+                slotBtn.targetGraphic = art;
                 slotBtn.transition = Selectable.Transition.ColorTint;
                 var sc = slotBtn.colors;
                 sc.highlightedColor = Color.white;
@@ -191,7 +259,7 @@ namespace MelonAd.EditorTools
                 sc.pressedColor = new Color(0.75f, 0.75f, 0.75f, 1f);
                 slotBtn.colors = sc;
                 slotBtn.navigation = new Navigation { mode = Navigation.Mode.None };
-                Stretch(icon.rectTransform, new Vector2(0f, 48f), Vector2.zero);
+                Stretch(icon.rectTransform, new Vector2(18f, 66f), new Vector2(-18f, -18f));
 
                 var frame = NewUI("Frame", slot).gameObject.AddComponent<Image>();
                 frame.sprite = frameSp;
@@ -205,8 +273,11 @@ namespace MelonAd.EditorTools
                 name.rectTransform.anchorMin = Vector2.zero;
                 name.rectTransform.anchorMax = new Vector2(1f, 0f);
                 name.rectTransform.pivot = new Vector2(0.5f, 0f);
-                name.rectTransform.offsetMin = new Vector2(-10f, 0f);
-                name.rectTransform.offsetMax = new Vector2(10f, 46f);
+                name.rectTransform.offsetMin = new Vector2(2f, 0f);
+                name.rectTransform.offsetMax = new Vector2(-2f, 46f);
+                name.enableAutoSizing = true; // long names (e.g. LIGHTSTICK BLASTER) shrink to fit the slot
+                name.fontSizeMin = 14f;
+                name.fontSizeMax = 30f;
                 slots.Add(slot);
             }
 
@@ -341,6 +412,39 @@ namespace MelonAd.EditorTools
             imp.alphaIsTransparency = true;
             imp.spriteBorder = border;
             imp.SaveAndReimport();
+        }
+
+        /// <summary>
+        /// Points elongated art at the upper right: tall art (melee, tip up) turns 45° clockwise, wide art
+        /// (guns, muzzle right) 45° counter-clockwise. Near-square art is already drawn diagonally and stays
+        /// upright. Size is set via anchors (fractions of the square parent) so the rotated bounding box
+        /// fits the parent at any cell size.
+        /// </summary>
+        static void LayoutDiagonal(Image art)
+        {
+            RectTransform r = art.rectTransform;
+            r.anchoredPosition = Vector2.zero;
+            r.sizeDelta = Vector2.zero;
+            if (art.sprite == null) { Stretch(r); return; }
+
+            float w = art.sprite.rect.width, h = art.sprite.rect.height;
+            float aspect = Mathf.Max(w, h) / Mathf.Min(w, h);
+            float fw, fh, angle;
+            if (aspect < 1.2f)
+            {
+                float k = Mathf.Max(w, h);
+                fw = w / k; fh = h / k; angle = 0f;
+            }
+            else
+            {
+                float k = (w + h) / Mathf.Sqrt(2f); // side of the 45° rotated bounding box
+                fw = w / k; fh = h / k;
+                angle = h > w ? -45f : 45f;
+            }
+            r.anchorMin = new Vector2(0.5f - fw * 0.5f, 0.5f - fh * 0.5f);
+            r.anchorMax = new Vector2(0.5f + fw * 0.5f, 0.5f + fh * 0.5f);
+            r.pivot = new Vector2(0.5f, 0.5f);
+            r.localEulerAngles = new Vector3(0f, 0f, angle);
         }
 
         static Sprite LoadSprite(string path)

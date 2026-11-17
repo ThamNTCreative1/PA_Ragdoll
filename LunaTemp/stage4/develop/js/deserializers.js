@@ -1784,7 +1784,7 @@ Deserializers.productName = "SRP_V05";
 
 Deserializers.lunaInitializationTime = "10/12/2026 09:00:17";
 
-Deserializers.lunaDaysRunning = "29.9";
+Deserializers.lunaDaysRunning = "35.8";
 
 Deserializers.lunaVersion = "7.2.0";
 
@@ -1792,7 +1792,7 @@ Deserializers.lunaSHA = "ea08d29afe2968efcb8d91d5624f033c6485cc68";
 
 Deserializers.creativeName = "C1_2611_HuyNQ_PSF_V04_YenTTH";
 
-Deserializers.lunaAppID = "0";
+Deserializers.lunaAppID = "43647";
 
 Deserializers.projectId = "83336d6262c2dbe44ad1c159a3170903";
 
@@ -1814,9 +1814,9 @@ Deserializers.isAntiAliasingEnabled = "False";
 
 Deserializers.isRuntimeAnalysisEnabledForCode = "False";
 
-Deserializers.runtimeAnalysisExcludedClassesCount = "1705";
+Deserializers.runtimeAnalysisExcludedClassesCount = "1686";
 
-Deserializers.runtimeAnalysisExcludedMethodsCount = "3830";
+Deserializers.runtimeAnalysisExcludedMethodsCount = "3768";
 
 Deserializers.runtimeAnalysisExcludedModules = "physics3d, particle-system, reflection, mecanim-wasm";
 
@@ -1838,7 +1838,7 @@ Deserializers.graphicsConstraint = 24;
 
 Deserializers.linearColorSpace = false;
 
-Deserializers.buildID = "6385cad5-e4af-4484-b4b9-861331b310da";
+Deserializers.buildID = "3892928f-28e7-4b53-a964-6f52ae64f002";
 
 Deserializers.runtimeInitializeOnLoadInfos = [[["UnityEngine","U2D","Animation","GpuDeformationSystem","CreateFallbackBuffer"],["UnityEngine","Experimental","Rendering","ScriptableRuntimeReflectionSystemSettings","ScriptingDirtyReflectionSystemInstance"]],[["Unity","VisualScripting","RuntimeVSUsageUtility","RuntimeInitializeOnLoadBeforeSceneLoad"],["UnityEngine","InputSystem","InputSystem","RunInitialUpdate"],["UnityEngine","AI","NavMesh","ClearPreUpdateListeners"]],[["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"]],[],[["UnityEngine","InputSystem","Plugins","InputForUI","InputSystemProvider","Bootstrap"],["UnityEngine","InputSystem","UI","InputSystemUIInputModule","ResetDefaultActions"],["UnityEngine","InputSystem","InputSystem","RunInitializeInPlayer"]]];
 
