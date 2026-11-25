@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/PSFScene.unity
+    guid: ca9757eaa71409a4d95a42bfcc6d05b3
+  - enabled: 0
+    path: Assets/Scenes/MemeScene.unity
+    guid: 3fc4597f5a90f9a4abd93b9b9e84122f
+  - enabled: 0
+    path: Assets/Scenes/BuddyScene.unity
+    guid: 37fff99fe21d7334fb3ea62c5b7b3317
+  - enabled: 1
+    path: Assets/Scenes/BuddyPlayersScene.unity
+    guid: ad686d2ff419df041aa4b8bcbee38325
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 3590b91b4603b465dbb4216d601bff33, type: 3}
+  m_UseUCBPForAssetBundles: 0

@@ -1,0 +1,40 @@
+# layout (portrait 1080x1920) — x,y = top-left corner in % of screen, w,h in %; origin top-left
+# path | kind | x% y% w% h% | sorting | extra
+Player_240/Body/ArmFrontPivot/ArmFront/Hand/WeaponPose_1_Water_Gun | SpriteRenderer | 27 44 16 5 | Default/11 | sprite=Water_Gun
+KSBP_Meme/World/Player_240/Body/ArmBackPivot/ArmBack | SpriteRenderer | 19 48 2 6 | Default/16 | sprite=p240_arm
+KSBP_Meme/World/Buddy/Body/LegR | SpriteRenderer | 75 52 7 8 | Default/11 | sprite=buddy_leg_near
+KSBP_Meme/World/Gugu_Gaga/Body/ArmBackPivot/ArmBack | SpriteRenderer | -16 52 8 5 | Default/16 | sprite=hand_Gugu_Gaga_0 OFFSCREEN
+KSBP_Meme/World/Buddy/Body/ArmFrontPivot/ArmFront | SpriteRenderer | 80 46 9 9 | Default/16 | sprite=buddy_arm
+KSBP_Meme/World/Player_240/Body/HelmetAnchor/HelmetPose_1_Helmet19 | SpriteRenderer | 17 39 10 4 | Default/17 | sprite=Helmet19
+KSBP_Meme/World/Background | SpriteRenderer | -57 0 215 83 | Default/-100 | sprite=Desert
+KSBP_Meme/World/Buddy/Body/ArmBackPivot/ArmBack | SpriteRenderer | 72 45 11 9 | Default/10 | sprite=buddy_arm
+KSBP_Meme/World/Player_240/Body/ChestPose_1_Armor18 | SpriteRenderer | 15 47 14 6 | Default/13 | sprite=Armor18
+KSBP_Meme/World/Player_240/Body/LegR | SpriteRenderer | 21 53 3 7 | Default/11 | sprite=p240_leg_r
+KSBP_Meme/World/Buddy/Body/LegL | SpriteRenderer | 80 52 7 8 | Default/14 | sprite=buddy_leg_far
+KSBP_Meme/World/Mira/Body/LegL | SpriteRenderer | 49 53 3 7 | Default/11 | sprite=mira_leg_l
+KSBP_Meme/World/Buddy/Body/Head | SpriteRenderer | 76 41 9 6 | Default/14 | sprite=buddy_head
+KSBP_Meme/World/Mira/Body/HelmetAnchor/HelmetPose_0_Helmet15 | SpriteRenderer | 47 41 7 3 | Default/17 | sprite=Helmet15
+KSBP_Meme/World/Mira/Body/ArmFrontPivot/ArmFront | SpriteRenderer | 53 47 10 1 | Default/10 | sprite=mira_arm
+KSBP_Meme/World/Buddy/Body/Torso | SpriteRenderer | 75 45 13 8 | Default/12 | sprite=buddy_body
+KSBP_Meme/World/Buddy/HP/FillPivot/Fill | SpriteRenderer | 73 38 17 1 | Default/71 | sprite=white color=#F23333FF
+KSBP_Meme/World/Mira/Body/Head | SpriteRenderer | 46 42 10 9 | Default/14 | sprite=mira_head
+KSBP_Meme/World/Gugu_Gaga/Body/LegL | SpriteRenderer | -7 58 6 2 | Default/11 | sprite=legs_Gugu_Gaga_0 OFFSCREEN
+KSBP_Meme/World/Gugu_Gaga/Body/Torso | SpriteRenderer | -15 51 14 8 | Default/12 | sprite=body_Gugu_Gaga_0 OFFSCREEN
+KSBP_Meme/World/Gugu_Gaga/Body/ChestPose_0_Armor4 | SpriteRenderer | -11 50 9 8 | Default/13 | sprite=Armor4 OFFSCREEN
+Gugu_Gaga/Body/ArmFrontPivot/ArmFront/Hand/WeaponPose_2_Golden_Minigun | SpriteRenderer | -3 49 23 5 | Default/11 | sprite=Golden_Minigun
+KSBP_Meme/World/Gugu_Gaga/Body/ArmFrontPivot/ArmFront | SpriteRenderer | -5 52 8 3 | Default/10 | sprite=hand_Gugu_Gaga_0
+Mira/Body/ArmFrontPivot/ArmFront/Hand/WeaponPose_2_Golden_Minigun | SpriteRenderer | 58 44 22 4 | Default/11 | sprite=Golden_Minigun
+KSBP_Meme/World/Buddy/HP/Bg | SpriteRenderer | 72 37 18 1 | Default/70 | sprite=white color=#1A1A1AE6
+KSBP_Meme/World/Player_240/Body/Head | SpriteRenderer | 17 42 11 6 | Default/14 | sprite=p240_head
+KSBP_Meme/World/Gugu_Gaga/Body/LegR | SpriteRenderer | -13 58 6 2 | Default/11 | sprite=legs_Gugu_Gaga_0 OFFSCREEN
+KSBP_Meme/World/Gugu_Gaga/Body/Head | SpriteRenderer | -14 45 14 7 | Default/14 | sprite=head_Gugu_Gaga_1
+KSBP_Meme/World/Player_240/Body/Torso | SpriteRenderer | 19 47 5 6 | Default/12 | sprite=p240_torso
+KSBP_Meme/World/Mira/Body/HairBack | SpriteRenderer | 47 43 9 8 | Default/8 | sprite=mira_hair
+KSBP_Meme/World/Mira/Body/Torso | SpriteRenderer | 48 46 6 7 | Default/12 | sprite=mira_body
+KSBP_Meme/World/Gugu_Gaga/Body/HelmetAnchor/HelmetPose_0_Helmet15 | SpriteRenderer | -13 44 11 4 | Default/17 | sprite=Helmet15 OFFSCREEN
+KSBP_Meme/World/Player_240/Body/LegL | SpriteRenderer | 20 53 3 7 | Default/11 | sprite=p240_leg_l
+KSBP_Meme/World/Player_240/Body/ArmFrontPivot/ArmFront | SpriteRenderer | 23 48 11 1 | Default/10 | sprite=p240_arm
+KSBP_Meme/World/Mira/Body/ArmBackPivot/ArmBack | SpriteRenderer | 48 48 2 6 | Default/16 | sprite=mira_arm
+KSBP_Meme/World/Mira/Body/LegR | SpriteRenderer | 51 53 3 7 | Default/11 | sprite=mira_leg_r
+KSBP_Meme/World/Mira/Body/ChestPose_0_Armor4 | SpriteRenderer | 49 46 5 5 | Default/13 | sprite=Armor4
+KSBP_Canvas/EndCatcher | UI | -11 -13 122 122 | canvas 30000 | Image sprite=white
