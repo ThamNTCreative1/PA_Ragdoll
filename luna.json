@@ -27781,6 +27781,18 @@
                     {
                         "name": "EndTimer",
                         "excluded": false
+                    },
+                    {
+                        "name": "AnimateEndcard",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ShowEndcard",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnEndcardTap",
+                        "excluded": false
                     }
                 ]
             },
@@ -30036,7 +30048,7 @@
                 "instanceMethods": [
                     {
                         "name": "NormalStyle#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "name#get",
@@ -30072,7 +30084,7 @@
                     },
                     {
                         "name": "ctor",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "RefreshStyle",

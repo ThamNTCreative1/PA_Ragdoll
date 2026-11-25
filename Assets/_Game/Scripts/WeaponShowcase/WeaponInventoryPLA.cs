@@ -68,6 +68,14 @@ namespace MelonAd
         public float loopPause = 0.6f;
         public float hintDistance = 320f;
 
+        [Header("Endcard (after START): any tap opens the store")]
+        public RectTransform endcard;
+        public CanvasGroup endcardGroup;
+        [Tooltip("Holds icon + PLAY; scaled down in landscape so both fit the short screen.")]
+        public RectTransform endcardContent;
+        public RectTransform endcardIcon;
+        public RectTransform endcardPlay;
+
         [Header("Sound")]
         [Tooltip("Pool of sources so overlapping SFX keep their own pitch.")]
         public List<AudioSource> sfxSources = new List<AudioSource>();
@@ -85,9 +93,17 @@ namespace MelonAd
         bool hintAborted;
         int nextSfx;
         Coroutine[] pops;
+        bool ended;
+        float endcardTime;
 
         void Awake()
         {
+            if (endcard != null)
+            {
+                endcard.gameObject.SetActive(false);
+                Button eb = endcard.GetComponent<Button>();
+                if (eb != null) eb.onClick.AddListener(OnEndcardTap);
+            }
             if (startButton != null)
             {
                 Button b = startButton.GetComponent<Button>();
@@ -158,12 +174,11 @@ namespace MelonAd
             if (EndTime > 0f) StartCoroutine(EndTimer());
         }
 
-        /// <summary>Silent countdown (no UI): when it runs out the game ends and the store opens.</summary>
+        /// <summary>Silent countdown (no UI): when it runs out the endcard shows (same as pressing START).</summary>
         IEnumerator EndTimer()
         {
             yield return new WaitForSeconds(EndTime);
-            LunaBridge.GameEnded();
-            LunaBridge.InstallFullGame();
+            ShowEndcard();
         }
 
         void Update()
@@ -182,11 +197,55 @@ namespace MelonAd
             Vector2 s = new Vector2(Screen.width, Screen.height);
             if (s != lastScreen) ApplyLayout(false);
 
-            if (startButton != null)
+            if (startButton != null && !ended)
             {
                 float p = 1f + 0.06f * Mathf.Sin(Time.time * 6f);
                 startButton.localScale = new Vector3(p, p, 1f);
             }
+            if (ended) AnimateEndcard();
+        }
+
+        /// <summary>Fade in + icon pop, then the PLAY button pulses (scale loop) forever.</summary>
+        void AnimateEndcard()
+        {
+            float t = Time.time - endcardTime;
+            if (endcardGroup != null) endcardGroup.alpha = Mathf.Clamp01(t / 0.25f);
+            if (endcardIcon != null)
+            {
+                float k = Mathf.Clamp01(t / 0.4f);
+                float s = k < 1f ? Mathf.Lerp(0.6f, 1f, k) + 0.12f * Mathf.Sin(k * Mathf.PI) : 1f;
+                endcardIcon.localScale = new Vector3(s, s, 1f);
+            }
+            if (endcardPlay != null)
+            {
+                float p = 1f + 0.08f * Mathf.Sin(t * 6f);
+                endcardPlay.localScale = new Vector3(p, p, 1f);
+            }
+        }
+
+        void ShowEndcard()
+        {
+            if (ended) return;
+            ended = true;
+            endcardTime = Time.time;
+            StopAllCoroutines(); // scroll hint, end timer, slot pops
+            foreach (RectTransform s in slots) if (s != null) s.localScale = Vector3.one; // pops cut mid-bounce
+            if (hand != null) hand.gameObject.SetActive(false);
+            if (scroll != null) scroll.StopMovement();
+            if (endcard != null)
+            {
+                endcard.gameObject.SetActive(true);
+                endcard.SetAsLastSibling();
+                AnimateEndcard();
+            }
+            LunaBridge.GameEnded();
+            if (endcard == null) LunaBridge.InstallFullGame(); // no endcard built: fall back to the store
+        }
+
+        void OnEndcardTap()
+        {
+            PlaySfx(clickSfx, 1f);
+            LunaBridge.InstallFullGame();
         }
 
         void LateUpdate()
@@ -286,6 +345,8 @@ namespace MelonAd
                 Place(startButton, new Vector2(0.5f, 0.3f), new Vector2(560f, 160f));
                 startLabel.fontSize = 80;
             }
+
+            if (endcardContent != null) endcardContent.localScale = Vector3.one * (landscape ? 0.85f : 1f);
 
             FitBackground();
             RefreshGridNow();
@@ -457,8 +518,7 @@ namespace MelonAd
         void OnStart()
         {
             PlaySfx(clickSfx, 1f);
-            LunaBridge.GameEnded();
-            LunaBridge.InstallFullGame();
+            ShowEndcard();
         }
 
         static void SetRect(RectTransform r, Vector2 aMin, Vector2 aMax, Vector2 offMin, Vector2 offMax)

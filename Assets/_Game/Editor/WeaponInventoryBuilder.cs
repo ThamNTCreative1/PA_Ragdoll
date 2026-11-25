@@ -25,6 +25,8 @@ namespace MelonAd.EditorTools
         const string MusicPath = Root + "Audio/music.mp3";
         const string SfxDir = Root + "Audio/Weapons/";
         const string HandPath = Root + "Art/Sprites/finger.png";
+        const string AppIconSrc = Root + "SRP_V01_1_Icon_HoaiPP_AnhNTN.png";
+        const string EndcardIconPath = UIDir + "endcard_icon.png"; // AppIconSrc with rounded corners (generated)
         const int SfxPool = 4;
         const string ScenePath = Root + "Scenes/Main_WeaponInventory.unity";
 
@@ -312,6 +314,44 @@ namespace MelonAd.EditorTools
             Stretch(startLabel.rectTransform, new Vector2(0f, 14f), new Vector2(0f, 0f));
             startLabel.fontSharedMaterial = outlineGreen;
 
+            // endcard (shown after START): dim overlay over everything, app icon + pulsing PLAY; any tap opens the store
+            RectTransform endcard = NewUI("Endcard", canvasGo.transform);
+            Stretch(endcard);
+            var endcardGroup = endcard.gameObject.AddComponent<CanvasGroup>();
+            var dim = endcard.gameObject.AddComponent<Image>();
+            dim.color = new Color(0f, 0f, 0f, 0.72f);
+            dim.raycastTarget = true; // tap anywhere
+            var endcardBtn = endcard.gameObject.AddComponent<Button>();
+            endcardBtn.transition = Selectable.Transition.None;
+            endcardBtn.navigation = new Navigation { mode = Navigation.Mode.None };
+
+            RectTransform ecContent = NewUI("Content", endcard); // icon + PLAY, scaled down in landscape
+            ecContent.anchorMin = ecContent.anchorMax = new Vector2(0.5f, 0.5f);
+            ecContent.sizeDelta = new Vector2(700f, 1000f);
+
+            RectTransform ecIcon = NewUI("AppIcon", ecContent);
+            ecIcon.anchorMin = ecIcon.anchorMax = new Vector2(0.5f, 0.5f);
+            ecIcon.sizeDelta = new Vector2(660f, 660f);
+            ecIcon.anchoredPosition = new Vector2(0f, 160f);
+            var ecIconImg = ecIcon.gameObject.AddComponent<Image>();
+            ecIconImg.sprite = LoadSprite(EndcardIconPath);
+            ecIconImg.preserveAspect = true;
+            ecIconImg.raycastTarget = false;
+
+            RectTransform ecPlay = NewUI("PlayButton", ecContent);
+            ecPlay.anchorMin = ecPlay.anchorMax = new Vector2(0.5f, 0.5f);
+            ecPlay.sizeDelta = new Vector2(640f, 180f);
+            ecPlay.anchoredPosition = new Vector2(0f, -360f);
+            var ecPlayImg = ecPlay.gameObject.AddComponent<Image>();
+            ecPlayImg.sprite = btnSp;
+            ecPlayImg.type = Image.Type.Sliced;
+            ecPlayImg.pixelsPerUnitMultiplier = 0.15f;
+            ecPlayImg.raycastTarget = false; // the full-screen overlay takes the tap
+            TMP_Text playLabel = NewText("Label", ecPlay, font, "PLAY", 96, Color.white, TextAlignmentOptions.Center);
+            Stretch(playLabel.rectTransform, new Vector2(0f, 14f), new Vector2(0f, 0f));
+            playLabel.fontSharedMaterial = outlineGreen;
+            endcard.gameObject.SetActive(false);
+
             // controller + BGM
             var ctrlGo = new GameObject("WeaponInventoryPLA");
             var bgm = ctrlGo.AddComponent<AudioSource>();
@@ -347,6 +387,11 @@ namespace MelonAd.EditorTools
             ctrl.bgmSource = bgm;
             ctrl.hand = hand;
             ctrl.handImage = handImg;
+            ctrl.endcard = endcard;
+            ctrl.endcardGroup = endcardGroup;
+            ctrl.endcardContent = ecContent;
+            ctrl.endcardIcon = ecIcon;
+            ctrl.endcardPlay = ecPlay;
 
             // safe frame (notch / home bar): inventory + CTA live inside, background stays full screen
             RectTransform safe = NewUI("SafeArea", canvasGo.transform);
@@ -392,12 +437,48 @@ namespace MelonAd.EditorTools
             SetupSprite(UIDir + "ui_slot_frame.png", new Vector4(4, 4, 4, 4));
             SetupSprite(UIDir + "ui_btn_green.png", new Vector4(5, 7, 5, 6));
 
+            MakeRoundedIcon(AppIconSrc, EndcardIconPath, 0.19f);
+            SetupSprite(EndcardIconPath, Vector4.zero);
+            var iconImp = (TextureImporter)AssetImporter.GetAtPath(EndcardIconPath);
+            iconImp.filterMode = FilterMode.Bilinear; // 512px photo-like icon is scaled, not pixel-exact
+            iconImp.SaveAndReimport();
+
             var bgImp = (TextureImporter)AssetImporter.GetAtPath(UIDir + "bg_default.png");
             bgImp.textureType = TextureImporterType.Default;
             bgImp.mipmapEnabled = false;
             bgImp.filterMode = FilterMode.Bilinear;
             bgImp.wrapMode = TextureWrapMode.Clamp;
             bgImp.SaveAndReimport();
+        }
+
+        /// <summary>Writes a copy of the app icon with anti-aliased rounded corners (radius = fraction of the side).</summary>
+        static void MakeRoundedIcon(string srcPath, string dstPath, float radiusFrac)
+        {
+            string projectDir = System.IO.Path.GetDirectoryName(Application.dataPath);
+            string src = System.IO.Path.Combine(projectDir, srcPath);
+            if (!System.IO.File.Exists(src)) { Debug.LogWarning("[WeaponInventoryBuilder] Missing " + srcPath); return; }
+
+            var tex = new Texture2D(2, 2, TextureFormat.RGBA32, false);
+            tex.LoadImage(System.IO.File.ReadAllBytes(src));
+            int w = tex.width, h = tex.height;
+            float r = Mathf.Min(w, h) * radiusFrac;
+            Color32[] px = tex.GetPixels32();
+            for (int y = 0; y < h; y++)
+                for (int x = 0; x < w; x++)
+                {
+                    // distance outside the rounded rect, measured from the pixel center
+                    float cx = Mathf.Clamp(x + 0.5f, r, w - r), cy = Mathf.Clamp(y + 0.5f, r, h - r);
+                    float d = Vector2.Distance(new Vector2(x + 0.5f, y + 0.5f), new Vector2(cx, cy)) - r;
+                    float cover = Mathf.Clamp01(0.5f - d);
+                    if (cover >= 1f) continue;
+                    int i = y * w + x;
+                    px[i].a = (byte)(px[i].a * cover);
+                }
+            tex.SetPixels32(px);
+            tex.Apply();
+            System.IO.File.WriteAllBytes(System.IO.Path.Combine(projectDir, dstPath), tex.EncodeToPNG());
+            Object.DestroyImmediate(tex);
+            AssetDatabase.ImportAsset(dstPath);
         }
 
         static void SetupSprite(string path, Vector4 border)
