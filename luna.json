@@ -1,8 +1,8 @@
 {
     "version": "7.2.0",
     "projectId": "83336d6262c2dbe44ad1c159a3170903",
-    "applicationID": 42944,
-    "creativeName": "C1_2610_HuyNQ_SPS_V06_TrangHTT",
+    "applicationID": 43647,
+    "creativeName": "C1_2611_HuyNQ_PSF_V06_YenTTH",
     "pgServer": "EU",
     "window": {
         "‐⁘": true
@@ -28529,6 +28529,14 @@
                     {
                         "name": "ResetVariantEffects",
                         "excluded": false
+                    },
+                    {
+                        "name": "IsRigSkin",
+                        "excluded": false
+                    },
+                    {
+                        "name": "FitForestArmSegment",
+                        "excluded": true
                     }
                 ]
             },

@@ -40,7 +40,6 @@ namespace MelonSandbox
         AudioSource music, effects, loop;
         MelonTool selected;
         readonly bool[] usedSyringes = new bool[3];
-        bool syringeBusy;
         float lastInput;
         int stageGeneration;
         public static Vector2 FromPixels(float x, float y) => new Vector2((x - 320) / 100f, (1112 - y) / 100f);
@@ -85,7 +84,7 @@ namespace MelonSandbox
             }
             StopAllCoroutines(); stageGeneration++; ReleasePointer(); Loop(null);
             Paused = false; Time.timeScale = 1;
-            Stage = Mathf.Clamp(stage, 0, 3); Defeated = 0; syringeBusy = false;
+            Stage = Mathf.Clamp(stage, 0, 3); Defeated = 0;
             for (int i = 0; i < 3; i++) usedSyringes[i] = false;
             foreach (var entry in sceneStages)
             {
@@ -122,6 +121,12 @@ namespace MelonSandbox
                         foreach (var b in characters[j].GetComponentsInChildren<Collider2D>()) MelonGame.IgnoreActiveCollision(a, b);
                 if (Stage == 3) characters[i].BeginParade();
             }
+            // Ranged weapons only shoot projectiles; their bodies must not snag on characters.
+            foreach (var tool in tools)
+                if (tool && (tool.kind == MelonToolKind.Flame || tool.kind == MelonToolKind.Rifle))
+                    foreach (var a in tool.GetComponentsInChildren<Collider2D>())
+                        foreach (var character in characters)
+                            foreach (var b in character.GetComponentsInChildren<Collider2D>()) MelonGame.IgnoreActiveCollision(a, b);
             // Show the syringe/saw/rifle tutorial immediately when entering these stages.
             lastInput = Time.unscaledTime - (Stage < 3 ? 5f : 0f);
             if (hud) hud.Refresh();
@@ -131,7 +136,7 @@ namespace MelonSandbox
         {
             if (Application.isPlaying) { Paused = false; Time.timeScale = 1; }
             StopAllCoroutines(); stageGeneration++; ReleasePointer();
-            Stage = Mathf.Clamp(stage, 0, 3); Defeated = 0; syringeBusy = false;
+            Stage = Mathf.Clamp(stage, 0, 3); Defeated = 0;
             for (int i = 0; i < 3; i++) usedSyringes[i] = false;
             characters.Clear(); tools.Clear();
             if (world) Dispose(world.gameObject);
@@ -146,35 +151,36 @@ namespace MelonSandbox
             {
                 for (int i = 0; i < 4; i++)
                     assets.Visual("msg_stolb", world, FromPixels(-50 + 250 * i, 679.5f), new Vector2(1.12f, 8.17f), -20);
-                Spawn("Sprunky_1", new Vector2(-50, 0), true);
-                Spawn("Sprunky_2", new Vector2(200, 0), true);
-                Spawn("Sprunky_3", new Vector2(450, 0), true);
+                Spawn("Forest_PinkBeanie", new Vector2(-21, 0), true);
+                Spawn("Forest_RedCheckered", new Vector2(229, 0), true);
+                Spawn("Forest_Deer", new Vector2(483, 0), true);
             }
             else if (Stage == 1)
             {
-                string[] skins = { "Sprunky_4", "Sprunky_5", "Sprunky_1", "Sprunky_2" };
-                for (int i = 0; i < skins.Length; i++) Spawn(skins[i], new Vector2(-200 + i * 200, 0), false);
+                string[] skins = { "Forest_PinkBeanie", "Forest_RedCheckered", "Forest_Deer", "Forest_PinkBeanie" };
+                for (int i = 0; i < skins.Length; i++) Spawn(skins[i], new Vector2(-280 + i * 270, 0), false);
                 CreateTool(MelonToolKind.Saw, FromPixels(-400, 600));
                 CreateTool(MelonToolKind.Shock, FromPixels(900, 800));
             }
             else if (Stage == 2)
             {
-                string[] skins = { "Sprunky_2", "Sprunky_3", "Sprunky_4", "Sprunky_5", "Sprunky_1", "Sprunky_2", "Sprunky_3" };
+                string[] skins = { "Forest_AlienEnemy", "Forest_BlueEnemy", "Forest_FrogEnemy", "Forest_WhiteWolfEnemy", "Forest_PinkBeanie", "Forest_RedCheckered", "Forest_Deer" };
                 for (int i = 0; i < skins.Length; i++)
                 {
-                    var c = Spawn(skins[i], new Vector2(-200 + (i % 4) * 150, i >= 4 ? -1045 : 0), false);
+                    var c = Spawn(skins[i], new Vector2(i >= 4 ? -170 + (i - 4) * 280 : -120 + i * 280, i >= 4 ? -1045 : 0), false);
                     c.targetGroup = i >= 4 ? 1 : 0;
                 }
                 var names = new Dictionary<string, string> { { "cd", "cnd" }, { "n1", "no1" }, { "n2", "no2" }, { "s", "stol" }, { "v", "vert" }, { "h", "hor" }, { "b", "big" }, { "m", "melon" }, { "cn", "can" }, { "c", "chair" }, { "a", "arm" } };
                 foreach (var n in assets.Node("level_0").groups)
                     if (names.TryGetValue(n.name, out var key))
                         Prop(key, FromPixels(n.x + n.w / 2 - 20, n.y + n.h / 2), n.name == "v" || n.name == "h" || n.name == "b");
-                CreateTool(MelonToolKind.Flame, FromPixels(-300, 800));
-                CreateTool(MelonToolKind.Rifle, FromPixels(730, -100));
+                // Keep both weapons clear of the characters on their floor.
+                CreateTool(MelonToolKind.Flame, FromPixels(-380, 800));
+                CreateTool(MelonToolKind.Rifle, FromPixels(970, -100));
             }
             else
             {
-                string[] parade = { "Sprunky_5", "Sprunky_1", "Sprunky_2", "Sprunky_3", "Sprunky_4", "Sprunky_5", "Sprunky_1" };
+                string[] parade = { "Forest_PinkBeanie", "Forest_RedCheckered", "Forest_Deer", "Forest_AlienEnemy", "Forest_BlueEnemy", "Forest_FrogEnemy", "Forest_WhiteWolfEnemy" };
                 for (int i = 0; i < parade.Length; i++) Spawn(parade[i], new Vector2(-500 * (parade.Length - 1 - i), 0), false).BeginParade();
             }
             lastInput = Time.unscaledTime;
@@ -184,7 +190,7 @@ namespace MelonSandbox
         public MelonRagdoll Spawn(string skin, Vector2 offset, bool suspended)
         {
             MelonRagdoll c;
-            bool sprunky = skin.StartsWith("Sprunky_");
+            bool sprunky = MelonRagdoll.IsRigSkin(skin);
             var prefab = sprunky ? Resources.Load<GameObject>("ragdollprefabs/" + skin) : Application.isPlaying ? assets.CharacterPrefab(skin) : null;
             if (sprunky)
             {
@@ -269,11 +275,11 @@ namespace MelonSandbox
             tool.ConfigurePlacement();
             tools.Add(tool); return tool;
         }
-        public bool CanSyringe(int i) => Stage == 0 && !syringeBusy && !usedSyringes[i];
+        public bool CanSyringe(int i) => Stage == 0 && !usedSyringes[i];
         public bool UseSyringe(int i)
         {
             if (i < 0 || i > 2 || !CanSyringe(i)) return false;
-            UserInput(); syringeBusy = true; usedSyringes[i] = true;
+            UserInput(); usedSyringes[i] = true;
             var target = characters[i];
             Vector2 aim = target.Torso.body.position;
             Vector2 origin = aim + (i == 0 ? new Vector2(-6, 1) : i == 1 ? new Vector2(0, 5) : new Vector2(6, 2));
@@ -297,7 +303,7 @@ namespace MelonSandbox
             // A miss must leave a retryable interaction, rather than trapping progression.
             if (generation == stageGeneration && tool && !tool.used && !characters[index].dead)
             {
-                tools.Remove(tool); Destroy(tool.gameObject); usedSyringes[index] = false; syringeBusy = false; hud.Refresh();
+                tools.Remove(tool); Destroy(tool.gameObject); usedSyringes[index] = false; hud.Refresh();
             }
         }
         public void TargetDefeated(MelonRagdoll target, float delay)
@@ -309,7 +315,6 @@ namespace MelonSandbox
         {
             yield return new WaitForSeconds(delay);
             if (generation != stageGeneration) yield break;
-            syringeBusy = false;
             if (Defeated >= characters.Count && Stage < 3) LoadStage(Stage + 1);
             else hud.Refresh();
         }
@@ -331,7 +336,8 @@ namespace MelonSandbox
             var sr = assets.Visual(source.kind == MelonToolKind.Rifle ? "msg_bullet" : "msg_flame", world, start, source.kind == MelonToolKind.Rifle ? new Vector2(.22f, .22f) : new Vector2(.3f, .3f), 70);
             var p = sr.gameObject.AddComponent<MelonProjectile>(); p.game = this; p.kind = source.kind;
             p.velocity = direction * (source.kind == MelonToolKind.Rifle ? 40 : 12);
-            if (source.kind == MelonToolKind.Rifle) { Sound("fire", .32f); Particles("msg_flame", start, 1, Color.white); }
+            // fire.mp3 is a 2.8s burning loop; restarting it every 0.11s stacked ~25 copies into noise.
+            if (source.kind == MelonToolKind.Rifle) Sound("shot", .45f);
         }
         public void Particles(string sprite, Vector2 position, int count, Color color)
         {

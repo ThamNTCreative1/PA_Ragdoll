@@ -37,6 +37,7 @@ namespace MelonSandbox
             return null;
         }
         public static readonly string[] Skins = { "main_", "tom_", "kak_", "doc_", "corn_", "red_", "blue_" };
+        public static bool IsRigSkin(string skin) => skin.StartsWith("Sprunky_") || skin.StartsWith("Forest_");
         public void BuildSprunky(MelonGame controller, Vector2 offset, bool suspended)
         {
             game = controller; skinName = name;
@@ -201,14 +202,43 @@ namespace MelonSandbox
             var shoulder = upper.GetComponent<HingeJoint2D>();
             Vector2 pivot = shoulder.connectedBody.transform.TransformPoint(shoulder.connectedAnchor);
             Vector2 elbow = Vector2.Lerp(pivot, target, .5f);
-            elbow.x += side == "r_" ? -.15f : .15f;
-            StretchArmSegment(upper, pivot, elbow);
-            StretchArmSegment(lower, elbow, target);
+            bool isForest = skinName.StartsWith("Forest_");
+            if (isForest)
+            {
+                // Straight arm: the elbow sits on the shoulder-hand line, split by segment length.
+                var elbowJoint = lower.GetComponent<HingeJoint2D>();
+                var wrist = hand.GetComponent<HingeJoint2D>();
+                float upperLength = upper.transform.TransformVector(elbowJoint.connectedAnchor - shoulder.anchor).magnitude;
+                float lowerLength = lower.transform.TransformVector(wrist.connectedAnchor - elbowJoint.anchor).magnitude;
+                float ratio = upperLength + lowerLength > .0001f ? upperLength / (upperLength + lowerLength) : .5f;
+                elbow = Vector2.Lerp(pivot, target, ratio);
+                FitForestArmSegment(upper, shoulder.anchor, elbowJoint.connectedAnchor, pivot, elbow);
+                FitForestArmSegment(lower, elbowJoint.anchor, wrist.connectedAnchor, elbow, target);
+            }
+            else
+            {
+                elbow.x += side == "r_" ? -.15f : .15f;
+                StretchArmSegment(upper, pivot, elbow);
+                StretchArmSegment(lower, elbow, target);
+            }
             hand.transform.position = target;
             hand.transform.rotation = lower.transform.rotation;
             ConnectArmJoint(upper, shoulder.connectedBody, pivot);
-            ConnectArmJoint(lower, upper.body, elbow);
+            ConnectArmJoint(lower, upper.body, elbow, keepLimits: isForest);
             ConnectArmJoint(hand, lower.body, target);
+        }
+        // Fit between physical anchors so the rounded sprite ends overlap at the elbow.
+        static void FitForestArmSegment(MelonLimb limb, Vector2 localStart, Vector2 localEnd, Vector2 start, Vector2 end)
+        {
+            Vector2 direction = end - start;
+            float length = limb.transform.TransformVector(localEnd - localStart).magnitude;
+            if (length < .0001f || direction.sqrMagnitude < .00000001f) return;
+            Vector3 scale = limb.transform.localScale;
+            scale.y *= direction.magnitude / length;
+            limb.transform.localScale = scale;
+            limb.transform.rotation = Quaternion.Euler(0, 0, 90f + Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg);
+            limb.transform.position += (Vector3)start - limb.transform.TransformPoint(localStart);
+            limb.dimensions = limb.skin.bounds.size;
         }
         static void StretchArmSegment(MelonLimb limb, Vector2 start, Vector2 end)
         {
@@ -226,7 +256,7 @@ namespace MelonSandbox
             limb.transform.position += (Vector3)start - top;
             limb.dimensions = limb.skin.bounds.size;
         }
-        static void ConnectArmJoint(MelonLimb limb, Rigidbody2D connected, Vector2 point)
+        static void ConnectArmJoint(MelonLimb limb, Rigidbody2D connected, Vector2 point, bool keepLimits = false)
         {
             var joint = limb.GetComponent<HingeJoint2D>();
             joint.autoConfigureConnectedAnchor = false;
@@ -234,7 +264,7 @@ namespace MelonSandbox
             joint.anchor = limb.transform.InverseTransformPoint(point);
             joint.connectedAnchor = connected.transform.InverseTransformPoint(point);
             joint.useLimits = true;
-            joint.limits = new JointAngleLimits2D { min = -10, max = 10 };
+            if (!keepLimits) joint.limits = new JointAngleLimits2D { min = -10, max = 10 };
         }
         public void ConfigureInstance(MelonGame controller, Vector2 offset, bool suspended, string innerSkin)
         {
@@ -328,7 +358,7 @@ namespace MelonSandbox
         }
         public void ChangeInner(string prefix)
         {
-            if (skinName.StartsWith("Sprunky_"))
+            if (IsRigSkin(skinName))
             {
                 foreach (var limb in limbs)
                     limb.inner.color = prefix == "fr_" ? new Color(.2f, .12f, .08f) : prefix == "lsk_" ? new Color(.5f, 1, .25f) : Color.white;
@@ -360,7 +390,7 @@ namespace MelonSandbox
         }
         public void LowerArms()
         {
-            if (!skinName.StartsWith("Sprunky_")) return;
+            if (!IsRigSkin(skinName)) return;
             foreach (var support in supports)
                 if (support && (support.gameObject == GetLimb("r_hand").gameObject
                     || support.gameObject == GetLimb("l_hand").gameObject)) support.enabled = false;
@@ -404,7 +434,7 @@ namespace MelonSandbox
         public void Apply(MelonToolKind kind, MelonLimb contact, Vector2 point)
         {
             if (dead) return;
-            if (game.coverSprunkyOnHit && !privacyCover && skinName.StartsWith("Sprunky_"))
+            if (game.coverSprunkyOnHit && !privacyCover && IsRigSkin(skinName))
             {
                 var cover = new GameObject("Sprunky privacy cover");
                 cover.transform.SetParent(game.world, false);

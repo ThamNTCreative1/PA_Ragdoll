@@ -1,6 +1,6 @@
-if ( TRACE ) { TRACE( JSON.parse( '["MelonSandbox.MelonAssets#ParseLayout","MelonSandbox.MelonAssets#Prepare","MelonSandbox.MelonAssets#Sprite","MelonSandbox.MelonAssets#Sound","MelonSandbox.MelonAssets#CharacterPrefab","MelonSandbox.MelonAssets#ToolPrefab","MelonSandbox.MelonAssets#Node","MelonSandbox.MelonAssets#Visual","MelonSandbox.MelonGame#FromPixels","MelonSandbox.MelonGame#IgnoreActiveCollision","MelonSandbox.MelonGame#Dispose","MelonSandbox.MelonGame#init","MelonSandbox.MelonGame#Awake","MelonSandbox.MelonGame#OnDestroy","MelonSandbox.MelonGame#Start","MelonSandbox.MelonGame#Initialize","MelonSandbox.MelonGame#LoadStage","MelonSandbox.MelonGame#BuildStagePreview","MelonSandbox.MelonGame#Spawn","MelonSandbox.MelonGame#Prop","MelonSandbox.MelonGame#CreateTool","MelonSandbox.MelonGame#CanSyringe","MelonSandbox.MelonGame#UseSyringe","MelonSandbox.MelonGame#SyringeRecovery","MelonSandbox.MelonGame#TargetDefeated","MelonSandbox.MelonGame#AdvanceAfter","MelonSandbox.MelonGame#NextTarget","MelonSandbox.MelonGame#GetTool","MelonSandbox.MelonGame#Fire","MelonSandbox.MelonGame#Particles","MelonSandbox.MelonGame#ReplacementMusic","MelonSandbox.MelonGame#Sound","MelonSandbox.MelonGame#Loop","MelonSandbox.MelonGame#TogglePause","MelonSandbox.MelonGame#ToggleAudio","MelonSandbox.MelonGame#Restart","MelonSandbox.MelonGame#UserInput","MelonSandbox.MelonGame#Update","MelonSandbox.MelonGame#OverUI","MelonSandbox.MelonGame#ReleasePointer","MelonSandbox.MelonGame#FitCamera","MelonSandbox.MelonGame#OnDisable","MelonSandbox.MelonHud#init","MelonSandbox.MelonHud#Build","MelonSandbox.MelonHud#LateUpdate","MelonSandbox.MelonHud#UpdateLayout","MelonSandbox.MelonHud#Label","MelonSandbox.MelonHud#Refresh","MelonSandbox.MelonHud#SetHint","MelonSandbox.MelonHud#HideHint","MelonSandbox.MelonHud#UpdateHint","MelonSandbox.MelonLimb#init","MelonSandbox.MelonLimb#init","MelonSandbox.MelonLimb#CaptureAppearance","MelonSandbox.MelonLimb#BeginDamage","MelonSandbox.MelonLimb#LateUpdate","MelonSandbox.MelonLimb#UpdateDamageCoordinates","MelonSandbox.MelonLimb#Cut","MelonSandbox.MelonLimb#Dissolve","MelonSandbox.MelonLimb#CompleteDissolve","MelonSandbox.MelonLimb#BurnSkin","MelonSandbox.MelonLimb#ShockAppearance","MelonSandbox.MelonLimb#Detach","MelonSandbox.MelonLimb#ResetDamage","MelonSandbox.MelonLimb#OnDestroy","MelonSandbox.MelonLimb#ReleaseDamageMaterial","MelonSandbox.MelonParticle#init","MelonSandbox.MelonParticle#Start","MelonSandbox.MelonParticle#Update","MelonSandbox.MelonPrivacyCover#init","MelonSandbox.MelonPrivacyCover#ConfigureSpriteUV","MelonSandbox.MelonPrivacyCover#SpriteWorldBounds","MelonSandbox.MelonPrivacyCover#Build","MelonSandbox.MelonPrivacyCover#SetHidden","MelonSandbox.MelonPrivacyCover#LateUpdate","MelonSandbox.MelonPrivacyCover#OnDisable","MelonSandbox.MelonPrivacyCover#OnDestroy","MelonSandbox.MelonProjectile#Trace","MelonSandbox.MelonProjectile#ClipAxis","MelonSandbox.MelonProjectile#init","MelonSandbox.MelonProjectile#Start","MelonSandbox.MelonProjectile#Update","MelonSandbox.MelonRagdoll#init","MelonSandbox.MelonRagdoll#Child","MelonSandbox.MelonRagdoll#SetLegJoint","MelonSandbox.MelonRagdoll#FitLegArtwork","MelonSandbox.MelonRagdoll#StretchArmSegment","MelonSandbox.MelonRagdoll#ConnectArmJoint","MelonSandbox.MelonRagdoll#Head#get","MelonSandbox.MelonRagdoll#Torso#get","MelonSandbox.MelonRagdoll#init","MelonSandbox.MelonRagdoll#Awake","MelonSandbox.MelonRagdoll#GetLimb","MelonSandbox.MelonRagdoll#BuildSprunky","MelonSandbox.MelonRagdoll#ApplySpriteSorting","MelonSandbox.MelonRagdoll#GroundFoot","MelonSandbox.MelonRagdoll#ConfigureLeg","MelonSandbox.MelonRagdoll#PoseSuspendedArm","MelonSandbox.MelonRagdoll#ConfigureInstance","MelonSandbox.MelonRagdoll#Build","MelonSandbox.MelonRagdoll#Joint","MelonSandbox.MelonRagdoll#Support","MelonSandbox.MelonRagdoll#Release","MelonSandbox.MelonRagdoll#ChangeInner","MelonSandbox.MelonRagdoll#BeginParade","MelonSandbox.MelonRagdoll#FixedUpdate","MelonSandbox.MelonRagdoll#LowerArms","MelonSandbox.MelonRagdoll#ResetVariantEffects","MelonSandbox.MelonRagdoll#Apply","MelonSandbox.MelonRagdoll#Reveal","MelonSandbox.MelonRagdoll#Electrocute","MelonSandbox.MelonRagdoll#Kill","MelonSandbox.MelonStage#init","MelonSandbox.MelonStage#Capture","MelonSandbox.MelonStage#Restore","MelonSandbox.MelonTool#Syringe#get","MelonSandbox.MelonTool#init","MelonSandbox.MelonTool#Awake","MelonSandbox.MelonTool#ResetForStage","MelonSandbox.MelonTool#ConfigurePlacement","MelonSandbox.MelonTool#Grab","MelonSandbox.MelonTool#Drag","MelonSandbox.MelonTool#Drop","MelonSandbox.MelonTool#FixedUpdate","MelonSandbox.MelonTool#Update","MelonSandbox.MelonTool#OnCollisionEnter2D","MelonSandbox.MelonTool#OnCollisionStay2D","MelonSandbox.MelonTool#Contact","Playable.GameManager#BackgroundMusic#get","Playable.GameManager#init","Playable.GameManager#ReparentEndGameButton","Playable.GameManager#Awake","Playable.GameManager#Start","Playable.GameManager#EndGame","Playable.GameManager#ShowCTA","Playable.GameManager#CountEvent","Playable.GameManager#CountdownEndGame","Playable.GameManager#IECountdownEndGame","Playable.GameManager#CreateSprite"]' ) ); }
+if ( TRACE ) { TRACE( JSON.parse( '["MelonSandbox.MelonAssets#ParseLayout","MelonSandbox.MelonAssets#Prepare","MelonSandbox.MelonAssets#Sprite","MelonSandbox.MelonAssets#Sound","MelonSandbox.MelonAssets#CharacterPrefab","MelonSandbox.MelonAssets#ToolPrefab","MelonSandbox.MelonAssets#Node","MelonSandbox.MelonAssets#Visual","MelonSandbox.MelonGame#FromPixels","MelonSandbox.MelonGame#IgnoreActiveCollision","MelonSandbox.MelonGame#Dispose","MelonSandbox.MelonGame#init","MelonSandbox.MelonGame#Awake","MelonSandbox.MelonGame#OnDestroy","MelonSandbox.MelonGame#Start","MelonSandbox.MelonGame#Initialize","MelonSandbox.MelonGame#LoadStage","MelonSandbox.MelonGame#BuildStagePreview","MelonSandbox.MelonGame#Spawn","MelonSandbox.MelonGame#Prop","MelonSandbox.MelonGame#CreateTool","MelonSandbox.MelonGame#CanSyringe","MelonSandbox.MelonGame#UseSyringe","MelonSandbox.MelonGame#SyringeRecovery","MelonSandbox.MelonGame#TargetDefeated","MelonSandbox.MelonGame#AdvanceAfter","MelonSandbox.MelonGame#NextTarget","MelonSandbox.MelonGame#GetTool","MelonSandbox.MelonGame#Fire","MelonSandbox.MelonGame#Particles","MelonSandbox.MelonGame#ReplacementMusic","MelonSandbox.MelonGame#Sound","MelonSandbox.MelonGame#Loop","MelonSandbox.MelonGame#TogglePause","MelonSandbox.MelonGame#ToggleAudio","MelonSandbox.MelonGame#Restart","MelonSandbox.MelonGame#UserInput","MelonSandbox.MelonGame#Update","MelonSandbox.MelonGame#OverUI","MelonSandbox.MelonGame#ReleasePointer","MelonSandbox.MelonGame#FitCamera","MelonSandbox.MelonGame#OnDisable","MelonSandbox.MelonHud#init","MelonSandbox.MelonHud#Build","MelonSandbox.MelonHud#LateUpdate","MelonSandbox.MelonHud#UpdateLayout","MelonSandbox.MelonHud#Label","MelonSandbox.MelonHud#Refresh","MelonSandbox.MelonHud#SetHint","MelonSandbox.MelonHud#HideHint","MelonSandbox.MelonHud#UpdateHint","MelonSandbox.MelonLimb#init","MelonSandbox.MelonLimb#init","MelonSandbox.MelonLimb#CaptureAppearance","MelonSandbox.MelonLimb#BeginDamage","MelonSandbox.MelonLimb#LateUpdate","MelonSandbox.MelonLimb#UpdateDamageCoordinates","MelonSandbox.MelonLimb#Cut","MelonSandbox.MelonLimb#Dissolve","MelonSandbox.MelonLimb#CompleteDissolve","MelonSandbox.MelonLimb#BurnSkin","MelonSandbox.MelonLimb#ShockAppearance","MelonSandbox.MelonLimb#Detach","MelonSandbox.MelonLimb#ResetDamage","MelonSandbox.MelonLimb#OnDestroy","MelonSandbox.MelonLimb#ReleaseDamageMaterial","MelonSandbox.MelonParticle#init","MelonSandbox.MelonParticle#Start","MelonSandbox.MelonParticle#Update","MelonSandbox.MelonPrivacyCover#init","MelonSandbox.MelonPrivacyCover#ConfigureSpriteUV","MelonSandbox.MelonPrivacyCover#SpriteWorldBounds","MelonSandbox.MelonPrivacyCover#Build","MelonSandbox.MelonPrivacyCover#SetHidden","MelonSandbox.MelonPrivacyCover#LateUpdate","MelonSandbox.MelonPrivacyCover#OnDisable","MelonSandbox.MelonPrivacyCover#OnDestroy","MelonSandbox.MelonProjectile#Trace","MelonSandbox.MelonProjectile#ClipAxis","MelonSandbox.MelonProjectile#init","MelonSandbox.MelonProjectile#Start","MelonSandbox.MelonProjectile#Update","MelonSandbox.MelonRagdoll#init","MelonSandbox.MelonRagdoll#Child","MelonSandbox.MelonRagdoll#IsRigSkin","MelonSandbox.MelonRagdoll#SetLegJoint","MelonSandbox.MelonRagdoll#FitLegArtwork","MelonSandbox.MelonRagdoll#FitForestArmSegment","MelonSandbox.MelonRagdoll#StretchArmSegment","MelonSandbox.MelonRagdoll#ConnectArmJoint","MelonSandbox.MelonRagdoll#Head#get","MelonSandbox.MelonRagdoll#Torso#get","MelonSandbox.MelonRagdoll#init","MelonSandbox.MelonRagdoll#Awake","MelonSandbox.MelonRagdoll#GetLimb","MelonSandbox.MelonRagdoll#BuildSprunky","MelonSandbox.MelonRagdoll#ApplySpriteSorting","MelonSandbox.MelonRagdoll#GroundFoot","MelonSandbox.MelonRagdoll#ConfigureLeg","MelonSandbox.MelonRagdoll#PoseSuspendedArm","MelonSandbox.MelonRagdoll#ConfigureInstance","MelonSandbox.MelonRagdoll#Build","MelonSandbox.MelonRagdoll#Joint","MelonSandbox.MelonRagdoll#Support","MelonSandbox.MelonRagdoll#Release","MelonSandbox.MelonRagdoll#ChangeInner","MelonSandbox.MelonRagdoll#BeginParade","MelonSandbox.MelonRagdoll#FixedUpdate","MelonSandbox.MelonRagdoll#LowerArms","MelonSandbox.MelonRagdoll#ResetVariantEffects","MelonSandbox.MelonRagdoll#Apply","MelonSandbox.MelonRagdoll#Reveal","MelonSandbox.MelonRagdoll#Electrocute","MelonSandbox.MelonRagdoll#Kill","MelonSandbox.MelonStage#init","MelonSandbox.MelonStage#Capture","MelonSandbox.MelonStage#Restore","MelonSandbox.MelonTool#Syringe#get","MelonSandbox.MelonTool#init","MelonSandbox.MelonTool#Awake","MelonSandbox.MelonTool#ResetForStage","MelonSandbox.MelonTool#ConfigurePlacement","MelonSandbox.MelonTool#Grab","MelonSandbox.MelonTool#Drag","MelonSandbox.MelonTool#Drop","MelonSandbox.MelonTool#FixedUpdate","MelonSandbox.MelonTool#Update","MelonSandbox.MelonTool#OnCollisionEnter2D","MelonSandbox.MelonTool#OnCollisionStay2D","MelonSandbox.MelonTool#Contact","Playable.GameManager#BackgroundMusic#get","Playable.GameManager#init","Playable.GameManager#ReparentEndGameButton","Playable.GameManager#Awake","Playable.GameManager#Start","Playable.GameManager#EndGame","Playable.GameManager#ShowCTA","Playable.GameManager#CountEvent","Playable.GameManager#CountdownEndGame","Playable.GameManager#IECountdownEndGame","Playable.GameManager#CreateSprite"]' ) ); }
 /**
- * @version 1.0.9798.29171
+ * @version 1.0.9825.30784
  * @copyright anton
  * @compiler Bridge.NET 17.9.42-luna
  */
@@ -330,7 +330,6 @@ if ( TRACE ) { TRACE( "MelonSandbox.MelonGame#Dispose", this ); }
             loop: null,
             selected: null,
             usedSyringes: null,
-            syringeBusy: false,
             lastInput: 0,
             stageGeneration: 0
         },
@@ -421,7 +420,7 @@ if ( TRACE ) { TRACE( "MelonSandbox.MelonGame#Initialize", this ); }
             LoadStage: function (stage) {
 if ( TRACE ) { TRACE( "MelonSandbox.MelonGame#LoadStage", this ); }
 
-                var $t, $t1, $t2, $t3, $t4;
+                var $t, $t1, $t2, $t3, $t4, $t5, $t6, $t7, $t8;
                 if (this.sceneStages == null || this.sceneStages.length !== 4 || !UnityEngine.Object.op_Implicit(this.sceneStages[0])) {
                     if (UnityEngine.Application.isPlaying) {
                         throw new System.InvalidOperationException.$ctor1("Prepare all four scene stages in the Editor before playing.");
@@ -437,7 +436,6 @@ if ( TRACE ) { TRACE( "MelonSandbox.MelonGame#LoadStage", this ); }
                 UnityEngine.Time.timeScale = 1;
                 this.Stage = Math.max(0, Math.min(stage, 3));
                 this.Defeated = 0;
-                this.syringeBusy = false;
                 for (var i = 0; i < 3; i = (i + 1) | 0) {
                     this.usedSyringes[i] = false;
                 }
@@ -528,6 +526,50 @@ if ( TRACE ) { TRACE( "MelonSandbox.MelonGame#LoadStage", this ); }
                         this.characters.getItem(i1).BeginParade();
                     }
                 }
+                // Ranged weapons only shoot projectiles; their bodies must not snag on characters.
+                $t5 = Bridge.getEnumerator(this.tools);
+                try {
+                    while ($t5.moveNext()) {
+                        var tool = $t5.Current;
+                        if (UnityEngine.Object.op_Implicit(tool) && (tool.kind === MelonSandbox.MelonToolKind.Flame || tool.kind === MelonSandbox.MelonToolKind.Rifle)) {
+                            $t6 = Bridge.getEnumerator(tool.GetComponentsInChildren(UnityEngine.Collider2D));
+                            try {
+                                while ($t6.moveNext()) {
+                                    var a2 = $t6.Current;
+                                    $t7 = Bridge.getEnumerator(this.characters);
+                                    try {
+                                        while ($t7.moveNext()) {
+                                            var character1 = $t7.Current;
+                                            $t8 = Bridge.getEnumerator(character1.GetComponentsInChildren(UnityEngine.Collider2D));
+                                            try {
+                                                while ($t8.moveNext()) {
+                                                    var b2 = $t8.Current;
+                                                    MelonSandbox.MelonGame.IgnoreActiveCollision(a2, b2);
+                                                }
+                                            } finally {
+                                                if (Bridge.is($t8, System.IDisposable)) {
+                                                    $t8.System$IDisposable$Dispose();
+                                                }
+                                            }
+                                        }
+                                    } finally {
+                                        if (Bridge.is($t7, System.IDisposable)) {
+                                            $t7.System$IDisposable$Dispose();
+                                        }
+                                    }
+                                }
+                            } finally {
+                                if (Bridge.is($t6, System.IDisposable)) {
+                                    $t6.System$IDisposable$Dispose();
+                                }
+                            }
+                        }
+                    }
+                } finally {
+                    if (Bridge.is($t5, System.IDisposable)) {
+                        $t5.System$IDisposable$Dispose();
+                    }
+                }
                 // Show the syringe/saw/rifle tutorial immediately when entering these stages.
                 this.lastInput = UnityEngine.Time.unscaledTime - (this.Stage < 3 ? 5.0 : 0.0);
                 if (UnityEngine.Object.op_Implicit(this.hud)) {
@@ -551,7 +593,6 @@ if ( TRACE ) { TRACE( "MelonSandbox.MelonGame#BuildStagePreview", this ); }
                 this.ReleasePointer();
                 this.Stage = Math.max(0, Math.min(stage, 3));
                 this.Defeated = 0;
-                this.syringeBusy = false;
                 for (var i = 0; i < 3; i = (i + 1) | 0) {
                     this.usedSyringes[i] = false;
                 }
@@ -575,33 +616,33 @@ if ( TRACE ) { TRACE( "MelonSandbox.MelonGame#BuildStagePreview", this ); }
                     for (var i2 = 0; i2 < 4; i2 = (i2 + 1) | 0) {
                         this.assets.Visual("msg_stolb", this.world, MelonSandbox.MelonGame.FromPixels(((-50 + Bridge.Int.mul(250, i2)) | 0), 679.5), new pc.Vec2( 1.12, 8.17 ), -20);
                     }
-                    this.Spawn("Sprunky_1", new pc.Vec2( -50, 0 ), true);
-                    this.Spawn("Sprunky_2", new pc.Vec2( 200, 0 ), true);
-                    this.Spawn("Sprunky_3", new pc.Vec2( 450, 0 ), true);
+                    this.Spawn("Forest_PinkBeanie", new pc.Vec2( -21, 0 ), true);
+                    this.Spawn("Forest_RedCheckered", new pc.Vec2( 229, 0 ), true);
+                    this.Spawn("Forest_Deer", new pc.Vec2( 483, 0 ), true);
                 } else if (this.Stage === 1) {
                     var skins = System.Array.init([
-                        "Sprunky_4", 
-                        "Sprunky_5", 
-                        "Sprunky_1", 
-                        "Sprunky_2"
+                        "Forest_PinkBeanie", 
+                        "Forest_RedCheckered", 
+                        "Forest_Deer", 
+                        "Forest_PinkBeanie"
                     ], System.String);
                     for (var i3 = 0; i3 < skins.length; i3 = (i3 + 1) | 0) {
-                        this.Spawn(skins[i3], new pc.Vec2( ((-200 + Bridge.Int.mul(i3, 200)) | 0), 0 ), false);
+                        this.Spawn(skins[i3], new pc.Vec2( ((-280 + Bridge.Int.mul(i3, 270)) | 0), 0 ), false);
                     }
                     this.CreateTool(MelonSandbox.MelonToolKind.Saw, MelonSandbox.MelonGame.FromPixels(-400, 600));
                     this.CreateTool(MelonSandbox.MelonToolKind.Shock, MelonSandbox.MelonGame.FromPixels(900, 800));
                 } else if (this.Stage === 2) {
                     var skins1 = System.Array.init([
-                        "Sprunky_2", 
-                        "Sprunky_3", 
-                        "Sprunky_4", 
-                        "Sprunky_5", 
-                        "Sprunky_1", 
-                        "Sprunky_2", 
-                        "Sprunky_3"
+                        "Forest_AlienEnemy", 
+                        "Forest_BlueEnemy", 
+                        "Forest_FrogEnemy", 
+                        "Forest_WhiteWolfEnemy", 
+                        "Forest_PinkBeanie", 
+                        "Forest_RedCheckered", 
+                        "Forest_Deer"
                     ], System.String);
                     for (var i4 = 0; i4 < skins1.length; i4 = (i4 + 1) | 0) {
-                        var c = this.Spawn(skins1[i4], new pc.Vec2( ((-200 + Bridge.Int.mul((i4 % 4), 150)) | 0), i4 >= 4 ? -1045 : 0 ), false);
+                        var c = this.Spawn(skins1[i4], new pc.Vec2( i4 >= 4 ? ((-170 + Bridge.Int.mul((((i4 - 4) | 0)), 280)) | 0) : ((-120 + Bridge.Int.mul(i4, 280)) | 0), i4 >= 4 ? -1045 : 0 ), false);
                         c.targetGroup = i4 >= 4 ? 1 : 0;
                     }
                     var names = function (_o1) {
@@ -631,18 +672,18 @@ if ( TRACE ) { TRACE( "MelonSandbox.MelonGame#BuildStagePreview", this ); }
                         if (Bridge.is($t, System.IDisposable)) {
                             $t.System$IDisposable$Dispose();
                         }
-                    }
-                    this.CreateTool(MelonSandbox.MelonToolKind.Flame, MelonSandbox.MelonGame.FromPixels(-300, 800));
-                    this.CreateTool(MelonSandbox.MelonToolKind.Rifle, MelonSandbox.MelonGame.FromPixels(730, -100));
+                    } // Keep both weapons clear of the characters on their floor.
+                    this.CreateTool(MelonSandbox.MelonToolKind.Flame, MelonSandbox.MelonGame.FromPixels(-380, 800));
+                    this.CreateTool(MelonSandbox.MelonToolKind.Rifle, MelonSandbox.MelonGame.FromPixels(970, -100));
                 } else {
                     var parade = System.Array.init([
-                        "Sprunky_5", 
-                        "Sprunky_1", 
-                        "Sprunky_2", 
-                        "Sprunky_3", 
-                        "Sprunky_4", 
-                        "Sprunky_5", 
-                        "Sprunky_1"
+                        "Forest_PinkBeanie", 
+                        "Forest_RedCheckered", 
+                        "Forest_Deer", 
+                        "Forest_AlienEnemy", 
+                        "Forest_BlueEnemy", 
+                        "Forest_FrogEnemy", 
+                        "Forest_WhiteWolfEnemy"
                     ], System.String);
                     for (var i5 = 0; i5 < parade.length; i5 = (i5 + 1) | 0) {
                         this.Spawn(parade[i5], new pc.Vec2( Bridge.Int.mul(-500, (((((parade.length - 1) | 0) - i5) | 0))), 0 ), false).BeginParade();
@@ -662,7 +703,7 @@ if ( TRACE ) { TRACE( "MelonSandbox.MelonGame#Spawn", this ); }
 
                 var $t, $t1, $t2;
                 var c;
-                var sprunky = System.String.startsWith(skin, "Sprunky_");
+                var sprunky = MelonSandbox.MelonRagdoll.IsRigSkin(skin);
                 var prefab = sprunky ? UnityEngine.Resources.Load(UnityEngine.GameObject, "ragdollprefabs/" + (skin || "")) : UnityEngine.Application.isPlaying ? this.assets.CharacterPrefab(skin) : null;
                 if (sprunky) {
                     if (!UnityEngine.Object.op_Implicit(prefab)) {
@@ -793,7 +834,7 @@ if ( TRACE ) { TRACE( "MelonSandbox.MelonGame#CreateTool", this ); }
             CanSyringe: function (i) {
 if ( TRACE ) { TRACE( "MelonSandbox.MelonGame#CanSyringe", this ); }
 
-                return this.Stage === 0 && !this.syringeBusy && !this.usedSyringes[i];
+                return this.Stage === 0 && !this.usedSyringes[i];
             },
             /*MelonSandbox.MelonGame.CanSyringe end.*/
 
@@ -806,7 +847,6 @@ if ( TRACE ) { TRACE( "MelonSandbox.MelonGame#UseSyringe", this ); }
                     return false;
                 }
                 this.UserInput();
-                this.syringeBusy = true;
                 this.usedSyringes[i] = true;
                 var target = this.characters.getItem(i);
                 var aim = target.Torso.body.position.$clone();
@@ -874,7 +914,6 @@ if ( TRACE ) { TRACE( "MelonSandbox.MelonGame#SyringeRecovery", this ); }
                                             this.tools.remove(tool);
                                             UnityEngine.MonoBehaviour.Destroy(tool.gameObject);
                                             this.usedSyringes[index] = false;
-                                            this.syringeBusy = false;
                                             this.hud.Refresh();
                                         }
 
@@ -935,8 +974,7 @@ if ( TRACE ) { TRACE( "MelonSandbox.MelonGame#AdvanceAfter", this ); }
                                     return false;
                                 }
                                 case 3: {
-                                    this.syringeBusy = false;
-                                        if (this.Defeated >= this.characters.Count && this.Stage < 3) {
+                                    if (this.Defeated >= this.characters.Count && this.Stage < 3) {
                                             this.LoadStage(((this.Stage + 1) | 0));
                                         } else {
                                             this.hud.Refresh();
@@ -1012,9 +1050,9 @@ if ( TRACE ) { TRACE( "MelonSandbox.MelonGame#Fire", this ); }
                 p.game = this;
                 p.kind = source.kind;
                 p.velocity = direction.$clone().scale( (source.kind === MelonSandbox.MelonToolKind.Rifle ? 40 : 12) );
+                // fire.mp3 is a 2.8s burning loop; restarting it every 0.11s stacked ~25 copies into noise.
                 if (source.kind === MelonSandbox.MelonToolKind.Rifle) {
-                    this.Sound("fire", 0.32);
-                    this.Particles("msg_flame", start, 1, new pc.Color( 1, 1, 1, 1 ));
+                    this.Sound("shot", 0.45);
                 }
             },
             /*MelonSandbox.MelonGame.Fire end.*/
@@ -2248,6 +2286,14 @@ if ( TRACE ) { TRACE( "MelonSandbox.MelonRagdoll#Child", this ); }
                 },
                 /*MelonSandbox.MelonRagdoll.Child:static end.*/
 
+                /*MelonSandbox.MelonRagdoll.IsRigSkin:static start.*/
+                IsRigSkin: function (skin) {
+if ( TRACE ) { TRACE( "MelonSandbox.MelonRagdoll#IsRigSkin", this ); }
+
+                    return System.String.startsWith(skin, "Sprunky_") || System.String.startsWith(skin, "Forest_");
+                },
+                /*MelonSandbox.MelonRagdoll.IsRigSkin:static end.*/
+
                 /*MelonSandbox.MelonRagdoll.SetLegJoint:static start.*/
                 SetLegJoint: function (joint, point, min, max) {
 if ( TRACE ) { TRACE( "MelonSandbox.MelonRagdoll#SetLegJoint", this ); }
@@ -2298,6 +2344,24 @@ if ( TRACE ) { TRACE( "MelonSandbox.MelonRagdoll#FitLegArtwork", this ); }
                 },
                 /*MelonSandbox.MelonRagdoll.FitLegArtwork:static end.*/
 
+                /*MelonSandbox.MelonRagdoll.FitForestArmSegment:static start.*/
+                FitForestArmSegment: function (limb, localStart, localEnd, start, end) {
+if ( TRACE ) { TRACE( "MelonSandbox.MelonRagdoll#FitForestArmSegment", this ); }
+
+                    var direction = end.$clone().sub( start );
+                    var length = limb.transform.TransformVector(UnityEngine.Vector3.FromVector2(localEnd.$clone().sub( localStart ))).length();
+                    if (length < 0.0001 || direction.lengthSq() < 1E-08) {
+                        return;
+                    }
+                    var scale = limb.transform.localScale.$clone();
+                    scale.y *= direction.length() / length;
+                    limb.transform.localScale = scale.$clone();
+                    limb.transform.rotation = new pc.Quat().setFromEulerAngles_Unity( 0, 0, 90.0 + Math.atan2(direction.y, direction.x) * UnityEngine.Mathf.Rad2Deg );
+                    limb.transform.position = limb.transform.position.$clone().add( UnityEngine.Vector3.FromVector2(start).sub( limb.transform.TransformPoint$1(UnityEngine.Vector3.FromVector2(localStart)) ) );
+                    limb.dimensions = UnityEngine.Vector2.FromVector3(limb.skin.bounds.halfExtents.$clone().scale( 2 ).$clone());
+                },
+                /*MelonSandbox.MelonRagdoll.FitForestArmSegment:static end.*/
+
                 /*MelonSandbox.MelonRagdoll.StretchArmSegment:static start.*/
                 StretchArmSegment: function (limb, start, end) {
 if ( TRACE ) { TRACE( "MelonSandbox.MelonRagdoll#StretchArmSegment", this ); }
@@ -2319,17 +2383,20 @@ if ( TRACE ) { TRACE( "MelonSandbox.MelonRagdoll#StretchArmSegment", this ); }
                 /*MelonSandbox.MelonRagdoll.StretchArmSegment:static end.*/
 
                 /*MelonSandbox.MelonRagdoll.ConnectArmJoint:static start.*/
-                ConnectArmJoint: function (limb, connected, point) {
+                ConnectArmJoint: function (limb, connected, point, keepLimits) {
 if ( TRACE ) { TRACE( "MelonSandbox.MelonRagdoll#ConnectArmJoint", this ); }
 
                     var $t;
+                    if (keepLimits === void 0) { keepLimits = false; }
                     var joint = limb.GetComponent(UnityEngine.HingeJoint2D);
                     joint.autoConfigureConnectedAnchor = false;
                     joint.connectedBody = connected;
                     joint.anchor = UnityEngine.Vector2.FromVector3(limb.transform.InverseTransformPoint(UnityEngine.Vector3.FromVector2(point)));
                     joint.connectedAnchor = UnityEngine.Vector2.FromVector3(connected.transform.InverseTransformPoint(UnityEngine.Vector3.FromVector2(point)));
                     joint.useLimits = true;
-                    joint.limits = ($t = new UnityEngine.JointAngleLimits2D(), $t.min = -10, $t.max = 10, $t);
+                    if (!keepLimits) {
+                        joint.limits = ($t = new UnityEngine.JointAngleLimits2D(), $t.min = -10, $t.max = 10, $t);
+                    }
                 },
                 /*MelonSandbox.MelonRagdoll.ConnectArmJoint:static end.*/
 
@@ -2677,13 +2744,26 @@ if ( TRACE ) { TRACE( "MelonSandbox.MelonRagdoll#PoseSuspendedArm", this ); }
                 var shoulder = upper.GetComponent(UnityEngine.HingeJoint2D);
                 var pivot = UnityEngine.Vector2.FromVector3(shoulder.connectedBody.transform.TransformPoint$1(UnityEngine.Vector3.FromVector2(shoulder.connectedAnchor)));
                 var elbow = new pc.Vec2().lerp( pivot, target, 0.5 );
-                elbow.x += Bridge.referenceEquals(side, "r_") ? -0.15 : 0.15;
-                MelonSandbox.MelonRagdoll.StretchArmSegment(upper, pivot, elbow);
-                MelonSandbox.MelonRagdoll.StretchArmSegment(lower, elbow, target);
+                var isForest = System.String.startsWith(this.skinName, "Forest_");
+                if (isForest) {
+                    // Straight arm: the elbow sits on the shoulder-hand line, split by segment length.
+                    var elbowJoint = lower.GetComponent(UnityEngine.HingeJoint2D);
+                    var wrist = hand.GetComponent(UnityEngine.HingeJoint2D);
+                    var upperLength = upper.transform.TransformVector(UnityEngine.Vector3.FromVector2(elbowJoint.connectedAnchor.$clone().sub( shoulder.anchor ))).length();
+                    var lowerLength = lower.transform.TransformVector(UnityEngine.Vector3.FromVector2(wrist.connectedAnchor.$clone().sub( elbowJoint.anchor ))).length();
+                    var ratio = upperLength + lowerLength > 0.0001 ? upperLength / (upperLength + lowerLength) : 0.5;
+                    elbow = new pc.Vec2().lerp( pivot, target, ratio );
+                    MelonSandbox.MelonRagdoll.FitForestArmSegment(upper, shoulder.anchor, elbowJoint.connectedAnchor, pivot, elbow);
+                    MelonSandbox.MelonRagdoll.FitForestArmSegment(lower, elbowJoint.anchor, wrist.connectedAnchor, elbow, target);
+                } else {
+                    elbow.x += Bridge.referenceEquals(side, "r_") ? -0.15 : 0.15;
+                    MelonSandbox.MelonRagdoll.StretchArmSegment(upper, pivot, elbow);
+                    MelonSandbox.MelonRagdoll.StretchArmSegment(lower, elbow, target);
+                }
                 hand.transform.position = UnityEngine.Vector3.FromVector2(target.$clone());
                 hand.transform.rotation = lower.transform.rotation.$clone();
                 MelonSandbox.MelonRagdoll.ConnectArmJoint(upper, shoulder.connectedBody, pivot);
-                MelonSandbox.MelonRagdoll.ConnectArmJoint(lower, upper.body, elbow);
+                MelonSandbox.MelonRagdoll.ConnectArmJoint(lower, upper.body, elbow, isForest);
                 MelonSandbox.MelonRagdoll.ConnectArmJoint(hand, lower.body, target);
             },
             /*MelonSandbox.MelonRagdoll.PoseSuspendedArm end.*/
@@ -2874,7 +2954,7 @@ if ( TRACE ) { TRACE( "MelonSandbox.MelonRagdoll#Release", this ); }
 if ( TRACE ) { TRACE( "MelonSandbox.MelonRagdoll#ChangeInner", this ); }
 
                 var $t, $t1;
-                if (System.String.startsWith(this.skinName, "Sprunky_")) {
+                if (MelonSandbox.MelonRagdoll.IsRigSkin(this.skinName)) {
                     $t = Bridge.getEnumerator(this.limbs);
                     try {
                         while ($t.moveNext()) {
@@ -2953,7 +3033,7 @@ if ( TRACE ) { TRACE( "MelonSandbox.MelonRagdoll#FixedUpdate", this ); }
 if ( TRACE ) { TRACE( "MelonSandbox.MelonRagdoll#LowerArms", this ); }
 
                 var $t, $t1, $t2, $t3;
-                if (!System.String.startsWith(this.skinName, "Sprunky_")) {
+                if (!MelonSandbox.MelonRagdoll.IsRigSkin(this.skinName)) {
                     return;
                 }
                 $t = Bridge.getEnumerator(this.supports);
@@ -3045,7 +3125,7 @@ if ( TRACE ) { TRACE( "MelonSandbox.MelonRagdoll#Apply", this ); }
                 if (this.dead) {
                     return;
                 }
-                if (this.game.coverSprunkyOnHit && !UnityEngine.Object.op_Implicit(this.privacyCover) && System.String.startsWith(this.skinName, "Sprunky_")) {
+                if (this.game.coverSprunkyOnHit && !UnityEngine.Object.op_Implicit(this.privacyCover) && MelonSandbox.MelonRagdoll.IsRigSkin(this.skinName)) {
                     var cover = new UnityEngine.GameObject.$ctor2("Sprunky privacy cover");
                     cover.transform.SetParent(this.game.world, false);
                     this.privacyCover = cover.AddComponent(MelonSandbox.MelonPrivacyCover);
@@ -4013,7 +4093,7 @@ if ( TRACE ) { TRACE( "Playable.GameManager#CreateSprite", this ); }
     /*MelonSandbox.MelonAssets end.*/
 
     /*MelonSandbox.MelonGame start.*/
-    $m("MelonSandbox.MelonGame", function () { return {"att":1048833,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"AdvanceAfter","t":8,"pi":[{"n":"delay","pt":$n[0].Single,"ps":0},{"n":"generation","pt":$n[0].Int32,"ps":1}],"sn":"AdvanceAfter","rt":$n[4].IEnumerator,"p":[$n[0].Single,$n[0].Int32]},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":2,"n":"BuildStagePreview","t":8,"pi":[{"n":"stage","pt":$n[0].Int32,"ps":0}],"sn":"BuildStagePreview","rt":$n[0].Void,"p":[$n[0].Int32]},{"a":2,"n":"CanSyringe","t":8,"pi":[{"n":"i","pt":$n[0].Int32,"ps":0}],"sn":"CanSyringe","rt":$n[0].Boolean,"p":[$n[0].Int32],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"CreateTool","t":8,"pi":[{"n":"kind","pt":$n[2].MelonToolKind,"ps":0},{"n":"point","pt":$n[1].Vector2,"ps":1}],"sn":"CreateTool","rt":$n[2].MelonTool,"p":[$n[2].MelonToolKind,$n[1].Vector2]},{"a":2,"n":"Dispose","is":true,"t":8,"pi":[{"n":"go","pt":$n[1].GameObject,"ps":0}],"sn":"Dispose","rt":$n[0].Void,"p":[$n[1].GameObject]},{"a":2,"n":"Fire","t":8,"pi":[{"n":"source","pt":$n[2].MelonTool,"ps":0},{"n":"target","pt":$n[2].MelonRagdoll,"ps":1}],"sn":"Fire","rt":$n[0].Void,"p":[$n[2].MelonTool,$n[2].MelonRagdoll]},{"a":1,"n":"FitCamera","t":8,"sn":"FitCamera","rt":$n[0].Void},{"a":2,"n":"FromPixels","is":true,"t":8,"pi":[{"n":"x","pt":$n[0].Single,"ps":0},{"n":"y","pt":$n[0].Single,"ps":1}],"sn":"FromPixels","rt":$n[1].Vector2,"p":[$n[0].Single,$n[0].Single]},{"a":2,"n":"GetTool","t":8,"pi":[{"n":"kind","pt":$n[2].MelonToolKind,"ps":0}],"sn":"GetTool","rt":$n[2].MelonTool,"p":[$n[2].MelonToolKind]},{"a":2,"n":"IgnoreActiveCollision","is":true,"t":8,"pi":[{"n":"a","pt":$n[1].Collider2D,"ps":0},{"n":"b","pt":$n[1].Collider2D,"ps":1}],"sn":"IgnoreActiveCollision","rt":$n[0].Void,"p":[$n[1].Collider2D,$n[1].Collider2D]},{"a":2,"n":"Initialize","t":8,"pi":[{"n":"runtime","pt":$n[0].Boolean,"ps":0}],"sn":"Initialize","rt":$n[0].Void,"p":[$n[0].Boolean]},{"a":2,"n":"LoadStage","t":8,"pi":[{"n":"stage","pt":$n[0].Int32,"ps":0}],"sn":"LoadStage","rt":$n[0].Void,"p":[$n[0].Int32]},{"a":2,"n":"Loop","t":8,"pi":[{"n":"name","pt":$n[0].String,"ps":0}],"sn":"Loop","rt":$n[0].Void,"p":[$n[0].String]},{"a":2,"n":"NextTarget","t":8,"pi":[{"n":"group","pt":$n[0].Int32,"ps":0}],"sn":"NextTarget","rt":$n[2].MelonRagdoll,"p":[$n[0].Int32]},{"a":1,"n":"OnDestroy","t":8,"sn":"OnDestroy","rt":$n[0].Void},{"a":1,"n":"OnDisable","t":8,"sn":"OnDisable","rt":$n[0].Void},{"a":1,"n":"OverUI","t":8,"pi":[{"n":"screen","pt":$n[1].Vector2,"ps":0}],"sn":"OverUI","rt":$n[0].Boolean,"p":[$n[1].Vector2],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"Particles","t":8,"pi":[{"n":"sprite","pt":$n[0].String,"ps":0},{"n":"position","pt":$n[1].Vector2,"ps":1},{"n":"count","pt":$n[0].Int32,"ps":2},{"n":"color","pt":$n[1].Color,"ps":3}],"sn":"Particles","rt":$n[0].Void,"p":[$n[0].String,$n[1].Vector2,$n[0].Int32,$n[1].Color]},{"a":1,"n":"Prop","t":8,"pi":[{"n":"key","pt":$n[0].String,"ps":0},{"n":"position","pt":$n[1].Vector2,"ps":1},{"n":"isStatic","pt":$n[0].Boolean,"ps":2}],"sn":"Prop","rt":$n[0].Void,"p":[$n[0].String,$n[1].Vector2,$n[0].Boolean]},{"a":1,"n":"ReleasePointer","t":8,"sn":"ReleasePointer","rt":$n[0].Void},{"a":1,"n":"ReplacementMusic","t":8,"sn":"ReplacementMusic","rt":$n[1].AudioClip},{"a":2,"n":"Restart","t":8,"sn":"Restart","rt":$n[0].Void},{"a":2,"n":"Sound","t":8,"pi":[{"n":"name","pt":$n[0].String,"ps":0},{"n":"volume","dv":1.0,"o":true,"pt":$n[0].Single,"ps":1}],"sn":"Sound","rt":$n[0].Void,"p":[$n[0].String,$n[0].Single]},{"a":2,"n":"Spawn","t":8,"pi":[{"n":"skin","pt":$n[0].String,"ps":0},{"n":"offset","pt":$n[1].Vector2,"ps":1},{"n":"suspended","pt":$n[0].Boolean,"ps":2}],"sn":"Spawn","rt":$n[2].MelonRagdoll,"p":[$n[0].String,$n[1].Vector2,$n[0].Boolean]},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"SyringeRecovery","t":8,"pi":[{"n":"tool","pt":$n[2].MelonTool,"ps":0},{"n":"index","pt":$n[0].Int32,"ps":1},{"n":"generation","pt":$n[0].Int32,"ps":2}],"sn":"SyringeRecovery","rt":$n[4].IEnumerator,"p":[$n[2].MelonTool,$n[0].Int32,$n[0].Int32]},{"a":2,"n":"TargetDefeated","t":8,"pi":[{"n":"target","pt":$n[2].MelonRagdoll,"ps":0},{"n":"delay","pt":$n[0].Single,"ps":1}],"sn":"TargetDefeated","rt":$n[0].Void,"p":[$n[2].MelonRagdoll,$n[0].Single]},{"a":2,"n":"ToggleAudio","t":8,"sn":"ToggleAudio","rt":$n[0].Void},{"a":2,"n":"TogglePause","t":8,"sn":"TogglePause","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":2,"n":"UseSyringe","t":8,"pi":[{"n":"i","pt":$n[0].Int32,"ps":0}],"sn":"UseSyringe","rt":$n[0].Boolean,"p":[$n[0].Int32],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"UserInput","t":8,"sn":"UserInput","rt":$n[0].Void},{"a":2,"n":"Defeated","t":16,"rt":$n[0].Int32,"g":{"a":2,"n":"get_Defeated","t":8,"rt":$n[0].Int32,"fg":"Defeated","box":function ($v) { return Bridge.box($v, System.Int32);}},"s":{"a":1,"n":"set_Defeated","t":8,"p":[$n[0].Int32],"rt":$n[0].Void,"fs":"Defeated"},"fn":"Defeated"},{"a":2,"n":"Instance","is":true,"t":16,"rt":$n[2].MelonGame,"g":{"a":2,"n":"get_Instance","t":8,"rt":$n[2].MelonGame,"fg":"Instance","is":true},"s":{"a":1,"n":"set_Instance","t":8,"p":[$n[2].MelonGame],"rt":$n[0].Void,"fs":"Instance","is":true},"fn":"Instance"},{"a":2,"n":"Paused","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_Paused","t":8,"rt":$n[0].Boolean,"fg":"Paused","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"s":{"a":1,"n":"set_Paused","t":8,"p":[$n[0].Boolean],"rt":$n[0].Void,"fs":"Paused"},"fn":"Paused"},{"a":2,"n":"Stage","t":16,"rt":$n[0].Int32,"g":{"a":2,"n":"get_Stage","t":8,"rt":$n[0].Int32,"fg":"Stage","box":function ($v) { return Bridge.box($v, System.Int32);}},"s":{"a":1,"n":"set_Stage","t":8,"p":[$n[0].Int32],"rt":$n[0].Void,"fs":"Stage"},"fn":"Stage"},{"at":[new UnityEngine.HeaderAttribute("Luna variants"),new UnityEngine.LunaPlaygroundFieldAttribute("AppLovin", -1, null, false, null),new UnityEngine.TooltipAttribute("Only open the store after the endgame block button is clicked.")],"a":2,"n":"appLovin","t":4,"rt":$n[0].Boolean,"sn":"appLovin","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"assets","t":4,"rt":$n[2].MelonAssets,"sn":"assets"},{"a":2,"n":"background","t":4,"rt":$n[1].SpriteRenderer,"sn":"background"},{"a":2,"n":"characters","t":4,"rt":$n[3].List$1(MelonSandbox.MelonRagdoll),"sn":"characters","ro":true},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Cover Sprunky on item hit", -1, null, false, null)],"a":2,"n":"coverSprunkyOnHit","t":4,"rt":$n[0].Boolean,"sn":"coverSprunkyOnHit","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"effects","t":4,"rt":$n[1].AudioSource,"sn":"effects"},{"a":2,"n":"gameCamera","t":4,"rt":$n[1].Camera,"sn":"gameCamera"},{"a":2,"n":"hud","t":4,"rt":$n[2].MelonHud,"sn":"hud"},{"a":1,"n":"lastInput","t":4,"rt":$n[0].Single,"sn":"lastInput","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"loop","t":4,"rt":$n[1].AudioSource,"sn":"loop"},{"at":[new UnityEngine.TooltipAttribute("Extra world-space margin around the full Sprunky mosaic region.")],"a":2,"n":"mosaicPadding","t":4,"rt":$n[0].Single,"sn":"mosaicPadding","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"music","t":4,"rt":$n[1].AudioSource,"sn":"music"},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Mute SFX and replace music", -1, null, false, null)],"a":2,"n":"muteSfxAndReplaceMusic","t":4,"rt":$n[0].Boolean,"sn":"muteSfxAndReplaceMusic","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"sceneStages","t":4,"rt":System.Array.type(MelonSandbox.MelonStage),"sn":"sceneStages"},{"a":1,"n":"selected","t":4,"rt":$n[2].MelonTool,"sn":"selected"},{"a":1,"n":"stageGeneration","t":4,"rt":$n[0].Int32,"sn":"stageGeneration","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Stage 1 arms down", -1, null, false, null)],"a":2,"n":"stageOneArmsDown","t":4,"rt":$n[0].Boolean,"sn":"stageOneArmsDown","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.RangeAttribute(0.0, 3.0)],"a":2,"n":"startingStage","t":4,"rt":$n[0].Int32,"sn":"startingStage","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"syringeBusy","t":4,"rt":$n[0].Boolean,"sn":"syringeBusy","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"tools","t":4,"rt":$n[3].List$1(MelonSandbox.MelonTool),"sn":"tools","ro":true},{"a":1,"n":"usedSyringes","t":4,"rt":$n[0].Array.type(System.Boolean),"sn":"usedSyringes","ro":true},{"a":2,"n":"world","t":4,"rt":$n[1].Transform,"sn":"world"},{"a":1,"backing":true,"n":"<Defeated>k__BackingField","t":4,"rt":$n[0].Int32,"sn":"Defeated","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"backing":true,"n":"<Instance>k__BackingField","is":true,"t":4,"rt":$n[2].MelonGame,"sn":"Instance"},{"a":1,"backing":true,"n":"<Paused>k__BackingField","t":4,"rt":$n[0].Boolean,"sn":"Paused","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"backing":true,"n":"<Stage>k__BackingField","t":4,"rt":$n[0].Int32,"sn":"Stage","box":function ($v) { return Bridge.box($v, System.Int32);}}]}; }, $n);
+    $m("MelonSandbox.MelonGame", function () { return {"att":1048833,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"AdvanceAfter","t":8,"pi":[{"n":"delay","pt":$n[0].Single,"ps":0},{"n":"generation","pt":$n[0].Int32,"ps":1}],"sn":"AdvanceAfter","rt":$n[4].IEnumerator,"p":[$n[0].Single,$n[0].Int32]},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":2,"n":"BuildStagePreview","t":8,"pi":[{"n":"stage","pt":$n[0].Int32,"ps":0}],"sn":"BuildStagePreview","rt":$n[0].Void,"p":[$n[0].Int32]},{"a":2,"n":"CanSyringe","t":8,"pi":[{"n":"i","pt":$n[0].Int32,"ps":0}],"sn":"CanSyringe","rt":$n[0].Boolean,"p":[$n[0].Int32],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"CreateTool","t":8,"pi":[{"n":"kind","pt":$n[2].MelonToolKind,"ps":0},{"n":"point","pt":$n[1].Vector2,"ps":1}],"sn":"CreateTool","rt":$n[2].MelonTool,"p":[$n[2].MelonToolKind,$n[1].Vector2]},{"a":2,"n":"Dispose","is":true,"t":8,"pi":[{"n":"go","pt":$n[1].GameObject,"ps":0}],"sn":"Dispose","rt":$n[0].Void,"p":[$n[1].GameObject]},{"a":2,"n":"Fire","t":8,"pi":[{"n":"source","pt":$n[2].MelonTool,"ps":0},{"n":"target","pt":$n[2].MelonRagdoll,"ps":1}],"sn":"Fire","rt":$n[0].Void,"p":[$n[2].MelonTool,$n[2].MelonRagdoll]},{"a":1,"n":"FitCamera","t":8,"sn":"FitCamera","rt":$n[0].Void},{"a":2,"n":"FromPixels","is":true,"t":8,"pi":[{"n":"x","pt":$n[0].Single,"ps":0},{"n":"y","pt":$n[0].Single,"ps":1}],"sn":"FromPixels","rt":$n[1].Vector2,"p":[$n[0].Single,$n[0].Single]},{"a":2,"n":"GetTool","t":8,"pi":[{"n":"kind","pt":$n[2].MelonToolKind,"ps":0}],"sn":"GetTool","rt":$n[2].MelonTool,"p":[$n[2].MelonToolKind]},{"a":2,"n":"IgnoreActiveCollision","is":true,"t":8,"pi":[{"n":"a","pt":$n[1].Collider2D,"ps":0},{"n":"b","pt":$n[1].Collider2D,"ps":1}],"sn":"IgnoreActiveCollision","rt":$n[0].Void,"p":[$n[1].Collider2D,$n[1].Collider2D]},{"a":2,"n":"Initialize","t":8,"pi":[{"n":"runtime","pt":$n[0].Boolean,"ps":0}],"sn":"Initialize","rt":$n[0].Void,"p":[$n[0].Boolean]},{"a":2,"n":"LoadStage","t":8,"pi":[{"n":"stage","pt":$n[0].Int32,"ps":0}],"sn":"LoadStage","rt":$n[0].Void,"p":[$n[0].Int32]},{"a":2,"n":"Loop","t":8,"pi":[{"n":"name","pt":$n[0].String,"ps":0}],"sn":"Loop","rt":$n[0].Void,"p":[$n[0].String]},{"a":2,"n":"NextTarget","t":8,"pi":[{"n":"group","pt":$n[0].Int32,"ps":0}],"sn":"NextTarget","rt":$n[2].MelonRagdoll,"p":[$n[0].Int32]},{"a":1,"n":"OnDestroy","t":8,"sn":"OnDestroy","rt":$n[0].Void},{"a":1,"n":"OnDisable","t":8,"sn":"OnDisable","rt":$n[0].Void},{"a":1,"n":"OverUI","t":8,"pi":[{"n":"screen","pt":$n[1].Vector2,"ps":0}],"sn":"OverUI","rt":$n[0].Boolean,"p":[$n[1].Vector2],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"Particles","t":8,"pi":[{"n":"sprite","pt":$n[0].String,"ps":0},{"n":"position","pt":$n[1].Vector2,"ps":1},{"n":"count","pt":$n[0].Int32,"ps":2},{"n":"color","pt":$n[1].Color,"ps":3}],"sn":"Particles","rt":$n[0].Void,"p":[$n[0].String,$n[1].Vector2,$n[0].Int32,$n[1].Color]},{"a":1,"n":"Prop","t":8,"pi":[{"n":"key","pt":$n[0].String,"ps":0},{"n":"position","pt":$n[1].Vector2,"ps":1},{"n":"isStatic","pt":$n[0].Boolean,"ps":2}],"sn":"Prop","rt":$n[0].Void,"p":[$n[0].String,$n[1].Vector2,$n[0].Boolean]},{"a":1,"n":"ReleasePointer","t":8,"sn":"ReleasePointer","rt":$n[0].Void},{"a":1,"n":"ReplacementMusic","t":8,"sn":"ReplacementMusic","rt":$n[1].AudioClip},{"a":2,"n":"Restart","t":8,"sn":"Restart","rt":$n[0].Void},{"a":2,"n":"Sound","t":8,"pi":[{"n":"name","pt":$n[0].String,"ps":0},{"n":"volume","dv":1.0,"o":true,"pt":$n[0].Single,"ps":1}],"sn":"Sound","rt":$n[0].Void,"p":[$n[0].String,$n[0].Single]},{"a":2,"n":"Spawn","t":8,"pi":[{"n":"skin","pt":$n[0].String,"ps":0},{"n":"offset","pt":$n[1].Vector2,"ps":1},{"n":"suspended","pt":$n[0].Boolean,"ps":2}],"sn":"Spawn","rt":$n[2].MelonRagdoll,"p":[$n[0].String,$n[1].Vector2,$n[0].Boolean]},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"SyringeRecovery","t":8,"pi":[{"n":"tool","pt":$n[2].MelonTool,"ps":0},{"n":"index","pt":$n[0].Int32,"ps":1},{"n":"generation","pt":$n[0].Int32,"ps":2}],"sn":"SyringeRecovery","rt":$n[4].IEnumerator,"p":[$n[2].MelonTool,$n[0].Int32,$n[0].Int32]},{"a":2,"n":"TargetDefeated","t":8,"pi":[{"n":"target","pt":$n[2].MelonRagdoll,"ps":0},{"n":"delay","pt":$n[0].Single,"ps":1}],"sn":"TargetDefeated","rt":$n[0].Void,"p":[$n[2].MelonRagdoll,$n[0].Single]},{"a":2,"n":"ToggleAudio","t":8,"sn":"ToggleAudio","rt":$n[0].Void},{"a":2,"n":"TogglePause","t":8,"sn":"TogglePause","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":2,"n":"UseSyringe","t":8,"pi":[{"n":"i","pt":$n[0].Int32,"ps":0}],"sn":"UseSyringe","rt":$n[0].Boolean,"p":[$n[0].Int32],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"UserInput","t":8,"sn":"UserInput","rt":$n[0].Void},{"a":2,"n":"Defeated","t":16,"rt":$n[0].Int32,"g":{"a":2,"n":"get_Defeated","t":8,"rt":$n[0].Int32,"fg":"Defeated","box":function ($v) { return Bridge.box($v, System.Int32);}},"s":{"a":1,"n":"set_Defeated","t":8,"p":[$n[0].Int32],"rt":$n[0].Void,"fs":"Defeated"},"fn":"Defeated"},{"a":2,"n":"Instance","is":true,"t":16,"rt":$n[2].MelonGame,"g":{"a":2,"n":"get_Instance","t":8,"rt":$n[2].MelonGame,"fg":"Instance","is":true},"s":{"a":1,"n":"set_Instance","t":8,"p":[$n[2].MelonGame],"rt":$n[0].Void,"fs":"Instance","is":true},"fn":"Instance"},{"a":2,"n":"Paused","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_Paused","t":8,"rt":$n[0].Boolean,"fg":"Paused","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"s":{"a":1,"n":"set_Paused","t":8,"p":[$n[0].Boolean],"rt":$n[0].Void,"fs":"Paused"},"fn":"Paused"},{"a":2,"n":"Stage","t":16,"rt":$n[0].Int32,"g":{"a":2,"n":"get_Stage","t":8,"rt":$n[0].Int32,"fg":"Stage","box":function ($v) { return Bridge.box($v, System.Int32);}},"s":{"a":1,"n":"set_Stage","t":8,"p":[$n[0].Int32],"rt":$n[0].Void,"fs":"Stage"},"fn":"Stage"},{"at":[new UnityEngine.HeaderAttribute("Luna variants"),new UnityEngine.LunaPlaygroundFieldAttribute("AppLovin", -1, null, false, null),new UnityEngine.TooltipAttribute("Only open the store after the endgame block button is clicked.")],"a":2,"n":"appLovin","t":4,"rt":$n[0].Boolean,"sn":"appLovin","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"assets","t":4,"rt":$n[2].MelonAssets,"sn":"assets"},{"a":2,"n":"background","t":4,"rt":$n[1].SpriteRenderer,"sn":"background"},{"a":2,"n":"characters","t":4,"rt":$n[3].List$1(MelonSandbox.MelonRagdoll),"sn":"characters","ro":true},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Cover Sprunky on item hit", -1, null, false, null)],"a":2,"n":"coverSprunkyOnHit","t":4,"rt":$n[0].Boolean,"sn":"coverSprunkyOnHit","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"effects","t":4,"rt":$n[1].AudioSource,"sn":"effects"},{"a":2,"n":"gameCamera","t":4,"rt":$n[1].Camera,"sn":"gameCamera"},{"a":2,"n":"hud","t":4,"rt":$n[2].MelonHud,"sn":"hud"},{"a":1,"n":"lastInput","t":4,"rt":$n[0].Single,"sn":"lastInput","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"loop","t":4,"rt":$n[1].AudioSource,"sn":"loop"},{"at":[new UnityEngine.TooltipAttribute("Extra world-space margin around the full Sprunky mosaic region.")],"a":2,"n":"mosaicPadding","t":4,"rt":$n[0].Single,"sn":"mosaicPadding","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"music","t":4,"rt":$n[1].AudioSource,"sn":"music"},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Mute SFX and replace music", -1, null, false, null)],"a":2,"n":"muteSfxAndReplaceMusic","t":4,"rt":$n[0].Boolean,"sn":"muteSfxAndReplaceMusic","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"sceneStages","t":4,"rt":System.Array.type(MelonSandbox.MelonStage),"sn":"sceneStages"},{"a":1,"n":"selected","t":4,"rt":$n[2].MelonTool,"sn":"selected"},{"a":1,"n":"stageGeneration","t":4,"rt":$n[0].Int32,"sn":"stageGeneration","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.LunaPlaygroundFieldAttribute("Stage 1 arms down", -1, null, false, null)],"a":2,"n":"stageOneArmsDown","t":4,"rt":$n[0].Boolean,"sn":"stageOneArmsDown","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.RangeAttribute(0.0, 3.0)],"a":2,"n":"startingStage","t":4,"rt":$n[0].Int32,"sn":"startingStage","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"tools","t":4,"rt":$n[3].List$1(MelonSandbox.MelonTool),"sn":"tools","ro":true},{"a":1,"n":"usedSyringes","t":4,"rt":$n[0].Array.type(System.Boolean),"sn":"usedSyringes","ro":true},{"a":2,"n":"world","t":4,"rt":$n[1].Transform,"sn":"world"},{"a":1,"backing":true,"n":"<Defeated>k__BackingField","t":4,"rt":$n[0].Int32,"sn":"Defeated","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"backing":true,"n":"<Instance>k__BackingField","is":true,"t":4,"rt":$n[2].MelonGame,"sn":"Instance"},{"a":1,"backing":true,"n":"<Paused>k__BackingField","t":4,"rt":$n[0].Boolean,"sn":"Paused","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"backing":true,"n":"<Stage>k__BackingField","t":4,"rt":$n[0].Int32,"sn":"Stage","box":function ($v) { return Bridge.box($v, System.Int32);}}]}; }, $n);
     /*MelonSandbox.MelonGame end.*/
 
     /*MelonSandbox.MelonHud start.*/
@@ -4037,7 +4117,7 @@ if ( TRACE ) { TRACE( "Playable.GameManager#CreateSprite", this ); }
     /*MelonSandbox.MelonProjectile end.*/
 
     /*MelonSandbox.MelonRagdoll start.*/
-    $m("MelonSandbox.MelonRagdoll", function () { return {"att":1048833,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"Apply","t":8,"pi":[{"n":"kind","pt":$n[2].MelonToolKind,"ps":0},{"n":"contact","pt":$n[2].MelonLimb,"ps":1},{"n":"point","pt":$n[1].Vector2,"ps":2}],"sn":"Apply","rt":$n[0].Void,"p":[$n[2].MelonToolKind,$n[2].MelonLimb,$n[1].Vector2]},{"a":2,"n":"ApplySpriteSorting","t":8,"sn":"ApplySpriteSorting","rt":$n[0].Void},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":2,"n":"BeginParade","t":8,"sn":"BeginParade","rt":$n[0].Void},{"a":2,"n":"Build","t":8,"pi":[{"n":"controller","pt":$n[2].MelonGame,"ps":0},{"n":"prefix","pt":$n[0].String,"ps":1},{"n":"offset","pt":$n[1].Vector2,"ps":2},{"n":"suspended","pt":$n[0].Boolean,"ps":3},{"n":"innerSkin","pt":$n[0].String,"ps":4}],"sn":"Build","rt":$n[0].Void,"p":[$n[2].MelonGame,$n[0].String,$n[1].Vector2,$n[0].Boolean,$n[0].String]},{"a":2,"n":"BuildSprunky","t":8,"pi":[{"n":"controller","pt":$n[2].MelonGame,"ps":0},{"n":"offset","pt":$n[1].Vector2,"ps":1},{"n":"suspended","pt":$n[0].Boolean,"ps":2}],"sn":"BuildSprunky","rt":$n[0].Void,"p":[$n[2].MelonGame,$n[1].Vector2,$n[0].Boolean]},{"a":2,"n":"ChangeInner","t":8,"pi":[{"n":"prefix","pt":$n[0].String,"ps":0}],"sn":"ChangeInner","rt":$n[0].Void,"p":[$n[0].String]},{"a":1,"n":"Child","is":true,"t":8,"pi":[{"n":"parent","pt":$n[1].Transform,"ps":0},{"n":"childName","pt":$n[0].String,"ps":1}],"sn":"Child","rt":$n[1].Transform,"p":[$n[1].Transform,$n[0].String]},{"a":2,"n":"ConfigureInstance","t":8,"pi":[{"n":"controller","pt":$n[2].MelonGame,"ps":0},{"n":"offset","pt":$n[1].Vector2,"ps":1},{"n":"suspended","pt":$n[0].Boolean,"ps":2},{"n":"innerSkin","pt":$n[0].String,"ps":3}],"sn":"ConfigureInstance","rt":$n[0].Void,"p":[$n[2].MelonGame,$n[1].Vector2,$n[0].Boolean,$n[0].String]},{"a":1,"n":"ConfigureLeg","t":8,"pi":[{"n":"side","pt":$n[0].String,"ps":0}],"sn":"ConfigureLeg","rt":$n[0].Void,"p":[$n[0].String]},{"a":1,"n":"ConnectArmJoint","is":true,"t":8,"pi":[{"n":"limb","pt":$n[2].MelonLimb,"ps":0},{"n":"connected","pt":$n[1].Rigidbody2D,"ps":1},{"n":"point","pt":$n[1].Vector2,"ps":2}],"sn":"ConnectArmJoint","rt":$n[0].Void,"p":[$n[2].MelonLimb,$n[1].Rigidbody2D,$n[1].Vector2]},{"a":1,"n":"Electrocute","t":8,"sn":"Electrocute","rt":$n[4].IEnumerator},{"a":1,"n":"FitLegArtwork","is":true,"t":8,"pi":[{"n":"limb","pt":$n[2].MelonLimb,"ps":0},{"n":"start","pt":$n[1].Vector2,"ps":1},{"n":"end","pt":$n[1].Vector2,"ps":2},{"n":"overlapEnd","dv":true,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"FitLegArtwork","rt":$n[0].Void,"p":[$n[2].MelonLimb,$n[1].Vector2,$n[1].Vector2,$n[0].Boolean]},{"a":1,"n":"FixedUpdate","t":8,"sn":"FixedUpdate","rt":$n[0].Void},{"a":2,"n":"GetLimb","t":8,"pi":[{"n":"part","pt":$n[0].String,"ps":0}],"sn":"GetLimb","rt":$n[2].MelonLimb,"p":[$n[0].String]},{"a":1,"n":"GroundFoot","t":8,"pi":[{"n":"foot","pt":$n[2].MelonLimb,"ps":0}],"sn":"GroundFoot","rt":$n[0].Void,"p":[$n[2].MelonLimb]},{"a":1,"n":"Joint","t":8,"pi":[{"n":"first","pt":$n[0].String,"ps":0},{"n":"second","pt":$n[0].String,"ps":1},{"n":"anchorY","pt":$n[0].Single,"ps":2},{"n":"min","pt":$n[0].Single,"ps":3},{"n":"max","pt":$n[0].Single,"ps":4},{"n":"limits","dv":true,"o":true,"pt":$n[0].Boolean,"ps":5}],"sn":"Joint","rt":$n[0].Void,"p":[$n[0].String,$n[0].String,$n[0].Single,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":1,"n":"Kill","t":8,"pi":[{"n":"release","pt":$n[0].Boolean,"ps":0},{"n":"wait","pt":$n[0].Single,"ps":1}],"sn":"Kill","rt":$n[0].Void,"p":[$n[0].Boolean,$n[0].Single]},{"a":2,"n":"LowerArms","t":8,"sn":"LowerArms","rt":$n[0].Void},{"a":1,"n":"PoseSuspendedArm","t":8,"pi":[{"n":"side","pt":$n[0].String,"ps":0},{"n":"target","pt":$n[1].Vector2,"ps":1}],"sn":"PoseSuspendedArm","rt":$n[0].Void,"p":[$n[0].String,$n[1].Vector2]},{"a":2,"n":"Release","t":8,"sn":"Release","rt":$n[0].Void},{"a":2,"n":"ResetVariantEffects","t":8,"sn":"ResetVariantEffects","rt":$n[0].Void},{"a":1,"n":"Reveal","t":8,"pi":[{"n":"point","pt":$n[1].Vector2,"ps":0},{"n":"fire","pt":$n[0].Boolean,"ps":1},{"n":"skinOnly","dv":false,"o":true,"pt":$n[0].Boolean,"ps":2}],"sn":"Reveal","rt":$n[4].IEnumerator,"p":[$n[1].Vector2,$n[0].Boolean,$n[0].Boolean]},{"a":1,"n":"SetLegJoint","is":true,"t":8,"pi":[{"n":"joint","pt":$n[1].HingeJoint2D,"ps":0},{"n":"point","pt":$n[1].Vector2,"ps":1},{"n":"min","pt":$n[0].Single,"ps":2},{"n":"max","pt":$n[0].Single,"ps":3}],"sn":"SetLegJoint","rt":$n[0].Void,"p":[$n[1].HingeJoint2D,$n[1].Vector2,$n[0].Single,$n[0].Single]},{"a":1,"n":"StretchArmSegment","is":true,"t":8,"pi":[{"n":"limb","pt":$n[2].MelonLimb,"ps":0},{"n":"start","pt":$n[1].Vector2,"ps":1},{"n":"end","pt":$n[1].Vector2,"ps":2}],"sn":"StretchArmSegment","rt":$n[0].Void,"p":[$n[2].MelonLimb,$n[1].Vector2,$n[1].Vector2]},{"a":2,"n":"Support","t":8,"pi":[{"n":"limb","pt":$n[2].MelonLimb,"ps":0},{"n":"point","pt":$n[1].Vector2,"ps":1}],"sn":"Support","rt":$n[0].Void,"p":[$n[2].MelonLimb,$n[1].Vector2]},{"a":2,"n":"Head","t":16,"rt":$n[2].MelonLimb,"g":{"a":2,"n":"get_Head","t":8,"rt":$n[2].MelonLimb,"fg":"Head"},"fn":"Head"},{"a":2,"n":"Torso","t":16,"rt":$n[2].MelonLimb,"g":{"a":2,"n":"get_Torso","t":8,"rt":$n[2].MelonLimb,"fg":"Torso"},"fn":"Torso"},{"a":2,"n":"Skins","is":true,"t":4,"rt":$n[0].Array.type(System.String),"sn":"Skins","ro":true},{"a":2,"n":"dead","t":4,"rt":$n[0].Boolean,"sn":"dead","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"game","t":4,"rt":$n[2].MelonGame,"sn":"game"},{"a":2,"n":"hits","t":4,"rt":$n[0].Int32,"sn":"hits","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"life","t":4,"rt":$n[0].Int32,"sn":"life","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"limbs","t":4,"rt":$n[3].List$1(MelonSandbox.MelonLimb),"sn":"limbs"},{"a":1,"n":"loweredHeadSupport","t":4,"rt":$n[1].TargetJoint2D,"sn":"loweredHeadSupport"},{"a":2,"n":"parade","t":4,"rt":$n[0].Boolean,"sn":"parade","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"paradeDistance","t":4,"rt":$n[0].Single,"sn":"paradeDistance","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"paradeStart","t":4,"rt":$n[0].Single,"sn":"paradeStart","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"privacyCover","t":4,"rt":$n[2].MelonPrivacyCover,"sn":"privacyCover"},{"a":2,"n":"skinName","t":4,"rt":$n[0].String,"sn":"skinName"},{"a":2,"n":"supports","t":4,"rt":$n[3].List$1(UnityEngine.TargetJoint2D),"sn":"supports"},{"a":2,"n":"targetGroup","t":4,"rt":$n[0].Int32,"sn":"targetGroup","box":function ($v) { return Bridge.box($v, System.Int32);}}]}; }, $n);
+    $m("MelonSandbox.MelonRagdoll", function () { return {"att":1048833,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"Apply","t":8,"pi":[{"n":"kind","pt":$n[2].MelonToolKind,"ps":0},{"n":"contact","pt":$n[2].MelonLimb,"ps":1},{"n":"point","pt":$n[1].Vector2,"ps":2}],"sn":"Apply","rt":$n[0].Void,"p":[$n[2].MelonToolKind,$n[2].MelonLimb,$n[1].Vector2]},{"a":2,"n":"ApplySpriteSorting","t":8,"sn":"ApplySpriteSorting","rt":$n[0].Void},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":2,"n":"BeginParade","t":8,"sn":"BeginParade","rt":$n[0].Void},{"a":2,"n":"Build","t":8,"pi":[{"n":"controller","pt":$n[2].MelonGame,"ps":0},{"n":"prefix","pt":$n[0].String,"ps":1},{"n":"offset","pt":$n[1].Vector2,"ps":2},{"n":"suspended","pt":$n[0].Boolean,"ps":3},{"n":"innerSkin","pt":$n[0].String,"ps":4}],"sn":"Build","rt":$n[0].Void,"p":[$n[2].MelonGame,$n[0].String,$n[1].Vector2,$n[0].Boolean,$n[0].String]},{"a":2,"n":"BuildSprunky","t":8,"pi":[{"n":"controller","pt":$n[2].MelonGame,"ps":0},{"n":"offset","pt":$n[1].Vector2,"ps":1},{"n":"suspended","pt":$n[0].Boolean,"ps":2}],"sn":"BuildSprunky","rt":$n[0].Void,"p":[$n[2].MelonGame,$n[1].Vector2,$n[0].Boolean]},{"a":2,"n":"ChangeInner","t":8,"pi":[{"n":"prefix","pt":$n[0].String,"ps":0}],"sn":"ChangeInner","rt":$n[0].Void,"p":[$n[0].String]},{"a":1,"n":"Child","is":true,"t":8,"pi":[{"n":"parent","pt":$n[1].Transform,"ps":0},{"n":"childName","pt":$n[0].String,"ps":1}],"sn":"Child","rt":$n[1].Transform,"p":[$n[1].Transform,$n[0].String]},{"a":2,"n":"ConfigureInstance","t":8,"pi":[{"n":"controller","pt":$n[2].MelonGame,"ps":0},{"n":"offset","pt":$n[1].Vector2,"ps":1},{"n":"suspended","pt":$n[0].Boolean,"ps":2},{"n":"innerSkin","pt":$n[0].String,"ps":3}],"sn":"ConfigureInstance","rt":$n[0].Void,"p":[$n[2].MelonGame,$n[1].Vector2,$n[0].Boolean,$n[0].String]},{"a":1,"n":"ConfigureLeg","t":8,"pi":[{"n":"side","pt":$n[0].String,"ps":0}],"sn":"ConfigureLeg","rt":$n[0].Void,"p":[$n[0].String]},{"a":1,"n":"ConnectArmJoint","is":true,"t":8,"pi":[{"n":"limb","pt":$n[2].MelonLimb,"ps":0},{"n":"connected","pt":$n[1].Rigidbody2D,"ps":1},{"n":"point","pt":$n[1].Vector2,"ps":2},{"n":"keepLimits","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"ConnectArmJoint","rt":$n[0].Void,"p":[$n[2].MelonLimb,$n[1].Rigidbody2D,$n[1].Vector2,$n[0].Boolean]},{"a":1,"n":"Electrocute","t":8,"sn":"Electrocute","rt":$n[4].IEnumerator},{"a":1,"n":"FitForestArmSegment","is":true,"t":8,"pi":[{"n":"limb","pt":$n[2].MelonLimb,"ps":0},{"n":"localStart","pt":$n[1].Vector2,"ps":1},{"n":"localEnd","pt":$n[1].Vector2,"ps":2},{"n":"start","pt":$n[1].Vector2,"ps":3},{"n":"end","pt":$n[1].Vector2,"ps":4}],"sn":"FitForestArmSegment","rt":$n[0].Void,"p":[$n[2].MelonLimb,$n[1].Vector2,$n[1].Vector2,$n[1].Vector2,$n[1].Vector2]},{"a":1,"n":"FitLegArtwork","is":true,"t":8,"pi":[{"n":"limb","pt":$n[2].MelonLimb,"ps":0},{"n":"start","pt":$n[1].Vector2,"ps":1},{"n":"end","pt":$n[1].Vector2,"ps":2},{"n":"overlapEnd","dv":true,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"FitLegArtwork","rt":$n[0].Void,"p":[$n[2].MelonLimb,$n[1].Vector2,$n[1].Vector2,$n[0].Boolean]},{"a":1,"n":"FixedUpdate","t":8,"sn":"FixedUpdate","rt":$n[0].Void},{"a":2,"n":"GetLimb","t":8,"pi":[{"n":"part","pt":$n[0].String,"ps":0}],"sn":"GetLimb","rt":$n[2].MelonLimb,"p":[$n[0].String]},{"a":1,"n":"GroundFoot","t":8,"pi":[{"n":"foot","pt":$n[2].MelonLimb,"ps":0}],"sn":"GroundFoot","rt":$n[0].Void,"p":[$n[2].MelonLimb]},{"a":2,"n":"IsRigSkin","is":true,"t":8,"pi":[{"n":"skin","pt":$n[0].String,"ps":0}],"sn":"IsRigSkin","rt":$n[0].Boolean,"p":[$n[0].String],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"Joint","t":8,"pi":[{"n":"first","pt":$n[0].String,"ps":0},{"n":"second","pt":$n[0].String,"ps":1},{"n":"anchorY","pt":$n[0].Single,"ps":2},{"n":"min","pt":$n[0].Single,"ps":3},{"n":"max","pt":$n[0].Single,"ps":4},{"n":"limits","dv":true,"o":true,"pt":$n[0].Boolean,"ps":5}],"sn":"Joint","rt":$n[0].Void,"p":[$n[0].String,$n[0].String,$n[0].Single,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":1,"n":"Kill","t":8,"pi":[{"n":"release","pt":$n[0].Boolean,"ps":0},{"n":"wait","pt":$n[0].Single,"ps":1}],"sn":"Kill","rt":$n[0].Void,"p":[$n[0].Boolean,$n[0].Single]},{"a":2,"n":"LowerArms","t":8,"sn":"LowerArms","rt":$n[0].Void},{"a":1,"n":"PoseSuspendedArm","t":8,"pi":[{"n":"side","pt":$n[0].String,"ps":0},{"n":"target","pt":$n[1].Vector2,"ps":1}],"sn":"PoseSuspendedArm","rt":$n[0].Void,"p":[$n[0].String,$n[1].Vector2]},{"a":2,"n":"Release","t":8,"sn":"Release","rt":$n[0].Void},{"a":2,"n":"ResetVariantEffects","t":8,"sn":"ResetVariantEffects","rt":$n[0].Void},{"a":1,"n":"Reveal","t":8,"pi":[{"n":"point","pt":$n[1].Vector2,"ps":0},{"n":"fire","pt":$n[0].Boolean,"ps":1},{"n":"skinOnly","dv":false,"o":true,"pt":$n[0].Boolean,"ps":2}],"sn":"Reveal","rt":$n[4].IEnumerator,"p":[$n[1].Vector2,$n[0].Boolean,$n[0].Boolean]},{"a":1,"n":"SetLegJoint","is":true,"t":8,"pi":[{"n":"joint","pt":$n[1].HingeJoint2D,"ps":0},{"n":"point","pt":$n[1].Vector2,"ps":1},{"n":"min","pt":$n[0].Single,"ps":2},{"n":"max","pt":$n[0].Single,"ps":3}],"sn":"SetLegJoint","rt":$n[0].Void,"p":[$n[1].HingeJoint2D,$n[1].Vector2,$n[0].Single,$n[0].Single]},{"a":1,"n":"StretchArmSegment","is":true,"t":8,"pi":[{"n":"limb","pt":$n[2].MelonLimb,"ps":0},{"n":"start","pt":$n[1].Vector2,"ps":1},{"n":"end","pt":$n[1].Vector2,"ps":2}],"sn":"StretchArmSegment","rt":$n[0].Void,"p":[$n[2].MelonLimb,$n[1].Vector2,$n[1].Vector2]},{"a":2,"n":"Support","t":8,"pi":[{"n":"limb","pt":$n[2].MelonLimb,"ps":0},{"n":"point","pt":$n[1].Vector2,"ps":1}],"sn":"Support","rt":$n[0].Void,"p":[$n[2].MelonLimb,$n[1].Vector2]},{"a":2,"n":"Head","t":16,"rt":$n[2].MelonLimb,"g":{"a":2,"n":"get_Head","t":8,"rt":$n[2].MelonLimb,"fg":"Head"},"fn":"Head"},{"a":2,"n":"Torso","t":16,"rt":$n[2].MelonLimb,"g":{"a":2,"n":"get_Torso","t":8,"rt":$n[2].MelonLimb,"fg":"Torso"},"fn":"Torso"},{"a":2,"n":"Skins","is":true,"t":4,"rt":$n[0].Array.type(System.String),"sn":"Skins","ro":true},{"a":2,"n":"dead","t":4,"rt":$n[0].Boolean,"sn":"dead","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"game","t":4,"rt":$n[2].MelonGame,"sn":"game"},{"a":2,"n":"hits","t":4,"rt":$n[0].Int32,"sn":"hits","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"life","t":4,"rt":$n[0].Int32,"sn":"life","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"limbs","t":4,"rt":$n[3].List$1(MelonSandbox.MelonLimb),"sn":"limbs"},{"a":1,"n":"loweredHeadSupport","t":4,"rt":$n[1].TargetJoint2D,"sn":"loweredHeadSupport"},{"a":2,"n":"parade","t":4,"rt":$n[0].Boolean,"sn":"parade","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"paradeDistance","t":4,"rt":$n[0].Single,"sn":"paradeDistance","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"paradeStart","t":4,"rt":$n[0].Single,"sn":"paradeStart","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"privacyCover","t":4,"rt":$n[2].MelonPrivacyCover,"sn":"privacyCover"},{"a":2,"n":"skinName","t":4,"rt":$n[0].String,"sn":"skinName"},{"a":2,"n":"supports","t":4,"rt":$n[3].List$1(UnityEngine.TargetJoint2D),"sn":"supports"},{"a":2,"n":"targetGroup","t":4,"rt":$n[0].Int32,"sn":"targetGroup","box":function ($v) { return Bridge.box($v, System.Int32);}}]}; }, $n);
     /*MelonSandbox.MelonRagdoll end.*/
 
     /*MelonSandbox.MelonStage start.*/
