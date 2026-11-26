@@ -7,10 +7,10 @@
           <value>
             <TabSessionState>
               <option name="projectPath" value="D:\ProjectGitHub\PA_Ragdoll" />
-              <option name="provider" value="claude" />
-              <option name="sessionId" value="bd019b06-2204-42b1-9d54-3a0f33674362" />
+              <option name="provider" value="codex" />
+              <option name="sessionId" value="01a215d3-252c-70b0-8d27-dc975830700c" />
               <option name="cwd" value="D:\ProjectGitHub\PA_Ragdoll" />
-              <option name="model" value="claude-opus-5-5[1m]" />
+              <option name="model" value="gpt-6.2-astra" />
               <option name="permissionMode" value="bypassPermissions" />
             </TabSessionState>
           </value>

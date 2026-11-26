@@ -18,6 +18,8 @@ namespace MelonSandbox
         CanvasScaler scaler;
         int layoutWidth, layoutHeight;
         Canvas canvas;
+        RectTransform footer, logo, play;
+        Image gameTitle, playLabel;
         Font font;
         bool showHint;
         MelonTool selectedTool;
@@ -74,6 +76,14 @@ namespace MelonSandbox
             finger.sizeDelta = new Vector2(66, 81);
             finger.gameObject.SetActive(false);
             var hintImage = hint.GetComponent<Image>(); hintImage.sprite = game.assets.Sprite("main_finger"); hintImage.raycastTarget = false; hintImage.preserveAspect = true;
+            footer = game.gameBanner;
+            if (footer)
+            {
+                logo = (RectTransform)footer.Find("Game logo");
+                gameTitle = footer.Find("Game title").GetComponent<Image>();
+                play = (RectTransform)footer.Find("Play Now");
+                playLabel = play.Find("Play label").GetComponent<Image>();
+            }
             UpdateLayout();
         }
         void LateUpdate()
@@ -91,7 +101,30 @@ namespace MelonSandbox
             // Keep the row within the viewport, including short landscape windows.
             float rowScale = Mathf.Min(1, Mathf.Min((designWidth - 48) / 567, canvasHeight * .25f / 210));
             cardRow.localScale = Vector3.one * rowScale;
-            cardRow.anchoredPosition = new Vector2(0, Mathf.Min(portrait ? 96 : 48, canvasHeight * .06f));
+            float bar = Mathf.Min(portrait ? 156 : 84, canvasHeight * .12f);
+            cardRow.anchoredPosition = new Vector2(0, (footer ? bar : 0) + 12);
+            if (!footer) return;
+            footer.GetComponentInParent<CanvasScaler>().referenceResolution = scaler.referenceResolution;
+            footer.sizeDelta = new Vector2(0, bar);
+            footer.anchoredPosition = Vector2.zero;
+            float pad = portrait ? 64 : 120;
+            float icon = bar * .84f;
+            logo.anchorMin = logo.anchorMax = new Vector2(0, .5f);
+            logo.sizeDelta = new Vector2(icon, icon);
+            logo.anchoredPosition = new Vector2(pad + icon * .5f, 0);
+            var title = gameTitle.rectTransform;
+            title.anchorMin = title.anchorMax = new Vector2(0, .5f);
+            title.pivot = new Vector2(0, .5f);
+            title.anchoredPosition = new Vector2(pad + icon + 16, 0);
+            gameTitle.sprite = portrait ? game.portraitBannerTitle : game.landscapeBannerTitle;
+            float titleHeight = bar * (portrait ? .74f : .48f);
+            float titleWidth = titleHeight * gameTitle.sprite.rect.width / gameTitle.sprite.rect.height;
+            title.sizeDelta = new Vector2(Mathf.Min(titleWidth, designWidth - 2 * pad - icon - 2 * bar - 32), titleHeight);
+            play.anchorMin = play.anchorMax = new Vector2(1, .5f);
+            play.pivot = new Vector2(1, .5f);
+            play.sizeDelta = new Vector2(bar * 1.8f, bar * .72f);
+            play.anchoredPosition = new Vector2(-pad, 0);
+            playLabel.rectTransform.sizeDelta = new Vector2(play.sizeDelta.x * .78f, play.sizeDelta.y * .52f);
         }
         Text Label(string name, Transform parent, Vector2 pos, Vector2 size, int fontSize)
         {

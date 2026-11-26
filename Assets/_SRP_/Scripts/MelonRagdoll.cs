@@ -11,7 +11,8 @@ namespace MelonSandbox
         public bool dead;
         public int targetGroup;
         public bool parade;
-        float paradeStart, paradeDistance;
+        public const float ParadeSpacing = 2.95f;
+        float paradeStart, paradeDistance, paradeHeight;
         TargetJoint2D loweredHeadSupport;
         MelonPrivacyCover privacyCover;
         public MelonGame game;
@@ -49,6 +50,13 @@ namespace MelonSandbox
             // The source prefab contains an animation control rig beside the physical parts.
             foreach (Transform child in transform) if (child.name != "Parts") child.gameObject.SetActive(false);
             var parts = Child(transform, "Parts");
+            // Some exports nest the hand as forearm/GripPoint; lift it beside the other physical parts.
+            foreach (var side in new[] { "front", "back" })
+                if (!Child(parts, "hand_" + side))
+                {
+                    var grip = Child(Child(parts, "forearm_" + side), "GripPoint");
+                    if (grip) { grip.SetParent(parts, true); grip.name = "hand_" + side; }
+                }
             string[] source = { "head_mid", "chest_mid", "abdomen_mid", "hip_mid", "upperarm_front", "forearm_front", "hand_front", "upperarm_back", "forearm_back", "hand_back", "thigh_front", "shin_front", "foot_front", "thigh_back", "shin_back", "foot_back" };
             string[] target = { "head", "body", "body_mid", "body_down", "r_up_arm", "r_down_arm", "r_hand", "l_up_arm", "l_down_arm", "l_hand", "r_up_leg", "r_down_leg", "r_foot", "l_up_leg", "l_down_leg", "l_foot" };
             for (int i = 0; i < source.Length; i++)
@@ -73,6 +81,7 @@ namespace MelonSandbox
                     // Preserve the material authored on the Sprunky prefab.
                 }
                 limb.skin.enabled = true; limb.inner.enabled = true;
+                if (skinName.StartsWith("Forest_")) FitInnerInsideSkin(limb);
                 var meat = Child(part, "Meat"); if (meat) meat.gameObject.SetActive(false);
                 limb.dimensions = limb.skin.bounds.size;
                 limb.body.mass = Mathf.Max(.15f, limb.dimensions.x * limb.dimensions.y * 4);
@@ -110,6 +119,30 @@ namespace MelonSandbox
                 GroundFoot(GetLimb("l_foot"));
             }
             else Support(Head, Head.transform.position);
+        }
+        // The bone layer is only meant to show through damage holes, so keep it inside the skin outline.
+        // Hands drawn into the forearm have no skin sprite; their bone would float on its own.
+        static void FitInnerInsideSkin(MelonLimb limb)
+        {
+            if (!limb.skin.sprite) { limb.inner.enabled = false; return; }
+            if (!limb.inner.sprite) return;
+            Transform part = limb.transform, skin = limb.skin.transform, inner = limb.inner.transform;
+            Bounds s = limb.skin.sprite.bounds, b = limb.inner.sprite.bounds;
+            // Inset: sprite rects include transparent margins around the visible artwork.
+            Vector2 skinSize = new Vector2(Mathf.Abs(s.size.x * skin.localScale.x), Mathf.Abs(s.size.y * skin.localScale.y)) * .85f;
+            Vector2 innerSize = new Vector2(Mathf.Abs(b.size.x * inner.localScale.x), Mathf.Abs(b.size.y * inner.localScale.y));
+            if (innerSize.x < .00001f || innerSize.y < .00001f) return;
+            var scale = inner.localScale;
+            scale.x *= Mathf.Min(1, skinSize.x / innerSize.x);
+            scale.y *= Mathf.Min(1, skinSize.y / innerSize.y);
+            inner.localScale = scale;
+            innerSize = new Vector2(Mathf.Abs(b.size.x * scale.x), Mathf.Abs(b.size.y * scale.y));
+            Vector2 skinCenter = part.InverseTransformPoint(skin.TransformPoint(s.center));
+            Vector2 innerCenter = part.InverseTransformPoint(inner.TransformPoint(b.center));
+            Vector2 slack = (skinSize - innerSize) * .5f;
+            Vector2 clamped = new Vector2(Mathf.Clamp(innerCenter.x, skinCenter.x - slack.x, skinCenter.x + slack.x),
+                Mathf.Clamp(innerCenter.y, skinCenter.y - slack.y, skinCenter.y + slack.y));
+            inner.localPosition += (Vector3)(clamped - innerCenter);
         }
         public void ApplySpriteSorting()
         {
@@ -372,17 +405,19 @@ namespace MelonSandbox
                 l.inner.transform.localScale = new Vector3(inner.w / 100 / l.inner.sprite.bounds.size.x, inner.h / 100 / l.inner.sprite.bounds.size.y, 1);
             }
         }
-        public void BeginParade() { parade = true; paradeDistance = 0; paradeStart = Head.transform.position.x; }
+        public void BeginParade() { parade = true; paradeDistance = 0; paradeStart = Head.transform.position.x; paradeHeight = Head.transform.position.y; }
         void FixedUpdate()
         {
             if (!parade || supports.Count == 0 || !supports[0]) return;
             paradeDistance += Time.fixedDeltaTime * 4;
             var target = supports[0].target;
             target.x = paradeStart + paradeDistance;
-            target.y = 6.5f + Mathf.Sin(paradeDistance * Mathf.PI / 2) * .65f;
-            if (target.x > 14)
+            target.y = paradeHeight + Mathf.Sin((paradeDistance + paradeStart) * Mathf.PI / 2) * .16f;
+            var camera = game.gameCamera;
+            float edge = camera.orthographicSize * camera.aspect + 2f;
+            if (target.x > camera.transform.position.x + edge)
             {
-                float length = game.characters.Count * 5f;
+                float length = Mathf.Max(game.characters.Count * ParadeSpacing, edge * 2);
                 paradeStart -= length; target.x -= length;
                 foreach (var l in limbs) l.body.position += Vector2.left * length;
             }

@@ -214,7 +214,7 @@ MonoBehaviour:
       "\L\u2025": []
   _includedShaderVariants: []
   _excludedShaderVariants: []
-  version: 466
+  version: 676
   _shaderParsedShaders:
   - ParsedSubShaders:
     - Index: 0
@@ -1695,4 +1695,4 @@ MonoBehaviour:
         - UNITY_UI_ALPHACLIP
         - UNITY_UI_CLIP_RECT
   _modifiedShaders: []
-  invalidShaders: 1
+  invalidShaders: 0

@@ -26,6 +26,8 @@ namespace MelonSandbox
         [Min(0f), Tooltip("Extra world-space margin around the full Sprunky mosaic region.")]
         public float mosaicPadding = .6f;
         public MelonAssets assets;
+        public RectTransform gameBanner;
+        public Sprite portraitBannerTitle, landscapeBannerTitle;
         [Range(0, 3)] public int startingStage;
         public Camera gameCamera;
         public int Stage { get; private set; }
@@ -151,23 +153,23 @@ namespace MelonSandbox
             {
                 for (int i = 0; i < 4; i++)
                     assets.Visual("msg_stolb", world, FromPixels(-50 + 250 * i, 679.5f), new Vector2(1.12f, 8.17f), -20);
-                Spawn("Forest_PinkBeanie", new Vector2(-21, 0), true);
-                Spawn("Forest_RedCheckered", new Vector2(229, 0), true);
-                Spawn("Forest_Deer", new Vector2(483, 0), true);
+                Spawn("Forest_WoodenFace", new Vector2(-21, 0), true);
+                Spawn("Forest_CircleGuard", new Vector2(229, 0), true);
+                Spawn("Forest_RedHelmet", new Vector2(483, 0), true);
             }
             else if (Stage == 1)
             {
-                string[] skins = { "Forest_PinkBeanie", "Forest_RedCheckered", "Forest_Deer", "Forest_PinkBeanie" };
+                string[] skins = { "Forest_WoodenFace", "Forest_CircleGuard", "Forest_RedHelmet" };
                 for (int i = 0; i < skins.Length; i++) Spawn(skins[i], new Vector2(-280 + i * 270, 0), false);
                 CreateTool(MelonToolKind.Saw, FromPixels(-400, 600));
                 CreateTool(MelonToolKind.Shock, FromPixels(900, 800));
             }
             else if (Stage == 2)
             {
-                string[] skins = { "Forest_AlienEnemy", "Forest_BlueEnemy", "Forest_FrogEnemy", "Forest_WhiteWolfEnemy", "Forest_PinkBeanie", "Forest_RedCheckered", "Forest_Deer" };
+                string[] skins = { "Forest_VioletBraid", "Forest_PenguinHood", "Forest_UndeadStag", "Forest_VioletBuns", "Forest_WoodenFace", "Forest_CircleGuard", "Forest_RedHelmet" };
                 for (int i = 0; i < skins.Length; i++)
                 {
-                    var c = Spawn(skins[i], new Vector2(i >= 4 ? -170 + (i - 4) * 280 : -120 + i * 280, i >= 4 ? -1045 : 0), false);
+                    var c = Spawn(skins[i], new Vector2(i >= 4 ? -170 + (i - 4) * 280 : -120 + i * 280, i >= 4 ? -1056 : -5), false);
                     c.targetGroup = i >= 4 ? 1 : 0;
                 }
                 var names = new Dictionary<string, string> { { "cd", "cnd" }, { "n1", "no1" }, { "n2", "no2" }, { "s", "stol" }, { "v", "vert" }, { "h", "hor" }, { "b", "big" }, { "m", "melon" }, { "cn", "can" }, { "c", "chair" }, { "a", "arm" } };
@@ -180,8 +182,8 @@ namespace MelonSandbox
             }
             else
             {
-                string[] parade = { "Forest_PinkBeanie", "Forest_RedCheckered", "Forest_Deer", "Forest_AlienEnemy", "Forest_BlueEnemy", "Forest_FrogEnemy", "Forest_WhiteWolfEnemy" };
-                for (int i = 0; i < parade.Length; i++) Spawn(parade[i], new Vector2(-500 * (parade.Length - 1 - i), 0), false).BeginParade();
+                string[] parade = { "Forest_WoodenFace", "Forest_CircleGuard", "Forest_RedHelmet", "Forest_VioletBraid", "Forest_VioletBuns", "Forest_PenguinHood", "Forest_UndeadStag" };
+                for (int i = 0; i < parade.Length; i++) Spawn(parade[i], new Vector2(-100f * MelonRagdoll.ParadeSpacing * (parade.Length - 1 - i), 0), false).BeginParade();
             }
             lastInput = Time.unscaledTime;
             if (hud) hud.Refresh();

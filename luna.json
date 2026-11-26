@@ -1,8 +1,8 @@
 {
     "version": "7.2.0",
     "projectId": "83336d6262c2dbe44ad1c159a3170903",
-    "applicationID": 43647,
-    "creativeName": "C1_2611_HuyNQ_PSF_V06_YenTTH",
+    "applicationID": 42071,
+    "creativeName": "C1_2611_HuyNQ_RSNM_V08_YenTTH",
     "pgServer": "EU",
     "window": {
         "‐⁘": true
@@ -7329,10 +7329,6 @@
                 "excluded": true
             },
             {
-                "name": "UnityEngine.UI.BaseMeshEffect",
-                "excluded": true
-            },
-            {
                 "name": "UnityEngine.UI.CoroutineTween.FloatTween",
                 "excluded": true
             },
@@ -7365,10 +7361,6 @@
                 "excluded": true
             },
             {
-                "name": "UnityEngine.UI.Shadow",
-                "excluded": true
-            },
-            {
                 "name": "UnityEngine.EventSystems.Physics2DRaycaster",
                 "excluded": true
             },
@@ -7382,10 +7374,6 @@
             },
             {
                 "name": "UnityEngine.UI.HorizontalOrVerticalLayoutGroup",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.UI.Outline",
                 "excluded": true
             },
             {
@@ -7422,7 +7410,7 @@
             },
             {
                 "name": "UnityEngine.UI.IMeshModifier",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "UnityEngine.UI.ILayoutController",
@@ -8318,7 +8306,7 @@
                     },
                     {
                         "name": "isWhiteSpace",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "isDigit",
@@ -16774,7 +16762,7 @@
                     },
                     {
                         "name": "Find",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "FindChild",
@@ -19172,7 +19160,7 @@
                     },
                     {
                         "name": "text#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "text#set",
@@ -23468,7 +23456,7 @@
                     },
                     {
                         "name": "materialCount#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "cull#set",
@@ -23540,7 +23528,7 @@
                     },
                     {
                         "name": "SetMesh",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetMesh",
@@ -24994,11 +24982,11 @@
                     },
                     {
                         "name": "FillMesh",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "FromMesh",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -25132,7 +25120,7 @@
                     },
                     {
                         "name": "referenceResolution#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "referenceResolution#set",
@@ -28537,6 +28525,10 @@
                     {
                         "name": "FitForestArmSegment",
                         "excluded": true
+                    },
+                    {
+                        "name": "FitInnerInsideSkin",
+                        "excluded": true
                     }
                 ]
             },
@@ -28645,6 +28637,10 @@
                     {
                         "name": "BackgroundMusic#get",
                         "excluded": true
+                    },
+                    {
+                        "name": "OnPlayNow",
+                        "excluded": false
                     }
                 ]
             },
@@ -31354,6 +31350,96 @@
                     },
                     {
                         "name": "SpriteWorldBounds",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.UI.BaseMeshEffect",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "graphic#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnEnable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDisable",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnDidApplyAnimationProperties",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ModifyMesh",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.UI.Shadow",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "effectColor#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "effectColor#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "effectDistance#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "effectDistance#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "useGraphicAlpha#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "useGraphicAlpha#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ApplyShadowZeroAlloc",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ApplyShadow",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ModifyMesh$1",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.UI.Outline",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ModifyMesh$1",
                         "excluded": false
                     }
                 ]

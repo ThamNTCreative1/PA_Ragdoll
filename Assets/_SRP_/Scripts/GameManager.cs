@@ -27,6 +27,7 @@ namespace Playable
 
         private int _quantityEvent = 0;
         private bool _hasEnded;
+        private Coroutine _endCountdown;
 
         public void ReparentEndGameButton(Transform parent)
         {
@@ -61,6 +62,13 @@ namespace Playable
             Luna.Unity.LifeCycle.GameEnded();
         }
 
+        public void OnPlayNow()
+        {
+            if (_endCountdown != null) StopCoroutine(_endCountdown);
+            EndGame();
+            ShowCTA();
+        }
+
         public void ShowCTA()
         {
             Luna.Unity.Playable.InstallFullGame();
@@ -78,7 +86,7 @@ namespace Playable
 
         public void CountdownEndGame()
         {
-            StartCoroutine(IECountdownEndGame());
+            _endCountdown = StartCoroutine(IECountdownEndGame());
         }
 
         private IEnumerator IECountdownEndGame()
