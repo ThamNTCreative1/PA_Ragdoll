@@ -1,0 +1,34 @@
+{
+  "ignores": [],
+  "groups": [
+    [
+      "F:/UnityProjects/SSP_V10/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/DragZone.cs",
+      "F:/UnityProjects/SSP_V10/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/GameController.cs",
+      "F:/UnityProjects/SSP_V10/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Potion.cs",
+      "F:/UnityProjects/SSP_V10/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/SspMan.cs",
+      "F:/UnityProjects/SSP_V10/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/SspPartHit.cs",
+      "F:/UnityProjects/SSP_V10/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/LayoutController.cs",
+      "F:/UnityProjects/SSP_V10/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/LunaController.cs",
+      "F:/UnityProjects/SSP_V10/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/GameAudio.cs",
+      "F:/UnityProjects/SSP_V10/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/MapTheme.cs",
+      "F:/UnityProjects/SSP_V10/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Fx.cs",
+      "F:/UnityProjects/SSP_V10/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/FxSprite.cs",
+      "F:/UnityProjects/SSP_V10/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/FollowHint.cs"
+    ],
+    [
+      "F:/UnityProjects/SSP_V10/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/Snowfall.cs"
+    ],
+    [
+      "F:/UnityProjects/SSP_V10/LunaTemp/stage3/processed-scripts/Assets/00 SCRIPTS/Gameplay/UiTween.cs"
+    ],
+    [
+      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
+    ],
+    [
+      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
+    ],
+    [
+      "F:/LunaPlayworks/7.2.0/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+    ]
+  ]
+}

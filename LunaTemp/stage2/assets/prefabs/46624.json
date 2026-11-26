@@ -1,0 +1,1 @@
+{"id":46624,"path":"Assets/02 PREFABS/Fx/Blood.prefab","assetBundleId":-1,"components":[{"type":1,"id":46628,"data":[0,0,0,1,1,1,0,0,0,1]},{"type":6,"id":46630,"data":[1,1,1,1,7,46590,0,0,0,1,1,0,0.5,0,0,1,9,446,[9,446],0,0,0,600,-1,-1,1,1,0,0,1,1]},{"type":2,"id":46632,"enabled":1,"class":11,"data":[6,46630]}],"children":[],"data":["Blood",0,1,0,0]}
